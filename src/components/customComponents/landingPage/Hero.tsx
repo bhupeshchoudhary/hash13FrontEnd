@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
-const FloatingShape = ({ children, className, animationDuration = 20 }:any) => {
+const FloatingShape = ({ children, className, animationDuration = 8 }:any) => {
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
@@ -49,11 +49,21 @@ const CurvedLine = ({ className }:any) => (
 
 export default function Hero() {
   return (
-    <div className="bg-white overflow-hidden">
+    <div className="min-h-screen bg-[#fff6f4] overflow-hidden">
       <style jsx global>{`
         @keyframes float {
-          0%, 100% { transform: translate(-50%, -50%) translateY(0px) rotate(0deg); }
-          50% { transform: translate(-50%, -50%) translateY(-20px) rotate(10deg); }
+          0%, 100% { 
+            transform: translate(-50%, -50%) translateY(0px) rotate(0deg);
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          25% { 
+            transform: translate(-50%, -50%) translateY(-15px) rotate(5deg);
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          75% { 
+            transform: translate(-50%, -50%) translateY(15px) rotate(-5deg);
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          }
         }
         @keyframes spin {
           from { transform: translate(-50%, -50%) rotate(0deg); }
@@ -63,33 +73,34 @@ export default function Hero() {
       
       {/* Floating background elements */}
       <div className="absolute inset-0 z-0">
-        <FloatingShape className="text-orange-200">
+        <FloatingShape className="text-orange-200" animationDuration={6}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
             <circle cx="20" cy="20" r="20" />
           </svg>
         </FloatingShape>
-        <FloatingShape className="text-orange-200">
+        <FloatingShape className="text-orange-200" animationDuration={7}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
             <path d="M20 0 L40 30 L0 30 Z" />
           </svg>
         </FloatingShape>
-        <FloatingShape className="text-orange-200">
+        <FloatingShape className="text-orange-200" animationDuration={8}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
             <rect width="40" height="40" />
           </svg>
         </FloatingShape>
-        <FloatingShape className="text-blue-300" animationDuration={25}>
+        <FloatingShape className="text-blue-300" animationDuration={9}>
           <ReactLogo className="w-16 h-16" />
         </FloatingShape>
-        <FloatingShape className="text-green-200" animationDuration={30}>
+        <FloatingShape className="text-green-200" animationDuration={10}>
           <CurvedLine className="w-24 h-24" />
         </FloatingShape>
-        <FloatingShape className="text-red-200" animationDuration={35}>
+        <FloatingShape className="text-red-200" animationDuration={11}>
           <CurvedLine className="w-32 h-32 transform rotate-90" />
         </FloatingShape>
       </div>
 
-      <header className="container mx-auto px-4 py-4 flex justify-between items-center relative z-10">
+      {/* Header with improved margins */}
+      <header className="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center relative z-10">
         <div className="flex items-center space-x-4">
           <Link href="/" className="text-2xl font-bold">
             #<span className="text-red-600">13</span>
@@ -114,7 +125,9 @@ export default function Hero() {
         </div>
         <Button variant="destructive">Login/Register</Button>
       </header>
-      <main className="container mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row items-center relative z-10">
+
+      {/* Main content with improved margins */}
+      <main className="max-w-7xl mx-auto px-6 lg:px-8 py-12 md:py-24 flex flex-col md:flex-row items-center relative z-10">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
             Upskill to <span className="text-red-600 underline">future-proof</span> your career with our industry-relevant technology training programs!
@@ -122,8 +135,8 @@ export default function Hero() {
           <p className="text-gray-600 mb-6">
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
           </p>
-          <div className="flex">
-            <Input type="email" placeholder="Enter your email" className="mr-2" />
+          <div className="flex space-x-3">
+            <Input type="email" placeholder="Enter your email" className="max-w-xs" />
             <Button variant="destructive">Get Started Now</Button>
           </div>
         </div>
@@ -141,7 +154,7 @@ export default function Hero() {
             ))}
           </div>
           <Image
-            src="/placeholder.svg?height=400&width=300"
+            src="/assets/videocall.jpg"
             alt="Featured instructor"
             width={300}
             height={400}
