@@ -103,7 +103,7 @@ export default function Hero() {
       <header className="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center relative z-10">
         <div className="flex items-center space-x-4">
           <Link href="/" className="text-2xl font-bold">
-            #<span className="text-red-600">13</span>
+            <span className="text-red-600">#13</span>
           </Link>
           <nav className="hidden md:flex space-x-4">
             <Link href="/" className="text-gray-600 hover:text-gray-900">
