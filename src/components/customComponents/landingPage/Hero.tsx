@@ -132,12 +132,17 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
             Upskill to <span className="text-red-600 underline">future-proof</span> your career with our industry-relevant technology training programs!
           </h1>
+          {/* a div for formating p tag  */}
+
+          <div className='w-1/2'>
           <p className="text-gray-600 mb-6">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered. dgfhdgf dgdgfd fdfd dg dg There are many variations of passages of Lorem
           </p>
+       
           <div className="flex space-x-3">
             <Input type="email" placeholder="Enter your email" className="max-w-xs" />
             <Button variant="destructive">Get Started Now</Button>
+            </div>
           </div>
         </div>
         <div className="md:w-1/2 relative">
