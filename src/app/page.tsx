@@ -6,12 +6,14 @@ import PopularTopic from "@/components/customComponents/landingPage/PopularTopic
 import BlogSection from "@/components/customComponents/landingPage/Blog";
 import Testimonials from "@/components/customComponents/landingPage/Testimonials";
 import Subscribe from "@/components/customComponents/landingPage/SubscribeNewsLatter";
+import CoursesComponent from "@/components/customComponents/landingPage/Courses";
 export default function Home() {
   return (
 <>
 <Hero></Hero>
 <About></About>
 <CoreFeature></CoreFeature>
+<CoursesComponent></CoursesComponent>
 <Subscribe></Subscribe>
 <PopularTopic></PopularTopic>
 <Testimonials></Testimonials>
