@@ -1,0 +1,93 @@
+import React from 'react';
+import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { BookOpen } from 'lucide-react';
+
+const BlogSection = () => {
+  const blogs = [
+    {
+      id: 1,
+      title: 'Professional Mobile Painting and Sculpting',
+      category: 'Education',
+      author: 'Admin',
+      date: 'Jan 29 2022',
+      image: '/assets/landingPageBlog.jpg'
+    },
+    {
+      id: 2,
+      title: 'Professional Ceramic Moulding for Beginners',
+      category: 'Education',
+      author: 'Admin',
+      date: 'Jan 29 2022',
+      image: '/assets/landingPageBlog2.jpg'
+    },
+    {
+      id: 3,
+      title: 'Education Is About Create Leaders For Tomorrow',
+      category: 'Education',
+      author: 'Admin',
+      date: 'Jan 29 2022',
+      image: '/assets/landingPageBlog3.jpg'
+    }
+  ];
+
+  return (
+    <div className="container mx-auto px-4 py-12">
+      {/* Header Section */}
+      <div className="flex justify-between items-center mb-8">
+        <div>
+          <p className="text-teal-500 mb-2 flex items-center gap-2">
+            <BookOpen className="w-5 h-5" />
+            Team Member
+          </p>
+          <h2 className="text-3xl font-bold">
+            Our Latest <span className="text-red-500 relative">
+              Blogs
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-red-500 rounded-full transform translate-y-1"></span>
+            </span>
+          </h2>
+        </div>
+        <Button variant="destructive">
+          Read All Blogs
+        </Button>
+      </div>
+
+      {/* Blog Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {blogs.map((blog) => (
+          <Card key={blog.id} className="overflow-hidden">
+            <img 
+              src={blog.image} 
+              alt={blog.title}
+              className="w-full h-48 object-cover"
+            />
+            <CardContent className="p-4">
+              <div className="mb-4">
+                <Badge variant="secondary" className="bg-teal-100 text-teal-600 hover:bg-teal-200">
+                  {blog.category}
+                </Badge>
+              </div>
+              <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                <span className="flex items-center gap-1">
+                  <BookOpen className="w-4 h-4" /> {blog.author}
+                </span>
+                <span>{blog.date}</span>
+              </div>
+              <h3 className="font-semibold text-lg mb-4 line-clamp-2">
+                {blog.title}
+              </h3>
+            </CardContent>
+            <CardFooter className="p-4 pt-0">
+              <Button variant="link" className="p-0 text-red-500 hover:text-red-600">
+                Read More
+              </Button>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default BlogSection;
