@@ -10,6 +10,7 @@ import floatingBook from "../../../../public/assets/landingPage/floatingBook.svg
 import floatingReactLogo from "../../../../public/assets/landingPage/floatingReactLogo.svg"
 import floatingHaflCercle from "../../../../public/assets/landingPage/floatingHaflCercle.svg"
 import floatingGlobe from "../../../../public/assets/landingPage/floatingGlobe.svg"
+import LeftHero from './ui/LeftLandingPage'
 const FloatingShape = ({ children, className, animationDuration = 8 }: any) => {
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
@@ -156,21 +157,11 @@ export default function Hero() {
 
 
       {/* Main content */}
-      <main className="max-w-7xl mx-auto px-6 lg:px-8 py-8 md:py-24 flex flex-col md:flex-row items-center relative z-10">
+      <main className="max-w-7xl mx-auto px-6 lg:px-8 pt-4 md:pt-8 pb-8 flex flex-col md:flex-row items-center relative z-10">
+
         {/* Left content */}
         <div className="md:w-1/2 mb-8 md:mb-0">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Upskill to <span className="text-red-600 underline">future-proof</span> your career with our industry-relevant technology training programs!
-          </h1>
-          <div className="w-3/4">
-            <p className="text-gray-600 mb-6">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered. There are many variations of passages of Lorem
-            </p>
-            <div className="flex space-x-3">
-              <Input type="email" placeholder="Enter your email" className="max-w-xs" />
-              <Button variant="destructive">Get Started Now</Button>
-            </div>
-          </div>
+<LeftHero></LeftHero>
         </div>
 
         {/* Right content with video grid and instructor */}
