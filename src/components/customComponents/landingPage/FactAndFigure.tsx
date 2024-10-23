@@ -38,7 +38,7 @@ const features = [
 
 // Define different widths for the cards
 const cardWidths = [
-  { width: '300px' },
+  { width: '350px' },
   { width: '500px' },
   { width: '400px' },
   { width: '400px' },
@@ -67,7 +67,7 @@ export default function FactsAndFigure() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`bg-white p-6 rounded-lg shadow-lg flex justify-between items-center relative border-b border-gray-200`}
+              className={`bg-white p-6 rounded-lg shadow-lg flex justify-between items-center relative border-b border-gray-200 card`}
               style={{
                 width: cardWidths[index]?.width,
                 borderTop: 'solid transparent',
@@ -102,6 +102,34 @@ export default function FactsAndFigure() {
               </div>
             </div>
           ))}
+
+          {/* Extra CSS for the last card */}
+          <style jsx>{`
+            .card:last-child {
+              position: relative;
+              border-top: 2px solid red; /* Horizontal top line */
+            }
+
+            .card:last-child::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: red; /* Horizontal line over the last card */
+            }
+
+            .card:last-child::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 2px;
+              height: 100%;
+              background-color: red; /* Vertical line over the last card */
+            }
+          `}</style>
         </div>
       </div>
     </div>
