@@ -42,7 +42,7 @@ const About = () => {
                   {/* <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M12 4 L20 12 L12 20" stroke="#FCD34D" strokeWidth="2" fill="none" />
                   </svg> */}
-                  <Image src={yerrowArrow} alt="yellow Aorrow " width={50} height={50}></Image>
+                  <Image src={yerrowArrow} alt="yellow Arrow " width={50} height={50}></Image>
                   {/* {yerrowArrow} */}
                 </div>
               </div>
@@ -73,8 +73,8 @@ const About = () => {
               </div>
 
               {/* Trained Teachers Card - Refined to match Figma */}
-              <div className="w-1/3">
-                <Card className="bg-white shadow-sm border-0">
+              <div className="w-1/3 ">
+                <Card className="bg-white shadow-lg border-0 h-full rounded-lg">
                   <CardHeader className="p-3">
                     <div className="flex items-center gap-2">
                       <div className="rounded-full bg-gradient-to-br from-emerald-400 to-sky-400 p-1">
@@ -84,9 +84,17 @@ const About = () => {
                     </div>
                   </CardHeader>
                   <CardContent className="p-3 pt-0">
+                    
+                   
                     <div className="space-y-1">
                       <div className="h-1 w-full rounded-full bg-gray-100" />
-                      <div className="h-1 w-3/4 rounded-full bg-gray-100" />
+                      <div className="h-4 w-3/4 rounded-full bg-gray-100" />
+                      <div className="h-1 w-1/2 rounded-full bg-gray-100" />
+                    </div>
+
+                    <div className="space-y-1">
+                      <div className="h-1 w-full rounded-full bg-gray-100" />
+                      <div className="h-4 w-3/4 rounded-full bg-gray-100" />
                       <div className="h-1 w-1/2 rounded-full bg-gray-100" />
                     </div>
                   </CardContent>
