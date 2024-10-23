@@ -1,102 +1,132 @@
-"use client"
+"use client";
 
-import { useState, useRef, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader,CardFooter  } from "@/components/ui/card"
-import { Clock, Star, BookOpen } from "lucide-react"
+import { useState, useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card";
+import { Clock, Star, BookOpen } from "lucide-react";
 
 interface Course {
-  category: string
-  learners: string
-  title: string
-  lessons: number
-  duration: string
-  rating: number
-  imageUrl: string
+  category: string;
+  learners: string;
+  title: string;
+  lessons: number;
+  duration: string;
+  rating: number;
+  imageUrl: string;
 }
 
 interface CardPosition {
-  isRightmost: boolean
+  isRightmost: boolean;
 }
 
 const courses = [
   {
     category: "Art & Design",
-    learners:"9K",
+    learners:"9k",
     title: "Basic Fundamentals of Interior & Graphics Design",
     lessons: 2,
-    duration: "4h",
-    rating: 4.8,
-    imageUrl: "/assets/landingPageBlog.jpg",
+    duration: "4",
+    rating: 5,
+    imageUrl: "/assets/cources/Courses-banner.jpg",
   },
   {
     category: "Development",
-    learners:"9K",
+    learners:"9k",
     title: "Increasing Engagement with Instagram & Facebook",
     lessons: 2,
-    duration: "4h",
-    rating: 4.8,
-    imageUrl: "/assets/landingPageBlog2.jpg",
+    duration: "4",
+    rating: 3.5,
+    imageUrl: "/assets/cources/Courses-banner1.jpg",
   },
   {
     category: "Drawing",
-    learners:"9K",
+    learners:"9k",
     title: "Introduction to Color Theory & Basic UI/UX",
     lessons: 2,
-    duration: "4h",
-    rating: 4.8,
+    duration: "4",
+    rating: 2,
     imageUrl: "/assets/landingPageBlog.jpg",
   },
   {
     category: "Technology",
-    learners:"9K",
+    learners:"9k",
     title: "Financial Security Thinking and Principles Theory",
     lessons: 2,
-    duration: "4h",
+    duration: "4",
     rating: 4.8,
     imageUrl: "/assets/landingPageBlog3.jpg",
   },
   {
     category: "Data Science",
-    learners:"9K",
+    learners:"9k",
     title: "Logo Design: From Concept to Presentation",
     lessons: 2,
-    duration: "4h",
+    duration: "4",
     rating: 4.8,
     imageUrl: "/assets/landingPageBlog.jpg",
   },
   {
     category: "Development",
-    learners:"9K",
+    learners:"9k",
     title: "Professional Ceramic Moulding for Beginners",
     lessons: 2,
-    duration: "4h",
+    duration: "4",
     rating: 4.8,
     imageUrl: "/assets/landingPageBlog2.jpg",
   },
 ]
 
 
-function CardComponent({ 
-  course, 
-  index, 
-  isHovered, 
-  onHover, 
-  position 
-}: { 
-  course: Course
-  index: number
-  isHovered: boolean
-  onHover: (index: number | null) => void
-  position: CardPosition
+// Utility function to render stars based on the rating
+const renderStars = (rating: number) => {
+  const fullStars = Math.floor(rating); // Number of full stars
+  const halfStar = rating % 1 !== 0; // Determine if a half star is needed
+  const totalStars = 5;
+
+  const stars = [];
+
+  for (let i = 0; i < fullStars; i++) {
+    stars.push(
+      <Star key={i} className="h-4 w-4 text-yellow-400" />
+    );
+  }
+
+  if (halfStar) {
+    stars.push(
+      <Star key="half" className="h-4 w-4 text-yellow-400 opacity-50" />
+    );
+  }
+
+  const emptyStars = totalStars - stars.length;
+  for (let i = 0; i < emptyStars; i++) {
+    stars.push(
+      <Star key={i + fullStars + 1} className="h-4 w-4 text-gray-300" />
+    );
+  }
+
+  return stars;
+};
+
+function CardComponent({
+  course,
+  index,
+  isHovered,
+  onHover,
+  position,
+}: {
+  course: Course;
+  index: number;
+  isHovered: boolean;
+  onHover: (index: number | null) => void;
+  position: CardPosition;
 }) {
   return (
-    <div 
+    <div
       className="relative"
       onMouseEnter={() => onHover(index)}
       onMouseLeave={() => onHover(null)}
     >
-      <Card className={`max-w-sm overflow-hidden transition-all duration-300 ease-in-out ${isHovered ? 'z-20' : 'z-10'}`}>
+      <Card className={`max-w-sm overflow-hidden transition-all duration-300 ease-in-out ${isHovered ? "z-20" : "z-10"}`}>
         <CardHeader className="p-0 relative">
           <img className="w-full h-48 object-cover" src={course.imageUrl} alt={course.title} />
           {isHovered && (
@@ -116,46 +146,39 @@ function CardComponent({
 
             <div className="flex items-center text-muted-foreground">
               <Clock className="h-4 w-4 mr-1" />
-              <span>{course.duration}+ hrs of learning</span>
+              <span>{course.duration}+hrs of learning</span>
             </div>
-
           </div>
-         
+
           <div className="flex items-center justify-between text-sm mb-2">
             <div className="flex items-center text-muted-foreground">
               <Clock className="h-4 w-4 mr-1" />
               <span>{course.learners} learners</span>
             </div>
 
-            <div className="flex items-center text-muted-foreground">
-            <Star className="h-4 w-4 mr-1 text-yellow-400" />
-            <span>{course.rating}</span>
+            <div className="flex items-center text-yellow-400">
+              {/* Render stars dynamically based on course rating */}
+              {renderStars(course.rating)}
+              <span className="ml-2 text-gray-600">{course.rating}</span>
             </div>
           </div>
-          
         </CardContent>
         <CardFooter className="px-6 pb-6 pt-0">
           <Button className="w-full bg-red-500 font-bold text-1xl" variant="default">
-          Invest
+            Invest
           </Button>
         </CardFooter>
       </Card>
 
-      {isHovered && (
-        <HoverCard course={course} position={position} />
-      )}
+      {isHovered && <HoverCard course={course} position={position} />}
     </div>
-  )
+  );
 }
 
-function HoverCard({ course, position }: { course: Course, position: CardPosition }) {
+function HoverCard({ course, position }: { course: Course; position: CardPosition }) {
   return (
-    <div 
-      className={`
-        absolute top-0 w-64 bg-white shadow-lg p-4 rounded-lg z-30
-        transition-all duration-300 ease-in-out
-        ${position.isRightmost ? 'right-full mr-4' : 'left-full ml-4'}
-      `}
+    <div
+      className={`absolute top-0 w-64 bg-white shadow-lg p-4 rounded-lg z-30 transition-all duration-300 ease-in-out ${position.isRightmost ? "right-full mr-4" : "left-full ml-4"}`}
     >
       <h3 className="text-xl font-bold mb-2 line-clamp-2">{course.title}</h3>
       <p className="text-sm text-muted-foreground mb-4">{course.category}</p>
@@ -173,52 +196,45 @@ function HoverCard({ course, position }: { course: Course, position: CardPositio
           {course.learners} learners
         </p>
         <div className="flex items-center text-yellow-400">
-          <Star className="h-4 w-4 mr-2" />
-          <span>{course.rating}</span>
+          {renderStars(course.rating)}
+          <span className="ml-2">{course.rating}</span>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default function CoursesComponent() {
-  const [hoveredCourseIndex, setHoveredCourseIndex] = useState<number | null>(null)
-  const gridRef = useRef<HTMLDivElement>(null)
+  const [hoveredCourseIndex, setHoveredCourseIndex] = useState<number | null>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
 
   const getCardPosition = (index: number): CardPosition => {
-    if (!gridRef.current) return { isRightmost: false }
-    
-    const gridColumns = window.getComputedStyle(gridRef.current)
-      .gridTemplateColumns.split(' ').length
-    
+    if (!gridRef.current) return { isRightmost: false };
+
+    const gridColumns = window.getComputedStyle(gridRef.current).gridTemplateColumns.split(" ").length;
+
     // Check if card is in the last column
-    const isRightmost = (index + 1) % gridColumns === 0
-    
-    return { isRightmost }
-  }
+    const isRightmost = (index + 1) % gridColumns === 0;
+
+    return { isRightmost };
+  };
 
   return (
     <div className="container max-w-7xl mx-auto px-6 lg:px-14 py-8">
       <div className="text-center mb-10">
         <h2 className="text-sm text-muted-foreground mb-2 text-teal-500">Popular Courses</h2>
         <h1 className="text-3xl font-bold">
-          Choose Our Top <span className="text-red-500 relative">
+          Choose Our Top{" "}
+          <span className="text-red-500 relative">
             Courses
             <span className="absolute bottom-0 left-0 w-full h-1 bg-red-500"></span>
           </span>
         </h1>
       </div>
 
-      <div 
-        ref={gridRef}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative"
-      >
+      <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
         {courses.map((course, index) => (
-          <div 
-            key={index} 
-            className="relative" 
-            style={{ zIndex: hoveredCourseIndex === index ? 20 : 10 }}
-          >
+          <div key={index} className="relative" style={{ zIndex: hoveredCourseIndex === index ? 20 : 10 }}>
             <CardComponent
               course={course}
               index={index}
@@ -236,5 +252,5 @@ export default function CoursesComponent() {
         </Button>
       </div>
     </div>
-  )
+  );
 }
