@@ -45,7 +45,7 @@ const cardWidths = [
 
 export default function FactsAndFigure() {
   return (
-    <div className="container mx-auto max-w-7xl py-12 px-6 lg:px-14">
+    <div className="container mx-auto max-w-7xl py-12 pt-0 px-6 lg:px-14">
       <div className="flex flex-col lg:flex-row items-start">
         {/* Left Side Section */}
         <div className="mb-8 lg:mb-0 pr-8 sticky top-12 flex flex-col items-center w-200">
