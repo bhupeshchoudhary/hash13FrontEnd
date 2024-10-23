@@ -3,6 +3,7 @@ import { Video, Globe } from "lucide-react";
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import AboutScroll from './ui/AboutScroll';
+import yerrowArrow from "../../../../public/assets/landingPage/floatingCurveArrow.svg"
 const About = () => {
   return (
     <div className="min-h-screen lg:px-14 bg-white p-8 relative overflow-hidden">
@@ -37,10 +38,12 @@ const About = () => {
                   />
                 </div>
                 {/* Yellow Arrow - Refined position */}
-                <div className="absolute -right-3 top-1/2 transform -translate-y-1/2">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <div className="absolute -right-3 top-3/4 transform -translate-y-1/2">
+                  {/* <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M12 4 L20 12 L12 20" stroke="#FCD34D" strokeWidth="2" fill="none" />
-                  </svg>
+                  </svg> */}
+                  <Image src={yerrowArrow} alt="yellow Aorrow " width={50} height={50}></Image>
+                  {/* {yerrowArrow} */}
                 </div>
               </div>
 
