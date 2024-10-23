@@ -1,37 +1,36 @@
 "use client";
 import Image from 'next/image';
 import { Button } from "@/components/ui/button";
-import Asset18 from "../../../../public/assets/landingPage/Asset 18.svg";
 
 const features = [
   {
     number: "100+",
     title: "Technical Programs",
     description: "Industry relevant content with real use cases",
-    image: "/assets/landingPage/Asset 18.svg"
+    image: "/assets/FactsAndFigure/100+.png"
   },
   {
     number: "1M+",
     title: "Students Taught",
     description: `Technical students lives changed <br> from across the globe`,
-    image: "/placeholder.svg?height=120&width=180"
-  },
-  {
-    number: "22+",
-    title: "Years of Experience",
-    description: "Learn from the Mentor having world Records",
-    image: "/placeholder.svg?height=120&width=180"
+    image: "/assets/FactsAndFigure/1-M.png"
   },
   {
     number: "65k+",
     title: "IT Professionals",
     description: "Working in various companies across the globe benefitted",
-    image: "/placeholder.svg?height=120&width=180"
+    image: "/assets/FactsAndFigure/65k-professionals.png"
   },
   {
     number: "200+",
     title: "Companies Benefited",
     description: "With our technology-based services",
+    image: "/assets/FactsAndFigure/200+.png"
+  },
+  {
+    number: "300+",
+    title: "Industry Problems",
+    description: "Get job-ready with practical knowledge & real-world experience",
     image: "/placeholder.svg?height=120&width=180"
   }
 ];
@@ -67,13 +66,14 @@ export default function FactsAndFigure() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`bg-white p-6 rounded-lg shadow-lg flex justify-between items-center relative border-b border-gray-200 card`}
+              className={`bg-white p-6 rounded-lg shadow-lg flex justify-between items-center relative border-b border-gray-200`}
               style={{
                 width: cardWidths[index]?.width,
                 borderTop: 'solid transparent',
                 boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 20px rgba(0, 0, 0, 0.05)'
               }}
             >
+              {/* Container for Feature Data */}
               <div className="flex-1 mr-4">
                 <h3 className="text-3xl font-bold mb-2">{feature.number}</h3>
                 <h4
@@ -91,7 +91,9 @@ export default function FactsAndFigure() {
                   dangerouslySetInnerHTML={{ __html: feature.description }}
                 ></p>
               </div>
-              <div className="flex-shrink-0">
+              
+              {/* Container for Feature Image */}
+              <div className="flex-shrink-0 p-0">
                 <Image
                   src={feature.image}
                   alt={feature.title}
@@ -102,34 +104,6 @@ export default function FactsAndFigure() {
               </div>
             </div>
           ))}
-
-          {/* Extra CSS for the last card */}
-          <style jsx>{`
-            .card:last-child {
-              position: relative;
-              border-top: 2px solid red; /* Horizontal top line */
-            }
-
-            .card:last-child::before {
-              content: '';
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 2px;
-              background-color: red; /* Horizontal line over the last card */
-            }
-
-            .card:last-child::after {
-              content: '';
-              position: absolute;
-              top: 0;
-              right: 0;
-              width: 2px;
-              height: 100%;
-              background-color: red; /* Vertical line over the last card */
-            }
-          `}</style>
         </div>
       </div>
     </div>

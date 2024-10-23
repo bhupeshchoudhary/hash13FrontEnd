@@ -28,7 +28,7 @@ const CoreFeature = () => {
   return (
     <div className="w-full lg:px-14 min-h-screen mx-auto px-6 bg-[#fff6f4] relative overflow-hidden">
       {/* Decorative Elements */}
-      <div className="absolute top-12 left-12">
+      <div className="absolute top-8 left-12">
         <div className="relative w-6 h-6">
           <div className="absolute w-4 h-px bg-red-200 rotate-45 right-0"></div>
           <div className="absolute h-4 w-px bg-red-200 rotate-45 right-0.5"></div>
@@ -44,10 +44,10 @@ const CoreFeature = () => {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-4 py-20">
+      <div className="max-w-6xl mx-auto px-4 py-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-cyan-400 text-sm font-medium tracking-wide mb-3">Core Features</p>
+        <div className="text-center mb-10">
+          <p className="text-cyan-400 text-sm font-medium tracking-wide mb">Core Features</p>
           <h2 className="text-[32px] font-bold text-gray-800">
             Why <span className="text-red-500">Choose</span> #13
           </h2>
