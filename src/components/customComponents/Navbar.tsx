@@ -1,40 +1,56 @@
-import React from "react"
-import Link from "next/link"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
+import Link from 'next/link'
+import Image from 'next/image' // Import Image from next/image
+import { ChevronDown } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import logo from '../../../public/assets/landingPage/logohash13.svg.svg' // Imported logo
 
-const Navbar = ()=>{
-    return (
-    <>
-     <header className="max-w-7xl bg-[#fff6f4] mx-auto px-6 lg:px-8 py-4 flex justify-between items-center relative z-10">
-        <div className="flex items-center space-x-4">
-          <Link href="/" className="text-2xl font-bold">
-            <span className="text-red-600">#13</span>
-          </Link>
-          <nav className="hidden md:flex space-x-4">
-            <Link href="/" className="text-gray-600 hover:text-gray-900">
-              Home
-            </Link>
-            <Link href="/masterclasses" className="text-gray-600 hover:text-gray-900">
-              Masterclasses
-            </Link>
-            <Link href="/courses" className="text-gray-600 hover:text-gray-900">
-              Courses
-            </Link>
-            <Link href="/blog" className="text-gray-600 hover:text-gray-900">
-              Blog
-            </Link>
-            <Link href="/contacts" className="text-gray-600 hover:text-gray-900">
-              Contacts
-            </Link>
+export default function Navbar() {
+  return (
+    <header className="w-full max-w-7xl px-6 lg:px-14 shadow-2xl overflow-hidden h-16 position: sticky;"> {/* Fixed height for the navbar */}
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between h-full"> {/* Full height for content */}
+        <Link href="/">
+          <div className="h-full"> {/* Ensure the logo fits within the navbar height */}
+            <Image
+              src={logo}
+              alt="hash13 logo"
+              width={50}  // Increase width as needed
+              height={50} // Increase height as needed
+              className="object-contain h-full" // Ensure the logo fits within the navbar's height
+              priority     // Optional: Preloads the image for performance
+            />
+          </div>
+        </Link>
+
+        <div className="flex-1 flex justify-end items-center space-x-6 h-full">
+          <nav className="hidden md:flex items-center space-x-6 h-full">
+            <div className="relative group">
+              <button className="flex items-center space-x-1 text-sm">
+                <span>For working professionals</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+            </div>
+            <div className="relative group">
+              <button className="flex items-center space-x-1 text-sm">
+                <span>For college students</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+            </div>
+            <div className="relative group">
+              <button className="flex items-center space-x-1 text-sm">
+                <span>More</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+            </div>
           </nav>
+
+          <div className="flex items-center space-x-4 h-full">
+            <Button variant="outline" className="hidden md:inline-flex">
+              Free Courses
+            </Button>
+            <Button className="bg-red-500 text-white hover:bg-red-600">Sign Up</Button>
+          </div>
         </div>
-        <Button variant="destructive">Login/Register</Button>
-      </header>
-    </>
-    )
-
-}
-
-export default Navbar
-
+      </div>
+    </header>
+  );
+};

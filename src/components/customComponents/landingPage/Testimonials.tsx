@@ -47,7 +47,7 @@ const testimonials = [
 
 const Testimonials: React.FC = () => {
   return (
-    <div className="container flex flex-col px-6 lg:px-8 mx-auto  py-16 bg-black text-white overflow-hidden">
+    <div className="container flex flex-col px-6 lg:px-14 mx-auto  py-16 bg-black text-white overflow-hidden">
       <div className="flex flex-col md:flex-row mb-12"> {/* Flex container for content and testimonials */}
         {/* Content section wrapped in a card-like div */}
         <div className="w-full"> {/* Full-width wrapper for testimonial cards */}

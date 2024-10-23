@@ -1,7 +1,15 @@
-import React from 'react';
+"use state"
+import React, { useState } from 'react';
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 // JSON data
 const jsonData = {
@@ -24,10 +32,50 @@ const jsonData = {
   community: {
     text: "Join the community of",
     learnersCount: "10,800,359"
-  }
+  },
+  interests: [
+    { icon: "🎓", label: "MBA" },
+    { icon: "📢", label: "Marketing" },
+    { icon: "⚖️", label: "Law" },
+    { icon: "🎓", label: "Doctorate" },
+    { icon: "🤖", label: "AI & ML" },
+    { icon: "📊", label: "Management" },
+    { icon: "📈", label: "Data Science" },
+    { icon: "💻", label: "Software & Tech" }
+  ]
+};
+
+const InterestDialog = ({ isOpen, onClose }:any) => {
+  return (
+    <Dialog open={isOpen} onOpenChange={onClose}>
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle>Select your area of interest</DialogTitle>
+        </DialogHeader>
+        <div className="grid grid-cols-2 gap-4 py-4">
+          {jsonData.interests.map((interest, index) => (
+            <Button
+              key={index}
+              variant="outline"
+              className="h-24 flex flex-col items-center justify-center text-center"
+              onClick={() => {
+                console.log(`Selected: ${interest.label}`);
+                onClose();
+              }}
+            >
+              <span className="text-2xl mb-2">{interest.icon}</span>
+              <span>{interest.label}</span>
+            </Button>
+          ))}
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
 };
 
 const LeftHero = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   return (
     <div className="max-w-4xl mx-auto px-4 pt-16 pb-8">
       {/* Main heading */}
@@ -64,6 +112,7 @@ const LeftHero = () => {
               key={index}
               variant="outline"
               className="rounded-xl shadow-sm border-2 hover:bg-gray-50"
+              onClick={() => setIsDialogOpen(true)}
             >
               {goal}
             </Button>
@@ -76,6 +125,9 @@ const LeftHero = () => {
         {jsonData.community.text}{" "}
         <span className="text-red-500 font-medium">{jsonData.community.learnersCount}</span> learners.
       </div>
+
+      {/* Interest Dialog */}
+      <InterestDialog isOpen={isDialogOpen} onClose={() => setIsDialogOpen(false)} />
     </div>
   );
 };

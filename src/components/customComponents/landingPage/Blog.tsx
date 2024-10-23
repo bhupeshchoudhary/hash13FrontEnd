@@ -33,7 +33,7 @@ const BlogSection = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-6 lg:px-14 max-w-7xl py-12">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-8">
         <div>

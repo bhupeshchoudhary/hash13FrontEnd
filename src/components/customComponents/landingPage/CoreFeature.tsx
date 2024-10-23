@@ -1,31 +1,32 @@
 import React from 'react';
-import { Card, CardContent } from "@/components/ui/card";
-import { Globe, User, Clock } from "lucide-react";
+import { User2, GraduationCap, MonitorPlay, Video, Globe } from 'lucide-react';
+
+interface CardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  bgColor: string;
+  iconBgColor: string;
+  textColor: string;
+}
+
+const Card: React.FC<CardProps> = ({ icon, title, description, bgColor, iconBgColor, textColor }) => (
+  <div className={`w-64 h-60 rounded-2xl shadow-lg ${bgColor} ${textColor} flex flex-col items-center text-center overflow-hidden`}>
+    <div className="w-full h-1/2 flex items-center justify-center">
+      <div className={`rounded-lg p-3 ${iconBgColor} flex items-center justify-center`}>
+        {icon}
+      </div>
+    </div>
+    <div className="w-full h-1/2 p-4 flex flex-col justify-center">
+      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <p className="text-sm">{description}</p>
+    </div>
+  </div>
+);
 
 const CoreFeature = () => {
-  const features = [
-    {
-      icon: Globe,
-      title: "Learn More Anywhere",
-      description: "Learn from anywhere in world on desktop, mobile or tablet with an Internet connection.",
-      bgColor: "bg-white"
-    },
-    {
-      icon: User,
-      title: "Expert Instructor",
-      description: "Learn from anywhere in world on desktop, mobile or tablet with an Internet connection.",
-      bgColor: "bg-red-500"
-    },
-    {
-      icon: Clock,
-      title: "24/7 Strong Support",
-      description: "Learn from anywhere in world on desktop, mobile or tablet with an Internet connection.",
-      bgColor: "bg-white"
-    }
-  ];
-
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-pink-50/30 via-white to-pink-50/20 relative overflow-hidden">
+    <div className="w-full lg:px-14 min-h-screen mx-auto px-6 bg-[#fff6f4] relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-12 left-12">
         <div className="relative w-6 h-6">
@@ -33,11 +34,11 @@ const CoreFeature = () => {
           <div className="absolute h-4 w-px bg-red-200 rotate-45 right-0.5"></div>
         </div>
       </div>
-      
+
       <div className="absolute bottom-20 left-20">
         <Globe className="w-24 h-24 text-red-100/20" />
       </div>
-      
+
       <div className="absolute top-40 right-20">
         <div className="w-10 h-10 rounded-full border border-red-100/30"></div>
       </div>
@@ -53,51 +54,39 @@ const CoreFeature = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <Card 
-                key={index} 
-                className={`${feature.bgColor} border-none ${
-                  index === 1 
-                    ? 'shadow-lg text-white' 
-                    : 'shadow-md text-gray-600'
-                } transition-all duration-200 hover:shadow-xl`}
-              >
-                <CardContent className="p-8">
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-5 ${
-                    index === 1 
-                      ? 'bg-red-400' 
-                      : 'bg-cyan-50'
-                  }`}>
-                    <Icon 
-                      className={`w-5 h-5 ${
-                        index === 1 
-                          ? 'text-white' 
-                          : 'text-cyan-400'
-                      }`} 
-                      strokeWidth={1.5}
-                    />
-                  </div>
-                  <h3 className={`text-lg font-bold mb-3 ${
-                    index === 1 
-                      ? 'text-white' 
-                      : 'text-gray-800'
-                  }`}>
-                    {feature.title}
-                  </h3>
-                  <p className={`text-[15px] leading-relaxed ${
-                    index === 1 
-                      ? 'text-white/90' 
-                      : 'text-gray-500'
-                  }`}>
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            );
-          })}
+        <div className="flex flex-wrap justify-center gap-6">
+          <Card
+            icon={<User2 className="w-12 h-12 text-white" />}
+            title="Skillful Instructors"
+            description="Start learning from experienced instructors."
+            bgColor="bg-white"
+            iconBgColor="bg-blue-400"
+            textColor="text-gray-800"
+          />
+          <Card
+            icon={<GraduationCap className="w-12 h-12 text-white" />}
+            title="Happy Students"
+            description="Enrolled in our courses and improved their skills."
+            bgColor="bg-white"
+            iconBgColor="bg-pink-500"
+            textColor="text-gray-800"
+          />
+          <Card
+            icon={<MonitorPlay className="w-12 h-12 text-white" />}
+            title="Live Classes"
+            description="Improve your skills using live knowledge flow."
+            bgColor="bg-white"
+            iconBgColor="bg-green-400"
+            textColor="text-gray-800"
+          />
+          <Card
+            icon={<Video className="w-12 h-12 text-white" />}
+            title="Video Courses"
+            description="Learn without any geographical & time limitations."
+            bgColor="bg-white"
+            iconBgColor="bg-red-400"
+            textColor="text-gray-800"
+          />
         </div>
       </div>
     </div>

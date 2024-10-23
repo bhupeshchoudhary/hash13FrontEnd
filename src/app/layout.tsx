@@ -4,6 +4,13 @@ import "./globals.css";
 import Footer from "@/components/customComponents/landingPage/Footer";
 import Navbar from "@/components/customComponents/Navbar";
 
+
+// Import Poppins SemiBold as a local font
+const poppinsSemiBold = localFont({
+  src: "./fonts/Poppins-SemiBold.ttf",
+  variable: "--font-poppins-semi-bold",
+  weight: "600",
+});
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -28,12 +35,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${poppinsSemiBold.variable} antialiased`}
       >
+
+
 
   <Navbar></Navbar>
         {children}
         <Footer></Footer>
+
 
       </body>
     </html>

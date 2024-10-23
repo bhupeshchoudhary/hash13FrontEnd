@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-black px-6 lg:px-8 overflow-hidden text-white py-16 ">
+    <footer className="bg-black px-6 lg:px-14 overflow-hidden text-white py-16 ">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Left Section */}
         <div>
@@ -16,13 +16,14 @@ const Footer = () => {
           </p>
           <div className="flex space-x-4">
             <a href="#" className="bg-gray-700 p-3 rounded">
-              <FaFacebookF />
+            <FaLinkedinIn />
+             
             </a>
             <a href="#" className="bg-gray-700 p-3 rounded">
               <FaTwitter />
             </a>
             <a href="#" className="bg-gray-700 p-3 rounded">
-              <FaLinkedinIn />
+            <FaFacebookF />
             </a>
           </div>
         </div>
@@ -71,7 +72,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto mt-16 text-center text-gray-400">
-        <p>© Copyright 2024 Hah13 | Designed & Developed by LinuxWorld | All Rights Reserved</p>
+        <p>© Copyright 2024 Hah13 | Designed & Developed with ❤️ by LinuxWorld | All Rights Reserved</p>
       </div>
     </footer>
   );
