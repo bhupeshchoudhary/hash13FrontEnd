@@ -11,7 +11,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, avatar }) => {
   return (
-    <div className="bg-white border border-gray-300 rounded-xl shadow-lg mb-6 p-4 w-72"> {/* Adjusted padding and width here */}
+    <div className="bg-white border border-gray-300 rounded-xl shadow-lg mb-6 p-2 w-68"> {/* Adjusted padding and width here */}
       <CardContent>
         {/* Added starting double quotes and styling */}
         <p className="text-sm text-gray-600 mb-6 relative">

@@ -53,7 +53,7 @@ const Testimonials: React.FC = () => {
         <div className="w-full"> {/* Full-width wrapper for testimonial cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"> {/* Updated for 4 columns */}
             {/* Hardcoded demo card */}
-            <div className="rounded-lg shadow-md mb-6 p-2 w-72"> {/* Removed bg-white for transparency */}
+            <div className="rounded-lg shadow-md mb-6 p-2 w-68"> {/* Removed bg-white for transparency */}
               <div className="mb-4 md:mr-6 w-full md:w-72 flex-shrink-0 p-6 rounded-lg shadow-lg flex flex-col justify-between"> 
                 <h2 className="text-sm text-teal-400 mb-2">TESTIMONIALS</h2>
                 <h1 className="text-4xl font-bold mb-4 flex items-center">
@@ -77,7 +77,7 @@ const Testimonials: React.FC = () => {
             {/* Conditionally render the View All card if there are more than 6 testimonials */}
             {testimonials.length > 6 && (
              <div className="flex justify-center mb-6"> {/* Center the button container */}
-             <div className="mb-4 md:mr-6 w-full md:w-72 flex-shrink-0 p-6 rounded-lg shadow-lg flex flex-col justify-center items-center"> 
+             <div className="mb-4 md:mr-3 w-full md:w-72 flex-shrink-0 p-6 rounded-lg shadow-lg flex flex-col justify-center items-center"> 
                <Button variant="outline" className="bg-teal-500 text-black hover:bg-teal-600">
                  VIEW ALL
                </Button>
