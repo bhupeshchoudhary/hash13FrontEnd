@@ -9,6 +9,7 @@ const testimonials = [
     quote: "First time in my life, I invested 30k/month consistently for 3 years. Result? 40% growth hacking mentorship with Vaibhav Sisinty and Growthschool.io. I invested in many courses, but this one was different. Hands-on learning, and it was mind-blowing. We built 4 businesses from scratch, learned about growth hacking, and many more things.",
     name: "Sandip Shinde",
     avatar: "/placeholder.svg?height=40&width=40",
+    
   },
 
   {
@@ -77,7 +78,7 @@ const Testimonials: React.FC = () => {
             {/* Conditionally render the View All card if there are more than 6 testimonials */}
             {testimonials.length > 6 && (
              <div className="flex justify-center mb-6"> {/* Center the button container */}
-             <div className="mb-4 md:mr-3 w-full md:w-72 flex-shrink-0 p-6 rounded-lg shadow-lg flex flex-col justify-center items-center"> 
+             <div className="mb-4 md:mr-3  w-full md:w-72 flex-shrink-0 p-6 rounded-lg shadow-lg flex flex-col justify-center items-center"> 
                <Button variant="outline" className="bg-teal-500 text-black hover:bg-teal-600">
                  VIEW ALL
                </Button>

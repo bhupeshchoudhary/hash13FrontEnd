@@ -1,3 +1,4 @@
+
 // src/components/ui/TestimonialCard.tsx
 import React from 'react';
 import CardContent from './TestimonialCardContent'; // Now imported from its own file
@@ -11,7 +12,13 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, avatar }) => {
   return (
-    <div className="bg-white border border-gray-300 rounded-xl shadow-lg mb-6 p-2 w-68"> {/* Adjusted padding and width here */}
+    <div className="bg-white border-2 border-gray-300 rounded-xl shadow-lg mb-6 p-2 w-68 relative"> {/* Added relative positioning */}
+      
+      {/* Blue background "in" text at the top right corner with negative margins */}
+      <div className="absolute top-2 right-2 bg-gray-500 text-white text-lg font-semibold px-2 py-1 rounded-bl-lg rounded-tr-lg z-10 translate-x-2 -translate-y-2 "> {/* Negative translation */}
+        in
+      </div>
+
       <CardContent>
         {/* Added starting double quotes and styling */}
         <p className="text-sm text-gray-600 mb-6 relative">
@@ -36,7 +43,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, avatar }
         </div>
       </div>
     </div>
-  );
+  );  
 };
 
 export default TestimonialCard;
