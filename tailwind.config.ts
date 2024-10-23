@@ -57,8 +57,8 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)'
       },
       animation: {
-        'marquee': 'marquee 25s linear infinite',
-        'marquee2': 'marquee2 25s linear infinite',
+        'marquee': 'marquee 35s linear infinite',
+        'marquee2': 'marquee2 35s linear infinite',
         'marquee-pause': 'marquee 25s linear infinite paused',
         'marquee2-pause': 'marquee2 25s linear infinite paused',
         'spin-slow': 'spin 8s linear infinite',
