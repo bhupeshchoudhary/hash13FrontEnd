@@ -56,13 +56,12 @@ const config: Config = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
       },
-      // Add animation configurations
       animation: {
         'marquee': 'marquee 25s linear infinite',
         'marquee2': 'marquee2 25s linear infinite',
         'marquee-pause': 'marquee 25s linear infinite paused',
         'marquee2-pause': 'marquee2 25s linear infinite paused',
-		'spin-slow': 'spin 8s linear infinite',
+        'spin-slow': 'spin 8s linear infinite',
       },
       keyframes: {
         marquee: {
@@ -70,8 +69,8 @@ const config: Config = {
           '100%': { transform: 'translateX(-100%)' }
         },
         marquee2: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0%)' }
+          '0%': { transform: 'translateX(0%)' },  // Changed from 100% to 0%
+          '100%': { transform: 'translateX(-100%)' }  // Changed to match first animation
         }
       }
     }
