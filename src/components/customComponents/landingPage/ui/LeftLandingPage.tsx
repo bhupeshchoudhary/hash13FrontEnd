@@ -46,7 +46,7 @@ export default function SearchComponent() {
           onBlur={() => setTimeout(() => setIsSearchFocused(false), 200)}
         />
         <Button
-          className="absolute right-2 top-1/2 -translate-y-1/2 bg-red-500 hover:bg-red-600 rounded-lg p-2"
+          className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#ff0000] hover:bg-red-600 rounded-lg p-2"
         >
           <Search className="h-6 w-6" />
         </Button>
@@ -91,7 +91,7 @@ export default function SearchComponent() {
 
       <div className="text-lg">
         {jsonData.community.text}{" "}
-        <span className="text-red-500 font-medium">{jsonData.community.learnersCount}</span> learners.
+        <span className="text-[#ff0000] font-medium">{jsonData.community.learnersCount}</span> learners.
       </div>
     </div>
   )

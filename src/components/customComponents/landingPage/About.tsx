@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className="min-h-screen lg:px-14 bg-white p-8 pb-0 relative overflow-hidden">
       {/* Decorative Elements - Refined positions */}
-      <div className="absolute top-8 left-8 w-2 h-2 bg-red-300/60 rounded-full" />
+      <div className="absolute top-8 left-8 w-2 h-2 bg-[#ff0000]/60 rounded-full" />
       <div className="absolute top-16 right-16 w-12 h-12 bg-pink-100/60 rounded-full" />
       <div className="absolute bottom-32 left-16 w-3 h-3 bg-emerald-200/60 rounded-full" />
       <div className="absolute right-24 top-32 w-2 h-2 bg-purple-300/60 rounded-full" />
@@ -54,7 +54,7 @@ const About = () => {
                 <Card className="bg-gray-100/80 aspect-video flex items-center justify-center relative">
                   <div className="bg-white rounded-full py-1.5 px-3 flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#ff0000]" />
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
                   </div>
                 </Card>
@@ -68,7 +68,7 @@ const About = () => {
                 <Card className="bg-gray-100/80 aspect-video flex items-center justify-center">
                   <div className="bg-white rounded-full py-1.5 px-3 flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#ff0000]" />
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
                   </div>
                 </Card>
@@ -112,7 +112,7 @@ const About = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
                 You Can Learn<br />
                 Anything, Anytime<br />
-                From <span className="text-red-500 relative">
+                From <span className="text-[#ff0000] relative">
                   Anywhere
                   <div className="absolute -bottom-0.5 left-0 w-full h-0.5 " >
                      <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
@@ -130,7 +130,7 @@ const About = () => {
               <div className="flex items-start gap-4">
                 <div className='bg-white shadow-lg p-1 rounded-full'>
                   <div className="p-2   rounded-sm">
-                    <Video className="w-4 h-4 text-red-500" />
+                    <Video className="w-4 h-4 text-[#ff0000]" />
                   </div>
                 </div>
                 <div>

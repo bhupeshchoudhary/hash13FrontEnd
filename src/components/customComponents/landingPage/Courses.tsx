@@ -186,7 +186,7 @@ function CardComponent({
         </CardContent>
         <CardFooter className="px-6 pb-4 pt-0">
           <div className="text-center  w-full mx-auto">
-          <Button className="  w-1/2 bg-red-500 font-bold text-1xl" variant="default">
+          <Button className="  w-1/2 bg-[#ff0000] font-bold text-1xl" variant="default">
             Invest
           </Button>
           </div>
@@ -244,7 +244,7 @@ export default function CoursesComponent() {
         <h2 className="text-sm text-muted-foreground mb-2 text-teal-500">Popular Courses</h2>
         <h1 className="text-3xl font-bold">
           Choose Our Top{" "}
-          <span className="text-red-500 relative">
+          <span className="text-[#ff0000] relative">
             Courses
             <span className="absolute bottom-0 left-0 w-full h-1 ">
 

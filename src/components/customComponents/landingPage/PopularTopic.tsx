@@ -30,7 +30,7 @@ const PopularTopic = () => {
       <div className="text-center mb-12">
         <p className="text-sm text-teal-500 mb-2">Start Learning From Today</p>
         <h1 className="text-3xl font-bold">
-          Popular <span className="text-red-500 relative">
+          Popular <span className="text-[#ff0000] relative">
             Topics
             <span className="absolute bottom-0 left-0 w-full h-1  rounded-full">
 
@@ -69,7 +69,7 @@ const PopularTopic = () => {
 // Function to get colors based on index
 const getColor = (index: number) => {
   const colors = [
-    "#FEE2E2", // Red
+    "#ff0000", // Red
     "#E0F2FE", // Light Blue
     "#D1FAE5", // Green
     "#FBCFE8", // Pink

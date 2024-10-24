@@ -12,7 +12,7 @@ export default function Navbar() {
           <div className="h-full"> {/* Ensure the logo fits within the navbar height */}
             <Image
               src={logo}
-              alt="hash13 logo"
+              alt="#13 logo"
               width={50}  // Increase width as needed
               height={50} // Increase height as needed
               className="object-contain h-full" // Ensure the logo fits within the navbar's height
@@ -47,7 +47,7 @@ export default function Navbar() {
             <Button variant="outline" className="hidden md:inline-flex">
               Free Courses
             </Button>
-            <Button className="bg-red-500 text-white hover:bg-red-600">Sign Up</Button>
+            <Button className="bg-[#ff0000] text-white hover:bg-red-600">Sign Up</Button>
           </div>
         </div>
       </div>

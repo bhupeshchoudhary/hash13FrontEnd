@@ -10,7 +10,7 @@ export default function SupportContact() {
     <div className="relative w-full h-[20rem] bg-white font-sans">
       {/* upGrad Learner Support */}
       <h3 className="absolute top-[3.75rem] left-[5rem] text-[2.25rem] font-semibold leading-tight">
-        <span className="text-[#2D2F31]">Hash13</span>{' '}
+        <span className="text-[#2D2F31]">#13</span>{' '}
         <span className="text-[#FF0000]">Learner Support</span>
       </h3>
 

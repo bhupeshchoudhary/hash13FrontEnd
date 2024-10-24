@@ -84,7 +84,7 @@ const BlogSection = () => {
               </h3>
             </CardContent>
             <CardFooter className="p-4 pt-0">
-              <Button variant="link" className="p-0 text-red-500 hover:text-red-600">
+              <Button variant="link" className="p-0 text-[#ff0000] hover:text-red-600">
                 Read More
               </Button>
             </CardFooter>

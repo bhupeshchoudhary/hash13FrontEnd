@@ -63,7 +63,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
           <p className="text-gray-400 mb-4">
-            Join over <span className="text-red-500">68,000</span> people getting our emails. Lorem ipsum dolor sit amet.
+            Join over <span className="text-[#ff0000]">68,000</span> people getting our emails. Lorem ipsum dolor sit amet.
           </p>
           <form className="flex flex-col">
             <input
@@ -71,14 +71,14 @@ const Footer = () => {
               placeholder="Enter your mail"
               className="p-3 rounded mb-4 text-black"
             />
-            <button className="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded">
+            <button className="bg-[#ff0000] hover:bg-red-700 text-white py-3 px-6 rounded">
               Subscribe Now
             </button>
           </form>
         </div>
       </div>
       <div className="container mx-auto mt-16 text-center text-gray-400">
-        <p>© Copyright 2024 Hash13 | Designed & Developed with ❤️ by LinuxWorld | All Rights Reserved</p>
+        <p>© Copyright 2024 #13 | Designed & Developed with ❤️ by LinuxWorld | All Rights Reserved</p>
       </div>
     </footer>
   );

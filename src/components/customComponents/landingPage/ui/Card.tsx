@@ -42,7 +42,7 @@ const Card: React.FC<CardProps> = ({
         <div className="flex items-center text-sm text-muted-foreground">
           {/* Lessons with BookOpen Icon */}
           <span className="mr-4 flex items-center">
-            <BookOpen size={14} className="mr-1 text-red-500" /> {/* Icon color changed to red */}
+            <BookOpen size={14} className="mr-1 text-[#ff0000]" /> {/* Icon color changed to red */}
             {lessons} Lessons
           </span>
           

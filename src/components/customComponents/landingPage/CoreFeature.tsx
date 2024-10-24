@@ -30,13 +30,13 @@ const CoreFeature = () => {
       {/* Decorative Elements */}
       <div className="absolute top-8 left-12">
         <div className="relative w-6 h-6">
-          <div className="absolute w-4 h-px bg-red-200 rotate-45 right-0"></div>
-          <div className="absolute h-4 w-px bg-red-200 rotate-45 right-0.5"></div>
+          <div className="absolute w-4 h-px bg-[#ff0000] rotate-45 right-0"></div>
+          <div className="absolute h-4 w-px bg-[#ff0000] rotate-45 right-0.5"></div>
         </div>
       </div>
 
       <div className="absolute bottom-20 left-20">
-        <Globe className="w-24 h-24 text-red-100/20" />
+        <Globe className="w-24 h-24 text-[#ff0000]/20" />
       </div>
 
       <div className="absolute top-40 right-20">
@@ -49,7 +49,7 @@ const CoreFeature = () => {
         <div className="text-center mb-10">
           <p className="text-teal-500 text-sm font-medium tracking-wide mb">Core Features</p>
           <h2 className="text-[32px] font-bold text-gray-800">
-            Why <span className="text-red-500">Choose</span> #13
+            Why <span className="text-[#ff0000]">Choose</span> #13
           </h2>
         </div>
 
@@ -84,7 +84,7 @@ const CoreFeature = () => {
             title="Video Courses"
             description="Learn without any geographical & time limitations."
             bgColor="bg-white"
-            iconBgColor="bg-red-400"
+            iconBgColor="bg-[#ff0000]"
             textColor="text-gray-800"
           />
         </div>
