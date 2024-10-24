@@ -30,7 +30,7 @@ const courses = [
     lessons: 2,
     duration: "298.67",
     rating: 5,
-    imageUrl: "/assets/cources/Courses-banner.jpg",
+    imageUrl: "/assets/cources/aws.jpg",
   },
   {
     category: "Development",
@@ -39,7 +39,7 @@ const courses = [
     lessons: 2,
     duration: "4",
     rating: 3.5,
-    imageUrl: "/assets/cources/Courses-banner1.jpg",
+    imageUrl: "/assets/cources/dsa.jpg",
   },
   {
     category: "Drawing",
@@ -48,7 +48,7 @@ const courses = [
     lessons: 2,
     duration: "4",
     rating: 2,
-    imageUrl: "/assets/cources/Course-banner2.jpg",
+    imageUrl: "/assets/cources/git.jpg",
   },
   {
     category: "Technology",
@@ -57,7 +57,7 @@ const courses = [
     lessons: 2,
     duration: "4",
     rating: 4.8,
-    imageUrl:"/assets/cources/Course-banner2.jpg",
+    imageUrl:"/assets/cources/redhat.jpg",
   },
   {
     category: "Data Science",
@@ -66,7 +66,7 @@ const courses = [
     lessons: 2,
     duration: "4",
     rating: 4.8,
-    imageUrl: "/assets/cources/Course-banner3.jpg",
+    imageUrl: "/assets/cources/tarr.jpg",
   },
   {
     category: "Development",
