@@ -11,7 +11,7 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ icon, title, description, bgColor, iconBgColor, textColor }) => (
-  <div className={`w-64 h-60 rounded-2xl shadow-lg ${bgColor} ${textColor} flex flex-col items-center text-center overflow-hidden`}>
+  <div className={`w-64 h-64 rounded-2xl shadow-lg ${bgColor} ${textColor} flex flex-col items-center text-center overflow-hidden`}>
     <div className="w-full h-1/2 flex items-center justify-center">
       <div className={`rounded-lg p-3 ${iconBgColor} flex items-center justify-center`}>
         {icon}
@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({ icon, title, description, bgColor, iconBgCo
 
 const CoreFeature = () => {
   return (
-    <div className="w-full lg:px-14 min-h-screen mx-auto px-6 bg-[#fff6f4] relative overflow-hidden">
+    <div className="w-full lg:px-14 h-[80vh] mx-auto px-6 bg-[#fff6f4] relative overflow-hidden"> {/* Adjusted height here */}
       {/* Decorative Elements */}
       <div className="absolute top-8 left-12">
         <div className="relative w-6 h-6">
@@ -47,7 +47,7 @@ const CoreFeature = () => {
       <div className="max-w-6xl mx-auto px-4 py-10">
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-cyan-400 text-sm font-medium tracking-wide mb">Core Features</p>
+          <p className="text-teal-500 text-sm font-medium tracking-wide mb">Core Features</p>
           <h2 className="text-[32px] font-bold text-gray-800">
             Why <span className="text-red-500">Choose</span> #13
           </h2>

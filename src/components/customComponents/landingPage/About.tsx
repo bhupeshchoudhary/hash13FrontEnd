@@ -106,7 +106,7 @@ const About = () => {
           {/* Right Side - Content */}
           <div className="space-y-8">
             <div>
-              <p className="text-emerald-500 text-sm font-medium mb-4">About #13</p>
+              <p className="text-teal-500 text-sm font-medium mb-4">About #13</p>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
                 You Can Learn<br />
                 Anything, Anytime<br />
