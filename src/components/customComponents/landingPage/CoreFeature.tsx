@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({ icon, title, description, bgColor, iconBgCo
 
 const CoreFeature = () => {
   return (
-    <div className="w-full lg:px-14 h-[80vh] mx-auto px-6 bg-[#fff6f4] relative overflow-hidden"> {/* Adjusted height here */}
+    <div className="w-full lg:px-14 h-[80vh] mx-auto px-6 bg-white-500 relative overflow-hidden"> {/* Adjusted height here */}
       {/* Decorative Elements */}
       <div className="absolute top-8 left-12">
         <div className="relative w-6 h-6">
