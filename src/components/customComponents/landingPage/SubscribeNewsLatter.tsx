@@ -21,8 +21,8 @@ const Subscribe: React.FC = () => {
             <path d="M4 4l8 8 8-8" />
           </svg>
           <div>
-            <h2 className="text-white text-2xl font-bold">Subscribe to</h2>
-            <p className="text-white text-2xl font-bold">My Newsletter</p>
+            <h2 className="text-white text-2xl font-bold">Subscribe for</h2>
+            <p className="text-white text-2xl font-bold">Free courses</p>
           </div>
         </div>
 
