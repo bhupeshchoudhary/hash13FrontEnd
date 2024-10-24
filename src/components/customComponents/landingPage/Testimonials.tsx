@@ -13,7 +13,7 @@ const testimonials = [
     videoUrl: "https://www.youtube.com/embed/2l-05_6o3eQ", // Example video testimonial
     name: "John Doe",
     avatar: "/placeholder.svg?height=40&width=40",
-    dynamicText: "video"
+    dynamicText: ""
   },
   {
     quote: "We built 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from ",
@@ -25,7 +25,7 @@ const testimonials = [
     videoUrl: "https://www.youtube.com/embed/0V0fm-InffY",
     name: "Jane Doe",
     avatar: "/placeholder.svg?height=40&width=40",
-    dynamicText: "video"
+    dynamicText: ""
   },
   {
     quote: "We built 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from ",
