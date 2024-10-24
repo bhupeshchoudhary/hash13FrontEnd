@@ -53,7 +53,8 @@ const PopularTopic = () => {
                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 mb-4">
                   <span className="text-2xl">{topic.icon}</span>
                 </div>
-                <h3 className="font-semibold text-lg mb-2">{topic.title}</h3>
+                <p className="font-semibold text-lg mb-2 leading-[1]">{topic.title}</p>
+
                 <p className="text-gray-500">{topic.courses} Courses</p>
               </div>
             </CardContent>
@@ -69,7 +70,7 @@ const PopularTopic = () => {
 // Function to get colors based on index
 const getColor = (index: number) => {
   const colors = [
-    "#ff0000", // Red
+    "#FEE2E2", // Red
     "#E0F2FE", // Light Blue
     "#D1FAE5", // Green
     "#FBCFE8", // Pink
