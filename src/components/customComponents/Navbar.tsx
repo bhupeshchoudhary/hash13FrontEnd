@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image' // Import Image from next/image
 import { ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import logo from '../../../public/assets/landingPage/logohash13.svg.svg' // Imported logo
+import logo from '../../../public/assets/landingPage/logohash13.svg' // Imported logo
 
 export default function Navbar() {
   return (
