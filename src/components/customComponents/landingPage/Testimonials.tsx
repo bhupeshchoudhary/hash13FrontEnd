@@ -58,7 +58,7 @@ const Testimonials: React.FC = () => {
               <div className="mb-4 md:mr-6 w-full md:w-72 flex-shrink-0 p-6 rounded-lg shadow-lg flex flex-col justify-between">
                 <h2 className="text-sm text-teal-400 mb-2">TESTIMONIALS</h2>
                 <h1 className="text-4xl font-bold mb-4 flex items-center">
-                  THAT'S WHAT THEY SAID ❤️
+                Amibitious People ❤️ #13
                 </h1>
                 <p className="text-gray-400">
                   Lorem ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
