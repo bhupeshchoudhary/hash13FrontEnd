@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
           {
             protocol: 'https',
-            hostname: 'img.youtube.com',
+            hostname: 'www.youtube.com',
             
           },
         ],
