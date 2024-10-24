@@ -3,6 +3,8 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { BookOpen } from 'lucide-react';
+import Image from 'next/image';
+import curveLine from "../../../../public/assets/CurlLine.svg"
 
 const BlogSection = () => {
   const blogs = [
@@ -44,7 +46,10 @@ const BlogSection = () => {
           <h2 className="text-3xl font-bold">
             Our Latest <span className="text-red-500 relative">
               Blogs
-              <span className="absolute bottom-0 left-0 w-full h-1 bg-red-500 rounded-full transform translate-y-1"></span>
+              <span className="absolute bottom-0 left-0 w-full h-1  rounded-full transform translate-y-1">
+
+              <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
+              </span>
             </span>
           </h2>
         </div>

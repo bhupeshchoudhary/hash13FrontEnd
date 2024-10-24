@@ -84,7 +84,7 @@ export default function Hero() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#fff6f4] overflow-hidden">
+    <div className="min-h-screen bg-white overflow-hidden">
       {/* Keep your existing floating shapes and styles */}
       <style jsx global>{`
         @keyframes float {

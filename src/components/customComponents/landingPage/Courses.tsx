@@ -1,9 +1,12 @@
 "use client";
 
 import { useState, useRef } from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card";
-import { Clock, Star, BookOpen } from "lucide-react";
+import { Clock, Star, BookOpen,ChartBar } from "lucide-react";
+import Line from "../../../../public/assets/line.svg"
+import curveLine from "../../../../public/assets/CurlLine.svg"
 
 interface Course {
   category: string;
@@ -45,7 +48,7 @@ const courses = [
     lessons: 2,
     duration: "4",
     rating: 2,
-    imageUrl: "/assets/landingPageBlog.jpg",
+    imageUrl: "/assets/cources/Course-banner2.jpg",
   },
   {
     category: "Technology",
@@ -54,7 +57,7 @@ const courses = [
     lessons: 2,
     duration: "4",
     rating: 4.8,
-    imageUrl: "/assets/landingPageBlog3.jpg",
+    imageUrl:"/assets/cources/Course-banner2.jpg",
   },
   {
     category: "Data Science",
@@ -63,7 +66,7 @@ const courses = [
     lessons: 2,
     duration: "4",
     rating: 4.8,
-    imageUrl: "/assets/landingPageBlog.jpg",
+    imageUrl: "/assets/cources/Course-banner3.jpg",
   },
   {
     category: "Development",
@@ -72,7 +75,7 @@ const courses = [
     lessons: 2,
     duration: "4",
     rating: 4.8,
-    imageUrl: "/assets/landingPageBlog2.jpg",
+    imageUrl: "/assets/cources/Course-banner4.jpg",
   },
 ]
 
@@ -153,20 +156,26 @@ function CardComponent({
           <div className="flex items-center justify-between text-sm mb-2">
             <div className="flex items-center text-muted-foreground">
               <Clock className="h-4 w-4 mr-1" />
-              <span>{course.learners} learners</span>
+              <span>{course.learners} learners </span>
+              <Star className="h-4 w-4 text-yellow-400 p-0"  />
+              <span className="ml-2 text-gray-600">{course.rating}</span> 
             </div>
 
-            <div className="flex items-center text-yellow-400">
+            <div className="flex items- justify-items-start  text-muted-foreground ">
               {/* Render stars dynamically based on course rating */}
-              {renderStars(course.rating)}
-              <span className="ml-2 text-gray-600">{course.rating}</span>
+              {/* {renderStars(course.rating)} */}
+              <ChartBar className="h-4 w-4 mr-1"/>
+              <span className="ml-2 text-gray-600">Beginner </span> 
+
             </div>
           </div>
         </CardContent>
-        <CardFooter className="px-6 pb-6 pt-0">
-          <Button className="w-full bg-red-500 font-bold text-1xl" variant="default">
+        <CardFooter className="px-6 pb-4 pt-0">
+          <div className="text-center  w-full mx-auto">
+          <Button className="  w-1/2 bg-red-500 font-bold text-1xl" variant="default">
             Invest
           </Button>
+          </div>
         </CardFooter>
       </Card>
 
@@ -193,7 +202,7 @@ function HoverCard({ course, position }: { course: Course; position: CardPositio
         </p>
         <p className="flex items-center text-sm">
           <Clock className="h-4 w-4 mr-2" />
-          {course.learners} learners
+          {course.learners} learners 
         </p>
         <div className="flex items-center text-yellow-400">
           {renderStars(course.rating)}
@@ -227,7 +236,10 @@ export default function CoursesComponent() {
           Choose Our Top{" "}
           <span className="text-red-500 relative">
             Courses
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-red-500"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1 ">
+
+            <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
+            </span>
           </span>
         </h1>
       </div>

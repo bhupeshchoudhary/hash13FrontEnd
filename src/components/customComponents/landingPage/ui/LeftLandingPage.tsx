@@ -13,7 +13,7 @@ const jsonData = {
   search: {
     placeholder: "Tell us what you're looking to learn"
   },
-  goals: ["Get a promotion", "Ace interview skills", "Move to a new career path", "Study Abroad", "Study for Industry Certification", "Prepare for your first job", "Get an international degree"],
+  goals: ["DevOps Engineer", "Machine Learning Engineer", "Cloud Engineer", "MLOps Engingeer", "SDE", "PromptOps Engineer", "SRE","Full Stack Developer","Data Scientist"],
   community: {
     text: "Join the community of",
     learnersCount: "10,807,557"

@@ -44,7 +44,7 @@ const CoreFeature = () => {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-4 py-10">
+      <div className="max-w-6xl mx-auto px-4 pt-10 pb-4"> {/* Changed py-10 to pt-10 pb-4 */}
         {/* Header */}
         <div className="text-center mb-10">
           <p className="text-teal-500 text-sm font-medium tracking-wide mb">Core Features</p>
@@ -54,7 +54,7 @@ const CoreFeature = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-6">  {/* Removed mb-0 */}
           <Card
             icon={<User2 className="w-12 h-12 text-white" />}
             title="Skillful Instructors"

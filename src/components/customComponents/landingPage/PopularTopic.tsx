@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-
+import curveLine from "../../../../public/assets/CurlLine.svg"
+import Image from 'next/image';
 // Types for our data
 type TopicCard = {
   title: string;
@@ -31,7 +32,10 @@ const PopularTopic = () => {
         <h1 className="text-3xl font-bold">
           Popular <span className="text-red-500 relative">
             Topics
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-red-500 rounded-full"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1  rounded-full">
+
+            <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
+            </span>
           </span> To Learn
         </h1>
       </div>
