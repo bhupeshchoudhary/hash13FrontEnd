@@ -108,8 +108,8 @@ const About = () => {
           {/* Right Side - Content */}
           <div className="space-y-8">
             <div>
-              <p className="text-teal-500 text-sm font-medium mb-4">About #13</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+              <p className="text-teal-500 text-sm font-medium mb-2">About #13</p>
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
                 You Can Learn<br />
                 Anything, Anytime<br />
                 From <span className="text-red-500 relative">
@@ -134,7 +134,7 @@ const About = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">All Classes Video Provided</h3>
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1">All Classes Video Provided</h3>  
                   <p className="text-xs text-gray-500">
                     There are many variations of passages of but the majority have suffered.
                   </p>

@@ -19,7 +19,7 @@ const testimonials = [
     quote: "What an incredible session it was! 🙌 The 4+ hour hands-on DSA masterclass with Vimal Daga Sir was nothing short of transformative. 🚀 Every topic, from performance tuning to complex algorithms like Dijkstra's, was covered in such detail, making it easier to grasp and apply in real-world coding challenges. I walked away feeling so much more confident in my understanding of DSA and its applications. The energy and passion Vimal Sir brings to every session is truly inspiring, and it’s amazing how he simplifies even the toughest concepts. 💡 Thank you, LinuxWorld Informatics Pvt Ltd and Vimal Daga Sir, for such an insightful and engaging masterclass! 💻🙏",
     name: "Jane Doe",
     avatar: "/placeholder.svg?height=40&width=40",
-    dynamicText: "q"
+    dynamicText: "G"
   },
   {
     videoUrl: "https://www.youtube.com/embed/0V0fm-InffY",

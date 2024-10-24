@@ -28,7 +28,7 @@ export default function SupportContact() {
             <circle cx="16" cy="16" r="2.66667" fill="#000080"/>
             <rect y="21.3333" width="10" height="10" fill="#138808"/>
           </svg>
-          <span className="text-[1.275rem]  text-[#2D2F31]">Management queries</span>
+          <span className="text-[1.275rem]  text-[#2D2F31] font-semibold">Management queries</span>
         </div>
         <a
           href="tel:18002102020"
@@ -49,7 +49,7 @@ export default function SupportContact() {
             <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" fill="#34D399"/>
             <path fillRule="evenodd" clipRule="evenodd" d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28ZM16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" fill="#059669"/>
           </svg>
-          <span className="text-[1.275rem]  text-[#2D2F31]">Technical queries</span>
+          <span className="text-[1.275rem]  text-[#2D2F31] font-semibold">Technical queries</span>
         </div>
         <a
           href="tel:+918045604032"

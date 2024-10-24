@@ -189,9 +189,9 @@ export default function FactsAndFigure() {
             >
               {/* Container for Feature Data */}
               <div className="flex-1 mr-4">
-                <h3 className="text-3xl font-bold mb-2">{feature.number}</h3>
+                <h3 className="text-3xl font-bold mb-2 text-red-500">{feature.number}</h3>
                 <h4
-                  className="text-sm font-semibold mb-2"
+                  className="text-sm font-semibold mb-2 "
                   style={{
                     whiteSpace: 'nowrap',
                     overflow: 'hidden',
