@@ -1,9 +1,12 @@
 "use client";
 
 import { useState, useRef } from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card";
 import { Clock, Star, BookOpen,ChartBar } from "lucide-react";
+import Line from "../../../../public/assets/line.svg"
+import curveLine from "../../../../public/assets/CurlLine.svg"
 
 interface Course {
   category: string;
@@ -233,7 +236,10 @@ export default function CoursesComponent() {
           Choose Our Top{" "}
           <span className="text-red-500 relative">
             Courses
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-red-500"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1 ">
+
+            <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
+            </span>
           </span>
         </h1>
       </div>
