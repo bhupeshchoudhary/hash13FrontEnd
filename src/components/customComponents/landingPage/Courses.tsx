@@ -24,11 +24,11 @@ interface CardPosition {
 
 const courses = [
   {
-    category: "Art & Design",
+    category: "DevOps ",
     learners:"9k",
-    title: "Basic Fundamentals of Interior & Graphics Design",
+    title: "Complete DevOps Training",
     lessons: 2,
-    duration: "4",
+    duration: "298.67",
     rating: 5,
     imageUrl: "/assets/cources/Courses-banner.jpg",
   },
@@ -186,30 +186,26 @@ function CardComponent({
 
 function HoverCard({ course, position }: { course: Course; position: CardPosition }) {
   return (
-    <div
-      className={`absolute top-0 w-64 bg-white shadow-lg p-4 rounded-lg z-30 transition-all duration-300 ease-in-out ${position.isRightmost ? "right-full mr-4" : "left-full ml-4"}`}
-    >
-      <h3 className="text-xl font-bold mb-2 line-clamp-2">{course.title}</h3>
-      <p className="text-sm text-muted-foreground mb-4">{course.category}</p>
-      <div className="space-y-2">
-        <p className="flex items-center text-sm">
-          <BookOpen className="h-4 w-4 mr-2" />
-          {course.lessons} Lessons
-        </p>
-        <p className="flex items-center text-sm">
-          <Clock className="h-4 w-4 mr-2" />
-          {course.duration}
-        </p>
-        <p className="flex items-center text-sm">
-          <Clock className="h-4 w-4 mr-2" />
-          {course.learners} learners 
-        </p>
-        <div className="flex items-center text-yellow-400">
-          {renderStars(course.rating)}
-          <span className="ml-2">{course.rating}</span>
-        </div>
+    <Card className={`absolute top-0 w-96 z-30 transition-all duration-300 ease-in-out ${position.isRightmost ? "right-full mr-4" : "left-full ml-4"}`}>
+    <CardContent className="p-6">
+      <h3 className="text-xl font-bold mb-4 line-clamp-2">
+        Transform Your Software Development Lifecycle: Become a DevOps Expert
+      </h3>
+      <p className="text-sm text-muted-foreground mb-4">
+        Master Tools Like Docker, Kubernetes, and Jenkins—Learn Essential Strategies Not Found on Google!
+      </p>
+      <ul className="list-disc pl-5 mb-4 space-y-2 text-sm">
+        <li>Gain a comprehensive understanding of the DevOps culture and its importance in modern software development.</li>
+        <li>Master containerization with Docker and orchestration with Kubernetes to streamline deployments.</li>
+        <li>Implement CI/CD pipelines using Jenkins and GitLab for automated testing and delivery.</li>
+        <li>Explore infrastructure as code with Terraform and monitor applications with Prometheus and Grafana.</li>
+      </ul>
+      <div className="flex items-center text-yellow-400">
+        {renderStars(course.rating)}
+        <span className="ml-2 text-sm font-medium">{course.rating.toFixed(1)}</span>
       </div>
-    </div>
+    </CardContent>
+  </Card>
   );
 }
 
