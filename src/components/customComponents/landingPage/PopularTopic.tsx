@@ -53,7 +53,7 @@ const PopularTopic = () => {
                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 mb-4">
                   <span className="text-2xl">{topic.icon}</span>
                 </div>
-                <p className="font-semibold text-lg mb-2 leading-[1]">{topic.title}</p>
+                <p className="font-semibold text-lg mb-2 leading-[1.1]">{topic.title}</p>
 
                 <p className="text-gray-500">{topic.courses} Courses</p>
               </div>
