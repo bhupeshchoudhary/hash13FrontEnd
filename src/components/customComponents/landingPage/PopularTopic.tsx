@@ -28,7 +28,7 @@ const PopularTopic = () => {
     <div className="container mx-auto  py-12 max-w-7xl px-6 lg:px-14">
       {/* Header Section */}
       <div className="text-center mb-12">
-        <p className="text-sm text-green-500 mb-2">Start Learning From Today</p>
+        <p className="text-sm text-teal-500 mb-2">Start Learning From Today</p>
         <h1 className="text-3xl font-bold">
           Popular <span className="text-red-500 relative">
             Topics

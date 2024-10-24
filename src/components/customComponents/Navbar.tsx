@@ -6,7 +6,7 @@ import logo from '../../../public/assets/landingPage/logohash13.svg.svg' // Impo
 
 export default function Navbar() {
   return (
-    <header className="w-full max-w-7xl px-6 lg:px-14 shadow-2xl overflow-hidden h-16 position: sticky;"> {/* Fixed height for the navbar */}
+    <header className="relative w-full max-w-7xl px-6 lg:px-14 overflow-hidden h-16 sticky top-0 z-50 bg-white ">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between h-full"> {/* Full height for content */}
         <Link href="/">
           <div className="h-full"> {/* Ensure the logo fits within the navbar height */}
