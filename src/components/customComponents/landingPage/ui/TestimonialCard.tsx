@@ -26,7 +26,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, videoUrl, name
       <CardContent>
         {videoUrl ? (
           // Render the YouTube video using an iframe
-          <div className="relative w-full h-0" style={{ paddingBottom: '156.25%' }}>
+          <div className="relative w-full h-0" style={{ paddingBottom: '168.25%' }}>
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-lg"
               src={videoUrl}
@@ -49,11 +49,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, videoUrl, name
       {!videoUrl && (
         <>
           {/* Separator dots */}
-          <div className="flex justify-center mb-4">
+          {/* <div className="flex justify-center mb-4">
             <span className="text-gray-400">•••••••••••••••••••••••••••••••••••• </span>
-          </div>
+          </div> */}
 
-          {/* Avatar and name section */}
+          {/* Avatar and name section
           <div className="flex items-center space-x-4">
             <Avatar>
               <AvatarImage src={avatar} alt={name} />
@@ -62,7 +62,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, videoUrl, name
             <div>
               <p className="text-sm font-semibold text-gray-800">{name}</p>
             </div>
-          </div>
+          </div> */}
         </>
       )}
     </div>

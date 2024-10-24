@@ -1,29 +1,35 @@
 "use client"
 
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import Image from 'next/image'; // Use next/image if you're using Next.js
+import logo from '../../../../public/assets/landingPage/Asset 1.svg';
 
 const Footer = () => {
   return (
-    <footer className="bg-black px-6 lg:px-14 overflow-hidden text-white py-16 ">
+    <footer className="bg-black px-6 lg:px-14 overflow-hidden text-white py-16">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Left Section */}
         <div>
-          <h2 className="text-3xl font-bold mb-4">#13</h2>
-          <p className="text-sm mb-6">LEARN TO LEAD</p>
+          {/* Logo instead of #13 */}
+          <Image src={logo} alt="Logo" width={100} height={100} className="mb-4" />
+     
+          
           <p className="text-gray-400 mb-6">
             Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis cursus.
           </p>
           <div className="flex space-x-4">
             <a href="#" className="bg-gray-700 p-3 rounded">
-            <FaLinkedinIn />
-             
+              <FaLinkedinIn />
             </a>
             <a href="#" className="bg-gray-700 p-3 rounded">
               <FaTwitter />
             </a>
             <a href="#" className="bg-gray-700 p-3 rounded">
-            <FaFacebookF />
+    <FaInstagram />
+  </a>
+            <a href="#" className="bg-gray-700 p-3 rounded">
+              <FaFacebookF />
             </a>
           </div>
         </div>
@@ -45,11 +51,11 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Legal</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="text-gray-400 hover:text-white">Tearms of Use</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Tearm & Condition</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-white">Terms of Use</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-white">Terms & Condition</a></li>
             <li><a href="#" className="text-gray-400 hover:text-white">Payment Method</a></li>
             <li><a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Licensencing</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-white">Licensing</a></li>
           </ul>
         </div>
 
@@ -72,7 +78,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto mt-16 text-center text-gray-400">
-        <p>© Copyright 2024 Hah13 | Designed & Developed with ❤️ by LinuxWorld | All Rights Reserved</p>
+        <p>© Copyright 2024 Hash13 | Designed & Developed with ❤️ by LinuxWorld | All Rights Reserved</p>
       </div>
     </footer>
   );

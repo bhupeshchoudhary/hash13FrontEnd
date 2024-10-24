@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
-    quote: "First time in my life, I invested 30k/month consistently for 3 years. Result? 40% growth hacking mentorship with Vaibhav Sisinty and life, I invested 30k/month consistently for 3 years. Result? 40% growth hacking mentorship with Vaibhav Sisinty and life, I invested 30k/month consistently for 3 years. Result? 40% growth hacking mentorship with Vaibhav Sisinty and life, I invested 30k/month consistently for 3 years. Result? 40% growth hacking mentorship with Vaibhav Sisinty and ",
+    quote: "Being the part of the workshop as a participant as well as Technical Volunteer was an amazing experience. Being a participant in a workshop helped me in learning new concepts and also brushing up my existing skills. Being a technical volunteer helped me in understanding what type of queries can be faced while setting up different tools and while integrating them together, also I helped many participants in solving their technical issues.. I want to thank Vimal Daga sir and LinuxWorld Informatics Pvt Ltd for providing me the opportunity. Looking for more such opportunities to learn , grow and help others also in upskilling.",
     name: "Sandip Shinde",
     avatar: "/placeholder.svg?height=40&width=40",
     dynamicText: "in"
@@ -16,7 +16,7 @@ const testimonials = [
     dynamicText: ""
   },
   {
-    quote: "We built 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from ",
+    quote: "What an incredible session it was! 🙌 The 4+ hour hands-on DSA masterclass with Vimal Daga Sir was nothing short of transformative. 🚀 Every topic, from performance tuning to complex algorithms like Dijkstra's, was covered in such detail, making it easier to grasp and apply in real-world coding challenges. I walked away feeling so much more confident in my understanding of DSA and its applications. The energy and passion Vimal Sir brings to every session is truly inspiring, and it’s amazing how he simplifies even the toughest concepts. 💡 Thank you, LinuxWorld Informatics Pvt Ltd and Vimal Daga Sir, for such an insightful and engaging masterclass! 💻🙏",
     name: "Jane Doe",
     avatar: "/placeholder.svg?height=40&width=40",
     dynamicText: "q"
@@ -28,13 +28,13 @@ const testimonials = [
     dynamicText: ""
   },
   {
-    quote: "We built 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from ",
+    quote: "DSA workshop was amazing Vimal Daga sir always gives different content in every workshop that is not even available on the internet and which is very useful in the real world. even if you still don't know about any technology you can join any course or workshop of LinuxWorld Informatics Pvt Ltd because Vimal sir always starts from very basic... I think If we learned a lot in the free workshop, think how much more we can learn in any other course by Linux World ... Sir I'm feeling blessed & i think any student would feel very lucky to have a Guru like you sir lots of love sir and thank you so much sir and entire team of Linux World 👍",
     name: "Jane Doe",
     avatar: "/placeholder.svg?height=40&width=40",
     dynamicText: "Q"
   },
   {
-    quote: "We built 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from scratch, learned about growth hacking, and many more things 4 businesses from ",
+    quote: "Na Shahrukh chahiye Na Salmaan chahiye Engineering students ko toh bss Vimal Daga sir se technology ka gyaan chahiye. Vimal Daga sir your every success feels personal because you are representing all of us. We are always with you. . I have always been a big fan of yours. As I always say you are hashtag#Chankya of 21st century. You are making your own army of #Chandragupta. I am with you. I believe in you. I am a hashtag#creator Every individual is a hashtag#creator. All of us just need someone who believes us and who can guide us.",
     name: "Jane Doe",
     avatar: "/placeholder.svg?height=40&width=40",
     dynamicText: "in"
