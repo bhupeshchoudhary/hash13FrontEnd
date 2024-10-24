@@ -26,17 +26,17 @@ const Card: React.FC<CardProps> = ({ icon, title, description, bgColor, iconBgCo
 
 const CoreFeature = () => {
   return (
-    <div className="w-full lg:px-14 h-[80vh] mx-auto px-6  relative overflow-hidden"> {/* Adjusted height here bg-[#fff6f4] */}
+    <div className="w-full lg:px-14 h-[80vh] mx-auto px-6 bg-[#fff6f4] relative overflow-hidden"> {/* Adjusted height here */}
       {/* Decorative Elements */}
       <div className="absolute top-8 left-12">
         <div className="relative w-6 h-6">
-          <div className="absolute w-4 h-px bg-[#ff0000] rotate-45 right-0"></div>
-          <div className="absolute h-4 w-px bg-[#ff0000] rotate-45 right-0.5"></div>
+          <div className="absolute w-4 h-px bg-red-200 rotate-45 right-0"></div>
+          <div className="absolute h-4 w-px bg-red-200 rotate-45 right-0.5"></div>
         </div>
       </div>
 
       <div className="absolute bottom-20 left-20">
-        <Globe className="w-24 h-24 text-[#ff0000]/20" />
+        <Globe className="w-24 h-24 text-red-100/20" />
       </div>
 
       <div className="absolute top-40 right-20">
@@ -44,7 +44,7 @@ const CoreFeature = () => {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-4 pt-10 pb-4"> {/* Changed py-10 to pt-10 pb-4 */}
+      <div className="max-w-6xl mx-auto px-4 py-10">
         {/* Header */}
         <div className="text-center mb-10">
           <p className="text-teal-500 text-sm font-medium tracking-wide mb">Core Features</p>
@@ -54,7 +54,7 @@ const CoreFeature = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="flex flex-wrap justify-center gap-6">  {/* Removed mb-0 */}
+        <div className="flex flex-wrap justify-center gap-6">
           <Card
             icon={<User2 className="w-12 h-12 text-white" />}
             title="Skillful Instructors"
@@ -84,7 +84,7 @@ const CoreFeature = () => {
             title="Video Courses"
             description="Learn without any geographical & time limitations."
             bgColor="bg-white"
-            iconBgColor="bg-[#ff0000]"
+            iconBgColor="bg-red-400"
             textColor="text-gray-800"
           />
         </div>
