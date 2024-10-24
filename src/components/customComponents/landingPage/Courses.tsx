@@ -31,29 +31,43 @@ const courses = [
     duration: "298.67",
     rating: 5,
     imageUrl: "/assets/cources/aws.jpg",
+    hoverCard:{
+      title:"Transform Your Software Development Lifecycle: Become a DevOps Expert",
+      subTitle:"Master Tools Like Docker, Kubernetes, and Jenkins—Learn Essential Strategies Not Found on Google!",
+      bullets:[
+        "Gain a comprehensive understanding of the DevOps culture and its importance in modern software development",
+        "Master containerization with Docker and orchestration with Kubernetes to streamline deployments",
+        "Implement CI/CD pipelines using Jenkins and GitLab for automated testing and delivery.",
+        "Explore infrastructure as code with Terraform and monitor applications with Prometheus and Grafana."
+      ]
+
+    }
+      
+    
+
   },
   {
-    category: "Development",
+    category: "Programming & Data Structure & Algo ",
     learners:"9k",
-    title: "Increasing Engagement with Instagram & Facebook",
-    lessons: 2,
-    duration: "4",
+    title: "DSA Mastery for FAANG ",
+    lessons: 58,
+    duration: "85",
     rating: 3.5,
     imageUrl: "/assets/cources/dsa.jpg",
   },
   {
-    category: "Drawing",
+    category: "Devops Version Control",
     learners:"9k",
-    title: "Introduction to Color Theory & Basic UI/UX",
-    lessons: 2,
-    duration: "4",
+    title: "Git & GitHub Mastery: From Basics to Pro",
+    lessons: 15,
+    duration: "13",
     rating: 2,
     imageUrl: "/assets/cources/git.jpg",
   },
   {
-    category: "Technology",
+    category: "Openshift & Redhat Certificate ",
     learners:"9k",
-    title: "Financial Security Thinking and Principles Theory",
+    title: "OpenShift Administration Mastery",
     lessons: 2,
     duration: "4",
     rating: 4.8,
