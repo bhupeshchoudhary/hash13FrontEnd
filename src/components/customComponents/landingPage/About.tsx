@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import AboutScroll from './ui/AboutScroll';
 import yerrowArrow from "../../../../public/assets/landingPage/floatingCurveArrow.svg"
+// import Line from "../../../../public/assets/line.svg"
+import curveLine from "../../../../public/assets/CurlLine.svg"
 const About = () => {
   return (
     <div className="min-h-screen lg:px-14 bg-white p-8 pb-0 relative overflow-hidden">
@@ -112,7 +114,10 @@ const About = () => {
                 Anything, Anytime<br />
                 From <span className="text-red-500 relative">
                   Anywhere
-                  <div className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-red-500" />
+                  <div className="absolute -bottom-0.5 left-0 w-full h-0.5 " >
+                     <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
+                     {/* <curveLine></curveLine> */}
+                    </div>
                 </span>
               </h1>
               <p className="text-gray-500 text-sm">
