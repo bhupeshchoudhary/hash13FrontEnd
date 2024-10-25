@@ -21,17 +21,124 @@ interface CardPosition {
   isRightmost: boolean;
 }
 
+
 const courses = [
   {
     category: "DevOps ",
-    learners: "9000",
+    learners: "9k",
     title: "Complete DevOps Training",
     lessons: 2,
     duration: "298.67",
     rating: 5,
-    imageUrl: "/assets/cources/aws.jpg"
+    imageUrl: "/assets/cources/aws.jpg",
+    hoverCard: {
+      title: "Transform Your Software Development Lifecycle: Become a DevOps Expert",
+      subTitle: "Master Tools Like Docker, Kubernetes, and Jenkins—Learn Essential Strategies Not Found on Google!",
+      bullets: [
+        "Gain a comprehensive understanding of the DevOps culture and its importance in modern software development",
+        "Master containerization with Docker and orchestration with Kubernetes to streamline deployments",
+        "Implement CI/CD pipelines using Jenkins and GitLab for automated testing and delivery.",
+        "Explore infrastructure as code with Terraform and monitor applications with Prometheus and Grafana."
+      ]
+    }
+  },
+  {
+    category: "Programming & Data Structure & Algo",
+    learners: "9k",
+    title: "DSA Mastery for FAANG",
+    lessons: 58,
+    duration: "85",
+    rating: 3.5,
+    imageUrl: "/assets/cources/dsa.jpg",
+    hoverCard: {
+      title: "Crack the Code: DSA for FAANG Interviews",
+      subTitle: "Master essential algorithms and data structures to succeed in top tech interviews.",
+      bullets: [
+        "Learn key data structures like arrays, linked lists, stacks, and queues.",
+        "Understand algorithmic concepts such as sorting, searching, and dynamic programming.",
+        "Practice coding problems to enhance problem-solving skills for FAANG-level interviews.",
+        "Gain confidence with mock interviews and coding challenges."
+      ]
+    }
+  },
+  {
+    category: "DevOps Version Control",
+    learners: "9k",
+    title: "Git & GitHub Mastery: From Basics to Pro",
+    lessons: 15,
+    duration: "13",
+    rating: 2,
+    imageUrl: "/assets/cources/git.jpg",
+    hoverCard: {
+      title: "Version Control Excellence: Git & GitHub Mastery",
+      subTitle: "From local repositories to collaborative workflows, master Git and GitHub.",
+      bullets: [
+        "Learn Git basics: commit, branch, merge, and rebase with confidence.",
+        "Understand GitHub workflows and manage pull requests effectively.",
+        "Collaborate seamlessly on open-source projects using GitHub.",
+        "Optimize your workflow with Git commands and shortcuts."
+      ]
+    }
+  },
+  {
+    category: "Openshift & Redhat Certificate",
+    learners: "9k",
+    title: "OpenShift Administration Mastery",
+    lessons: 2,
+    duration: "4",
+    rating: 4.8,
+    imageUrl: "/assets/cources/redhat.jpg",
+    hoverCard: {
+      title: "Achieve Red Hat Certification: OpenShift Administration",
+      subTitle: "Master OpenShift for containerized applications and earn your Red Hat certification.",
+      bullets: [
+        "Learn to deploy, configure, and manage OpenShift clusters.",
+        "Understand the OpenShift architecture and its key components.",
+        "Manage storage, networking, and security in OpenShift environments.",
+        "Prepare for the Red Hat OpenShift Administration certification exam."
+      ]
+    }
+  },
+  {
+    category: "Data Science",
+    learners: "9k",
+    title: "Logo Design: From Concept to Presentation",
+    lessons: 2,
+    duration: "4",
+    rating: 4.8,
+    imageUrl: "/assets/cources/tarr.jpg",
+    hoverCard: {
+      title: "Craft the Perfect Logo: Concept to Presentation",
+      subTitle: "Learn to create impactful logos, from brainstorming to final presentation.",
+      bullets: [
+        "Understand design principles for effective logos.",
+        "Explore concept development and sketching techniques.",
+        "Learn how to use color, typography, and imagery effectively.",
+        "Create a professional presentation for your logo designs."
+      ]
+    }
+  },
+  {
+    category: "Development",
+    learners: "9k",
+    title: "Professional Ceramic Moulding for Beginners",
+    lessons: 2,
+    duration: "4",
+    rating: 4.8,
+    imageUrl: "/assets/cources/Course-banner4.jpg",
+    hoverCard: {
+      title: "Start Your Journey in Ceramic Moulding",
+      subTitle: "An introductory course to mastering ceramic molding techniques.",
+      bullets: [
+        "Learn basic techniques for ceramic molding and shaping.",
+        "Understand the types of clay and tools needed for ceramic work.",
+        "Create simple molds and experiment with glaze and finishes.",
+        "Gain hands-on experience with professional guidance."
+      ]
+    }
   }
 ];
+
 
 // Utility function to render stars based on the rating
 const renderStars = (rating: number) => {
