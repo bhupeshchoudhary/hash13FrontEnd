@@ -37,7 +37,7 @@ const features = [
 
 // Define different widths for the cards
 const cardWidths = [
-  { width: '350px' },
+  { width: '370px' },
   { width: '500px' },
   { width: '400px' },
   { width: '400px' },
@@ -75,9 +75,9 @@ export default function FactsAndFigure() {
             >
               {/* Container for Feature Data */}
               <div className="flex-1 mr-4">
-                <h3 className="text-3xl font-bold mb-2 text-[#ff0000]">{feature.number}</h3>
+                <h3 className="text-4xl font-bold mb-2 text-[#ff0000]">{feature.number}</h3>
                 <h4
-                  className="text-sm font-semibold mb-2 "
+                  className="text-md font-semibold mb-2 "
                   style={{
                     whiteSpace: 'nowrap',
                     overflow: 'hidden',
