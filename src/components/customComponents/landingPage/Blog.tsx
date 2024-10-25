@@ -53,7 +53,7 @@ const BlogSection = () => {
             </span>
           </h2>
         </div>
-        <Button variant="destructive">
+        <Button className='bg-[#ff0000]' variant="destructive">
           Read All Blogs
         </Button>
       </div>

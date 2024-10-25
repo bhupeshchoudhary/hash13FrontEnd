@@ -269,7 +269,7 @@ export default function CoursesComponent() {
       </div>
 
       <div className="text-center mt-10">
-        <Button variant="destructive" size="lg">
+        <Button className="bg-[#ff0000]" variant="destructive" size="lg">
           View All Courses
         </Button>
       </div>
