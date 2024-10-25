@@ -6,7 +6,7 @@ import logo from '../../../public/assets/landingPage/logohash13.svg' // Imported
 
 export default function Navbar() {
   return (
-    <header className="relative w-full max-w-7xl px-6 lg:px-14 overflow-hidden h-16 sticky top-0 z-50 bg-white ">
+    <header className="flex w-full mx-auto items-center   max-w-7xl px-6 lg:px-14 overflow-hidden h-16 sticky top-0 z-50 bg-white ">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between h-full"> {/* Full height for content */}
         <Link href="/">
           <div className="h-full"> {/* Ensure the logo fits within the navbar height */}
