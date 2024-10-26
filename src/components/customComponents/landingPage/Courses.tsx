@@ -26,7 +26,7 @@ const courses = [
   {
     category: "DevOps ",
     learners: "9k",
-    title: "Complete DevOps Training",
+    title: "Complete DevOps Training From Basics to Pro",
     lessons: 2,
     duration: "298.67",
     rating: 5,
@@ -45,7 +45,7 @@ const courses = [
   {
     category: "Programming & Data Structure & Algo",
     learners: "9k",
-    title: "DSA Mastery for FAANG",
+    title: "DSA Mastery for FAANG From Basics to Pro",
     lessons: 58,
     duration: "85",
     rating: 3.5,
