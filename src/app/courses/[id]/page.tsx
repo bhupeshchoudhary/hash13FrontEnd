@@ -32,7 +32,7 @@ const CourseDetail = ()=>{
      <WhatWillYouLearn></WhatWillYouLearn>
      <Analyst></Analyst>
      <Faq></Faq>
-     {/* <CardStack></CardStack> */}
+     <CardStack></CardStack>
      <KeyOutcomes></KeyOutcomes>
         </>
     )

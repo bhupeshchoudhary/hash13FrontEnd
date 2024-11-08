@@ -145,12 +145,12 @@ export default function CardStack() {
   }, [activeIndex, modules.length]);
 
   return (
-    <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-start max-w-7xl mx-auto px-4 min-h-screen">
+    <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-start max-w-6xl mx-auto px-4 min-h-screen">
       <div className="space-y-6 lg:sticky lg:top-8">
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
           What will you{" "}
           <span className="relative">
-            <span className="text-[#ff4d00]">learn</span>
+            <span className="text-[#ff0000]">learn</span>
             <svg
               className="absolute -top-1 -right-2 w-4 h-4 text-[#ff4d00]/20"
               viewBox="0 0 24 24"
