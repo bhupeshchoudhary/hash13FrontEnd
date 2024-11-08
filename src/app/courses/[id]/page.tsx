@@ -13,6 +13,7 @@ import Projects from "@/components/customComponents/coursesComponents/courseDeta
 import ProgramHighlights from "@/components/customComponents/coursesComponents/courseDetails/ProgramHighlights";
 import MentorProfile from "@/components/customComponents/coursesComponents/courseDetails/Mentor";
 import WhatWillYouLearn from "@/components/customComponents/coursesComponents/courseDetails/WhatWillYouLearn";
+import KeyOutcomes from "@/components/customComponents/coursesComponents/courseDetails/KeyOutcomes";
 const CourseDetail = ()=>{
     const params = useParams ();
     const {pid}  = params;
@@ -122,6 +123,8 @@ const CourseDetail = ()=>{
      <Analyst></Analyst>
      <Faq></Faq>
      <CardStack></CardStack>
+     <KeyOutcomes></KeyOutcomes>
+     
     </div>
         </>
     )
