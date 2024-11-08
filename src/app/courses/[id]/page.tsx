@@ -23,8 +23,8 @@ const CourseDetail = ()=>{
     return (
         <>
         <CourseDetailHero></CourseDetailHero>
-  {/* <ExampleCard></ExampleCard>
-      <ExampleCard2></ExampleCard2> */}
+  {/* <ExampleCard></ExampleCard> */}
+      <ExampleCard2></ExampleCard2>
         <ProgramHighlights></ProgramHighlights>
      <Tools></Tools> 
      <Projects></Projects>
