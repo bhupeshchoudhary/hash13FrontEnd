@@ -65,7 +65,7 @@ export default function KeyOutcomes() {
   const LinuxWorldUrl = "https://media.licdn.com/dms/image/v2/C4E0BAQER-Sage-ex_A/company-logo_200_200/company-logo_200_200/0/1639050566015/linuxworld_informatics_pvt_ltd_logo?e=1739404800&v=beta&t=7LaZjwQW277ZW-ooZe19e_aWSS1uQzZULZzYC7t1JHY"; // Example URL, replace with actual URL
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen">
+    <div className="flex flex-col lg:flex-row min-h-screen mt-4 max-w-6xl mx-auto pt-2">
       {/* Left scrollable section */}
       <div ref={leftSectionRef} className="lg:w-2/3 p-6 overflow-y-auto max-h-[calc(100vh-2rem)]">
         <h2 className="text-3xl font-bold mb-6">Key Outcomes</h2>
