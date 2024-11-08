@@ -99,7 +99,7 @@ export default function KeyOutcomes() {
       {/* Right sticky section with Card */}
       <div
         ref={rightSectionRef}
-        className={`lg:w-1/3 p-6 ${isSticky && !isEndReached ? 'sticky top-4' : ''}`}
+        className={`lg:w-1/2 p-6 ${isSticky && !isEndReached ? 'sticky top-4' : ''}`}
       >
         <Card className="h-[600px] overflow-hidden">
           <CardHeader className="pb-4">
