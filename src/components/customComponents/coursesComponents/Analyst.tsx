@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Card } from "@/components/ui/card";
+import { Card,CardHeader,CardTitle,CardContent } from "@/components/ui/card";
 import { BriefcaseIcon } from "lucide-react";
 
 type TabData = {
@@ -142,21 +142,37 @@ export default function Analyst() {
           </Card>
 
           {/* Demand */}
-          <Card className="p-4 sm:p-6">
-            <h3 className="font-semibold mb-6 text-base sm:text-lg">Demand</h3>
-            <div className="flex flex-col items-center space-y-4">
-              <div className="bg-red-50 rounded-full p-4">
-                <BriefcaseIcon className="w-10 h-10 sm:w-12 sm:h-12 text-red-500" />
-              </div>
-              <div className="text-center">
+          <div className="flex flex-col space-y-2 ">
+       
+
+
+
+    <Card className="p-4 sm:p-6 h-40 sm:h-48 md:h-52">
+    
+      <CardContent className="flex flex-col items-center text-center justify-center h-full">
+      <div className="text-center">
                 <div className="text-3xl sm:text-4xl font-bold">{demand}%</div>
                 <p className="text-xs sm:text-sm text-gray-600">
                   Year-On-Year<br />
                   Growth in Job Postings
                 </p>
               </div>
-            </div>
-          </Card>
+
+      </CardContent>
+    </Card>
+
+    <Card className="p-4 sm:p-6 h-40 sm:h-48 md:h-52">
+    
+    <CardContent className="flex flex-col items-center text-center justify-center h-full">
+    <div className="flex flex-col items-center space-y-4">
+              <div className="bg-red-50 rounded-full p-4">
+                <BriefcaseIcon className="w-10 h-10 sm:w-12 sm:h-12 text-red-500" />
+              </div>
+</div>
+
+    </CardContent>
+  </Card>
+          </div>
         </div>
 
         {/* Footer Text */}
