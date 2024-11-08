@@ -10,6 +10,7 @@ import Faq from "@/components/customComponents/coursesComponents/Faq";
 import ExampleCard from "@/components/customComponents/coursesComponents/courseDetails/ExampleCard";
 import CardStack from "@/components/customComponents/coursesComponents/CardStack";
 import Projects from "@/components/customComponents/coursesComponents/courseDetails/Projects";
+import ExampleCard2 from "@/components/customComponents/coursesComponents/courseDetails/ExampleCard2";
 import ProgramHighlights from "@/components/customComponents/coursesComponents/courseDetails/ProgramHighlights";
 import MentorProfile from "@/components/customComponents/coursesComponents/courseDetails/Mentor";
 import WhatWillYouLearn from "@/components/customComponents/coursesComponents/courseDetails/WhatWillYouLearn";
@@ -26,7 +27,7 @@ const CourseDetail = ()=>{
             {/* Left Column - Program Information */}
             <div className="flex-1 p-12">
               {/* Share Button */}
-              <div className="flex justify-end mb-8">
+              {/* <div className="flex justify-end mb-8">
                 <Button 
                   variant="ghost" 
                   size="icon"
@@ -34,7 +35,7 @@ const CourseDetail = ()=>{
                 >
                   <Share className="h-6 w-6 text-gray-600" />
                 </Button>
-              </div>
+              </div> */}
 
               {/* Title Section */}
               <div className="mb-12">
@@ -114,6 +115,7 @@ const CourseDetail = ()=>{
         </CardContent>
       </Card>
       <ExampleCard></ExampleCard>
+      <ExampleCard2></ExampleCard2>
         <ProgramHighlights></ProgramHighlights>
      <Tools></Tools> 
      <Projects></Projects>

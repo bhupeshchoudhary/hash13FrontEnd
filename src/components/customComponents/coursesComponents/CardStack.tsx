@@ -1,10 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Check, Clock, Video } from "lucide-react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/effect-cards';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCards } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-cards";
+
 
 interface Module {
   number: string;
@@ -21,10 +22,10 @@ interface Module {
 }
 
 export default function CardStack() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
   const swiperRef = useRef<any>(null);
-  const lastScrollY = useRef(0);
-  
+  const lastScrollY = useRef<number>(0);
+
   const modules: Module[] = [
     {
       number: "Module 1",
@@ -113,29 +114,39 @@ export default function CardStack() {
   ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (!swiperRef.current?.swiper) return;
+    const handleScroll = (event: WheelEvent) => {
+      if (!swiperRef.current) return;
 
-      const currentScrollY = window.scrollY;
-      const scrollDifference = currentScrollY - lastScrollY.current;
-      
-      if (Math.abs(scrollDifference) > 50) {
-        if (scrollDifference > 0 && activeIndex < modules.length - 1) {
-          swiperRef.current.swiper.slideNext();
-        } else if (scrollDifference < 0 && activeIndex > 0) {
-          swiperRef.current.swiper.slidePrev();
+      // Prevent default scroll behavior
+      event.preventDefault();
+
+      const deltaY = event.deltaY;
+
+      if (Date.now() - lastScrollY.current > 500) {
+        if (deltaY > 0 && activeIndex < modules.length - 1) {
+          swiperRef.current.slideNext();
+        } else if (deltaY < 0 && activeIndex > 0) {
+          swiperRef.current.slidePrev();
         }
-        lastScrollY.current = currentScrollY;
+        lastScrollY.current = Date.now();
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const container = document.querySelector<HTMLDivElement>(".card-stack-container");
+    if (container) {
+      container.addEventListener("wheel", handleScroll, { passive: false });
+    }
+
+    return () => {
+      if (container) {
+        container.removeEventListener("wheel", handleScroll);
+      }
+    };
   }, [activeIndex, modules.length]);
 
   return (
-    <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-start max-w-7xl mx-auto px-4 overflow-hidden">
-      <div className="space-y-6">
+    <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-start max-w-7xl mx-auto px-4 min-h-screen">
+      <div className="space-y-6 lg:sticky lg:top-8">
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
           What will you{" "}
           <span className="relative">
@@ -158,17 +169,20 @@ export default function CardStack() {
         </p>
       </div>
 
-      <div className="relative h-[600px]">
+      <div className="card-stack-container relative h-[600px]">
         <Swiper
-          ref={swiperRef}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           effect="cards"
+          direction="vertical"
           grabCursor={false}
           allowTouchMove={false}
           modules={[EffectCards]}
           className="h-full w-full"
           cardsEffect={{
             slideShadows: false,
-            perSlideOffset: 6,
+            perSlideOffset: 8,
             perSlideRotate: 2,
           }}
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
@@ -176,26 +190,33 @@ export default function CardStack() {
           {modules.map((module, index) => (
             <SwiperSlide key={index}>
               <Card
-                className={`h-full p-6 transition-all duration-300 ${
-                  module.colors.background
-                } ${index === activeIndex ? "shadow-lg" : "opacity-90"}`}
+                className={`h-full p-6 transition-all duration-300 ${module.colors.background} ${
+                  index === activeIndex ? "shadow-lg" : "opacity-90 transform"
+                }`}
+                style={{
+                  transform: `translateY(${(index - activeIndex) * 8}px)`,
+                }}
               >
                 <div className="space-y-6">
                   <div>
-                    <div className={`text-sm font-medium ${module.colors.text}`}>{module.number}</div>
+                    <div className={`text-sm font-medium ${module.colors.text}`}>
+                      {module.number}
+                    </div>
                     <h2 className={`text-2xl font-bold ${module.colors.text} mt-1`}>
                       {module.title}
                     </h2>
                   </div>
 
                   <div className="flex flex-wrap gap-4">
-                    <div className={`flex items-center gap-2 text-sm font-medium px-4 py-2 
-                      ${module.colors.badge} ${module.colors.badgeText} rounded-full`}>
+                    <div
+                      className={`flex items-center gap-2 text-sm font-medium px-4 py-2 ${module.colors.badge} ${module.colors.badgeText} rounded-full`}
+                    >
                       <Video className="w-4 h-4" />
                       {module.videos} videos
                     </div>
-                    <div className={`flex items-center gap-2 text-sm font-medium px-4 py-2 
-                      ${module.colors.badge} ${module.colors.badgeText} rounded-full`}>
+                    <div
+                      className={`flex items-center gap-2 text-sm font-medium px-4 py-2 ${module.colors.badge} ${module.colors.badgeText} rounded-full`}
+                    >
                       <Clock className="w-4 h-4" />
                       Time: {module.duration}
                     </div>
