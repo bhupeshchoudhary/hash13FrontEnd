@@ -22,7 +22,7 @@ const ProgramHighlights = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto p-6 lg:px-8">
+    <div className="max-w-6xl mx-auto p-6 lg:px-8">
       {/* Title */}
       <h2 className="text-gray-700 text-lg mb-2">
         MSc AI & Data Science: Your Pathway To AI Career

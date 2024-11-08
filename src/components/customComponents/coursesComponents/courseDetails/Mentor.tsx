@@ -68,7 +68,7 @@ const MentorProfile = () => {
   };
 
   return (
-    <div ref={profileRef} className="max-w-5xl mx-auto p-6">
+    <div ref={profileRef} className="max-w-6xl mx-auto p-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         {/* Left Column - Image Carousel and Mentor Details */}
