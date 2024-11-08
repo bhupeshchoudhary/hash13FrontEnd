@@ -23,6 +23,7 @@ const CourseDetail = ()=>{
 
     return (
         <>
+<<<<<<< HEAD
 <div className="min-h-screen bg-gray-50 p-6">
       <Card className="max-w-6xl mx-auto rounded-[32px] overflow-hidden shadow-lg">
         <CardContent className="p-0">
@@ -118,6 +119,10 @@ const CourseDetail = ()=>{
         </CardContent>
       </Card>
       <ExampleCard></ExampleCard>
+=======
+        <CourseDetailHero></CourseDetailHero>
+  {/* <ExampleCard></ExampleCard> */}
+>>>>>>> ba48c4f910428599e892915c15e6874039f78386
       <ExampleCard2></ExampleCard2>
         <ProgramHighlights></ProgramHighlights>
      <Tools></Tools> 

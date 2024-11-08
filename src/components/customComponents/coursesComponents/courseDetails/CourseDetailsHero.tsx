@@ -67,7 +67,7 @@ const CourseDetailHero = ()=>{
                   Download Brochure
                 </Button>
                 <Button 
-                  className="flex-1 h-12 text-sm font-medium rounded-full bg-red-500 hover:bg-red-600 shadow-md transition-colors"
+                  className="flex-1 h-12 text-sm font-medium rounded-full bg-[#ff0000] hover:bg-red-600 shadow-md transition-colors"
                 >
                   Apply Now
                 </Button>

@@ -30,7 +30,7 @@ const ProgramHighlights = () => {
 
       {/* Heading */}
       <h1 className="text-3xl font-bold mb-6">
-        Key <span className="text-red-500">Program</span> Highlights
+        Key <span className="text-[#ff0000]">Program</span> Highlights
       </h1>
 
       {/* Stats Card */}
@@ -41,7 +41,7 @@ const ProgramHighlights = () => {
               key={index} 
               className="text-center"
             >
-              <div className="text-red-500 text-4xl font-bold mb-2">
+              <div className="text-[#ff0000] text-4xl font-bold mb-2">
                 {item.number}
               </div>
               <div className="text-gray-600 text-lg">
