@@ -4,56 +4,58 @@ import { Badge } from "@/components/ui/badge";
 // Course data array
 const courseInfo = [
   {
-    title: "Spallation in DevOps",
+    title: "AWS-Certified-Solutions-Architect-(CSA)-Training",
     rating: 4.8,
     totalRatings: 2103,
     duration: "3 Months",
+   
     skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
     hours: "30+",
-    backgroundImage: "/assets/cources/course1.jpg"
+    backgroundImage: "/assets/cources/awsCourse.jpg"
   },
   {
-    title: "React Fundamentals",
+    title: "Complete-Linux-v9-Training",
     rating: 4.7,
     totalRatings: 1856,
     duration: "2 Months",
     hours: "20+",
     skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
-    backgroundImage: "/assets/cources/course1.jpg"
+    backgroundImage: "/assets/cources/Complete-Linux-v9-Training-by-Mr.jpg"
   },
   {
-    title: "Python for Data Science",
+    title: "Data-Structure-&-Algorithms-(DSA)",
     rating: 4.9,
     totalRatings: 3201,
     duration: "4 Months",
     hours: "15+",
     skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
-    backgroundImage: "/assets/cources/course1.jpg"
+    backgroundImage: "/assets/cources/Data-Structure-&-Algorithms-(DSA)-for-FAANG.jpg"
   },
   {
-    title: "Web Design Basics",
+    title: "Complete-NLP-Training-Basic-to-Advance-level",
     rating: 4.6,
     totalRatings: 1502,
     duration: "6 Weeks",
     hours: "50+",
     skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
-    backgroundImage: "/assets/cources/course1.jpg"
+    backgroundImage: "/assets/cources/Complete-NLP-Training-Basic-to-Advance-level.jpg"
   },
   {
-    title: "Machine Learning",
+    title: "Complete-System-Design-Training",
     rating: 4.8,
     totalRatings: 2405,
     duration: "3 Months",
     hours: "60+",
     skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
-    backgroundImage: "/assets/cources/course1.jpg"
+    backgroundImage: "/assets/cources/Complete-System-Design-Training-by-Mr.jpg"
   },
   {
-    title: "Mobile App Development",
+    title: "Specialization in devops",
     rating: 4.7,
     totalRatings: 1987,
     duration: "10 Weeks",
-    hours: "50+",
+    hours: "298",
+    module:"155",
     skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
     backgroundImage: "/assets/cources/course1.jpg"
   }
@@ -78,7 +80,7 @@ export default function ExampleCard() {
 
           {/* Card Footer */}
           <CardFooter className="p-4 flex flex-col items-start bg-white">
-            <h3 className="text-lg font-semibold mb-2 text-gray-800">{course.title}</h3>
+            <h3 className="text-sm font-bold mb-2 text-gray-800">{course.title}</h3>
 
             <div className="flex items-center gap-4 mb-4 text-sm text-gray-600">
                   <div className="flex items-center gap-1">
