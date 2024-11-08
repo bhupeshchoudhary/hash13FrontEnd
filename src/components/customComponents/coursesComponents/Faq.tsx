@@ -57,7 +57,7 @@ export default function Faq() {
     <div className="container mx-auto max-w-6xl px-4 py-12">
       {/* Header */}
       <h1 className="text-2xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center sm:text-left">
-        Frequently Asked <span className="text-red-500">Questions</span>
+        Frequently Asked <span className="text-[#ff0000]">Questions</span>
       </h1>
 
       {/* Main Grid */}
@@ -68,7 +68,7 @@ export default function Faq() {
             <div
               key={key}
               className={`p-4 rounded-lg border shadow-sm cursor-pointer transition-all duration-300 
-              ${selectedItem === key ? "bg-red-100 border-red-500 text-red-600" : "bg-white text-gray-600"}`}
+              ${selectedItem === key ? "bg-red-200 border-red-500 text-red-600" : "bg-white text-gray-600"}`}
               onClick={() => setSelectedItem(key as keyof typeof faqContent)}
             >
               <h2 className="text-sm sm:text-lg font-medium">
@@ -90,7 +90,7 @@ export default function Faq() {
               value={`item-${index}`}
               className="border rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
             >
-              <AccordionTrigger className="text-base sm:text-xl font-semibold px-4 sm:px-6 py-3 sm:py-4 [&[data-state=open]]:text-red-500">
+              <AccordionTrigger className="text-base sm:text-xl font-semibold px-4 sm:px-6 py-3 sm:py-4 [&[data-state=open]]:text-[#ff0000]">
                 {item.question}
               </AccordionTrigger>
               <AccordionContent className="text-sm sm:text-base text-gray-600 px-4 sm:px-6 pb-3 sm:pb-4">

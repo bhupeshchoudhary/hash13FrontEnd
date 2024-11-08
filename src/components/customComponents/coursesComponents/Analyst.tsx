@@ -36,7 +36,7 @@ export default function Analyst() {
             Why DS/ML/AI Industry & Why Data Science?
           </p>
           <h1 className="space-y-1">
-            <div className="text-2xl sm:text-3xl font-bold text-red-500">
+            <div className="text-2xl sm:text-3xl font-bold text-[#ff0000]">
               Rising Demand
             </div>
             <div className="text-2xl sm:text-3xl font-bold">

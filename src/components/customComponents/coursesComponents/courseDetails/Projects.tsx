@@ -6,10 +6,10 @@ export default function Projects() {
     <div className="w-full max-w-6xl mx-auto p-6 lg:px-8">
       <div className="space-y-6">
         <div>
-          <h2 className="text-sm text-muted-foreground">Generative AI Certification Projects</h2>
+          <h2 className="text-sm font-bold">Generative AI Certification Projects</h2>
           <div className="flex items-center gap-2 mt-2">
             <span className="bg-black text-white px-3 py-1 text-2xl font-bold">Learn by</span>
-            <span className="text-red-500 text-2xl font-bold">Doing</span>
+            <span className="text-[#ff0000] text-2xl font-bold">Doing</span>
           </div>
         </div>
 
