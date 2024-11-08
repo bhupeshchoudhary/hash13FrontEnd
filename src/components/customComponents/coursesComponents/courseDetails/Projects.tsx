@@ -3,7 +3,7 @@ import { ChevronRight, Globe } from "lucide-react"
 
 export default function Projects() {
   return (
-    <div className="w-full max-w-7xl mx-auto p-6">
+    <div className="w-full max-w-6xl mx-auto p-6 lg:px-8">
       <div className="space-y-6">
         <div>
           <h2 className="text-sm text-muted-foreground">Generative AI Certification Projects</h2>
