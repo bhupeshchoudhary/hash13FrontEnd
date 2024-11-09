@@ -1,18 +1,23 @@
+"use client"
+
 import { useState } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Card,CardHeader,CardTitle,CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { BriefcaseIcon } from "lucide-react";
+import ChartComponent from "./courseDetails/ChartComponent"; // Assuming the chart component is in the same folder
 
+// Define the types for your tab data
 type TabData = {
   salary: { label: string; values: number[] };
   companies: string[];
   demand: number;
 };
 
+// Define the structure of the data for both "analyst" and "scientist" tabs
 const data: Record<string, TabData> = {
   analyst: {
-    salary: { label: "Max (10L)", values: [1200, 2500, 130] },
-    companies: ["Citibank", "Dell", "Deloitte", "google", "IBM", "Infosys", "Intel", "JPMorgan"],
+    salary: { label: "Max (10L)", values: [1200, 2500, 1300] },
+    companies: ["Citibank", "Dell", "Deloitte", "Google", "IBM", "Infosys", "Intel", "JPMorgan"],
     demand: 45,
   },
   scientist: {
@@ -22,13 +27,22 @@ const data: Record<string, TabData> = {
   },
 };
 
-export default function Analyst() {
+const Analyst: React.FC = () => {
+  // Use state to manage the active tab
   const [activeTab, setActiveTab] = useState<"analyst" | "scientist">("analyst");
 
+  // Get the corresponding data for the active tab
   const { salary, companies, demand } = data[activeTab];
 
+  // Format data for chart (salary data, companies, demand)
+  const chartData = {
+    salaryData: salary.values,
+    companiesData: companies,
+    demandData: demand,
+  };
+
   return (
-    <div className="min-h-screen  bg-white px-4 py-8 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-white px-4 py-8 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Header */}
         <div className="space-y-2">
@@ -82,7 +96,7 @@ export default function Analyst() {
         {/* Main Content */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Salary Chart */}
-          <Card className="p-6 sm:p-6 ">
+          <Card className="p-6 sm:p-6">
             <h3 className="font-semibold mb-6 text-base sm:text-lg">
               Annual Average Salaries
             </h3>
@@ -90,45 +104,17 @@ export default function Analyst() {
               <div className="text-xs sm:text-sm text-gray-600">
                 No. of Learners
               </div>
-              <div className="relative h-48 sm:h-64 ">
-                <div className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-200"></div>
-                <div className="absolute -left-6 bottom-0 h-full flex flex-col justify-between text-xs text-gray-600 p-4">
-                  <span>2.6K</span>
-                  <span>1.95K</span>
-                  <span>1.3K</span>
-                  <span>0.65K</span>
-                  <span>0K</span>
-                </div>
-                <div className="absolute bottom-0 left-8 flex items-end space-x-6">
-                  {salary.values.map((value, index) => (
-                    <div key={index} className="space-y-2">
-                      <div
-                        className={`w-8 sm:w-12 ${
-                          index % 2 === 0 ? "bg-teal-500" : "bg-teal-300"
-                        } rounded-t-lg`}
-                        style={{
-                          height: `${(value / 3000) * 100}%`,
-                        }}
-                      ></div>
-                      <span className="text-xs text-gray-600">{value}K</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="absolute -bottom-6 sm:-bottom-8 left-1/2 -translate-x-1/2 text-xs sm:text-sm text-gray-600">
-                  {salary.label}
-                </div>
+              <div className="relative h-48 sm:h-64">
+                {/* Bar Chart for Salary */}
+                <ChartComponent data={chartData.salaryData} label={salary.label}  />
               </div>
-              <div className="text-xs sm:text-sm text-gray-600 mt-4 sm:mt-8">
-                Salary
-              </div>
+              <div className="text-xs sm:text-sm text-gray-600 mt-4 sm:mt-8">Salary</div>
             </div>
           </Card>
 
           {/* Companies */}
           <Card className="p-4 sm:p-6">
-            <h3 className="font-semibold mb-6 text-base sm:text-lg">
-              Top Companies Hiring
-            </h3>
+            <h3 className="font-semibold mb-6 text-base sm:text-lg">Top Companies Hiring</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
               {companies.map((company) => (
                 <img
@@ -142,36 +128,28 @@ export default function Analyst() {
           </Card>
 
           {/* Demand */}
-          <div className="flex flex-col space-y-2 ">
-       
+          <div className="flex flex-col space-y-2">
+            <Card className="p-4 sm:p-6 h-40 sm:h-48 md:h-52">
+              <CardContent className="flex flex-col items-center text-center justify-center h-full">
+                <div className="text-center">
+                  <div className="text-3xl sm:text-4xl font-bold">{demand}%</div>
+                  <p className="text-xs sm:text-sm text-gray-600">
+                    Year-On-Year<br />
+                    Growth in Job Postings
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
 
-
-
-    <Card className="p-4 sm:p-6 h-40 sm:h-48 md:h-52">
-    
-      <CardContent className="flex flex-col items-center text-center justify-center h-full">
-      <div className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold">{demand}%</div>
-                <p className="text-xs sm:text-sm text-gray-600">
-                  Year-On-Year<br />
-                  Growth in Job Postings
-                </p>
-              </div>
-
-      </CardContent>
-    </Card>
-
-    <Card className="p-4 sm:p-6 h-40 sm:h-48 md:h-52">
-    
-    <CardContent className="flex flex-col items-center text-center justify-center h-full">
-    <div className="flex flex-col items-center space-y-4">
-              <div className="bg-red-50 rounded-full p-4">
-                <BriefcaseIcon className="w-10 h-10 sm:w-12 sm:h-12 text-red-500" />
-              </div>
-</div>
-
-    </CardContent>
-  </Card>
+            <Card className="p-4 sm:p-6 h-40 sm:h-48 md:h-52">
+              <CardContent className="flex flex-col items-center text-center justify-center h-full">
+                <div className="flex flex-col items-center space-y-4">
+                  <div className="bg-red-50 rounded-full p-4">
+                    <BriefcaseIcon className="w-10 h-10 sm:w-12 sm:h-12 text-red-500" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
 
@@ -185,3 +163,5 @@ export default function Analyst() {
     </div>
   );
 }
+
+export default Analyst;

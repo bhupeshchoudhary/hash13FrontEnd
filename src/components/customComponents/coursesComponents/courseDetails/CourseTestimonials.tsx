@@ -90,7 +90,7 @@ I'd like to express my gratitude to @Radhika Chopra for this insightful session 
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-[#1B2730] p-6">
+    <div className="min-h-screen bg-[#030a21] p-6">
       <div className="mx-auto" style={{ width: '862px' }}>
         <div className="grid grid-cols-2 gap-6"> {/* Change grid-cols-1 to grid-cols-2 */}
           {posts.map((post) => (

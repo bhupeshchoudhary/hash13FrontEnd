@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ChevronDown, Menu } from 'lucide-react';
+import { ChevronDown, Menu, ChevronUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -14,6 +14,12 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import logo from '../../../public/assets/landingPage/logohash13.svg' // Imported logo
+
+
+
+
+
+
 
 const ProgramCard = ({ title, description, mentor, duration, status, type }:any) => (
   <div className="p-4 hover:bg-gray-50 rounded-lg transition-colors">

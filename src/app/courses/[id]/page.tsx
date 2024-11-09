@@ -17,6 +17,9 @@ import MentorProfile from "@/components/customComponents/coursesComponents/cours
 import WhatWillYouLearn from "@/components/customComponents/coursesComponents/courseDetails/WhatWillYouLearn";
 import KeyOutcomes from "@/components/customComponents/coursesComponents/courseDetails/KeyOutcomes";
 import CourseTestimonials from "@/components/customComponents/coursesComponents/courseDetails/CourseTestimonials"
+
+import ChartComponent from "@/components/customComponents/coursesComponents/courseDetails/ChartComponent";
+
 const CourseDetail = ()=>{
     const params = useParams ();
     const {pid}  = params;
@@ -36,7 +39,11 @@ const CourseDetail = ()=>{
      <CardStack></CardStack>
      <KeyOutcomes></KeyOutcomes>
 
+     
+
      <CourseTestimonials></CourseTestimonials>
+
+     
      
         </>
     )
