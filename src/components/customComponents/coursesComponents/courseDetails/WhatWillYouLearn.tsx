@@ -19,7 +19,7 @@ const WhatWillYouLearn = () => {
     ];
 
     return (
-        <div className="text-center my-20">
+        <div className="mx-auto justify-center text-center my-20">
             <h2 className="text-2xl font-bold mb-8">
                 Who is this program for?
             </h2>

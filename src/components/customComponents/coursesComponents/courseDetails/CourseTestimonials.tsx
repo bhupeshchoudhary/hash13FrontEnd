@@ -75,7 +75,7 @@ Some tools mentioned:
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-[#030a21] p-6">
+    <div className=" bg-[#030a21] p-6">
       <div className="mx-auto" style={{ width: '862px' }}>
         {/* Heading */}
         <h2 className="text-white text-3xl font-bold mb-10 mt-6 text-center "><u>Testimonials</u></h2>

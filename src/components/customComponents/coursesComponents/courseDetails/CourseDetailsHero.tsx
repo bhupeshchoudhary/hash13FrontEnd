@@ -11,7 +11,7 @@ const CourseDetailHero = ()=>{
 
     return (
         <>
-<div className="min-h-screen bg-gray-50 p-6 max-w-7xl px-6 lg:px-8">
+<div className="container mx-auto bg-gray-50 p-6 max-w-7xl px-6 lg:px-8">
       <Card className="max-w-6xl mx-auto rounded-[32px] overflow-hidden shadow-lg">
         <CardContent className="p-0">
           <div className="flex flex-col md:flex-row">

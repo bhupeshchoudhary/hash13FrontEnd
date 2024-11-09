@@ -4,7 +4,7 @@ import { CheckCircle } from "lucide-react";
 
 const CoursesOffer: React.FC = () => {
   return (
-    <div className="bg-[#ffe7e7] text-black py-10 px-6">
+    <div className="container mx-auto max-w-6xl bg-[#ffe7e7] text-black py-10 px-6 overflow-hidden">
       {/* Header Section */}
       <h1 className="text-center text-3xl font-bold mb-8">
         Book your spot! We will be increasing the price soon...
