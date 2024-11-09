@@ -20,6 +20,8 @@ import CourseTestimonials from "@/components/customComponents/coursesComponents/
 
 import ChartComponent from "@/components/customComponents/coursesComponents/courseDetails/ChartComponent";
 
+import CoursesOffer from "@/components/customComponents/coursesComponents/courseDetails/CoursesOffer";
+
 const CourseDetail = ()=>{
     const params = useParams ();
     const {pid}  = params;
@@ -42,7 +44,7 @@ const CourseDetail = ()=>{
      
 
      <CourseTestimonials></CourseTestimonials>
-
+        {/* <CoursesOffer></CoursesOffer> */}
      
      
         </>
