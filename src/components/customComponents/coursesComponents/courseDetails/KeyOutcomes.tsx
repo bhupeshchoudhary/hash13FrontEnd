@@ -75,7 +75,6 @@ export default function KeyOutcomes() {
           proven methods and strategies. This program provides guided learning from industry
           experts, combining self-paced videos and live Q&A sessions to master SEO concepts
           hands-on.
-          lorem899
         </p>
         <ul className="space-y-2 mb-6">
           {[
@@ -101,12 +100,12 @@ export default function KeyOutcomes() {
         ref={rightSectionRef}
         className={`lg:w-1/2 p-6 ${isSticky && !isEndReached ? 'sticky top-4' : ''}`}
       >
-        <Card className="h-[600px] overflow-hidden">
+        <Card className="h-auto"> {/* Set height to auto to allow expansion */}
           <CardHeader className="pb-4">
             <CardTitle className="text-2xl font-bold">5.4M+ Learners</CardTitle>
             <p className="text-muted-foreground">have reaped benefits from our programs</p>
           </CardHeader>
-          <CardContent className="space-y-6 overflow-y-auto h-[calc(100%-5rem)]">
+          <CardContent className="space-y-6"> {/* Removed overflow-y-auto */}
             <div className="overflow-hidden">
               <motion.div
                 animate={{ x: ["0%", "-50%"] }}
@@ -156,9 +155,9 @@ export default function KeyOutcomes() {
               <Image
                 src={LinuxWorldUrl}
                 alt="Linux World"
-                width={120}
-                height={40}
-                className="h-10 w-auto"
+                width={200}  // Increased width
+                height={60}  // Increased height
+                className="h-15 w-auto"
               />
               <div className="flex items-center gap-2">
                 <Image
