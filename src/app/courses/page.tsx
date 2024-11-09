@@ -1,9 +1,10 @@
 import React from 'react';
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent ,CardFooter} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { ChevronRight, Clock, Users } from "lucide-react";
+import { Star } from "lucide-react"
 
 const CoursePage = () => {
   const categories = [
@@ -18,50 +19,65 @@ const CoursePage = () => {
     { name: "Law", count: 5 },
   ];
 
-  const courses = [
+  const courseInfo = [
     {
-      title: "Introduction to Data Analysis using Excel",
-      image: "/api/placeholder/600/400",
+      title: "AWS-Certified-Solutions-Architect-(CSA)-Training",
+      rating: 4.8,
+      totalRatings: 2103,
+      duration: "3 Months",
+     
       skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
-      learners: "99k+",
-      duration: "9 hrs of learning",
+      hours: "30+",
+      backgroundImage: "/assets/cources/awsCourse.jpg"
     },
     {
-      title: "Learn Basic Python Programming",
-      image: "/api/placeholder/600/400",
-      skills: ["Python Programming", "Matplotlib", "Basics of Coding"],
-      learners: "43k+",
-      duration: "5 hrs of learning",
+      title: "Complete-Linux-v9-Training",
+      rating: 4.7,
+      totalRatings: 1856,
+      duration: "2 Months",
+      hours: "20+",
+      skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
+      backgroundImage: "/assets/cources/Complete-Linux-v9-Training-by-Mr.jpg"
     },
     {
-      title: "Analyzing Patterns in Data and Storytelling",
-      image: "/api/placeholder/600/400",
-      skills: ["Data Visualization", "Machine Learning", "Data Analysis"],
-      learners: "41k+",
-      duration: "6 hrs of learning",
+      title: "Data-Structure-&-Algorithms-(DSA)",
+      rating: 4.9,
+      totalRatings: 3201,
+      duration: "4 Months",
+      hours: "15+",
+      skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
+      backgroundImage: "/assets/cources/Data-Structure-&-Algorithms-(DSA)-for-FAANG.jpg"
     },
     {
-      title: "JavaScript Basics from Scratch",
-      image: "/api/placeholder/600/400",
-      skills: ["Variables", "Policy Influence", "Conditionals", "Loops", "Arrays", "Objects"],
-      learners: "41k+",
-      duration: "19 hrs of learning",
+      title: "Complete-NLP-Training-Basic-to-Advance-level",
+      rating: 4.6,
+      totalRatings: 1502,
+      duration: "6 Weeks",
+      hours: "50+",
+      skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
+      backgroundImage: "/assets/cources/Complete-NLP-Training-Basic-to-Advance-level.jpg"
     },
     {
-      title: "Data Structures & Algorithm",
-      image: "/api/placeholder/600/400",
-      skills: ["Algorithms", "Blockchain", "Arrays", "Linked Lists", "Stacks", "Queues"],
-      learners: "35k+",
-      duration: "50 hrs of learning",
+      title: "Complete-System-Design-Training",
+      rating: 4.8,
+      totalRatings: 2405,
+      duration: "3 Months",
+      hours: "60+",
+      skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
+      backgroundImage: "/assets/cources/Complete-System-Design-Training-by-Mr.jpg"
     },
     {
-      title: "Basics of Search Engine Optimization",
-      image: "/api/placeholder/600/400",
-      skills: ["SEO", "Immutability", "Marketing"],
-      learners: "33k+",
-      duration: "6 hrs of learning",
-    },
-  ];
+      title: "Specialization in devops",
+      rating: 4.7,
+      totalRatings: 1987,
+      duration: "10 Weeks",
+      hours: "298",
+      module:"155",
+      skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
+      backgroundImage: "/assets/cources/course1.jpg"
+    }
+  ]
+  
 
   return (
     <div className="container mx-auto p-6">
@@ -96,55 +112,38 @@ const CoursePage = () => {
         </div>
 
         {/* Course Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
-          {courses.map((course) => (
-            <Card key={course.title} className="overflow-hidden">
-              <img
-                src={course.image}
-                alt={course.title}
-                className="w-full h-48 object-cover"
-              />
-              <CardContent className="p-4">
-                <h3 className="font-semibold mb-3">{course.title}</h3>
-                
-                <div className="mb-3">
-                  <div className="text-sm text-gray-600 mb-2">Skills:</div>
-                  <div className="flex flex-wrap gap-2">
-                    {course.skills.map((skill) => (
-                      <Badge
-                        key={skill}
-                        variant="secondary"
-                        className="text-xs"
-                      >
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 p-2 max-w-6xl mx-auto">
+      {courseInfo.map((course, index) => (
+        <Card
+          key={index}
+          className="group relative overflow-hidden w-full cursor-pointer transition-transform hover:scale-105 flex flex-col"
+        >
+          {/* Image Container */}
+          <div className="h-56 sm:h-56 overflow-hidden">
+            <img
+              src={course.backgroundImage}
+              alt={course.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-                <div className="flex items-center gap-4 mb-4 text-sm text-gray-600">
-                  <div className="flex items-center gap-1">
-                    <Users className="h-4 w-4" />
-                    {course.learners} learners
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Clock className="h-4 w-4" />
-                    {course.duration}
-                  </div>
-                </div>
+          {/* Card Footer */}
+          <CardFooter className="p-4 flex flex-col items-start bg-white">
+            <h3 className="text-base sm:text-sm font-bold mb-2 text-gray-800">{course.title}</h3>
 
-                <div className="flex gap-2">
-                  <Button variant="outline" className="flex-1">
-                    View Program
-                  </Button>
-                  <Button className="flex-1 bg-red-500 hover:bg-red-600">
-                    Enroll Now
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+            <div className="flex items-center gap-4 mb-4 text-sm sm:text-xs text-gray-600">
+              <div className="flex items-center gap-1">
+                <Star className="w-4 h-4 fill-yellow-400 stroke-yellow-400 mr-1" />
+                <span className="text-sm sm:text-xs text-gray-600">{course.rating.toFixed(1)}</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="mr-2 sm:mr-1">{course.hours} hours</span>
+              </div>
+            </div>
+          </CardFooter>
+        </Card>
+      ))}
+    </div>
       </div>
     </div>
   );

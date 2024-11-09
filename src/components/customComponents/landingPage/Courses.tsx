@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card"
 import { Clock, Star, BookOpen, ChartBar } from "lucide-react";
 import curveLine from "../../../../public/assets/CurlLine.svg";
 
+
 interface Course {
   category: string;
   learners: string;
@@ -22,122 +23,65 @@ interface CardPosition {
 }
 
 
-const courses = [
+const courseInfo = [
   {
-    category: "DevOps ",
-    learners: "9k",
-    title: "Complete DevOps Training From Basics to Pro",
-    lessons: 2,
-    duration: "298.67",
-    rating: 5,
-    imageUrl: "/assets/cources/aws.jpg",
-    hoverCard: {
-      title: "Transform Your Software Development Lifecycle: Become a DevOps Expert",
-      subTitle: "Master Tools Like Docker, Kubernetes, and Jenkins—Learn Essential Strategies Not Found on Google!",
-      bullets: [
-        "Gain a comprehensive understanding of the DevOps culture and its importance in modern software development",
-        "Master containerization with Docker and orchestration with Kubernetes to streamline deployments",
-        "Implement CI/CD pipelines using Jenkins and GitLab for automated testing and delivery.",
-        "Explore infrastructure as code with Terraform and monitor applications with Prometheus and Grafana."
-      ]
-    }
-  },
-  {
-    category: "Programming & Data Structure & Algo",
-    learners: "9k",
-    title: "DSA Mastery for FAANG From Basics to Pro",
-    lessons: 58,
-    duration: "85",
-    rating: 3.5,
-    imageUrl: "/assets/cources/dsa.jpg",
-    hoverCard: {
-      title: "Crack the Code: DSA for FAANG Interviews",
-      subTitle: "Master essential algorithms and data structures to succeed in top tech interviews.",
-      bullets: [
-        "Learn key data structures like arrays, linked lists, stacks, and queues.",
-        "Understand algorithmic concepts such as sorting, searching, and dynamic programming.",
-        "Practice coding problems to enhance problem-solving skills for FAANG-level interviews.",
-        "Gain confidence with mock interviews and coding challenges."
-      ]
-    }
-  },
-  {
-    category: "DevOps Version Control",
-    learners: "9k",
-    title: "Git & GitHub Mastery: From Basics to Pro",
-    lessons: 15,
-    duration: "13",
-    rating: 2,
-    imageUrl: "/assets/cources/git.jpg",
-    hoverCard: {
-      title: "Version Control Excellence: Git & GitHub Mastery",
-      subTitle: "From local repositories to collaborative workflows, master Git and GitHub.",
-      bullets: [
-        "Learn Git basics: commit, branch, merge, and rebase with confidence.",
-        "Understand GitHub workflows and manage pull requests effectively.",
-        "Collaborate seamlessly on open-source projects using GitHub.",
-        "Optimize your workflow with Git commands and shortcuts."
-      ]
-    }
-  },
-  {
-    category: "Openshift & Redhat Certificate",
-    learners: "9k",
-    title: "OpenShift Administration Mastery",
-    lessons: 2,
-    duration: "4",
+    title: "AWS-Certified-Solutions-Architect-(CSA)-Training",
     rating: 4.8,
-    imageUrl: "/assets/cources/redhat.jpg",
-    hoverCard: {
-      title: "Achieve Red Hat Certification: OpenShift Administration",
-      subTitle: "Master OpenShift for containerized applications and earn your Red Hat certification.",
-      bullets: [
-        "Learn to deploy, configure, and manage OpenShift clusters.",
-        "Understand the OpenShift architecture and its key components.",
-        "Manage storage, networking, and security in OpenShift environments.",
-        "Prepare for the Red Hat OpenShift Administration certification exam."
-      ]
-    }
+    totalRatings: 2103,
+    duration: "3 Months",
+   
+    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
+    hours: "30+",
+    backgroundImage: "/assets/cources/awsCourse.jpg"
   },
   {
-    category: "Data Science",
-    learners: "9k",
-    title: "Logo Design: From Concept to Presentation",
-    lessons: 2,
-    duration: "4",
-    rating: 4.8,
-    imageUrl: "/assets/cources/tarr.jpg",
-    hoverCard: {
-      title: "Craft the Perfect Logo: Concept to Presentation",
-      subTitle: "Learn to create impactful logos, from brainstorming to final presentation.",
-      bullets: [
-        "Understand design principles for effective logos.",
-        "Explore concept development and sketching techniques.",
-        "Learn how to use color, typography, and imagery effectively.",
-        "Create a professional presentation for your logo designs."
-      ]
-    }
+    title: "Complete-Linux-v9-Training",
+    rating: 4.7,
+    totalRatings: 1856,
+    duration: "2 Months",
+    hours: "20+",
+    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
+    backgroundImage: "/assets/cources/Complete-Linux-v9-Training-by-Mr.jpg"
   },
   {
-    category: "Development",
-    learners: "9k",
-    title: "Professional Ceramic Moulding for Beginners",
-    lessons: 2,
-    duration: "4",
+    title: "Data-Structure-&-Algorithms-(DSA)",
+    rating: 4.9,
+    totalRatings: 3201,
+    duration: "4 Months",
+    hours: "15+",
+    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
+    backgroundImage: "/assets/cources/Data-Structure-&-Algorithms-(DSA)-for-FAANG.jpg"
+  },
+  {
+    title: "Complete-NLP-Training-Basic-to-Advance-level",
+    rating: 4.6,
+    totalRatings: 1502,
+    duration: "6 Weeks",
+    hours: "50+",
+    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
+    backgroundImage: "/assets/cources/Complete-NLP-Training-Basic-to-Advance-level.jpg"
+  },
+  {
+    title: "Complete-System-Design-Training",
     rating: 4.8,
-    imageUrl: "/assets/cources/Course-banner4.jpg",
-    hoverCard: {
-      title: "Start Your Journey in Ceramic Moulding",
-      subTitle: "An introductory course to mastering ceramic molding techniques.",
-      bullets: [
-        "Learn basic techniques for ceramic molding and shaping.",
-        "Understand the types of clay and tools needed for ceramic work.",
-        "Create simple molds and experiment with glaze and finishes.",
-        "Gain hands-on experience with professional guidance."
-      ]
-    }
+    totalRatings: 2405,
+    duration: "3 Months",
+    hours: "60+",
+    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
+    backgroundImage: "/assets/cources/Complete-System-Design-Training-by-Mr.jpg"
+  },
+  {
+    title: "Specialization in devops",
+    rating: 4.7,
+    totalRatings: 1987,
+    duration: "10 Weeks",
+    hours: "298",
+    module:"155",
+    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
+    backgroundImage: "/assets/cources/course1.jpg"
   }
-];
+]
+
 
 
 // Utility function to render stars based on the rating
@@ -164,65 +108,42 @@ const renderStars = (rating: number) => {
   return stars;
 };
 
-function CardComponent({
-  course,
-  index,
-  position,
-}: {
-  course: Course;
-  index: number;
-  position: CardPosition;
-}) {
+function CardComponents() {
   return (
-    <div className="relative">
-      <Card className="max-w-sm overflow-hidden transition-all duration-300 ease-in-out">
-        <CardHeader className="p-0 relative">
-          <img className="w-full h-48 object-cover" src={course.imageUrl} alt={course.title} />
-        </CardHeader>
-        <CardContent className="p-6">
-          <div className="text-sm text-muted-foreground mb-2">{course.category}</div>
-          <h2 className="font-bold text-xl mb-2 line-clamp-2">{course.title}</h2>
-          <div className="flex items-center justify-between text-sm mb-2">
-            <div className="flex items-center text-muted-foreground">
-              <BookOpen className="h-4 w-4 mr-1" />
-              <span>{course.lessons} Lessons</span>
-            </div>
-
-            <div className="flex items-center text-muted-foreground">
-              <Clock className="h-4 w-4 mr-1" />
-              <span>{course.duration}+hrs of learning</span>
-            </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-4 p-2 max-w-6xl mx-auto">
+      {courseInfo.map((course, index) => (
+        <Card
+          key={index}
+          className="group relative overflow-hidden w-full cursor-pointer transition-transform hover:scale-105 flex flex-col"
+        >
+          {/* Image Container */}
+          <div className="h-56 sm:h-56 overflow-hidden">
+            <img
+              src={course.backgroundImage}
+              alt={course.title}
+              className="w-full h-full object-cover"
+            />
           </div>
 
-          <div className="flex items-center justify-between text-sm mb-2">
-            <div className="flex items-center text-muted-foreground">
-            <Star className="h-4 w-4 text-yellow-400 p-0" />
-            <span className="ml-2 text-gray-600">{course.rating}</span>
-              {/* <Clock className="h-4 w-4 mr-1" /> */}
-              &nbsp;
-              <span>{`(${course.learners})`} </span>
-              {/* <Star className="h-4 w-4 text-yellow-400 p-0" />
-              <span className="ml-2 text-gray-600">{course.rating}</span> */}
-            </div>
+          {/* Card Footer */}
+          <CardFooter className="p-4 flex flex-col items-start bg-white">
+            <h3 className="text-base sm:text-sm font-bold mb-2 text-gray-800">{course.title}</h3>
 
-            <div className="flex items-start text-muted-foreground">
-              <ChartBar className="h-4 w-4 mr-1" />
-              <span className="ml-2 text-gray-600">Beginner</span>
+            <div className="flex items-center gap-4 mb-4 text-sm sm:text-xs text-gray-600">
+              <div className="flex items-center gap-1">
+                <Star className="w-4 h-4 fill-yellow-400 stroke-yellow-400 mr-1" />
+                <span className="text-sm sm:text-xs text-gray-600">{course.rating.toFixed(1)}</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="mr-2 sm:mr-1">{course.hours} hours</span>
+              </div>
             </div>
-          </div>
-        </CardContent>
-        <CardFooter className="px-6 pb-4 pt-0">
-          <div className="text-center w-full mx-auto">
-            <Button className="w-1/2 bg-[#ff0000] font-bold text-1xl" variant="default">
-              Invest Now
-            </Button>
-          </div>
-        </CardFooter>
-      </Card>
+          </CardFooter>
+        </Card>
+      ))}
     </div>
-  );
+  )
 }
-
 export default function CoursesComponent() {
   const gridRef = useRef<HTMLDivElement>(null);
 
@@ -252,13 +173,14 @@ export default function CoursesComponent() {
         </h1>
       </div>
 
-      <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
-        {courses.map((course, index) => (
+    <CardComponents></CardComponents>
+      {/* <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
+        {coursesInfo.map((course, index) => (
           <div key={index} className="relative">
             <CardComponent course={course} index={index} position={getCardPosition(index)} />
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className="text-center mt-10">
         <Button className="bg-[#ff0000]" variant="destructive" size="lg">
