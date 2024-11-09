@@ -17,6 +17,11 @@ import MentorProfile from "@/components/customComponents/coursesComponents/cours
 import WhatWillYouLearn from "@/components/customComponents/coursesComponents/courseDetails/WhatWillYouLearn";
 import KeyOutcomes from "@/components/customComponents/coursesComponents/courseDetails/KeyOutcomes";
 import CourseTestimonials from "@/components/customComponents/coursesComponents/courseDetails/CourseTestimonials"
+
+import ChartComponent from "@/components/customComponents/coursesComponents/courseDetails/ChartComponent";
+
+import CoursesOffer from "@/components/customComponents/coursesComponents/courseDetails/CoursesOffer";
+
 const CourseDetail = ()=>{
     const params = useParams ();
     const {pid}  = params;
@@ -25,22 +30,22 @@ const CourseDetail = ()=>{
         <>
         <CourseDetailHero></CourseDetailHero>
   {/* <ExampleCard></ExampleCard> */}
-      {/* <ExampleCard2></ExampleCard2> */}
+      <ExampleCard2></ExampleCard2>
         <ProgramHighlights></ProgramHighlights>
-        <Tools></Tools> 
-        <Projects></Projects>
-     
+     <Tools></Tools> 
+     <Projects></Projects>
+     <MentorProfile></MentorProfile>
      <WhatWillYouLearn></WhatWillYouLearn>
      <Analyst></Analyst>
-     <CardStack></CardStack>
-     <MentorProfile></MentorProfile>
-     
-     <CourseTestimonials></CourseTestimonials>
      <Faq></Faq>
-     
+     <CardStack></CardStack>
      <KeyOutcomes></KeyOutcomes>
 
+     
 
+     <CourseTestimonials></CourseTestimonials>
+        {/* <CoursesOffer></CoursesOffer> */}
+     
      
         </>
     )

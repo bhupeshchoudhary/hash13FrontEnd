@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ChevronDown, Menu } from 'lucide-react';
+import { ChevronDown, Menu, ChevronUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -14,6 +14,12 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import logo from '../../../public/assets/landingPage/logohash13.svg' // Imported logo
+
+
+
+
+
+
 
 const ProgramCard = ({ title, description, mentor, duration, status, type }:any) => (
   <div className="p-4 hover:bg-gray-50 rounded-lg transition-colors">
@@ -42,9 +48,12 @@ const ProgramCard = ({ title, description, mentor, duration, status, type }:any)
 
 const SideCategories = () => (
   <div className="w-48 bg-gray-50 p-4 space-y-2 md:block">
-    <div className="bg-green-900 text-white rounded-md p-2">
+    <div className="bg-[#ff0000] text-white rounded-md p-2">
       <span>Marketing</span>
     </div>
+         
+
+    
     {['Business', 'Data', 'Design', 'Tech', 'Product', 'Growth', 'Gen AI'].map((category) => (
       <div key={category} className="p-2 hover:bg-gray-100 rounded-md cursor-pointer">
         <span>{category}</span>
@@ -157,7 +166,7 @@ export default function Navbar() {
         <div className="hidden md:flex flex-1 justify-end items-center space-x-6 h-full">
           <nav className="flex items-center space-x-6 h-full">
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 text-sm hover:text-gray-600">
+              <DropdownMenuTrigger className="flex items-center space-x-1 text-sm hover:text-[#ff0000]">
                 <span>For working professionals</span>
                 <ChevronDown className="w-4 h-4" />
               </DropdownMenuTrigger>
@@ -167,7 +176,7 @@ export default function Navbar() {
                 style={{
                   position: 'fixed',
                   left: '50%',
-                  transform: 'translateX(-50%)',
+                  transform: 'translateX(-48%)',
                   maxHeight: 'calc(100vh - 100px)',
                   overflowY: 'auto'
                 }}
@@ -176,18 +185,46 @@ export default function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <div className="relative group">
-              <button className="flex items-center space-x-1 text-sm">
+            <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center space-x-1 text-sm hover:text-[#ff0000]">
                 <span>For college students</span>
                 <ChevronDown className="w-4 h-4" />
-              </button>
-            </div>
-            <div className="relative group">
-              <button className="flex items-center space-x-1 text-sm">
+
+                </DropdownMenuTrigger>
+              <DropdownMenuContent 
+                className="w-screen max-w-6xl mt-4 p-0" 
+                align="center"
+                style={{
+                  position: 'fixed',
+                  left: '50%',
+                  transform: 'translateX(-64%)',
+                  maxHeight: 'calc(100vh - 100px)',
+                  overflowY: 'auto'
+                }}
+              >
+                <DropdownContent />
+              </DropdownMenuContent>
+            </DropdownMenu>
+              
+            <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center space-x-1 text-sm hover:text-[#ff0000]">
                 <span>More</span>
                 <ChevronDown className="w-4 h-4" />
-              </button>
-            </div>
+                </DropdownMenuTrigger>
+              <DropdownMenuContent 
+                className="w-screen max-w-6xl mt-4 p-0" 
+                align="center"
+                style={{
+                  position: 'fixed',
+                  left: '50%',
+                  transform: 'translateX(-75%)',
+                  maxHeight: 'calc(100vh - 100px)',
+                  overflowY: 'auto'
+                }}
+              >
+                <DropdownContent />
+              </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
 
           <div className="flex items-center space-x-4 h-full">
@@ -201,3 +238,31 @@ export default function Navbar() {
     </header>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
