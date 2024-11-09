@@ -42,9 +42,12 @@ const ProgramCard = ({ title, description, mentor, duration, status, type }:any)
 
 const SideCategories = () => (
   <div className="w-48 bg-gray-50 p-4 space-y-2 md:block">
-    <div className="bg-green-900 text-white rounded-md p-2">
+    <div className="bg-[#ff0000] text-white rounded-md p-2">
       <span>Marketing</span>
     </div>
+         
+
+    
     {['Business', 'Data', 'Design', 'Tech', 'Product', 'Growth', 'Gen AI'].map((category) => (
       <div key={category} className="p-2 hover:bg-gray-100 rounded-md cursor-pointer">
         <span>{category}</span>
@@ -201,3 +204,31 @@ export default function Navbar() {
     </header>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
