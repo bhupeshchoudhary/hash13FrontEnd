@@ -4,7 +4,8 @@ import { CheckCircle } from "lucide-react";
 
 const CoursesOffer: React.FC = () => {
   return (
-    <div className="container mx-auto max-w-6xl bg-[#ffe7e7] text-black py-10 px-6 overflow-hidden">
+    <div className="bg-[#ffe7e7] p-6 mx-auto  overflow-hidden">
+    <div className="text-black py-10 px-6">
       {/* Header Section */}
       <h1 className="text-center text-3xl font-bold mb-8">
         Book your spot! We will be increasing the price soon...
@@ -81,6 +82,7 @@ const CoursesOffer: React.FC = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
