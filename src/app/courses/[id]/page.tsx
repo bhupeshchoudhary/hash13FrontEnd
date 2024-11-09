@@ -25,18 +25,22 @@ const CourseDetail = ()=>{
         <>
         <CourseDetailHero></CourseDetailHero>
   {/* <ExampleCard></ExampleCard> */}
-      <ExampleCard2></ExampleCard2>
+      {/* <ExampleCard2></ExampleCard2> */}
         <ProgramHighlights></ProgramHighlights>
-     <Tools></Tools> 
-     <Projects></Projects>
-     <MentorProfile></MentorProfile>
+        <Tools></Tools> 
+        <Projects></Projects>
+     
      <WhatWillYouLearn></WhatWillYouLearn>
      <Analyst></Analyst>
-     <Faq></Faq>
      <CardStack></CardStack>
+     <MentorProfile></MentorProfile>
+     
+     <CourseTestimonials></CourseTestimonials>
+     <Faq></Faq>
+     
      <KeyOutcomes></KeyOutcomes>
 
-     <CourseTestimonials></CourseTestimonials>
+
      
         </>
     )
