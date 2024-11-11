@@ -8,7 +8,7 @@ import yerrowArrow from "../../../../public/assets/landingPage/floatingCurveArro
 import curveLine from "../../../../public/assets/CurlLine.svg"
 const About = () => {
   return (
-    <div className="min-h-screen lg:px-14 bg-white p-8 pb-0 relative overflow-hidden">
+    <div className=" lg:px-14 bg-white p-8 pb-0 relative overflow-hidden">
       {/* Decorative Elements - Refined positions */}
       <div className="absolute top-8 left-8 w-2 h-2 bg-[#ff0000]/60 rounded-full" />
       <div className="absolute top-16 right-16 w-12 h-12 bg-pink-100/60 rounded-full" />
