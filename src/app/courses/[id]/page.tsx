@@ -45,10 +45,10 @@ const CourseDetail = ()=>{
      
 
      <CourseTestimonials></CourseTestimonials>
-        <CoursesOffer></CoursesOffer>
+        {/* <CoursesOffer></CoursesOffer>  */}
 
 
-        <CertificateDisplay></CertificateDisplay>
+        {/* <CertificateDisplay></CertificateDisplay> */}
      
      
         </>
