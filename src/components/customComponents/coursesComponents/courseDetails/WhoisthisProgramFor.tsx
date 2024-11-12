@@ -20,8 +20,8 @@ const WhatWillYouLearn = () => {
 
     return (
         <div className="mx-auto justify-center text-center my-20">
-            <h2 className="text-2xl font-bold mb-8">
-                Who is this program for?
+            <h2 className="text-3xl font-bold mb-8">
+                Who is this <span className="text-[#ff0000]">program </span>for?
             </h2>
 
             <div className="relative overflow-hidden bg-white">

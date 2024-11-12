@@ -112,17 +112,17 @@ const MentorProfile = () => {
         {/* Right Column - Content */}
         <div className="space-y-8">
           <div className="space-y-6">
-            <h1 className="text-4xl font-bold text-gray-900">Meet your Mentor</h1>
+            <h1 className="text-3xl font-bold text-gray-900">Meet your <span className="text-[#ff0000]">Mentor</span> </h1>
             
             <div className="space-y-4 text-black-800">
               <p className="leading-relaxed font-bold">
-                Ganesh is a public speaker and YouTuber who co-founded Think School, with Paras Kothari, an education startup that generated 4+ Billion video impressions in 24 months.
+                Vimal sir  is a public speaker and YouTuber who co-founded Think School, with Paras Kothari, an education startup that generated 4+ Billion video impressions in 24 months.
               </p>
               <p className="leading-relaxed">
-                Ganesh has helped 27000+ students improve their communication to become effective public speakers, great salespeople, YouTubers and successful business people.
+                Vimal sir  has helped 27000+ students improve their communication to become effective public speakers, great salespeople, YouTubers and successful business people.
               </p>
               <p className="leading-relaxed">
-                Ganesh's dedication to education has earned him the title of "Insightful Education Creator of the Year 2023" at the Global Startup Summit 2023. His vision is to make the Indian youth more employable by helping them learn practical and fundamental skills in life.
+                Vimal sir 's dedication to education has earned him the title of "Insightful Education Creator of the Year 2023" at the Global Startup Summit 2023. His vision is to make the Indian youth more employable by helping them learn practical and fundamental skills in life.
               </p>
             </div>
           </div>

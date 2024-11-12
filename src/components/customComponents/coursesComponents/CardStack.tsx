@@ -186,7 +186,7 @@ export default function CardStack() {
         className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-start max-w-6xl mx-auto px-4 py-16 relative"
       >
         <div className="space-y-6 lg:sticky lg:top-8 w-full">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
+          <h1 className="sm:text-2xl lg:text-3xl font-bold tracking-tight">
             What will you{" "}
             <span className="relative">
               <span className="text-[#ff0000]">learn</span>

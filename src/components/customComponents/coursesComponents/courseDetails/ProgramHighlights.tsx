@@ -24,7 +24,7 @@ const ProgramHighlights = () => {
   return (
     <div className="max-w-6xl mx-auto p-6 lg:px-8">
       {/* Title */}
-      <h2 className="text-gray-700 text-lg mb-2">
+      <h2 className="text-gray-700 text-sm font-semibold mb-2">
         MSc AI & Data Science: Your Pathway To AI Career
       </h2>
 

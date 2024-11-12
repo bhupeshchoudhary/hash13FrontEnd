@@ -30,10 +30,10 @@ const Tools: React.FC = () => {
     <div className="flex flex-col mt-4 lg:flex-row items-center max-w-6xl justify-between bg-white p-4 sm:p-6 lg:p-8 mx-auto">
       {/* Left Text Content */}
       <div className="lg:w-1/2 space-y-6 sm:space-y-8">
-        <h2 className="text-lg sm:text-xl font-semibold text-gray-800">
+        <h2 className="text-gray-700 text-sm font-semibold">
           Most Hands-On Data Program
         </h2>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
+        <h1 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-gray-900">
           Master 15+ Cutting-Edge <span className="text-[#ff0000]">Data Science Tools</span>
         </h1>
 

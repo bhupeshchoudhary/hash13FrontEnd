@@ -14,7 +14,7 @@ import Projects from "@/components/customComponents/coursesComponents/courseDeta
 import ExampleCard2 from "@/components/customComponents/coursesComponents/courseDetails/ExampleCard2";
 import ProgramHighlights from "@/components/customComponents/coursesComponents/courseDetails/ProgramHighlights";
 import MentorProfile from "@/components/customComponents/coursesComponents/courseDetails/Mentor";
-import WhatWillYouLearn from "@/components/customComponents/coursesComponents/courseDetails/WhatWillYouLearn";
+import WhoisthisProgramFor from "@/components/customComponents/coursesComponents/courseDetails/WhoisthisProgramFor";
 import KeyOutcomes from "@/components/customComponents/coursesComponents/courseDetails/KeyOutcomes";
 import CourseTestimonials from "@/components/customComponents/coursesComponents/courseDetails/CourseTestimonials"
 
@@ -36,7 +36,7 @@ const CourseDetail = ()=>{
      <Tools></Tools> 
      <Projects></Projects>
      <MentorProfile></MentorProfile>
-     <WhatWillYouLearn></WhatWillYouLearn>
+     <WhoisthisProgramFor></WhoisthisProgramFor>
      <Analyst></Analyst>
      <Faq></Faq>
      <CardStack></CardStack>

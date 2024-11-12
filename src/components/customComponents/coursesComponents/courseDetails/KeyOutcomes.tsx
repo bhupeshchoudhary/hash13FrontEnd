@@ -68,7 +68,7 @@ export default function KeyOutcomes() {
     <div className="flex flex-col lg:flex-row  mt-4 max-w-6xl mx-auto pt-2">
       {/* Left scrollable section */}
       <div ref={leftSectionRef} className="lg:w-2/3 p-6 overflow-y-auto max-h-[calc(100vh-2rem)]">
-        <h2 className="text-3xl font-bold mb-6">Key Outcomes</h2>
+        <h2 className="sm:text-2xl lg:text-3xl text-2xl font-bold mb-6">Key <span className="text-[#ff0000]">Outcomes</span></h2>
         <p className="mb-4 text-muted-foreground">
           The SEO Mentorship Program is an 8-week intensive course designed to teach
           participants the steps to dominate search rankings and boost online visibility through
