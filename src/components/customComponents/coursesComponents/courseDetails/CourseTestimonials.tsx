@@ -20,19 +20,9 @@ const posts = [
     author: {
       name: "Akshata Tiwari",
       title: "MERN Enthusiast Seeking Opportunities to Develop and Enhance my Skills",
-      avatar: "https://example.com/avatar1.jpg"  // Replace with a valid image URL
+      avatar: "https://example.com/avatar1.jpg"
     },
-    content: `Hey Folks,
-
-Learning here at @LinuxWorld is awesome.
-Sharing some amazing content I witnessed last week.
-
-1. How to run Website audits using Analytics by @DhruvGupta!
-2. Graphic design secrets revealed by @DevduttMarathkar.
-3. The Art of Storytelling by @SuprshshPuri.
-4. Growth Hacking workshop by @VaibhavSisinty 🔥.
-
-Grateful to all the mentors here for sharing their wisdom. Glad to be a part of #cap.`,
+    content: `Hey Folks...`,
     timestamp: "8 Mar 2023"
   },
   {
@@ -40,23 +30,27 @@ Grateful to all the mentors here for sharing their wisdom. Glad to be a part of 
     author: {
       name: "Ayushi Jain",
       title: "Branding | Marketing and Strategy",
-      avatar: "https://example.com/avatar2.jpg"  // Replace with a valid image URL
+      avatar: "https://example.com/avatar2.jpg"
     },
-    content: `From Google searches to customized Netflix recommendations, AI has been part of our routines for years. Recently attended a workshop hosted by @RadhikaChopra.
-
-Some tools mentioned:
-- Jitter: For interactive content.
-- Super.So: Converts Notion pages to websites.
-- Plotrchart: For creating charts.
-- Descript: Streamlines transcripts and video editing.`,
+    content: `From Google searches...`,
     timestamp: "10 Mar 2023"
+  },
+  {
+    id: 5,
+    author: {
+      name: "Akshata Tiwari",
+      title: "MERN Enthusiast Seeking Opportunities to Develop and Enhance my Skills",
+      avatar: "https://example.com/avatar1.jpg"
+    },
+    content: `Hey Folks...`,
+    timestamp: "8 Mar 2023"
   },
   {
     id: 3,
     author: {
       name: "Prashant Hada",
       title: "Student at Ronald University of Applied Sciences",
-      avatar: "https://example.com/avatar3.jpg"  // Replace with a valid image URL
+      avatar: "https://example.com/avatar3.jpg"
     },
     content: `Happy to announce the completion of the Power BI workshop. Thanks to @LinuxWorld and @DeekshaAnand for the guidance and knowledge transfer. #PowerBI #DataAnalytics`,
     timestamp: "15 Mar 2023"
@@ -66,7 +60,7 @@ Some tools mentioned:
     author: {
       name: "Nikita Chawre",
       title: "Data Analysis Enthusiast",
-      avatar: "https://example.com/avatar4.jpg"  // Replace with a valid image URL
+      avatar: "https://example.com/avatar4.jpg"
     },
     content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
     timestamp: "18 Mar 2023"
@@ -75,14 +69,20 @@ Some tools mentioned:
 
 export default function Component() {
   return (
-    <div className=" bg-[#030a21] p-6 mx-auto">
+    <div className="bg-[#030a21] p-6 mx-auto">
       <div className="mx-auto" style={{ width: '862px' }}>
-        {/* Heading */}
-        <h2 className="text-white text-3xl font-bold mb-10 mt-6 text-center "><u>Testimonials</u></h2>
+      <h2 className="text-white text-md">
+        HERE IT FROM THEM
+      </h2>
+        <h2 className="text-white text-3xl font-bold mb-10 mt-2">Ambitious People ❤️ #13</h2>
         
         <div className="columns-2 md:columns-3 gap-6 space-y-4">
           {posts.map((post) => (
-            <Card key={post.id} className="relative overflow-hidden bg-[#243342] text-white shadow-md mb-4 break-inside-avoid">
+            <Card
+              key={post.id}
+              className={`relative overflow-hidden bg-[#243342] text-white shadow-md mb-4 break-inside-avoid`}
+            >
+              {/* Content Cards (No Video) */}
               <CardHeader className="pb-2">
                 <div className="flex items-center space-x-4">
                   <Avatar className="h-12 w-12">
