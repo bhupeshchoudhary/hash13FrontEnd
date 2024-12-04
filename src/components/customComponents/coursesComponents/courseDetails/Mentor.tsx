@@ -141,24 +141,31 @@ const MentorProfile = () => {
           </div>
 
           {/* Enhanced Featured Section */}
-          <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white/50 backdrop-blur-sm">
-            <p className="text-gray-800 font-medium mb-6 font-bold">Featured In</p>
+          <div className="border border-gray-200 rounded-xl p-8 shadow-sm bg-white/50 backdrop-blur-sm">
+            <p className="text-gray-800 font-medium mb-6 font-bold"></p>
             <div className="grid grid-cols-1 gap-8">
-              {/* <img 
-                src="/api/placeholder/120/40" 
-                alt="CNBC" 
-                className="h-8 object-contain opacity-90 hover:opacity-100 transition-opacity duration-200"
-              />
+              
               <img 
-                src="/api/placeholder/120/40" 
-                alt="ET India" 
-                className="h-8 object-contain opacity-90 hover:opacity-100 transition-opacity duration-200"
-              />
-              <img 
-                src="/api/placeholder/120/40" 
+                src="/assets/featuredinn.png" 
                 alt="Money Control" 
-                className="h-8 object-contain opacity-90 hover:opacity-100 transition-opacity duration-200"
-              /> */}
+                className="h-full object-contain w-full opacity-90 hover:opacity-100 transition-opacity duration-200"
+              /> 
+              {/* <MentorFeatured></MentorFeatured> */}
+            </div>
+          </div>
+          {/* company serverd by mentor */}
+
+          <div className="border border-gray-200 rounded-xl p-6 pt-2 shadow-sm bg-white/50 backdrop-blur-sm">
+            <p className="text-gray-800 font-medium mb-6 font-bold">Companies benefited with his <span className='text-[#ff0000]'>
+            trainings & consultancy
+              </span></p>
+            <div className="grid grid-cols-1 gap-8">
+              
+              {/* <img 
+                src="/assets/featuredin.png" 
+                alt="Money Control" 
+                className="h-full object-contain w-full opacity-90 hover:opacity-100 transition-opacity duration-200"
+              />  */}
               <MentorFeatured></MentorFeatured>
             </div>
           </div>

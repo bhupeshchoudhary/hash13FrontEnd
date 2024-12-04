@@ -52,11 +52,11 @@ import {
             >
               <AccordionTrigger className="px-6 py-4 hover:no-underline">
                 <div className="text-left">
-                  <div className="text-sm  mb-1">
+                  <div className="text-sm text-[#ff0000]  mb-1">
                     MODULE {module.id}
                   </div>
-                  <h3 className="font-medium text-base">{module.title}</h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="font-bold text-[#ff0000] ">{module.title}</h3>
+                  <p className="">
                     {module.description}
                   </p>
                 </div>
@@ -68,7 +68,7 @@ import {
               </AccordionTrigger>
               {module.description && (
                 <AccordionContent className="px-6 pb-4">
-                  <p className="text-muted-foreground">
+                  <p className=" text-green-700">
                     {module.content.map((item) => (
                       <li key={item}>{item}</li>
                     ))}

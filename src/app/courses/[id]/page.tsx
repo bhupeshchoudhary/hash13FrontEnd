@@ -17,7 +17,7 @@ import MentorProfile from "@/components/customComponents/coursesComponents/cours
 import WhoisthisProgramFor from "@/components/customComponents/coursesComponents/courseDetails/WhoisthisProgramFor";
 import KeyOutcomes from "@/components/customComponents/coursesComponents/courseDetails/KeyOutcomes";
 import CourseTestimonials from "@/components/customComponents/coursesComponents/courseDetails/CourseTestimonials"
-
+import CoursePricingSection from "@/components/customComponents/coursesComponents/courseDetails/CoursePricingSection";
 import ChartComponent from "@/components/customComponents/coursesComponents/courseDetails/ChartComponent";
 
 import CoursesOffer from "@/components/customComponents/coursesComponents/courseDetails/CoursesOffer";
@@ -42,7 +42,7 @@ const CourseDetail = ()=>{
      <CardStack></CardStack>
      <KeyOutcomes></KeyOutcomes>
 
-     
+     <CoursePricingSection></CoursePricingSection>
 
      <CourseTestimonials></CourseTestimonials>
         {/* <CoursesOffer></CoursesOffer>  */}

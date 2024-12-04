@@ -57,6 +57,25 @@ export default function KeyOutcomes() {
     <div className="flex flex-col lg:flex-row mt-4 max-w-6xl mx-auto pt-2">
       {/* Left Section */}
       <div className="lg:w-2/3 p-6">
+      <h1 className="sm:text-2xl lg:text-3xl font-bold tracking-tight">
+            What will you{" "}
+            <span className="relative">
+              <span className="text-[#ff0000]">learn</span>
+              <svg
+                className="absolute -top-1 -right-2 w-4 h-4 text-[#ff4d00]/20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <circle cx="12" cy="12" r="12" />
+              </svg>
+            </span>
+            ?
+          </h1>
+          <p className="text-sm font-bold pb-8 leading-relaxed">
+            Discover a comprehensive curriculum designed to empower you with the
+            skills and knowledge needed to excel in communication.
+          </p>
+
         <DisplayCourseContent />
       </div>
 
