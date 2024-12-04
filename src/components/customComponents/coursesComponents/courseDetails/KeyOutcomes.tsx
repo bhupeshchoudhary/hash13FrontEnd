@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
-
+import DisplayCourseContent from './subComponents/DisplayCourseContent'
 // Define types for learner data
 interface Learner {
   name: string
@@ -68,37 +68,18 @@ export default function KeyOutcomes() {
     <div className="flex flex-col lg:flex-row  mt-4 max-w-6xl mx-auto pt-2">
       {/* Left scrollable section */}
       <div ref={leftSectionRef} className="lg:w-2/3 p-6 overflow-y-auto max-h-[calc(100vh-2rem)]">
-        <h2 className="sm:text-2xl lg:text-3xl text-2xl font-bold mb-6">Key <span className="text-[#ff0000]">Outcomes</span></h2>
-        <p className="mb-4 text-muted-foreground">
-          The SEO Mentorship Program is an 8-week intensive course designed to teach
-          participants the steps to dominate search rankings and boost online visibility through
-          proven methods and strategies. This program provides guided learning from industry
-          experts, combining self-paced videos and live Q&A sessions to master SEO concepts
-          hands-on.
-        </p>
-        <ul className="space-y-2 mb-6">
-          {[
-            "Understand SEO fundamentals",
-            "Create high-performing, search engine-friendly content",
-            "Improve technical aspects of websites",
-            "Enhance website link profiles with ethical practices",
-            "Drive online sales and engage local customers",
-            "Plan and manage international SEO strategies",
-            "Leverage Generative AI for SEO",
-            "Conduct SEO audits and implement optimizations",
-          ].map((item, index) => (
-            <li key={index} className="flex items-start">
-              <span className="mr-2">•</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
+       {/* import */}
+       <DisplayCourseContent />
       </div>
 
       {/* Right sticky section with Card */}
-      <div
+      {/* <div
         ref={rightSectionRef}
         className={`lg:w-1/2 p-6 ${isSticky && !isEndReached ? 'sticky top-4' : ''}`}
+      > */}
+       <div
+        
+        className="lg:w-1/2 p-6 sticky top-4"
       >
         <Card className="h-auto"> {/* Set height to auto to allow expansion */}
           <CardHeader className="pb-4">

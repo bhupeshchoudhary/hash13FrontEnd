@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { ChevronRight, Globe } from "lucide-react"
+import { ChevronRight, Globe,BrainCircuit ,ShoppingCart  } from "lucide-react"
 
 export default function Projects() {
   return (
@@ -8,7 +8,7 @@ export default function Projects() {
         <div>
           <h2 className="text-sm font-semibold text-gray-700 mb-2">Generative AI Certification Projects</h2>
           <div className="flex items-center gap-2 mt-2">
-            <span className="bg-black text-white px-3 py-1 text-2xl font-bold">Learn by</span>
+            <span className="text-black px-3 py-1 text-2xl font-bold">Learn by</span>
             <span className="text-[#ff0000] text-2xl font-bold">Doing</span>
           </div>
         </div>
@@ -45,7 +45,8 @@ export default function Projects() {
             <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-zinc-100 rounded-lg flex items-center justify-center mb-4">
-                  {/* <Vortex className="w-6 h-6" /> */}
+                  <ShoppingCart  className="w-6 h-6" />
+                  
                 </div>
                 <h3 className="text-xl font-bold">Create ShopAssist AI</h3>
                 <p className="text-muted-foreground">
@@ -68,11 +69,11 @@ export default function Projects() {
               <CardHeader>
                 <div className="w-12 h-12 bg-zinc-100 rounded-lg flex items-center justify-center mb-4">
                   {/* <Flask className="w-6 h-6" /> */}
+                  <BrainCircuit className="w-6 h-6"/>
                 </div>
                 <h3 className="text-xl font-bold">Create PixxelCraft AI</h3>
                 <p className="text-muted-foreground">
-                  Enable and fast-track digitisation for online e-commerce businesses by generating high-quality images for a
-                  large product portfolio
+                  Enable and fast-track digitisation for online e-commerce businesses by generating high-quality images 
                 </p>
               </CardHeader>
               <CardContent>
@@ -94,7 +95,7 @@ export default function Projects() {
                 </div>
                 <h3 className="text-xl font-bold">Create ShrewdNews AI</h3>
                 <p className="text-muted-foreground">
-                  Automate News Recommendation using ChatGPT 4 powered ML pipelines
+                  Automate News Recommendation using ChatGPT 4 powered ML pipelines, generating high-quality images 
                 </p>
               </CardHeader>
               <CardContent>
