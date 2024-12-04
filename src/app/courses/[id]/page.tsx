@@ -48,7 +48,7 @@ const CourseDetail = ()=>{
         {/* <CoursesOffer></CoursesOffer>  */}
 
 
-        {/* <CertificateDisplay></CertificateDisplay> */}
+        <CertificateDisplay></CertificateDisplay>
      
      
         </>

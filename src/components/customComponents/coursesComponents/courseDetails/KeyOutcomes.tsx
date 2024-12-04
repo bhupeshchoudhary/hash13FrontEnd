@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
 import DisplayCourseContent from './subComponents/DisplayCourseContent'
+
 // Define types for learner data
 interface Learner {
   name: string
@@ -14,32 +15,20 @@ interface Learner {
 
 export default function KeyOutcomes() {
   const [isSticky, setIsSticky] = useState<boolean>(false)
-  const [isEndReached, setIsEndReached] = useState<boolean>(false)
 
-  // Define refs for the left and right sections
-  const leftSectionRef = useRef<HTMLDivElement | null>(null)
   const rightSectionRef = useRef<HTMLDivElement | null>(null)
 
-  // Handle scroll event
   useEffect(() => {
     const handleScroll = () => {
-      if (leftSectionRef.current && rightSectionRef.current) {
-        const leftSectionTop = leftSectionRef.current.getBoundingClientRect().top
-        const leftSectionHeight = leftSectionRef.current.scrollHeight
+      if (rightSectionRef.current) {
         const scrollPosition = window.scrollY
+        const rightSectionTop = rightSectionRef.current.getBoundingClientRect().top
         const windowHeight = window.innerHeight
 
-        // Make right card sticky when left section scrolls into view
-        if (scrollPosition >= leftSectionTop) {
+        if (scrollPosition >= rightSectionTop - windowHeight) {
           setIsSticky(true)
-        }
-
-        // Stop the sticky behavior when the left section reaches its end
-        if (scrollPosition + windowHeight >= leftSectionTop + leftSectionHeight) {
-          setIsSticky(false)
-          setIsEndReached(true)
         } else {
-          setIsEndReached(false)
+          setIsSticky(false)
         }
       }
     }
@@ -62,82 +51,85 @@ export default function KeyOutcomes() {
   ]
 
   const defaultLearnerImg = "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1736380800&v=beta&t=tvAlORqrjV22gAuI7g_OrtINGRbGnNQXkCUegqFyPow"
-  const LinuxWorldUrl = "https://media.licdn.com/dms/image/v2/C4E0BAQER-Sage-ex_A/company-logo_200_200/company-logo_200_200/0/1639050566015/linuxworld_informatics_pvt_ltd_logo?e=1739404800&v=beta&t=7LaZjwQW277ZW-ooZe19e_aWSS1uQzZULZzYC7t1JHY"; // Example URL, replace with actual URL
+  const LinuxWorldUrl = "https://media.licdn.com/dms/image/v2/C4E0BAQER-Sage-ex_A/company-logo_200_200/company-logo_200_200/0/1639050566015/linuxworld_informatics_pvt_ltd_logo?e=1739404800&v=beta&t=7LaZjwQW277ZW-ooZe19e_aWSS1uQzZULZzYC7t1JHY";
 
   return (
-    <div className="flex flex-col lg:flex-row  mt-4 max-w-6xl mx-auto pt-2">
-      {/* Left scrollable section */}
-      <div ref={leftSectionRef} className="lg:w-2/3 p-6 overflow-y-auto max-h-[calc(100vh-2rem)]">
-       {/* import */}
-       <DisplayCourseContent />
+    <div className="flex flex-col lg:flex-row mt-4 max-w-6xl mx-auto pt-2">
+      {/* Left Section */}
+      <div className="lg:w-2/3 p-6">
+        <DisplayCourseContent />
       </div>
 
-      {/* Right sticky section with Card */}
-      {/* <div
-        ref={rightSectionRef}
-        className={`lg:w-1/2 p-6 ${isSticky && !isEndReached ? 'sticky top-4' : ''}`}
-      > */}
-       <div
-        
-        className="lg:w-1/2 p-6 sticky top-4"
-      >
-        <Card className="h-auto"> {/* Set height to auto to allow expansion */}
-          <CardHeader className="pb-4">
-            <CardTitle className="text-2xl font-bold">5.4M+ Learners</CardTitle>
-            <p className="text-muted-foreground">have reaped benefits from our programs</p>
-          </CardHeader>
-          <CardContent className="space-y-6"> {/* Removed overflow-y-auto */}
-            <div className="overflow-hidden">
-              <motion.div
-                animate={{ x: ["0%", "-50%"] }}
-                transition={{
-                  x: {
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    duration: 5,
-                    ease: "linear",
-                  },
-                }}
-                className="flex gap-4"
-              >
-                {[...learners, ...learners].map((learner, index) => (
-                  <div key={index} className="flex flex-col items-center flex-shrink-0">
-                    <div className="w-16 h-16 rounded-full overflow-hidden mb-2">
+      {/* Right Section */}
+      <div className="lg:w-1/2 p-6">
+        {/* Sticky Card 1 */}
+        <div
+          ref={rightSectionRef}
+          className={`sticky top-4 transition-all duration-300 ${isSticky ? "opacity-100" : "opacity-0"}`}
+        >
+          <Card className="mb-6 ">
+            <CardHeader className="pb-4">
+              <CardTitle className="text-2xl font-bold">5.4M+ Learners</CardTitle>
+              <p className="text-muted-foreground">have reaped benefits from our programs</p>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="overflow-hidden">
+                <motion.div
+                  animate={{ x: ["0%", "-50%"] }}
+                  transition={{
+                    x: {
+                      repeat: Infinity,
+                      repeatType: "loop",
+                      duration: 5,
+                      ease: "linear",
+                    },
+                  }}
+                  className="flex gap-4"
+                >
+                  {[...learners, ...learners].map((learner, index) => (
+                    <div key={index} className="flex flex-col items-center flex-shrink-0">
+                      <div className="w-16 h-16 rounded-full overflow-hidden mb-2">
+                        <Image
+                          src={defaultLearnerImg}
+                          alt={learner.name}
+                          width={64}
+                          height={64}
+                          className="object-cover"
+                        />
+                      </div>
                       <Image
-                        src={defaultLearnerImg}
-                        alt={learner.name}
+                        src={`/placeholder.svg?text=${learner.company}`}
+                        alt={learner.company}
                         width={64}
-                        height={64}
-                        className="object-cover"
+                        height={20}
+                        className="h-5 w-auto object-contain"
                       />
                     </div>
-                    <Image
-                      src={`/placeholder.svg?text=${learner.company}`}
-                      alt={learner.company}
-                      width={64}
-                      height={20}
-                      className="h-5 w-auto object-contain"
-                    />
-                  </div>
+                  ))}
+                </motion.div>
+              </div>
+
+              <ul className="space-y-4">
+                {benefits.map((benefit, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">{benefit}</span>
+                  </li>
                 ))}
-              </motion.div>
-            </div>
+              </ul>
+            </CardContent>
+          </Card>
 
-            <ul className="space-y-4">
-              {benefits.map((benefit, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-muted-foreground">{benefit}</span>
-                </li>
-              ))}
-            </ul>
-
+          <Card className="p-4 ">
+            {/* <CardHeader> */}
+              <h2 className="text-xl font-semibold"> <span className='text-[#ff0000]'>LinuxWorld </span>Accreditation</h2>
+            {/* </CardHeader> */}
             <div className="flex items-center gap-4">
               <Image
                 src={LinuxWorldUrl}
                 alt="Linux World"
-                width={200}  // Increased width
-                height={60}  // Increased height
+                width={200}
+                height={60}
                 className="h-15 w-auto"
               />
               <div className="flex items-center gap-2">
@@ -154,8 +146,8 @@ export default function KeyOutcomes() {
                 </div>
               </div>
             </div>
-          </CardContent>
-        </Card>
+          </Card>
+        </div>
       </div>
     </div>
   )
