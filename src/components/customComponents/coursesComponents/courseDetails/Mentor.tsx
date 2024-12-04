@@ -141,17 +141,16 @@ const MentorProfile = () => {
           </div>
 
           {/* Enhanced Featured Section */}
-          <div className="border border-gray-200 rounded-xl p-8 shadow-sm bg-white/50 backdrop-blur-sm">
-            <p className="text-gray-800 font-medium mb-6 font-bold"></p>
-            <div className="grid grid-cols-1 gap-8">
-              
+          <div className="border border-gray-200 rounded-xl p-4 shadow-sm bg-white/50 backdrop-blur-sm">
+     
+              <h3 className='mb-2'>Featured In</h3>
               <img 
-                src="/assets/featuredinn.png" 
+                src="/assets/featuredin.png" 
                 alt="Money Control" 
                 className="h-full object-contain w-full opacity-90 hover:opacity-100 transition-opacity duration-200"
               /> 
               {/* <MentorFeatured></MentorFeatured> */}
-            </div>
+      
           </div>
           {/* company serverd by mentor */}
 
