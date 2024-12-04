@@ -8,8 +8,9 @@ export default function Projects() {
         <div>
           <h2 className="text-sm font-semibold text-gray-700 mb-2">Generative AI Certification Projects</h2>
           <div className="flex items-center gap-2 mt-2">
-            <span className="text-black px-3 py-1 text-2xl font-bold">Learn by</span>
-            <span className="text-[#ff0000] text-2xl font-bold">Doing</span>
+            <h2 className="text-black px-3 py-1 text-2xl font-bold">Learn by
+            <span className="text-[#ff0000] text-2xl font-bold"> Doing</span>
+            </h2>
           </div>
         </div>
 

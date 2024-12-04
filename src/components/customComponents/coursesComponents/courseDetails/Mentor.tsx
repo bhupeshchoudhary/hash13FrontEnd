@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import MentorFeatured from './MentorFeatured';
 
-const MentorProfile = () => {
+const MentorProfile = () => { 
   const mentorImages = [
     "/assets/landingPage/vimalsir.png",
     "/assets/landingPage/vimalsir.png",
@@ -86,10 +86,10 @@ const MentorProfile = () => {
                 </SwiperSlide>
               ))}
               <button className="swiper-button-prev absolute left-4 top-1/2 z-10 -translate-y-1/2 bg-white/90 p-2 rounded-full shadow-md hover:bg-white transition-all duration-200">
-                <ChevronLeft className="w-5 h-5 text-gray-800" />
+                <ChevronLeft className="w-5 h-6 text-gray-800" />
               </button>
               <button className="swiper-button-next absolute right-4 top-1/2 z-10 -translate-y-1/2 bg-white/90 p-2 rounded-full shadow-md hover:bg-white transition-all duration-200">
-                <ChevronRight className="w-5 h-5 text-gray-800" />
+                <ChevronRight className="w-5 h-12 text-gray-800" />
               </button>
             </Swiper>
           </div>
