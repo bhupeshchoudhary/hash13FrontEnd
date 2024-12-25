@@ -1,25 +1,36 @@
+"use client";
+import Image from "next/image"
 import React, { useEffect, useState, useRef } from 'react';
-import { Card } from "@/components/ui/card";
-import { Youtube, Instagram, Linkedin, ChevronLeft, ChevronRight } from "lucide-react";
+import { Youtube, Instagram, Linkedin } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import MentorFeatured from './MentorFeatured';
+import 'swiper/css/autoplay';
+import MentorFeatured from '@/components/customComponents/coursesComponents/courseDetails/MentorFeatured'
 
-const MentorProfile = () => { 
+import { CircleCheck } from 'lucide-react';
+import mentor1 from "../../../../../public/assets/mentor-with-VIPS/mentor-gallery-1.jpeg";
+import mentor2 from "../../../../../public/assets/mentor-with-VIPS/mentor-gallery-2.jpeg";
+import mentor3 from "../../../../../public/assets/mentor-with-VIPS/mentor-gallery-3.jpeg";
+import mentor4 from "../../../../../public/assets/mentor-with-VIPS/mentor-gallery-4.jpeg";
+import mentor5 from "../../../../../public/assets/mentor-with-VIPS/mentor-gallery-5.jpeg";
+import mentor6 from "../../../../../public/assets/mentor-with-VIPS/techie1.png";
+import mentor7 from "../../../../../public/assets/mentor-with-VIPS/techie2.png";
+import mentor8 from "../../../../../public/assets/mentor-with-VIPS/techie3.png";
+
+
+const MentorProfile = () => {
   const mentorImages = [
-    "/assets/landingPage/vimalsir.png",
-    "/assets/landingPage/vimalsir.png",
-    "/assets/landingPage/vimalsir.png"
-  ];
-
-  // Social stats data
-  const socialStats = [
-    { icon: <Youtube className="w-6 h-6 text-red-600" />, targetCount: 3710000, label: "subscribers" },
-    { icon: <Instagram className="w-6 h-6 text-pink-600" />, targetCount: 450000, label: "followers" },
-    { icon: <Linkedin className="w-6 h-6 text-blue-600" />, targetCount: 58000, label: "followers" }
+    mentor1.src.toString(),
+    mentor2.src.toString(),
+    mentor6.src.toString(),
+    mentor3.src.toString(),
+    mentor7.src.toString(),
+    mentor4.src.toString(),
+    mentor8.src.toString(),
+    mentor5.src.toString(),
   ];
 
   // State to track if the component is in view
@@ -35,7 +46,7 @@ const MentorProfile = () => {
           observer.disconnect(); // Stop observing once it's visible
         }
       },
-      { threshold: 0.4 } // 30% of the component in view to trigger
+      { threshold: 0.4 } // 40% of the component in view to trigger
     );
 
     if (profileRef.current) observer.observe(profileRef.current);
@@ -67,62 +78,106 @@ const MentorProfile = () => {
     return count;
   };
 
+  // Create separate counter states for each social stat
+  const youtubeCount = useCounter(300000, 2000, isVisible);
+  const instagramCount = useCounter(1100000, 2000, isVisible);
+  const linkedinCount = useCounter(60000, 2000, isVisible);
+
+  // Social stats data with URLs and counter values
+  const socialStats = [
+    { 
+      icon: <Youtube className="w-6 h-6 text-red-600" />, 
+      count: youtubeCount,
+      label: "subscribers", 
+      url: "https://www.youtube.com/@IIECconnect"
+    },
+    { 
+      icon: <Instagram className="w-6 h-6 text-pink-600" />, 
+      count: instagramCount,
+      label: "followers", 
+      url: "https://www.instagram.com/vimaldaga.india/?hl=en"
+    },
+    { 
+      icon: <Linkedin className="w-6 h-6 text-blue-600" />, 
+      count: linkedinCount,
+      label: "followers", 
+      url: "https://www.linkedin.com/in/vimaldaga/"
+    }
+  ];
+
   return (
-    <div ref={profileRef} className="max-w-6xl mx-auto p-6 lg:px-8">
+    <div className='bg-gradient-to-br from-gray-50 via-black-50 to-red-50' id="mentor">
+    <div ref={profileRef} className="max-w-6xl pt-12 mx-auto md:p-6 lg:px-8">
+    <h1 className="text-center mb-4 font-bold  text-lg sm:text-3xl text-black pb-4">
+     
+
+    Know Your Mentor : <span className="text-[#ff0000]"> The World Record Holder - Mr Vimal Daga </span>
+          </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
         {/* Left Column - Image Carousel and Mentor Details */}
         <div className="space-y-6">
           <div className="rounded-xl overflow-hidden border-2 border-gray-100 shadow-lg bg-white p-1">
             <Swiper
-              modules={[Navigation, Pagination]}
+              modules={[Navigation, Pagination, Autoplay]}
               navigation={{ prevEl: '.swiper-button-prev', nextEl: '.swiper-button-next' }}
               pagination={{ clickable: true }}
-              className="w-full aspect-[3/4] rounded-lg overflow-hidden"
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop={true}
+              className="w-full md:h-[500px] rounded-lg overflow-hidden sm:h-[450px]"
             >
               {mentorImages.map((image, index) => (
                 <SwiperSlide key={index}>
                   <img src={image} alt={`Mentor Image ${index + 1}`} className="w-full h-full object-cover" />
                 </SwiperSlide>
               ))}
-              <button className="swiper-button-prev absolute left-4 top-1/2 z-10 -translate-y-1/2 bg-white/90 p-2 rounded-full shadow-md hover:bg-white transition-all duration-200">
-                <ChevronLeft className="w-5 h-6 text-gray-800" />
-              </button>
-              <button className="swiper-button-next absolute right-4 top-1/2 z-10 -translate-y-1/2 bg-white/90 p-2 rounded-full shadow-md hover:bg-white transition-all duration-200">
-                <ChevronRight className="w-5 h-12 text-gray-800" />
-              </button>
             </Swiper>
           </div>
 
           {/* Mentor Details Card */}
           <div className="bg-blue-50 rounded-xl p-6 shadow-sm border border-blue-100">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
-              <span className="text-blue-800 text-sm font-medium bg-blue-100/50 px-3 py-1 rounded-full">
-                Technologist and Technology Motivational
+              <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
+              <span className="text-[#ff0000] text-xs md:text-sm  font-medium bg-red-100/50 px-3 py-1 rounded-full">
+                Internationally Recognised Industry Expert
               </span>
-            </div>      
+            </div>
             <div className="space-y-1 pl-5">
-              <h2 className="text-xl font-bold text-gray-900">Vimal Daga</h2>
-              <p className="text-gray-600 font-medium">Founder of LinuxWorld</p>
+              <h2 className="md:text-2xl  font-bold text-gray-900">Mr. Vimal Daga</h2>
+              <p className="text-gray-600 text-sm">Founder of LinuxWorld | #13 | IIEC | JAZBAA </p>
             </div>
           </div>
         </div>
 
         {/* Right Column - Content */}
         <div className="space-y-8">
-          <div className="space-y-6">
-            <h1 className="text-3xl font-bold text-gray-900">Meet your <span className="text-[#ff0000]">Mentor</span> </h1>
-            
+          <div className="space-y-6 -mb-3">
+            {/* <h1 className="text-3xl font-bold text-black leading-extra-tight -mb-4">
+              The Visionary Behind <span className="text-[#ff0000]">Globally Recognised Program </span> 
+            </h1> */}
             <div className="space-y-4 text-black-800">
-              <p className="leading-relaxed font-bold">
-                Vimal sir  is a public speaker and YouTuber who co-founded Think School, with Paras Kothari, an education startup that generated 4+ Billion video impressions in 24 months.
+              <ul className="grid md:grid-cols-2 gap-y-2 list-disc pl-5 text-black -mb-1 list-none sm:grid-cols-1">
+                <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> World Record Holder</li>
+                <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Two-Time TEDx Speaker</li>
+                <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Senior Principal IT Consultant</li>
+                <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Philanthropist</li>
+                <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> 22+ Years of Rich Experience</li>
+              </ul>
+
+              <p className="text-black text-md -mb-2 pl-6">
+              Mr. Vimal Daga, a visionary leader in DevOps and cutting-edge technologies, is on an exclusive India Tour to redefine how technical training is delivered. As the driving force behind TGS, he is visiting cities across the nation to empower learners and professionals with hands-on DevOps training, bridging the gap between theoretical knowledge and real-world implementation.
+
               </p>
-              <p className="leading-relaxed">
-                Vimal sir  has helped 27000+ students improve their communication to become effective public speakers, great salespeople, YouTubers and successful business people.
+              {/* <p className="text-black pl-6">
+               His mission includes: 
+              </p> */}
+              <p className='pl-6'><span className='font-semibold '>Industry Expert Interactions:</span> Learn directly from thought leaders who are shaping the DevOps landscape.
               </p>
-              <p className="leading-relaxed">
-                Vimal sir 's dedication to education has earned him the title of "Insightful Education Creator of the Year 2023" at the Global Startup Summit 2023. His vision is to make the Indian youth more employable by helping them learn practical and fundamental skills in life.
+              <p className='pl-6'>
+             <span className='font-semibold'>  Real-World Capstone Projects:</span> Gain practical experience by working on projects aligned with current industry demands.
+
+              </p>
+              <p className='pl-6'>
+              <span className='font-semibold'>Valuable Industry Insights: </span> Understand the latest DevOps trends, tools, and practices to stay ahead in the competitive tech world.
               </p>
             </div>
           </div>
@@ -130,10 +185,12 @@ const MentorProfile = () => {
           {/* Social Stats with Counter */}
           <div className="grid grid-cols-3 gap-4">
             {socialStats.map((stat, index) => (
-              <div key={index} className="bg-blue-50 rounded-xl p-4 text-center border border-blue-100 shadow-sm hover:shadow-md transition-all duration-200">
-                <div className="flex justify-center mb-3">{stat.icon}</div>
-                <div className="font-bold text-xl text-gray-900">
-                  {useCounter(stat.targetCount, 2000, isVisible).toLocaleString()}+
+              <div key={index} className="bg-blue-50 rounded-xl p-2 text-center border border-blue-100 shadow-sm hover:shadow-md transition-all duration-200 -mb-2">
+                <a href={stat.url} target="_blank" rel="noopener noreferrer">
+                  <div className="flex justify-center">{stat.icon}</div>
+                </a>
+                <div className="font-bold text-md text-gray-900">
+                  {stat.count.toLocaleString()}+
                 </div>
                 <div className="text-gray-600 text-sm font-medium">{stat.label}</div>
               </div>
@@ -141,35 +198,13 @@ const MentorProfile = () => {
           </div>
 
           {/* Enhanced Featured Section */}
-          <div className="border border-gray-200 rounded-xl p-4 shadow-sm bg-white/50 backdrop-blur-sm">
-     
-              <h3 className='mb-2'>Featured In</h3>
-              <img 
-                src="/assets/featuredin.png" 
-                alt="Money Control" 
-                className="h-full object-contain w-full opacity-90 hover:opacity-100 transition-opacity duration-200"
-              /> 
-              {/* <MentorFeatured></MentorFeatured> */}
-      
-          </div>
-          {/* company serverd by mentor */}
-
-          <div className="border border-gray-200 rounded-xl p-6 pt-2 shadow-sm bg-white/50 backdrop-blur-sm">
-            <p className="text-gray-800 font-medium mb-6 font-bold">Companies benefited with his <span className='text-[#ff0000]'>
-            trainings & consultancy
-              </span></p>
-            <div className="grid grid-cols-1 gap-8">
-              
-              {/* <img 
-                src="/assets/featuredin.png" 
-                alt="Money Control" 
-                className="h-full object-contain w-full opacity-90 hover:opacity-100 transition-opacity duration-200"
-              />  */}
-              <MentorFeatured></MentorFeatured>
-            </div>
+          <div className="border border-gray-200 rounded-xl py-4 shadow-sm bg-white ">
+            <p className="text-black font-semibold text-sm px-4 overflow-hidden inset-2">Companies benefited with his trainings & consultancy</p>
+            <MentorFeatured />
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

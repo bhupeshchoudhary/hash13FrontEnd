@@ -7,7 +7,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
 import DisplayCourseContent from './subComponents/DisplayCourseContent'
 
-// Define types for learner data
 interface Learner {
   name: string
   company: string
@@ -15,7 +14,6 @@ interface Learner {
 
 export default function KeyOutcomes() {
   const [isSticky, setIsSticky] = useState<boolean>(false)
-
   const rightSectionRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -54,10 +52,12 @@ export default function KeyOutcomes() {
   const LinuxWorldUrl = "https://media.licdn.com/dms/image/v2/C4E0BAQER-Sage-ex_A/company-logo_200_200/company-logo_200_200/0/1639050566015/linuxworld_informatics_pvt_ltd_logo?e=1739404800&v=beta&t=7LaZjwQW277ZW-ooZe19e_aWSS1uQzZULZzYC7t1JHY";
 
   return (
-    <div className="flex flex-col lg:flex-row mt-4 max-w-6xl mx-auto pt-2">
+    <div className='bg-gradient-to-r from-gray-50 to-red-50'>
+    <div className="flex flex-col lg:flex-row gap-6 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto py-8">
       {/* Left Section */}
-      <div className="lg:w-2/3 p-6">
-      <h1 className="sm:text-2xl lg:text-3xl font-bold tracking-tight">
+      <div className="w-full lg:w-2/3">
+        <div className="space-y-4 mb-8">
+          <h1 className="text-2xl sm:text-3xl lg:text-3xl font-bold tracking-tight">
             What will you{" "}
             <span className="relative">
               <span className="text-[#ff0000]">learn</span>
@@ -71,27 +71,31 @@ export default function KeyOutcomes() {
             </span>
             ?
           </h1>
-          <p className="text-sm font-bold pb-8 leading-relaxed">
+          <p className="text-sm md:text-base font-medium text-muted-foreground">
             Discover a comprehensive curriculum designed to empower you with the
             skills and knowledge needed to excel in communication.
           </p>
+        </div>
 
         <DisplayCourseContent />
       </div>
 
       {/* Right Section */}
-      <div className="lg:w-1/2 p-6">
-        {/* Sticky Card 1 */}
+      <div className="w-full lg:w-1/3">
         <div
           ref={rightSectionRef}
-          className={`sticky top-4 transition-all duration-300 ${isSticky ? "opacity-100" : "opacity-0"}`}
+          className={`transition-all duration-300 space-y-6 ${
+            isSticky ? "lg:sticky lg:top-4" : ""
+          }`}
         >
-          <Card className="mb-6 ">
-            <CardHeader className="pb-4">
-              <CardTitle className="text-2xl font-bold">5.4M+ Learners</CardTitle>
-              <p className="text-muted-foreground">have reaped benefits from our programs</p>
+          {/* Learners Card */}
+          <Card className="w-full">
+            <CardHeader className="space-y-1">
+              <CardTitle className="text-xl sm:text-2xl font-bold">5.4M+ Learners</CardTitle>
+              <p className="text-sm text-muted-foreground">have reaped benefits from our programs</p>
             </CardHeader>
             <CardContent className="space-y-6">
+              {/* Learners Carousel */}
               <div className="overflow-hidden">
                 <motion.div
                   animate={{ x: ["0%", "-50%"] }}
@@ -107,13 +111,13 @@ export default function KeyOutcomes() {
                 >
                   {[...learners, ...learners].map((learner, index) => (
                     <div key={index} className="flex flex-col items-center flex-shrink-0">
-                      <div className="w-16 h-16 rounded-full overflow-hidden mb-2">
+                      <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden mb-2">
                         <Image
                           src={defaultLearnerImg}
                           alt={learner.name}
                           width={64}
                           height={64}
-                          className="object-cover"
+                          className="object-cover w-full h-full"
                         />
                       </div>
                       <Image
@@ -121,35 +125,37 @@ export default function KeyOutcomes() {
                         alt={learner.company}
                         width={64}
                         height={20}
-                        className="h-5 w-auto object-contain"
+                        className="h-4 sm:h-5 w-auto object-contain"
                       />
                     </div>
                   ))}
                 </motion.div>
               </div>
 
+              {/* Benefits List */}
               <ul className="space-y-4">
                 {benefits.map((benefit, index) => (
-                  <li key={index} className="flex items-start gap-2">
+                  <li key={index} className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground">{benefit}</span>
+                    <span className="text-sm sm:text-base text-muted-foreground">{benefit}</span>
                   </li>
                 ))}
               </ul>
             </CardContent>
           </Card>
 
-          <Card className="p-4 ">
-            {/* <CardHeader> */}
-              <h2 className="text-xl font-semibold"> <span className='text-[#ff0000]'>LinuxWorld </span>Accreditation</h2>
-            {/* </CardHeader> */}
-            <div className="flex items-center gap-4">
+          {/* Accreditation Card */}
+          <Card className="w-full p-4">
+            <h2 className="text-lg sm:text-xl font-semibold mb-4">
+              <span className='text-[#ff0000]'>LinuxWorld </span>Accreditation
+            </h2>
+            <div className="flex flex-col sm:flex-row items-center gap-4">
               <Image
                 src={LinuxWorldUrl}
                 alt="Linux World"
                 width={200}
                 height={60}
-                className="h-15 w-auto"
+                className="h-12 sm:h-15 w-auto"
               />
               <div className="flex items-center gap-2">
                 <Image
@@ -157,17 +163,18 @@ export default function KeyOutcomes() {
                   alt="LinkedIn"
                   width={24}
                   height={24}
-                  className="h-6 w-6 grayscale"
+                  className="h-5 w-5 sm:h-6 sm:w-6 grayscale"
                 />
                 <div className="flex flex-col">
-                  <span className="text-sm text-muted-foreground">LinkedIn</span>
-                  <span className="text-sm font-semibold">Top Startup India 2023</span>
+                  <span className="text-xs sm:text-sm text-muted-foreground">LinkedIn</span>
+                  <span className="text-xs sm:text-sm font-semibold">Top Startup India 2023</span>
                 </div>
               </div>
             </div>
           </Card>
         </div>
       </div>
+    </div>
     </div>
   )
 }
