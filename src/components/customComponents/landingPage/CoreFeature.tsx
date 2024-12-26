@@ -1,14 +1,7 @@
 import React from 'react';
 import { User2, GraduationCap, MonitorPlay, Video, Globe } from 'lucide-react';
+import { CardProps } from '../../../../types/coreFeatures';
 
-interface CardProps {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  bgColor: string;
-  iconBgColor: string;
-  textColor: string;
-}
 
 const Card: React.FC<CardProps> = ({ icon, title, description, bgColor, iconBgColor, textColor }) => (
   <div className={`w-64 h-64 rounded-2xl shadow-lg ${bgColor} ${textColor} flex flex-col items-center text-center overflow-hidden`}>
@@ -26,7 +19,7 @@ const Card: React.FC<CardProps> = ({ icon, title, description, bgColor, iconBgCo
 
 const CoreFeature = () => {
   return (
-    <div className="w-full lg:px-14 h-[80vh] mx-auto px-6 bg-white-500 relative overflow-hidden"> {/* Adjusted height here */}
+    <div className="w-full lg:px-14  mx-auto px-6 bg-white-500 relative overflow-hidden"> {/* Adjusted height here */}
       {/* Decorative Elements */}
       <div className="absolute top-8 left-12">
         <div className="relative w-6 h-6">

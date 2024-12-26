@@ -6,81 +6,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card";
 import { Clock, Star, BookOpen, ChartBar } from "lucide-react";
 import curveLine from "../../../../public/assets/CurlLine.svg";
+import { courseInfo } from "../../../../data/courses/courses";
+import { CardPosition } from "../../../../types/courses";
 
 
-interface Course {
-  category: string;
-  learners: string;
-  title: string;
-  lessons: number;
-  duration: string;
-  rating: number;
-  imageUrl: string;
-}
-
-interface CardPosition {
-  isRightmost: boolean;
-}
-
-
-const courseInfo = [
-  {
-    title: "AWS-Certified-Solutions-Architect-(CSA)-Training",
-    rating: 4.8,
-    totalRatings: 2103,
-    duration: "3 Months",
-   
-    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
-    hours: "30+",
-    backgroundImage: "/assets/cources/awsCourse.jpg"
-  },
-  {
-    title: "Complete-Linux-v9-Training",
-    rating: 4.7,
-    totalRatings: 1856,
-    duration: "2 Months",
-    hours: "20+",
-    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
-    backgroundImage: "/assets/cources/Complete-Linux-v9-Training-by-Mr.jpg"
-  },
-  {
-    title: "Data-Structure-&-Algorithms-(DSA)",
-    rating: 4.9,
-    totalRatings: 3201,
-    duration: "4 Months",
-    hours: "15+",
-    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
-    backgroundImage: "/assets/cources/Data-Structure-&-Algorithms-(DSA)-for-FAANG.jpg"
-  },
-  {
-    title: "Complete-NLP-Training-Basic-to-Advance-level",
-    rating: 4.6,
-    totalRatings: 1502,
-    duration: "6 Weeks",
-    hours: "50+",
-    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
-    backgroundImage: "/assets/cources/Complete-NLP-Training-Basic-to-Advance-level.jpg"
-  },
-  {
-    title: "Complete-System-Design-Training",
-    rating: 4.8,
-    totalRatings: 2405,
-    duration: "3 Months",
-    hours: "60+",
-    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
-    backgroundImage: "/assets/cources/Complete-System-Design-Training-by-Mr.jpg"
-  },
-  {
-    title: "Specialization in devops",
-    rating: 4.7,
-    totalRatings: 1987,
-    duration: "10 Weeks",
-    hours: "298",
-    module:"155",
-    skills: ["Excel", "MySQL", "Data Visualization", "Data Reporting"],
-    backgroundImage: "/assets/cources/course1.jpg"
-  }
-]
 
 
 
@@ -174,13 +103,7 @@ export default function CoursesComponent() {
       </div>
 
     <CardComponents></CardComponents>
-      {/* <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
-        {coursesInfo.map((course, index) => (
-          <div key={index} className="relative">
-            <CardComponent course={course} index={index} position={getCardPosition(index)} />
-          </div>
-        ))}
-      </div> */}
+     
 
       <div className="text-center mt-10">
         <Button className="bg-[#ff0000]" variant="destructive" size="lg">

@@ -5,34 +5,10 @@ import { Badge } from '@/components/ui/badge';
 import { BookOpen } from 'lucide-react';
 import Image from 'next/image';
 import curveLine from "../../../../public/assets/CurlLine.svg"
+import { blogs } from '../../../../data/blog/blog';
 
 const BlogSection = () => {
-  const blogs = [
-    {
-      id: 1,
-      title: 'Professional Mobile Painting and Sculpting',
-      category: 'Education',
-      author: 'Admin',
-      date: 'Jan 29 2022',
-      image: '/assets/landingPageBlog.jpg'
-    },
-    {
-      id: 2,
-      title: 'Professional Ceramic Moulding for Beginners',
-      category: 'Education',
-      author: 'Admin',
-      date: 'Jan 29 2022',
-      image: '/assets/landingPageBlog2.jpg'
-    },
-    {
-      id: 3,
-      title: 'Education Is About Create Leaders For Tomorrow',
-      category: 'Education',
-      author: 'Admin',
-      date: 'Jan 29 2022',
-      image: '/assets/landingPageBlog3.jpg'
-    }
-  ];
+  
 
   return (
     <div className="container mx-auto px-6 lg:px-14 max-w-7xl py-12">

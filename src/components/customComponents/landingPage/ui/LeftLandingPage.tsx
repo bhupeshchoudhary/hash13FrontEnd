@@ -4,35 +4,14 @@ import React, { useState } from 'react'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { TrendingUp,Search  } from "lucide-react"
+import { jsonData } from '../../../../../data/leftLandingPage/leftLandingPage'
 
-const jsonData = {
-  headings: {
-    main: "Master tomorrow's skills today.",
-    sub: "Excel with India's top upskilling platform."
-  },
-  search: {
-    placeholder: "Tell us what you're looking to learn"
-  },
-  goals: ["DevOps Engineer", "Machine Learning Engineer", "Cloud Engineer", "MLOps Engingeer", "SDE", "PromptOps Engineer", "SRE","Full Stack Developer","Data Scientist"],
-  community: {
-    text: "Join the community of",
-    learnersCount: "10,807,557"
-  },
-  trendingSearches: [
-    "DevOps training",
-    "Machine Learning",
-    "MLOps",
-    "Generative AI",
-    "AWS Cloud",
-    "DSA"
-  ]
-}
 
 export default function SearchComponent() {
   const [isSearchFocused, setIsSearchFocused] = useState(false)
 
   return (
-    <div className="max-w-4xl mx-auto px-4 pt-16 pb-8">
+    <div className="md:max-w-4xl lg:max-w-4xl w-full mx-auto md:px-4 lg:px-4  pt-16 pb-8">
       <h1 className="text-4xl font-bold mb-2">
         <span className="text-[#ff0000]">{jsonData.headings.main}</span>
       </h1>
