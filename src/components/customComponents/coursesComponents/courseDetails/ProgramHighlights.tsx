@@ -1,25 +1,9 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
+import { highlights } from '../../../../../data/programHighlights';
 
 const ProgramHighlights = () => {
-  const highlights = [
-    {
-      number: "15+",
-      description: "Modules",
-    },
-    {
-      number: "300+",
-      description: "Hours of learning",
-    },
-    {
-      number: "15+",
-      description: "Programming Tools",
-    },
-    {
-      number: "20+",
-      description: "Capstone Projects",
-    },
-  ];
+
 
   return (
     <div className="bg-gradient-to-r from-gray-50 to-red-50">

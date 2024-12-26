@@ -6,11 +6,8 @@ import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
 import DisplayCourseContent from './subComponents/DisplayCourseContent'
+import { learners, benefits, defaultLearnerImg, LinuxWorldUrl } from '../../../../../data/keyOutComes/keyOutComes'
 
-interface Learner {
-  name: string
-  company: string
-}
 
 export default function KeyOutcomes() {
   const [isSticky, setIsSticky] = useState<boolean>(false)
@@ -35,22 +32,7 @@ export default function KeyOutcomes() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const learners: Learner[] = [
-    { name: "ShareChat Learner", company: "ShareChat" },
-    { name: "Google Learner", company: "Google" },
-    { name: "Apna Learner", company: "Apna" },
-    { name: "Capgemini Learner", company: "Capgemini" },
-  ]
-
-  const benefits: string[] = [
-    "Stay ahead in your field by mastering industry relevant skills through our online sessions",
-    "Dive into real challenges from today's businesses, gaining hands-on experience",
-    "Tap into a wealth of career opportunities through our established network",
-  ]
-
-  const defaultLearnerImg = "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1736380800&v=beta&t=tvAlORqrjV22gAuI7g_OrtINGRbGnNQXkCUegqFyPow"
-  const LinuxWorldUrl = "https://media.licdn.com/dms/image/v2/C4E0BAQER-Sage-ex_A/company-logo_200_200/company-logo_200_200/0/1639050566015/linuxworld_informatics_pvt_ltd_logo?e=1739404800&v=beta&t=7LaZjwQW277ZW-ooZe19e_aWSS1uQzZULZzYC7t1JHY";
-
+ 
   return (
     <div className='bg-gradient-to-r from-gray-50 to-red-50'>
     <div className="flex flex-col lg:flex-row gap-6 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto py-8">

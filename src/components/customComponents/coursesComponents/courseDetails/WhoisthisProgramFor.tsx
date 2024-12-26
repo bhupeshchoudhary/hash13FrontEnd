@@ -2,21 +2,10 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import Image from 'next/image';
+import { data } from '../../../../../data/whoIsThisProgramFor/WhoIsThisProgramFor';
+
 const WhatWillYouLearn = () => {
-    const data = [
-        { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
-        { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
-        { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
-        { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
-        { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
-        { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
-        { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
-        { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
-        { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
-        { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
-
-
-    ];
+  
 
     return (
         <div className="mx-auto justify-center text-center my-20">

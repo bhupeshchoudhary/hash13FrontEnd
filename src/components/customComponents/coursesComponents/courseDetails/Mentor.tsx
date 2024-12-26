@@ -4,34 +4,16 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Youtube, Instagram, Linkedin } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { CircleCheck } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import MentorFeatured from '@/components/customComponents/coursesComponents/courseDetails/MentorFeatured'
-
-import { CircleCheck } from 'lucide-react';
-import mentor1 from "../../../../../public/assets/mentor-with-VIPS/mentor-gallery-1.jpeg";
-import mentor2 from "../../../../../public/assets/mentor-with-VIPS/mentor-gallery-2.jpeg";
-import mentor3 from "../../../../../public/assets/mentor-with-VIPS/mentor-gallery-3.jpeg";
-import mentor4 from "../../../../../public/assets/mentor-with-VIPS/mentor-gallery-4.jpeg";
-import mentor5 from "../../../../../public/assets/mentor-with-VIPS/mentor-gallery-5.jpeg";
-import mentor6 from "../../../../../public/assets/mentor-with-VIPS/techie1.png";
-import mentor7 from "../../../../../public/assets/mentor-with-VIPS/techie2.png";
-import mentor8 from "../../../../../public/assets/mentor-with-VIPS/techie3.png";
+import { mentorImages } from "../../../../../data/mentor/mentor";
 
 
 const MentorProfile = () => {
-  const mentorImages = [
-    mentor1.src.toString(),
-    mentor2.src.toString(),
-    mentor6.src.toString(),
-    mentor3.src.toString(),
-    mentor7.src.toString(),
-    mentor4.src.toString(),
-    mentor8.src.toString(),
-    mentor5.src.toString(),
-  ];
 
   // State to track if the component is in view
   const [isVisible, setIsVisible] = useState(false);
