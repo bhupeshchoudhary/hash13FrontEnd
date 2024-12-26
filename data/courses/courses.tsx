@@ -50,7 +50,25 @@ export const courseInfo: Course[] = [
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "System Administration"
+    category: "System Administration",
+    highlights: [
+      {
+        number: "15+",
+        description: "Modules",
+      },
+      {
+        number: "300+",
+        description: "Hours of learning",
+      },
+      {
+        number: "15+",
+        description: "Programming Tools",
+      },
+      {
+        number: "20+",
+        description: "Capstone Projects",
+      },
+    ]
   },
   {
     id: "kubernetes-mastery",
@@ -100,7 +118,25 @@ export const courseInfo: Course[] = [
     level: "Intermediate",
     language: "English",
     lastUpdated: "2024-02",
-    category: "DevOps"
+    category: "DevOps",
+    highlights: [
+      {
+        number: "12+",
+        description: "Modules",
+      },
+      {
+        number: "250+",
+        description: "Hours of learning",
+      },
+      {
+        number: "10+",
+        description: "DevOps Tools",
+      },
+      {
+        number: "15+",
+        description: "Enterprise Projects",
+      },
+    ]
   },
   {
     id: "microservices-architecture",
@@ -150,7 +186,25 @@ export const courseInfo: Course[] = [
     level: "Intermediate to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "Software Architecture"
+    category: "Software Architecture",
+    highlights: [
+      {
+        number: "39+",
+        description: "Modules",
+      },
+      {
+        number: "280+",
+        description: "Hours of learning",
+      },
+      {
+        number: "18+",
+        description: "DevOps Tools",
+      },
+      {
+        number: "12+",
+        description: "Enterprise Projects",
+      },
+    ]
   },
   {
     id: "nlp-specialist",
@@ -200,7 +254,25 @@ export const courseInfo: Course[] = [
     level: "Advanced",
     language: "English",
     lastUpdated: "2024-02",
-    category: "Artificial Intelligence"
+    category: "Artificial Intelligence",
+    highlights: [
+      {
+        number: "12+",
+        description: "Modules",
+      },
+      {
+        number: "250+",
+        description: "Hours of learning",
+      },
+      {
+        number: "10+",
+        description: "DevOps Tools",
+      },
+      {
+        number: "15+",
+        description: "Enterprise Projects",
+      },
+    ]
   },
   {
     id: "system-design",
@@ -250,7 +322,25 @@ export const courseInfo: Course[] = [
     level: "Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "System Design"
+    category: "System Design",
+    highlights: [
+      {
+        number: "92+",
+        description: "Modules",
+      },
+      {
+        number: "280+",
+        description: "Hours of learning",
+      },
+      {
+        number: "80+",
+        description: "DevOps Tools",
+      },
+      {
+        number: "95+",
+        description: "Enterprise Projects",
+      },
+    ]
   },
   {
     id: "dsa-expert",
@@ -300,6 +390,24 @@ export const courseInfo: Course[] = [
     level: "Intermediate to Advanced",
     language: "English",
     lastUpdated: "2024-02",
-    category: "Programming"
+    category: "Programming",
+    highlights: [
+      {
+        number: "19+",
+        description: "Modules",
+      },
+      {
+        number: "290+",
+        description: "Hours of learning",
+      },
+      {
+        number: "19+",
+        description: "DevOps Tools",
+      },
+      {
+        number: "5+",
+        description: "Enterprise Projects",
+      },
+    ]
   }
 ];

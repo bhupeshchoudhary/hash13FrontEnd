@@ -22,13 +22,15 @@ import ChartComponent from "@/components/customComponents/coursesComponents/cour
 import CoursesOffer from "@/components/customComponents/coursesComponents/courseDetails/CoursesOffer";
 import CertificateDisplay from "@/components/customComponents/coursesComponents/courseDetails/CertificateDetails";
 import ErrorBoundary from '@/components/errorHandling/ErrorBoundary';
-
+import { courseInfo } from "../../../../data/ExampleCard2/ExampleCard2";
 export default function CourseDetailPage() {
   const params = useParams();
   const courseId = params?.courseId as string;
 
+  const course = courseInfo.find(c => c.slug === courseId);
+
   if (!courseId) {
-    return <div>No course ID provided</div>;
+    return <div>No course provided</div>;
   }
 
   return (
@@ -38,7 +40,7 @@ export default function CourseDetailPage() {
         
   {/* <ExampleCard></ExampleCard> */}
       {/* <ExampleCard2></ExampleCard2> */}
-        <ProgramHighlights></ProgramHighlights>
+        <ProgramHighlights course={course} />
      <Tools></Tools> 
      <Projects></Projects>
      <MentorProfile></MentorProfile>
