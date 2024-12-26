@@ -1,8 +1,49 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Check } from 'lucide-react'
+import { courseInfo } from "../../../../../data/courses/courses";
+import { Course } from "../../../../../types/courses";
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from "react";
 
-export default function CoursePricingSection() {
+
+
+interface CoursePricingSectionProps {
+  courseId: string;
+}
+
+
+
+export default function CoursePricingSection({courseId}: CoursePricingSectionProps) {
+  const router = useRouter();
+  const [course, setCourse ] = useState<Course | null>(null); 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(()=>{
+    if(!courseId){
+      setLoading(false);
+      return;
+    }
+
+    const findCourse = () => {
+      const foundCourse = courseInfo.find(c => c.slug === courseId);
+      setCourse(foundCourse || null);
+      setLoading(false);
+    };
+
+    findCourse();
+    }, [courseId]
+  );
+
+  if(!courseId){
+    return <div> No course Id Provided</div>;
+  }
+  if(loading){
+    return <div>Price not found</div>
+  }
+  if(!course){
+    return <div>Course not found</div>
+  }
   return (
     <section className="w-full bg-gradient-to-br from-gray-50 via-black-50 to-red-50 py-12" id="participatenow">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,13 +60,13 @@ export default function CoursePricingSection() {
             <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">
               Globally Recognized Program
               <span className="block text-base sm:text-lg text-gray-600 mt-1">
-                (Save ₹4,020)
+                (Save ₹ {(course.originalPrice - course.price).toFixed(2)})
               </span>
             </h2>
             
             <div className="mb-6">
-              <span className="text-3xl sm:text-4xl font-bold text-red-600">₹ 980</span>
-              <span className="text-gray-500 line-through ml-2">₹ 5,000</span>
+              <span className="text-3xl sm:text-4xl font-bold text-red-600"> ₹{course.price.toFixed(2)} </span>
+              <span className="text-gray-500 line-through ml-2">₹{course.originalPrice.toFixed(2)}</span>
               <span className="text-gray-500 text-sm sm:text-base">(+ taxes)</span>
             </div>
 
@@ -33,7 +74,7 @@ export default function CoursePricingSection() {
               <div className="flex items-start gap-2">
                 <Check className="h-5 w-5 text-red-400 mt-1 flex-shrink-0" />
                 <p className="text-sm sm:text-base text-gray-600">
-                  Avail the discounted price of ₹ 980 and save a total of ₹ 4,020
+                  Avail the discounted price of  ₹{course.price.toFixed(2)} and save a total of ₹ {(course.originalPrice - course.price).toFixed(2)} 
                 </p>
               </div>
               <div className="flex items-start gap-2">
@@ -47,7 +88,7 @@ export default function CoursePricingSection() {
             <div className="flex justify-center w-full">
               <Button className="w-full sm:w-2/3 bg-[#ff0000] hover:bg-[#ff0000]/90 hover:shadow-md hover:shadow-black text-white py-4 sm:py-6 text-sm sm:text-base">
                 Yes! I want this insane deal for
-                <br />₹ 980 + taxes
+                <br /> ₹{course.price.toFixed(2)} + taxes
               </Button>
             </div>
           </Card>
@@ -59,22 +100,14 @@ export default function CoursePricingSection() {
                 What you will get...
               </h3>
               <div className="space-y-3">
-                {[
-                  "Master Git and GitHub - From Beginner to Advanced Level",
-                  "Automation Using Ansible",
-                  "Jenkins & Build Automation",
-                  "Monitoring Tools : Prometheus & Grafana",
-                  "Monitoring Tools : Prometheus & Grafana",
-                  "Docker, Container & Kubernetes",
-                  "And much more…"
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-2">
-                    <div className="bg-red-100 rounded-sm p-0.5 flex-shrink-0">
-                      <Check className="h-4 w-4 text-red-500" />
-                    </div>
-                    <span className="text-sm sm:text-base text-gray-700">{item}</span>
-                  </div>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                {course.learningOutcomes.map((outcome, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-green-500">✓</span>
+                    {outcome}
+                  </li>
                 ))}
+              </ul> 
               </div>
             </div>
 
@@ -83,18 +116,14 @@ export default function CoursePricingSection() {
                 And bonuses too...
               </h3>
               <div className="space-y-3">
-                {[
-                  "Most Relevant DevOps Tips & Tricks to become more productive",
-                  "Technical Support for 90 days",
-                  "Premium #13 DevOps Community Membership",
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-2">
-                    <div className="bg-red-100 rounded-sm p-0.5 flex-shrink-0">
-                      <Check className="h-4 w-4 text-red-500" />
-                    </div>
-                    <span className="text-sm sm:text-base text-gray-700">{item}</span>
-                  </div>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                {course.learningOutcomes.map((outcome, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-green-500">✓</span>
+                    {outcome}
+                  </li>
                 ))}
+              </ul>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
-import { highlights } from '../../../../../data/programHighlights';
+import { highlights } from '../../../../../data/programHighlights/programHighlights';
 
 const ProgramHighlights = () => {
 

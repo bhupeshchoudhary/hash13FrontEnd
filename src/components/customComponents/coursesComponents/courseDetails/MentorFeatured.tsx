@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { logos } from '../../../../../data/mentorFeatured';
+import { logos } from '../../../../../data/mentorFeatured/mentorFeatured';
 const MentorFeatured = () => {
 
   return (

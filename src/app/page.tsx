@@ -13,7 +13,7 @@ import SupportContact from "@/components/customComponents/landingPage/SupportCon
 export default function Home() {
   return (
 <>
-<Hero></Hero>
+{/* <Hero></Hero> */}
 <About></About>
 
 <FactsAndFigure></FactsAndFigure>

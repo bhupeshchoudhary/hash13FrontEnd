@@ -19,17 +19,23 @@ import KeyOutcomes from "@/components/customComponents/coursesComponents/courseD
 import CourseTestimonials from "@/components/customComponents/coursesComponents/courseDetails/CourseTestimonials"
 import CoursePricingSection from "@/components/customComponents/coursesComponents/courseDetails/CoursePricingSection";
 import ChartComponent from "@/components/customComponents/coursesComponents/courseDetails/ChartComponent";
-
 import CoursesOffer from "@/components/customComponents/coursesComponents/courseDetails/CoursesOffer";
 import CertificateDisplay from "@/components/customComponents/coursesComponents/courseDetails/CertificateDetails";
+import ErrorBoundary from '@/components/errorHandling/ErrorBoundary';
 
-const CourseDetail = ()=>{
-    const params = useParams ();
-    const {pid}  = params;
+export default function CourseDetailPage() {
+  const params = useParams();
+  const courseId = params?.courseId as string;
 
-    return (
-        <>
-        <CourseDetailHero></CourseDetailHero>
+  if (!courseId) {
+    return <div>No course ID provided</div>;
+  }
+
+  return (
+    <ErrorBoundary>
+      <main>
+        <CourseDetailHero courseId={courseId} />
+        
   {/* <ExampleCard></ExampleCard> */}
       {/* <ExampleCard2></ExampleCard2> */}
         <ProgramHighlights></ProgramHighlights>
@@ -42,7 +48,7 @@ const CourseDetail = ()=>{
      <CardStack></CardStack>
      <KeyOutcomes></KeyOutcomes>
 
-     <CoursePricingSection></CoursePricingSection>
+     <CoursePricingSection courseId={courseId}></CoursePricingSection>
 
      <CourseTestimonials></CourseTestimonials>
         {/* <CoursesOffer></CoursesOffer>  */}
@@ -50,9 +56,7 @@ const CourseDetail = ()=>{
 
         <CertificateDisplay></CertificateDisplay>
      
-     
-        </>
-    )
+      </main>
+    </ErrorBoundary>
+  );
 }
-
-export default CourseDetail;
