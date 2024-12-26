@@ -4,9 +4,9 @@ import React from 'react';
 const Subscribe: React.FC = () => {
   return (
     <div className="bg-[#5ec5b6] w-full py-8 flex justify-center">
-      <div className="max-w-5xl w-full flex items-center justify-between px-4">
+      <div className="max-w-5xl w-full flex flex-col sm:flex-row items-center justify-between px-4 space-y-6 sm:space-y-0">
         {/* Left Section: Icon and Text */}
-        <div className="flex items-center space-x-4">
+        <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-12 w-12 text-white"
@@ -20,20 +20,20 @@ const Subscribe: React.FC = () => {
             <path d="M4 4h16v16H4z" />
             <path d="M4 4l8 8 8-8" />
           </svg>
-          <div>
-            <h2 className="text-white text-2xl font-bold">Subscribe for</h2>
-            <p className="text-white text-2xl font-bold">Free courses</p>
+          <div className="text-center sm:text-left">
+            <h2 className="text-white text-xl sm:text-2xl font-bold">Subscribe for</h2>
+            <p className="text-white text-xl sm:text-2xl font-bold">Free courses</p>
           </div>
         </div>
 
         {/* Right Section: Input and Button */}
-        <div className="flex items-center bg-white rounded-full overflow-hidden shadow-lg">
+        <div className="flex flex-col sm:flex-row items-center w-full sm:w-auto space-y-4 sm:space-y-0">
           {/* Email Input */}
-          <div className="relative">
+          <div className="relative w-full sm:w-auto">
             <input
               type="email"
               placeholder="Enter your mail address"
-              className="pl-10 pr-4 py-3 w-72 border-0 focus:outline-none rounded-l-full text-gray-700"
+              className="w-full sm:w-72 pl-10 pr-4 py-3 border-0 focus:outline-none rounded-full sm:rounded-l-full sm:rounded-r-none text-gray-700"
             />
             <div className="absolute inset-y-0 left-0 flex items-center pl-3">
               <svg
@@ -53,7 +53,7 @@ const Subscribe: React.FC = () => {
             </div>
           </div>
           {/* Subscribe Button */}
-          <button className="bg-[#f5f5f5] text-black font-semibold px-8 py-3 rounded-r-full hover:bg-gray-200">
+          <button className="w-full sm:w-auto bg-[#f5f5f5] text-black font-semibold px-8 py-3 rounded-full sm:rounded-l-none sm:rounded-r-full hover:bg-gray-200">
             Subscribe Now
           </button>
         </div>
