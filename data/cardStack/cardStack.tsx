@@ -1,4 +1,4 @@
-import { Module, Learner } from "../../types/cardStack";
+import { Module, Learner, } from "../../types/cardStack";
 
 export const modules: Module[] = [
     {

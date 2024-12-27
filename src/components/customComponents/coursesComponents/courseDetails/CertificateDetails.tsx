@@ -1,9 +1,23 @@
 import React from "react";
 
 import Image from "next/image";
-import certificateimage from "../../../../../public/assets/cources/courseDetails/certificateimage.png";
-import { certificationFeatures } from "../../../../../data/certificateDetails/certificateDetails";
-const CertificateDisplay: React.FC = () => {
+ 
+import { certificationFeatures } from "../../../../../data/certificateDetails/certificateDetails"; 
+import { Course } from '../../../../../types/courses';
+
+
+interface CertificateDetailsProps {
+  course: Course;
+}
+
+
+
+const defaultCertficate = "/assets/cources/courseDetails/certificateimage.png";
+
+const CertificateDisplay: React.FC<CertificateDetailsProps> = ({ course }) => {
+  
+ 
+
  
   return (
     <div className="bg-gradient-to-r from-gray-50 via-white to-red-50 py-6 sm:py-8 px-3">
@@ -52,12 +66,13 @@ const CertificateDisplay: React.FC = () => {
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-red-600 to-red-400 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                 <div className="relative bg-white rounded-lg overflow-hidden">
                   <Image
-                    src={certificateimage}
-                    alt="Certificate Example"
+                    src={course.certificateImage}
+                    alt={`${course.title} Certificate`}
                     width={300}
                     height={400}
                     className="object-cover w-full h-auto transform group-hover:scale-105 transition-transform duration-300"
                     priority
+                    
                   />
                 </div>
               </div>
@@ -75,3 +90,11 @@ const CertificateDisplay: React.FC = () => {
 };
 
 export default CertificateDisplay;
+
+
+
+
+
+
+
+

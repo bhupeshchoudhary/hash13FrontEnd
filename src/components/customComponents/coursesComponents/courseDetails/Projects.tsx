@@ -4,9 +4,13 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import dockerLogo from "../../../../../public/assets/Projects/docker.png"
 import { projectData } from "../../../../../data/projects/projects";
+import { Course } from "../../../../../types/courses";
 
+interface ProjectsProps {
+  course : Course;
+}
 
-export default function Projects() {
+export default function Projects( {course}: ProjectsProps) {
   const [expanded, setExpanded] = useState<number | null>(0);
   console.log(dockerLogo)
   return (
@@ -30,7 +34,7 @@ export default function Projects() {
 
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-              {projectData.map((project, index) => {
+              {course.project.map((project, index) => {
                 const isExpanded = expanded === index;
                 const visibleSkills = isExpanded
                   ? project.skills

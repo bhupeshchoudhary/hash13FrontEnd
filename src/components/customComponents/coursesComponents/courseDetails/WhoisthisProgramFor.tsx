@@ -2,11 +2,14 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import Image from 'next/image';
-import { data } from '../../../../../data/whoIsThisProgramFor/WhoIsThisProgramFor';
+import { Course } from '../../../../../types/courses';
 
-const WhatWillYouLearn = () => {
+interface WhoIsThisProgramForProps {
+    course: Course;
+}
+
+const WhoIsThisProgramFor:React.FC<WhoIsThisProgramForProps> = ({course}) => {
   
-
     return (
         <div className="mx-auto justify-center text-center my-20">
             <h2 className="text-3xl font-bold mb-8">
@@ -17,7 +20,7 @@ const WhatWillYouLearn = () => {
                 <div className="w-full inline-flex flex-nowrap p-4">
                     {/* First scroll */}
                     <div className="flex items-center justify-center animate-marquee">
-                        {data.map((data, index) => (
+                        {course.programFor.map((data, index) => (
                             <div
                                 key={index}
                                 className="mx-2 w-32 flex-shrink-0"
@@ -44,7 +47,7 @@ const WhatWillYouLearn = () => {
                     {/* Second scroll (duplicate) */}
                     <div className="flex items-center justify-center animate-marquee2"
                         aria-hidden="true">
-                        {data.map((data, index) => (
+                        {course.programFor.map((data, index) => (
                             <div
                                 key={`duplicate-${index}`}
                                 className="mx-2 w-32 flex-shrink-0"
@@ -74,4 +77,4 @@ const WhatWillYouLearn = () => {
     );
 };
 
-export default WhatWillYouLearn;
+export default WhoIsThisProgramFor;

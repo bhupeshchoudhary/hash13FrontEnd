@@ -1,81 +1,35 @@
-// import React from 'react';
-// import { Card } from "@/components/ui/card";
-// import { highlights } from '../../../../../data/programHighlights/programHighlights';
 
 
-
-// const ProgramHighlights = () => {
-
-  
-//   return (
-//     <div className="bg-gradient-to-r from-gray-50 to-red-50">
-//       <div className="p-6 lg:px-8 max-w-5xl mx-auto">
-//         {/* Title */}
-//         <h2 className="text-gray-700 text-sm font-semibold mb-2">
-//           Your Pathway To DevOps Career
-//         </h2>
-
-//         {/* Heading */}
-//         <h1 className="text-3xl font-bold mb-6">
-//           Key <span className="text-[#ff0000]">Program</span> Highlights
-//         </h1>
-
-//         {/* Stats Card */}
-//         <Card className="p-8 bg-white rounded-2xl shadow-sm">
-//           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-//             {highlights.map((item, index) => (
-//               <div
-//                 key={index}
-//                 className={`text-center ${index !== 0 ? 'md:border-l md:border-gray-300 md:pl-8' : ''}`}
-//               >
-//                 <div className="text-[#ff0000] text-3xl font-bold mb-2">
-//                   {item.number}
-//                 </div>
-//                 <div className="text-gray-600 text-md">{item.description}</div>
-//               </div>
-//             ))}
-//           </div>
-//         </Card>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ProgramHighlights;
-
-
-
-
-
-// components/ProgramHighlights.tsx
-"use client";
+// components/customComponents/coursesComponents/courseDetails/ProgramHighlights.tsx
 import React from 'react';
-import { Card } from "@/components/ui/card";
-import { useParams } from 'next/navigation';
-import { getCourseBySlug } from '../../../../../utils/courseUtils';
+import { Card } from "../../../../components/ui/card";
+import { Course } from '../../../../../types/courses';
+import { defaultHighlights } from '../../../../../data/programHighlights/programHighlights';
 
-const ProgramHighlights = () => {
-  const params = useParams();
-  const course = getCourseBySlug(params.courseId as string);
+interface ProgramHighlightsProps {
+  course?: Course | null;
+}
+ 
 
+const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ course }) => {
   if (!course) {
     return null;
   }
+
+  const highlights = course.highlights || defaultHighlights;
 
   return (
     <div className="bg-gradient-to-r from-gray-50 to-red-50">
       <div className="p-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-gray-700 text-sm font-semibold mb-2">
-          Your Pathway To {course.category} Career
+          Your Pathway To {course.category || 'Professional'} Career
         </h2>
-
         <h1 className="text-3xl font-bold mb-6">
           Key <span className="text-[#ff0000]">Program</span> Highlights
         </h1>
-
         <Card className="p-8 bg-white rounded-2xl shadow-sm">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {course.highlights.map((highlight, index) => (
+            {highlights.map((highlight, index) => (
               <div
                 key={index}
                 className={`text-center ${
@@ -85,7 +39,9 @@ const ProgramHighlights = () => {
                 <div className="text-[#ff0000] text-3xl font-bold mb-2">
                   {highlight.number}
                 </div>
-                <div className="text-gray-600 text-md">{highlight.description}</div>
+                <div className="text-gray-600 text-md">
+                  {highlight.description}
+                </div>
               </div>
             ))}
           </div>

@@ -4,7 +4,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation';
-import { Star, Clock, Users } from "lucide-react";
+import { Star, Clock, Users, Share2, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Course } from "../../../../../types/courses";
 import { courseInfo } from "../../../../../data/courses/courses";
@@ -25,13 +25,37 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
     }
 
     const findCourse = () => {
-      const foundCourse = courseInfo.find(c => c.slug === courseId);
-      setCourse(foundCourse || null);
-      setLoading(false);
+      try {
+        const foundCourse = courseInfo.find(c => c.slug === courseId);
+        setCourse(foundCourse || null);
+      } catch (error) {
+        console.error('Error finding course:', error);
+      } finally {
+        setLoading(false);
+      }
     };
 
     findCourse();
   }, [courseId]);
+
+  const calculateDiscount = () => {
+    if (!course) return 0;
+    return Math.round(((course.originalPrice - course.price) / course.originalPrice) * 100);
+  };
+
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: course?.title,
+          text: course?.shortDescription,
+          url: window.location.href,
+        });
+      } catch (error) {
+        console.error('Error sharing:', error);
+      }
+    }
+  };
 
   if (!courseId) {
     return <div>No course ID provided</div>;
@@ -51,56 +75,65 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Left Column */}
           <div className="space-y-6">
-            <div>
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                {course.title}
-              </h1>
-              <p className="text-lg text-gray-600">{course.shortDescription}</p>
+            <div className="flex justify-between items-start">
+              <div>
+                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  {course.title}
+                </h1>
+                <p className="text-lg text-gray-600">{course.shortDescription}</p>
+              </div>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleShare}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                <Share2 className="h-5 w-5" />
+              </Button>
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <div className="flex items-center">
+              <div className="flex items-center bg-yellow-50 px-3 py-1 rounded-full">
                 <Star className="w-5 h-5 text-yellow-400 mr-1" />
                 <span className="font-semibold">{course.rating}</span>
                 <span className="text-gray-600 ml-1">
-                  ({course.totalRatings.toLocaleString()} ratings)
+                  ({course.totalRatings.toLocaleString()})
                 </span>
               </div>
 
-              <div className="flex items-center">
-                <Users className="w-5 h-5 text-gray-400 mr-1" />
-                <span>
-                  {course.enrolledStudents.toLocaleString()} students
-                </span>
+              <div className="flex items-center bg-blue-50 px-3 py-1 rounded-full">
+                <Users className="w-5 h-5 text-blue-400 mr-1" />
+                <span>{course.enrolledStudents.toLocaleString()} students</span>
               </div>
 
-              <div className="flex items-center">
-                <Clock className="w-5 h-5 text-gray-400 mr-1" />
+              <div className="flex items-center bg-green-50 px-3 py-1 rounded-full">
+                <Clock className="w-5 h-5 text-green-400 mr-1" />
                 <span>{course.duration}</span>
               </div>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
               <img
                 src={course.instructor.image}
                 alt={course.instructor.name}
-                className="w-12 h-12 rounded-full"
+                className="w-16 h-16 rounded-full border-2 border-white shadow-md"
               />
               <div>
-                <p className="font-semibold">{course.instructor.name}</p>
-                <p className="text-sm text-gray-600">
-                  {course.instructor.title}
+                <p className="font-semibold text-lg">{course.instructor.name}</p>
+                <p className="text-gray-600">{course.instructor.title}</p>
+                <p className="text-sm text-gray-500 mt-1">
+                  {course.instructor.bio}
                 </p>
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h3 className="font-semibold text-lg">What you'll learn</h3>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <div className="space-y-4 bg-white p-6 rounded-lg border">
+              <h3 className="font-semibold text-xl">What you'll learn</h3>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {course.learningOutcomes.map((outcome, index) => (
                   <li key={index} className="flex items-start gap-2">
-                    <span className="text-green-500">✓</span>
-                    {outcome}
+                    <CheckCircle className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>{outcome}</span>
                   </li>
                 ))}
               </ul>
@@ -109,11 +142,11 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
             <div className="flex gap-4">
               <Button
                 size="lg"
-                className="bg-[#ff0000] hover:bg-red-600 text-white"
+                className="bg-[#ff0000] hover:bg-red-600 text-white flex-1"
               >
                 Enroll Now
               </Button>
-              <Button size="lg" variant="outline">
+              <Button size="lg" variant="outline" className="flex-1">
                 Try For Free
               </Button>
             </div>
@@ -121,7 +154,7 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
 
           {/* Right Column */}
           <div className="lg:sticky lg:top-8">
-            <div className="relative rounded-xl overflow-hidden">
+            <div className="relative rounded-xl overflow-hidden shadow-lg">
               <img
                 src={course.backgroundImage}
                 alt={course.title}
@@ -138,27 +171,36 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
             </div>
 
             <div className="mt-6 bg-white rounded-xl shadow-lg p-6">
-              <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-3xl font-bold">
-                ₹{course.price.toFixed(2)}
-                </span>
-                <span className="text-lg text-gray-500 line-through">
-                ₹{course.originalPrice.toFixed(2)}
-                </span>
-              </div>
-
               <div className="space-y-4">
-                {course.features.map((feature, index) => (
-                  <div key={index} className="flex items-center gap-2">
-                    <span className="text-green-500">✓</span>
-                    {feature}
-                  </div>
-                ))}
-              </div>
+                <div className="flex items-baseline gap-3">
+                  <span className="text-3xl font-bold">₹{course.price}</span>
+                  <span className="text-lg text-gray-500 line-through">
+                    ₹{course.originalPrice}
+                  </span>
+                  <span className="text-green-600 font-semibold">
+                    {calculateDiscount()}% off
+                  </span>
+                </div>
 
-              <Button className="w-full mt-6" size="lg">
-                Add to Cart
-              </Button>
+                <div className="pt-4 border-t">
+                  <h4 className="font-semibold mb-3">This course includes:</h4>
+                  {course.features.map((feature, index) => (
+                    <div key={index} className="flex items-center gap-2 mb-2">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span>{feature}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="space-y-3 pt-4">
+                  <Button className="w-full" size="lg">
+                    Add to Cart
+                  </Button>
+                  <p className="text-center text-sm text-gray-500">
+                    30-Day Money-Back Guarantee
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

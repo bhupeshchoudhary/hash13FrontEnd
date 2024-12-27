@@ -1,5 +1,7 @@
 // data/courses/courses.ts
 import { Course } from "../../types/courses";
+import { Project } from "../../types/courses";
+
 
 export const courseInfo: Course[] = [
   {
@@ -51,6 +53,33 @@ export const courseInfo: Course[] = [
     language: "English",
     lastUpdated: "2024-01",
     category: "System Administration",
+    module:  [
+      {
+        id: 1,
+        title: "Fundamentals of SEO ",
+        description: "Learn the basics of SEO and how algorithms work.",
+        content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
+      },
+      {
+        id: 2,
+        title: "Mastering Content ",
+        description: "Create content that ranks well in search engines.",
+        content: ["Keyword Research", "Content Strategy", "On-page SEO"],
+      },
+      {
+        id: 3,
+        title: "Mastering ",
+        description: "Optimize the technical aspects of your website for SEO.",
+        content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
+      },
+      {
+        id: 4,
+        title: "Mastering Technical SEO ",
+        description: "Advanced techniques for technical SEO.",
+        content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
+      },
+    ],
+    
     highlights: [
       {
         number: "15+",
@@ -68,8 +97,81 @@ export const courseInfo: Course[] = [
         number: "20+",
         description: "Capstone Projects",
       },
-    ]
+
+    ],
+    
+    certificateImage: "/assets/cources/courseDetails/certificateimage.png",
+
+    project: [
+       {
+        icon: "/assets/Projects/container.png",
+        title: "Setting up a Multi-Tier Application in Containers",
+        description:
+          "Containerize a multi-tier application with frontend, backend, and database components. Using Docker to create and manage containers.",
+        skills: ["Docker", "Kubernetes", "DevOps", "Frontend", "Backend", "Database Management"],
+      },
+       {
+        icon: "/assets/Projects/container.png",
+        title: "Setting up a Multi-Tier Application in Containers",
+        description:
+          "Containerize a multi-tier application with frontend, backend, and database components. Using Docker to create and manage containers.",
+        skills: ["Docker", "Kubernetes", "DevOps", "Frontend", "Backend", "Database Management"],
+      },
+       {
+        icon: "/assets/Projects/container.png",
+        title: "Setting up a Multi-Tier Application in Containers",
+        description:
+          "Containerize a multi-tier application with frontend, backend, and database components. Using Docker to create and manage containers.",
+        skills: ["Docker", "Kubernetes", "DevOps", "Frontend", "Backend", "Database Management"],
+      },
+       {
+        icon: "/assets/Projects/container.png",
+        title: "Setting up a Multi-Tier Application in Containers",
+        description:
+          "Containerize a multi-tier application with frontend, backend, and database components. Using Docker to create and manage containers.",
+        skills: ["Docker", "Kubernetes", "DevOps", "Frontend", "Backend", "Database Management"],
+      },
+    ],
+
+    programFor : [
+      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "College Students" },
+      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "College Students" },
+      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },  
+  ],
+
+  toolsData: [
+    {
+      icon: "TrendingUp",
+      title: "and Development Tools",
+      description: "Tools: Python, SQL",
+      toolsImage:"/assets/cources/tools.webp"
+    },
+    {
+      icon: "BarChart",
+      title: "Data Analysis and Visualization",
+      description: "Tools: Excel, Power BI, Tableau, Matplotlib, Seaborn, NumPy, Pandas",
+      toolsImage:"/assets/cources/tools.webp"
+    },
+    {
+      icon: "Cpu",
+      title: "Machine Learning and AI Frameworks",
+      description: "Tools: Statsmodels, Sklearn, TensorFlow, Keras, NLTK, OpenAI, MLflow",
+      toolsImage:"/assets/cources/tools.webp"
+    }
+  ],
   },
+
+
+
+
+
   {
     id: "kubernetes-mastery",
     title: "Kubernetes for Enterprise DevOps",
@@ -119,6 +221,32 @@ export const courseInfo: Course[] = [
     language: "English",
     lastUpdated: "2024-02",
     category: "DevOps",
+    module:  [
+      {
+        id: 1,
+        title: "Fundamentals of SEO & Algorithm",
+        description: "Learn the basics of SEO and how algorithms work.",
+        content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
+      },
+      {
+        id: 2,
+        title: "Mastering Content for SEO",
+        description: "Create content that ranks well in search engines.",
+        content: ["Keyword Research", "Content Strategy", "On-page SEO"],
+      },
+      {
+        id: 3,
+        title: "Mastering Technical SEO",
+        description: "Optimize the technical aspects of your website for SEO.",
+        content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
+      },
+      {
+        id: 4,
+        title: "Mastering Technical SEO - Part 2",
+        description: "Advanced techniques for technical SEO.",
+        content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
+      },
+    ],
     highlights: [
       {
         number: "12+",
@@ -136,7 +264,51 @@ export const courseInfo: Course[] = [
         number: "15+",
         description: "Enterprise Projects",
       },
-    ]
+    ],
+    certificateImage: "/assets/cources/courseDetails/certificateimage.png",
+    project: [
+      {
+       icon: "/assets/Projects/container.png",
+       title: "Setting up a Multi-Tier Application in Containers",
+       description:
+         "Containerize a multi-tier application with frontend, backend, and database components. Using Docker to create and manage containers.",
+       skills: ["Docker", "Kubernetes", "DevOps", "Frontend", "Backend", "Database Management"],
+     },
+   ],
+   programFor : [
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+
+
+],
+toolsData: [
+  {
+    icon: "TrendingUp",
+    title: "Data Management and Development Tools",
+    description: "Tools: Python, SQL",
+    toolsImage:"/assets/cources/tools.webp"
+  },
+  {
+    icon: "BarChart",
+    title: "Data Analysis and Visualization",
+    description: "Tools: Excel, Power BI, Tableau, Matplotlib, Seaborn, NumPy, Pandas",
+    toolsImage:"/assets/cources/tools.webp"
+  },
+  {
+    icon: "Cpu",
+    title: "Machine Learning and AI Frameworks",
+    description: "Tools: Statsmodels, Sklearn, TensorFlow, Keras, NLTK, OpenAI, MLflow",
+    toolsImage:"/assets/cources/tools.webp"
+  }
+],
   },
   {
     id: "microservices-architecture",
@@ -187,6 +359,32 @@ export const courseInfo: Course[] = [
     language: "English",
     lastUpdated: "2024-01",
     category: "Software Architecture",
+    module:  [
+      {
+        id: 1,
+        title: "Fundamentals of SEO & Algorithm",
+        description: "Learn the basics of SEO and how algorithms work.",
+        content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
+      },
+      {
+        id: 2,
+        title: "Mastering Content for SEO",
+        description: "Create content that ranks well in search engines.",
+        content: ["Keyword Research", "Content Strategy", "On-page SEO"],
+      },
+      {
+        id: 3,
+        title: "Mastering Technical SEO",
+        description: "Optimize the technical aspects of your website for SEO.",
+        content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
+      },
+      {
+        id: 4,
+        title: "Mastering Technical SEO - Part 2",
+        description: "Advanced techniques for technical SEO.",
+        content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
+      },
+    ],
     highlights: [
       {
         number: "39+",
@@ -204,7 +402,51 @@ export const courseInfo: Course[] = [
         number: "12+",
         description: "Enterprise Projects",
       },
-    ]
+    ],
+    certificateImage: "/assets/cources/courseDetails/certificateimage.png",
+    project: [
+      {
+       icon: "/assets/Projects/container.png",
+       title: "Setting up a Multi-Tier Application in Containers",
+       description:
+         "Containerize a multi-tier application with frontend, backend, and database components. Using Docker to create and manage containers.",
+       skills: ["Docker", "Kubernetes", "DevOps", "Frontend", "Backend", "Database Management"],
+     },
+   ],
+   programFor : [
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+
+
+], 
+toolsData: [
+  {
+    icon: "TrendingUp",
+    title: "Data Management and Development Tools",
+    description: "Tools: Python, SQL",
+    toolsImage:"/assets/cources/tools.webp"
+  },
+  {
+    icon: "BarChart",
+    title: "Data Analysis and Visualization",
+    description: "Tools: Excel, Power BI, Tableau, Matplotlib, Seaborn, NumPy, Pandas",
+    toolsImage:"/assets/cources/tools.webp"
+  },
+  {
+    icon: "Cpu",
+    title: "Machine Learning and AI Frameworks",
+    description: "Tools: Statsmodels, Sklearn, TensorFlow, Keras, NLTK, OpenAI, MLflow",
+    toolsImage:"/assets/cources/tools.webp"
+  }
+],
   },
   {
     id: "nlp-specialist",
@@ -255,6 +497,32 @@ export const courseInfo: Course[] = [
     language: "English",
     lastUpdated: "2024-02",
     category: "Artificial Intelligence",
+    module:  [
+      {
+        id: 1,
+        title: "Fundamentals of SEO & Algorithm",
+        description: "Learn the basics of SEO and how algorithms work.",
+        content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
+      },
+      {
+        id: 2,
+        title: "Mastering Content for SEO",
+        description: "Create content that ranks well in search engines.",
+        content: ["Keyword Research", "Content Strategy", "On-page SEO"],
+      },
+      {
+        id: 3,
+        title: "Mastering Technical SEO",
+        description: "Optimize the technical aspects of your website for SEO.",
+        content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
+      },
+      {
+        id: 4,
+        title: "Mastering Technical SEO - Part 2",
+        description: "Advanced techniques for technical SEO.",
+        content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
+      },
+    ],
     highlights: [
       {
         number: "12+",
@@ -272,8 +540,54 @@ export const courseInfo: Course[] = [
         number: "15+",
         description: "Enterprise Projects",
       },
-    ]
+    ],
+    certificateImage: "/assets/cources/courseDetails/certificateimage.png",
+    project: [
+      {
+       icon: "/assets/Projects/container.png",
+       title: "Setting up a Multi-Tier Application in Containers",
+       description:
+         "Containerize a multi-tier application with frontend, backend, and database components. Using Docker to create and manage containers.",
+       skills: ["Docker", "Kubernetes", "DevOps", "Frontend", "Backend", "Database Management"],
+     },
+   ],
+   programFor : [
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+],
+toolsData: [
+  {
+    icon: "TrendingUp",
+    title: "Data Management and Development Tools",
+    description: "Tools: Python, SQL",
+    toolsImage:"/assets/cources/tools.webp"
   },
+  {
+    icon: "BarChart",
+    title: "Data Analysis and Visualization",
+    description: "Tools: Excel, Power BI, Tableau, Matplotlib, Seaborn, NumPy, Pandas",
+    toolsImage:"/assets/cources/tools.webp"
+  },
+  {
+    icon: "Cpu",
+    title: "Machine Learning and AI Frameworks",
+    description: "Tools: Statsmodels, Sklearn, TensorFlow, Keras, NLTK, OpenAI, MLflow",
+    toolsImage:"/assets/cources/tools.webp"
+  }
+],
+  },
+
+
+
+
   {
     id: "system-design",
     title: "Advanced System Design for Scale",
@@ -323,6 +637,32 @@ export const courseInfo: Course[] = [
     language: "English",
     lastUpdated: "2024-01",
     category: "System Design",
+    module:  [
+      {
+        id: 1,
+        title: "Fundamentals of SEO & Algorithm",
+        description: "Learn the basics of SEO and how algorithms work.",
+        content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
+      },
+      {
+        id: 2,
+        title: "Mastering Content for SEO",
+        description: "Create content that ranks well in search engines.",
+        content: ["Keyword Research", "Content Strategy", "On-page SEO"],
+      },
+      {
+        id: 3,
+        title: "Mastering Technical SEO",
+        description: "Optimize the technical aspects of your website for SEO.",
+        content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
+      },
+      {
+        id: 4,
+        title: "Mastering Technical SEO - Part 2",
+        description: "Advanced techniques for technical SEO.",
+        content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
+      },
+    ],
     highlights: [
       {
         number: "92+",
@@ -340,8 +680,57 @@ export const courseInfo: Course[] = [
         number: "95+",
         description: "Enterprise Projects",
       },
-    ]
+    ],
+    certificateImage: "/assets/cources/courseDetails/certificateimage.png",
+    project: [
+      {
+       icon: "/assets/Projects/container.png",
+       title: "Setting up a Multi-Tier Application in Containers",
+       description:
+         "Containerize a multi-tier application with frontend, backend, and database components. Using Docker to create and manage containers.",
+       skills: ["Docker", "Kubernetes", "DevOps", "Frontend", "Backend", "Database Management"],
+     },
+   ],
+   programFor : [
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+
+
+],   
+toolsData: [
+  {
+    icon: "TrendingUp",
+    title: "Data Management and Development Tools",
+    description: "Tools: Python, SQL",
+    toolsImage:"/assets/cources/tools.webp"
   },
+  {
+    icon: "BarChart",
+    title: "Data Analysis and Visualization",
+    description: "Tools: Excel, Power BI, Tableau, Matplotlib, Seaborn, NumPy, Pandas",
+    toolsImage:"/assets/cources/tools.webp"
+  },
+  {
+    icon: "Cpu",
+    title: "Machine Learning and AI Frameworks",
+    description: "Tools: Statsmodels, Sklearn, TensorFlow, Keras, NLTK, OpenAI, MLflow",
+    toolsImage:"/assets/cources/tools.webp"
+  }
+],
+  },
+
+
+
+
+
   {
     id: "dsa-expert",
     title: "Data Structures & Algorithms for FAANG",
@@ -391,6 +780,32 @@ export const courseInfo: Course[] = [
     language: "English",
     lastUpdated: "2024-02",
     category: "Programming",
+    module:  [
+      {
+        id: 1,
+        title: "Fundamentals of SEO & Algorithm",
+        description: "Learn the basics of SEO and how algorithms work.",
+        content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
+      },
+      {
+        id: 2,
+        title: "Mastering Content for SEO",
+        description: "Create content that ranks well in search engines.",
+        content: ["Keyword Research", "Content Strategy", "On-page SEO"],
+      },
+      {
+        id: 3,
+        title: "Mastering Technical SEO",
+        description: "Optimize the technical aspects of your website for SEO.",
+        content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
+      },
+      {
+        id: 4,
+        title: "Mastering Technical SEO - Part 2",
+        description: "Advanced techniques for technical SEO.",
+        content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
+      },
+    ],
     highlights: [
       {
         number: "19+",
@@ -408,6 +823,55 @@ export const courseInfo: Course[] = [
         number: "5+",
         description: "Enterprise Projects",
       },
-    ]
+    ],
+
+    certificateImage: "/assets/cources/courseDetails/certificateimage.png",
+
+    project: [
+      {
+       icon: "/assets/Projects/container.png",
+       title: "Multi-Tier Application in Containers",
+       description:
+         "Containerize a multi-tier application with frontend, backend, and database components. Using Docker to create and manage containers.",
+       skills: ["Docker", "Kubernetes", "DevOps", "Frontend", "Backend", "Database Management"],
+     },
+   ],
+
+   programFor : [
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+    { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "Working Professionals", text: "Working Professionals" },
+
+
+],
+
+toolsData: [
+  {
+    icon: "TrendingUp",
+    title: "Data Management and Development Tools",
+    description: "Tools: Python, SQL",
+    toolsImage:"/assets/cources/tools.webp"
+  },
+  {
+    icon: "BarChart",
+    title: "Data Analysis and Visualization",
+    description: "Tools: Excel, Power BI, Tableau, Matplotlib, Seaborn, NumPy, Pandas",
+    toolsImage:"/assets/cources/tools.webp"
+  },
+  {
+    icon: "Cpu",
+    title: "Machine Learning and AI Frameworks",
+    description: "Tools: Statsmodels, Sklearn, TensorFlow, Keras, NLTK, OpenAI, MLflow",
+    toolsImage:"/assets/cources/tools.webp"
+  }
+],
+
   }
 ];

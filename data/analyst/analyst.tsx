@@ -6,9 +6,5 @@ export const data: Record<string, TabData> = {
     companies: ["Citibank", "Dell", "Deloitte", "Google", "IBM", "Infosys", "Intel", "JPMorgan"],
     demand: 45,
   },
-  scientist: {
-    salary: { label: "Max (15L)", values: [1500, 3000, 160] },
-    companies: ["Zoho", "Wipro", "TCS", "Syfe", "Searce", "Deloitte", "Redhat", "PwC"],
-    demand: 55,
-  },
+   
 };

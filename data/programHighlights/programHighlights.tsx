@@ -1,4 +1,4 @@
-export const highlights = [
+export const defaultHighlights = [
     {
       number: "15+",
       description: "Modules",

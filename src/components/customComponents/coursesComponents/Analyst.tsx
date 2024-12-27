@@ -8,10 +8,13 @@ import { Card } from "@/components/ui/card";
 import { Search, User } from "lucide-react";
 import ChartComponent from "./courseDetails/ChartComponent";
 import { data } from "../../../../data/analyst/analyst";
+import { Course } from "../../../../types/courses";
 // Keep your existing types and data structure
+interface AnalystProps {
+  course: Course;
+}
 
-
-const Analyst: React.FC = () => {
+const Analyst: React.FC<AnalystProps> = ({course})=> {
   const [activeTab, setActiveTab] = useState<"analyst" | "scientist">("analyst");
   const { salary, companies, demand } = data[activeTab];
 
@@ -27,46 +30,12 @@ const Analyst: React.FC = () => {
         {/* Header */}
         <div className="space-y-2">
           <p className="text-xs sm:text-sm text-gray-700 font-semibold">
-            Why DS/ML/AI Industry & Why Data Science?
+            Why {course.category} training
           </p>
           <div className="text-2xl sm:text-3xl font-bold text-[#ff0000]">
-            Rising Demand <span className="text-black">for analytics and AI skills</span>
+            Rising Demand <span className="text-black">for {course.category} Training </span>
           </div>
         </div>
-
-        {/* Tabs */}
-        <Tabs defaultValue="analyst" className="w-full">
-          <TabsList className="h-auto p-0 bg-transparent flex space-x-4 sm:space-x-8">
-            <TabsTrigger
-              value="analyst"
-              className={`relative h-auto pb-2 bg-transparent transition duration-300 ${
-                activeTab === "analyst" ? "text-red-500" : "text-gray-600"
-              }`}
-              onClick={() => setActiveTab("analyst")}
-            >
-              <span className="text-sm sm:text-base">Data Analyst</span>
-              <span
-                className={`absolute bottom-0 left-0 w-full h-0.5 ${
-                  activeTab === "analyst" ? "bg-red-500" : "opacity-0"
-                }`}
-              />
-            </TabsTrigger>
-            <TabsTrigger
-              value="scientist"
-              className={`relative h-auto pb-2 bg-transparent transition duration-300 ${
-                activeTab === "scientist" ? "text-red-500" : "text-gray-600"
-              }`}
-              onClick={() => setActiveTab("scientist")}
-            >
-              <span className="text-sm sm:text-base">Data Scientist</span>
-              <span
-                className={`absolute bottom-0 left-0 w-full h-0.5 ${
-                  activeTab === "scientist" ? "bg-red-500" : "opacity-0"
-                }`}
-              />
-            </TabsTrigger>
-          </TabsList>
-        </Tabs>
 
         {/* Main Content */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -158,12 +127,12 @@ const Analyst: React.FC = () => {
           </Card>
         </div>
 
-        {/* Footer Text */}
+        {/* Footer Text
         <p className="text-gray-600 text-xs sm:text-sm max-w-6xl">
           Data scientists are highly valued for their ability to analyze big data,
           generate insights, and tackle everyday challenges, enhancing business
           profitability and improving society.
-        </p>
+        </p> */}
       </div>
     </div>
   );
