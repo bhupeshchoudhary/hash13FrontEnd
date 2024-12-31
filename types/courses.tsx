@@ -1,14 +1,8 @@
-
-
-
-
-
-// types/courses.ts
+// src/types/courses.ts
 export interface Highlight {
   number: string;
   description: string;
 }
-
 
 export interface Instructor {
   name: string;
@@ -21,43 +15,11 @@ export interface Instructor {
 }
 
 export interface Module {
-  id: number;
+  id?: number;
   title: string;
   description: string;
   content: string[];
 }
-
-export interface Course {
-  id: string;
-  title: string;
-  slug: string;
-  rating: number;
-  totalRatings: number;
-  duration: string;
-  hours: string;
-  price: number;
-  originalPrice: number;
-  enrolledStudents: number;
-  shortDescription: string;
-  longDescription: string;
-  backgroundImage: string;
-  instructor: Instructor;
-  learningOutcomes: string[];
-  features: string[];
-  skills: string[];
-  requirements: string[];
-  level: string;
-  language: string;
-  lastUpdated: string;
-  category: string;
-  highlights: Highlight[];
-  module: Module[];
-  certificateImage: string;
-  project:Project[];
-  programFor: ProgramFor[]; 
-  toolsData: ToolSection[];
-}
-
 
 export interface Project {
   icon: string;
@@ -72,10 +34,43 @@ export interface ProgramFor {
   text: string;
 }
 
-// types.ts
-export interface ToolSection {
+// Changed from ToolSection to ToolData to match your model
+export interface ToolData {
   icon: string;
   title: string;
   description: string;
   toolsImage: string;
+}
+
+export interface Course {
+  id?: string;
+  title: string;
+  slug: string;
+  rating: number;
+  totalRatings: number;
+  duration: string;
+  hours: string;
+  price: number;
+  originalPrice: number;
+  enrolledStudents: number;
+  shortDescription: string;
+  longDescription: string;
+  backgroundImage: string;
+  learningOutcomes: string[];
+  features: string[];
+  skills: string[];
+  requirements: string[];
+  level: string;
+  language: string;
+  lastUpdated: string;
+  category: string;
+  certificateImage: string;
+  instructor: Instructor;
+  module: Module[];
+  highlights: Highlight[];
+  project: Project[];
+  programFor: ProgramFor[];
+  toolsData: ToolData[]; // Changed from toolsSection to toolsData
+  createdAt?: Date;
+  updatedAt?: Date;
 }
