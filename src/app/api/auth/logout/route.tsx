@@ -1,16 +1,9 @@
 // src/app/api/auth/logout/route.ts
+
 import { NextResponse } from 'next/server';
-import { cookies } from 'next/headers';
+import { clearAuthCookie } from '../../../../../utils/auth';
 
 export async function POST() {
-  try {
-    cookies().delete('auth-token');
-    return NextResponse.json({ success: true });
-  } catch (error) {
-    console.error('Logout error:', error);
-    return NextResponse.json(
-      { error: 'Logout failed' },
-      { status: 500 }
-    );
-  }
+  clearAuthCookie();
+  return NextResponse.json({ success: true });
 }

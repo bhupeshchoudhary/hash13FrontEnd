@@ -55,25 +55,25 @@ export const courseInfo: Course[] = [
     category: "System Administration",
     module:  [
       {
-        id: 1,
+        _id: 1,
         title: "Fundamentals of SEO ",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        id: 2,
+        _id: 2,
         title: "Mastering Content ",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        id: 3,
+        _id: 3,
         title: "Mastering ",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        id: 4,
+        _id: 4,
         title: "Mastering Technical SEO ",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
@@ -173,7 +173,7 @@ export const courseInfo: Course[] = [
 
 
   {
-    id: "kubernetes-mastery",
+    _id: "kubernetes-mastery",
     title: "Kubernetes for Enterprise DevOps",
     slug: "kubernetes-enterprise-devops-training",
     rating: 4.9,
@@ -223,25 +223,25 @@ export const courseInfo: Course[] = [
     category: "DevOps",
     module:  [
       {
-        id: 1,
+        _id: 1,
         title: "Fundamentals of SEO & Algorithm",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        id: 2,
+        _id: 2,
         title: "Mastering Content for SEO",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        id: 3,
+        _id: 3,
         title: "Mastering Technical SEO",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        id: 4,
+        _id: 4,
         title: "Mastering Technical SEO - Part 2",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
@@ -311,7 +311,7 @@ toolsData: [
 ],
   },
   {
-    id: "microservices-architecture",
+    _id: "microservices-architecture",
     title: "Microservices Architecture & Implementation",
     slug: "complete-microservices-architecture-training",
     rating: 4.8,
@@ -361,25 +361,25 @@ toolsData: [
     category: "Software Architecture",
     module:  [
       {
-        id: 1,
+        _id: 1,
         title: "Fundamentals of SEO & Algorithm",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        id: 2,
+        _id: 2,
         title: "Mastering Content for SEO",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        id: 3,
+        _id: 3,
         title: "Mastering Technical SEO",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        id: 4,
+        _id: 4,
         title: "Mastering Technical SEO - Part 2",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
@@ -449,7 +449,7 @@ toolsData: [
 ],
   },
   {
-    id: "nlp-specialist",
+    _id: "nlp-specialist",
     title: "Natural Language Processing Specialist",
     slug: "nlp-specialist-training",
     rating: 4.7,
@@ -499,25 +499,25 @@ toolsData: [
     category: "Artificial Intelligence",
     module:  [
       {
-        id: 1,
+        _id: 1,
         title: "Fundamentals of SEO & Algorithm",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        id: 2,
+        _id: 2,
         title: "Mastering Content for SEO",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        id: 3,
+        _id: 3,
         title: "Mastering Technical SEO",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        id: 4,
+        _id: 4,
         title: "Mastering Technical SEO - Part 2",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
@@ -589,7 +589,7 @@ toolsData: [
 
 
   {
-    id: "system-design",
+    _id: "system-design",
     title: "Advanced System Design for Scale",
     slug: "advanced-system-design-training",
     rating: 4.9,
@@ -639,25 +639,25 @@ toolsData: [
     category: "System Design",
     module:  [
       {
-        id: 1,
+        _id: 1,
         title: "Fundamentals of SEO & Algorithm",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        id: 2,
+        _id: 2,
         title: "Mastering Content for SEO",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        id: 3,
+        _id: 3,
         title: "Mastering Technical SEO",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        id: 4,
+        _id: 4,
         title: "Mastering Technical SEO - Part 2",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
@@ -732,7 +732,7 @@ toolsData: [
 
 
   {
-    id: "dsa-expert",
+    _id: "dsa-expert",
     title: "Data Structures & Algorithms for FAANG",
     slug: "dsa-interview-preparation",
     rating: 4.8,
@@ -782,25 +782,25 @@ toolsData: [
     category: "Programming",
     module:  [
       {
-        id: 1,
+        _id: 1,
         title: "Fundamentals of SEO & Algorithm",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        id: 2,
+        _id: 2,
         title: "Mastering Content for SEO",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        id: 3,
+        _id: 3,
         title: "Mastering Technical SEO",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        id: 4,
+        _id: 4,
         title: "Mastering Technical SEO - Part 2",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
