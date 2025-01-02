@@ -1,4 +1,5 @@
 // src/types/courses.ts
+
 export interface Highlight {
   number: string;
   description: string;
@@ -34,7 +35,6 @@ export interface ProgramFor {
   text: string;
 }
 
-// Changed from ToolSection to ToolData to match your model
 export interface ToolData {
   icon: string;
   title: string;
@@ -43,7 +43,7 @@ export interface ToolData {
 }
 
 export interface Course {
-  id?: string;
+  _id: string;
   title: string;
   slug: string;
   rating: number;
@@ -56,6 +56,7 @@ export interface Course {
   shortDescription: string;
   longDescription: string;
   backgroundImage: string;
+  instructor: Instructor;
   learningOutcomes: string[];
   features: string[];
   skills: string[];
@@ -64,13 +65,15 @@ export interface Course {
   language: string;
   lastUpdated: string;
   category: string;
-  certificateImage: string;
-  instructor: Instructor;
   module: Module[];
   highlights: Highlight[];
+  certificateImage: string;
   project: Project[];
   programFor: ProgramFor[];
-  toolsData: ToolData[]; // Changed from toolsSection to toolsData
+  toolsData: ToolData[];
+  status: 'draft' | 'published';
   createdAt?: Date;
   updatedAt?: Date;
 }
+
+export type NewCourse = Omit<Course, '_id' | 'createdAt' | 'updatedAt'>;

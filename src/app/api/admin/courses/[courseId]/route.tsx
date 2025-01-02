@@ -1,29 +1,49 @@
-// app/api/admin/courses/[id]/route.ts
-import { NextResponse } from 'next/server';
+// pages/api/admin/courses/[id].ts
+
+import type { NextApiRequest, NextApiResponse } from 'next';
 import dbConnect from '@/lib/mongodb';
-import { Course } from '../../../../../models/course';
+import {Course } from '../../../../../models/course';
 
-export async function GET(
-  request: Request,
-  { params }: { params: { id: string } }
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
 ) {
-  try {
-    await dbConnect();
-    const course = await Course.findById(params.id);
+  const { id } = req.query;
 
-    if (!course) {
-      return NextResponse.json(
-        { error: 'Course not found' },
-        { status: 404 }
-      );
-    }
+  await dbConnect();
 
-    return NextResponse.json(course);
-  } catch (error) {
-    console.error('Error fetching course:', error);
-    return NextResponse.json(
-      { error: 'Failed to fetch course' },
-      { status: 500 }
-    );
+  switch (req.method) {
+    case 'PUT':
+      try {
+        const updatedCourse = await Course.findByIdAndUpdate(
+          id,
+          { ...req.body, updatedAt: new Date() },
+          { new: true }
+        );
+        
+        if (!updatedCourse) {
+          return res.status(404).json({ error: 'Course not found' });
+        }
+
+        return res.status(200).json(updatedCourse);
+      } catch (error) {
+        return res.status(500).json({ error: 'Error updating course' });
+      }
+
+    case 'DELETE':
+      try {
+        const deletedCourse = await Course.findByIdAndDelete(id);
+        
+        if (!deletedCourse) {
+          return res.status(404).json({ error: 'Course not found' });
+        }
+
+        return res.status(200).json({ message: 'Course deleted successfully' });
+      } catch (error) {
+        return res.status(500).json({ error: 'Error deleting course' });
+      }
+
+    default:
+      res.status(405).json({ error: 'Method not allowed' });
   }
 }

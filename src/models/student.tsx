@@ -1,5 +1,5 @@
 // src/models/student.ts
-import mongoose, { Document, Model, Types } from 'mongoose';
+import mongoose, { Schema, Document, Model } from 'mongoose';
 
 export interface IStudent {
   name: string;
@@ -11,18 +11,16 @@ export interface IStudent {
   updatedAt?: Date;
 }
 
-export interface IStudentDocument extends IStudent, Document {
-  _id: Types.ObjectId;
-}
+export interface IStudentDocument extends IStudent, Document {}
 
-const StudentSchema = new mongoose.Schema<IStudentDocument>({
+const StudentSchema = new Schema<IStudentDocument>({
   name: {
     type: String,
-    required: true,
+    required: [true, 'Name is required'],
   },
   email: {
     type: String,
-    required: true,
+    required: [true, 'Email is required'],
     unique: true,
   },
   phone: {
@@ -40,6 +38,9 @@ const StudentSchema = new mongoose.Schema<IStudentDocument>({
 }, {
   timestamps: true,
 });
+
+StudentSchema.index({ email: 1 }, { unique: true });
+StudentSchema.index({ name: 'text', email: 'text' });
 
 export const Student = (mongoose.models.Student as Model<IStudentDocument>) || 
   mongoose.model<IStudentDocument>('Student', StudentSchema);

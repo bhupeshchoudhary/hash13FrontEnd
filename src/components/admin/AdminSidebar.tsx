@@ -81,7 +81,7 @@ export default function AdminSidebar() {
           className="flex items-center space-x-3 px-4 py-2.5 rounded-lg text-gray-700 hover:bg-gray-100 w-full"
         >
           <LogOut size={20} />
-          <span>Logout</span>
+          <span >Logout</span>
         </button>
       </div>
     </div>

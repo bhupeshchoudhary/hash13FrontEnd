@@ -1,11 +1,10 @@
 // src/lib/mongodb.ts
 import mongoose from 'mongoose';
+import { config } from '@/config';
 
 if (!process.env.MONGODB_URI) {
-  throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
+  throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
 }
-
-const uri = process.env.MONGODB_URI as string;
 
 interface Cached {
   conn: typeof mongoose | null;
@@ -19,10 +18,7 @@ declare global {
 let cached = global.mongooseCache;
 
 if (!cached) {
-  cached = global.mongooseCache = {
-    conn: null,
-    promise: null,
-  };
+  cached = global.mongooseCache = { conn: null, promise: null };
 }
 
 async function dbConnect() {
@@ -31,13 +27,11 @@ async function dbConnect() {
   }
 
   if (!cached.promise) {
-    const opts = {
-      bufferCommands: false,
-    };
-
-    cached.promise = mongoose.connect(uri, opts).then((mongoose) => {
-      return mongoose;
-    });
+    cached.promise = mongoose
+      .connect(process.env.MONGODB_URI!, config.mongodb.options)
+      .then((mongoose) => {
+        return mongoose;
+      });
   }
 
   try {
@@ -50,19 +44,23 @@ async function dbConnect() {
   return cached.conn;
 }
 
-// Add isConnected function
-export function isConnected(): boolean {
-  return mongoose.connection.readyState === 1;
-}
+mongoose.connection.on('connected', () => {
+  console.log('MongoDB connected successfully');
+});
 
-// Add disconnect function
-export async function disconnect(): Promise<void> {
-  if (cached.conn) {
-    await mongoose.disconnect();
-    cached.conn = null;
-    cached.promise = null;
+mongoose.connection.on('error', (err) => {
+  console.error('MongoDB connection error:', err);
+});
+
+mongoose.connection.on('disconnected', () => {
+  console.log('MongoDB disconnected');
+});
+
+process.on('SIGINT', async () => {
+  if (mongoose.connection.readyState === 1) {
+    await mongoose.connection.close();
+    process.exit(0);
   }
-}
+});
 
-export { dbConnect };
 export default dbConnect;

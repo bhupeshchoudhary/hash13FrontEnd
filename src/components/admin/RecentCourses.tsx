@@ -38,7 +38,7 @@ export function RecentCourses() {
         <div className="space-y-4">
           {courses.map((course) => (
             <div
-              key={course.id}
+              key={course._id}
               className="flex items-center justify-between border-b pb-4 last:border-0"
             >
               <div className="flex items-center space-x-4">
@@ -57,7 +57,7 @@ export function RecentCourses() {
               <div className="flex items-center space-x-2">
                 <span className="text-lg font-bold">${course.price}</span>
                 <Link
-                  href={`/admin/courses/${course.id}/edit`}
+                  href={`/admin/courses/${course._id}/edit`}
                   className="text-blue-500 hover:text-blue-600"
                 >
                   Edit

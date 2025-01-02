@@ -1,94 +1,91 @@
 // src/models/course.ts
-import mongoose, { Schema, Model } from 'mongoose';
-import { 
-  Course as CourseType,
-  Module,
-  Instructor,
-  Highlight,
-  Project,
-  ProgramFor,
-  ToolData  // Changed from ToolSection to ToolData
-} from '../../types/courses';
+import mongoose, { Schema, Document, Model, Types } from 'mongoose';
 
-// Define interfaces for the model
-interface CourseModel extends Model<CourseType> {}
+export interface ICourse {
+  title: string;
+  slug: string;
+  price: number;
+  enrolledStudents: number;
+  status: 'draft' | 'published';
+  createdAt?: Date;
+  updatedAt?: Date;
+}
 
-// Sub-schemas
-const InstructorSchema = new Schema<Instructor>({
-  name: { type: String, required: true },
-  title: { type: String, required: true },
-  image: { type: String, required: true },
-  bio: { type: String, required: true },
-  rating: { type: Number, default: 0 },
-  totalStudents: { type: Number, default: 0 },
-  courses: { type: Number, default: 0 }
-});
+export interface ICourseDocument extends ICourse, Document {
+  _id: Types.ObjectId;
+}
 
-const ModuleSchema = new Schema<Module>({
-  title: { type: String, required: true },
-  description: { type: String, required: true },
-  content: [{ type: String }]
-});
+export interface ICourseLean extends Omit<ICourse, 'createdAt' | 'updatedAt'> {
+  _id: Types.ObjectId;
+  createdAt: Date;
+  updatedAt: Date;
+}
 
-const HighlightSchema = new Schema<Highlight>({
-  number: { type: String, required: true },
-  description: { type: String, required: true }
-});
+export interface RevenueStats {
+  _id: null;
+  total: number;
+}
 
-const ProjectSchema = new Schema<Project>({
-  icon: { type: String, required: true },
-  title: { type: String, required: true },
-  description: { type: String, required: true },
-  skills: [{ type: String }]
-});
+export interface CourseStats {
+  totalCourses: number;
+  totalRevenue: number;
+}
 
-const ProgramForSchema = new Schema<ProgramFor>({
-  src: { type: String, required: true },
-  alt: { type: String, required: true },
-  text: { type: String, required: true }
-});
+export interface ICourseModel extends Model<ICourseDocument> {
+  getStats(): Promise<CourseStats>;
+}
 
-const ToolDataSchema = new Schema<ToolData>({  // Changed from ToolSection to ToolData
-  icon: { type: String, required: true },
-  title: { type: String, required: true },
-  description: { type: String, required: true },
-  toolsImage: { type: String, required: true }
-});
-
-const CourseSchema = new Schema<CourseType>({
-  title: { type: String, required: true },
-  slug: { type: String, required: true, unique: true },
-  rating: { type: Number, default: 0 },
-  totalRatings: { type: Number, default: 0 },
-  duration: { type: String, required: true },
-  hours: { type: String, required: true },
-  price: { type: Number, required: true },
-  originalPrice: { type: Number, required: true },
-  enrolledStudents: { type: Number, default: 0 },
-  shortDescription: { type: String, required: true },
-  longDescription: { type: String, required: true },
-  backgroundImage: { type: String, required: true },
-  learningOutcomes: [{ type: String }],
-  features: [{ type: String }],
-  skills: [{ type: String }],
-  requirements: [{ type: String }],
-  level: { type: String, required: true },
-  language: { type: String, required: true },
-  lastUpdated: { type: String, required: true },
-  category: { type: String, required: true },
-  certificateImage: { type: String, required: true },
-  instructor: InstructorSchema,
-  module: [ModuleSchema],
-  highlights: [HighlightSchema],
-  project: [ProjectSchema],
-  programFor: [ProgramForSchema],
-  toolsData: [ToolDataSchema]  // Changed from toolsSection to toolsData
+const CourseSchema = new Schema<ICourseDocument>({
+  title: {
+    type: String,
+    required: [true, 'Title is required'],
+  },
+  slug: {
+    type: String,
+    required: [true, 'Slug is required'],
+  },
+  price: {
+    type: Number,
+    required: [true, 'Price is required'],
+    min: 0,
+    default: 0,
+  },
+  enrolledStudents: {
+    type: Number,
+    default: 0,
+  },
+  status: {
+    type: String,
+    enum: ['draft', 'published'],
+    default: 'draft',
+  },
 }, {
-  timestamps: true
+  timestamps: true,
 });
 
-// Create indexes for better query performance
+// Indexes
 CourseSchema.index({ slug: 1 }, { unique: true });
-CourseSchema.index({ title: 'text', shortDescription: 'text' });
+CourseSchema.index({ title: 'text' });
 
-export const Course = (mongoose.models.Course || mongoose.model<CourseType, CourseModel>('Course', CourseSchema));
+// Static methods
+CourseSchema.statics.getStats = async function(): Promise<CourseStats> {
+  const [totalCourses, revenueResults] = await Promise.all([
+    this.countDocuments(),
+    this.aggregate<RevenueStats>([
+      {
+        $group: {
+          _id: null,
+          total: { $sum: '$price' }
+        }
+      }
+    ])
+  ]);
+
+  return {
+    totalCourses,
+    totalRevenue: revenueResults[0]?.total || 0
+  };
+};
+
+export const Course = (mongoose.models.Course as ICourseModel) || 
+  mongoose.model<ICourseDocument, ICourseModel>('Course', CourseSchema);

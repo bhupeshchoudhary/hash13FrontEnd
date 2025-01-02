@@ -1,30 +1,18 @@
 // src/config/index.ts
-import { env } from '../../utils/env'
-
 export const config = {
-  jwt: {
-    secret: env.jwtSecret(),
-    expiresIn: '1d',
-  },
-  
   mongodb: {
-    uri: env.mongoDbUri(),
+    uri: process.env.MONGODB_URI,
     options: {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
       bufferCommands: false,
-      autoIndex: !env.isProduction(),
-    },
+      serverSelectionTimeoutMS: 5000,
+      socketTimeoutMS: 45000,
+      family: 4
+    }
   },
-  
   admin: {
-    email: env.adminEmail(),
-    password: env.adminPassword(),
-  },
-  
-  cookies: {
-    secure: env.isProduction(),
-    sameSite: 'lax' as const,
-    maxAge: 86400, // 1 day
-  },
-} as const
-
-export type Config = typeof config
+    email: process.env.ADMIN_EMAIL,
+    password: process.env.ADMIN_PASSWORD
+  }
+} as const;

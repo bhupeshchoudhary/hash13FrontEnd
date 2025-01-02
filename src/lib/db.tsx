@@ -1,6 +1,14 @@
 // lib/db.ts
 import dbConnect from './mongodb';
 import { Course } from '../../src/models/course';
+// src/lib/db.ts
+import { Model, Document } from 'mongoose';
+
+export async function leanQuery<T extends Document, L = Omit<T, keyof Document>>(
+  query: ReturnType<typeof Model.find>
+): Promise<L[]> {
+  return query.lean().exec() as Promise<L[]>;
+}
 
 export async function getCourses() {
   await dbConnect();

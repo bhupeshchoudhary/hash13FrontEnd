@@ -1,34 +1,20 @@
-// src/models/admin.ts
-import mongoose, { Document, Model, Types } from 'mongoose';
-import bcrypt from 'bcryptjs';
+// src/scripts/models/admin.ts
+import { Schema } from 'mongoose';
+import { mongooseClient } from '@/scripts/db/mongoose-client';
 
 export interface IAdmin {
   email: string;
-  password: string;
   name: string;
   role: 'admin' | 'super-admin';
-  createdAt?: Date;
-  updatedAt?: Date;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
-export interface IAdminDocument extends IAdmin, Document {
-  _id: Types.ObjectId;
-  comparePassword(candidatePassword: string): Promise<boolean>;
-}
-
-export interface IAdminModel extends Model<IAdminDocument> {
-  findByEmail(email: string): Promise<IAdminDocument | null>;
-}
-
-const AdminSchema = new mongoose.Schema<IAdminDocument>({
+const AdminSchema = new Schema({
   email: {
     type: String,
     required: true,
     unique: true,
-  },
-  password: {
-    type: String,
-    required: true,
   },
   name: {
     type: String,
@@ -40,24 +26,8 @@ const AdminSchema = new mongoose.Schema<IAdminDocument>({
     default: 'admin',
   },
 }, {
-  timestamps: true,
+  timestamps: true
 });
 
-AdminSchema.pre<IAdminDocument>('save', async function(next) {
-  if (!this.isModified('password')) return next();
-  
-  try {
-    const salt = await bcrypt.genSalt(10);
-    this.password = await bcrypt.hash(this.password, salt);
-    next();
-  } catch (error) {
-    next(error as Error);
-  }
-});
-
-AdminSchema.methods.comparePassword = async function(candidatePassword: string): Promise<boolean> {
-  return bcrypt.compare(candidatePassword, this.password);
-};
-
-export const Admin = (mongoose.models.Admin as IAdminModel) || 
-  mongoose.model<IAdminDocument, IAdminModel>('Admin', AdminSchema);
+export const Admin = mongooseClient.models.Admin || 
+  mongooseClient.model<IAdmin>('Admin', AdminSchema);

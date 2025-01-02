@@ -7,8 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "create-admin": "ts-node --project tsconfig.scripts.json src/scripts/create-admin.tsx",
-    "verify-admin": "ts-node src/scripts/verify-admin.tsx"
+    "create-admin": "ts-node --project tsconfig.scripts.json src/scripts/create-admin.ts",
+    "verify-admin": "ts-node --project tsconfig.scripts.json src/scripts/verify-admin.ts",
+    "test-db": "node src/scripts/test-connection.js",
+    "admin:test": "ts-node src/scripts/admin-tools.ts test",
+    "admin:verify": "ts-node src/scripts/admin-tools.ts verify",
+    "admin:create": "ts-node src/scripts/admin-tools.ts create"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -25,6 +29,7 @@
     "chart.js": "^4.4.6",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "cookies": "^0.9.1",
     "dotenv": "^16.4.7",
     "framer-motion": "^11.11.11",
     "jose": "^5.9.6",
@@ -49,9 +54,10 @@
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
+    "@types/cookie": "^0.6.0",
     "@types/jquery": "^3.5.32",
     "@types/jsonwebtoken": "^9.0.7",
-    "@types/mongoose": "^5.11.96",
+    "@types/mongoose": "^5.11.97",
     "@types/node": "^20.17.10",
     "@types/react": "^18",
     "@types/react-dom": "^18",
