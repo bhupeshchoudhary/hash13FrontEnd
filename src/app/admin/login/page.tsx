@@ -1,7 +1,9 @@
+
+
 // src/app/admin/login/page.tsx
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function AdminLogin() {
@@ -19,6 +21,8 @@ export default function AdminLogin() {
     setError('');
     setIsLoading(true);
 
+    console.log('Submitting credentials:', credentials);
+
     try {
       const response = await fetch('/api/auth/login', {
         method: 'POST',
@@ -30,14 +34,18 @@ export default function AdminLogin() {
 
       const data = await response.json();
 
+      console.log('Response data:', data);
+
       if (!response.ok) {
         throw new Error(data.error || 'Login failed');
       }
 
       // Redirect to the original destination or dashboard
       const from = searchParams.get('from') || '/admin/dashboard';
+      console.log('Redirecting to:', from);
       router.push(from);
     } catch (error) {
+      console.error('Login error:', error);
       setError(error instanceof Error ? error.message : 'Login failed');
     } finally {
       setIsLoading(false);

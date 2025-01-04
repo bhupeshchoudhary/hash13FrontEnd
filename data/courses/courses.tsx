@@ -3,9 +3,9 @@ import { Course } from "../../types/courses";
 import { Project } from "../../types/courses";
 
 
-export const courseInfo: Course[] = [
+export const course: Course[] = [
   {
-    id: "linux-administration",
+    _id: "linux-administration",
     title: "Complete Linux Administration Training",
     slug: "complete-linux-administration-training",
     rating: 4.7,
@@ -55,25 +55,25 @@ export const courseInfo: Course[] = [
     category: "System Administration",
     module:  [
       {
-        _id: 1,
+        id: 1,
         title: "Fundamentals of SEO ",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        _id: 2,
+        id: 2,
         title: "Mastering Content ",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        _id: 3,
+        id: 3,
         title: "Mastering ",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        _id: 4,
+        id: 4,
         title: "Mastering Technical SEO ",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
@@ -223,25 +223,25 @@ export const courseInfo: Course[] = [
     category: "DevOps",
     module:  [
       {
-        _id: 1,
+        id: 1,
         title: "Fundamentals of SEO & Algorithm",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        _id: 2,
+        id: 2,
         title: "Mastering Content for SEO",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        _id: 3,
+        id: 3,
         title: "Mastering Technical SEO",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        _id: 4,
+        id: 4,
         title: "Mastering Technical SEO - Part 2",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
@@ -361,25 +361,25 @@ toolsData: [
     category: "Software Architecture",
     module:  [
       {
-        _id: 1,
+        id: 1,
         title: "Fundamentals of SEO & Algorithm",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        _id: 2,
+        id: 2,
         title: "Mastering Content for SEO",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        _id: 3,
+        id: 3,
         title: "Mastering Technical SEO",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        _id: 4,
+        id: 4,
         title: "Mastering Technical SEO - Part 2",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
@@ -499,25 +499,25 @@ toolsData: [
     category: "Artificial Intelligence",
     module:  [
       {
-        _id: 1,
+        id: 1,
         title: "Fundamentals of SEO & Algorithm",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        _id: 2,
+        id: 2,
         title: "Mastering Content for SEO",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        _id: 3,
+        id: 3,
         title: "Mastering Technical SEO",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        _id: 4,
+        id: 4,
         title: "Mastering Technical SEO - Part 2",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
@@ -639,25 +639,25 @@ toolsData: [
     category: "System Design",
     module:  [
       {
-        _id: 1,
+        id: 1,
         title: "Fundamentals of SEO & Algorithm",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        _id: 2,
+        id: 2,
         title: "Mastering Content for SEO",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        _id: 3,
+        id: 3,
         title: "Mastering Technical SEO",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        _id: 4,
+        id: 4,
         title: "Mastering Technical SEO - Part 2",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
@@ -782,25 +782,25 @@ toolsData: [
     category: "Programming",
     module:  [
       {
-        _id: 1,
+        id: 1,
         title: "Fundamentals of SEO & Algorithm",
         description: "Learn the basics of SEO and how algorithms work.",
         content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
       },
       {
-        _id: 2,
+        id: 2,
         title: "Mastering Content for SEO",
         description: "Create content that ranks well in search engines.",
         content: ["Keyword Research", "Content Strategy", "On-page SEO"],
       },
       {
-        _id: 3,
+        id: 3,
         title: "Mastering Technical SEO",
         description: "Optimize the technical aspects of your website for SEO.",
         content: ["Site Speed", "Mobile Optimization", "Schema Markup"],
       },
       {
-        _id: 4,
+        id: 4,
         title: "Mastering Technical SEO - Part 2",
         description: "Advanced techniques for technical SEO.",
         content: ["Crawling & Indexing", "HTTPS", "Canonicalization"],
