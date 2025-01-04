@@ -125,7 +125,7 @@ import { Button } from "@/components/ui/button";
 import CourseCard from "./CourseCard";
 import { courseInfo } from "../../../../data/courses/courses";
 import curveLine from "@../../../public/assets/CurlLine.svg";
-
+import Link from "next/link";
 export default function CoursesComponent() {
   return (
     <div className="container max-w-7xl mx-auto px-6 lg:px-14 py-8">
@@ -158,9 +158,9 @@ export default function CoursesComponent() {
       </div>
 
       <div className="text-center mt-10">
-        <Button className="bg-[#ff0000]" variant="destructive" size="lg">
+        <Link className="bg-[#ff0000] p-4 curson-pointer rounded-lg text-white" href="/courses" >
           View All Courses
-        </Button>
+        </Link>
       </div>
     </div>
   );
