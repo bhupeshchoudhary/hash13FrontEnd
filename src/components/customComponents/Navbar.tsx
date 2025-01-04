@@ -1,19 +1,122 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { ChevronDown, Menu } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+"use client"
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { ChevronDown, Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logo from '../../../public/assets/landingPage/logohash13.svg';
+import logo from "../../../public/assets/landingPage/logohash13.svg";
 
-//  import dynamic data 
-import  {menuData ,Program,MenuData} from '../../../data/Navbar/Navbar';
+/// --- Types ---
+type Program = {
+  title: string;
+  mentor: string;
+  duration: string;
+  status: string;
+  type: "Live" | "Recorded";
+};
 
+type CategoryData = {
+  mentorshipPrograms: Program[];
+  selfPacedPrograms: Program[];
+};
 
-// ProgramCard Component
-type ProgramCardProps = Program;
-const ProgramCard: React.FC<ProgramCardProps> = ({ title, mentor, duration, status, type }) => (
+type MenuData = {
+  categories: Record<string, CategoryData>;
+};
+
+/// --- JSON Data ---
+const menuData: Record<"workingProfessionals" | "collegeStudents" | "more", MenuData> = {
+  workingProfessionals: {
+    categories: {
+      Business: {
+        mentorshipPrograms: [
+          { title: "Leadership", mentor: "by John Doe", duration: "6 Weeks", status: "Coming Soon", type: "Live" },
+          { title: "Data Science", mentor: "by Jane Smith", duration: "8 Weeks", status: "Available Now", type: "Live" },
+        ],
+        selfPacedPrograms: [
+          { title: "Agile Management", mentor: "by Alice", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+        ],
+      },
+      Tech: {
+        mentorshipPrograms: [
+          { title: "Cloud Computing", mentor: "by Sarah Connor", duration: "10 Weeks", status: "Coming Soon", type: "Live" },
+        ],
+        selfPacedPrograms: [
+          { title: "Kubernetes Basics", mentor: "by Bruce Banner", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+        ],
+      },
+      Growth: {
+        mentorshipPrograms: [
+          { title: "Personal Branding", mentor: "by Tony Stark", duration: "4 Weeks", status: "Coming Soon", type: "Live" },
+        ],
+        selfPacedPrograms: [
+          { title: "Goal Setting", mentor: "by Natasha Romanoff", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+        ],
+      },
+    },
+  },
+  collegeStudents: {
+    categories: {
+      Design: {
+        mentorshipPrograms: [
+          { title: "Graphic Design", mentor: "by Emily Clark", duration: "4 Weeks", status: "Coming Soon", type: "Live" },
+        ],
+        selfPacedPrograms: [
+          { title: "Illustrator Basics", mentor: "by Steve Rogers", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+        ],
+      },
+      Marketing: {
+        mentorshipPrograms: [
+          { title: "Social Media Marketing", mentor: "by Alex Brown", duration: "5 Weeks", status: "Coming Soon", type: "Live" },
+        ],
+        selfPacedPrograms: [
+          { title: "SEO Strategies", mentor: "by Peter Parker", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+        ],
+      },
+      Product: {
+        mentorshipPrograms: [
+          { title: "Product Management", mentor: "by Clint Barton", duration: "6 Weeks", status: "Coming Soon", type: "Live" },
+        ],
+        selfPacedPrograms: [
+          { title: "Roadmap Building", mentor: "by Wanda Maximoff", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+        ],
+      },
+    },
+  },
+  more: {
+    categories: {
+      AI: {
+        mentorshipPrograms: [
+          { title: "AI for Beginners", mentor: "by Chris Green", duration: "12 Weeks", status: "Coming Soon", type: "Live" },
+        ],
+        selfPacedPrograms: [
+          { title: "Machine Learning Basics", mentor: "by Bruce Wayne", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+        ],
+      },
+      Robotics: {
+        mentorshipPrograms: [
+          { title: "Robotics Engineering", mentor: "by Victor Stone", duration: "14 Weeks", status: "Coming Soon", type: "Live" },
+        ],
+        selfPacedPrograms: [
+          { title: "Arduino Programming", mentor: "by Diana Prince", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+        ],
+      },
+      Blockchain: {
+        mentorshipPrograms: [
+          { title: "Blockchain Fundamentals", mentor: "by Sarah White", duration: "10 Weeks", status: "Coming Soon", type: "Live" },
+        ],
+        selfPacedPrograms: [
+          { title: "Ethereum Basics", mentor: "by Clark Kent", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+        ],
+      },
+    },
+  },
+};
+
+/// --- Components ---
+const ProgramCard: React.FC<Program> = ({ title, mentor, duration, status, type }) => (
   <div className="p-4 hover:bg-gray-50 rounded-lg transition-colors">
     <div className="flex gap-4">
       <div className="w-16 h-16 bg-gray-200 rounded-lg overflow-hidden">
@@ -32,54 +135,57 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ title, mentor, duration, stat
   </div>
 );
 
-// SideCategories Component
-type SideCategoriesProps = {
+const SideCategories: React.FC<{
   categories: string[];
-};
-const SideCategories: React.FC<SideCategoriesProps> = ({ categories }) => (
-
+  selectedCategory: string;
+  onCategorySelect: (category: string) => void;
+}> = ({ categories, selectedCategory, onCategorySelect }) => (
   <div className="w-48 bg-gray-50 p-4 space-y-2 md:block">
     {categories.map((category) => (
-      <div key={category} className="p-2 hover:bg-gray-100 rounded-md cursor-pointer">
-        <span>{category}</span>
+      <div
+        key={category}
+        className={`p-2 rounded-md cursor-pointer ${
+          selectedCategory === category ? "bg-gray-100 font-semibold" : "hover:bg-gray-100"
+        }`}
+        onClick={() => onCategorySelect(category)}
+      >
+        {category}
       </div>
     ))}
   </div>
 );
 
-// DropdownContent Component
-type DropdownContentProps = {
-  data: MenuData;
-};
+const DropdownContent: React.FC<{ data: MenuData }> = ({ data }) => {
+  const categoryKeys = Object.keys(data.categories);
+  const [selectedCategory, setSelectedCategory] = useState<string>(categoryKeys[0]);
 
-const DropdownContent: React.FC<DropdownContentProps> = ({ data }) => (
+  const handleCategorySelect = (category: string) => {
+    setSelectedCategory(category);
+  };
 
-  <div className="flex flex-col md:flex-row">
-    <SideCategories categories={data.categories} />
-    <div className="flex-1 p-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <h2 className="text-xl font-medium mb-2">Mentorship Programs</h2>
-          <p className="text-gray-600 mb-6">Get personalized guidance from industry experts</p>
-          <div className="space-y-4">
-            {data.mentorshipPrograms.map((program: any) => (
+  return (
+    <div className="flex flex-col md:flex-row">
+      <SideCategories categories={categoryKeys} selectedCategory={selectedCategory} onCategorySelect={handleCategorySelect} />
+      <div className="flex-1 p-6">
+        <h2 className="text-xl font-medium mb-4">Content for {selectedCategory}</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-lg font-semibold">Mentorship Programs</h3>
+            {data.categories[selectedCategory].mentorshipPrograms.map((program) => (
               <ProgramCard key={program.title} {...program} />
             ))}
           </div>
-        </div>
-        <div>
-          <h2 className="text-xl font-medium mb-2">Self-Paced Programs</h2>
-          <p className="text-gray-600 mb-6">Learn at your own pace</p>
-          <div className="space-y-4">
-            {data.selfPacedPrograms.map((program: any) => (
+          <div>
+            <h3 className="text-lg font-semibold">Self-Paced Programs</h3>
+            {data.categories[selectedCategory].selfPacedPrograms.map((program) => (
               <ProgramCard key={program.title} {...program} />
             ))}
           </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default function Navbar() {
   return (
@@ -106,11 +212,11 @@ export default function Navbar() {
               <DropdownMenu key={key}>
                 <DropdownMenuTrigger className="flex items-center space-x-1 text-sm hover:text-[#ff0000]">
                   <span>
-                    {key === 'workingProfessionals'
-                      ? 'For working professionals'
-                      : key === 'collegeStudents'
-                      ? 'For college students'
-                      : 'More'}
+                    {key === "workingProfessionals"
+                      ? "For working professionals"
+                      : key === "collegeStudents"
+                      ? "For college students"
+                      : "More"}
                   </span>
                   <ChevronDown className="w-4 h-4" />
                 </DropdownMenuTrigger>

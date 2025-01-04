@@ -6,45 +6,86 @@ export type  Program = {
     type: "Live" | "Recorded";
   };
   
-  export type MenuData = {
-    categories: string[];
+ 
+  
+
+  export type CategoryData = {
     mentorshipPrograms: Program[];
     selfPacedPrograms: Program[];
+  };
+  
+  export type MenuData = {
+    categories: Record<string, CategoryData>;
   };
   
 
   export const menuData: Record<"workingProfessionals" | "collegeStudents" | "more", MenuData> = {
     workingProfessionals: {
-      categories: ["Business", "Tech", "Growth"],
-      mentorshipPrograms: [
-        { title: "Leadership", mentor: "by John Doe", duration: "6 Weeks", status: "Coming Soon", type: "Live" },
-        { title: "Data Science", mentor: "by Jane Smith", duration: "8 Weeks", status: "Available Now", type: "Live" },
-      ],
-      selfPacedPrograms: [
-        { title: "Agile Management", mentor: "by Alice", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-      ],
+      categories: {
+        Business: {
+          mentorshipPrograms: [
+            { title: "Leadership", mentor: "by John Doe", duration: "6 Weeks", status: "Coming Soon", type: "Live" },
+          ],
+          selfPacedPrograms: [
+            { title: "Agile Management", mentor: "by Alice", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+          ],
+        },
+        Tech: {
+          mentorshipPrograms: [
+            { title: "Data Science", mentor: "by Jane Smith", duration: "8 Weeks", status: "Available Now", type: "Live" },
+          ],
+          selfPacedPrograms: [],
+        },
+        Growth: {
+          mentorshipPrograms: [],
+          selfPacedPrograms: [],
+        },
+      },
     },
     collegeStudents: {
-      categories: ["Design", "Marketing", "Product"],
-      mentorshipPrograms: [
-        { title: "Graphic Design", mentor: "by Emily Clark", duration: "4 Weeks", status: "Coming Soon", type: "Live" },
-        { title: "Social Media Marketing", mentor: "by Alex Brown", duration: "5 Weeks", status: "Coming Soon", type: "Live" },
-      ],
-      selfPacedPrograms: [
-        { title: "Video Editing", mentor: "by David Miller", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-      ],
+      categories: {
+        Design: {
+          mentorshipPrograms: [
+            { title: "Graphic Design", mentor: "by Emily Clark", duration: "4 Weeks", status: "Coming Soon", type: "Live" },
+          ],
+          selfPacedPrograms: [],
+        },
+        Marketing: {
+          mentorshipPrograms: [
+            { title: "Social Media Marketing", mentor: "by Alex Brown", duration: "5 Weeks", status: "Coming Soon", type: "Live" },
+          ],
+          selfPacedPrograms: [],
+        },
+        Product: {
+          mentorshipPrograms: [],
+          selfPacedPrograms: [],
+        },
+      },
     },
     more: {
-      categories: ["AI", "Robotics", "Blockchain"],
-      mentorshipPrograms: [
-        { title: "AI for Beginners", mentor: "by Chris Green", duration: "12 Weeks", status: "Coming Soon", type: "Live" },
-        { title: "Blockchain Fundamentals", mentor: "by Sarah White", duration: "10 Weeks", status: "Coming Soon", type: "Live" },
-      ],
-      selfPacedPrograms: [
-        { title: "Intro to Robotics", mentor: "by Michael Scott", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-      ],
+      categories: {
+        AI: {
+          mentorshipPrograms: [
+            { title: "AI for Beginners", mentor: "by Chris Green", duration: "12 Weeks", status: "Coming Soon", type: "Live" },
+          ],
+          selfPacedPrograms: [],
+        },
+        Robotics: {
+          mentorshipPrograms: [],
+          selfPacedPrograms: [
+            { title: "Intro to Robotics", mentor: "by Michael Scott", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+          ],
+        },
+        Blockchain: {
+          mentorshipPrograms: [
+            { title: "Blockchain Fundamentals", mentor: "by Sarah White", duration: "10 Weeks", status: "Coming Soon", type: "Live" },
+          ],
+          selfPacedPrograms: [],
+        },
+      },
     },
   };
+  
   
 
   
