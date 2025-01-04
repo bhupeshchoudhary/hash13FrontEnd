@@ -121,7 +121,7 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+
 import CourseCard from "./CourseCard";
 import { courseInfo } from "../../../../data/courses/courses";
 import curveLine from "@../../../public/assets/CurlLine.svg";
