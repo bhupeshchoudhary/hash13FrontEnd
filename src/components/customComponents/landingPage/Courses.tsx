@@ -153,7 +153,7 @@ export default function CoursesComponent() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-4 p-2">
         {courseInfo.map((course, index) => (
-          <CourseCard key={course.id} course={course} />
+          <CourseCard key={course._id} course={course} />
         ))}
       </div>
 

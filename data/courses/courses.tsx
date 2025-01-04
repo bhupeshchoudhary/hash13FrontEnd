@@ -3,7 +3,7 @@ import { Course } from "../../types/courses";
 import { Project } from "../../types/courses";
 
 
-export const course: Course[] = [
+export const courseInfo: Course[] = [
   {
     _id: "linux-administration",
     title: "Complete Linux Administration Training",
