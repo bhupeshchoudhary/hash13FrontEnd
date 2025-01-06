@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronDown, Menu } from "lucide-react";
+import { ChevronDown, Menu,ChevronUp  } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -188,6 +188,21 @@ const DropdownContent: React.FC<{ data: MenuData }> = ({ data }) => {
 };
 
 export default function Navbar() {
+  const [openDropdowns, setOpenDropdowns] = useState<Record<string, boolean>>({
+    workingProfessionals: false,
+    collegeStudents: false,
+    more: false,
+  });
+
+  // Handler for dropdown state changes
+  const handleDropdownChange = (key: string, isOpen: boolean) => {
+    setOpenDropdowns(prev => ({
+      ...prev,
+      [key]: isOpen
+    }));
+  };
+
+
   return (
     <header className="flex w-full mx-auto items-center max-w-7xl px-6 lg:px-14 overflow-visible h-16 sticky top-0 z-50 bg-white">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between h-full">
@@ -209,8 +224,8 @@ export default function Navbar() {
         <div className="hidden md:flex flex-1 justify-end items-center space-x-6 h-full">
           <nav className="flex items-center space-x-6 h-full">
             {Object.keys(menuData).map((key) => (
-              <DropdownMenu key={key}>
-                <DropdownMenuTrigger className="flex items-center space-x-1 text-sm hover:text-[#ff0000]">
+              <DropdownMenu key={key} onOpenChange={(isOpen) => handleDropdownChange(key, isOpen)}>
+                <DropdownMenuTrigger   className="flex items-center space-x-1 text-sm hover:text-[#ff0000]">
                   <span>
                     {key === "workingProfessionals"
                       ? "For working professionals"
@@ -218,7 +233,14 @@ export default function Navbar() {
                       ? "For college students"
                       : "More"}
                   </span>
-                  <ChevronDown className="w-4 h-4" />
+                  {/*  To Do render ChevronUp with smooth transition  this ChevronDown when user click on it */}
+                  <div className="transition-transform duration-300">
+                    {openDropdowns[key] ? (
+                      <ChevronUp className="w-4 h-4 text-red-600" />
+                    ) : (
+                      <ChevronDown className="w-4 h-4 " />
+                    )}
+                  </div>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-screen max-w-6xl mt-4 p-0" align="center">
                   <DropdownContent data={menuData[key]} />
