@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/customComponents/landingPage/Footer";
-import Navbar from "@/components/customComponents/Navbar";
+import Navbar from "@/components/customComponents/Navbar/Navbar";
 
 
 // Import Poppins SemiBold as a local font
@@ -40,7 +40,7 @@ export default function RootLayout({
 
 
 
-  <Navbar></Navbar>
+  <Navbar />
         {children}
         <Footer></Footer>
 

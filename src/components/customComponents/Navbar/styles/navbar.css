@@ -1,0 +1,43 @@
+.dropdown-menu-content {
+    animation: dropdownFade 0.2s ease-out;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+  }
+  
+  /* Menu-specific styles */
+  /* .dropdown-workingProfessionals {
+    transform-origin: center top;
+  }
+  
+  .dropdown-collegeStudents {
+    transform-origin: center top;
+  }
+  
+  .dropdown-more {
+    transform-origin: center top;
+  } */
+  
+  @keyframes dropdownFade {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1280px) {
+    .dropdown-menu-content {
+      max-width: 90vw;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .dropdown-menu-content {
+      max-width: 95vw;
+    }
+  }

@@ -1,5 +1,7 @@
+"use client"
+
 import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';  
 import { CourseStats } from '@/components/admin/CourseStats';
 import { RecentCourses } from '@/components/admin/RecentCourses';
 
@@ -8,8 +10,8 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     const isAuthenticated = checkAuth(); // Implement your authentication check logic
-    if (!isAuthenticated) {
-      router.push('/admin/login');
+    if (isAuthenticated) {
+      router.push('/admin/dashboard');
     }
   }, [router]);
 

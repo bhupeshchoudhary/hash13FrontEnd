@@ -76,3 +76,50 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+.dropdown-menu-content {
+  animation: dropdownFade 0.2s ease-out;
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+/* Container for dropdown */
+.dropdown-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add these styles to ensure proper positioning */
+.relative {
+  position: relative;
+}
+
+.dropdown-menu-content {
+  z-index: 1000;
+}
+
+/* Center alignment container */
+.center-container {
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+  position: relative;
+}
