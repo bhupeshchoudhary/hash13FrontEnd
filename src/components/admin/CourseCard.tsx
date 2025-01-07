@@ -19,7 +19,7 @@ export function CourseCard({ course }: CourseCardProps) {
       <div className="flex justify-between items-center">
         <span className="font-bold">${course.price}</span>
         <Link
-          href={`/admin/courses/${course.id}/edit`}
+          href={`/admin/courses/${course._id}/edit`}
           className="btn btn-primary"
         >
           Edit

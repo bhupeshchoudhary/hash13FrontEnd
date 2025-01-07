@@ -1,7 +1,7 @@
 // src/scripts/admin-tools.ts
 import * as dotenv from 'dotenv';
 import { mongooseClient, mongoOptions } from './db/mongoose-client';
-import { Admin, IAdmin } from '../models/admin';
+import { Admin } from '../models/admin';
 
 // Load environment variables
 dotenv.config({ path: '.env.local' });

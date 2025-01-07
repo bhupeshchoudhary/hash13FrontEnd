@@ -3,24 +3,10 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/customComponents/landingPage/Footer";
 import Navbar from "@/components/customComponents/Navbar/Navbar";
+import { poppins } from '../app/font'
 
+ 
 
-// Import Poppins SemiBold as a local font
-const poppinsSemiBold = localFont({
-  src: "./fonts/Poppins-SemiBold.ttf",
-  variable: "--font-poppins-semi-bold",
-  weight: "600",
-});
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "hash13",
@@ -35,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${poppinsSemiBold.variable} antialiased`}
+        className={` ${poppins.variable} antialiased`}
       >
 
 

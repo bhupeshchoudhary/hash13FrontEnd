@@ -7,5 +7,5 @@ export const getCourseBySlug = (slug: string): Course | undefined => {
 };
 
 export const getCourseById = (id: string): Course | undefined => {
-  return courseInfo.find(course => course.id === id);
+  return courseInfo.find(course => course._id === id);
 };

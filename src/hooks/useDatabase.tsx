@@ -1,5 +1,5 @@
 // src/hooks/useDatabase.ts
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { isConnected, dbConnect, disconnect } from '@/lib/mongodb';
 
 interface DatabaseStatus {
@@ -15,7 +15,7 @@ export function useDatabase() {
     error: null
   });
 
-  const connect = async () => {
+  const connect = useCallback(async () => {
     try {
       setStatus(prev => ({ ...prev, isChecking: true, error: null }));
       await dbConnect();
@@ -28,9 +28,9 @@ export function useDatabase() {
     } finally {
       setStatus(prev => ({ ...prev, isChecking: false }));
     }
-  };
+  }, []);
 
-  const disconnectDb = async () => {
+  const disconnectDb = useCallback(async () => {
     try {
       setStatus(prev => ({ ...prev, isChecking: true, error: null }));
       await disconnect();
@@ -43,9 +43,9 @@ export function useDatabase() {
     } finally {
       setStatus(prev => ({ ...prev, isChecking: false }));
     }
-  };
+  }, []);
 
-  const checkConnection = () => {
+  const checkConnection = useCallback(() => {
     try {
       const connectionStatus = isConnected();
       setStatus(prev => ({
@@ -62,17 +62,29 @@ export function useDatabase() {
     } finally {
       setStatus(prev => ({ ...prev, isChecking: false }));
     }
-  };
+  }, []);
 
   useEffect(() => {
-    checkConnection();
-    const interval = setInterval(checkConnection, 5000);
+    let mounted = true;
+    let interval: NodeJS.Timeout;
+
+    const init = async () => {
+      if (mounted) {
+        checkConnection();
+        interval = setInterval(checkConnection, 5000);
+      }
+    };
+
+    init();
 
     return () => {
-      clearInterval(interval);
-      disconnectDb();
+      mounted = false;
+      if (interval) {
+        clearInterval(interval);
+      }
+      disconnectDb().catch(console.error);
     };
-  }, []);
+  }, [checkConnection, disconnectDb]);
 
   return {
     ...status,

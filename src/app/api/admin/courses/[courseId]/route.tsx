@@ -1,49 +1,101 @@
-// pages/api/admin/courses/[id].ts
-
-import type { NextApiRequest, NextApiResponse } from 'next';
+// src/app/api/admin/courses/[courseId]/route.ts
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 import dbConnect from '@/lib/mongodb';
-import {Course } from '../../../../../models/course';
+import { Course } from '@/models/course';
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
+// PUT handler
+export async function PUT(
+  request: NextRequest,
+  { params }: { params: { courseId: string } }
 ) {
-  const { id } = req.query;
+  try {
+    await dbConnect();
+    const body = await request.json();
 
-  await dbConnect();
+    const updatedCourse = await Course.findByIdAndUpdate(
+      params.courseId,
+      { ...body, updatedAt: new Date() },
+      { new: true }
+    );
 
-  switch (req.method) {
-    case 'PUT':
-      try {
-        const updatedCourse = await Course.findByIdAndUpdate(
-          id,
-          { ...req.body, updatedAt: new Date() },
-          { new: true }
-        );
-        
-        if (!updatedCourse) {
-          return res.status(404).json({ error: 'Course not found' });
-        }
+    if (!updatedCourse) {
+      return NextResponse.json(
+        { error: 'Course not found' },
+        { status: 404 }
+      );
+    }
 
-        return res.status(200).json(updatedCourse);
-      } catch (error) {
-        return res.status(500).json({ error: 'Error updating course' });
-      }
-
-    case 'DELETE':
-      try {
-        const deletedCourse = await Course.findByIdAndDelete(id);
-        
-        if (!deletedCourse) {
-          return res.status(404).json({ error: 'Course not found' });
-        }
-
-        return res.status(200).json({ message: 'Course deleted successfully' });
-      } catch (error) {
-        return res.status(500).json({ error: 'Error deleting course' });
-      }
-
-    default:
-      res.status(405).json({ error: 'Method not allowed' });
+    return NextResponse.json(updatedCourse);
+  } catch (error) {
+    return NextResponse.json(
+      { error: 'Error updating course' },
+      { status: 500 }
+    );
   }
+}
+
+// DELETE handler
+export async function DELETE(
+  request: NextRequest,
+  { params }: { params: { courseId: string } }
+) {
+  try {
+    await dbConnect();
+    
+    const deletedCourse = await Course.findByIdAndDelete(params.courseId);
+
+    if (!deletedCourse) {
+      return NextResponse.json(
+        { error: 'Course not found' },
+        { status: 404 }
+      );
+    }
+
+    return NextResponse.json(
+      { message: 'Course deleted successfully' },
+      { status: 200 }
+    );
+  } catch (error) {
+    return NextResponse.json(
+      { error: 'Error deleting course' },
+      { status: 500 }
+    );
+  }
+}
+
+// GET handler
+export async function GET(
+  request: NextRequest,
+  { params }: { params: { courseId: string } }
+) {
+  try {
+    await dbConnect();
+    
+    const course = await Course.findById(params.courseId);
+
+    if (!course) {
+      return NextResponse.json(
+        { error: 'Course not found' },
+        { status: 404 }
+      );
+    }
+
+    return NextResponse.json(course);
+  } catch (error) {
+    return NextResponse.json(
+      { error: 'Error fetching course' },
+      { status: 500 }
+    );
+  }
+}
+
+// OPTIONS handler for CORS
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 204,
+    headers: {
+      'Allow': 'GET, PUT, DELETE, OPTIONS',
+    },
+  });
 }

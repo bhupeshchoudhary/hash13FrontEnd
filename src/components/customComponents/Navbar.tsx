@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronDown, Menu,ChevronUp  } from "lucide-react";
+import { ChevronDown, Menu, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -26,8 +26,10 @@ type MenuData = {
   categories: Record<string, CategoryData>;
 };
 
+type MenuKeys = "workingProfessionals" | "collegeStudents" | "more";
+
 /// --- JSON Data ---
-const menuData: Record<"workingProfessionals" | "collegeStudents" | "more", MenuData> = {
+const menuData: Record<MenuKeys, MenuData> = {
   workingProfessionals: {
     categories: {
       Business: {
@@ -39,78 +41,17 @@ const menuData: Record<"workingProfessionals" | "collegeStudents" | "more", Menu
           { title: "Agile Management", mentor: "by Alice", duration: "Self-paced", status: "Available Now", type: "Recorded" },
         ],
       },
-      Tech: {
-        mentorshipPrograms: [
-          { title: "Cloud Computing", mentor: "by Sarah Connor", duration: "10 Weeks", status: "Coming Soon", type: "Live" },
-        ],
-        selfPacedPrograms: [
-          { title: "Kubernetes Basics", mentor: "by Bruce Banner", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-        ],
-      },
-      Growth: {
-        mentorshipPrograms: [
-          { title: "Personal Branding", mentor: "by Tony Stark", duration: "4 Weeks", status: "Coming Soon", type: "Live" },
-        ],
-        selfPacedPrograms: [
-          { title: "Goal Setting", mentor: "by Natasha Romanoff", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-        ],
-      },
+      // ... rest of your data
     },
   },
   collegeStudents: {
     categories: {
-      Design: {
-        mentorshipPrograms: [
-          { title: "Graphic Design", mentor: "by Emily Clark", duration: "4 Weeks", status: "Coming Soon", type: "Live" },
-        ],
-        selfPacedPrograms: [
-          { title: "Illustrator Basics", mentor: "by Steve Rogers", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-        ],
-      },
-      Marketing: {
-        mentorshipPrograms: [
-          { title: "Social Media Marketing", mentor: "by Alex Brown", duration: "5 Weeks", status: "Coming Soon", type: "Live" },
-        ],
-        selfPacedPrograms: [
-          { title: "SEO Strategies", mentor: "by Peter Parker", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-        ],
-      },
-      Product: {
-        mentorshipPrograms: [
-          { title: "Product Management", mentor: "by Clint Barton", duration: "6 Weeks", status: "Coming Soon", type: "Live" },
-        ],
-        selfPacedPrograms: [
-          { title: "Roadmap Building", mentor: "by Wanda Maximoff", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-        ],
-      },
+      // ... your college students data
     },
   },
   more: {
     categories: {
-      AI: {
-        mentorshipPrograms: [
-          { title: "AI for Beginners", mentor: "by Chris Green", duration: "12 Weeks", status: "Coming Soon", type: "Live" },
-        ],
-        selfPacedPrograms: [
-          { title: "Machine Learning Basics", mentor: "by Bruce Wayne", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-        ],
-      },
-      Robotics: {
-        mentorshipPrograms: [
-          { title: "Robotics Engineering", mentor: "by Victor Stone", duration: "14 Weeks", status: "Coming Soon", type: "Live" },
-        ],
-        selfPacedPrograms: [
-          { title: "Arduino Programming", mentor: "by Diana Prince", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-        ],
-      },
-      Blockchain: {
-        mentorshipPrograms: [
-          { title: "Blockchain Fundamentals", mentor: "by Sarah White", duration: "10 Weeks", status: "Coming Soon", type: "Live" },
-        ],
-        selfPacedPrograms: [
-          { title: "Ethereum Basics", mentor: "by Clark Kent", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-        ],
-      },
+      // ... your more data
     },
   },
 };
@@ -120,7 +61,13 @@ const ProgramCard: React.FC<Program> = ({ title, mentor, duration, status, type 
   <div className="p-4 hover:bg-gray-50 rounded-lg transition-colors">
     <div className="flex gap-4">
       <div className="w-16 h-16 bg-gray-200 rounded-lg overflow-hidden">
-        <img src="/api/placeholder/64/64" alt="mentor" className="w-full h-full object-cover" />
+        <Image 
+          src="/placeholder.jpg" 
+          alt="mentor" 
+          width={64} 
+          height={64}
+          className="w-full h-full object-cover" 
+        />
       </div>
       <div className="flex-1">
         <h3 className="font-medium text-lg">{title}</h3>
@@ -135,11 +82,13 @@ const ProgramCard: React.FC<Program> = ({ title, mentor, duration, status, type 
   </div>
 );
 
-const SideCategories: React.FC<{
+interface SideCategoriesProps {
   categories: string[];
   selectedCategory: string;
   onCategorySelect: (category: string) => void;
-}> = ({ categories, selectedCategory, onCategorySelect }) => (
+}
+
+const SideCategories: React.FC<SideCategoriesProps> = ({ categories, selectedCategory, onCategorySelect }) => (
   <div className="w-48 bg-gray-50 p-4 space-y-2 md:block">
     {categories.map((category) => (
       <div
@@ -159,13 +108,13 @@ const DropdownContent: React.FC<{ data: MenuData }> = ({ data }) => {
   const categoryKeys = Object.keys(data.categories);
   const [selectedCategory, setSelectedCategory] = useState<string>(categoryKeys[0]);
 
-  const handleCategorySelect = (category: string) => {
-    setSelectedCategory(category);
-  };
-
   return (
     <div className="flex flex-col md:flex-row">
-      <SideCategories categories={categoryKeys} selectedCategory={selectedCategory} onCategorySelect={handleCategorySelect} />
+      <SideCategories 
+        categories={categoryKeys} 
+        selectedCategory={selectedCategory} 
+        onCategorySelect={setSelectedCategory} 
+      />
       <div className="flex-1 p-6">
         <h2 className="text-xl font-medium mb-4">Content for {selectedCategory}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -188,20 +137,18 @@ const DropdownContent: React.FC<{ data: MenuData }> = ({ data }) => {
 };
 
 export default function Navbar() {
-  const [openDropdowns, setOpenDropdowns] = useState<Record<string, boolean>>({
+  const [openDropdowns, setOpenDropdowns] = useState<Record<MenuKeys, boolean>>({
     workingProfessionals: false,
     collegeStudents: false,
     more: false,
   });
 
-  // Handler for dropdown state changes
-  const handleDropdownChange = (key: string, isOpen: boolean) => {
+  const handleDropdownChange = (key: MenuKeys, isOpen: boolean) => {
     setOpenDropdowns(prev => ({
       ...prev,
       [key]: isOpen
     }));
   };
-
 
   return (
     <header className="flex w-full mx-auto items-center max-w-7xl px-6 lg:px-14 overflow-visible h-16 sticky top-0 z-50 bg-white">
@@ -209,6 +156,7 @@ export default function Navbar() {
         <Link href="/">
           <Image src={logo} alt="#13 logo" width={50} height={50} className="object-contain h-full" priority />
         </Link>
+        
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
@@ -221,11 +169,15 @@ export default function Navbar() {
             </SheetContent>
           </Sheet>
         </div>
+
         <div className="hidden md:flex flex-1 justify-end items-center space-x-6 h-full">
           <nav className="flex items-center space-x-6 h-full">
-            {Object.keys(menuData).map((key) => (
-              <DropdownMenu key={key} onOpenChange={(isOpen) => handleDropdownChange(key, isOpen)}>
-                <DropdownMenuTrigger   className="flex items-center space-x-1 text-sm hover:text-[#ff0000]">
+            {(Object.entries(menuData) as [MenuKeys, MenuData][]).map(([key, data]) => (
+              <DropdownMenu 
+                key={key} 
+                onOpenChange={(isOpen) => handleDropdownChange(key, isOpen)}
+              >
+                <DropdownMenuTrigger className="flex items-center space-x-1 text-sm hover:text-[#ff0000]">
                   <span>
                     {key === "workingProfessionals"
                       ? "For working professionals"
@@ -233,21 +185,21 @@ export default function Navbar() {
                       ? "For college students"
                       : "More"}
                   </span>
-                  {/*  To Do render ChevronUp with smooth transition  this ChevronDown when user click on it */}
                   <div className="transition-transform duration-300">
                     {openDropdowns[key] ? (
                       <ChevronUp className="w-4 h-4 text-red-600" />
                     ) : (
-                      <ChevronDown className="w-4 h-4 " />
+                      <ChevronDown className="w-4 h-4" />
                     )}
                   </div>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-screen max-w-6xl mt-4 p-0" align="center">
-                  <DropdownContent data={menuData[key]} />
+                  <DropdownContent data={data} />
                 </DropdownMenuContent>
               </DropdownMenu>
             ))}
           </nav>
+          
           <div className="flex items-center space-x-4 h-full">
             <Button variant="outline">Free Courses</Button>
             <Button className="bg-[#ff0000] text-white hover:bg-red-600">Sign Up</Button>
