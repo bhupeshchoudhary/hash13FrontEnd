@@ -1,7 +1,7 @@
 // src/app/admin/courses/page.tsx
-import CourseForm from '@/components/admin/CourseForm';
+// import CourseForm from '@/components/admin/CourseForm';
 import { CourseList } from '@/components/admin/CourseList';
-import CreateCoursePage from './create';
+// import CreateCoursePage from './create';
 import { CreateCourseButton } from '@/components/admin/CreateCourseButton';
 
 export default function CoursesPage() {

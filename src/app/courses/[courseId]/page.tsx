@@ -104,7 +104,7 @@ export default function CourseDetailPage() {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center p-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Course Not Found</h2>
-          <p className="text-gray-600">The course you're looking for doesn't exist.</p>
+          <p className="text-gray-600">The course you&lsquo;re looking for doesn&lsquo;t exist.</p>
         </div>
       </div>
     );

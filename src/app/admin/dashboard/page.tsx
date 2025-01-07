@@ -1,3 +1,4 @@
+"use client"
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { CourseStats } from '@/components/admin/CourseStats';

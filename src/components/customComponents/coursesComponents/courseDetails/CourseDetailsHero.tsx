@@ -128,7 +128,7 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
             </div>
 
             <div className="space-y-4 bg-white p-6 rounded-lg border">
-              <h3 className="font-semibold text-xl">What you'll learn</h3>
+              <h3 className="font-semibold text-xl">What you`&apos;ll learn</h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {course.learningOutcomes.map((outcome, index) => (
                   <li key={index} className="flex items-start gap-2">
@@ -236,7 +236,7 @@ function CourseNotFound() {
     <div className="text-center py-12">
       <h2 className="text-2xl font-bold">Course Not Found</h2>
       <p className="text-gray-600 mt-2">
-        The course you're looking for doesn't exist.
+        The course you`&apos;re looking for doesn`&apos;t exist.
       </p>
       <Button
         onClick={() => router.push('/courses')}
