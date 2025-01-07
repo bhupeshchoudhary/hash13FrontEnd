@@ -6,7 +6,7 @@ export default function UnauthorizedPage() {
         <div className="max-w-md w-full bg-white rounded-lg shadow p-8 text-center">
           <h1 className="text-2xl font-bold text-red-600 mb-4">Access Denied</h1>
           <p className="text-gray-600 mb-6">
-            You don't have permission to access this page.
+            You don&apos;t have permission to access this page.
           </p>
           <a
             href="/admin/dashboard"

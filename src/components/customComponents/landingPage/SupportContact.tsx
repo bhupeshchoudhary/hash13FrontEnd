@@ -12,7 +12,7 @@ export default function SupportContact() {
             <span className="text-[#FF0000]">Learner Support</span>
           </h3>
           <p className="text-lg md:text-[1.25rem] text-[#6B7280] font-normal">
-            Talk to our experts. We're available 24/7.
+            Talk to our experts. We&apos;re available 24/7.
           </p>
         </div>
 
