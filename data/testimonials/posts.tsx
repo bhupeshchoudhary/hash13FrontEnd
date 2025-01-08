@@ -123,7 +123,7 @@ export const posts: Post[] = [
         author: {
           name: "Manikandan Prakash",
           title: "DevOps Engineer @smallcase",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/D4E03AQFiY07rDFiZ1A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1698246875639?e=1737590400&v=beta&t=n4sQVUqx1DDJaKh2fEvBUd5l6FR5_k7JEpb1cBS_ZTk",
           linkedin: "https://www.linkedin.com/in/manikandan-prakash/"
         },
         content: `
@@ -136,7 +136,7 @@ export const posts: Post[] = [
         author: {
           name: "Dibyaraj Datta",
           title: "Process Associate at Netscribes",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/D5603AQENeos_aDytsw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1711478336339?e=1737590400&v=beta&t=eqdh3QVuz82VyuHWF78Bmif0EVec9xdh47F6VqZmmko",
           linkedin: "https://www.linkedin.com/in/dibyaraj-datta-b785661a5/"
         },
         content: `
@@ -151,7 +151,7 @@ export const posts: Post[] = [
         author: {
           name: "Rushikesh Mahindrakar",
           title: "System Engineering",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/D5603AQFmIMotaZggJw/profile-displayphoto-shrink_400_400/B56ZOfunOJGoAk-/0/1733551617738?e=1740009600&v=beta&t=8Yhs14_NMJPTSdqoiq-eNcVhgbxDFV4ZZ5FQPdyj5IU",
           linkedin: "https://www.linkedin.com/in/rushikesh-mahindrakar-70b82537/"
         },
         content: `
@@ -163,7 +163,7 @@ export const posts: Post[] = [
         author: {
           name: "Himanshu Sahu",
           title: "Java Backend Developer ",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQFqtDCGoMk54g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1673897788931?e=1737590400&v=beta&t=s2TDcsAQ2oqQ_DvoGT8yyUUaGvsfGDwan4Phjo1RFL0",
           linkedin: "https://www.linkedin.com/in/himanshu-sahu-2aa357237/"
         },
         content: `I attended this helm masterclass and it's amazing. The way Vimal Daga sir teaches makes everything so simple and clear and it also helps understand the real time based problem's and use cases. I learned about hashtag#helm chart with examples, artifact hub, docker hub, how to use procreated Helm chart and how to create my own helm chart and upload it, jenkins setup via helm chart etc. Thank u Vimal Daga sir and LinuxWorld Informatics Pvt Ltd Informatics Pvt Ltd for conducting this masterclass. It is always a pleasure to learnt something new always from Vimal Daga sir.`,
@@ -174,7 +174,7 @@ export const posts: Post[] = [
         author: {
           name: "Pratibha Kokil",
           title: "DevOps | Full Stack Developer",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHspredHFM_Ig/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729926571919?e=1737590400&v=beta&t=EopKPQqmr1fMBHnO3vVCQ-iI51PNnI8XhKTWumH0CI0",
           linkedin: "https://www.linkedin.com/in/pratibhakokil/"
         },
         content: `Thank u Vimal Daga sir and LinuxWorld Informatics Pvt Ltd for conducting this masterclass.. I learned about hashtag#helm chart with examples, artifact hub, docker hub, how to use procreated Helm chart and how to create my own helm chart and upload it, what's it's requirement, Roll out and Roll back, multi environment setup using helm chart, Jenkins setup via helm chart, jinja template etc.`,
@@ -184,7 +184,7 @@ export const posts: Post[] = [
         author: {
           name: "Akansha chaurasia",
           title: "Domain Support Specialist @ Ericsson India Global",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/C4D03AQERGZjbVTAnNw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1645726568650?e=1737590400&v=beta&t=V8r_7CfyG-LYaBsbkY7EztvWwig6Z1vRUv9aFeJJ4-k",
           linkedin: "https://www.linkedin.com/in/akansha-chaurasia-681718119/"
         },
         content: `
@@ -196,7 +196,7 @@ export const posts: Post[] = [
         author: {
           name: "Sanchita Agrawal",
           title: "DevOps Engineer at Genus Power Infrastructure Limited",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHvkoJDpKyN6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1664520645818?e=1737590400&v=beta&t=0s-H7cUGZ7347Xo4Zn2GUdJGkO5tlKQjtzNVnJ3mJYw",
           linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7239134220567130113/?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7239134220567130113%2C7240708775475601408%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287240708775475601408%2Curn%3Ali%3Aactivity%3A7239134220567130113%29"
         },
         content: `
@@ -208,7 +208,7 @@ export const posts: Post[] = [
         author: {
           name: "Rajneesh Pratap Singh",
           title: "DevOps Engineer || 3x Redhat Certified ||",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/D5603AQFxBq8m8wYj4w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1720442622903?e=1737590400&v=beta&t=v_dQCEGOIDJ96AV0ZbaA0IQUfLmnWk3m1YPnnwXAOb4",
           linkedin: "https://www.linkedin.com/in/rajneesh-pratap-singh/"
         },
         content: `
@@ -229,7 +229,7 @@ export const posts: Post[] = [
         author: {
           name: "Aakash Kathunia",
           title: "Technical Architect at HCLTech | GenAI | LLM | OpenAI | Kubernetes| Automation | Cloud",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/D5603AQGJi9pe0O-O8A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723740692945?e=1737590400&v=beta&t=y2ONfXKp0z5KkZJRcTtg_e1iVUh8rFUn3JxaRqqFOBg",
           linkedin: "https://www.linkedin.com/in/aakash-kathunia-6b618b16/"
         },
         content: `
@@ -246,7 +246,7 @@ export const posts: Post[] = [
         author: {
           name: "Alok Kumar Singh ",
           title: "Web Developer(Angular ) | Data Analyst |",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/D5603AQFGCjRM6gI1zg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724789778105?e=1737590400&v=beta&t=sm-JTK9zKq4_tbEEKi1nEZvWEa4fL-RoAH7KeL86jtk",
           linkedin: "https://www.linkedin.com/in/tech-alok/"
         },
         content: `
@@ -261,7 +261,7 @@ export const posts: Post[] = [
         author: {
           name: "Mallesh Gangadhar ",
           title: "--",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/D5635AQFvYLlZaIHe_A/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1713248954215?e=1732777200&v=beta&t=TAOMDi9g-MQ4HMspIYg8WBdCJ53UiCsR-c_GIDtjzzA",
           linkedin: "https://www.linkedin.com/in/mallesh-gangadhar-8ab53777/"
         },
         content: `
@@ -277,7 +277,7 @@ export const posts: Post[] = [
         author: {
           name: "Mohit Agarwal ",
           title: "Student at NIT Kurukshetra | Additional Secretary of MExperts",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ",
+          avatar: "https://media.licdn.com/dms/image/v2/D5603AQFfS5ahFvJB2Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681871987732?e=1737590400&v=beta&t=xyrWG92tvwvBV-V5WSDeucFFSkLx-j8GbZ3e_1lAjw0",
           linkedin: "https://www.linkedin.com/in/mohitagarwal99/"
         },
         content: `
