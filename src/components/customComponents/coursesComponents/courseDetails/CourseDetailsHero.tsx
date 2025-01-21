@@ -197,7 +197,8 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
                 size="lg"
                 className="bg-[#ff0000] hover:bg-red-600 text-white flex-1 w-full"
               >
-                Enroll Now
+                <a href="https://rzp.io/rzp/2asghU9u" target="_blank">                Enroll Now</a>
+
               </Button>
                   <p className="text-center text-sm text-gray-500">
                     30-Day Money-Back Guarantee

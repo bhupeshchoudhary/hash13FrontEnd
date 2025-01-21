@@ -17,7 +17,7 @@ export const courseInfo: Course[] = [
     enrolledStudents: 12000,
     shortDescription: "Industry Relevant & Recognized Training | Gain HandsOn Experience | Best-In-Class Content | Industry Use-Cases",
     longDescription: "Comprehensive Linux training covering system administration, shell scripting, networking, and security. Perfect for beginners and experienced users.",
-    backgroundImage: "/assets/cources/Complete-Linux-v9-Training-by-Mr.jpg",
+    backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
     instructor: {
       name: "Vimal Daga",
       title: "The World Record Holder, Founder at LinuxWorld & #13, Sr. Principal IT Consultant, TEDx Speaker & Philanthropist",
