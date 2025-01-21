@@ -124,7 +124,7 @@ export default function CourseDetailPage() {
         </section>
 
         <section className="">
-          <Projects course={course} />
+          <Projects  />
         </section>
 
         <section className=" ">
