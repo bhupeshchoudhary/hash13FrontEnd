@@ -120,7 +120,7 @@ export default function CourseDetailPage() {
         </section>
 
         <section className=" ">
-          <Tools course={course} />
+          <Tools />
         </section>
 
         <section className="">
