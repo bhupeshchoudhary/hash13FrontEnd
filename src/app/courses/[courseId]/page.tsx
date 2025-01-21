@@ -1,8 +1,3 @@
-
-
-
-
-
 // app/courses/[courseId]/page.tsx
 "use client";
 
@@ -24,6 +19,7 @@ import CourseTestimonials from "@/components/customComponents/coursesComponents/
 import CoursePricingSection from "@/components/customComponents/coursesComponents/courseDetails/CoursePricingSection";
 import CertificateDisplay from "@/components/customComponents/coursesComponents/courseDetails/CertificateDetails";
 import ErrorBoundary from '@/components/errorHandling/ErrorBoundary';
+import Navbar from '@/components/customComponents/coursesComponents/CourseNavbar';
 
 // Loading Skeleton Component
 const LoadingSkeleton = () => (
@@ -111,8 +107,10 @@ export default function CourseDetailPage() {
   }
 
   return (
+    
     <ErrorBoundary>
       <main className="min-h-screen bg-gray-50">
+      <Navbar />
         <section className="">
           <CourseDetailHero courseId={params.courseId as string} />
         </section>

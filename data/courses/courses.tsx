@@ -5,39 +5,41 @@ import { Project } from "../../types/courses";
 
 export const courseInfo: Course[] = [
   {
-    _id: "linux-administration",
-    title: "Complete Linux Administration Training",
-    slug: "complete-linux-administration-training",
+    _id: "specialisation-in-devops",
+    title: "Specialisation in DevOps - Become a DevOps Expert in 3 months",
+    slug: "specialisation-in-devops",
     rating: 4.7,
-    totalRatings: 1856,
+    totalRatings: 10,
     duration: "2 Months",
-    hours: "40+",
-    price: 299,
-    originalPrice: 499,
+    hours: "300+",
+    price: 20000,
+    originalPrice: 45000,
     enrolledStudents: 12000,
-    shortDescription: "Master Linux system administration from basics to advanced concepts",
+    shortDescription: "Industry Relevant & Recognized Training | Gain HandsOn Experience | Best-In-Class Content | Industry Use-Cases",
     longDescription: "Comprehensive Linux training covering system administration, shell scripting, networking, and security. Perfect for beginners and experienced users.",
     backgroundImage: "/assets/cources/Complete-Linux-v9-Training-by-Mr.jpg",
     instructor: {
       name: "Vimal Daga",
-      title: "Linux Expert & DevOps Architect",
+      title: "The World Record Holder, Founder at LinuxWorld & #13, Sr. Principal IT Consultant, TEDx Speaker & Philanthropist",
       image: "https://media.licdn.com/dms/image/v2/D4D03AQFXmcHM9qcV2A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684676554457?e=1740614400&v=beta&t=t80yG_QFLdEMXzVAWmuSas-BvSMy42wzpVMNg9mTKJc",
-      bio: "20+ years of experience in Linux and Open Source technologies",
+      bio: "22+ years of experience in Linux and Open Source technologies",
       rating: 4.9,
       totalStudents: 50000,
       courses: 15
     },
     learningOutcomes: [
-      "Master Linux system administration",
-      "Configure and manage servers",
-      "Implement system security",
-      "Automate tasks with shell scripting"
+      "Master Git and GitHub - From Beginner to Advanced Level",
+      "Automation Using Ansible",
+      "Jenkins & Build Automation",
+      "Monitoring Tools : Prometheus & Grafana",
+      "Docker, Container & Kubernetes",
+      "And much more…"
+
     ],
     features: [
-      "Hands-on Labs",
-      "Real-world Projects",
-      "24/7 Support",
-      "Certification"
+      "Most Relevant DevOps Tips & Tricks to become more productive",
+      "Technical Support for 90 days",
+      "Premium #13 DevOps Community Membership"
     ],
     skills: [
       "Linux Administration",
@@ -52,13 +54,13 @@ export const courseInfo: Course[] = [
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "System Administration",
+    category: "Specialisation in DevOps",
     module:  [
       {
         id: 1,
-        title: "Fundamentals of SEO ",
-        description: "Learn the basics of SEO and how algorithms work.",
-        content: ["SEO Basics", "Google Algorithm", "Ranking Factors"],
+        title: "Master Git & GitHub",
+        description: "A code hosting platform for version control and collaboration.",
+        content: ["Git Basics", "Git Commands", "Clone a Repository", "Git Branching", "Merging", "Git Stash", "Git Add Interactive", "Reflog", "Cherry Picking", "Git Rebase", "Git Bisect", "Fetching and Pulling Content", "Working With Multiple Repositories", "Pushing Code", "Pull Requests", "Git Log", "Squashing Commits", "Cherry-Picking and Three-Way Merges", "Git Hooks", "Advanced: Beyond the Basics", "GitHub Overview", "SSH Authentication", "GitHub Repository", "GitHub Repository Branches", "GitHub Tags and Releases", "Comparing Differences", "Social Coding", "GitHub Issues", "GitHub Gists", "GitHub Organisations", "Git And Github Interview Questions"],
       },
       {
         id: 2,

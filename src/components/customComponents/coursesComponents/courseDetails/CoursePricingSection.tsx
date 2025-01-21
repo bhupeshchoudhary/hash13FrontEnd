@@ -126,7 +126,7 @@ export default function CoursePricingSection({ courseId }: CoursePricingSectionP
               <div className="flex items-start gap-2">
                 <Check className="h-5 w-5 text-red-400 mt-1 flex-shrink-0" />
                 <p className="text-sm sm:text-base text-gray-600">
-                  Avail the discounted price of ₹{course.price.toLocaleString()} and save ₹{discount.toLocaleString()}
+                  Avail the discounted price of ₹{course.price.toLocaleString()} + taxes and save ₹{discount.toLocaleString()}
                 </p>
               </div>
               <div className="flex items-start gap-2">

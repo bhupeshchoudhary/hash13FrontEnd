@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/customComponents/landingPage/Footer";
-import Navbar from "@/components/customComponents/Navbar/Navbar";
+// import Navbar from "@/components/customComponents/Navbar/Navbar";
 import { poppins } from '../app/font'
 
  
@@ -26,7 +26,7 @@ export default function RootLayout({
 
 
 
-  <Navbar />
+  
         {children}
         <Footer></Footer>
 

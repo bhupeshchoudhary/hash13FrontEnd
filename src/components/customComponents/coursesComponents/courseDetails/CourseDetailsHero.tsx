@@ -92,7 +92,7 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
               </Button>
             </div>
 
-            <div className="flex flex-wrap gap-4">
+            {/* <div className="flex flex-wrap gap-4">
               <div className="flex items-center bg-yellow-50 px-3 py-1 rounded-full">
                 <Star className="w-5 h-5 text-yellow-400 mr-1" />
                 <span className="font-semibold">{course.rating}</span>
@@ -110,7 +110,7 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
                 <Clock className="w-5 h-5 text-green-400 mr-1" />
                 <span>{course.duration}</span>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
               <img
@@ -146,9 +146,9 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
               >
                 Enroll Now
               </Button>
-              <Button size="lg" variant="outline" className="flex-1">
+              {/* <Button size="lg" variant="outline" className="flex-1">
                 Try For Free
-              </Button>
+              </Button> */}
             </div>
           </div>
 
@@ -160,14 +160,14 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
                 alt={course.title}
                 className="w-full aspect-video object-cover"
               />
-              <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+              {/* <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                 <Button
                   size="lg"
                   className="bg-white text-black hover:bg-white/90"
                 >
                   Preview Course
                 </Button>
-              </div>
+              </div> */}
             </div>
 
             <div className="mt-6 bg-white rounded-xl shadow-lg p-6">

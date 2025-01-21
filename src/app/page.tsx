@@ -10,9 +10,12 @@ import CoursesComponent from "@/components/customComponents/landingPage/Courses"
 import FactsAndFigure from "@/components/customComponents/landingPage/FactAndFigure";
 import SupportContact from "@/components/customComponents/landingPage/SupportContact";
 
+import Navbar from "@/components/customComponents/Navbar/Navbar";
+
 export default function Home() {
   return (
 <>
+<Navbar />
 <Hero></Hero>
 <About></About>
 
