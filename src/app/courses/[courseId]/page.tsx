@@ -139,9 +139,9 @@ export default function CourseDetailPage() {
           <Analyst course={course} />
         </section>
 
-        <section className="">
+        {/* <section className="">
           <Faq />
-        </section>
+        </section> */}
 
         <section>
           <CardStack />

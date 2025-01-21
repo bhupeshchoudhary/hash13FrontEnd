@@ -140,12 +140,7 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
             </div>
 
             <div className="flex gap-4">
-              <Button
-                size="lg"
-                className="bg-[#ff0000] hover:bg-red-600 text-white flex-1"
-              >
-                Enroll Now
-              </Button>
+             
               {/* <Button size="lg" variant="outline" className="flex-1">
                 Try For Free
               </Button> */}
@@ -193,9 +188,17 @@ export default function CourseDetailHero({ courseId }: CourseDetailHeroProps) {
                 </div>
 
                 <div className="space-y-3 pt-4">
-                  <Button className="w-full" size="lg">
-                    Add to Cart
-                  </Button>
+                  {/* <Button className="w-full" size="lg">
+                    Enroll Now
+                  </Button> */}
+
+
+<Button
+                size="lg"
+                className="bg-[#ff0000] hover:bg-red-600 text-white flex-1 w-full"
+              >
+                Enroll Now
+              </Button>
                   <p className="text-center text-sm text-gray-500">
                     30-Day Money-Back Guarantee
                   </p>
