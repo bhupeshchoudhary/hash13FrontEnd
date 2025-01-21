@@ -212,7 +212,8 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
   }, []);
 
   return (
-    <div className='bg-gradient-to-r from-gray-50 to-red-50'>
+    <div className="bg-gradient-to-r from-gray-50 to-red-50">
+    <div className=' max-w-6xl mx-auto '>
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header Section */}
         <div className="space-y-4 mb-8">
@@ -240,6 +241,7 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
           <DisplayCourseContent modules={course.module} />
         </div>
       </div>
+    </div>
     </div>
   );
 }

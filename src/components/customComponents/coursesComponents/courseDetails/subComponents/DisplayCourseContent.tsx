@@ -95,6 +95,7 @@ const DisplayCourseContent: React.FC<DisplayCourseContentProps> = ({ modules }) 
                         items.push(
                           <li key={itemIndex} className="text-green-700">
                             {module.content[itemIndex]}
+                            
                           </li>
                         );
                       }
