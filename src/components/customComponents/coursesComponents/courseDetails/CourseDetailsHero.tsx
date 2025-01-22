@@ -427,7 +427,7 @@ const CourseHero = () => {
               </div>
 
               <div className="flex flex-wrap gap-2">
-                {['Python Programming', 'Matplotlib', 'Basics of Coding'].map((tag) => (
+                {['DevOps', 'Basic to Advance'].map((tag) => (
                   <Badge 
                     key={tag}
                     variant="secondary" 
