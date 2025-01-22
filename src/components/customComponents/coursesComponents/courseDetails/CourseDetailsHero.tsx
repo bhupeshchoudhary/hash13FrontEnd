@@ -318,7 +318,7 @@ const CourseHero = () => {
                 <Badge 
                   className="bg-red-100 text-[#ff0000] hover:bg-red-200 px-3 py-1 text-xs sm:text-sm rounded-full font-medium"
                 >
-                  FREE CERTIFICATE
+                  GLOBALLY RECOGNISED PROGRAM
                 </Badge>
                 <Button 
                   variant="ghost" 
@@ -340,11 +340,6 @@ const CourseHero = () => {
                 Industry Relevant & Recognized Training | Gain HandsOn Experience | Best-In-Class Content | Industry Use-Cases
               </p>
 
-              {/* Duration */}
-              <div className="flex items-center gap-2 text-gray-600">
-                <Clock className="h-4 w-4" />
-                <span className="text-xs sm:text-sm">310 hours of learning</span>
-              </div>
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2">
@@ -357,6 +352,11 @@ const CourseHero = () => {
                     {tag}
                   </Badge>
                 ))}
+              </div>
+              {/* Duration */}
+              <div className="flex items-center gap-2 text-gray-600">
+                <Clock className="h-4 w-4" />
+                <span className="text-xs sm:text-sm">310 hours of learning</span>
               </div>
               <div className="flex">
                 <a href="https://rzp.io/rzp/2asghU9u" target="_blank">

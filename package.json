@@ -39,7 +39,12 @@
     "masonry-layout": "^4.2.2",
     "mongodb": "^6.12.0",
     "mongoose": "^8.9.3",
+<<<<<<< HEAD
     "next": "^14.2.23",
+=======
+    "next": "14.2.15",
+    "nodemailer": "^6.9.16",
+>>>>>>> da1611f22981cf50f8f593e7d4d4bf33a4356a11
     "react": "^18",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
@@ -61,8 +66,14 @@
     "@types/jsonwebtoken": "^9.0.7",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^20.17.10",
+<<<<<<< HEAD
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
+=======
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+>>>>>>> da1611f22981cf50f8f593e7d4d4bf33a4356a11
     "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.15",
