@@ -35,10 +35,10 @@ const ChartComponent: React.FC<ChartComponentProps> = ({ data, label }) => {
 
   // Define the chart data
   const chartData = {
-    labels: ['Salary Range 1', 'Salary Range 2', 'Salary Range 3'], // Example salary ranges
+    labels: ['Range 1', 'Range 2', 'Range 3'], // Example salary ranges
     datasets: [
       {
-        label: 'Salary Distribution',
+        label: 'Salary (in Rs lakh per annum)',
         data: data, // Data passed from the parent component
         backgroundColor: 'rgba(255, 99, 132, 0.2)', // Bar color
         borderColor: 'rgba(255, 99, 132, 1)',

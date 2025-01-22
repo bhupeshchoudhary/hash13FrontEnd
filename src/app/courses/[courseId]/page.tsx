@@ -136,7 +136,8 @@ export default function CourseDetailPage() {
         </section>
 
         <section className=" ">
-          <Analyst course={course} />
+          {/* <Analyst course={course} /> */}
+          <Analyst />
         </section>
 
         {/* <section className="">
