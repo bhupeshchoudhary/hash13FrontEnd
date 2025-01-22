@@ -265,7 +265,6 @@
 
 
 
-
 "use client";
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
@@ -275,6 +274,25 @@ import Image from 'next/image';
 import CourseHeroImage from "../../../../../public/assets/courseHeroImage.jpg"
 
 const CourseHero = () => {
+  // Share functionality
+  const handleShare = async () => {
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: 'DevOps Training Course',
+          text: 'Check out this DevOps Expert course - Become a DevOps Expert in 3 months',
+          url: window.location.href
+        });
+      } else {
+        // Fallback for browsers that don't support Web Share API
+        await navigator.clipboard.writeText(window.location.href);
+        alert('Link copied to clipboard!');
+      }
+    } catch (error) {
+      console.log('Error sharing:', error);
+    }
+  };
+
   return (
     <div className="bg-gradient-to-br from-gray-50 via-black-50 to-red-50">
       <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center">
@@ -306,6 +324,7 @@ const CourseHero = () => {
                   variant="ghost" 
                   size="icon"
                   className="rounded-full hover:bg-gray-100 w-7 h-7"
+                  onClick={handleShare}
                 >
                   <Share2 className="h-3 w-3 text-gray-600" />
                 </Button>
@@ -351,7 +370,12 @@ const CourseHero = () => {
               <div className="space-y-3 pt-2">
                 <div className="flex items-center gap-2 text-gray-600">
                   <Phone className="h-3 w-3" />
-                  <span className="text-xs">For enquiries call: +91 98291 05960</span>
+                  <a 
+                    href="tel:+919829105960" 
+                    className="text-xs hover:text-[#ff0000] transition-colors cursor-pointer"
+                  >
+                    For enquiries call: +91 98291 05960
+                  </a>
                 </div>
               </div>
             </div>
