@@ -12,7 +12,7 @@ interface CertificateDetailsProps {
 
 
 
-const defaultCertficate = "/assets/cources/courseDetails/certificateimage.png";
+const defaultCertficate = "/assets/devops2.jpg";
 
 const CertificateDisplay: React.FC<CertificateDetailsProps> = ({ course }) => {
   

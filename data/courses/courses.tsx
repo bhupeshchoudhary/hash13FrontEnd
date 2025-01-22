@@ -744,7 +744,7 @@ export const courseInfo: Course[] = [
 
     ],
     
-    certificateImage: "/assets/cources/courseDetails/certificateimage.png",
+    certificateImage: "/assets/devops2.jpg",
 
     project: [
        {
@@ -909,7 +909,7 @@ export const courseInfo: Course[] = [
         description: "Enterprise Projects",
       },
     ],
-    certificateImage: "/assets/cources/courseDetails/certificateimage.png",
+    certificateImage: "/assets/devops2.jpg",
     project: [
       {
        icon: "/assets/Projects/container.png",
