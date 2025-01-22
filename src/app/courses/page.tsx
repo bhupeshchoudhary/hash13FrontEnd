@@ -1,17 +1,12 @@
-
-
-
 "use client"
 import React, { useState, useMemo } from 'react'; // Add useMemo
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { ChevronRight, Clock, Users } from "lucide-react";
-import { Star } from "lucide-react"
+import { ChevronRight, Star } from "lucide-react";
 import Link from 'next/link';
 import { courseInfo } from '../../../data/courses/courses';
-
 
 interface Category {
   name: string;
@@ -22,7 +17,7 @@ interface Course {
   title: string;
   category: string;
   backgroundImage: string;
-  rating?: number;
+  rating?: number; // Rating is optional
   hours: string;
   slug: string;
 }
@@ -106,7 +101,7 @@ const CoursePage: React.FC = () => {
           </ScrollArea>
         </div>
 
-        {/* Course Grid - Rest of the code remains the same */}
+        {/* Course Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 p-2 max-w-6xl mx-auto">
           {filteredCourses.length > 0 ? (
             filteredCourses.map((course: Course, index: number) => (
@@ -131,7 +126,7 @@ const CoursePage: React.FC = () => {
                       <div className="flex items-center gap-1">
                         <Star className="w-4 h-4 fill-yellow-400 stroke-yellow-400 mr-1" />
                         <span className="text-sm sm:text-xs text-gray-600">
-                          {course.rating.toFixed(1)}
+                          {course.rating ? course.rating.toFixed(1) : 'N/A'} {/* Display 'N/A' if rating is undefined */}
                         </span>
                       </div>
                       <div className="flex items-center gap-1">
