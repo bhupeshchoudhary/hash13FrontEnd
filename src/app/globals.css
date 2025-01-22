@@ -79,3 +79,20 @@ body {
 
 
 
+@keyframes alumni-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.alumni-scroll-animation {
+  animation: alumni-scroll var(--alumni-scroll-duration) linear infinite;
+  animation-direction: var(--alumni-scroll-direction);
+}
+
+.alumni-scroller:hover .alumni-scroll-animation {
+  /* animation-play-state: paused; */
+}

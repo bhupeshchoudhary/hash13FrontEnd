@@ -20,6 +20,9 @@ import CoursePricingSection from "@/components/customComponents/coursesComponent
 import CertificateDisplay from "@/components/customComponents/coursesComponents/courseDetails/CertificateDetails";
 import ErrorBoundary from '@/components/errorHandling/ErrorBoundary';
 import Navbar from '@/components/customComponents/coursesComponents/CourseNavbar';
+import { LeftRightAlumniCarousel } from "@/components/customComponents/coursesComponents/LeftRightNowAlumniSection";
+import SupportContact from "@/components/customComponents/landingPage/SupportContact";
+import QueryForm from "@/components/customComponents/coursesComponents/courseDetails/ContactAndSupport";
 
 // Loading Skeleton Component
 const LoadingSkeleton = () => (
@@ -124,9 +127,11 @@ export default function CourseDetailPage() {
           <Tools />
         </section>
 
-        <section className="">
+        {/* <section className="">
           <Projects  />
-        </section>
+        </section> */}
+
+          <LeftRightAlumniCarousel />
 
         <section className=" ">
           <MentorProfile />
@@ -165,6 +170,7 @@ export default function CourseDetailPage() {
         <section className="">
         <CertificateDisplay course={course} />
         </section>
+        <QueryForm />
       </main>
     </ErrorBoundary>
   );
