@@ -294,7 +294,7 @@ const CourseHero = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 via-black-50 to-red-50">
+    <div className="bg-gradient-to-br from-gray-50 via-black-50 to-red-50" id="hero">
       <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center">
         <div className="max-w-6xl w-full overflow-hidden relative flex flex-col lg:block">
           {/* Right Image Section */}
