@@ -130,6 +130,11 @@ export default function CourseDetailPage() {
         {/* <section className="">
           <Projects  />
         </section> */}
+        
+                <section className="">
+                 
+                <KeyOutcomes course={course} />
+                </section>
 
           <LeftRightAlumniCarousel />
 
@@ -152,11 +157,6 @@ export default function CourseDetailPage() {
 
         <section>
           <CardStack />
-        </section>
-
-        <section className="">
-         
-        <KeyOutcomes course={course} />
         </section>
 
         <section className="">
