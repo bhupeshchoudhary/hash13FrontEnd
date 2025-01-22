@@ -265,107 +265,6 @@
 
 
 
-// "use client";
-// import React from 'react';
-// import { Badge } from "@/components/ui/badge";
-// import { Button } from "@/components/ui/button";
-// import { Clock, Share2, Phone } from "lucide-react";
-// import Image from 'next/image';
-// import CourseHeroImage from "../../../../../public/assets/courseHeroImage.jpg"
-
-// const CourseHero = () => {
-//   return (
-//     <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center">
-//       <div className="max-w-6xl w-full bg-white rounded-[2rem] shadow-lg overflow-hidden">
-//         <div className="flex flex-col lg:flex-row h-full">
-//           {/* Left Content Section - Increased width */}
-//           <div className="flex-1 lg:max-w-[60%] p-6 sm:p-8 lg:p-10 flex flex-col justify-center  ">
-//             <div className="space-y-4 max-w-[90%]"> {/* Added max-width to content */}
-//               {/* Top Badges */}
-//               <div className="flex items-center gap-3">
-//                 <Badge 
-//                   className="bg-green-100 text-green-800 hover:bg-green-200 px-3 py-1 text-xs sm:text-sm rounded-full font-medium"
-//                 >
-//                   FREE CERTIFICATE
-//                 </Badge>
-//                 <Button 
-//                   variant="ghost" 
-//                   size="icon"
-//                   className="rounded-full hover:bg-gray-100 w-7 h-7"
-//                 >
-//                   <Share2 className="h-3 w-3 text-gray-600" />
-//                 </Button>
-//               </div>
-
-//               {/* Title */}
-//               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
-//                 Specialisation in  <span className="text-red-500">DevOps</span> - Become a DevOps Experts in 3 months
-//               </h1>
-
-//               {/* Description */}
-//               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-//               Industry Relevant & Recognized Training | Gain HandsOn Experience | Best-In-Class Content | Industry Use-Cases
-//               </p>
-
-//               {/* Course Meta */}
-//               <div className="flex items-center gap-2 text-gray-600">
-//                 <Clock className="h-4 w-4" />
-//                 <span className="text-xs sm:text-sm">310 hours of learning</span>
-//               </div>
-
-//               {/* Tags */}
-//               <div className="flex flex-wrap gap-2">
-//                 {['Python Programming', 'Matplotlib', 'Basics of Coding'].map((tag) => (
-//                   <Badge 
-//                     key={tag}
-//                     variant="secondary" 
-//                     className="px-3 py-1 text-xs rounded-full"
-//                   >
-//                     {tag}
-//                   </Badge>
-//                 ))}
-//               </div>
-
-//               {/* CTA Button and Contact */}
-//               <div className="space-y-3 pt-2">
-//                 {/* <Button 
-//                   className="bg-red-500 hover:bg-red-600 text-white px-6 h-10 rounded-full text-sm font-semibold"
-//                 >
-//                   Learn for Free
-//                 </Button> */}
-
-//                 <div className="flex items-center gap-2 text-gray-600">
-//                   <Phone className="h-3 w-3" />
-//                   <span className="text-xs">For enquiries call: +91 98291 05960</span>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-
-//           {/* Right Image Section - Decreased width */}
-//           <div className="flex-1 lg:max-w-[40%] relative min-h-[250px] sm:min-h-[300px] lg:min-h-[400px] overflow-hidden">
-//             <div className="absolute inset-0">
-//               <Image
-//                 src={CourseHeroImage}
-//                 alt="Python Programming Code"
-//                 fill
-//                 className="object-cover"
-//                 sizes="(max-width: 768px) 100vw, 40vw"
-//                 priority
-//                 quality={100}
-//               />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default CourseHero;
-
-
-
 
 "use client";
 import React from 'react';
@@ -378,29 +277,28 @@ import CourseHeroImage from "../../../../../public/assets/courseHeroImage.jpg"
 const CourseHero = () => {
   return (
     <div className="bg-gradient-to-br from-gray-50 via-black-50 to-red-50">
-    <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center">
-      <div className="max-w-6xl w-full bg-white rounded-[2rem] shadow-lg overflow-hidden">
-        <div className="flex flex-col lg:flex-row h-full relative">
+      <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center">
+        <div className="max-w-6xl w-full overflow-hidden relative flex flex-col lg:block">
+          {/* Right Image Section */}
+          <div className="relative lg:absolute lg:right-0 lg:top-0 h-[300px] lg:h-full w-full lg:w-[45%] order-1">
+            <Image
+              src={CourseHeroImage}
+              alt="DevOps Training"
+              fill
+              className="object-cover rounded-[2rem]"
+              sizes="(max-width: 768px) 100vw, 45vw"
+              priority
+              quality={100}
+            />
+          </div>
+
           {/* Left Content Section */}
-          <div className="flex-1 lg:max-w-[60%] p-6 sm:p-8 lg:p-10 flex flex-col justify-center bg-white relative z-10">
-            {/* Top curved corner */}
-            <div className="hidden lg:block absolute top-0 right-0 w-[60px] h-[60px] bg-white" style={{
-              borderTopRightRadius: '2rem',
-            }}></div>
-            
-            {/* Straight edge in middle */}
-            <div className="hidden lg:block absolute top-[60px] right-0 bottom-[60px] w-[30px] bg-white"></div>
-            
-            {/* Bottom curved corner */}
-            <div className="hidden lg:block absolute bottom-0 right-0 w-[60px] h-[60px] bg-white" style={{
-              borderBottomRightRadius: '2rem',
-            }}></div>
-            
-            <div className="space-y-4 max-w-[90%] relative">
-              {/* Rest of your content remains the same */}
+          <div className="relative lg:w-[65%] p-6 sm:p-8 lg:p-10 bg-white rounded-[2rem] z-10 order-2 mt-4 lg:mt-0">
+            <div className="space-y-4 relative">
+              {/* Badge and Share Button */}
               <div className="flex items-center gap-3">
                 <Badge 
-                  className="bg-green-100 text-green-800 hover:bg-green-200 px-3 py-1 text-xs sm:text-sm rounded-full font-medium"
+                  className="bg-red-100 text-[#ff0000] hover:bg-red-200 px-3 py-1 text-xs sm:text-sm rounded-full font-medium"
                 >
                   FREE CERTIFICATE
                 </Badge>
@@ -413,31 +311,43 @@ const CourseHero = () => {
                 </Button>
               </div>
 
+              {/* Title */}
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
-                Specialisation in <span className="text-red-500">DevOps</span> - Become a DevOps Experts in 3 months
+                Specialisation in <span className="text-red-500">DevOps</span> - Become a DevOps Expert in 3 months
               </h1>
 
+              {/* Description */}
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                 Industry Relevant & Recognized Training | Gain HandsOn Experience | Best-In-Class Content | Industry Use-Cases
               </p>
 
+              {/* Duration */}
               <div className="flex items-center gap-2 text-gray-600">
                 <Clock className="h-4 w-4" />
                 <span className="text-xs sm:text-sm">310 hours of learning</span>
               </div>
 
+              {/* Tags */}
               <div className="flex flex-wrap gap-2">
                 {['DevOps', 'Basic to Advance'].map((tag) => (
                   <Badge 
                     key={tag}
                     variant="secondary" 
-                    className="px-3 py-1 text-xs rounded-full"
+                    className="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
                   >
                     {tag}
                   </Badge>
                 ))}
               </div>
+              <div className="flex">
+                <a href="https://rzp.io/rzp/2asghU9u" target="_blank">
+                  <Button className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg">
+                    Apply Now
+                  </Button>
+                </a>
+              </div>
 
+              {/* Contact Info */}
               <div className="space-y-3 pt-2">
                 <div className="flex items-center gap-2 text-gray-600">
                   <Phone className="h-3 w-3" />
@@ -446,23 +356,8 @@ const CourseHero = () => {
               </div>
             </div>
           </div>
-
-          {/* Right Image Section */}
-          <div className="flex-1 lg:max-w-[40%] relative min-h-[250px] sm:min-h-[300px] lg:min-h-[400px]">
-            <div className="absolute inset-0">
-              <Image
-                src={CourseHeroImage}
-                alt="DevOps Training"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 40vw"
-                priority
-                quality={100}
-              />
-            </div>
-          </div>
         </div>
-      </div></div>
+      </div>
     </div>
   );
 };
