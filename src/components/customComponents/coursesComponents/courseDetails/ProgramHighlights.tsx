@@ -28,7 +28,7 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ course }) => {
           Key <span className="text-[#ff0000]">Program</span> Highlights
         </h1>
         <Card className="p-8 bg-white rounded-2xl shadow-sm">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {highlights.map((highlight, index) => (
               <div
                 key={index}

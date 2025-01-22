@@ -101,11 +101,11 @@ const Navbar: React.FC = () => {
                 Training Content
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#projects" className="text-black hover:text-[#ff0000]">
                 Projects
               </a>
-            </li>
+            </li> */}
             {/* <li>
               <a href="#placements" className="text-black hover:text-[#ff0000]">
                 Placements
@@ -172,7 +172,7 @@ const Navbar: React.FC = () => {
                   Training Content
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#projects"
                   className="block hover:text-red-600"
@@ -180,7 +180,7 @@ const Navbar: React.FC = () => {
                 >
                   Projects
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="#placements"

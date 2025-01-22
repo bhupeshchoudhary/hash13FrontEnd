@@ -1,18 +1,18 @@
 export const defaultHighlights = [
     {
-      number: "15+",
+      number: "11+",
       description: "Modules",
     },
     {
-      number: "300+",
+      number: "310+",
       description: "Hours of learning",
     },
+    // {
+    //   number: "15+",
+    //   description: "Programming Tools",
+    // },
     {
-      number: "15+",
-      description: "Programming Tools",
-    },
-    {
-      number: "20+",
+      number: "1",
       description: "Capstone Projects",
     },
   ];
