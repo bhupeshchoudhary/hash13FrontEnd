@@ -16,7 +16,7 @@ const Footer = () => {
      
           
           <p className="text-gray-400 mb-6">
-            Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis cursus.
+              Making India 🇮🇳 Future Ready
           </p>
           <div className="flex space-x-4">
             <a href="#" className="bg-gray-700 p-3 rounded">
@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Section */}
-        <div>
+        {/* <div>
           <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
           <p className="text-gray-400 mb-4">
             Join over <span className="text-[#ff0000]">68,000</span> people getting our emails. Lorem ipsum dolor sit amet.
@@ -75,7 +75,7 @@ const Footer = () => {
               Subscribe Now
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
       <div className="container mx-auto mt-16 text-center text-gray-400">
         <p>© Copyright 2024 #13 | Designed & Developed with ❤️ by LinuxWorld | All Rights Reserved</p>

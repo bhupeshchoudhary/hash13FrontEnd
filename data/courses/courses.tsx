@@ -11,7 +11,7 @@ export const courseInfo: Course[] = [
     rating: 4.7,
     totalRatings: 10,
     duration: "2 Months",
-    hours: "300+",
+    hours: "310+",
     price: 20000,
     originalPrice: 45000,
     enrolledStudents: 12000,
@@ -25,7 +25,7 @@ export const courseInfo: Course[] = [
       bio: "22+ years of experience in Linux and Open Source technologies",
       rating: 4.9,
       totalStudents: 50000,
-      courses: 15
+      courses: 11
     },
     learningOutcomes: [
       "Master Git and GitHub - From Beginner to Advanced Level",
@@ -726,20 +726,16 @@ export const courseInfo: Course[] = [
     
     highlights: [
       {
-        number: "15+",
+        number: "11+",
         description: "Modules",
       },
       {
-        number: "300+",
+        number: "310+",
         description: "Hours of learning",
       },
       {
-        number: "15+",
-        description: "Programming Tools",
-      },
-      {
-        number: "20+",
-        description: "Capstone Projects",
+        number: "1",
+        description: "Capstone Project",
       },
 
     ],
