@@ -57,12 +57,12 @@ const Tools: React.FC = () => {
           title="Containers & Orchestration: Docker, Kubernetes"
         
         />
-
+{/* 
 <Section
           icon={<TrendingUp size={18} color="white" />}
           title="Cloud Platforms: AWS, Azure, GCP"
         
-        />
+        /> */}
 
 <Section
           icon={<BarChart size={18} color="white" />}
