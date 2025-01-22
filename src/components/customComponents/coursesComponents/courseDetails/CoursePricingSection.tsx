@@ -23,7 +23,7 @@ interface CoursePricingSectionProps {
 
 // Loading Skeleton Component
 const PricingSkeleton = () => (
-  <div className="animate-pulse w-full py-12">
+  <div className="animate-pulse w-full py-6">
     <div className="max-w-6xl mx-auto px-4">
       <div className="h-8 bg-gray-200 w-3/4 mb-8"></div>
       <div className="flex flex-col lg:flex-row gap-8">
@@ -93,9 +93,9 @@ export default function CoursePricingSection({ courseId }: CoursePricingSectionP
   const discountPercentage = ((discount / course.originalPrice) * 100).toFixed(0);
 
   return (
-    <section className="w-full bg-gradient-to-br from-gray-50 via-black-50 to-red-50 py-12" id="participatenow">
+    <section className="w-full bg-gradient-to-br from-gray-50 via-black-50 to-red-50 py-6" id="participatenow">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-8 text-center lg:text-left">
+        <h1 className="text-3xl md:text-3xl lg:text-3xl font-bold text-gray-800 mb-8 text-center ">
           Book your spot! We will be
           <span className="text-[#ff0000] block sm:inline sm:ml-2">
             increasing the price soon...
@@ -127,10 +127,10 @@ export default function CoursePricingSection({ courseId }: CoursePricingSectionP
 
             <div className="space-y-3 mb-6">
               <div className="flex items-start gap-2">
-                <Check className="h-5 w-5 text-red-400 mt-1 flex-shrink-0" />
-                <p className="text-sm sm:text-base text-gray-600">
+                <Check className="h-6 w-5 text-red-400 mt-1 flex-shrink-0" />
+                <button className="text-sm pt-2 pb-2 sm:text-base text-gray-600">
                   Avail the discounted price of ₹{course.price.toLocaleString()} + taxes and save ₹{discount.toLocaleString()}
-                </p>
+                </button>
               </div>
               <div className="flex items-start gap-2">
                 <Check className="h-5 w-5 text-red-400 mt-1 flex-shrink-0" />

@@ -93,7 +93,7 @@ interface WhoIsThisProgramForProps {
 
 const WhoIsThisProgramFor: React.FC<WhoIsThisProgramForProps> = ({ course }) => {
     return (
-        <div className="mx-auto justify-center text-center my-20">
+        <div className="mx-auto justify-center text-center py-6">
             <h2 className="text-3xl font-bold mb-8">
                 Who is this <span className="text-[#ff0000]">program </span>for?
             </h2>
