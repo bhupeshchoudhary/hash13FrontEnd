@@ -12,6 +12,7 @@ import { Star } from "lucide-react"
 import Link from 'next/link';
 import { courseInfo } from '../../../data/courses/courses';
 
+
 interface Category {
   name: string;
   highlight?: boolean;
@@ -21,7 +22,7 @@ interface Course {
   title: string;
   category: string;
   backgroundImage: string;
-  rating: number;
+  rating?: number;
   hours: string;
   slug: string;
 }
