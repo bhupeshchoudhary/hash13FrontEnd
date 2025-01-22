@@ -341,7 +341,7 @@ const CourseHero = () => {
               </div>
               <div className="flex">
                 <a href="https://rzp.io/rzp/2asghU9u" target="_blank">
-                  <Button className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg">
+                  <Button className="bg-[#ff0000] hover:bg-red-600 text-white px-6 py-2 rounded-lg">
                     Apply Now
                   </Button>
                 </a>
