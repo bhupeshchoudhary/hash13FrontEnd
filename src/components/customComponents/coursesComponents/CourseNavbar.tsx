@@ -106,16 +106,16 @@ const Navbar: React.FC = () => {
                 Projects
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#placements" className="text-black hover:text-[#ff0000]">
                 Placements
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="#careertransformation" className="text-black hover:text-[#ff0000]">
                 Career Transition
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
