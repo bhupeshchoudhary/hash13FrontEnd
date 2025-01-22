@@ -778,16 +778,16 @@ export const courseInfo: Course[] = [
     ],
 
     programFor : [
-      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "College Students", text: "College Students" },
-      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "College Students", text: "College Students" },
-      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "College Students", text: "College Students" },
-      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "College Students", text: "College Students" },
-      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "College Students", text: "College Students" },
-      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "College Students", text: "College Students" },
-      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "College Students", text: "College Students" },
-      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "College Students", text: "College Students" },
-      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "College Students", text: "College Students" },
-      { src: "/assets/cources/courseDetails/whatWillYouLearn1.webp", alt: "College Students", text: "College Students" },  
+      { src: "/assets/cources/programFor/programfor1.jpg", alt: "College Students", text: "System administrators" },
+      { src: "/assets/cources/programFor/programfor2.jpg", alt: "College Students", text: "Security engineers" },
+      { src: "/assets/cources/programFor/programfor3.jpg", alt: "College Students", text: "Integration specialists" },
+      { src: "/assets/cources/programFor/programfor4.jpg", alt: "College Students", text: "Cloud Professionals" },
+      { src: "/assets/cources/programFor/programfor5.jpg", alt: "College Students", text: "Site Reliability Engineers" },
+      { src: "/assets/cources/programFor/programfor6.jpg", alt: "College Students", text: "Software Engineers" },
+      { src: "/assets/cources/programFor/programfor7.jpg", alt: "College Students", text: "Solution architects" },
+      { src: "/assets/cources/programFor/programfor8.jpg", alt: "College Students", text: "Application developers" },
+      { src: "/assets/cources/programFor/programfor9.jpg", alt: "College Students", text: "Practitioners" },
+      { src: "/assets/cources/programFor/programfor10.jpg", alt: "College Students", text: "Infrastructure Architects" },  
   ],
 
   toolsData: [
