@@ -14,9 +14,12 @@ import { Course } from "../../../../../types/courses";
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from "react";
 
+
 interface CoursePricingSectionProps {
   courseId: string;
 }
+
+
 
 // Loading Skeleton Component
 const PricingSkeleton = () => (
