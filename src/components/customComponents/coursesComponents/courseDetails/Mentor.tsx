@@ -90,7 +90,7 @@ const MentorProfile = () => {
   return (
     <div className='bg-gradient-to-br from-gray-50 via-black-50 to-red-50' id="mentor">
     <div ref={profileRef} className="max-w-6xl pt-12 mx-auto md:p-6 lg:px-8">
-    <h1 className="text-center mb-4 font-bold  text-lg sm:text-3xl text-black pb-4">
+    <h1 className="text-center mb-4 font-bold  text-3xl sm:text-3xl text-black pb-4">
      
 
     Know Your Mentor : <span className="text-[#ff0000]"> The World Record Holder - Mr Vimal Daga </span>

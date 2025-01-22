@@ -269,7 +269,7 @@
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Clock, Share2, Phone } from "lucide-react";
+import { Clock, Share2, Phone, BookAIcon } from "lucide-react";
 import Image from 'next/image';
 import CourseHeroImage from "../../../../../public/assets/courseHeroImage.jpg"
 
@@ -342,8 +342,8 @@ const CourseHero = () => {
 
 
               {/* Tags */}
-              <div className="flex flex-wrap gap-2">
-                {['DevOps', 'Basic to Advance'].map((tag) => (
+              {/* <div className="flex flex-wrap gap-2">
+                {['11+ Modules', 'Basic to Advance'].map((tag) => (
                   <Badge 
                     key={tag}
                     variant="secondary" 
@@ -352,16 +352,22 @@ const CourseHero = () => {
                     {tag}
                   </Badge>
                 ))}
-              </div>
+              </div> */}
               {/* Duration */}
-              <div className="flex items-center gap-2 text-gray-600">
-                <Clock className="h-4 w-4" />
-                <span className="text-xs sm:text-sm">310 hours of learning</span>
-              </div>
+              <div className="flex flex-col gap-2 text-gray-600">
+  <div className="flex items-center gap-2">
+    <Clock className="h-4 w-4" />
+    <span className="text-xs sm:text-sm">310 hours of learning</span>
+  </div>
+  <div className="flex items-center gap-2">
+    <BookAIcon className="h-4 w-4" />
+    <span className="text-xs sm:text-sm">11+ modules</span>
+  </div>
+</div>
               <div className="flex">
                 <a href="https://rzp.io/rzp/2asghU9u" target="_blank">
                   <Button className="bg-[#ff0000] hover:bg-red-600 text-white px-6 py-2 rounded-lg">
-                    Apply Now
+                    Enroll Now
                   </Button>
                 </a>
               </div>
