@@ -35,7 +35,7 @@ import Allianz from "../../../../public/assets/landingPage/companyLogo/allianz.p
 import BankOfAmerica from "../../../../public/assets/landingPage/companyLogo/bankofamerica.png";
 import BigBasket from "../../../../public/assets/landingPage/companyLogo/bigbasket.png";
 import BluePlanet from "../../../../public/assets/landingPage/companyLogo/blueplanet.png";
-import Capgemini from "../../../../public/assets/landingPage/companyLogo/capgemini.png";
+// import Capgemini from "../../../../public/assets/landingPage/companyLogo/capgemini.png";
 import shyenaTech from "../../../../public/assets/landingPage/companyLogo/shyenaTechLogo.png";
 import quantifi from "../../../../public/assets/landingPage/companyLogo/quantfi.png";
 import peerxp from "../../../../public/assets/landingPage/companyLogo/peerXp-Photoroom.png";
@@ -101,7 +101,7 @@ const companiesRow1 = [
 
 const companiesRow2 = [
   { image: Accenture.src },
-  { image: Capgemini.src },
+//   { image: Capgemini.src },
   { image: Nykaa.src },
   { image: NPCI.src },
   { image: Accenture.src },
