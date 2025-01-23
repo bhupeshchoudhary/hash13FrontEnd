@@ -296,14 +296,14 @@ const CourseHero = () => {
   return (
     <div className="bg-gradient-to-br from-gray-50 via-black-50 to-red-50" id="hero">
       <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center">
-        <div className="max-w-6xl w-full overflow-hidden relative flex flex-col lg:block">
+        <div className="max-w-6xl w-full overflow-hidden relative flex flex-col lg:block lg:pl-14">
           {/* Right Image Section */}
-          <div className="relative lg:absolute lg:right-0 lg:top-0 h-[300px] lg:h-full w-full lg:w-[40%] order-1">
+          <div className="relative lg:absolute lg:right-16 lg:top-0 h-[300px] lg:h-full w-full lg:w-[45%] order-1">
             <Image
               src={CourseHeroImage}
               alt="DevOps Training"
               fill
-              className="object-cover rounded-[2rem]"
+              className="object-cover rounded-[2rem] "
               sizes="(max-width: 768px) 100vw, 45vw"
               priority
               quality={100}
@@ -311,7 +311,7 @@ const CourseHero = () => {
           </div>
 
           {/* Left Content Section */}
-          <div className="relative lg:w-[65%] p-6 sm:p-8 lg:p-10 bg-white rounded-[2rem] z-10 order-2 mt-4 lg:mt-0">
+          <div className="relative lg:w-[55%] p-6 sm:p-8 lg:p-10 bg-white rounded-[2rem] z-10 order-2 mt-4 lg:mt-0">
             <div className="space-y-4 relative">
               {/* Badge and Share Button */}
               <div className="flex items-center gap-3">
