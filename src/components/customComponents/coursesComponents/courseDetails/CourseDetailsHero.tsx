@@ -298,7 +298,7 @@ const CourseHero = () => {
       <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center">
         <div className="max-w-6xl w-full overflow-hidden relative flex flex-col lg:block">
           {/* Right Image Section */}
-          <div className="relative lg:absolute lg:right-0 lg:top-0 h-[300px] lg:h-full w-full lg:w-[45%] order-1">
+          <div className="relative lg:absolute lg:right-0 lg:top-0 h-[300px] lg:h-full w-full lg:w-[40%] order-1">
             <Image
               src={CourseHeroImage}
               alt="DevOps Training"
@@ -331,8 +331,8 @@ const CourseHero = () => {
               </div>
 
               {/* Title */}
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
-                Specialisation in <span className="text-red-500">DevOps</span> - Become a DevOps Expert in 3 months
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl ">
+              <span className='font-bold leading-tight'>  Specialisation in </span><span className="text-red-500 font-bold leading-tight">DevOps</span> <br /> <span className='text-3xl '>Become a DevOps Expert in 3 months</span>
               </h1>
 
               {/* Description */}
@@ -342,19 +342,26 @@ const CourseHero = () => {
 
 
               {/* Tags */}
-              {/* <div className="flex flex-wrap gap-2">
-                {['11+ Modules', 'Basic to Advance'].map((tag) => (
+              <div className="flex flex-wrap gap-2">
+                {/* {['310 hours of learning', '11+ modules'].map((tag) => ( */}
                   <Badge 
-                    key={tag}
+                    // key={tag}
                     variant="secondary" 
                     className="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
                   >
-                    {tag}
+                    {/* {tag} */} <Clock className="h-4 w-4" /> &nbsp; 310 hours of learning
                   </Badge>
-                ))}
-              </div> */}
+                  <Badge 
+                    // key={tag}
+                    variant="secondary" 
+                    className="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  >
+                    {/* {tag} */} <Clock className="h-4 w-4" /> &nbsp; 11+ modules
+                  </Badge>
+                {/* ))} */}
+              </div>
               {/* Duration */}
-              <div className="flex flex-col gap-2 text-gray-600">
+              {/* <div className="flex flex-col gap-2 text-gray-600">
   <div className="flex items-center gap-2">
     <Clock className="h-4 w-4" />
     <span className="text-xs sm:text-sm">310 hours of learning</span>
@@ -363,7 +370,7 @@ const CourseHero = () => {
     <BookAIcon className="h-4 w-4" />
     <span className="text-xs sm:text-sm">11+ modules</span>
   </div>
-</div>
+</div> */}
               <div className="flex">
                 <a href="https://rzp.io/rzp/2asghU9u" target="_blank">
                   <Button className="bg-[#ff0000] hover:bg-red-600 text-white px-6 py-2 rounded-lg">

@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <a href="#mentor" className="text-black hover:text-[#ff0000]">
-                About Us
+                About Mentor
               </a>
             </li>
             <li>
@@ -160,7 +160,7 @@ const Navbar: React.FC = () => {
                   className="block hover:text-red-600"
                   onClick={closeMobileMenu}
                 >
-                  About Us
+                  About Mentor
                 </a>
               </li>
               <li>

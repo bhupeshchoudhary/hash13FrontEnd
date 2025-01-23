@@ -30,8 +30,8 @@ export const courseInfo: Course[] = [
     learningOutcomes: [
       "Master Git and GitHub - From Beginner to Advanced Level",
       "Automation Using Ansible",
-      "Jenkins & Build Automation",
       "Monitoring Tools : Prometheus & Grafana",
+      "Jenkins & Build Automation",
       "Docker, Container & Kubernetes",
       "And much more…"
 
