@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react'
 import Image from "next/image"
-import floatingStar from "../../../../public/assets/landingPage/floatingStar.svg"
+import floatingStar from "../../../..public/assets/landingPage/floatingStar.svg"
 import floatingCercleGreen from "../../../../public/assets/landingPage/floatingCercleGreen.svg"
 import floatingBook from "../../../../public/assets/landingPage/floatingBook.svg"
 import floatingReactLogo from "../../../../public/assets/landingPage/floatingReactLogo.svg"

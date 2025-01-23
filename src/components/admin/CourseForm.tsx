@@ -424,7 +424,7 @@ const CourseFormContent = () => {
       
 
 {/* Highlights Section */}
-<div className="bg-white p-6 rounded-lg shadow">
+<div className="bg-white p-6 rounded-lg shadow space-between">
   <h2 className="text-xl font-semibold mb-4">Highlights</h2>
   
   {formData.highlights.map((highlight, index) => (

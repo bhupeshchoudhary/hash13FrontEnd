@@ -25,23 +25,23 @@ import { Learner } from "../../types/cardStack";
 export const learners: Learner[] = [
   { 
     name: "ShareChat Learner", 
-    company: "ShareChat",
-    image: "/assets/learners/sharechat.png"
+    company: "Mercedece",
+    image: "/assets/arpitjindal.png"
   },
   { 
     name: "Google Learner", 
-    company: "Google",
-    image: "/assets/learners/google.png"
+    company: "RedHat",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQFOm1Et-F6_Zg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696063474166?e=1738195200&v=beta&t=3jQQM1IkM4arj9WBwEAg3WlUKDVW3DIhNNxZk2SWMag"
   },
   { 
     name: "Apna Learner", 
-    company: "Apna",
-    image: "/assets/learners/apna.png"
+    company: "Unthinkable",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQHCe2C0VAqF4w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1679854491156?e=1738195200&v=beta&t=Lx7_ESqT3nc8oHH1EXzjBf9_wK-NlrQn3w9s45mAsmM"
   },
   { 
     name: "Capgemini Learner", 
-    company: "Capgemini",
-    image: "/assets/learners/capgemini.png"
+    company: "NPCI",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQGpO7_jFVxiGA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1679605109003?e=1738195200&v=beta&t=nZBL6-aL-gPe7gg8jiT8iBeKIEW-NXhoSzKHyOBcE_Q"
   },
 ];
 
