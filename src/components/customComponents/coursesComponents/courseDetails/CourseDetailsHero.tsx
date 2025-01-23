@@ -392,4 +392,4 @@ const CourseHero = () => {
   );
 };
 
-export default CourseHero;
+export default CourseHero;  

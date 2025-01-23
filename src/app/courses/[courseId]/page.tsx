@@ -127,9 +127,10 @@ export default function CourseDetailPage() {
           <Tools />
         </section>
 
-        {/* <section className="">
+          {/* hidden */}
+        <section className="">
           <Projects  />
-        </section> */}
+        </section>
         
                 <section className="">
                  
@@ -151,9 +152,9 @@ export default function CourseDetailPage() {
           <Analyst />
         </section>
 
-        {/* <section className="">
+        <section className="">
           <Faq />
-        </section> */}
+        </section>
 
         <section>
           <CardStack />
