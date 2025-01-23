@@ -76,11 +76,11 @@ const CertificateDisplay: React.FC<CertificateDetailsProps> = ({ course }) => {
                   />
                 </div>
               </div>
-              <div className="mt-3 text-center">
+              {/* <div className="mt-3 text-center">
                 <button className="bg-gradient-to-r from-red-600 to-red-400 text-white px-4 py-2 text-sm rounded-full font-medium hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
                   Preview Certificate
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
