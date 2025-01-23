@@ -15,7 +15,7 @@ export const courseInfo: Course[] = [
     price: 20000,
     originalPrice: 45000,
     enrolledStudents: 12000,
-    shortDescription: "Industry Relevant & Recognized Training | Gain HandsOn Experience | Best-In-Class Content | Industry Use-Cases",
+    shortDescription: "",
     longDescription: "Comprehensive Linux training covering system administration, shell scripting, networking, and security. Perfect for beginners and experienced users.",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
     instructor: {
@@ -59,13 +59,13 @@ export const courseInfo: Course[] = [
       {
         id: 1,
         title: "Master Git & GitHub",
-        description: "A code hosting platform for version control and collaboration.",
+        description: "",
         content: ["Git Basics", "Git Commands", "Clone a Repository", "Git Branching", "Merging", "Git Stash", "Git Add Interactive", "Reflog", "Cherry Picking", "Git Rebase", "Git Bisect", "Fetching and Pulling Content", "Working With Multiple Repositories", "Pushing Code", "Pull Requests", "Git Log", "Squashing Commits", "Cherry-Picking and Three-Way Merges", "Git Hooks", "Advanced: Beyond the Basics", "GitHub Overview", "SSH Authentication", "GitHub Repository", "GitHub Repository Branches", "GitHub Tags and Releases", "Comparing Differences", "Social Coding", "GitHub Issues", "GitHub Gists", "GitHub Organisations", "Git And Github Interview Questions"],
       },
       {
         id: 2,
         title: "DCA- Docker Certified Associate ",
-        description: "Create content that ranks well in search engines.",
+        description: "",
         content: ["Introduction of container",
 "Introduction of docker",
 "Need for Docker in the industry",
@@ -221,7 +221,7 @@ export const courseInfo: Course[] = [
       {
         id: 4,
         title: "Automation Using Ansible",
-        description: "Ansible is an open-source engine that automates deployment, orchestration, cloud provisioning, and other tools.",
+        description: "",
         content: ["Describe Ansible concepts and install Ansible Engine",
 "Deploy Ansible",
 "Configure Ansible to manage hosts",
@@ -275,7 +275,7 @@ export const courseInfo: Course[] = [
       {
         id: 5,
         title: "Kubernetes - CKA & CKAD",
-        description: "In this course on Kubernetes, Understanding and solving use cases of Kubernetes is made easy through 100% practical hands-on sessions. This course covers the core to advance concepts of Kubernetes CKA &CKAD",
+        description: "",
         content: ["How to set up a minikube cluster",
 "How to start the Kubernetes cluster",
 "How to interact with Kubernetes cluster",
@@ -369,7 +369,7 @@ export const courseInfo: Course[] = [
       {
         id: 6,
         title: "Jenkins & Build Automation",
-        description: "In this course of Jenkins, Understanding and solving use cases of Jenkins is made easy through 100% practical hands-on sessions. This course covers the core to advance concepts of Jenkins and the role of Jenkins in the CI/CD.",
+        description: "",
         content: ["What/Why/How of DevOps",
 "What is CI/CD",
 "Introduction to Jenkins",
@@ -405,7 +405,7 @@ export const courseInfo: Course[] = [
       {
         id: 7,
         title: "Monitoring Tools : Prometheus & Grafana",
-        description: "Powerful monitoring and visualization for modern infrastructure. Prometheus: “Flexible, scalable and reliable metrics collection and storage Grafana: “Visualize, alert, and understand your data with the leading open",
+        description: "",
         content: ["Introduction to Prometheus and Grafana",
 "Understanding metrics collection and storage",
 "Setting up Prometheus monitoring",
@@ -440,7 +440,7 @@ export const courseInfo: Course[] = [
       {
         id: 8,
         title: "Mastering SCM & Manage CI/CD using GITLab",
-        description: "This course of GitLab is designed to have a better understanding of the workflow of DevOps and core understanding of GitLab. Concepts from workflow of GitLab to Integrating Kubernetes with GitLab, this course has it all to make you industry ready for GitLab with relevant use cases.",
+        description: "",
         content: ["Introduction to DevOps",
 "Stages in DevOps",
 "CI/CD fundamentals",
@@ -495,7 +495,7 @@ export const courseInfo: Course[] = [
       {
         id: 9,
         title: "RedHat Enterprise Linux V9 (RHCSA)",
-        description: "Entire Global Training on RHCSA V9 that covers",
+        description: "",
         content: [  "Introduction to RHEL 9",
 "Basic Linux commands",
 "File system navigation",
@@ -600,7 +600,7 @@ export const courseInfo: Course[] = [
       {
         id: 10,
         title: "Bash Shell Scripting",
-        description: "Complete shell scripting training covering ",
+        description: "",
         content: ["What is Shell & Shell Scripting?",
 "Introduction to RHEL 9 and Linux Basics",
 "Overview of RHEL 9 and its key features",
