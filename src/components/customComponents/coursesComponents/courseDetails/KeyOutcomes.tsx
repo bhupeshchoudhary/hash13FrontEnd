@@ -391,7 +391,7 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
               </h2>
               <div className="flex flex-col sm:flex-row items-center gap-4">
                 <Image
-                  src={images.linuxWorld}
+                  src="/assets/cources/LWlogo.png"
                   alt="Linux World"
                   width={200}
                   height={60}
@@ -399,11 +399,11 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
                 />
                 <div className="flex items-center gap-2">
                   <Image
-                    src={images.linkedin}
-                    alt="LinkedIn"
+                    src="/assets/cources/linkdin.png"
+                    alt="Linkdin"
                     width={24}
                     height={24}
-                    className="h-5 w-5 sm:h-6 sm:w-6 grayscale"
+                    className="h-5 w-auto sm:h-6 sm:w-6"
                   />
                   <div className="flex flex-col">
                     <span className="text-xs sm:text-sm text-muted-foreground">
