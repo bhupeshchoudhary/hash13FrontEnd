@@ -9,7 +9,7 @@ import CourseDetailHero from "@/components/customComponents/coursesComponents/co
 import Tools from "@/components/customComponents/coursesComponents/Tools";
 import Analyst from "@/components/customComponents/coursesComponents/Analyst";
 import Faq from "@/components/customComponents/coursesComponents/Faq";
-import CardStack from "@/components/customComponents/coursesComponents/CardStack";
+// import CardStack from "@/components/customComponents/coursesComponents/CardStack";
 import Projects from "@/components/customComponents/coursesComponents/courseDetails/Projects";
 import ProgramHighlights from "@/components/customComponents/coursesComponents/courseDetails/ProgramHighlights";
 import MentorProfile from "@/components/customComponents/coursesComponents/courseDetails/Mentor";
@@ -156,9 +156,9 @@ export default function CourseDetailPage() {
           <Faq />
         </section>
 
-        <section>
+        {/* <section>
           <CardStack />
-        </section>
+        </section> */}
 
         <section className="">
         <CoursePricingSection courseId={params.courseId as string} />
