@@ -16,4 +16,5 @@ export interface Module {
 export interface Learner {
   name: string;
   company: string;
+  image: string;
 }
