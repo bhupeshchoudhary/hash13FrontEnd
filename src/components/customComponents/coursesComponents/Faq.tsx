@@ -13,7 +13,7 @@ export default function Faq() {
   const [selectedItem, setSelectedItem] = useState<keyof typeof faqContent>("curriculum");
 
   return (
-    <div className="bg-gradient-to-r from-gray-50 via-white to-red-50 ">
+    <div className="bg-gradient-to-r from-gray-50 via-white to-red-50" id="Faq">
     <div className="container mx-auto max-w-6xl px-4 py-6">
       {/* Header */}
       <h1 className="sm:text-2xl lg:text-3xl font-bold mb-8 sm:mb-12 text-center ">
@@ -36,7 +36,6 @@ export default function Faq() {
                   ? "Program Overview"
                   : key === "timeCommitment"
                   ? " Eligibility"
-        
                   : key === "Program"
                   ? " Program Curriculum"
                   : key === "Duration"

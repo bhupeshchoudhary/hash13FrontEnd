@@ -73,10 +73,10 @@ const DisplayCourseContent: React.FC<DisplayCourseContentProps> = ({ modules }) 
           >
             <AccordionTrigger className="px-6 py-4 hover:no-underline">
               <div className="text-left">
-                <div className="text-sm text-[#ff0000] mb-1">
+                <div className="text-sm text-[#ff0000] font-bold mb-1">
                   MODULE {module.id}
                 </div>
-                <h3 className="font-bold text-[#ff0000]">{module.title}</h3>
+                <h3 className="font-bold text-[#494848]">{module.title}</h3>
                 <p>{module.description}</p>
               </div>
             </AccordionTrigger>

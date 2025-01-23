@@ -92,15 +92,28 @@ const Navbar: React.FC = () => {
               </a>
             </li>
             <li>
+              <a href="#Modules" className="text-black hover:text-[#ff0000]">
+                Modules
+              </a>
+            </li>
+            <li>
               <a href="#mentor" className="text-black hover:text-[#ff0000]">
                 About Mentor
               </a>
             </li>
             <li>
-              <a href="#trainingcontent" className="text-black hover:text-[#ff0000]">
-                Training Content
+              <a href="#Faq" className="text-black hover:text-[#ff0000]">
+                FAQs
               </a>
             </li>
+            
+            <li>
+              <a href="#testimonials" className="text-black hover:text-[#ff0000]">
+                Testimonials
+              </a>
+            </li>
+            
+
             {/* <li>
               <a href="#projects" className="text-black hover:text-[#ff0000]">
                 Projects

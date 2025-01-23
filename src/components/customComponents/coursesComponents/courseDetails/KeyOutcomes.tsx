@@ -286,7 +286,7 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
   }, []);
 
   return (
-    <div className='bg-gradient-to-r from-gray-50 to-red-50'>
+    <div className='bg-gradient-to-r from-gray-50 to-red-50'  id="Modules">
       <div className="flex flex-col lg:flex-row gap-6 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto py-8">
         {/* Left Section */}
         <div className="w-full lg:w-2/3">

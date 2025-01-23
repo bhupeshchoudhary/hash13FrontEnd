@@ -337,7 +337,7 @@ const CourseHero = () => {
 
               {/* Description */}
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                Industry Relevant & Recognized Training | Gain HandsOn Experience | Best-In-Class Content | Industry Use-Cases
+                Industry Relevant & Recognized Training | Gain HandsOn Experience |<br/>Best-In-Class Content | Industry Use-Cases
               </p>
 
 
@@ -356,7 +356,7 @@ const CourseHero = () => {
                     variant="secondary" 
                     className="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
                   >
-                    {/* {tag} */} <Clock className="h-4 w-4" /> &nbsp; 11+ modules
+                    {/* {tag} */} <BookAIcon className="h-4 w-4" /> &nbsp; 11+ modules
                   </Badge>
                 {/* ))} */}
               </div>

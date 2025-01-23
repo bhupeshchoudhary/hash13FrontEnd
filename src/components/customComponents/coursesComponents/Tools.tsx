@@ -82,7 +82,7 @@ const Tools: React.FC = () => {
         <div className="relative bg-white md:p-4 sm:p-8 rounded-lg shadow-lg">
           {/* Replace this image tag with your actual image */}
           <img
-            src="/assets/cources/tools.jpeg"
+            src="/assets/cources/tools.jpg"
             alt="Data Science Tools"
             className="w-full h-auto "
           />
