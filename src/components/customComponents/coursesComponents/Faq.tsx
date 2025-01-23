@@ -13,10 +13,10 @@ export default function Faq() {
   const [selectedItem, setSelectedItem] = useState<keyof typeof faqContent>("curriculum");
 
   return (
-    <div className="bg-gradient-to-r from-gray-50 via-white to-red-50 py-8">
-    <div className="container mx-auto max-w-6xl px-4 py-12">
+    <div className="bg-gradient-to-r from-gray-50 via-white to-red-50 ">
+    <div className="container mx-auto max-w-6xl px-4 py-6">
       {/* Header */}
-      <h1 className="sm:text-2xl lg:text-3xl font-bold mb-8 sm:mb-12 text-center sm:text-left">
+      <h1 className="sm:text-2xl lg:text-3xl font-bold mb-8 sm:mb-12 text-center ">
         Frequently Asked <span className="text-[#ff0000]">Questions</span>
       </h1>
 

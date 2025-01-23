@@ -128,9 +128,9 @@ export default function CourseDetailPage() {
         </section>
 
           {/* hidden */}
-        <section className="">
+        {/* <section className="">
           <Projects  />
-        </section>
+        </section> */}
         
                 <section className="">
                  
