@@ -33,10 +33,18 @@ export default function Faq() {
             >
               <h2 className="text-md md:text-md font-medium">
                 {key === "curriculum"
-                  ? "Master's in AI & Data Science Course Curriculum"
+                  ? "Program Overview"
                   : key === "timeCommitment"
-                  ? "Time Commitment in Master's in AI & Data Science Program"
-                  : "Selection Criteria for MSc in AI & DS"}
+                  ? " Eligibility"
+        
+                  : key === "Program"
+                  ? " Program Curriculum"
+                  : key === "Duration"
+                  ?"Duration and Mode"
+                  : key === "Certification"
+                  ? "Certification and Placement"
+    
+                  : "Access and Fees"}
               </h2>
             </div>
             
