@@ -301,6 +301,7 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
                   fill="currentColor"
                 >
                   <circle cx="12" cy="12" r="12" />
+                  
                 </svg>
               </span>
               ?
