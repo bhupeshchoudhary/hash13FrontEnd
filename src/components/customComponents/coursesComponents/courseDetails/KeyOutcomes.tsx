@@ -291,7 +291,7 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
         {/* Left Section */}
         <div className="w-full lg:w-2/3">
           <div className="space-y-4 mb-8">
-            <h1 className="text-2xl sm:text-3xl lg:text-3xl font-bold tracking-tight">
+            <h1 className="text-3xl sm:text-3xl lg:text-3xl font-bold tracking-tight">
               What will you{" "}
               <span className="relative">
                 <span className="text-[#ff0000]">learn</span>
@@ -305,7 +305,7 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
               </span>
               ?
             </h1>
-            <p className="text-sm md:text-base font-medium text-muted-foreground">
+            <p className="text-sm md:text-base font-bold text-muted-foreground">
               {course.shortDescription}
             </p>
           </div>
