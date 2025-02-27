@@ -18,42 +18,42 @@ export const landingPageTestimonialPosts: Post[] = [
     {
       id: 2,
       author: {
-        name: "Ayushi Jain",
-        title: "Branding | Marketing and Strategy",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Akansha chaurasia",
+        title: "Domain Support Specialist @ Ericsson India Global",
+        avatar: "https://www.linkedin.com/in/akansha-chaurasia-681718119/",
       },
-      content: `From Google searches...`,
+      content: `It was an amazing class to attend. I liked the way sir delivered the helm content. Helm became so easy for me now. I like to attend these classes as it helps me to elevate my skills. Thank you Vimal sir as well as LinuxWorld Informatics Pvt to share such a good content with us...`, 
       timestamp: "10 Mar 2023"
     },
     {
       id: 3,
       author: {
-        name: "Prashant Hada",
-        title: "Student at Ronald University of Applied Sciences",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Jivan Bhardwaj",
+        title: "DevOps Engineer at Echelon Edge",
+        avatar: "https://www.linkedin.com/feed/update/urn:li:activity:7115702316866940929/"
       },
-      content: `Happy to announce the completion of the Power BI workshop. Thanks to @LinuxWorld and @DeekshaAnand for the guidance and knowledge transfer. #PowerBI #DataAnalytics`,
+      content: `It was great to see how through Kubernetes we can manage containers and launch Jenkins. I got the first time to get hands knowledge on various topics like Heml,Operators in the Kubernetes and CRD (custom resource definition). thanks, Vimal Daga sir for so insight session.`,
       timestamp: "15 Mar 2023"
     },
     {
       id: 4,
       author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Rajneesh Pratap Singh",
+        title: "DevOps Engineer || 3x Redhat",
+        avatar: "https://www.linkedin.com/in/rajneesh-pratap-singh/"
       },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
+      content: `This is my first step towards security with DevOps, and it was a great learning experience In this session, we covered: Why DevSecOps? Understanding its importance over traditional DevOps. Integrating security with DevOps, including SAST and secure coding practices. Best practices for writing secure Dockerfiles. Setting up and using Docker Scout for vulnerability scanning. Strategies for patching and managing vulnerabilities in containers..`,
       timestamp: "18 Mar 2023"
     },
     
     {
       id: 5,
       author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Manikandan Prakash",
+        title: "DevOps Engineer @smallcase",
+        avatar: "https://www.linkedin.com/in/manikandan-prakash/"
       },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
+      content: `It was very informative and 100 pratical session by vimal sir ,From that I did learn the bedrock service how to intergrate in any of our own custom requirment ,It was pretty enough to start AWS bedrock thanks for the session Vimal Daga sir`,
       timestamp: "18 Mar 2023"
     },
     {
@@ -70,21 +70,21 @@ export const landingPageTestimonialPosts: Post[] = [
     {
       id: 7,
       author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Prateek Srivastava",
+        title: "DevOps Engineer - II at o9 Solutions",
+        avatar: "https://www.linkedin.com/feed/update/urn:li:activity:7115702316866940929/"
       },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
+      content: `We delved into a diverse range of topics, starting from the fundamentals of DevOps to the intricacies of deploying Jenkins for continuous integration and continuous delivery (CI/CD) with automation. Throughout the course, we acquired knowledge in various areas, such as setting up Jenkins on Amazon EKS using Kubernetes Operators and Helm charts. I want to extend my gratitude to Mr. Vimal Daga for sharing his expertise and making the masterclass a truly exceptional learning experience. One of the highlights was our exploration of managing Jenkins pipelines as code, employing tools like Jenkins Kubernetes CRD and Grafana Loki. What's remarkable is that we completed a full-fledged DevOps project within a condensed 3-hour session, which is a testament to Mr. Vimal Daga's exceptional teaching`,
       timestamp: "18 Mar 2023"
     },
     {
       id: 8,
       author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Aakash Kathunia",
+        title: "Technical Architect at HCLTech",
+        avatar: "https://www.linkedin.com/in/aakash-kathunia-6b618b16/"
       },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
+      content: `Vimal Sir is outstanding while teaching complex and advanced topics, as he teaches us in such a way that even someone without technical background one can easily grasp and this is the main reason I have been following him since long. Before his session, I had tried to understand DevSecOps through various technical channels, but I didn't get a clear picture. However, in just initial hours of Vimal Sir’s session, he made the concept very much clearer. Then, over the next two hours, he simplified DevSecOps further, helping me gain valuable insights that sparked my interest in exploring the topic more deeply. I am Thankful to Vimal Sir for in-depth course on DevSecOps and looking more indepth session from him, and Im grateful for his teachings for current and upcoming valuable training sessions.`,
       timestamp: "18 Mar 2023"
     },
     {
@@ -97,7 +97,41 @@ export const landingPageTestimonialPosts: Post[] = [
       content: `Hey Folks...`,
       timestamp: "8 Mar 2023",
       videoUrl: "https://www.youtube.com/embed/2l-05_6o3eQ"
-    }
+    },
+    {
+      id: 10,
+      author: {
+        name: "Aakash Kathunia",
+        title: "Technical Architect at HCLTech",
+        avatar: "https://www.linkedin.com/in/aakash-kathunia-6b618b16/"
+      },
+      content: `Vimal Sir is outstanding while teaching complex and advanced topics, as he teaches us in such a way that even someone without technical background one can easily grasp and this is the main reason I have been following him since long. Before his session, I had tried to understand DevSecOps through various technical channels, but I didn't get a clear picture. However, in just initial hours of Vimal Sir’s session, he made the concept very much clearer. Then, over the next two hours, he simplified DevSecOps further, helping me gain valuable insights that sparked my interest in exploring the topic more deeply. I am Thankful to Vimal Sir for in-depth course on DevSecOps and looking more indepth session from him, and Im grateful for his teachings for current and upcoming valuable training sessions.`,
+      timestamp: "18 Mar 2023"
+
+    },
+    {
+      id: 11,
+      author: {
+        name: "Rushikesh Mahindrakar",
+        title: "System Engineering",
+        avatar: "https://www.linkedin.com/in/rushikesh-mahindrakar-70b82537/"
+      },
+      content: `Your invaluable guidance in this remarkable Kubernetes training program has been truly appreciated. It's a pivotal milestone in my DevOps journey, and I'm deeply grateful for your mentorship, Vimal Daga sir. Your expertise and insights are immensely valuable, propelling my professional growth with each session. Thank you!!`,
+      timestamp: "18 Mar 2023"
+    },
+    {
+    id: 12,
+      author: {
+        name: "Peeru Babu Vaddaman",
+        title: "AWS DevOps Engineer",
+        avatar: "https://www.linkedin.com/in/aakash-kathunia-6b618b16/"
+      },
+      content: `I gained hands-on experience with multiple tools, enhancing my practical knowledge and skills. It was a wonderful session , Sir is a blessing for the student who are looking their career in the field of DevOps and other. The DevOps project workshop by Vimal Sir was truly amazing and insightful.`,
+   timestamp: "18 Mar 2023"
+    },
+
+
+  
   ];
 
 
