@@ -3,15 +3,15 @@
 import React, { useState } from 'react'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { TrendingUp,Search  } from "lucide-react"
+import { TrendingUp, Search } from "lucide-react"
 import { jsonData } from '../../../../../data/leftLandingPage/leftLandingPage'
-
 
 export default function SearchComponent() {
   const [isSearchFocused, setIsSearchFocused] = useState(false)
+  const [searchQuery, setSearchQuery] = useState("") // 🔥 New state added
 
   return (
-    <div className="md:max-w-4xl lg:max-w-4xl w-full mx-auto md:px-4 lg:px-4  pt-16 pb-8">
+    <div className="md:max-w-4xl lg:max-w-4xl w-full mx-auto md:px-4 lg:px-4 pt-16 pb-8">
       <h1 className="text-4xl font-bold mb-2">
         <span className="text-[#ff0000]">{jsonData.headings.main}</span>
       </h1>
@@ -22,12 +22,12 @@ export default function SearchComponent() {
         <Input
           placeholder={jsonData.search.placeholder}
           className="w-full py-6 bg-white px-4 text-lg text-gray-600 rounded-xl shadow-sm"
+          value={searchQuery} // 🔥 Bind input with state
+          onChange={(e) => setSearchQuery(e.target.value)} // Allow manual typing
           onFocus={() => setIsSearchFocused(true)}
           onBlur={() => setTimeout(() => setIsSearchFocused(false), 200)}
         />
-        <Button
-          className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#ff0000] hover:bg-red-600 rounded-lg p-2"
-        >
+        <Button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#ff0000] hover:bg-red-600 rounded-lg p-2">
           <Search className="h-6 w-6" />
         </Button>
         
@@ -41,6 +41,7 @@ export default function SearchComponent() {
                   variant="outline"
                   size="sm"
                   className="rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700"
+                  onClick={() => setSearchQuery(search)} // 🔥 Click pe search update hoga
                 >
                   <TrendingUp className="h-3 w-3 mr-1" />
                   {search}
@@ -72,8 +73,8 @@ export default function SearchComponent() {
       <div className="text-lg">
         {jsonData.community.text}{" "}
         <span className="text-[#ff0000] font-medium">
-          
-          {jsonData.community.learnersCount}</span> learners.
+          {jsonData.community.learnersCount}
+        </span> learners.
       </div>
     </div>
   )
