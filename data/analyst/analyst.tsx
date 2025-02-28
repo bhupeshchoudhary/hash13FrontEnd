@@ -107,6 +107,34 @@ export const analystData: CourseAnalystData = {
   companiesLabel: "Companies Hiring",
   jobsLabel: "Available Jobs",
   jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+},
+"specialisation-in-shell-scripting": {
+  title: "Rising Demand",
+  subtitle: "for Shell Scripting Engineers",
+  salary: {
+    label: "Jobs in Shell Scripting",
+    values: [729000, 982000, 2000000] // Based on the salary data provided: 7.29L, 9.82L, 20L
+  },
+  companies: [
+    "TCS",
+    "Infosys",
+    "Wipro",
+    "Capgemini",
+    "Cognizant",
+    "IBM",
+    "Accenture",
+    "HCL",
+    "Oracle",
+    "Tech Mahindra"
+  ] as CompanyName[],
+  demand: 35, // Estimated based on job market data
+  jobCount: "37,962+", // Sum of jobs from Naukri (35,000), Glassdoor (1,162), Indeed (1,000), AmbitionBox (800)
+  description: "Shell scripting engineers in India are experiencing rising salaries due to the growing demand for automation, system administration, and infrastructure management. In 2025, entry-level salaries range from ₹4–10 lakh annually, while experienced professionals earn ₹12 lakh or more, highlighting the increasing reliance on scripting for process automation and system optimization.",
+  yearLabel: "In 2025",
+  salaryLabel: "Average Salaries",
+  companiesLabel: "Companies Hiring",
+  jobsLabel: "Available Jobs",
+  jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and AmbitionBox"
 }
  
  

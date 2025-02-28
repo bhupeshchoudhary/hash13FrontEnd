@@ -16,18 +16,18 @@ export const specialisationInShellScripting: Course = {
     backgroundImage: "", // Need path
 
     learningOutcomes: [
-        "Shell Essentials: Bash scripting, CLI commands, shebang, chmod",
-        "Control Structures: If-Else, For, While loops, Regex, exit status",
-        "File & Process Automation: File I/O, cron jobs, signal trapping",
-        "Network Scripting: SCP, SSH, AWS EC2 automation, log analysis",
-        "Text Processing Tools: AWK, GREP, SED, GETOPTS"
+       " Introduction to Shell Scripting | Input | Output | Control Structures | Loops",
+        "Grep command | Everything about vi editor | Advanced Scripting Techniques",
+        "Sample Scripts | Regex | Apache httpd | Build Unique Linux Programs | AWK",
+        "Arrays | Cut and sed command | Blacklisting an IP | Conditional Statement",
+        "Useful utilities for Shell Scripts "
     ],
 
     features: [
-        "Industry-Relevant Training",
-        "Hands-On Automation Experience",
-        "Advanced Scripting Techniques",
-        "Real-Time Industry Use Cases"
+        "Most Relevant Shell Scripting Tips & Tricks",
+        "Technical Support for 90 days",
+        "Automation Related Industry Use Cases",
+        "Premium #13 Shell Scripting Community"
     ],
 
     skills: [
