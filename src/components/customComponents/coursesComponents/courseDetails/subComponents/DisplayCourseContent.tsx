@@ -42,7 +42,7 @@ const DisplayCourseContent: React.FC<DisplayCourseContentProps> = ({ modules }) 
                       const itemIndex = i * 4 + index;
                       if (itemIndex < module.content.length) {
                         items.push(
-                          <li key={itemIndex} className="text-green-700">
+                          <li key={itemIndex} className="text-green-700 list-disc">
                             {module.content[itemIndex]}
                             
                           </li>
