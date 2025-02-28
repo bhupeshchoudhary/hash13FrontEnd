@@ -124,7 +124,7 @@ export default function CourseDetailPage() {
         </section>
 
         <section className=" ">
-          <Tools />
+          <Tools courseId={params.courseId as string}/>
         </section>
 
           {/* hidden */}
