@@ -3,155 +3,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-// "use client";
-// import React from 'react';
-// import { Badge } from "@/components/ui/badge";
-// import { Button } from "@/components/ui/button";
-// import { Clock, Share2, Phone, BookAIcon } from "lucide-react";
-// import Image from 'next/image';
-// import CourseHeroImage from "../../../../../public/assets/courseHeroImage.jpg"
-
-// const CourseHero = () => {
-//   // Share functionality
-//   const handleShare = async () => {
-//     try {
-//       if (navigator.share) {
-//         await navigator.share({
-//           title: 'DevOps Training Course',
-//           text: 'Check out this DevOps Expert course - Become a DevOps Expert in 3 months',
-//           url: window.location.href
-//         });
-//       } else {
-//         // Fallback for browsers that don't support Web Share API
-//         await navigator.clipboard.writeText(window.location.href);
-//         alert('Link copied to clipboard!');
-//       }
-//     } catch (error) {
-//       console.log('Error sharing:', error);
-//     }
-//   };
-
-//   return (
-//     <div className="bg-gradient-to-br from-gray-50 via-black-50 to-red-50" id="hero">
-//       <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center">
-//         <div className="max-w-6xl w-full overflow-hidden relative flex flex-col lg:block">
-//           {/* Right Image Section */}
-//           <div className="relative lg:absolute lg:right-0 lg:top-0 h-[300px] lg:h-full w-full lg:w-[40%] order-1">
-//             <Image
-//               src={CourseHeroImage}
-//               alt="DevOps Training"
-//               fill
-//               className="object-cover rounded-[2rem]"
-//               sizes="(max-width: 768px) 100vw, 45vw"
-//               priority
-//               quality={100}
-//             />
-//           </div>
-
-//           {/* Left Content Section */}
-//           <div className="relative lg:w-[65%] p-6 sm:p-8 lg:p-10 bg-white rounded-[2rem] z-10 order-2 mt-4 lg:mt-0">
-//             <div className="space-y-4 relative">
-//               {/* Badge and Share Button */}
-//               <div className="flex items-center gap-3">
-//                 <Badge 
-//                   className="bg-red-100 text-[#ff0000] hover:bg-red-200 px-3 py-1 text-xs sm:text-sm rounded-full font-medium"
-//                 >
-//                   GLOBALLY RECOGNISED PROGRAM
-//                 </Badge>
-//                 <Button 
-//                   variant="ghost" 
-//                   size="icon"
-//                   className="rounded-full hover:bg-gray-100 w-7 h-7"
-//                   onClick={handleShare}
-//                 >
-//                   <Share2 className="h-3 w-3 text-gray-600" />
-//                 </Button>
-//               </div>
-
-//               {/* Title */}
-//               <h1 className="text-2xl sm:text-3xl lg:text-4xl ">
-//               <span className='font-bold leading-tight'>  Specialisation in </span><span className="text-red-500 font-bold leading-tight">DevOps</span> <br /> <span className='text-3xl '>Become a DevOps Expert in 3 months</span>
-//               </h1>
-
-//               {/* Description */}
-//               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-//                 Industry Relevant & Recognized Training | Gain HandsOn Experience | Best-In-Class Content | Industry Use-Cases
-//               </p>
-
-
-//               {/* Tags */}
-//               <div className="flex flex-wrap gap-2">
-//                 {/* {['310 hours of learning', '11+ modules'].map((tag) => ( */}
-//                   <Badge 
-//                     // key={tag}
-//                     variant="secondary" 
-//                     className="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
-//                   >
-//                     {/* {tag} */} <Clock className="h-4 w-4" /> &nbsp; 310 hours of learning
-//                   </Badge>
-//                   <Badge 
-//                     // key={tag}
-//                     variant="secondary" 
-//                     className="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
-//                   >
-//                     {/* {tag} */} <Clock className="h-4 w-4" /> &nbsp; 11+ modules
-//                   </Badge>
-//                 {/* ))} */}
-//               </div>
-//               {/* Duration */}
-//               {/* <div className="flex flex-col gap-2 text-gray-600">
-//   <div className="flex items-center gap-2">
-//     <Clock className="h-4 w-4" />
-//     <span className="text-xs sm:text-sm">310 hours of learning</span>
-//   </div>
-//   <div className="flex items-center gap-2">
-//     <BookAIcon className="h-4 w-4" />
-//     <span className="text-xs sm:text-sm">11+ modules</span>
-//   </div>
-// </div> */}
-//               <div className="flex">
-//                 <a href="https://rzp.io/rzp/2asghU9u" target="_blank">
-//                   <Button className="bg-[#ff0000] hover:bg-red-600 text-white px-6 py-2 rounded-lg">
-//                     Enroll Now
-//                   </Button>
-//                 </a>
-//               </div>
-
-//               {/* Contact Info */}
-//               <div className="space-y-3 pt-2">
-//                 <div className="flex items-center gap-2 text-gray-600">
-//                   <Phone className="h-3 w-3" />
-//                   <a 
-//                     href="tel:+919829105960" 
-//                     className="text-xs hover:text-[#ff0000] transition-colors cursor-pointer"
-//                   >
-//                     For enquiries call: +91 98291 05960
-//                   </a>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default CourseHero;  
-
-
-
-
-
 "use client";
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
@@ -159,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Clock, Share2, Phone } from "lucide-react";
 import Image from 'next/image';
 import { courseInfo } from "../../../../../data/courses/courses";
+import { payment } from '../../../../../data/paymentLink/paymentLink';
 
 interface CourseHeroProps {
   courseId: string;
@@ -268,7 +120,7 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
               </div> */}
 
               <div className="flex">
-                <a href="https://rzp.io/rzp/2asghU9u" target="_blank">
+                <a href={course.paymentLink} target="_blank">
                   <Button className="bg-[#ff0000] hover:bg-red-600 text-white px-6 py-2 rounded-lg">
                     Enroll Now
                   </Button>
