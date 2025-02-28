@@ -146,7 +146,7 @@ export default function CoursePricingSection({ courseId }: CoursePricingSectionP
                           hover:shadow-black text-white py-4 sm:py-6 text-sm sm:text-base 
                           transition-all duration-300 transform hover:scale-105"
               >
-                <a href="https://rzp.io/rzp/2asghU9u" target="_blank">
+                <a href={course.paymentLink} target="_blank">
                 Yes! I want this insane deal for
                 <br /> ₹{course.price.toLocaleString()} + taxes
                 </a>

@@ -11,7 +11,6 @@ import { Clock, Share2, Phone } from "lucide-react";
 import Image from 'next/image';
 import { courseInfo } from "../../../../../data/courses/courses";
 
-
 interface CourseHeroProps {
   courseId: string;
 }
