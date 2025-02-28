@@ -12,6 +12,7 @@ import infosys from "../../public/assets/landingPage/companyLogo/infosys.png";
 import jpmorgan from "../../public/assets/landingPage/companyLogo/jpmorgan.png";
 import redhat from "../../public/assets/landingPage/companyLogo/redhat.png";
 import microsoft from "../../public/assets/landingPage/companyLogo/mircosoft.png";
+import {SalaryData, AnalystData, CourseAnalystData} from "../../types/analyst"
 
 
 
@@ -30,30 +31,7 @@ export type CompanyName =
   | "Microsoft"
  
 
-// Define interfaces
-export interface SalaryData {
-  label: string;
-  values: number[];
-}
 
-export interface AnalystData {
-  title: string;
-  subtitle: string;
-  salary: SalaryData;
-  companies: CompanyName[];
-  demand: number;
-  jobCount: string;
-  description: string;
-  yearLabel: string;
-  salaryLabel: string;
-  companiesLabel: string;
-  jobsLabel: string;
-  jobsDescription: string;
-}
-
-export interface CourseAnalystData {
-  [courseId: string]: AnalystData;
-}
 
 // Company logos mapping
 export const companyLogos: Record<CompanyName, string> = {
@@ -100,6 +78,36 @@ export const analystData: CourseAnalystData = {
     jobsLabel: "Available Jobs",
     jobsDescription: "Total jobs found online for DevOps"
   },
+
+  
+"specialisation-in-prometheus-grafana": {
+  title: "Rising Demand",
+  subtitle: "for Monitoring & Observability Experts",
+  salary: {
+    label: "Jobs in Prometheus & Grafana",
+    values: [700000, 1200000, 1800000] // Entry, Mid, Senior level salaries in INR
+  },
+  companies: [
+    "Accenture",
+    "TCS",
+    "Infosys",
+    "Wipro",
+    "IBM",
+    "HCL",
+    "Cognizant",
+    "Capgemini",
+    "Oracle",
+    "Microsoft"
+  ] as CompanyName[],
+  demand: 35, // Percentage increase in demand
+  jobCount: "3,900+", // Total of all job listings mentioned (750 + 1469 + 900 + 800)
+  description: "Grafana & Prometheus Engineers in India are experiencing rising salaries due to the increasing demand for monitoring, observability, and real-time data visualization. In 2025, entry-level salaries range from ₹6–12 lakh annually, while experienced professionals earn ₹18 lakh or more, highlighting the critical role of Grafana in infrastructure monitoring, performance optimization, and data-driven decision-making.",
+  yearLabel: "In 2025",
+  salaryLabel: "Average Salaries",
+  companiesLabel: "Companies Hiring",
+  jobsLabel: "Available Jobs",
+  jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+}
  
  
 };
