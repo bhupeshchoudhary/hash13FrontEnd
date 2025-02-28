@@ -781,7 +781,7 @@ export const courseInfo: Course[] = [
     sectionTitle: "Most Hands-On DevOps Program",
     category: "DevOps",
     toolsCount: "15+",
-    displayImage: "/assets/cources/tools.jpeg",
+    displayImage: "/assets/cources/tools.jpg",
     tools: [
       {
         id: "infrastructure",
@@ -1599,7 +1599,7 @@ export const courseInfo: Course[] = [
     sectionTitle: "Most Hands-On DevOps Program",
     category: "DevOps",
     toolsCount: "15+",
-    displayImage: "/assets/cources/tools.jpeg",
+    displayImage: "/assets/cources/tools.jpg",
     tools: [
       {
         id: "infrastructure",
