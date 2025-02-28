@@ -146,11 +146,10 @@ export default function CourseDetailPage() {
         <section className="">
           <WhoisthisProgramFor course = {course} />
         </section>
-
-        <section className=" ">
-          {/* <Analyst course={course} /> */}
-          <Analyst />
-        </section>
+        // app/courses/[courseId]/page.tsx
+<section className="">
+  <Analyst courseId={course.slug} />
+</section>
 
         <section className="">
   <Faq courseId={params.courseId as string} />
