@@ -182,7 +182,7 @@ export default function Component() {
                   <CardHeader className="pb-2">
                     <div className="flex items-center space-x-4">
                       <Avatar className="h-12 w-12 flex-shrink-0">
-                        <AvatarImage src={post.author.avatar} alt={post.author.name} />
+                        <AvatarImage src={post.author.avatar.toString()} alt={post.author.name} />
                         <AvatarFallback>{post.author.name.charAt(0)}</AvatarFallback>
                       </Avatar>
                       <div className="flex-grow">
