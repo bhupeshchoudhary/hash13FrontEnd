@@ -11,23 +11,11 @@ export const faqContent: Record<string, FAQItem[]> = {
       question: " What makes this program unique?",
       answer: (
         <ul className="list-disc list-inside mt-2 space-y-1">
-<<<<<<< HEAD
           <li>Industry-oriented curriculum.</li>
           <li>Real-world projects.</li>
           <li>Mentorship by experts like Mr. Vimal Daga.</li>
           <li>Certification upon completion</li>
           <li>Supportive community of learners and mentors.</li>
-=======
-          <li>Machine Learning Algorithms</li>
-          <li>Deep Learning and Neural Networks</li>
-          <li>Natural Language Processing</li>
-          
-          <li>Computer Vision</li>
-          <li>Big Data Analytics</li>
-          <li>Data Visualization</li>
-          <li>Statistical Analysis</li>
-          <li>Ethical AI and Data Governance</li>
->>>>>>> 76a4d0362c676fb724753fd22145c2552d89eef3
         </ul>
       ),
     },
