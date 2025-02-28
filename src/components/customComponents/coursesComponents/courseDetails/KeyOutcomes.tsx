@@ -1,14 +1,12 @@
-
 // components/customComponents/coursesComponents/courseDetails/KeyOutcomes.tsx
 'use client'
 
 import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check } from "lucide-react";
 import DisplayCourseContent from './subComponents/DisplayCourseContent';
-import { learners, benefits, images } from '../../../../../data/keyOutComes/keyOutComes';
+import LearnersCarousel from './subComponents/LearnersCarousel';
+import BenefitsList from './subComponents/BenefitsLists';
+import AccreditationCard from './subComponents/AccreditationCard';
 import { Course } from '../../../../../types/courses';
 
 interface KeyOutcomesProps {
@@ -35,7 +33,7 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
   }, []);
 
   return (
-    <div className='bg-gradient-to-r from-gray-50 to-red-50'  id="Modules">
+    <div className='bg-gradient-to-r from-gray-50 to-red-50' id="Modules">
       <div className="flex flex-col lg:flex-row gap-6 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto py-8">
         {/* Left Section */}
         <div className="w-full lg:w-2/3">
@@ -50,7 +48,6 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
                   fill="currentColor"
                 >
                   <circle cx="12" cy="12" r="12" />
-                  
                 </svg>
               </span>
               ?
@@ -81,91 +78,12 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
                 </p>
               </CardHeader>
               <CardContent className="space-y-6">
-                {/* Learners Carousel */}
-                <div className="overflow-hidden">
-                  <motion.div
-                    animate={{ x: ["0%", "-50%"] }}
-                    transition={{
-                      x: {
-                        repeat: Infinity,
-                        repeatType: "loop",
-                        duration: 10,
-                        ease: "linear",
-                      },
-                    }}
-                    className="flex gap-4"
-                  >
-                    {[...learners, ...learners].map((learner, index) => (
-                      <div key={index} className="flex flex-col items-center flex-shrink-0">
-                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden mb-2">
-                          <Image
-                            src={learner.image}
-                            alt={learner.name}
-                            width={64}
-                            height={64}
-                            className="object-cover w-full h-full"
-                            onError={(e) => {
-                              const target = e.target as HTMLImageElement;
-                              target.src = images.defaultLearner;
-                            }}
-                          />
-                        </div>
-                        <div className="h-4 sm:h-5">
-                          <span className="text-xs sm:text-sm text-gray-600">
-                            {learner.company}
-                          </span>
-                        </div>
-                      </div>
-                    ))}
-                  </motion.div>
-                </div>
-
-                {/* Benefits List */}
-                <ul className="space-y-4">
-                  {benefits.map((benefit, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                      <span className="text-sm sm:text-base text-muted-foreground">
-                        {benefit}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                <LearnersCarousel />
+                <BenefitsList />
               </CardContent>
             </Card>
 
-            {/* Accreditation Card */}
-            <Card className="w-full p-4">
-              <h2 className="text-lg sm:text-xl font-semibold mb-4">
-                <span className='text-[#ff0000]'>LinuxWorld </span>Accreditation
-              </h2>
-              <div className="flex flex-col sm:flex-row items-center gap-4">
-                <Image
-                  src="/assets/cources/LWlogo.png"
-                  alt="Linux World"
-                  width={200}
-                  height={60}
-                  className="h-12 sm:h-15 w-auto"
-                />
-                <div className="flex items-center gap-2">
-                  <Image
-                    src="/assets/cources/linkdin.png"
-                    alt="Linkdin"
-                    width={24}
-                    height={24}
-                    className="h-5 w-auto sm:h-6 sm:w-6"
-                  />
-                  <div className="flex flex-col">
-                    <span className="text-xs sm:text-sm text-muted-foreground">
-                      LinkedIn
-                    </span>
-                    <span className="text-xs sm:text-sm font-semibold">
-                      Top Startup India 2023
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </Card>
+            <AccreditationCard />
           </div>
         </div>
       </div>
