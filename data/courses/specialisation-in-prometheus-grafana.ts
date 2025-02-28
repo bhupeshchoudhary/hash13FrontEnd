@@ -1,5 +1,6 @@
 import { Course } from "../../types/courses";
-export const specialisationInPrometheusGrafana:Course ={
+
+export const specialisationInPrometheusGrafana:Course = {
     _id: "specialisation-in-prometheus-grafana",
     title: "Specialisation in Prometheus & Grafana Master Monitoring & Visualization with Prometheus & Grafana",
     slug: "specialisation-in-prometheus-grafana",
