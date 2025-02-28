@@ -1,4 +1,4 @@
-// app/courses/[courseId]/page.tsx
+
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -146,7 +146,7 @@ export default function CourseDetailPage() {
         <section className="">
           <WhoisthisProgramFor course = {course} />
         </section>
-        // app/courses/[courseId]/page.tsx
+        
 <section className="">
   <Analyst courseId={course.slug} />
 </section>
@@ -155,9 +155,7 @@ export default function CourseDetailPage() {
   <Faq courseId={params.courseId as string} />
 </section>
 
-        {/* <section>
-          <CardStack />
-        </section> */}
+    
 
         <section className="">
         <CoursePricingSection courseId={params.courseId as string} />
