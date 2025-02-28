@@ -115,8 +115,8 @@ export default function CourseDetailPage() {
       <main className="min-h-screen bg-gray-50">
       <Navbar />
         <section className="">
-          {/* <CourseDetailHero courseId={params.courseId as string} /> */}
-          <CourseDetailHero />
+          <CourseDetailHero courseId={params.courseId as string} />
+          {/* <CourseDetailHero /> */}
         </section>
 
         <section className="">
