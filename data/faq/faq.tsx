@@ -14,6 +14,7 @@ export const faqContent: Record<string, FAQItem[]> = {
           <li>Machine Learning Algorithms</li>
           <li>Deep Learning and Neural Networks</li>
           <li>Natural Language Processing</li>
+          
           <li>Computer Vision</li>
           <li>Big Data Analytics</li>
           <li>Data Visualization</li>
