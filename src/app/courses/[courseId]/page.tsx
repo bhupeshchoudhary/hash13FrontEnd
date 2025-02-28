@@ -153,8 +153,8 @@ export default function CourseDetailPage() {
         </section>
 
         <section className="">
-          <Faq />
-        </section>
+  <Faq courseId={params.courseId as string} />
+</section>
 
         {/* <section>
           <CardStack />
