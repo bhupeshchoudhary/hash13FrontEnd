@@ -13,17 +13,17 @@ export const learners: Learner[] = [
   { 
     name: "Google Learner", 
     company: "RedHat",
-    image: ""
+    image: "/assets/arpitjindal.png"
   },
   { 
     name: "Apna Learner", 
     company: "Unthinkable",
-    image: ""
+    image: "/assets/arpitjindal.png"
   },
   { 
     name: "Capgemini Learner", 
     company: "NPCI",
-    image: ""
+    image: "/assets/arpitjindal.png"
   },
 ];
 
@@ -34,7 +34,7 @@ export const benefits: string[] = [
 ];
 
 export const images = {
-  defaultLearner: "/assets/default-learner.png",
+  // defaultLearner: "/assets/default-learner.png",
   linuxWorld: "/assets/linux-world-logo.png",
   linkedin: "/assets/linkedin-logo.svg",
 };
