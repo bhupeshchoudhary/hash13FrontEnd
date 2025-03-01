@@ -51,7 +51,7 @@ export const specialisationInMongoDB: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "Specialisation in MongoDB",
+    category: "System Design",
 
     module: [
         {
