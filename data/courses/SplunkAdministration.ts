@@ -1,8 +1,8 @@
 import { Course } from "../../types/courses";
 export const SplunkAdmin:Course ={
-    _id: "splunk-admin",
-    title: "Specialisation in Splunk Administration",
-    slug: "specialisation-in-prometheus-grafana",
+    _id: "specialisation-in-splunk",
+    title: "[B]Specialisation in [R]Splunk Administration[/R][/B] Become a Splunk Expert ",
+    slug: "specialisation-in-splunk",
     rating: 4.7,
     totalRatings: 10,
     duration: "12 Hours",

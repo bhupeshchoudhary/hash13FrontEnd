@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInJava: Course = {
     _id: "specialisation-in-java",
-    title: "Java Programming Certified Training",
+    title: "[B][R]Java Programming[/B][/R] Certified Training",
     slug: "specialisation-in-java",
     rating: 4.9,
     totalRatings: 10,
@@ -51,7 +51,7 @@ export const specialisationInJava: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "Specialisation in Java",
+    category: "System ",
 
     module: [
         {
