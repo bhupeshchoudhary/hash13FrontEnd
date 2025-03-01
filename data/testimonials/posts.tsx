@@ -9,7 +9,7 @@ export const landingPageTestimonialPosts: Post[] = [
       author: {
         name: "Akshata Tiwari",
         title: "MERN Enthusiast Seeking Opportunities to Develop and Enhance my Skills",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        avatar: ""
       },
       content: `Hey Folks...`,
       timestamp: "8 Mar 2023",
@@ -61,7 +61,7 @@ export const landingPageTestimonialPosts: Post[] = [
       author: {
         name: "Akshata Tiwari",
         title: "MERN Enthusiast Seeking Opportunities to Develop and Enhance my Skills",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        avatar: ""
       },
       content: `Hey Folks...`,
       timestamp: "8 Mar 2023",
@@ -92,7 +92,7 @@ export const landingPageTestimonialPosts: Post[] = [
       author: {
         name: "Akshata Tiwari",
         title: "MERN Enthusiast Seeking Opportunities to Develop and Enhance my Skills",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        avatar: ""
       },
       content: `Hey Folks...`,
       timestamp: "8 Mar 2023",
