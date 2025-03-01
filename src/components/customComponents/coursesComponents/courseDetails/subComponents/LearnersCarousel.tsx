@@ -23,7 +23,7 @@ const CarouselItem = ({ learner, priority = false }: CarouselItemProps) => (
         className="object-cover w-full h-full"
         onError={(e) => {
           const target = e.target as HTMLImageElement;
-          target.src = images.defaultLearner;
+          // target.src = images.defaultLearner;
         }}
         priority={priority}
       />
