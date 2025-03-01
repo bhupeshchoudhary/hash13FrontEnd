@@ -1,8 +1,6 @@
 
 
 
-
-
 "use client";
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
@@ -16,24 +14,82 @@ interface CourseHeroProps {
 }
 
 const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
-  const course = courseInfo.find(c => c._id === courseId) || courseInfo[0]; // Fallback to first course if ID not found
+  const course = courseInfo.find(c => c._id === courseId) || courseInfo[0];
 
   const formatTitle = (title: string) => {
-    const words = title.split(' ');
-    const firstTwoWords = words.slice(0, 2).join(' ');
-    const thirdWord = words[2];
-    const remainingWords = words.slice(3).join(' ');
+    // Split the title into two parts if it contains a comma
+    const titleParts = title.split(',').map(part => part.trim());
+    const mainTitle = titleParts[0];
+    const subtitle = titleParts[1];
+
+    const processText = (text: string) => {
+      const elements: JSX.Element[] = [];
+      let currentIndex = 0;
+      let boldStart = -1;
+      let redStart = -1;
+
+      // Helper function to add text
+      const addText = (start: number, end: number, isBold: boolean, isRed: boolean) => {
+        if (start < end) {
+          const content = text.slice(start, end);
+          elements.push(
+            <span
+              key={start}
+              className={`${isBold ? 'font-bold' : ''} ${
+                isRed ? 'text-red-500' : ''
+              } leading-tight`}
+            >
+              {content}
+            </span>
+          );
+        }
+      };
+
+      // Process the text character by character
+      for (let i = 0; i < text.length; i++) {
+        if (text.slice(i).startsWith('[B]')) {
+          addText(currentIndex, i, false, false);
+          boldStart = i + 3;
+          i += 2;
+          currentIndex = boldStart;
+        } else if (text.slice(i).startsWith('[/B]')) {
+          addText(currentIndex, i, true, redStart >= 0);
+          i += 3;
+          currentIndex = i + 1;
+          boldStart = -1;
+        } else if (text.slice(i).startsWith('[R]')) {
+          addText(currentIndex, i, boldStart >= 0, false);
+          redStart = i + 3;
+          i += 2;
+          currentIndex = redStart;
+        } else if (text.slice(i).startsWith('[/R]')) {
+          addText(currentIndex, i, boldStart >= 0, true);
+          i += 3;
+          currentIndex = i + 1;
+          redStart = -1;
+        }
+      }
+
+      // Add any remaining text
+      addText(currentIndex, text.length, boldStart >= 0, redStart >= 0);
+
+      return elements;
+    };
 
     return (
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl">
-        <span className="font-bold leading-tight">{firstTwoWords}</span>{' '}
-        <span className="text-red-500 font-bold leading-tight">{thirdWord}</span>
-        {remainingWords && <><br /><span className="text-3xl">{remainingWords}</span></>}
-      </h1>
+      <div className="space-y-2">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl flex flex-wrap gap-1">
+          {processText(mainTitle)}
+        </h1>
+        {subtitle && (
+          <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600">
+            {subtitle}
+          </h2>
+        )}
+      </div>
     );
   };
 
-  // Share functionality
   const handleShare = async () => {
     try {
       if (navigator.share) {
@@ -112,14 +168,8 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
                 </Badge>
               </div>
 
-              {/* Price Section
-              <div className="flex items-center gap-4">
-                <span className="text-2xl font-bold">₹{course.price}</span>
-                <span className="text-gray-500 line-through">₹{course.originalPrice}</span>
-              </div> */}
-
               <div className="flex">
-                <a href={course.paymentLink} target="_blank">
+                <a href={course.paymentLink} target="_blank" rel="noopener noreferrer">
                   <Button className="bg-[#ff0000] hover:bg-red-600 text-white px-6 py-2 rounded-lg">
                     Enroll Now
                   </Button>
