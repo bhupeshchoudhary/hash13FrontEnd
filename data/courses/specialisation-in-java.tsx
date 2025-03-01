@@ -13,7 +13,7 @@ export const specialisationInJava: Course = {
     enrolledStudents: 12000,
     shortDescription: "Industry-Recognized Curriculum | Live Projects | Expert-Led Training | Master Java with Hands-On Labs & Real-World Projects",
     paymentLink: "",
-    backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
+    backgroundImage: "/assets/cources/courseDetails/java/java.jpg",
 
     learningOutcomes: [
         "Core Java Fundamentals & OOP concepts",

@@ -1,5 +1,5 @@
 import { Course } from "../../types/courses";
-export const SplunkAdmin:Course ={
+export const specialisationInSplunk:Course ={
     _id: "specialisation-in-splunk",
     title: "[B]Specialisation in [R]Splunk Administration[/R][/B] Become a Splunk Expert ",
     slug: "specialisation-in-splunk",
@@ -12,7 +12,7 @@ export const SplunkAdmin:Course ={
     enrolledStudents: 12000,
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Data Analysis Experience | Real-Time Industry Use Cases | 100% Practical Training",
     paymentLink: "https://rzp.io/rzp/2asghU9u",
-    backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
+    backgroundImage: "/assets/cources/courseDetails/splunk/splunk.jpg",
   
     learningOutcomes: [
         "Setup & Installation | Splunk Introduction | Splunk Configuration Files & Indexes",

@@ -3,7 +3,7 @@ import { Course } from "../../types/courses";
 
 import {specialisationInPrometheusGrafana} from  "./specialisation-in-prometheus-grafana"
 import {specialisationInDevops} from "./specialisation-in-devops"
-import {SplunkAdmin} from "./SplunkAdministration"
+import {specialisationInSplunk} from "./specialisation-in-splunk"
 import { specialisationInShellScripting } from "./specialisation-in-shell-scripting";
 import { specialisationInJava } from "./specialisation-in-java";
 import { specialisationInDocker } from "./specialisation-in-docker";
@@ -19,7 +19,7 @@ export const courseInfo: Course[] = [
  
   specialisationInDevops,
   specialisationInPrometheusGrafana,
-  SplunkAdmin,
+  specialisationInSplunk,
   specialisationInShellScripting,
   specialisationInJava,
   specialisationInTerraform,
