@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInPrometheusGrafana:Course = {
     _id: "specialisation-in-prometheus-grafana",
-    title: "[B]Specialisation in [R]Prometheus & Grafana[/R][/B], Master Monitoring & Visualization",
+    title: "[B]Specialisation in [R]Prometheus & Grafana[/R][/B] Master Monitoring & Visualization",
     slug: "specialisation-in-prometheus-grafana",
     rating: 4.7,
     totalRatings: 10,
