@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInMongoDB: Course = {
     _id: "specialisation-in-mongodb",
-    title: "[B][R]MongoDB Certified[/R][/B] Training - Master MongoDB",
+    title: "[B][R]MongoDB Certified Training  [/R] [/B]  Master MongoDB Master MongoDB with Hands-On Labs & Real-World Projects",
     slug: "specialisation-in-mongodb",
     rating: 4.9,
     totalRatings: 10,
