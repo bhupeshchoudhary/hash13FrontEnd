@@ -3,7 +3,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInJenkins: Course = {
     _id: "specialisation-in-jenkins",
-    title: "Specialization in Jenkins & Build Automation",
+    title: "Specialization in [B] [R] Jenkins & Build Automation [/R] [/B]",
     slug: "specialisation-in-jenkins",
     rating: 4.9,
     totalRatings: 10,
@@ -58,48 +58,89 @@ export const specialisationInJenkins: Course = {
     module: [
         {
             id: 1,
-            title: "Jenkins Fundamentals",
-            description: "Core concepts and setup",
+            title: "Introduction to Jenkins",
+            description: "Understanding Jenkins, its role in DevOps, and setting up Jenkins on AWS Cloud.",
             content: [
+                "What/Why/How of DevOps",
+                "What is CI/CD",
                 "Introduction to Jenkins",
-                "Installation & Configuration",
-                "Jenkins Architecture",
-                "Basic Job Creation",
-                "Jenkins Dashboard",
-                "User Management",
-                "Basic Configuration"
+                "How Jenkins helps in Automation",
+                "Role of Jenkins in DevOps Pipeline",
+                "Downloading and Installing Jenkins LTS in Linux over AWS Cloud",
+                "Core Concepts of Jenkins:",
+                "Jobs",
+                "Projects",
+                "Managing Jenkins",
+                "Plugins",
+                "Build Trigger",
+                "Polling the SCM",
+                "Maven Build Steps",
+                "And much more"
             ]
         },
         {
             id: 2,
-            title: "Build Automation",
-            description: "Managing build processes",
+            title: "Master-Slave Architecture in Jenkins",
+            description: "Understanding the benefits of a master-slave setup in Jenkins and configuring it with Linux and Docker.",
             content: [
-                "Creating Build Jobs",
-                "Version Control Integration",
-                "Build Triggers",
-                "Build Steps",
-                "Post-build Actions",
-                "Artifacts Management",
-                "Build Environment"
+                "Setting up a webserver with Jenkins and GitHub with PollSCM",
+                "Master-Slave architecture (Manual and Dynamic) with slave as Linux and Docker",
+                "Real-life example of continuous integration with Docker image updates: Rolling upgrades"
             ]
         },
         {
             id: 3,
-            title: "Pipeline as Code",
-            description: "Jenkins pipeline implementation",
+            title: "Jenkins Pipeline",
+            description: "Understanding Jenkins Pipelines and implementing Pipeline as Code for automation.",
             content: [
-                "Pipeline Basics",
-                "Jenkinsfile Creation",
-                "Groovy DSL",
-                "Pipeline Syntax",
-                "Stages & Steps",
-                "Parallel Execution",
-                "Shared Libraries"
+                "Jenkins Pipeline & Pipeline as a Code with Groovy language",
+                "Setting up a web application with Pipeline as a Code"
+            ]
+        },
+        {
+            id: 4,
+            title: "Integrating Kubernetes with Jenkins",
+            description: "Learning Kubernetes basics and integrating it with Jenkins for deployment automation.",
+            content: [
+                "Integration Kubernetes with Jenkins",
+                "Overview of Kubernetes",
+                "Installing and configuring KOPS",
+                "Using Jenkins through CLI and API",
+                "IAM & RBAC in Jenkins"
+            ]
+        },
+        {
+            id: 5,
+            title: "Projects/Use Case Solved",
+            description: "Exploring real-world use cases by integrating Jenkins with various tools.",
+            content: [
+                "Setting up a web application with Pipeline as a Code",
+                "Setting up a webserver with Jenkins and GitHub with PollSCM",
+                "Master-Slave architecture (Manual and Dynamic) with slave as Linux and Docker",
+                "Setting up Maven"
+            ]
+        },
+        {
+            id: 6,
+            title: "Interview Questions",
+            description: "Covering Jenkins fundamentals to advanced topics to help in interviews.",
+            content: [
+                "Interview questions on Jenkins fundamentals and advanced topics",
+                "Understanding commonly asked questions and best answers"
+            ]
+        },
+        {
+            id: 7,
+            title: "Preparation for Global Certification - Certified Jenkins Engineer",
+            description: "Practical learning to prepare for the Jenkins certification exam.",
+            content: [
+                "Jenkins Administration",
+                "Pipeline as a Code",
+                "Hands-on practicals for certification preparation"
             ]
         }
-        // Add more modules based on course content
     ],
+    
 
     highlights: [
         {

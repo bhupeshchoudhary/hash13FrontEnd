@@ -167,7 +167,7 @@ export const analystData: CourseAnalystData = {
     jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
   },
 
-  // ===================================================================
+
 "specialisation-in-mongodb": {
     title: "MongoDB Professionals – Salaries, Hiring Companies & Job Opportunities in India",
     subtitle: "High Demand for MongoDB Experts in 2025",
@@ -193,6 +193,37 @@ export const analystData: CourseAnalystData = {
     yearLabel: "In 2025",
     salaryLabel: "Average Salaries",
     companiesLabel: "Top Companies Hiring MongoDB Professionals",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+  },
+
+  // =========================================================================
+  
+"specialisation-in-jenkins": {
+    title: "Jenkins Professionals – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "High Demand for Jenkins Experts in 2025",
+    salary: {
+      label: "Salaries for Jenkins Professionals",
+      values: [600000, 1200000, 1800000, 2500000]
+    },
+    companies: [
+      "Amazon Web Services (AWS)",
+      "Google Cloud (GCP)",
+      "Microsoft (Azure)",
+      "Red Hat",
+      "Accenture",
+      "Infosys",
+      "TCS",
+      "Cognizant",
+      "Capgemini",
+      "Wipro"
+    ],
+    demand: 45,
+    jobCount: "38,500+",
+    description: "With enterprises adopting CI/CD pipelines and automation-driven workflows, Jenkins expertise is a must-have skill for DevOps professionals, cloud engineers, and software automation specialists. Mastering Jenkins ensures career growth in cloud-based software development and continuous integration.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring Jenkins Experts",
     jobsLabel: "Job Opportunities",
     jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
   }
