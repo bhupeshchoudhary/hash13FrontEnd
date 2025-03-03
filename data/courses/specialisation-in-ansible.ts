@@ -2,14 +2,14 @@ import { Course } from "../../types/courses";
 
 export const specialisationInAnsible: Course = {
     _id: "specialisation-in-ansible",
-    title: "Specialization in Ansible Automation",
+    title: "Specialization in [B] [R] Ansible Automation [/R] [/B] ",
     slug: "specialisation-in-ansible",
     rating: 4.9,
     totalRatings: 10,
     duration: "24 Hours",
     hours: "24+",
-    price: 2000,
-    originalPrice: 7000,
+    price: 4900,
+    originalPrice: 10000,
     enrolledStudents: 12000,
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Automation Experience | Advanced Playbook Techniques | Real-Time Industry Use Cases",
     paymentLink: "",
@@ -59,47 +59,119 @@ export const specialisationInAnsible: Course = {
         {
             id: 1,
             title: "Introduction to Ansible",
-            description: "Core concepts and setup",
+            description: "Understanding Ansible concepts and installing Ansible Engine.",
             content: [
-                "Ansible Architecture",
-                "Installation & Setup",
-                "Inventory Management",
-                "Ad-hoc Commands",
-                "Configuration Files",
-                "SSH Setup",
-                "Basic Operations"
+                "Describe Ansible concepts",
+                "Install Ansible Engine"
             ]
         },
         {
             id: 2,
-            title: "Playbook Development",
-            description: "Creating and managing playbooks",
+            title: "Deploy Ansible",
+            description: "Configuring Ansible to manage hosts and run ad hoc commands.",
             content: [
-                "Playbook Structure",
-                "YAML Syntax",
-                "Task Definition",
-                "Module Usage",
-                "Play Structure",
-                "Playbook Execution",
-                "Best Practices"
+                "Configure Ansible to manage hosts",
+                "Run ad hoc Ansible commands"
             ]
         },
         {
             id: 3,
-            title: "Variables and Facts",
-            description: "Managing dynamic data",
+            title: "Implement Playbooks",
+            description: "Writing and executing Ansible playbooks to automate tasks.",
             content: [
-                "Variable Types",
-                "Fact Gathering",
-                "Variable Precedence",
-                "Using Templates",
-                "Jinja2 Templates",
-                "Dynamic Inventory",
-                "Custom Facts"
+                "Write a simple Ansible playbook",
+                "Run playbooks on multiple managed hosts",
+                "Packages: yum, become, with_items",
+                "Services: service",
+                "Files: copy, file, template, lineinfile",
+                "Application Modules: pip, mysql_db, mysql_user",
+                "Stack Status: wait_for, uri, register, fail, when"
+            ]
+        },
+        {
+            id: 4,
+            title: "Manage Variables and Facts",
+            description: "Using variables and facts to simplify Ansible playbooks.",
+            content: [
+                "Use variables in playbooks",
+                "Reference facts about managed hosts"
+            ]
+        },
+        {
+            id: 5,
+            title: "Implement Task Control",
+            description: "Managing task execution flow, handlers, and error handling.",
+            content: [
+                "Manage task control",
+                "Use handlers",
+                "Handle task errors in Ansible playbooks"
+            ]
+        },
+        {
+            id: 6,
+            title: "Deploy Files to Managed Hosts",
+            description: "Managing files and configurations on remote hosts.",
+            content: [
+                "Deploy, manage, and adjust files on hosts managed by Ansible"
+            ]
+        },
+        {
+            id: 7,
+            title: "Manage Large Projects",
+            description: "Optimizing playbooks for scalability and complexity.",
+            content: [
+                "Write playbooks optimized for larger projects"
+            ]
+        },
+        {
+            id: 8,
+            title: "Simplify Playbooks with Roles",
+            description: "Using roles to modularize and reuse Ansible code.",
+            content: [
+                "Use Ansible roles to develop playbooks quickly",
+                "Converting to Roles: tasks, handlers, files, templates",
+                "Site.yml: include",
+                "Variables: facts, defaults, vars, with_dict, vars_files, group_vars, vault",
+                "Selective Removal: shell, register, with_items, when",
+                "External Roles & Galaxy"
+            ]
+        },
+        {
+            id: 9,
+            title: "Troubleshoot, Testing & Validation",
+            description: "Debugging and troubleshooting Ansible playbooks and managed hosts.",
+            content: [
+                "Troubleshoot playbooks and managed hosts",
+                "Troubleshooting ordering problems",
+                "Jumping to specific tasks: list-tasks, step, start-at-task",
+                "Retrying failed hosts",
+                "Syntax-Check & Dry-Run: syntax-check, check",
+                "Debugging: debug",
+                "Testing concepts"
+            ]
+        },
+        {
+            id: 10,
+            title: "Automate Linux Administration Tasks",
+            description: "Using Ansible for automating common Linux system administration tasks.",
+            content: [
+                "Automate Linux system administration tasks with Ansible"
+            ]
+        },
+        {
+            id: 11,
+            title: "Advanced Execution",
+            description: "Enhancing Ansible execution efficiency and performance.",
+            content: [
+                "Removing unnecessary steps: gather_facts",
+                "Extracting repetitive tasks: cache_valid_time",
+                "Limiting execution by hosts & tasks",
+                "Idempotence: changed_when, failed_when",
+                "Accelerated Mode and Pipelining"
             ]
         }
-        // Add more modules based on course content
     ],
+    
 
     highlights: [
         {

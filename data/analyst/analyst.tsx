@@ -197,7 +197,7 @@ export const analystData: CourseAnalystData = {
     jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
   },
 
-  // =========================================================================
+  
   
 "specialisation-in-jenkins": {
     title: "Jenkins Professionals – Salaries, Hiring Companies & Job Opportunities in India",
@@ -224,6 +224,36 @@ export const analystData: CourseAnalystData = {
     yearLabel: "In 2025",
     salaryLabel: "Average Salaries",
     companiesLabel: "Top Companies Hiring Jenkins Experts",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+  },
+  // ====================================================================
+
+"specialisation-in-ansible": {
+    title: "Ansible Automation Professionals – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "High Demand for Ansible Experts in 2025",
+    salary: {
+      label: "Salaries for Ansible Professionals",
+      values: [600000, 1200000, 1800000, 2500000]
+    },
+    companies: [
+      "Red Hat",
+      "Amazon Web Services (AWS)",
+      "Google Cloud (GCP)",
+      "Microsoft (Azure)",
+      "Accenture",
+      "Infosys",
+      "TCS",
+      "Cognizant",
+      "Capgemini",
+      "Wipro"
+    ],
+    demand: 40,
+    jobCount: "33,200+",
+    description: "With the rise of infrastructure automation, Ansible expertise is becoming essential for DevOps engineers, cloud professionals, and IT administrators. Learning Ansible can boost your career in automation-driven workflows, hybrid cloud management, and enterprise-level orchestration.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring Ansible Experts",
     jobsLabel: "Job Opportunities",
     jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
   }
