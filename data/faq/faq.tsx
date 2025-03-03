@@ -237,7 +237,20 @@ export const faqContent: FAQContent = {
     ...sharedSpecializationContent
   },
 
-  "specialisation-in-aws": {
+  "specialisation-in-ansible": {
     ...sharedSpecializationContent
-  }
+  },
+  "specialisation-in-java": {
+    ...sharedSpecializationContent
+  },
+  "specialisation-in-mongodb": {
+    ...sharedSpecializationContent
+  },
+  "specialisation-in-shell-scripting": {
+    ...sharedSpecializationContent
+  },
+  "specialisation-in-splunk": {
+    ...sharedSpecializationContent
+  },
+ 
 };
