@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInShellScripting: Course = {
     _id: "specialisation-in-shell-scripting",
-    title: "[B]Specialisation in [R]Shell Scripting[/R][/B] - Become a Shell Scripting Expert",
+    title: "[B]Specialisation in [R]Shell Scripting[/R][/B] Become a Shell Scripting Expert",
     slug: "specialisation-in-shell-scripting",
     rating: 4.9, // Not provided
     totalRatings: 10, // Not provided
@@ -54,21 +54,17 @@ export const specialisationInShellScripting: Course = {
         {
             id: 1,
             title: "Introduction to Shell Scripting",
-            description: "Fundamentals of Shell and Operating System interfaces",
+            description: "Basic shell scripting fundamentals",
             content: [
                 "What is Shell & Shell Scripting?",
                 "Operating System GUI & CLI",
-                "Introduction to Bash Shell",
-                "Linux OS Fundamentals",
-                "Shell Basics",
-                "Cisco Switches",
-                "GUI vs. CLI"
+                "Introduction to Bash Shell"
             ]
         },
         {
             id: 2,
-            title: "Script Creation and Basic Commands",
-            description: "Essential concepts for creating and executing shell scripts",
+            title: "Creating a Script File and Building a Command",
+            description: "Script creation fundamentals",
             content: [
                 "Creating a Script File and Building a Command",
                 "Variables & User-defined Variables",
@@ -83,23 +79,22 @@ export const specialisationInShellScripting: Course = {
         },
         {
             id: 3,
-            title: "Loops and Iterations",
-            description: "Understanding loop structures and user management",
+            title: "Iteration in Shell Scripting",
+            description: "Understanding iterations and loops",
             content: [
                 "Iteration in Shell Scripting",
                 "Useradd & ID Command",
                 "Iteration & Loop",
                 "For Loop Syntax",
-                "Passwd File Manipulation",
-                "Looping Constructs",
-                "Looping & Flow Control"
+                "Passwd File Manipulation"
             ]
         },
         {
             id: 4,
-            title: "Conditional Statements and User Management",
-            description: "Control structures and user administration",
+            title: "If/Else Conditions & User Backup Scripting",
+            description: "Conditional programming and user management",
             content: [
+                "If/Else Conditions & User Backup Scripting",
                 "If-Else Conditions",
                 "Test Command",
                 "Conditional Operators",
@@ -113,8 +108,8 @@ export const specialisationInShellScripting: Course = {
         },
         {
             id: 5,
-            title: "Network Scripts and AWS Integration",
-            description: "Network automation and cloud integration",
+            title: "Executing Scripts Over Network",
+            description: "Network operations and file management",
             content: [
                 "Executing Scripts Over Network",
                 "Log Analysis",
@@ -122,48 +117,74 @@ export const specialisationInShellScripting: Course = {
                 "WinSCP Tool",
                 "Configuring Web Server (HTTPD)",
                 "Access Logs & Error Logs",
-                "File Operations (WC, CHMOD, SUDO, AWK, SORT, UNIQ, TAIL, SCP)",
-                "SSH & SCP Commands"
+                "File Operations (WC, CHMOD, SUDO, AWK, SORT, UNIQ, TAIL, SCP)"
             ]
         },
         {
             id: 6,
             title: "Advanced Scripting Techniques",
-            description: "Advanced text processing and script options",
+            description: "Advanced scripting concepts",
             content: [
+                "Advanced Scripting Techniques",
                 "Regular Expressions",
                 "AWK & GREP Command",
                 "SED Command",
                 "Creating Options in Scripts",
                 "Using GETOPTS & SET Command",
-                "Pre-created Variables & Functions",
-                "AWK Command for Text Processing"
+                "Pre-created Variables & Functions"
             ]
         },
         {
             id: 7,
-            title: "Process Management",
-            description: "Managing processes and job control",
+            title: "Linux OS Fundamentals",
+            description: "Operating system and shell basics",
+            content: [
+                "Linux OS Fundamentals",
+                "Shell Basics",
+                "Cisco Switches",
+                "GUI vs. CLI",
+                "Introduction to Bash Shell",
+                "Script File Creation",
+                "Test Keyword",
+                "Logical Operators"
+            ]
+        },
+        {
+            id: 8,
+            title: "Advanced Shell Scripting Concepts",
+            description: "Advanced shell programming",
+            content: [
+                "Advanced Shell Scripting Concepts",
+                "User-defined Variables",
+                "Arrays",
+                "File Manipulation",
+                "Looping Constructs"
+            ]
+        },
+        {
+            id: 9,
+            title: "Process & Subprocess Management",
+            description: "Process control and management",
             content: [
                 "Process & Subprocess Management",
                 "Job Control",
                 "Daemon Processes",
                 "Signal Handling",
-                "Parallel Execution"
+                "Looping & Flow Control"
             ]
         },
         {
-            id: 8,
-            title: "Advanced Shell Commands",
-            description: "Advanced shell features and commands",
+            id: 10,
+            title: "Advanced Commands and Techniques",
+            description: "Advanced shell commands",
             content: [
+                "Advanced Commands and Techniques",
                 "Shopt Command",
                 "Tree Command",
                 "Export Keyword",
-                "Arrays",
-                "File Manipulation",
-                "Test Keyword",
-                "Logical Operators"
+                "Parallel Execution",
+                "SSH & SCP Commands",
+                "AWK Command for Text Processing"
             ]
         }
     ],
@@ -216,7 +237,7 @@ export const specialisationInShellScripting: Course = {
         { src: "", alt: "Server Administrators", text: "Server Administrators" },
         { src: "", alt: "Network Administrators", text: "Network Administrators" },
         { src: "", alt: "Freshers", text: "Automation or DevOps Roles" },
-        { src: "", alt: "Academicians", text: "Academicians " }
+        { src: "", alt: "Professors & Trainers in IT", text: "Professors & Trainers in IT " }
     ],
 
     toolsData: {

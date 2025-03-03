@@ -49,6 +49,19 @@ export const companyLogos: Record<CompanyName, string> = {
  
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Analyst data for all courses
 export const analystData: CourseAnalystData = {
   "specialisation-in-devops": {
@@ -79,6 +92,12 @@ export const analystData: CourseAnalystData = {
     jobsDescription: "Total jobs found online for DevOps"
   },
 
+
+
+
+
+
+
   
 "specialisation-in-prometheus-grafana": {
   title: "Rising Demand",
@@ -108,14 +127,20 @@ export const analystData: CourseAnalystData = {
   jobsLabel: "Available Jobs",
   jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
 },
+
+
+
+
+
+
 "specialisation-in-shell-scripting": {
-  title: "Rising Demand",
-  subtitle: "for Shell Scripting Engineers",
-  salary: {
-    label: "Jobs in Shell Scripting",
-    values: [729000, 982000, 2000000] // Based on the salary data provided: 7.29L, 9.82L, 20L
+  "title": "Rising Demand",
+  "subtitle": "for Shell Scripting Engineers",
+  "salary": {
+    "label": "Jobs in Shell Scripting",
+    "values": [729000, 982000, 2000000] // Converting 7.29L, 9.82L, 20L to actual numbers
   },
-  companies: [
+  "companies": [
     "TCS",
     "Infosys",
     "Wipro",
@@ -123,18 +148,128 @@ export const analystData: CourseAnalystData = {
     "Cognizant",
     "IBM",
     "Accenture",
-    "HCL",
+    "HCL Technologies",
     "Oracle",
     "Tech Mahindra"
   ] as CompanyName[],
-  demand: 35, // Estimated based on job market data
-  jobCount: "37,962+", // Sum of jobs from Naukri (35,000), Glassdoor (1,162), Indeed (1,000), AmbitionBox (800)
-  description: "Shell scripting engineers in India are experiencing rising salaries due to the growing demand for automation, system administration, and infrastructure management. In 2025, entry-level salaries range from ₹4–10 lakh annually, while experienced professionals earn ₹12 lakh or more, highlighting the increasing reliance on scripting for process automation and system optimization.",
-  yearLabel: "In 2025",
-  salaryLabel: "Average Salaries",
-  companiesLabel: "Companies Hiring",
-  jobsLabel: "Available Jobs",
-  jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and AmbitionBox"
+  "demand": 35, // Estimated based on job market data
+  "jobCount": "37,962+", // Sum of jobs from all platforms (35,000 + 1,162 + 1,000 + 800)
+  "description": "Shell scripting engineers in India are experiencing rising salaries due to the growing demand for automation, system administration, and infrastructure management. In 2025, entry-level salaries range from ₹4–10 lakh annually, while experienced professionals earn ₹12 lakh or more, highlighting the increasing reliance on scripting for process automation and system optimization.",
+  "yearLabel": "In 2025",
+  "salaryLabel": "Average Salaries",
+  "companiesLabel": "Companies Hiring",
+  "jobsLabel": "Available Jobs",
+  "jobsDescription": "Total jobs found across Naukri, Glassdoor, Indeed, and AmbitionBox"
+},
+
+
+
+
+"specialisation-in-java": {
+  "title": "Rising Demand",
+  "subtitle": "for Java Developers",
+  "salary": {
+    "label": "Jobs in Java Development",
+    "values": [1000000, 1800000, 3000000] // Converting 10L, 18L, 30L to actual numbers
+  },
+  "companies": [
+    "Google",
+    "Microsoft",
+    "Amazon",
+    "Paytm",
+    "Flipkart",
+    "Adobe",
+    "JPMorgan Chase",
+    "Goldman Sachs",
+    "Zoho",
+    "Infosys"
+  ] as CompanyName[],
+  "demand": 45, // Estimated based on job market data
+  "jobCount": "59,500+", // Sum of jobs from Naukri (50,000), Glassdoor (5,000), Indeed (4,500)
+  "description": "Java developers are in high demand due to the growing need for enterprise applications, cloud-based solutions, and backend development. In 2025, Java professionals can expect competitive salaries, with experienced developers earning ₹18 lakh or more, making Java a key skill for software development and microservices architecture.",
+  "yearLabel": "In 2025",
+  "salaryLabel": "Average Salaries",
+  "companiesLabel": "Companies Hiring",
+  "jobsLabel": "Available Jobs",
+  "jobsDescription": "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+},
+
+
+
+
+"specialisation-in-terraform": {
+  "title": "Rising Demand",
+  "subtitle": "for Terraform Engineers",
+  "salary": {
+    "label": "Jobs in Terraform",
+    "values": [1200000, 1800000, 2500000] // Converting 12L, 18L, 25L to actual numbers
+  },
+  "companies": [
+    "TCS",
+    "Infosys",
+    "Wipro",
+    "Capgemini",
+    "Cognizant",
+    "IBM",
+    "Accenture",
+    "HCL Technologies",
+    "Oracle",
+    "Tech Mahindra"
+  ] as CompanyName[],
+  "demand": 40, // Estimated based on job market data
+  "jobCount": "43,600+", // Sum of jobs from Naukri (40,000), Glassdoor (1,500), Indeed (1,200), AmbitionBox (900)
+  "description": "Terraform engineers in India are witnessing increasing salaries due to the rising demand for infrastructure automation, cloud provisioning, and DevOps practices. In 2025, entry-level salaries range from ₹6–12 lakh annually, while experienced professionals earn ₹15 lakh or more, highlighting Terraform's significance in cloud automation and infrastructure as code (IaC)",
+  "yearLabel": "In 2025",
+  "salaryLabel": "Average Salaries",
+  "companiesLabel": "Companies Hiring",
+  "jobsLabel": "Available Jobs",
+  "jobsDescription": "Total jobs found across Naukri, Glassdoor, Indeed, and AmbitionBox"
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"specialisation-in-splunk": {
+  "title": "Rising Demand",
+  "subtitle": "for Splunk Engineers",
+  "salary": {
+    "label": "Jobs in Splunk",
+    "values": [850000, 1230000, 2500000] // Converting 8.5L, 12.3L, 25L to actual numbers
+  },
+  "companies": [
+    "Accenture",
+    "TCS",
+    "Infosys",
+    "Wipro",
+    "IBM",
+    "HCL Technologies",
+    "Cognizant",
+    "Capgemini",
+    "Oracle",
+    "Tech Mahindra"
+  ] as CompanyName[],
+  "demand": 38, // Estimated based on job market data
+  "jobCount": "21,450+", // Sum of jobs from Naukri (18,000), Glassdoor (1,350), Indeed (1,200), LinkedIn (900)
+  "description": "Splunk Engineers in India are experiencing rising salaries due to the growing demand for data analysis, security monitoring, and log management. In 2025, entry-level salaries range from ₹6–12 lakh annually, while experienced professionals earn ₹15 lakh or more, highlighting the increasing reliance on Splunk for enterprise security, observability, and real-time data insights",
+  "yearLabel": "In 2025",
+  "salaryLabel": "Average Salaries",
+  "companiesLabel": "Companies Hiring",
+  "jobsLabel": "Available Jobs",
+  "jobsDescription": "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
 },
 
 

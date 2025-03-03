@@ -7,9 +7,9 @@ export const specialisationInSplunk:Course ={
     totalRatings: 10,
     duration: "12 Hours",
     hours: "12+",
-    price: 4893,
-    originalPrice: 8500,
-    enrolledStudents: 12000,
+    price: 5850,
+    originalPrice: 10000,
+    enrolledStudents: 10000,
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Data Analysis Experience | Real-Time Industry Use Cases | 100% Practical Training",
     paymentLink: "https://rzp.io/rzp/2asghU9u",
     backgroundImage: "/assets/cources/courseDetails/splunk/splunk.jpg",
@@ -47,7 +47,7 @@ export const specialisationInSplunk:Course ={
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "Specialisation in Prometheus & Grafana",
+    category: "Monitoring Tool",
   
   module: [
     {
@@ -193,7 +193,7 @@ export const specialisationInSplunk:Course ={
             description: "Hours of learning"
         },
         {
-            number: "3",
+            number: "3+",
             description: "Capstone Projects"
         }
     ],
@@ -207,18 +207,7 @@ export const specialisationInSplunk:Course ={
             description: "Set up comprehensive monitoring for a multi-service infrastructure using Prometheus and Grafana",
             skills: ["Prometheus", "Grafana", "Monitoring", "Infrastructure", "Alerting"]
         },
-        {
-            icon: "/assets/Projects/dashboard.png",
-            title: "Custom Dashboard Creation",
-            description: "Create advanced custom dashboards for different use cases and metrics visualization",
-            skills: ["Grafana", "Dashboard Design", "Data Visualization", "Metrics"]
-        },
-        {
-            icon: "/assets/Projects/alert.png",
-            title: "Alert Management System",
-            description: "Implement a complete alert management system with multiple notification channels",
-            skills: ["Alert Manager", "Notification Systems", "Incident Management"]
-        }
+       
     ],
   
     programFor: [

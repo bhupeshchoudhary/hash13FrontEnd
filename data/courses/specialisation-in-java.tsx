@@ -2,35 +2,33 @@ import { Course } from "../../types/courses";
 
 export const specialisationInJava: Course = {
     _id: "specialisation-in-java",
-    title: "[B][R]Java Programming[/B][/R] Certified Training",
+    title: "[B][R]Java Programming[/R] Certified Training [/B]Master Java with Hands-On Labs & Real-World Projects",
     slug: "specialisation-in-java",
     rating: 4.9,
     totalRatings: 10,
     duration: "20 Hours",
     hours: "20+",
-    price: 2000,
-    originalPrice: 7000,
+    price: 1600,
+    originalPrice: 12000,
     enrolledStudents: 12000,
-    shortDescription: "Industry-Recognized Curriculum | Live Projects | Expert-Led Training | Master Java with Hands-On Labs & Real-World Projects",
+    shortDescription: "Industry-Recognized Curriculum | Live Projects | Expert-Led Training",
     paymentLink: "",
     backgroundImage: "/assets/cources/courseDetails/java/java.jpg",
 
     learningOutcomes: [
-        "Core Java Fundamentals & OOP concepts",
-        "Advanced Java Features & Multithreading",
-        "Web Development with Servlets & JSP",
-        "Spring Framework & Hibernate",
-        "Database Integration with JDBC",
-        "Microservices & Cloud Development"
+        "JAVA class & object",
+        "JAVA methods",
+        "JAVA constructors",
+        "JAVA Method overriding",
+     
     ],
-
+    
     features: [
-        "Industry-Relevant Java Training",
+        "Most Relevant Java Tips & Tricks",
         "Technical Support for 90 days",
-        "Real-World Development Projects",
+        "Java Exam Preparation",
         "Premium #13 Java Community"
     ],
-
     skills: [
         "Core Java",
         "Object-Oriented Programming",
@@ -51,53 +49,105 @@ export const specialisationInJava: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "System ",
+    category: "System Design",
 
     module: [
         {
             id: 1,
-            title: "Core Java Fundamentals",
-            description: "Essential Java concepts and OOP principles",
+            title: "Introduction of Java and Real Industry Use Cases",
+            description: "Basic introduction to Java and its industry applications",
             content: [
-                "Java Basics & Environment Setup",
-                "Variables & Data Types",
-                "Control Structures",
-                "Object-Oriented Programming",
-                "Classes & Objects",
-                "Inheritance & Polymorphism",
-                "Encapsulation & Abstraction"
+                "What is Java and its significance in the industry?",
+                "Real-world applications of Java",
+                "Importance of learning Java for career growth"
             ]
         },
         {
             id: 2,
-            title: "Advanced Java Features",
-            description: "Advanced programming concepts in Java",
+            title: "Understanding the Fundamentals",
+            description: "Core fundamentals of Java environment and setup",
             content: [
-                "Exception Handling",
-                "Multithreading",
-                "Collections Framework",
-                "Generics",
-                "File I/O",
-                "Lambda Expressions",
-                "Stream API"
+                "Different Versions of Java and Their Features",
+                "Amazon Corretto Java and Its Installation",
+                "Operating Systems, Devices, and Users",
+                "Exploring JDK (Java Development Kit) and Its Components",
+                "Insight into JRE (Java Runtime Environment) and JVM (Java Virtual Machine)"
             ]
         },
         {
             id: 3,
-            title: "Web Development",
-            description: "Java web development fundamentals",
+            title: "Getting Started with Java Programming",
+            description: "Initial steps in Java programming and concepts",
             content: [
-                "Servlets",
-                "JSP",
-                "JDBC",
-                "Web Services",
-                "RESTful APIs",
-                "Spring MVC",
-                "Spring Boot"
+                "Java Tools and Their Utilization",
+                "Microservices in Java: Concepts and Implementation",
+                "Overview of Algorithms in Java",
+                "Understanding Statements, Functions, and Expressions",
+                "Compilation Process and Handling Compilation Errors"
+            ]
+        },
+        {
+            id: 4,
+            title: "Dive into Java Syntax and Data Types",
+            description: "Understanding Java syntax and fundamental data types",
+            content: [
+                "Variables and Data Types in Java",
+                "Memory Management: RAM, Stack Memory, and Heap Memory",
+                "ASCII Table and Unicode Representation",
+                "Working with Strings and Packages",
+                "Introduction to IDEs: VS Code and IntelliJ IDEA"
+            ]
+        },
+        {
+            id: 5,
+            title: "Mastering Java Programming Techniques",
+            description: "Advanced programming techniques in Java",
+            content: [
+                "Right Usage of JVM and Amazon Corretto",
+                "Basic Operations and Operators in Java",
+                "Input/Output Operations and Interaction with Keyboard",
+                "Typecasting and Data Type Conversion",
+                "Understanding Looping and Conditional Statements"
+            ]
+        },
+        {
+            id: 6,
+            title: "Object-Oriented Programming in Java",
+            description: "OOP concepts and implementation in Java",
+            content: [
+                "OOPs Concepts: Classes, Objects, and Data Structures",
+                "Introduction to Inheritance and its Types",
+                "Methods, Functions, and Constructors in Java",
+                "Encapsulation and Abstraction Principles",
+                "Implementing Interfaces and Abstract Classes"
+            ]
+        },
+        {
+            id: 7,
+            title: "Advanced Java Concepts",
+            description: "Advanced features and implementations in Java",
+            content: [
+                "Working with Packages and Managing Security",
+                "Access Modifiers and Access Management",
+                "Utilizing Collections and Data Structures",
+                "Implementing Queues and Arrays",
+                "Exploring Pre-Created Classes and Interfaces"
+            ]
+        },
+        {
+            id: 8,
+            title: "Java Programming Best Practices",
+            description: "Best practices and advanced implementations",
+            content: [
+                "Creating Interfaces and Abstract Classes",
+                "Annotation and Lambda Functions",
+                "Generics and Singleton Classes",
+                "Finalizing Concepts: Constructors, Overrides, and Singleton Patterns",
+                "Implementing Advanced Functionality in Java"
             ]
         }
-        // Add more modules based on course content
     ],
+
 
     highlights: [
         {
@@ -137,16 +187,16 @@ export const specialisationInJava: Course = {
         }
     ],
 
-    programFor: [
-        { src: "", alt: "Software Developers", text: "Software Developers" },
-        { src: "", alt: "Java Developers", text: "Java Developers" },
-        { src: "", alt: "Backend Engineers", text: "Backend Engineers" },
-        { src: "", alt: "Full Stack Developers", text: "Full Stack Developers" },
-        { src: "", alt: "Cloud Engineers", text: "Cloud Engineers" },
-        { src: "", alt: "DevOps Engineers", text: "DevOps Engineers" },
-        { src: "", alt: "IT Professionals", text: "IT Professionals" },
-        { src: "", alt: "Students", text: "Students" }
-    ],
+ programFor: [
+    { src: "", alt: "Software Developers", text: "Software Developers" },
+    { src: "", alt: "Database Administrators", text: "Database Administrators" },
+    { src: "", alt: "System Administrators", text: "System Administrators" },
+    { src: "", alt: "Cloud Engineers", text: "Cloud Engineers" },
+    { src: "", alt: "DevOps Engineers", text: "DevOps Engineers" },
+    { src: "", alt: "Data Engineers", text: "Data Engineers" },
+    { src: "", alt: "IT Professionals", text: "IT Professionals" },
+    { src: "", alt: "Students", text: "Students" }
+],
 
     toolsData: {
         sectionTitle: "Complete Java Programming",
@@ -157,27 +207,32 @@ export const specialisationInJava: Course = {
             {
                 id: "core",
                 icon: "TrendingUp",
-                title: "Core Java: OOP, Collections, Multithreading"
+                title: "Core Java Fundamentals – Master OOPs, syntax, and essential concepts"
             },
             {
                 id: "web",
                 icon: "Cpu",
-                title: "Web Development: Servlets, JSP, Spring"
+                title: "Advanced Java – Dive into multithreading, collections, and exception handling"
             },
             {
                 id: "database",
                 icon: "BarChart",
-                title: "Database: JDBC, Hibernate, JPA"
+                title: "Web Development with Java – Build dynamic applications with Servlets & JSP"
             },
             {
                 id: "frameworks",
                 icon: "TrendingUp",
-                title: "Frameworks: Spring Boot, Spring MVC"
+                title: "Spring & Hibernate – Develop robust applications with industry-standard frameworks"
             },
             {
                 id: "cloud",
                 icon: "BarChart",
-                title: "Cloud & Microservices: Spring Cloud, Docker"
+                title: "Database Connectivity (JDBC) – Seamlessly integrate Java with databases"
+            },
+            {
+                id: "cloud",
+                icon: "TrendingUp",
+                title: "Java for Cloud & Microservices – Deploy scalable solutions with Spring Boot"
             }
         ]
     },
