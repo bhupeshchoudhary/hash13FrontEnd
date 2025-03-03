@@ -362,7 +362,7 @@ export const analystData: CourseAnalystData = {
     jobsLabel: "Job Opportunities",
     jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
   },
-  // ====================================================================
+  
 
 "specialisation-in-ansible": {
     title: "Ansible Automation Professionals – Salaries, Hiring Companies & Job Opportunities in India",
@@ -389,6 +389,37 @@ export const analystData: CourseAnalystData = {
     yearLabel: "In 2025",
     salaryLabel: "Average Salaries",
     companiesLabel: "Top Companies Hiring Ansible Experts",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+  },
+
+  // ======================================================================
+
+ "specialisation-in-kubernetes": {
+    title: "Kubernetes Professionals – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "High Demand for Kubernetes Experts in 2025",
+    salary: {
+      label: "Salaries for Kubernetes Professionals",
+      values: [700000, 1200000, 2000000, 3000000]
+    },
+    companies: [
+      "Google Cloud (GCP)",
+      "Microsoft (Azure)",
+      "Amazon Web Services (AWS)",
+      "VMware",
+      "Red Hat",
+      "Salesforce",
+      "PayPal",
+      "Flipkart",
+      "Zomato",
+      "Infosys"
+    ],
+    demand: 50,
+    jobCount: "31,300+",
+    description: "With organizations shifting to cloud-native architectures and container orchestration, Kubernetes skills are essential for DevOps engineers, cloud architects, and automation professionals. Mastering Kubernetes can significantly enhance career prospects in modern IT environments.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring Kubernetes Experts",
     jobsLabel: "Job Opportunities",
     jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
   }

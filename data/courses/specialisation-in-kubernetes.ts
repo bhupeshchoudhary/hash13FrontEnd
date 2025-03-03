@@ -1,14 +1,14 @@
 import { Course } from "../../types/courses";
 export const specialisationInKubernetes: Course = {
     _id: "specialisation-in-kubernetes",
-    title: "Specialization in Kubernetes - [B] [R] Become a Kubernetes Expert [/R] [B]",
+    title: "[B] Specialization in Kubernetes - [R] Become a Kubernetes Expert [/R] [B]",
     slug: "specialisation-in-kubernetes",
     rating: 4.9,
     totalRatings: 10,
     duration: "60 Hours",
     hours: "60+",
-    price: 2000,
-    originalPrice: 7000,
+    price: 4200,
+    originalPrice: 17500,
     enrolledStudents: 12000,
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Orchestration Experience | Advanced Deployment Techniques | Real-Time Industry Use Cases",
     paymentLink: "",
