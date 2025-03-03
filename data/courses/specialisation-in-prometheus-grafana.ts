@@ -266,7 +266,7 @@ export const specialisationInPrometheusGrafana:Course = {
         { src: "/assets/cources/programFor/sysadmin.jpg", alt: "System Administrators", text: "System Administrators" },
         { src: "/assets/cources/programFor/cloud.jpg", alt: "Cloud Engineers", text: "Cloud & Infrastructure Engineers" },
         { src: "/assets/cources/programFor/developer.jpg", alt: "Developers", text: "Software Developers" },
-        { src: "/assets/cources/programFor/sre.jpg", alt: "SRE", text: "SREs" },
+        { src: "/assets/cources/programFor/sre.jpg", alt: "SRE", text: "Site Reliability Engineers" },
         { src: "/assets/cources/programFor/it.jpg", alt: "IT Professionals", text: "IT Professionals" }
     ],
   
