@@ -56,48 +56,80 @@ export const specialisationInMongoDB: Course = {
     module: [
         {
             id: 1,
-            title: "Introduction to MongoDB",
-            description: "Fundamentals of NoSQL and MongoDB basics",
+            title: "What is NoSQL DB, Why MongoDB & CRUD Operation in MongoDB",
+            description: "Understanding NoSQL databases, MongoDB architecture, and CRUD operations.",
             content: [
-                "NoSQL Database Concepts",
-                "MongoDB Architecture",
-                "JSON Document Structure",
-                "MongoDB Shell",
-                "Basic Commands",
-                "Database & Collections",
-                "Document Structure"
+                "MongoDB Development Architecture",
+                "MongoDB Production Architecture",
+                "MongoDB CRUD Introduction, MongoDB CRUD Concepts",
+                "MongoDB CRUD Concerns (Read & Write Operations)",
+                "Concern Levels, Journaling, etc.",
+                "Cursor Query Optimizations, Query Behavior in MongoDB",
+                "Distributed Read & Write Queries",
+                "MongoDB Datatypes",
+                "MongoDB CRUD Syntax & Queries (Live Hands-on)"
             ]
         },
         {
             id: 2,
-            title: "CRUD Operations",
-            description: "Working with MongoDB Documents",
+            title: "Model Data & Create Schema",
+            description: "Understanding data modeling in MongoDB and schema design patterns.",
             content: [
-                "Creating Documents",
-                "Reading Documents",
-                "Updating Documents",
-                "Deleting Documents",
-                "Query Operators",
-                "Bulk Operations",
-                "Document Validation"
+                "Data Modelling Concepts",
+                "Why Data Modelling? Data Modelling Approach",
+                "Analogy between RDBMS & MongoDB Data Model",
+                "MongoDB Data Model (Embedding & Linking)",
+                "Challenges for Data Modelling in MongoDB",
+                "Data Model Examples and Patterns",
+                "Model Relationships between Documents",
+                "Model Tree Structures",
+                "Model Specific Application Contexts",
+                "Use Case Discussion of Data Modeling"
             ]
         },
         {
             id: 3,
-            title: "Schema Design & Data Modeling",
-            description: "Optimizing MongoDB Database Structure",
+            title: "Indexing and Aggregation Framework",
+            description: "Understanding indexing strategies and aggregation framework in MongoDB.",
             content: [
-                "Schema Design Patterns",
-                "Embedding vs References",
-                "One-to-One Relationships",
-                "One-to-Many Relationships",
-                "Many-to-Many Relationships",
-                "Schema Validation",
-                "Data Model Optimization"
+                "Index Introduction, Index Concepts, Index Types, Index Properties",
+                "Index Creation and Indexing Reference",
+                "Introduction to Aggregation",
+                "Approach to Aggregation",
+                "Types of Aggregation (Pipeline, MapReduce & Single Purpose)",
+                "Performance Tuning",
+                "Atlas Scaling & Deployment",
+                "Atlas Search",
+                "Atlas Data Lake"
+            ]
+        },
+        {
+            id: 4,
+            title: "MongoDB Security",
+            description: "Security principles and best practices in MongoDB.",
+            content: [
+                "Security Introduction",
+                "Security Concepts"
+            ]
+        },
+        {
+            id: 5,
+            title: "MongoDB on Cloud",
+            description: "Exploring MongoDB Cloud products and services.",
+            content: [
+                "Overview of MongoDB Cloud products",
+                "Using Cloud Manager to monitor MongoDB deployments",
+                "Introduction to MongoDB Stitch",
+                "MongoDB Cloud Atlas",
+                "MongoDB Cloud Manager",
+                "Working with MongoDB Ops Manager",
+                "Realm - Application Development Service",
+                "Charts - Visualization of MongoDB Data",
+                "MongoDB - Industry Use Cases"
             ]
         }
-        // Add more modules based on course content
     ],
+    
 
     highlights: [
         {

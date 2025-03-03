@@ -243,7 +243,155 @@ export const analystData: CourseAnalystData = {
 
 
 
- 
+"specialisation-in-splunk": {
+  "title": "Rising Demand",
+  "subtitle": "for Splunk Engineers",
+  "salary": {
+    "label": "Jobs in Splunk",
+    "values": [850000, 1230000, 2500000] // Converting 8.5L, 12.3L, 25L to actual numbers
+  },
+  "companies": [
+    "Accenture",
+    "TCS",
+    "Infosys",
+    "Wipro",
+    "IBM",
+    "HCL Technologies",
+    "Cognizant",
+    "Capgemini",
+    "Oracle",
+    "Tech Mahindra"
+  ] as CompanyName[],
+  "demand": 38, // Estimated based on job market data
+  "jobCount": "21,450+", // Sum of jobs from Naukri (18,000), Glassdoor (1,350), Indeed (1,200), LinkedIn (900)
+  "description": "Splunk Engineers in India are experiencing rising salaries due to the growing demand for data analysis, security monitoring, and log management. In 2025, entry-level salaries range from ₹6–12 lakh annually, while experienced professionals earn ₹15 lakh or more, highlighting the increasing reliance on Splunk for enterprise security, observability, and real-time data insights",
+  "yearLabel": "In 2025",
+  "salaryLabel": "Average Salaries",
+  "companiesLabel": "Companies Hiring",
+  "jobsLabel": "Available Jobs",
+  "jobsDescription": "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+},
+
+
+"docker-certified-associate-2024": {
+    title: "Docker Professionals – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "High Demand for Docker Experts in 2025",
+    salary: {
+      label: "Salaries for Docker Professionals",
+      values: [600000, 1200000, 2000000, 3000000]
+    },
+    companies: [
+      "Amazon Web Services (AWS)",
+      "Google Cloud (GCP)",
+      "Microsoft (Azure)",
+      "Netflix",
+      "Adobe",
+      "PayPal",
+      "Infosys",
+      "Tata Consultancy Services (TCS)",
+      "Cognizant",
+      "Zoho"
+    ],
+    demand: 40,
+    jobCount: "20,500+",
+    description: "Docker professionals are in high demand as organizations increasingly adopt containerization for scalable and efficient software deployment. Mastering Docker and container orchestration can significantly boost career opportunities in cloud-native environments, making it a must-have skill for DevOps and cloud engineers in 2025.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring Docker Experts",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+  },
+
+
+"specialisation-in-mongodb": {
+    title: "MongoDB Professionals – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "High Demand for MongoDB Experts in 2025",
+    salary: {
+      label: "Salaries for MongoDB Professionals",
+      values: [600000, 1000000, 1800000, 2800000]
+    },
+    companies: [
+      "Google",
+      "Amazon",
+      "Netflix",
+      "Uber",
+      "Paytm",
+      "Flipkart",
+      "Salesforce",
+      "Razorpay",
+      "Swiggy",
+      "Zomato"
+    ],
+    demand: 35,
+    jobCount: "12,500+",
+    description: "MongoDB professionals are in high demand as organizations shift towards NoSQL databases for high-performance, scalable applications. In 2025, MongoDB engineers can expect strong career growth, with salaries exceeding ₹18 lakh per annum for experienced professionals, making NoSQL expertise a key skill for modern database management.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring MongoDB Professionals",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+  },
+
+  
+  
+"specialisation-in-jenkins": {
+    title: "Jenkins Professionals – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "High Demand for Jenkins Experts in 2025",
+    salary: {
+      label: "Salaries for Jenkins Professionals",
+      values: [600000, 1200000, 1800000, 2500000]
+    },
+    companies: [
+      "Amazon Web Services (AWS)",
+      "Google Cloud (GCP)",
+      "Microsoft (Azure)",
+      "Red Hat",
+      "Accenture",
+      "Infosys",
+      "TCS",
+      "Cognizant",
+      "Capgemini",
+      "Wipro"
+    ],
+    demand: 45,
+    jobCount: "38,500+",
+    description: "With enterprises adopting CI/CD pipelines and automation-driven workflows, Jenkins expertise is a must-have skill for DevOps professionals, cloud engineers, and software automation specialists. Mastering Jenkins ensures career growth in cloud-based software development and continuous integration.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring Jenkins Experts",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+  },
+  // ====================================================================
+
+"specialisation-in-ansible": {
+    title: "Ansible Automation Professionals – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "High Demand for Ansible Experts in 2025",
+    salary: {
+      label: "Salaries for Ansible Professionals",
+      values: [600000, 1200000, 1800000, 2500000]
+    },
+    companies: [
+      "Red Hat",
+      "Amazon Web Services (AWS)",
+      "Google Cloud (GCP)",
+      "Microsoft (Azure)",
+      "Accenture",
+      "Infosys",
+      "TCS",
+      "Cognizant",
+      "Capgemini",
+      "Wipro"
+    ],
+    demand: 40,
+    jobCount: "33,200+",
+    description: "With the rise of infrastructure automation, Ansible expertise is becoming essential for DevOps engineers, cloud professionals, and IT administrators. Learning Ansible can boost your career in automation-driven workflows, hybrid cloud management, and enterprise-level orchestration.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring Ansible Experts",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+  }
  
 };
 
