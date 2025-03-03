@@ -181,6 +181,92 @@ export const specialisationInKubernetes: Course = {
             "Creating Config Maps",
             "Making Ports Permanent in Apache Webserver"
           ]
+        },
+        {
+          id: 11,
+          title: "Networking",
+          description: "Understanding Ingress, network policies, and DNS management",
+          content: [
+            "What is Ingress?",
+            "What is an Ingress Controller?",
+            "What is Path-Based Routing?",
+            "Creating an Ingress Controller",
+            "Setting Local DNS",
+            "What is a Network Policy?",
+            "How to Create Network Policies",
+            "Filtering Network Packets",
+            "Source & Destination Ports",
+            "Ingress & Egress",
+            "Editing Image Name After Launching a Container"
+          ]
+        },
+        {
+          id: 12,
+          title: "Design Patterns & Logs",
+          description: "Exploring pod design patterns, logging, and agent programs",
+          content: [
+            "Different Pod Design Patterns",
+            "Understanding Logs",
+            "Agent Programs in Kubernetes",
+            "Viewing Logs in Apache Webserver",
+            "Changing Log Formats",
+            "Sidecar & Ambassador Design Patterns"
+          ]
+        },
+        {
+          id: 13,
+          title: "Container Security",
+          description: "Understanding user permissions, capabilities, and security measures",
+          content: [
+            "Creating a General User",
+            "Understanding Capabilities",
+            "Granting All Capabilities to a Container",
+            "Removing Capabilities from a Pod",
+            "File Permission Management",
+            "Using strace Command",
+            "Service Accounts in Kubernetes",
+            "Listing All Service Accounts",
+            "Understanding Tokens & Their Storage",
+            "Using Tokens in curl Commands"
+          ]
+        },
+        {
+          id: 14,
+          title: "Custom Resources & CRD",
+          description: "Exploring Custom Resources and CRDs in Kubernetes",
+          content: [
+            "Checking Available Resources",
+            "Understanding Custom Resources",
+            "Creating Custom Resources in Kubernetes"
+          ]
+        },
+        {
+          id: 15,
+          title: "Projects",
+          description: "Hands-on Kubernetes projects",
+          content: [
+            "Launching Apache Webserver in a Pod",
+            "Multi-Container Pod Setup",
+            "Creating RHEL-8 Kubernetes Client"
+          ]
+        },
+        {
+          id: 16,
+          title: "Interview Questions",
+          description: "Preparing for Kubernetes certification and job interviews",
+          content: [
+            "Certified Kubernetes Administrator (CKA) Questions",
+            "Certified Kubernetes Application Developer (CKAD) Questions"
+          ]
+        },
+        {
+          id: 17,
+          title: "Preparation for Global Certification",
+          description: "Practical knowledge required to pass Kubernetes certifications",
+          content: [
+            "Certified Kubernetes Administrator (CKA) Preparation",
+            "Certified Kubernetes Application Developer (CKAD) Preparation"
+          ]
         }
       ],
 
