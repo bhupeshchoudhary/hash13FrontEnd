@@ -8,21 +8,21 @@ export const specialisationInTerraform: Course = {
     totalRatings: 10,
     duration: "45 Hours",
     hours: "45+",
-    price: 2000,
-    originalPrice: 7000,
+    price: 3993,
+    originalPrice: 7500,
     enrolledStudents: 12000,
-    shortDescription: "Industry-Certified Training | Hands-On Labs | Real-World Projects | Best-In-Class Curriculum",
+    shortDescription: "45+ Hours | Comprehensive Modules | 3 Capstone Projects",
     paymentLink: "",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
 
     learningOutcomes: [
-        "Infrastructure as Code (IaC) fundamentals and best practices",
-        "AWS resource deployment and management with Terraform",
-        "Provisioners and configuration management",
-        "Module creation and reuse for efficient infrastructure",
-        "State management and remote state storage"
+        "Terraform Concepts",
+        "Terraform Modules",
+        "Terraform State",
+        "Managing Multiple Environments & Resource Meta Parameters",
+        "Provisioners in Terraform"
     ],
-
+    
     features: [
         "Industry-Relevant Infrastructure Automation Training",
         "Technical Support for 90 days",
@@ -55,47 +55,111 @@ export const specialisationInTerraform: Course = {
     module: [
         {
             id: 1,
-            title: "Introduction to Infrastructure as Code",
-            description: "Fundamentals of IaC and Terraform basics",
+            title: "Prerequisite before Terraform Sessions",
+            description: "AWS setup and Linux fundamentals",
             content: [
-                "What is Infrastructure as Code?",
-                "Terraform Overview",
-                "Installation and Setup",
-                "Basic Terraform Commands",
-                "HCL Syntax",
-                "Terraform Workflow",
-                "Provider Configuration"
+                "AWS Account Setup",
+                "Configuring putty with AWS",
+                "Introduction to linux commands"
             ]
         },
         {
             id: 2,
-            title: "AWS Resource Management",
-            description: "Managing AWS infrastructure with Terraform",
+            title: "Reference Material",
+            description: "Session resources and documentation",
             content: [
-                "AWS Provider Configuration",
-                "EC2 Instance Management",
-                "VPC and Networking",
-                "Security Groups",
-                "S3 Bucket Creation",
-                "IAM Role Management",
-                "RDS Database Setup"
+                "Resources shared during Session",
+                "Screenshot of hands-on steps",
+                "Practice materials"
             ]
         },
         {
             id: 3,
-            title: "State Management",
-            description: "Understanding and managing Terraform state",
+            title: "Terraform Introduction and Use Case",
+            description: "Fundamentals and implementation",
             content: [
-                "Local State",
-                "Remote State Storage",
-                "State Locking",
-                "State Management Best Practices",
-                "Import Existing Resources",
-                "State Migration",
-                "Workspace Management"
+                "Infrastructure as a code Concept",
+                "Terraform Introduction",
+                "AWS Services",
+                "Benefits of Terraform with MultiCloud",
+                "Step by Step demonstration about writing Terraform Codes with AWS provider",
+                "Setup with hands on activity"
             ]
         },
-        // Add more modules as needed
+        {
+            id: 4,
+            title: "Bonus Sessions - AWS VPC Services",
+            description: "AWS fundamentals for beginners",
+            content: [
+                "AWS Services in depth",
+                "VPC Configuration",
+                "AWS Infrastructure basics",
+                "Automation preparation",
+                "Hands-on activity preparation"
+            ]
+        },
+        {
+            id: 5,
+            title: "Terraform Provisioners",
+            description: "Implementation of provisioners",
+            content: [
+                "AWS Profiles",
+                "Terraform Provisioner",
+                "Types of Provisioner",
+                "Null Resource",
+                "Difference between remote-exec and local-exec",
+                "Terraform Variables file terraform.tfvars",
+                "terraform Workspace introduction"
+            ]
+        },
+        {
+            id: 6,
+            title: "Terraform Certified Associate",
+            description: "Certification preparation",
+            content: [
+                "Terraform Certification Exam preparation",
+                "Query resolution",
+                "Practice materials"
+            ]
+        },
+        {
+            id: 7,
+            title: "Terraform Modules",
+            description: "Advanced terraform commands and modules",
+            content: [
+                "Terraform Modules",
+                "Application of Output Block",
+                "Importance of main.tf, output.tf, variables.tf",
+                "terraform fmt",
+                "terraform taint",
+                "Usage of terraform -out",
+                "Use of -target keyword",
+                "Terraform Logs"
+            ]
+        },
+        {
+            id: 8,
+            title: "Terraform State File and different Use Case",
+            description: "State management and security",
+            content: [
+                "Security Groups",
+                "State Lock",
+                "Use case of S3 and DynamoDB for State Lock",
+                "Using alias for different providers",
+                "Terraform Cloud with SCM Integration",
+                "Terraform Vault introduction"
+            ]
+        },
+        {
+            id: 9,
+            title: "Practice Question Sets",
+            description: "Certification exam preparation",
+            content: [
+                "Practice papers for Terraform Certification",
+                "Hands-on activity completion",
+                "Final preparation materials"
+            ]
+        }
     ],
 
     highlights: [
@@ -158,17 +222,17 @@ export const specialisationInTerraform: Course = {
             {
                 id: "basics",
                 icon: "TrendingUp",
-                title: "Infrastructure as Code: Terraform basics, HCL, providers"
+                title: "Infrastructure as Code (IaC): Learn to automate infrastructure provisioning using Terraform."
             },
             {
                 id: "aws",
                 icon: "BarChart",
-                title: "AWS Integration: EC2, VPC, S3, RDS, IAM management"
+                title: "AWS Integration: Gain expertise in deploying and managing AWS resources with Terraform."
             },
             {
                 id: "state",
                 icon: "Cpu",
-                title: "State Management: Remote state, locking, workspaces"
+                title: "Provisioners & Modules: Utilize provisioners for configuration management and create reusable modules for efficient infrastructure management."
             },
             {
                 id: "modules",
@@ -178,7 +242,7 @@ export const specialisationInTerraform: Course = {
             {
                 id: "automation",
                 icon: "BarChart",
-                title: "Automation: CI/CD integration, automated deployments"
+                title: "State Management: Understand and manage Terraform state files for reliable infrastructure deployments."
             }
         ]
     },

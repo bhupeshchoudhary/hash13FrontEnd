@@ -221,9 +221,9 @@ export const faqContent: FAQContent = {
     ...sharedSpecializationContent
   },
 
-  "specialisation-in-kubernetes": {
+"specialisation-in-kubernetes" : {
     ...sharedSpecializationContent
-  },
+},
 
   "specialisation-in-docker": {
     ...sharedSpecializationContent
