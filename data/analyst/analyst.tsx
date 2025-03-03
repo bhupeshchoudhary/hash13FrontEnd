@@ -135,8 +135,37 @@ export const analystData: CourseAnalystData = {
   companiesLabel: "Companies Hiring",
   jobsLabel: "Available Jobs",
   jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and AmbitionBox"
-}
- 
+},
+//  ============================================================================
+
+"docker-certified-associate-2024": {
+    title: "Docker Professionals – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "High Demand for Docker Experts in 2025",
+    salary: {
+      label: "Salaries for Docker Professionals",
+      values: [600000, 1200000, 2000000, 3000000]
+    },
+    companies: [
+      "Amazon Web Services (AWS)",
+      "Google Cloud (GCP)",
+      "Microsoft (Azure)",
+      "Netflix",
+      "Adobe",
+      "PayPal",
+      "Infosys",
+      "Tata Consultancy Services (TCS)",
+      "Cognizant",
+      "Zoho"
+    ],
+    demand: 40,
+    jobCount: "20,500+",
+    description: "Docker professionals are in high demand as organizations increasingly adopt containerization for scalable and efficient software deployment. Mastering Docker and container orchestration can significantly boost career opportunities in cloud-native environments, making it a must-have skill for DevOps and cloud engineers in 2025.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring Docker Experts",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+  },
  
 };
 

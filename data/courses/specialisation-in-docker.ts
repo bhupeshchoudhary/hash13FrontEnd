@@ -1,14 +1,14 @@
 import { Course } from "../../types/courses";
 
 export const specialisationInDocker: Course = {
-    _id: "specialisation-in-docker",
-    title: "Docker Certified Associate (DCA) Training",
+    _id: "docker-certified-associate-2024",
+    title: "Docker Certified Associate [B] [R] (DCA) Training  [/R] [/B]",
     slug: "docker-certified-associate-2024",
     rating: 4.9,
     totalRatings: 10,
     duration: "20 Hours",
     hours: "20+",
-    price: 2000,
+    price: 1650,
     originalPrice: 7000,
     enrolledStudents: 12000,
     shortDescription: "Industry-Certified Docker DCA Training | Hands-On Labs | Real-World Projects | Best-In-Class Curriculum",
@@ -184,3 +184,4 @@ export const specialisationInDocker: Course = {
         ]
     },
 }
+
