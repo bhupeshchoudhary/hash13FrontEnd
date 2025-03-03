@@ -55,49 +55,131 @@ export const specialisationInDocker: Course = {
 
     module: [
         {
-            id: 1,
-            title: "Docker Fundamentals",
-            description: "Core concepts of containerization and Docker basics",
-            content: [
-                "Introduction to Containerization",
-                "Docker Architecture",
-                "Docker Installation & Setup",
-                "Docker CLI Basics",
-                "Container Lifecycle",
-                "Docker Images",
-                "Dockerfile Creation"
-            ]
+          id: 1,
+          title: "Introduction to Docker",
+          description: "Understanding Docker and its basics",
+          content: [
+            "Understanding Docker: Introduction and Basics",
+            "History of Docker",
+            "Main Use of an Operating System in Containerization",
+            "Four Different Ways of Installing an Operating System"
+          ]
         },
         {
-            id: 2,
-            title: "Container Management",
-            description: "Advanced container operations and management",
-            content: [
-                "Container Networking",
-                "Volume Management",
-                "Resource Constraints",
-                "Container Security",
-                "Logging & Monitoring",
-                "Docker Registry",
-                "Image Management"
-            ]
+          id: 2,
+          title: "Containerization and Docker Ecosystem",
+          description: "Exploring containerization and real-world applications",
+          content: [
+            "Containerization",
+            "Case Study on Hotstar: Real-world Application",
+            "Scaling and Tech Stack",
+            "Understanding Bare Metal vs. Cloud Computing vs. Virtualization",
+            "Introduction to AWS Cloud and EC2 Instance"
+          ]
         },
         {
-            id: 3,
-            title: "Multi-Container Applications",
-            description: "Managing complex applications with Docker Compose",
-            content: [
-                "Docker Compose Basics",
-                "Service Definition",
-                "Network Configuration",
-                "Volume Configuration",
-                "Environment Variables",
-                "Compose File Versions",
-                "Multi-Container Deployment"
-            ]
+          id: 3,
+          title: "Getting Started with Docker",
+          description: "Installing Docker and working with container images",
+          content: [
+            "Installing Docker and Starting Docker Service",
+            "Understanding Container Image and Docker Hub",
+            "Working with Ubuntu and Docker Engine",
+            "Operating System Images"
+          ]
+        },
+        {
+          id: 4,
+          title: "Docker Basic Commands and Operations",
+          description: "Managing containers and web servers using Docker commands",
+          content: [
+            "Docker Engine and Image",
+            "Launching Containers and Web Servers",
+            "Managing Containers: rm Command and Networking",
+            "Configuring Web Servers: Install httpd and Networking Basics"
+          ]
+        },
+        {
+          id: 5,
+          title: "Advanced Docker Operations",
+          description: "Exploring Docker commands and web server configurations",
+          content: [
+            "Exploring Docker Info and Echo Commands",
+            "Creating Web Pages and Web Servers",
+            "Configuring Containers as Web Servers and Database Servers",
+            "Introduction to WordPress and Three-Tier Architecture"
+          ]
+        },
+        {
+          id: 6,
+          title: "Docker Networking and Infrastructure",
+          description: "Understanding Docker networking fundamentals",
+          content: [
+            "Understanding Docker Networking and Firewall",
+            "Networking Basics: LAN, NAT, ISP, SDN",
+            "Exploring Bridge and IPAM",
+            "Custom Network Infrastructure and Docker Compose"
+          ]
+        },
+        {
+          id: 7,
+          title: "Docker Compose and Multicontainer Applications",
+          description: "Managing multi-container applications with Docker Compose",
+          content: [
+            "Introduction to Docker Compose Tool",
+            "Understanding Multicontainer Applications and 3-Tier Architecture",
+            "Writing YAML Code and Running Containers in Detached Mode",
+            "Docker Compose Compatibility Matrix and Installation in RHEL"
+          ]
+        },
+        {
+          id: 8,
+          title: "Image Management and Optimization",
+          description: "Creating and optimizing Docker images",
+          content: [
+            "Creating Own Images and Docker Files",
+            "Understanding Docker Commit and Run Keywords",
+            "Docker Registry and Docker Hub Operations",
+            "Integrating Docker File and Docker Compose for Various Applications"
+          ]
+        },
+        {
+          id: 9,
+          title: "Advanced Docker Concepts",
+          description: "Exploring advanced Docker concepts and swarm clusters",
+          content: [
+            "Exploring Container Namespace and Resource Isolation",
+            "Understanding Process and Nested Process in Docker",
+            "Swarm Clusters: Introduction and Setup",
+            "Docker Engine, Bridge, and Distributed Network"
+          ]
+        },
+        {
+          id: 10,
+          title: "Docker Orchestration and High Availability",
+          description: "Scaling and orchestrating Docker applications",
+          content: [
+            "Creating Clusters using Docker Swarm",
+            "Multi-Tier Applications and Fault Tolerance",
+            "Horizontal Scaling and Load Balancing",
+            "Docker Compose with Swarm and Stack Creation"
+          ]
+        },
+        {
+          id: 11,
+          title: "Advanced Networking and Security",
+          description: "Implementing advanced networking and security in Docker",
+          content: [
+            "Overlay Network and Packet Encryption",
+            "Exploring VXLAN and Opt Options",
+            "Docker Networking with Single Node and Distributed Environment",
+            "Implementing Docker Compose File with Redis and other services",
+            "Server Hardening and Security Best Practices",
+            "Docker Performance Optimization Techniques"
+          ]
         }
-        // Add more modules based on course content
-    ],
+      ],
+      
 
     highlights: [
         {
