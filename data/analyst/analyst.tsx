@@ -12,7 +12,17 @@ import infosys from "../../public/assets/landingPage/companyLogo/infosys.png";
 import jpmorgan from "../../public/assets/landingPage/companyLogo/jpmorgan.png";
 import redhat from "../../public/assets/landingPage/companyLogo/redhat.png";
 import microsoft from "../../public/assets/landingPage/companyLogo/mircosoft.png";
+import accenture from "../../public/assets/landingPage/companyLogo/accenture.png";
+import capgemini from "../../public/assets/landingPage/companyLogo/capgemini.png";
+import cognizant from "../../public/assets/landingPage/companyLogo/cognizant.png";
+import hcl from "../../public/assets/landingPage/companyLogo/HCL.png";
+import Oracle from "../../public/assets/landingPage/companyLogo/Oracle.jpg";
+import tcs from "../../public/assets/landingPage/companyLogo/tcs.png";
+import wipro from "../../public/assets/landingPage/companyLogo/Wipro.svg";
+import techmahindra from "../../public/assets/landingPage/companyLogo/TechMahindra.png";
+
 import {SalaryData, AnalystData, CourseAnalystData} from "../../types/analyst"
+
 
 
 
@@ -29,6 +39,15 @@ export type CompanyName =
   | "JPMorgan"
   | "Redhat"
   | "Microsoft"
+  | "Wipro"
+  | "Tcs"
+  | "Oracle"
+  | "Hcl"
+  | "Cognizant"
+  | "Capgemini"
+  | "Accenture"
+  | "TechMahindra"
+
  
 
 
@@ -45,8 +64,14 @@ export const companyLogos: Record<CompanyName, string> = {
   JPMorgan: jpmorgan.src,
   Redhat: redhat.src,
   Microsoft: microsoft.src,
- 
- 
+  Wipro: wipro.src,
+  Tcs: tcs.src,
+  Oracle: Oracle.src,
+  Hcl: hcl.src,
+  Cognizant: cognizant.src,
+  Capgemini: capgemini.src,
+  Accenture: accenture.src,
+  TechMahindra:techmahindra.src
 };
 
 
@@ -108,7 +133,7 @@ export const analystData: CourseAnalystData = {
   },
   companies: [
     "Accenture",
-    "TCS",
+    "Tcs",
     "Infosys",
     "Wipro",
     "IBM",
@@ -140,8 +165,8 @@ export const analystData: CourseAnalystData = {
     "label": "Jobs in Shell Scripting",
     "values": [729000, 982000, 2000000] // Converting 7.29L, 9.82L, 20L to actual numbers
   },
-  "companies": [
-    "TCS",
+  companies: [
+    "Tcs",
     "Infosys",
     "Wipro",
     "Capgemini",
@@ -150,7 +175,7 @@ export const analystData: CourseAnalystData = {
     "Accenture",
     "HCL Technologies",
     "Oracle",
-    "Tech Mahindra"
+    "TechMahindra"
   ] as CompanyName[],
   "demand": 35, // Estimated based on job market data
   "jobCount": "37,962+", // Sum of jobs from all platforms (35,000 + 1,162 + 1,000 + 800)
