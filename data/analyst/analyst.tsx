@@ -20,7 +20,16 @@ import Oracle from "../../public/assets/landingPage/companyLogo/Oracle.jpg";
 import tcs from "../../public/assets/landingPage/companyLogo/tcs.png";
 import wipro from "../../public/assets/landingPage/companyLogo/Wipro.svg";
 import techmahindra from "../../public/assets/landingPage/companyLogo/TechMahindra.png";
-
+import amazon from "../../public/assets/landingPage/companyLogo/Amazon.png";
+import flipkart from "../../public/assets/landingPage/companyLogo/Flipkart.png";
+import netflix from "../../public/assets/landingPage/companyLogo/Netflix.png";
+import paytm from "../../public/assets/landingPage/companyLogo/paytm.png";
+import razorpay from "../../public/assets/landingPage/companyLogo/razorpay.png";
+import salesforce from "../../public/assets/landingPage/companyLogo/salesforce.png";
+import swiggy from "../../public/assets/landingPage/companyLogo/Swiggy.png";
+import uber from "../../public/assets/landingPage/companyLogo/Uber.png";
+import zomato from "../../public/assets/landingPage/companyLogo/Zomato.png";
+ 
 import {SalaryData, AnalystData, CourseAnalystData} from "../../types/analyst"
 
 
@@ -47,6 +56,14 @@ export type CompanyName =
   | "Capgemini"
   | "Accenture"
   | "TechMahindra"
+  | "Amazon"
+  | "Flipkart"
+  | "Netflix"
+  | "Salesforce"
+  | "Swiggy"
+  | "Uber"
+  | "Zomato"
+  | "Razorpay"
 
  
 
@@ -71,7 +88,15 @@ export const companyLogos: Record<CompanyName, string> = {
   Cognizant: cognizant.src,
   Capgemini: capgemini.src,
   Accenture: accenture.src,
-  TechMahindra:techmahindra.src
+  TechMahindra: techmahindra.src,
+  Amazon: amazon.src,
+  Flipkart: flipkart.src,
+  Netflix: netflix.src,
+  Salesforce: salesforce.src,
+  Swiggy: swiggy.src,
+  Uber: uber.src,
+  Zomato: zomato.src,
+  Razorpay: razorpay.src
 };
 
 
