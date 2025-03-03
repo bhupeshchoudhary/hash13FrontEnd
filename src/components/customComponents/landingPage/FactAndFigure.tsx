@@ -64,9 +64,9 @@ export default function FactsAndFigure() {
                 <Image
                   src={feature.image}
                   alt={feature.title}
-                  width={index === 4 ? 400 : 120}
+                  width={index === 4 ? 300 : 120}
                   height={index === 4 ? 180 : 80}
-                  className="rounded-md h-auto object-cover w-full md:w-auto max-w-full"
+                  className="rounded-md h-auto object-cover w-full md:w-auto max-w-full "
                 />
               </div>
             </div>
