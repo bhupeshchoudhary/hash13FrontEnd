@@ -1,7 +1,7 @@
 import { Course } from "../../types/courses";
 export const specialisationInKubernetes: Course = {
     _id: "specialisation-in-kubernetes",
-    title: "Specialization in Kubernetes - Become a Kubernetes Expert",
+    title: "Specialization in Kubernetes - [B] [R] Become a Kubernetes Expert [/R] [B]",
     slug: "specialisation-in-kubernetes",
     rating: 4.9,
     totalRatings: 10,
@@ -55,49 +55,134 @@ export const specialisationInKubernetes: Course = {
 
     module: [
         {
-            id: 1,
-            title: "Kubernetes Fundamentals",
-            description: "Core concepts and architecture",
-            content: [
-                "Kubernetes Architecture",
-                "API Server & Components",
-                "Cluster Setup",
-                "kubectl CLI",
-                "Pods & Containers",
-                "Controllers & ReplicaSets",
-                "Deployments"
-            ]
+          id: 1,
+          title: "Lab Setup",
+          description: "Setting up a Minikube cluster with Minikube",
+          content: [
+            "Minikube Installation",
+            "Cluster Initialization",
+            "Basic Cluster Management"
+          ]
         },
         {
-            id: 2,
-            title: "Advanced Deployment Strategies",
-            description: "Complex deployment patterns and techniques",
-            content: [
-                "Rolling Updates",
-                "Blue-Green Deployments",
-                "Canary Releases",
-                "StatefulSets",
-                "DaemonSets",
-                "Jobs & CronJobs",
-                "Resource Management"
-            ]
+          id: 2,
+          title: "Introduction to Kubernetes",
+          description: "Understanding Kubernetes basics",
+          content: [
+            "Starting the Kubernetes Cluster",
+            "Interacting with Kubernetes Cluster",
+            "What is a Pod?",
+            "Launching a Pod using CLI",
+            "YAML Language Basics",
+            "Creating a Pod using YAML",
+            "Checking Pod Details",
+            "Deleting All Pods"
+          ]
         },
         {
-            id: 3,
-            title: "Networking & Services",
-            description: "Kubernetes networking concepts",
-            content: [
-                "Service Types",
-                "Ingress Controllers",
-                "Network Policies",
-                "Load Balancing",
-                "Service Discovery",
-                "DNS Management",
-                "Container Network Interface"
-            ]
+          id: 3,
+          title: "Labels & Load Balancer",
+          description: "Exploring labels, selectors, replication controllers, and replica sets",
+          content: [
+            "What are Labels?",
+            "Setting Labels in a Pod",
+            "Types of Selectors",
+            "What is a Replication Controller?",
+            "Creating a Replication Controller",
+            "Scaling Pods",
+            "Creating a Load Balancer",
+            "What is a Replica Set?"
+          ]
+        },
+        {
+          id: 4,
+          title: "Environmental Variables",
+          description: "Understanding and managing environment variables in Kubernetes",
+          content: [
+            "What is an Environmental Variable?",
+            "Creating Environmental Variables",
+            "Viewing Environmental Variables in Pods",
+            "Difference Between kubectl create & apply"
+          ]
+        },
+        {
+          id: 5,
+          title: "Storage",
+          description: "Understanding Persistent Volumes, Claims, and Storage Classes",
+          content: [
+            "Types of Storage",
+            "Making Storage Persistent",
+            "Persistent Volume Claim (PVC) & How to Create PVC",
+            "Persistent Volume (PV) & How to Create PV",
+            "Storage Classes (SC) & Their Types",
+            "Dynamic Provisioning",
+            "NFS in Storage Class"
+          ]
+        },
+        {
+          id: 6,
+          title: "Deployment",
+          description: "Understanding deployment strategies and rolling updates",
+          content: [
+            "What is Deployment?",
+            "Deployment Strategies",
+            "Rolling In & Rolling Out",
+            "Recreate vs Rolling Update Strategy",
+            "Launching Pods with Deployment"
+          ]
+        },
+        {
+          id: 7,
+          title: "Secrets",
+          description: "Understanding secrets in Kubernetes and how to use them",
+          content: [
+            "What are Secrets in Kubernetes?",
+            "How to Use Secrets",
+            "What is Kustomize?",
+            "Using Kustomize for Launching WordPress & MariaDB Pods"
+          ]
+        },
+        {
+          id: 8,
+          title: "Namespace",
+          description: "Understanding namespaces, authentication, and Kubernetes context",
+          content: [
+            "What is a Namespace?",
+            "Creating a Namespace",
+            "Launching Pods in a Namespace",
+            "Authentication in Kubernetes",
+            "Understanding Kubernetes Context"
+          ]
+        },
+        {
+          id: 9,
+          title: "Authentication & User Management",
+          description: "Understanding API server, authentication types, and RBAC",
+          content: [
+            "How API Server Works",
+            "Types of Authentication",
+            "Creating a RHEL-8 Kubernetes Client",
+            "Understanding Context & Custom Context",
+            "Config Files & Keys",
+            "Encryption & Decryption",
+            "Certificate Signing Request (CSR)",
+            "Certificate Authority (CA)",
+            "Role-Based Access Control (RBAC)",
+            "Practical: Creating CSR & Role"
+          ]
+        },
+        {
+          id: 10,
+          title: "Config Map",
+          description: "Understanding configuration files and Config Maps",
+          content: [
+            "What are Configuration Files?",
+            "Understanding Config Map",
+            "Creating Config Maps",
+            "Making Ports Permanent in Apache Webserver"
+          ]
         }
-        // Add more modules based on course content
-    ],
+      ],
 
     highlights: [
         {
