@@ -136,7 +136,7 @@ export const analystData: CourseAnalystData = {
   jobsLabel: "Available Jobs",
   jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and AmbitionBox"
 },
-//  ============================================================================
+
 
 "docker-certified-associate-2024": {
     title: "Docker Professionals – Salaries, Hiring Companies & Job Opportunities in India",
@@ -166,6 +166,36 @@ export const analystData: CourseAnalystData = {
     jobsLabel: "Job Opportunities",
     jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
   },
+
+  // ===================================================================
+"specialisation-in-mongodb": {
+    title: "MongoDB Professionals – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "High Demand for MongoDB Experts in 2025",
+    salary: {
+      label: "Salaries for MongoDB Professionals",
+      values: [600000, 1000000, 1800000, 2800000]
+    },
+    companies: [
+      "Google",
+      "Amazon",
+      "Netflix",
+      "Uber",
+      "Paytm",
+      "Flipkart",
+      "Salesforce",
+      "Razorpay",
+      "Swiggy",
+      "Zomato"
+    ],
+    demand: 35,
+    jobCount: "12,500+",
+    description: "MongoDB professionals are in high demand as organizations shift towards NoSQL databases for high-performance, scalable applications. In 2025, MongoDB engineers can expect strong career growth, with salaries exceeding ₹18 lakh per annum for experienced professionals, making NoSQL expertise a key skill for modern database management.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring MongoDB Professionals",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+  }
  
 };
 
