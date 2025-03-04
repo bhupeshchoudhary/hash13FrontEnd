@@ -110,15 +110,16 @@ const About = () => {
             <div>
               <p className="text-teal-500 text-sm font-medium mb-2">About #13</p>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-               Unlock limitless learning—anytime,<br />
+               Real-World Learning,<br />
               
                 <span className="text-[#ff0000] relative">
-                Anywhere!
+                Always 
                   <div className="absolute -bottom-0.5 left-0 w-full h-0.5 " >
                      <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
-                     {/* <curveLine></curveLine> */}
+                      {/* <curveLine></curveLine>  */}
                     </div>
-                </span>
+                  </span> 
+                   Up-to-Date
               </h1>
               <p className="text-gray-500 text-sm">
                 Learn while working or studying from any place, across any device.
