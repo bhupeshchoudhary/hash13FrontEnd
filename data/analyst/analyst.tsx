@@ -29,7 +29,9 @@ import salesforce from "../../public/assets/landingPage/companyLogo/salesforce.p
 import swiggy from "../../public/assets/landingPage/companyLogo/Swiggy.png";
 import uber from "../../public/assets/landingPage/companyLogo/Uber.png";
 import zomato from "../../public/assets/landingPage/companyLogo/Zomato.png";
- 
+import goldman from "../../public/assets/landingPage/companyLogo/Goldman.png";
+import Adobe from "../../public/assets/landingPage/companyLogo/Adobe.png"
+import zoho from "../../public/assets/landingPage/companyLogo/zoho.png"
 import {SalaryData, AnalystData, CourseAnalystData} from "../../types/analyst"
 
 
@@ -64,6 +66,9 @@ export type CompanyName =
   | "Uber"
   | "Zomato"
   | "Razorpay"
+  | "Goldman"
+  | "Adobe"
+  | "zoho"
 
  
 
@@ -96,7 +101,10 @@ export const companyLogos: Record<CompanyName, string> = {
   Swiggy: swiggy.src,
   Uber: uber.src,
   Zomato: zomato.src,
-  Razorpay: razorpay.src
+  Razorpay: razorpay.src,
+  Adobe: Adobe.src,
+  Goldman: goldman.src,
+  zoho: zoho.src
 };
 
 
@@ -229,9 +237,9 @@ export const analystData: CourseAnalystData = {
     "Paytm",
     "Flipkart",
     "Adobe",
-    "JPMorgan Chase",
-    "Goldman Sachs",
-    "Zoho",
+    "JPMorgan",
+    "Goldman",
+    "zoho",
     "Infosys"
   ] as CompanyName[],
   "demand": 45, // Estimated based on job market data
@@ -255,14 +263,14 @@ export const analystData: CourseAnalystData = {
     "values": [1200000, 1800000, 2500000] // Converting 12L, 18L, 25L to actual numbers
   },
   "companies": [
-    "TCS",
+    "Tcs",
     "Infosys",
     "Wipro",
     "Capgemini",
     "Cognizant",
     "IBM",
     "Accenture",
-    "HCL Technologies",
+    "Hcl",
     "Oracle",
     "Tech Mahindra"
   ] as CompanyName[],
