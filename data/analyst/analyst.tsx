@@ -302,11 +302,11 @@ export const analystData: CourseAnalystData = {
   },
   "companies": [
     "Accenture",
-    "TCS",
+    "Tcs",
     "Infosys",
     "Wipro",
     "IBM",
-    "HCL Technologies",
+    "Hcl",
     "Cognizant",
     "Capgemini",
     "Oracle",
