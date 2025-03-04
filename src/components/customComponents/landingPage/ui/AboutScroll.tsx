@@ -28,7 +28,9 @@ const AboutScroll = () => {
     <section className="py-10 md:py-16 lg:py-20 overflow-hidden">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 lg:mb-10 text-center max-w-4xl mx-auto">
-          Trusted By 400k+ Students Around The World & Placed in Global Big 5!
+        1.7 M+ Learners Trust Us – From Learning to Landing Global Big 5 Jobs
+
+          {/* Trusted By 400k+ Students Around The World & Placed in Global Big 5! */}
         </h2>
         
         <div className="relative w-full overflow-hidden bg-white">

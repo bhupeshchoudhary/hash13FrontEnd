@@ -135,10 +135,12 @@ const About = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Recorded Lectures
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Learn Anytime, Stay Industry-Ready
+
                   </h3>  
                   <p className="text-xs text-gray-500">
-                     Learn at your own pace with flexible recorded lectures!
+                  Master the latest tech skills at your own pace with up-to-date, real-world use case-based learning.
+
                   </p>
                 </div>
               </div>
@@ -153,9 +155,10 @@ const About = () => {
 
 
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Online Learning </h3>
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Flexible Learning, Real-World Impact </h3>
                   <p className="text-xs text-gray-500">
-                  Empower your growth with flexible and accessible online classes!
+                  Upgrade your skills with industry-relevant, hands-on content—learn anywhere, anytime, with practical applications.
+
                   </p>
                 </div>
               </div>
