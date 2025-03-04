@@ -2,8 +2,8 @@ import { LeftLandingPage } from "../../types/leftLandingPage";
 
 export const jsonData: LeftLandingPage = {
     headings: {
-      main: "Master tomorrow's skills today.",
-      sub: "Excel with India's top upskilling platform."
+      main: "Upskill to future-proof your career",
+      sub: " Industry Relevant Technology - Training Programs"
     },
     search: {
       placeholder: "Tell us what you're looking to learn"
@@ -21,7 +21,7 @@ export const jsonData: LeftLandingPage = {
     ],
     community: {
       text: "Join the community of",
-      learnersCount: "10,807,557"
+      learnersCount: "1.7 M+ "
     },
     trendingSearches: [
       "DevOps training",
