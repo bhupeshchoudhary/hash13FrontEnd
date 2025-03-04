@@ -71,10 +71,10 @@ export default function CourseCard({ course }: CourseCardProps) {
   return (
     <Card
       onClick={handleClick}
-      className="group relative overflow-hidden w-full cursor-pointer transition-transform hover:scale-105 flex flex-col h-[320px]"
+      className="group relative overflow-hidden w-full cursor-pointer transition-transform hover:scale-105 flex flex-col h-[340px]"
     >
       {/* Image Container */}
-      <div className="h-[160px] overflow-hidden">
+      <div className="h-[220px] overflow-hidden">
         <img
           src={course.backgroundImage}
           alt={course.title}
