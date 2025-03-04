@@ -78,7 +78,7 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
 
     return (
       <div className="space-y-2">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl flex flex-wrap gap-1">
+        <h1 className="text-3xl sm:text-3xl lg:text-4xl flex flex-wrap gap-1">
           {processText(mainTitle)}
         </h1>
         {subtitle && (

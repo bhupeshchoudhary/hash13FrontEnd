@@ -24,7 +24,7 @@ const CertificateDisplay: React.FC<CertificateDetailsProps> = ({ course }) => {
       <div className="max-w-5xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-6 sm:mb-8">
-          <h1 className="text-2xl md:text-3xl font-bold mb-2 bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-3xl font-bold mb-2 bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
             Get Certified
           </h1>
           <p className="text-sm md:text-base text-gray-700 px-4">

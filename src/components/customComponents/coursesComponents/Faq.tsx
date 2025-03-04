@@ -34,7 +34,7 @@ export default function Faq({ courseId }: FaqProps) {
   return (
     <div className="bg-gradient-to-r from-gray-50 via-white to-red-50" id="Faq">
       <div className="container mx-auto max-w-6xl px-4 py-6">
-        <h1 className="sm:text-2xl lg:text-3xl font-bold mb-8 sm:mb-12 text-center">
+        <h1 className="text-3xl md:text-3xl lg:text-3xl font-bold mb-8 sm:mb-12 text-center">
           Frequently Asked <span className="text-[#ff0000]">Questions</span>
         </h1>
 

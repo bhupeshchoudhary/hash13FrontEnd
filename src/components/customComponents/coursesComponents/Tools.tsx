@@ -51,14 +51,14 @@ const Tools: React.FC<ToolsProps> = ({ courseId }) => {
 
   return (
     <div className="bg-gradient-to-br from-gray-50 via-black-50 to-red-50">
-      <div className="flex flex-col lg:flex-row items-center max-w-6xl justify-between p-4 sm:p-6 lg:p-8 mx-auto">
+      <div className="flex flex-col lg:flex-row items-center max-w-6xl justify-between p-4 md:p-6 lg:p-8 mx-auto">
         {/* Left Text Content */}
-        <div className="lg:w-1/2 space-y-6 sm:space-y-4">
+        <div className="lg:w-1/2 md:space-y-6 lg:space-y-6 space-y-2">
           <h2 className="text-gray-700 text-sm font-semibold">
             {toolsData.sectionTitle}
           </h2>
 
-          <h1 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-gray-900">
+          <h1 className="text-3xl md:text-3xl lg:text-3xl md:mb-0 mb-8 lg:mb-0 font-bold text-gray-900">
             Master {toolsData.toolsCount} Industry Required {toolsData.category}{' '}
             <span className="text-[#ff0000]">Tools & Technologies</span>
           </h1>

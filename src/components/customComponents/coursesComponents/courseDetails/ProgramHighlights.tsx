@@ -20,7 +20,7 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ course }) => {
 
   return (
     <div className="bg-gradient-to-r from-gray-50 to-red-50">
-      <div className="p-6 lg:px-8 max-w-5xl mx-auto">
+      <div className="p-6 lg:px-8 py-6 max-w-5xl mx-auto text-center">
         <h2 className="text-gray-700 text-sm font-semibold mb-2">
           Your Pathway To {course.category || 'Professional'} Career
         </h2>
