@@ -30,7 +30,7 @@ export default function Component() {
           HERE IT FROM THEM
         </h2>
         <h2 className="text-black text-2xl md:text-3xl font-bold mb-10 mt-2">
-          Ambitious People ❤️ #13
+          Ambitious learners  ❤️ #13
         </h2>
         
         <div className="columns-1 md:columns-4 lg:columns-4 gap-6 space-y-4 max-w-5xl mx-auto ">

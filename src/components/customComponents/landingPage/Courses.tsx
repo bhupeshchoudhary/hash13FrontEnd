@@ -31,7 +31,7 @@ export default function CoursesComponent() {
           Popular Courses
         </h2>
         <h1 className="text-3xl font-bold">
-          Choose Our Top{" "}
+          Choose From Our Top{" "}
           <span className="text-[#ff0000] relative">
             Courses
             <span className="absolute bottom-0 left-0 w-full h-1">

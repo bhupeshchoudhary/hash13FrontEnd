@@ -2,8 +2,8 @@ import { LeftLandingPage } from "../../types/leftLandingPage";
 
 export const jsonData: LeftLandingPage = {
     headings: {
-      main: "Master tomorrow's skills today.",
-      sub: "Excel with India's top upskilling platform."
+      main: "Stay ahead—master future skills today!",
+      sub: "Dominate your career with India's leading upskilling platform!"
     },
     search: {
       placeholder: "Tell us what you're looking to learn"
@@ -20,7 +20,7 @@ export const jsonData: LeftLandingPage = {
       "Data Scientist"
     ],
     community: {
-      text: "Join the community of",
+      text: "Join our community of ",
       learnersCount: "10,807,557"
     },
     trendingSearches: [

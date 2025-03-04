@@ -104,9 +104,9 @@ export default function Navbar() {
                   <DropdownMenuTrigger className="flex items-center mx-auto space-x-1 text-sm hover:text-[#ff0000] relative z-50">
                     <span>
                       {key === "workingProfessionals"
-                        ? "For working professionals"
+                        ? "Working Professionals"
                         : key === "collegeStudents"
-                        ? "For college students"
+                        ? "College Students"
                         : "More"}
                     </span>
                     <ChevronDown className="w-4 h-4" />

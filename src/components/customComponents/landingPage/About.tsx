@@ -110,10 +110,10 @@ const About = () => {
             <div>
               <p className="text-teal-500 text-sm font-medium mb-2">About #13</p>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                You Can Learn<br />
-                Anything, Anytime<br />
-                From <span className="text-[#ff0000] relative">
-                  Anywhere
+               Unlock limitless learning—anytime,<br />
+              
+                <span className="text-[#ff0000] relative">
+                Anywhere!
                   <div className="absolute -bottom-0.5 left-0 w-full h-0.5 " >
                      <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
                      {/* <curveLine></curveLine> */}
@@ -121,7 +121,7 @@ const About = () => {
                 </span>
               </h1>
               <p className="text-gray-500 text-sm">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+                Learn while working or studying from any place, across any device.
               </p>
             </div>
 
@@ -134,9 +134,10 @@ const About = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">All Classes Video Provided</h3>  
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Recorded Lectures
+                  </h3>  
                   <p className="text-xs text-gray-500">
-                    There are many variations of passages of but the majority have suffered.
+                     Learn at your own pace with flexible recorded lectures!
                   </p>
                 </div>
               </div>
@@ -151,9 +152,9 @@ const About = () => {
 
 
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Online Class From Expert Teachers</h3>
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Online Learning </h3>
                   <p className="text-xs text-gray-500">
-                    There are many variations of passages of but the majority have suffered.
+                  Empower your growth with flexible and accessible online classes!
                   </p>
                 </div>
               </div>

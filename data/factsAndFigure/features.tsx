@@ -4,19 +4,19 @@ export const features: Features[] = [
     {
       number: "100+",
       title: "Technical Programs",
-      description: "Industry relevant content with real use cases",
+      description: "Industry relevant courses with real world use case",
       image: "/assets/FactsAndFigure/100+.png"
     },
     {
       number: "1M+",
       title: "Students Taught",
-      description: `Technical students' lives changed <br> from across the globe`,
+      description: `Transforming Tech Students Lives Worldwide`,
       image: "/assets/FactsAndFigure/1-M.png"
     },
     {
       number: "65k+",
       title: "IT Professionals",
-      description: "Working in various companies across the globe benefitted",
+      description: "Growing in Global Companies Successfully",
       image: "/assets/FactsAndFigure/65k-professionals.png"
     },
     {
@@ -28,7 +28,7 @@ export const features: Features[] = [
     {
       number: "300+",
       title: "Industry Problems",
-      description: "Get job-ready with practical knowledge & real-world experience",
+      description: "Get Job-Ready with Practical, Real-World Experience",
       image: "/assets/FactsAndFigure/300-industry.png"
     }
   ];

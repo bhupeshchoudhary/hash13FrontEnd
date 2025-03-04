@@ -19,7 +19,7 @@ const PopularTopic = () => {
         <p className="text-sm text-teal-500 mb-2">Start Learning From Today</p>
         <h1 className="text-3xl font-bold">
           Popular <span className="text-[#ff0000] relative">
-            Topics
+            Technologies
             <span className="absolute bottom-0 left-0 w-full h-1  rounded-full">
 
             <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
