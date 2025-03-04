@@ -196,7 +196,7 @@ export const specialisationInDocker: Course = {
         }
     ],
 
-    certificateImage: "",
+    certificateImage: "/assets/certificate/docker_Certificate.jpg",
 
     project: [
         {

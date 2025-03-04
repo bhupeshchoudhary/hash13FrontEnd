@@ -188,7 +188,7 @@ export const specialisationInAnsible: Course = {
         }
     ],
 
-    certificateImage: "",
+    certificateImage: "/assets/certificate/Ansible_certificate.jpg",
 
     project: [
         {

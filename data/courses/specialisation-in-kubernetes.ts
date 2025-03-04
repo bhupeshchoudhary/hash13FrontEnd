@@ -285,7 +285,7 @@ export const specialisationInKubernetes: Course = {
         }
     ],
 
-    certificateImage: "",
+    certificateImage: "/assets/certificate/Kubernetes_certificate.jpg",
 
     project: [
         {

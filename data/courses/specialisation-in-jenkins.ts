@@ -157,7 +157,7 @@ export const specialisationInJenkins: Course = {
         }
     ],
 
-    certificateImage: "",
+    certificateImage: "/assets/certificate/Jenkins_certificate.jpg",
 
     project: [
         {

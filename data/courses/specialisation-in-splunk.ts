@@ -198,7 +198,7 @@ export const specialisationInSplunk:Course ={
         }
     ],
   
-    certificateImage: "/assets/prometheus-grafana.jpg",
+    certificateImage: "/assets/certificate/Splunk_certificate.jpg",
   
     project: [
         {

@@ -238,7 +238,7 @@ export const specialisationInPrometheusGrafana:Course = {
         }
     ],
   
-    certificateImage: "/assets/prometheus-grafana.jpg",
+    certificateImage: "/assets/certificate/Grafana certificate.jpg",
   
     project: [
         {

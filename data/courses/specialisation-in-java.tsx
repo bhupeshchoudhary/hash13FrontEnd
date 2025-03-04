@@ -164,7 +164,7 @@ export const specialisationInJava: Course = {
         }
     ],
 
-    certificateImage: "",
+    certificateImage: "/assets/certificate/Java_Certificate.jpg",
 
     project: [
         {

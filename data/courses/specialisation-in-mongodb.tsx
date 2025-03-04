@@ -146,7 +146,7 @@ export const specialisationInMongoDB: Course = {
         }
     ],
 
-    certificateImage: "",
+    certificateImage: "/assets/certificate/MongoDB_Certificate.jpg",
 
     project: [
         {

@@ -177,7 +177,7 @@ export const specialisationInTerraform: Course = {
         }
     ],
 
-    certificateImage: "",
+    certificateImage: "/assets/certificate/Terraform_certificate.png",
 
     project: [
         {

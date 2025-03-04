@@ -204,7 +204,7 @@ export const specialisationInShellScripting: Course = {
         }
     ],
 
-    certificateImage: "", // Need path
+    certificateImage: "/assets/certificate/Shell_certificate.png", // Need path
 
     project: [
         {
