@@ -3,7 +3,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInJenkins: Course = {
     _id: "specialisation-in-jenkins",
-    title: "[B] Specialization in [R] Jenkins [/R] [/B] & Build Automation Become a Jenkins Expert",
+    title: "[B][R]CI/CD Pipeline with Jenkins [/R][/B] & Build Automation Become a Jenkins Expert",
     slug: "specialisation-in-jenkins",
     rating: 4.9,
     totalRatings: 10,

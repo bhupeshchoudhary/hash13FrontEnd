@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInAnsible: Course = {
     _id: "specialisation-in-ansible",
-    title: "[B] Specialization in  [R] Ansible Automation [/R] [/B] Become an Ansible Automation Expert ",
+    title: "[B][R]Automation with Ansible[/R][/B] Become an Ansible Automation Expert ",
     slug: "specialisation-in-ansible",
     rating: 4.9,
     totalRatings: 10,

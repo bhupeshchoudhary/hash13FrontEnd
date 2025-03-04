@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInJava: Course = {
     _id: "specialisation-in-java",
-    title: "[B][R]Java Programming[/R] Certified Training [/B]Master Java with Hands-On Labs & Real-World Projects",
+    title: "[B][R]Java Core Programming [/R] [/B]Master Java with Hands-On Labs & Real-World Projects",
     slug: "specialisation-in-java",
     rating: 4.9,
     totalRatings: 10,

@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInShellScripting: Course = {
     _id: "specialisation-in-shell-scripting",
-    title: "[B]Specialisation in [R]Shell Scripting[/R][/B] Become a Shell Scripting Expert",
+    title: "[B][R]Bash Shell Scripting [/R][/B] Become a Shell Scripting Expert",
     slug: "specialisation-in-shell-scripting",
     rating: 4.9, // Not provided
     totalRatings: 10, // Not provided
