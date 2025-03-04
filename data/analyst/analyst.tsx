@@ -30,8 +30,11 @@ import swiggy from "../../public/assets/landingPage/companyLogo/Swiggy.png";
 import uber from "../../public/assets/landingPage/companyLogo/Uber.png";
 import zomato from "../../public/assets/landingPage/companyLogo/Zomato.png";
 import goldman from "../../public/assets/landingPage/companyLogo/Goldman.png";
-import Adobe from "../../public/assets/landingPage/companyLogo/Adobe.png"
-import zoho from "../../public/assets/landingPage/companyLogo/zoho.png"
+import Adobe from "../../public/assets/landingPage/companyLogo/Adobe.png";
+import zoho from "../../public/assets/landingPage/companyLogo/zoho.png";
+import gcp from "../../public/assets/landingPage/companyLogo/gcp.png";
+import Paypal from "../../public/assets/landingPage/companyLogo/PayPal.png";
+import VMware from  "../../public/assets/landingPage/companyLogo/VMware.png"
 import {SalaryData, AnalystData, CourseAnalystData} from "../../types/analyst"
 
 
@@ -69,6 +72,9 @@ export type CompanyName =
   | "Goldman"
   | "Adobe"
   | "zoho"
+  | "gcp"
+  | "PayPal"
+  | "VMware"
 
  
 
@@ -104,7 +110,10 @@ export const companyLogos: Record<CompanyName, string> = {
   Razorpay: razorpay.src,
   Adobe: Adobe.src,
   Goldman: goldman.src,
-  zoho: zoho.src
+  zoho: zoho.src,
+  gcp: gcp.src,
+  PayPal: Paypal.src,
+  VMware:VMware.src
 };
 
 
@@ -339,14 +348,14 @@ export const analystData: CourseAnalystData = {
       values: [600000, 1200000, 2000000, 3000000]
     },
     companies: [
-      "Amazon Web Services (AWS)",
-      "Google Cloud (GCP)",
-      "Microsoft (Azure)",
+      "Amazon",
+      "gcp",
+      "Microsoft",
       "Netflix",
       "Adobe",
       "PayPal",
       "Infosys",
-      "Tata Consultancy Services (TCS)",
+      "Tcs",
       "Cognizant",
       "Zoho"
     ],
@@ -400,13 +409,13 @@ export const analystData: CourseAnalystData = {
       values: [600000, 1200000, 1800000, 2500000]
     },
     companies: [
-      "Amazon Web Services (AWS)",
-      "Google Cloud (GCP)",
-      "Microsoft (Azure)",
-      "Red Hat",
+      "AWS",
+      "gcp",
+      "Microsoft",
+      "Redhat",
       "Accenture",
       "Infosys",
-      "TCS",
+      "Tcs",
       "Cognizant",
       "Capgemini",
       "Wipro"
@@ -430,13 +439,13 @@ export const analystData: CourseAnalystData = {
       values: [600000, 1200000, 1800000, 2500000]
     },
     companies: [
-      "Red Hat",
-      "Amazon Web Services (AWS)",
-      "Google Cloud (GCP)",
-      "Microsoft (Azure)",
+      "Redhat",
+      "AWS",
+      "gcp",
+      "Microsoft",
       "Accenture",
       "Infosys",
-      "TCS",
+      "Tcs",
       "Cognizant",
       "Capgemini",
       "Wipro"
@@ -461,11 +470,11 @@ export const analystData: CourseAnalystData = {
       values: [700000, 1200000, 2000000, 3000000]
     },
     companies: [
-      "Google Cloud (GCP)",
-      "Microsoft (Azure)",
-      "Amazon Web Services (AWS)",
+      "gcp",
+      "Microsoft",
+      "AWS",
       "VMware",
-      "Red Hat",
+      "Redhat",
       "Salesforce",
       "PayPal",
       "Flipkart",
