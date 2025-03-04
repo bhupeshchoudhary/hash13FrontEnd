@@ -11,7 +11,9 @@ import FactsAndFigure from "@/components/customComponents/landingPage/FactAndFig
 import SupportContact from "@/components/customComponents/landingPage/SupportContact";
 
 import Navbar from "@/components/customComponents/Navbar/Navbar";
-
+// import { courseInfo } from "../../data/ExampleCard2/ExampleCard2";
+import { courseInfo } from "../../data/courses/courses";
+import QueryForm from "@/components/customComponents/coursesComponents/courseDetails/ContactAndSupport";
 export default function Home() {
   return (
 <>
@@ -21,11 +23,13 @@ export default function Home() {
 
 <FactsAndFigure></FactsAndFigure>
 <CoreFeature></CoreFeature>
-<CoursesComponent></CoursesComponent>
+<CoursesComponent  />
 <Subscribe></Subscribe>
-<PopularTopic></PopularTopic>
+{/* <PopularTopic></PopularTopic> */}
 <Testimonials></Testimonials>
-<BlogSection></BlogSection>
+{/* <BlogSection></BlogSection> */}
+
+<QueryForm />
 <SupportContact></SupportContact>
 </>
   );

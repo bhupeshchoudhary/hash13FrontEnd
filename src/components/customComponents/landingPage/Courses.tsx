@@ -48,8 +48,8 @@ export default function CoursesComponent() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-4 p-2">
-        {simplifiedCourses.slice(0, 6).map((course) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-4 p-2">
+        {simplifiedCourses.slice(0, 5).map((course) => (
           <CourseCard 
             key={course._id} 
             course={course} 
