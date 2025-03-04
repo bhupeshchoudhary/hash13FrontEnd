@@ -1,6 +1,4 @@
-
-
-
+// NavbarComponents.tsx
 
 import React from 'react';
 import { Program } from '../../../../types/Navbar';

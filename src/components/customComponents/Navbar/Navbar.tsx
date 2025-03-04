@@ -1,5 +1,3 @@
-
-
 "use client"
 import React, { useState } from "react";
 import Link from "next/link";
@@ -14,22 +12,31 @@ import { MenuData, MenuKey } from "../../../../types/Navbar";
 import { ProgramCard, SideCategories, DropdownOverlay, CenteredDropdown } from "./NavbarComponents";
 import './styles/navbar.css';
 
-// Define menu positions
+// Define menu positions - now with more customizable properties
 const MENU_POSITIONS = {
   workingProfessionals: {
     translateX: "-50%",
     left: "50%",
+    offsetY: "1rem", // Added vertical offset
   },
   collegeStudents: {
     translateX: "-35%",
     left: "50%",
-    
+    offsetY: "1rem",
   },
+  // Keeping 'more' in the configuration but not using it in the navigation
   more: {
     translateX: "-40%",
     left: "50%",
+    offsetY: "1rem",
   }
 } as const;
+
+// Added type for visible menu keys
+type VisibleMenuKey = 'workingProfessionals' | 'collegeStudents';
+
+// Array of visible menu items
+const VISIBLE_MENU_ITEMS: VisibleMenuKey[] = ['workingProfessionals', 'collegeStudents'];
 
 const DropdownContent: React.FC<{ data: MenuData }> = ({ data }) => {
   const categoryKeys = Object.keys(data.categories);
@@ -65,9 +72,15 @@ const DropdownContent: React.FC<{ data: MenuData }> = ({ data }) => {
 
 export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-
+  
+  // Updated getDropdownPosition to include custom positioning
   const getDropdownPosition = (key: string) => {
-    return MENU_POSITIONS[key as MenuKey] || MENU_POSITIONS.workingProfessionals;
+    const position = MENU_POSITIONS[key as MenuKey] || MENU_POSITIONS.workingProfessionals;
+    return {
+      left: position.left,
+      transform: `translateX(${position.translateX})`,
+      top: position.offsetY,
+    };
   };
 
   return (
@@ -92,7 +105,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex flex-1 justify-end items-center space-x-6 h-full static">
           <nav className="flex items-center space-x-6 h-full static">
-            {Object.keys(menuData).map((key) => (
+            {VISIBLE_MENU_ITEMS.map((key) => (
               <div key={key} className="relative">
                 <DropdownMenu
                   open={activeDropdown === key}
@@ -104,29 +117,23 @@ export default function Navbar() {
                   <DropdownMenuTrigger className="flex items-center mx-auto space-x-1 text-sm hover:text-[#ff0000] relative z-50">
                     <span>
                       {key === "workingProfessionals"
-                        ? "Working Professionals"
-                        : key === "collegeStudents"
-                        ? "College Students"
-                        : "More"}
+                        ? "For working professionals"
+                        : "For college students"}
                     </span>
                     <ChevronDown className="w-4 h-4" />
                   </DropdownMenuTrigger>
                   <div 
                     className="absolute w-screen"
-                    style={{
-                      left: getDropdownPosition(key).left,
-                      transform: `translateX(${getDropdownPosition(key).translateX})`,
-                    }}
+                    style={getDropdownPosition(key)}
                   >
                     <DropdownMenuContent 
                       className={`w-full max-w-6xl mx-auto dropdown-menu-content dropdown-${key}`}
                       style={{
                         position: 'relative',
-                        top: '1rem',
                       }}
                     >
                       <div className="bg-white rounded-lg shadow-lg w-full">
-                        <DropdownContent data={menuData[key as MenuKey]} />
+                        <DropdownContent data={menuData[key]} />
                       </div>
                     </DropdownMenuContent>
                   </div>
@@ -135,8 +142,9 @@ export default function Navbar() {
             ))}
           </nav>
           <div className="flex items-center space-x-4 h-full">
-            <Button variant="outline">Free Courses</Button>
-            <Button className="bg-[#ff0000] text-white hover:bg-red-600">Sign Up</Button>
+            <a href="#contactus">
+              <Button className="bg-[#ff0000] text-white hover:bg-red-600">Query</Button>
+            </a>
           </div>
         </div>
       </div>
