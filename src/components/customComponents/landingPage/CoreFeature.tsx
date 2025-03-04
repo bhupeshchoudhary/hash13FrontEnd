@@ -1,6 +1,8 @@
 import React from 'react';
 import { User2, GraduationCap, MonitorPlay, Video, Globe } from 'lucide-react';
 import { CardProps } from '../../../../types/coreFeatures';
+import curveLine from "@../../../public/assets/CurlLine.svg";
+import Image from "next/image";
 
 
 const Card: React.FC<CardProps> = ({ icon, title, description, bgColor, iconBgColor, textColor }) => (
@@ -41,9 +43,15 @@ const CoreFeature = () => {
         {/* Header */}
         <div className="text-center mb-10">
           <p className="text-teal-500 text-sm font-medium tracking-wide mb">Core Features</p>
-          <h2 className="text-[32px] font-bold text-gray-800">
-            Why <span className="text-[#ff0000]">Choose</span> #13
-          </h2>
+          <h1 className="text-3xl font-bold">
+          Why <span className="text-[#ff0000] relative">
+            Choose 
+            <span className="absolute bottom-0 left-0 w-full h-1  rounded-full">
+
+            <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
+            </span>
+          </span> #13
+        </h1>
         </div>
 
         {/* Features Grid */}
