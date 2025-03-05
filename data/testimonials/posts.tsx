@@ -1,4 +1,4 @@
-import {Post } from "../../types/testimonial"
+import {Post, Author } from "../../types/testimonial"
 
 
 

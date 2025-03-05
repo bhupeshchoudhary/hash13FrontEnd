@@ -1,11 +1,11 @@
-interface Author {
+export interface Author {
     name: string;
     title: string;
     avatar: string;
     linkedin?: string;
 }
 
-interface Post {
+export interface Post {
     id: number;
     author: Author;
     content: string;
