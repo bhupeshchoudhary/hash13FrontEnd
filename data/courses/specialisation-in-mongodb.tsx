@@ -171,14 +171,14 @@ export const specialisationInMongoDB: Course = {
     ],
 
     programFor: [
-        { src: "", alt: "/assets/cources/courseDetails/terraform/Software Developers.jpg", text: "Software Developers" },
-        { src: "", alt: "/assets/cources/courseDetails/mongodb/Database Administrators.jpg", text: "Database Administrators" },
-        { src: "", alt: "/assets/cources/courseDetails/mongodb/System Administrators.jpg", text: "System Administrators" },
-        { src: "", alt: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", text: "Cloud Engineers" },
-        { src: "", alt: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", text: "DevOps Engineers" },
-        { src: "", alt: "/assets/cources/courseDetails/mongodb/Data Engineers.jpg", text: "Data Engineers" },
-        { src: "", alt: "/assets/cources/courseDetails/mongodb/IT Professionals.jpg", text: "IT Professionals" },
-        { src: "", alt: "/assets/cources/courseDetails/mongodb/Students.jpg", text: "Students" }
+        { src: "/assets/cources/courseDetails/terraform/Software Developers.jpg", alt:"" , text: "Software Developers" },
+        { src: "/assets/cources/courseDetails/mongodb/Database Administrators.jpg", alt: "", text: "Database Administrators" },
+        { src: "/assets/cources/courseDetails/mongodb/System Administrators.jpg", alt: "", text: "System Administrators" },
+        { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "", text: "Cloud Engineers" },
+        { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "", text: "DevOps Engineers" },
+        { src: "/assets/cources/courseDetails/mongodb/Data Engineers.jpg", alt: "", text: "Data Engineers" },
+        { src: "/assets/cources/courseDetails/mongodb/IT Professionals.jpg", alt: "", text: "IT Professionals" },
+        { src: "/assets/cources/courseDetails/mongodb/Students.jpg", alt: "", text: "Students" }
     ],
 
     toolsData: {
