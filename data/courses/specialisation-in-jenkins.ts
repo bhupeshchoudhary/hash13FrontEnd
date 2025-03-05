@@ -14,7 +14,7 @@ export const specialisationInJenkins: Course = {
     enrolledStudents: 12000,
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On CI/CD Experience | Advanced Automation Techniques | Real-Time Industry Use Cases",
     paymentLink: "",
-    backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
+    backgroundImage: "/assets/cources/courseDetails/jenkkins/jenkins.jpg",
 
     learningOutcomes: [
         "Jenkins Fundamentals & Setup",
