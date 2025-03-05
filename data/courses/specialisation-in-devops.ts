@@ -2,8 +2,8 @@
 import { Course } from "../../types/courses";
 export const  specialisationInDevops:Course = {
     _id: "specialisation-in-devops",
-    title: "[B][R]Specialisation in DevOps [/R][/B] Become a DevOps Expert in 3 months",
-    slug: "specialisation-in-devops",
+    title: "[B][R]Specialization in DevOps [/R][/B] Become a DevOps Expert in 3 months",
+    slug: "specialization-in-devops",
     rating: 4.7,
     totalRatings: 10,
     duration: "2 Months",
