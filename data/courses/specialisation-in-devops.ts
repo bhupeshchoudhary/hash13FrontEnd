@@ -2,7 +2,7 @@
 import { Course } from "../../types/courses";
 export const  specialisationInDevops:Course = {
     _id: "specialisation-in-devops",
-    title: "[B][R]Docker Certified Associate (DCA) [/R][/B] Become a DevOps Expert in 3 months",
+    title: "[B][R]Spacialisation in DevOps (DCA) [/R][/B] Become a DevOps Expert in 3 months",
     slug: "specialisation-in-devops",
     rating: 4.7,
     totalRatings: 10,
