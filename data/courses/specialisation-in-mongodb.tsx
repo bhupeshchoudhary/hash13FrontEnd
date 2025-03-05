@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInMongoDB: Course = {
     _id: "specialisation-in-mongodb",
-    title: "[B][R]MongoDB Basic to Advance [/R] [/B] Secure NoSQL Data Transactions",
+    title: "[B][R]MongoDB Basic to Advance [/R] [/B] | Secure NoSQL Data Transactions",
     slug: "specialisation-in-mongodb",
     rating: 4.9,
     totalRatings: 10,
@@ -11,6 +11,7 @@ export const specialisationInMongoDB: Course = {
     price: 2000,
     originalPrice: 7000,
     enrolledStudents: 12000,
+    category: "Databases",
     shortDescription: "Industry-Recognized Curriculum | Live Projects | Expert-Led Training | Advanced NoSQL Techniques | High-Performance Data Handling",
     paymentLink: "",
     backgroundImage: "/assets/cources/courseDetails/mongodb/mongodb.jpg",
@@ -51,7 +52,7 @@ export const specialisationInMongoDB: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "System Design",
+    
 
     module: [
         {

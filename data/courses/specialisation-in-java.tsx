@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInJava: Course = {
     _id: "specialisation-in-java",
-    title: "[B][R]Java Core Programming [/R] [/B] Design Scalable Enterprise Applications",
+    title: "[B][R]Java[/R] Core Programming  [/B] | Design Scalable Enterprise Applications",
     slug: "specialisation-in-java",
     rating: 4.9,
     totalRatings: 10,
@@ -11,6 +11,7 @@ export const specialisationInJava: Course = {
     price: 1600,
     originalPrice: 12000,
     enrolledStudents: 12000,
+    category: "Programming",
     shortDescription: "Industry-Recognized Curriculum | Live Projects | Expert-Led Training",
     paymentLink: "",
     backgroundImage: "/assets/cources/courseDetails/java/java.jpg",
@@ -49,7 +50,7 @@ export const specialisationInJava: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "System Design",
+    
 
     module: [
         {

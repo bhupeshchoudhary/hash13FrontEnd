@@ -1,7 +1,7 @@
 import { Course } from "../../types/courses";
 export const specialisationInSplunk:Course ={
     _id: "specialisation-in-splunk",
-    title: "[B][R]Complete Splunk Administration [/R] [/B] Deepen Your Expertise in Data Management & Insights ",
+    title: "[B]Complete[R] Splunk Administration [/R] [/B]  | Deepen Your Expertise in Data Management & Insights ",
     slug: "specialisation-in-splunk",
     rating: 4.7,
     totalRatings: 10,
@@ -10,6 +10,7 @@ export const specialisationInSplunk:Course ={
     price: 5850,
     originalPrice: 10000,
     enrolledStudents: 10000,
+    category: "Monitoring Tool",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Data Analysis Experience | Real-Time Industry Use Cases | 100% Practical Training",
     paymentLink: "https://rzp.io/rzp/2asghU9u",
     backgroundImage: "/assets/cources/courseDetails/splunk/splunk.jpg",
@@ -47,7 +48,7 @@ export const specialisationInSplunk:Course ={
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "Monitoring Tool",
+    
   
   module: [
     {

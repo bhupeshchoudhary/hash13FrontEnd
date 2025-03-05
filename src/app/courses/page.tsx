@@ -1,6 +1,3 @@
-
-
-
 "use client"
 import React, { useState, useMemo } from 'react';
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
@@ -33,59 +30,103 @@ const CoursePage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All Courses");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-  // Format Title Function
   const formatTitle = (title: string) => {
-    const elements: JSX.Element[] = [];
-    let currentIndex = 0;
-    let boldStart = -1;
-    let redStart = -1;
+    const parts = title.split('|').map(part => part.trim());
+    const mainTitle = parts[0];
+    const subtitle = parts[1];
 
-    const addText = (start: number, end: number, isBold: boolean, isRed: boolean) => {
-      if (start < end) {
-        const content = title.slice(start, end);
-        elements.push(
-          <span
-            key={start}
-            className={`${isBold ? 'font-bold' : ''} ${
-              isRed ? 'text-red-500' : ''
-            } leading-tight`}
+    const applyFormatting = (text: string) => {
+      let isBold = false;
+      let isRed = false;
+      let result: JSX.Element[] = [];
+      let currentText = '';
+
+      for (let i = 0; i < text.length; i++) {
+        if (text.slice(i).startsWith('[B]')) {
+          if (currentText) {
+            result.push(
+              <span key={`text-${i}`} className="inline">
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isBold = true;
+          i += 2;
+        } 
+        else if (text.slice(i).startsWith('[/B]')) {
+          if (currentText) {
+            result.push(
+              <span key={`bold-${i}`} className="font-bold inline">
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isBold = false;
+          i += 3;
+        }
+        else if (text.slice(i).startsWith('[R]')) {
+          if (currentText) {
+            result.push(
+              <span key={`text-${i}`} className={`${isBold ? 'font-bold' : ''} inline`}>
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isRed = true;
+          i += 2;
+        }
+        else if (text.slice(i).startsWith('[/R]')) {
+          if (currentText) {
+            result.push(
+              <span 
+                key={`red-${i}`} 
+                className={`text-red-500 ${isBold ? 'font-bold' : ''} inline`}
+              >
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isRed = false;
+          i += 3;
+        }
+        else {
+          currentText += text[i];
+        }
+      }
+
+      if (currentText) {
+        result.push(
+          <span 
+            key="final" 
+            className={`
+              ${isBold ? 'font-bold' : ''} 
+              ${isRed ? 'text-red-500' : ''}
+              inline
+            `}
           >
-            {content}
+            {currentText}
           </span>
         );
       }
+
+      return result;
     };
 
-    for (let i = 0; i < title.length; i++) {
-      if (title.slice(i).startsWith('[B]')) {
-        addText(currentIndex, i, false, false);
-        boldStart = i + 3;
-        i += 2;
-        currentIndex = boldStart;
-      } else if (title.slice(i).startsWith('[/B]')) {
-        addText(currentIndex, i, true, redStart >= 0);
-        i += 3;
-        currentIndex = i + 1;
-        boldStart = -1;
-      } else if (title.slice(i).startsWith('[R]')) {
-        addText(currentIndex, i, boldStart >= 0, false);
-        redStart = i + 3;
-        i += 2;
-        currentIndex = redStart;
-      } else if (title.slice(i).startsWith('[/R]')) {
-        addText(currentIndex, i, boldStart >= 0, true);
-        i += 3;
-        currentIndex = i + 1;
-        redStart = -1;
-      }
-    }
-
-    addText(currentIndex, title.length, boldStart >= 0, redStart >= 0);
-
     return (
-      <span className="flex flex-wrap gap-1">
-        {elements}
-      </span>
+      <div className="flex flex-col gap-0.5">
+        <div className="text-sm leading-[1.1] -space-y-[2px]">
+          {applyFormatting(mainTitle)}
+        </div>
+        {subtitle && (
+          <div className="text-xs leading-tight">
+            {subtitle}
+          </div>
+        )}
+      </div>
     );
   };
 
@@ -204,16 +245,16 @@ const CoursePage: React.FC = () => {
                       {/* Content Container */}
                       <CardFooter className="flex flex-col flex-1 p-4">
                         {/* Title */}
-                        <div className="min-h-[2.5rem] mb-2">
-                          <h3 className="text-sm font-semibold line-clamp-2">
-                            {formatTitle(course.title.split(',')[0])}
-                          </h3>
-                        </div>
+                        <div className="min-h-[2.5rem] mb- text-left w-full">
+  <h3 className="font-semibold text-left line-clamp-2 flex flex-col items-start">
+    {formatTitle(course.title)}
+  </h3>
+</div>
 
-                        {/* Description */}
-                        <p className="text-xs text-gray-600 mb-4 line-clamp-2">
-                          {course.shortDescription}
-                        </p>
+{/* Description */}
+<p className="text-xs text-gray-600 mb-4 line-clamp-2 text-left w-full">
+  {course.shortDescription}
+</p>
 
                         {/* Stats Row */}
                         <div className="flex items-center justify-between mt-auto w-full">

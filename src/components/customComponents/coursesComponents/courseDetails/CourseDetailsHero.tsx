@@ -1,6 +1,3 @@
-
-
-
 "use client";
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
@@ -17,74 +14,101 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
   const course = courseInfo.find(c => c._id === courseId) || courseInfo[0];
 
   const formatTitle = (title: string) => {
-    // Split the title into two parts if it contains a comma
-    const titleParts = title.split(',').map(part => part.trim());
-    const mainTitle = titleParts[0];
-    const subtitle = titleParts[1];
+    const parts = title.split('|').map(part => part.trim());
+    const mainTitle = parts[0];
+    const subtitle = parts[1];
 
-    const processText = (text: string) => {
-      const elements: JSX.Element[] = [];
-      let currentIndex = 0;
-      let boldStart = -1;
-      let redStart = -1;
+    // Function to apply formatting
+    const applyFormatting = (text: string) => {
+      let isBold = false;
+      let isRed = false;
+      let result: JSX.Element[] = [];
+      let currentText = '';
 
-      // Helper function to add text
-      const addText = (start: number, end: number, isBold: boolean, isRed: boolean) => {
-        if (start < end) {
-          const content = text.slice(start, end);
-          elements.push(
-            <span
-              key={start}
-              className={`${isBold ? 'font-bold' : ''} ${
-                isRed ? 'text-[#ff0000]' : ''
-              } leading-tight`}
-            >
-              {content}
-            </span>
-          );
-        }
-      };
-
-      // Process the text character by character
       for (let i = 0; i < text.length; i++) {
         if (text.slice(i).startsWith('[B]')) {
-          addText(currentIndex, i, false, false);
-          boldStart = i + 3;
+          if (currentText) {
+            result.push(
+              <span key={`text-${i}`} className="inline">
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isBold = true;
           i += 2;
-          currentIndex = boldStart;
-        } else if (text.slice(i).startsWith('[/B]')) {
-          addText(currentIndex, i, true, redStart >= 0);
+        } 
+        else if (text.slice(i).startsWith('[/B]')) {
+          if (currentText) {
+            result.push(
+              <span key={`bold-${i}`} className="font-bold inline">
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isBold = false;
           i += 3;
-          currentIndex = i + 1;
-          boldStart = -1;
-        } else if (text.slice(i).startsWith('[R]')) {
-          addText(currentIndex, i, boldStart >= 0, false);
-          redStart = i + 3;
+        }
+        else if (text.slice(i).startsWith('[R]')) {
+          if (currentText) {
+            result.push(
+              <span key={`text-${i}`} className={`${isBold ? 'font-bold' : ''} inline`}>
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isRed = true;
           i += 2;
-          currentIndex = redStart;
-        } else if (text.slice(i).startsWith('[/R]')) {
-          addText(currentIndex, i, boldStart >= 0, true);
+        }
+        else if (text.slice(i).startsWith('[/R]')) {
+          if (currentText) {
+            result.push(
+              <span 
+                key={`red-${i}`} 
+                className={`text-[#ff0000] ${isBold ? 'font-bold' : ''} inline`}
+              >
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isRed = false;
           i += 3;
-          currentIndex = i + 1;
-          redStart = -1;
+        }
+        else {
+          currentText += text[i];
         }
       }
 
-      // Add any remaining text
-      addText(currentIndex, text.length, boldStart >= 0, redStart >= 0);
+      if (currentText) {
+        result.push(
+          <span 
+            key="final" 
+            className={`
+              ${isBold ? 'font-bold' : ''} 
+              ${isRed ? 'text-[#ff0000]' : ''}
+              inline
+            `}
+          >
+            {currentText}
+          </span>
+        );
+      }
 
-      return elements;
+      return result;
     };
 
     return (
-      <div className="space-y-2">
-        <h1 className="text-3xl sm:text-3xl lg:text-4xl flex flex-wrap gap-1">
-          {processText(mainTitle)}
-        </h1>
+      <div className="flex flex-col gap-2">
+        <div className="text-3xl sm:text-3xl lg:text-4xl leading-[1.2] -space-y-[1px]">
+          {applyFormatting(mainTitle)}
+        </div>
         {subtitle && (
-          <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600">
+          <div className="text-xl sm:text-2xl lg:text-3xl text-black leading-tight">
             {subtitle}
-          </h2>
+          </div>
         )}
       </div>
     );

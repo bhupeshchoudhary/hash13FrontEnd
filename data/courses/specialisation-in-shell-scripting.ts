@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInShellScripting: Course = {
     _id: "specialisation-in-shell-scripting",
-    title: "[B][R]Bash Shell Scripting [/R][/B] Simplify Repetitive Tasks with Scripting",
+    title: "[B][R]Bash Shell[/R] Scripting [/B] | Simplify Repetitive Tasks with Scripting",
     slug: "specialisation-in-shell-scripting",
     rating: 4.9, // Not provided
     totalRatings: 10, // Not provided
@@ -11,6 +11,7 @@ export const specialisationInShellScripting: Course = {
     price: 2000, // Not provided
     originalPrice: 7000, // Not provided
     enrolledStudents: 12000, // Not provided
+    category: "Programming",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Automation Experience | Advanced Scripting Techniques | Real-Time Industry Use Cases",
     paymentLink: "", // Not provided
     backgroundImage: "/assets/cources/courseDetails/shell-scripting/shell-scripting.jpg", // Need path
@@ -48,7 +49,7 @@ export const specialisationInShellScripting: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "Specialisation in Shell Scripting",
+    
 
     module: [
         {

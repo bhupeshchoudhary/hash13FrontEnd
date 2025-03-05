@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInTerraform: Course = {
     _id: "specialisation-in-terraform",
-    title: "[B][R]Managing Infrastructure Using Terraform [/R][/B] Design Scalable Infrastructure as Code",
+    title: "[B]Managing Infrastructure Using [R]Terraform [/R][/B]  | Design Scalable Infrastructure as Code",
     slug: "specialisation-in-terraform",
     rating: 4.9,
     totalRatings: 10,
@@ -11,6 +11,7 @@ export const specialisationInTerraform: Course = {
     price: 3993,
     originalPrice: 7500,
     enrolledStudents: 12000,
+    category: "DevOps",
     shortDescription: "45+ Hours | Comprehensive Modules | 3 Capstone Projects",
     paymentLink: "",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
@@ -50,7 +51,7 @@ export const specialisationInTerraform: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "Specialisation in Terraform",
+    
 
     module: [
         {

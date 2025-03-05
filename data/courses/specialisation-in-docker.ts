@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInDocker: Course = {
     _id: "docker-certified-associate-2024",
-    title: "[B][R]  Docker Certified Associate (DCA) [/R] [/B]  Simplify Application Containerization using Docker",
+    title: "[B][R]  Docker [/R]Certified Associate (DCA)  [/B]  | Simplify Application Containerization using Docker",
     slug: "docker-certified-associate-2024",
     rating: 4.9,
     totalRatings: 10,
@@ -11,6 +11,7 @@ export const specialisationInDocker: Course = {
     price: 1650,
     originalPrice: 7000,
     enrolledStudents: 12000,
+    category: "DevOps",
     shortDescription: "Industry-Certified Docker DCA Training | Hands-On Labs | Real-World Projects | Best-In-Class Curriculum",
     paymentLink: "",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
@@ -51,7 +52,7 @@ export const specialisationInDocker: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "Docker Certification",
+    
 
     module: [
         {

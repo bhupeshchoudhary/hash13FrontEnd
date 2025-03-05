@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInAnsible: Course = {
     _id: "specialisation-in-ansible",
-    title: "[B][R]Automation with Ansible[/R][/B] Simplify Configuration Management Tasks ",
+     title: "[B]Automation with [R]Ansible[/R][/B] | Simplify Configuration Management Tasks",
     slug: "specialisation-in-ansible",
     rating: 4.9,
     totalRatings: 10,
@@ -11,6 +11,7 @@ export const specialisationInAnsible: Course = {
     price: 4900,
     originalPrice: 10000,
     enrolledStudents: 12000,
+    category: "DevOps",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Automation Experience | Advanced Playbook Techniques | Real-Time Industry Use Cases",
     paymentLink: "",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
@@ -53,7 +54,7 @@ export const specialisationInAnsible: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "Specialisation in Ansible",
+    
 
     module: [
         {

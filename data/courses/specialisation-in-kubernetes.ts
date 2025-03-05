@@ -1,7 +1,7 @@
 import { Course } from "../../types/courses";
 export const specialisationInKubernetes: Course = {
     _id: "specialisation-in-kubernetes",
-    title: "[B][R]Certified Kubernetes Admin (CKA)[/R][/B] Optimize Cluster Performance and Scaling",
+    title: "[B][R]Certified Kubernetes Admin (CKA)[/R][/B] | Optimize Cluster Performance and Scaling",
     slug: "specialisation-in-kubernetes",
     rating: 4.9,
     totalRatings: 10,
@@ -10,6 +10,7 @@ export const specialisationInKubernetes: Course = {
     price: 4200,
     originalPrice: 17500,
     enrolledStudents: 12000,
+    category: "DevOps",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Orchestration Experience | Advanced Deployment Techniques | Real-Time Industry Use Cases",
     paymentLink: "",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
@@ -51,7 +52,7 @@ export const specialisationInKubernetes: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "Specialisation in Kubernetes",
+    
 
     module: [
         {

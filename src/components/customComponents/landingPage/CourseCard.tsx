@@ -1,107 +1,154 @@
-// components/customComponents/landingPage/CourseCard.tsx
-import { useRouter } from 'next/navigation';
 import { Card, CardFooter } from "@/components/ui/card";
-import { Star } from "lucide-react";
-import { Course } from '../../../../types/courses';
+import { courseInfo } from "../../../../data/courses/courses"
+import { Course } from "../../../../types/courses";
+import { useRouter } from "next/navigation";
+import { Badge } from "@/components/ui/badge";
+import { FontRomanIcon } from "@radix-ui/react-icons";
 
-// Define SimplifiedCourse type with only needed properties
 type SimplifiedCourse = Pick<Course, '_id' | 'title' | 'category' | 'backgroundImage' | 'rating' | 'hours' | 'slug' | 'shortDescription'>;
 
 interface CourseCardProps {
   course: SimplifiedCourse;
 }
 
+
 export default function CourseCard({ course }: CourseCardProps) {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push(`/courses/${course.slug}`);
-  };
+    router.push(`courses/${course.slug}`);
+  }
 
   const formatTitle = (title: string) => {
-    const elements: JSX.Element[] = [];
-    let currentIndex = 0;
-    let boldStart = -1;
-    let redStart = -1;
+    const parts = title.split('|').map(part => part.trim());
+    const mainTitle = parts[0];
+    const subtitle = parts[1];
 
-    const addText = (start: number, end: number, isBold: boolean, isRed: boolean) => {
-      if (start < end) {
-        const content = title.slice(start, end);
-        elements.push(
-          <span
-            key={start}
-            className={`${isBold ? 'font-bold' : ''} ${
-              isRed ? 'text-red-500' : ''
-            } leading-tight`}
+    // Function to apply formatting
+    const applyFormatting = (text: string) => {
+      let isBold = false;
+      let isRed = false;
+      let result: JSX.Element[] = [];
+      let currentText = '';
+
+      for (let i = 0; i < text.length; i++) {
+        if (text.slice(i).startsWith('[B]')) {
+          if (currentText) {
+            result.push(
+              <span key={`text-${i}`} className="inline">
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isBold = true;
+          i += 2;
+        } 
+        else if (text.slice(i).startsWith('[/B]')) {
+          if (currentText) {
+            result.push(
+              <span key={`bold-${i}`} className="font-bold inline">
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isBold = false;
+          i += 3;
+        }
+        else if (text.slice(i).startsWith('[R]')) {
+          if (currentText) {
+            result.push(
+              <span key={`text-${i}`} className={`${isBold ? 'font-bold' : ''} inline`}>
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isRed = true;
+          i += 2;
+        }
+        else if (text.slice(i).startsWith('[/R]')) {
+          if (currentText) {
+            result.push(
+              <span 
+                key={`red-${i}`} 
+                className={`text-red-500 ${isBold ? 'font-bold' : ''} inline`}
+              >
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isRed = false;
+          i += 3;
+        }
+        else {
+          currentText += text[i];
+        }
+      }
+
+      if (currentText) {
+        result.push(
+          <span 
+            key="final" 
+            className={`
+              ${isBold ? 'font-bold' : ''} 
+              ${isRed ? 'text-red-500' : ''}
+              inline
+            `}
           >
-            {content}
+            {currentText}
           </span>
         );
       }
+
+      return result;
     };
 
-    for (let i = 0; i < title.length; i++) {
-      if (title.slice(i).startsWith('[B]')) {
-        addText(currentIndex, i, false, false);
-        boldStart = i + 3;
-        i += 2;
-        currentIndex = boldStart;
-      } else if (title.slice(i).startsWith('[/B]')) {
-        addText(currentIndex, i, true, redStart >= 0);
-        i += 3;
-        currentIndex = i + 1;
-        boldStart = -1;
-      } else if (title.slice(i).startsWith('[R]')) {
-        addText(currentIndex, i, boldStart >= 0, false);
-        redStart = i + 3;
-        i += 2;
-        currentIndex = redStart;
-      } else if (title.slice(i).startsWith('[/R]')) {
-        addText(currentIndex, i, boldStart >= 0, true);
-        i += 3;
-        currentIndex = i + 1;
-        redStart = -1;
-      }
-    }
-
-    addText(currentIndex, title.length, boldStart >= 0, redStart >= 0);
-    return elements;
+    return (
+      <div className="flex flex-col gap-0 space-y-0">
+      <div className="text-md leading-[1.2] space-y-[1px]">
+  {applyFormatting(mainTitle)}
+</div>
+        {subtitle && (
+          <div className="text-xs">
+            {subtitle}
+          </div>
+        )}
+      </div>
+    );
   };
 
   return (
-    <Card
-      onClick={handleClick}
+    <Card 
+      onClick={handleClick} 
       className="group relative overflow-hidden w-full cursor-pointer transition-transform hover:scale-105 flex flex-col h-[340px]"
     >
-      {/* Image Container */}
-      <div className="h-[220px] overflow-hidden">
-        <img
+      <div className="h-[260px] overflow-hidden">
+        <img 
           src={course.backgroundImage}
           alt={course.title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>
 
-      {/* Content Container */}
-      <CardFooter className="p-4 flex flex-col flex-1 bg-white">
-        {/* Title Container */}
-        <div className="h-[60px] mb-2 overflow-hidden">
-          <h3 className="text-sm font-semibold line-clamp-3">
-            {formatTitle(course.title.split(',')[0])}
+      <CardFooter className="p-2 flex flex-col flex-1 bg-white">
+        <div className="h-[80px] mb-2 overflow-hidden">
+          <h3 className="line-clamp-3">
+            {formatTitle(course.title)}
           </h3>
         </div>
 
-        {/* Stats Row */}
         <div className="flex items-center justify-between mt-auto w-full">
           <div className="flex items-center gap-4">
-            <div className="flex items-center">
-              <Star className="w-4 h-4 fill-yellow-400 stroke-yellow-400 mr-1" />
-              <span className="text-xs text-gray-600">
-                {course.rating ? course.rating.toFixed(1) : 'N/A'}
-              </span>
-            </div>
+            <span>
+              <Badge className="bg-gray-100 text-black text-xs hover:bg-gray-50">
+                {course.category}
+              </Badge>
+            </span>
             <span className="text-xs text-gray-600">
-              {course.hours} hours
+              {course.hours} hrs.
             </span>
           </div>
         </div>

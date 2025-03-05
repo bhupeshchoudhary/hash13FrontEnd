@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInPrometheusGrafana:Course = {
     _id: "specialisation-in-prometheus-grafana",
-    title: "[B][R]Mastering Prometheus & Grafana [/R] [/B] Monitoring & Data Visualization Training",
+    title: "[B][R]Mastering [R]Prometheus & Grafana[/R] [/B] | Monitoring & Data Visualization Training",
     slug: "specialisation-in-prometheus-grafana",
     rating: 4.7,
     totalRatings: 10,
@@ -11,6 +11,7 @@ export const specialisationInPrometheusGrafana:Course = {
     price: 4893,
     originalPrice: 8500,
     enrolledStudents: 12000,
+    category: "Monitoring ",
     shortDescription: "Industry-Relevant Training | Hands-On Labs | Real-World Projects | Best-In-Class Curriculum",
     paymentLink: "https://rzp.io/rzp/2asghU9u",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
@@ -48,7 +49,7 @@ export const specialisationInPrometheusGrafana:Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "Specialisation in Prometheus & Grafana",
+    
   
     module: [
       {
