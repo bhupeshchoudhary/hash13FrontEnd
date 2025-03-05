@@ -31,7 +31,7 @@ export default function CourseCard({ course }: CourseCardProps) {
           <span
             key={start}
             className={`${isBold ? 'font-bold' : ''} ${
-              isRed ? 'text-red-500' : ''
+              isRed ? 'text-[#ff0000]' : ''
             } leading-tight`}
           >
             {content}
