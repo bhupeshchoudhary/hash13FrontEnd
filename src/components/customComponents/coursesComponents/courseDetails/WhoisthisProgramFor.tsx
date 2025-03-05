@@ -27,7 +27,7 @@ const WhoIsThisProgramFor: React.FC<WhoIsThisProgramForProps> = ({ course }) => 
                                 className="mx-2 w-32 flex-shrink-0"
                             >
                                 <Card className="max-w-[280px] h-[150px] rounded-2xl border-4 border-black-900 shadow-black shadow-md hover:shadow-lg transition-all duration-300 flex-shrink-0">
-                                    <CardContent className="p-6 space-y-4 flex flex-col justify-between h-full">
+                                    <CardContent className="p-1 space-y-4 flex flex-col justify-between h-full">
                                         <div className="w-full aspect-video relative rounded-lg overflow-hidden flex-shrink-0">
                                             <img
                                                 src={data.src}
@@ -54,7 +54,7 @@ const WhoIsThisProgramFor: React.FC<WhoIsThisProgramForProps> = ({ course }) => 
                                 className="mx-2 w-32 flex-shrink-0"
                             >
                                 <Card className="max-w-[280px] h-[150px] rounded-2xl border-4 border-black-900 shadow-black shadow-md hover:shadow-lg transition-all duration-300">
-                                    <CardContent className="p-6 space-y-4 flex flex-col justify-between h-full">
+                                    <CardContent className="p-1 space-y-4 flex flex-col justify-between h-full">
                                         <div className="w-full aspect-video relative rounded-lg overflow-hidden flex-shrink-0">
                                             <img
                                                 src={data.src}

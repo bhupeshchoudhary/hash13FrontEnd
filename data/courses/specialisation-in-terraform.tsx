@@ -201,16 +201,16 @@ export const specialisationInTerraform: Course = {
     ],
 
     programFor: [
-        { src: "", alt: "DevOps Engineers", text: "DevOps Engineers" },
-        { src: "", alt: "Cloud Engineers", text: "Cloud Engineers" },
-        { src: "", alt: "System Administrators", text: "System Administrators" },
-        { src: "", alt: "Infrastructure Engineers", text: "Infrastructure Engineers" },
-        { src: "", alt: "Software Developers", text: "Software Developers" },
-        { src: "", alt: "SRE Engineers", text: "Site Reliability Engineers" },
-        { src: "", alt: "Technical Managers", text: "Technical Managers" },
-        { src: "", alt: "Cloud Architects", text: "Cloud Architects" },
-        { src: "", alt: "IT Professionals", text: "IT Professionals" },
-        { src: "", alt: "College Students", text: "College Students" }
+        { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
+        { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "Cloud Engineers", text: "Cloud Engineers" },
+        { src: "/assets/cources/courseDetails/mongodb/System Administrators.jpg", alt: "System Administrators", text: "System Administrators" },
+        { src: "/assets/cources/courseDetails/terraform/Infrastructure Engineers.jpg", alt: "Infrastructure Engineers", text: "Infrastructure Engineers" },
+        { src: "/assets/cources/courseDetails/terraform/Software Developers.jpg", alt: "Software Developers", text: "Software Developers" },
+        { src: "/assets/cources/courseDetails/terraform/Site Reliability Engineers (SRE).jpg", alt: "SRE Engineers", text: "Site Reliability Engineers" },
+        { src: "/assets/cources/courseDetails/terraform/Technical Co-Founders.jpg", alt: "Technical Managers", text: "Technical Managers" },
+        // { src: "", alt: "Cloud Architects", text: "Cloud Architects" },
+        { src: "/assets/cources/courseDetails/terraform/IT Professionals seeking to enhance their DevOps skills.png", alt: "IT Professionals", text: "IT Professionals" },
+        { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "College Students", text: "College Students" }
     ],
 
     toolsData: {
