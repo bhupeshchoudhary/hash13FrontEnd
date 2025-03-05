@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, CSSProperties } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown, Menu } from "lucide-react";
@@ -8,42 +8,34 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@/compon
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import logo from "../../../../public/assets/landingPage/logohash13.svg";
 import { menuData } from '../../../../data/Navbar/Navbar';
-import { MenuData, MenuKey } from "../../../../types/Navbar";
-import { ProgramCard, SideCategories, DropdownOverlay, CenteredDropdown } from "./NavbarComponents";
+import { MenuData } from "../../../../types/Navbar";
+import { ProgramCard, SideCategories, DropdownOverlay } from "./NavbarComponents";
 import './styles/navbar.css';
 
-// Define menu positions - now with more customizable properties
-const MENU_POSITIONS = {
+const VISIBLE_MENU_ITEMS = ['workingProfessionals', 'collegeStudents'] as const;
+
+interface DropdownPosition {
+  transform: string;
+  width: string;
+}
+
+const DROPDOWN_POSITIONS: Record<'workingProfessionals' | 'collegeStudents', DropdownPosition> = {
   workingProfessionals: {
-    translateX: "-50%",
-    left: "50%",
-    offsetY: "1rem", // Added vertical offset
+    transform: 'translateX(-67%)',
+    width: '1200px',
   },
   collegeStudents: {
-    translateX: "-35%",
-    left: "50%",
-    offsetY: "1rem",
+    transform: 'translateX(-82%)',
+    width: '1200px',
   },
-  // Keeping 'more' in the configuration but not using it in the navigation
-  more: {
-    translateX: "-40%",
-    left: "50%",
-    offsetY: "1rem",
-  }
-} as const;
-
-// Added type for visible menu keys
-type VisibleMenuKey = 'workingProfessionals' | 'collegeStudents';
-
-// Array of visible menu items
-const VISIBLE_MENU_ITEMS: VisibleMenuKey[] = ['workingProfessionals', 'collegeStudents'];
+};
 
 const DropdownContent: React.FC<{ data: MenuData }> = ({ data }) => {
   const categoryKeys = Object.keys(data.categories);
   const [selectedCategory, setSelectedCategory] = useState<string>(categoryKeys[0]);
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row" style={{ minWidth: '750px' }}>
       <SideCategories 
         categories={categoryKeys} 
         selectedCategory={selectedCategory} 
@@ -51,7 +43,7 @@ const DropdownContent: React.FC<{ data: MenuData }> = ({ data }) => {
       />
       <div className="flex-1 p-6">
         <h2 className="text-xl font-medium mb-4">Content for {selectedCategory}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <h3 className="text-lg font-semibold">Mentorship Programs</h3>
             {data.categories[selectedCategory].mentorshipPrograms.map((program) => (
@@ -72,16 +64,17 @@ const DropdownContent: React.FC<{ data: MenuData }> = ({ data }) => {
 
 export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  
-  // Updated getDropdownPosition to include custom positioning
-  const getDropdownPosition = (key: string) => {
-    const position = MENU_POSITIONS[key as MenuKey] || MENU_POSITIONS.workingProfessionals;
-    return {
-      left: position.left,
-      transform: `translateX(${position.translateX})`,
-      top: position.offsetY,
-    };
-  };
+
+  const getDropdownStyles = (key: string): React.CSSProperties => ({
+    position: 'absolute',
+    left: '0',
+    top: '100%',
+    maxHeight: '80vh',
+    overflowY: 'auto',
+    marginTop: '1.2rem',
+    transform: DROPDOWN_POSITIONS[key as keyof typeof DROPDOWN_POSITIONS].transform,
+    width: DROPDOWN_POSITIONS[key as keyof typeof DROPDOWN_POSITIONS].width
+  });
 
   return (
     <header className="flex w-full mx-auto items-center max-w-7xl px-6 lg:px-14 overflow-visible h-16 sticky top-0 z-50 bg-white">
@@ -103,10 +96,10 @@ export default function Navbar() {
           </Sheet>
         </div>
 
-        <div className="hidden md:flex flex-1 justify-end items-center space-x-6 h-full static">
-          <nav className="flex items-center space-x-6 h-full static">
+        <div className="hidden md:flex flex-1 justify-end items-center space-x-6 h-full">
+          <nav className="flex items-center space-x-6 h-full">
             {VISIBLE_MENU_ITEMS.map((key) => (
-              <div key={key} className="relative">
+              <div key={key} className="relative dropdown-container">
                 <DropdownMenu
                   open={activeDropdown === key}
                   onOpenChange={(open) => {
@@ -122,21 +115,14 @@ export default function Navbar() {
                     </span>
                     <ChevronDown className="w-4 h-4" />
                   </DropdownMenuTrigger>
-                  <div 
-                    className="absolute w-screen"
-                    style={getDropdownPosition(key)}
+                  <DropdownMenuContent 
+                    className={`dropdown-menu-content dropdown-${key}`}
+                    style={getDropdownStyles(key)}
                   >
-                    <DropdownMenuContent 
-                      className={`w-full max-w-6xl mx-auto dropdown-menu-content dropdown-${key}`}
-                      style={{
-                        position: 'relative',
-                      }}
-                    >
-                      <div className="bg-white rounded-lg shadow-lg w-full">
-                        <DropdownContent data={menuData[key]} />
-                      </div>
-                    </DropdownMenuContent>
-                  </div>
+                    <div className="bg-white rounded-lg shadow-lg p-4">
+                      <DropdownContent data={menuData[key]} />
+                    </div>
+                  </DropdownMenuContent>
                 </DropdownMenu>
               </div>
             ))}

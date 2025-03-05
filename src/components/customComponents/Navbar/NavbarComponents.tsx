@@ -1,5 +1,3 @@
-// NavbarComponents.tsx
-
 import React from 'react';
 import { Program } from '../../../../types/Navbar';
 
@@ -45,19 +43,6 @@ export const SideCategories: React.FC<{
 export const DropdownOverlay: React.FC<{ isOpen: boolean }> = ({ isOpen }) => {
   if (!isOpen) return null;
   return (
-    <div 
-      className="fixed inset-0 bg-black bg-opacity-50 z-40"
-      style={{ top: '4rem' }}
-    />
+    <div className="dropdown-overlay" />
   );
 };
-
-export const CenteredDropdown: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="absolute left-1/2 transform -translate-x-1/2 w-screen">
-    <div className="container mx-auto px-4">
-      <div className="max-w-6xl mx-auto">
-        {children}
-      </div>
-    </div>
-  </div>
-);
