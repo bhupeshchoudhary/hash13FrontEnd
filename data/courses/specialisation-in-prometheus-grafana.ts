@@ -11,7 +11,7 @@ export const specialisationInPrometheusGrafana:Course = {
     price: 4893,
     originalPrice: 8500,
     enrolledStudents: 12000,
-    category: "Monitoring ",
+    category: "Monitoring",
     shortDescription: "Industry-Relevant Training | Hands-On Labs | Real-World Projects | Best-In-Class Curriculum",
     paymentLink: "https://rzp.io/rzp/2asghU9u",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",

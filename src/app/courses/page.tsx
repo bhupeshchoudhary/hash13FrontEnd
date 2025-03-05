@@ -140,13 +140,14 @@ const CoursePage: React.FC = () => {
     const baseCategories: Category[] = [
       { name: "All Courses", highlight: false },
       { name: "Popular Courses", highlight: true },
-      { name: "Software Architecture", highlight: false },
-      { name: "System Design", highlight: false },
+      { name: "DevOps", highlight: false },
+      { name: "Monitoring", highlight: false },
       { name: "Programming", highlight: false },
+      { name: "Databases", highlight: false },
       { name: "System Administration", highlight: false },
       { name: "Artificial Intelligence", highlight: false },
-      { name: "Career Planning", highlight: false },
-      { name: "Soft Skills", highlight: false },
+      
+      
       { name: "MLOPS", highlight: false },
     ];
 

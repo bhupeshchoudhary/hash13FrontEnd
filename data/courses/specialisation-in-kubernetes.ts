@@ -1,7 +1,7 @@
 import { Course } from "../../types/courses";
 export const specialisationInKubernetes: Course = {
     _id: "specialisation-in-kubernetes",
-    title: "[B][R]Certified Kubernetes Admin (CKA)[/R][/B] | Optimize Cluster Performance and Scaling",
+    title: "[B]Certified[R] Kubernetes Admin (CKA)[/R][/B] | Optimize Cluster Performance and Scaling",
     slug: "specialisation-in-kubernetes",
     rating: 4.9,
     totalRatings: 10,

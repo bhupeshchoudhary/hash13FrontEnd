@@ -10,7 +10,7 @@ export const specialisationInSplunk:Course ={
     price: 5850,
     originalPrice: 10000,
     enrolledStudents: 10000,
-    category: "Monitoring Tool",
+    category: "Monitoring",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Data Analysis Experience | Real-Time Industry Use Cases | 100% Practical Training",
     paymentLink: "https://rzp.io/rzp/2asghU9u",
     backgroundImage: "/assets/cources/courseDetails/splunk/splunk.jpg",

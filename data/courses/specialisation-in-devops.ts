@@ -11,7 +11,7 @@ export const  specialisationInDevops:Course = {
     price: 20000,
     originalPrice: 45000,
     enrolledStudents: 12000,
-    category: " DevOps",
+    category: "DevOps",
     shortDescription: "Industry Relevant & Recognized Training | Gain HandsOn Experience | Best-In-Class Content | Industry Use-Cases",
    paymentLink:"https://rzp.io/rzp/2asghU9u",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",

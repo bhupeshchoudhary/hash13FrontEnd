@@ -3,7 +3,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInJenkins: Course = {
     _id: "specialisation-in-jenkins",
-    title: "[B][R]CI/CD Pipeline with Jenkins [/R][/B] | Manage Build and Release DevOps Pipelines",
+    title: "[B]CI/CD Pipeline with [R]Jenkins [/R][/B] | Manage Build and Release DevOps Pipelines",
     slug: "specialisation-in-jenkins",
     rating: 4.9,
     totalRatings: 10,
@@ -12,6 +12,7 @@ export const specialisationInJenkins: Course = {
     price: 3350,
     originalPrice: 7500,
     enrolledStudents: 12000,
+    category: "DevOps",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On CI/CD Experience | Advanced Automation Techniques | Real-Time Industry Use Cases",
     paymentLink: "",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
@@ -53,7 +54,7 @@ export const specialisationInJenkins: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    category: "DevOps",
+    
 
     module: [
         {

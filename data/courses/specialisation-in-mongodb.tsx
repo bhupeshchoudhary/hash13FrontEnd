@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInMongoDB: Course = {
     _id: "specialisation-in-mongodb",
-    title: "[B][R]MongoDB Basic to Advance [/R] [/B] | Secure NoSQL Data Transactions",
+    title: "[B][R]MongoDB[/R] Basic to Advance  [/B] | Secure NoSQL Data Transactions",
     slug: "specialisation-in-mongodb",
     rating: 4.9,
     totalRatings: 10,
