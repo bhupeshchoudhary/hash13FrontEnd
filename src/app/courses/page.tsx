@@ -38,7 +38,7 @@ const CoursePage: React.FC = () => {
     const applyFormatting = (text: string) => {
       let isBold = false;
       let isRed = false;
-      let result: JSX.Element[] = [];
+      const result: JSX.Element[] = [];
       let currentText = '';
 
       for (let i = 0; i < text.length; i++) {
