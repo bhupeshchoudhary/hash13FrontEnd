@@ -1,18 +1,32 @@
 "use client"
 
-
-
-
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/customComponents/landingPage/ui/Avatar";
 import { Linkedin } from 'lucide-react';
-import { landingPageTestimonialPosts } from "../../../../data/testimonials/posts"
+import { landingPageTestimonialPosts } from "../../../../data/testimonials/posts";
+
+// Define interfaces
+interface Author {
+    name: string;
+    title: string;
+    avatar: string;
+    linkedin?: string;
+}
+
+interface Post {
+    id: number;
+    author: Author;
+    content: string;
+    timestamp: string;
+    videoUrl?: string;
+}
 
 export default function Component() {
   const [showAll, setShowAll] = useState(false);
+  const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set());
   const initialDisplayCount = 10;
+  const wordLimit = 60;
   const hasMoreTestimonials = landingPageTestimonialPosts.length > initialDisplayCount;
 
   const displayedTestimonials = showAll 
@@ -21,6 +35,73 @@ export default function Component() {
 
   const handleToggleDisplay = () => {
     setShowAll(!showAll);
+  };
+
+  const handleToggleContent = (postId: number) => {
+    setExpandedCards(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(postId)) {
+        newSet.delete(postId);
+      } else {
+        newSet.add(postId);
+      }
+      return newSet;
+    });
+  };
+
+  const renderContent = (content: string, postId: number) => {
+    const words = content.split(' ');
+    const isExpanded = expandedCards.has(postId);
+    const shouldTruncate = words.length > wordLimit && !isExpanded;
+
+    if (shouldTruncate) {
+      const truncatedText = words.slice(0, wordLimit).join(' ') + '...';
+      return (
+        <div className="space-y-2 text-sm">
+          <p>
+            {truncatedText.split(' ').map((word, wordIndex) => (
+              word.startsWith('@') || word.startsWith('#') 
+                ? <span key={wordIndex} className="text-[#63B3ED]">{word} </span>
+                : word + ' '
+            ))}
+          </p>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              handleToggleContent(postId);
+            }}
+            className="text-[#ff0000] text-sm font-semibold hover:underline mt-2"
+          >
+            View more
+          </button>
+        </div>
+      );
+    }
+
+    return (
+      <div className="space-y-2 text-sm">
+        {content.split('\n\n').map((paragraph, index) => (
+          <p key={index}>
+            {paragraph.split(' ').map((word, wordIndex) => (
+              word.startsWith('@') || word.startsWith('#')
+                ? <span key={wordIndex} className="text-[#63B3ED]">{word} </span>
+                : word + ' '
+            ))}
+          </p>
+        ))}
+        {words.length > wordLimit && (
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              handleToggleContent(postId);
+            }}
+            className="text-[#ff0000] text-sm font-semibold hover:underline mt-2"
+          >
+            View less
+          </button>
+        )}
+      </div>
+    );
   };
 
   return (
@@ -34,16 +115,15 @@ export default function Component() {
         </h2>
         
         <div className="columns-1 md:columns-4 lg:columns-4 gap-4 space-y-4 max-w-5xl mx-auto ">
-          {displayedTestimonials.map((post) => (
+          {displayedTestimonials.map((post: Post) => (
             <Card
               key={post.id}
-              className={`relative overflow-hidden bg-[#ffffff]  text-black border border-gray-500 mb-4 break-inside-avoid`}
+              className={`relative overflow-hidden bg-[#ffffff] text-black border border-gray-500 mb-4 break-inside-avoid`}
             >
               {post.videoUrl && post.id === 5 ? (
-                /* Card with Short Video */
                 <CardContent className="p-0">
                   <iframe
-                    className="video-iframe "
+                    className="video-iframe"
                     src={post.videoUrl}
                     title="YouTube video player"
                     frameBorder="0"
@@ -57,7 +137,6 @@ export default function Component() {
                   ></iframe>
                 </CardContent>
               ) : post.videoUrl ? (
-                /* Regular Video Card */
                 <CardContent className="p-0">
                   <iframe
                     className="video-iframe"
@@ -74,12 +153,11 @@ export default function Component() {
                   ></iframe>
                 </CardContent>
               ) : (
-                /* Other Content Cards */
                 <>
                   <CardHeader className="pb-2">
                     <div className="flex items-center space-x-2">
                       <Avatar className="h-12 w-12 flex-shrink-0">
-                        <AvatarImage src={post.author.avatar.toString()} alt={post.author.name} />
+                        <AvatarImage src={post.author.avatar} alt={post.author.name} />
                         <AvatarFallback>{post.author.name.charAt(0)}</AvatarFallback>
                       </Avatar>
                       <div className="flex-grow">
@@ -90,18 +168,7 @@ export default function Component() {
                     </div>
                   </CardHeader>
                   <CardContent className="pt-2">
-                    <div className="space-y-2 text-sm">
-                      {post.content.split('\n\n').map((paragraph, index) => (
-                        <p key={index}>
-                          {paragraph.split(' ').map((word, wordIndex) => {
-                            if (word.startsWith('@') || word.startsWith('#')) {
-                              return <span key={wordIndex} className="text-[#63B3ED]">{word} </span>;
-                            }
-                            return word + ' ';
-                          })}
-                        </p>
-                      ))}
-                    </div>
+                    {renderContent(post.content, post.id)}
                     <p className="mt-4 text-xs text-gray-400">{post.timestamp}</p>
                   </CardContent>
                 </>
