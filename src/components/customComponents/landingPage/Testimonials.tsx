@@ -24,7 +24,7 @@ export default function Component() {
   };
 
   return (
-    <div className="bg-[#ffffff] p-6 mx-auto py-8 ">
+    <div className="bg-[#ffffff] p- mx-auto py-8 ">
       <div className="mx-auto max-w-6xl" >
         <h2 className="text-teal-500 text-md font-semibold text-center">
           HERE IT FROM THEM
@@ -33,11 +33,11 @@ export default function Component() {
           Ambitious <span className ="text-[#ff0000]">Learner&apos;s</span> ❤️ #13
         </h2>
         
-        <div className="columns-1 md:columns-4 lg:columns-4 gap-6 space-y-4 max-w-5xl mx-auto ">
+        <div className="columns-1 md:columns-4 lg:columns-4 gap-4 space-y-4 max-w-5xl mx-auto ">
           {displayedTestimonials.map((post) => (
             <Card
               key={post.id}
-              className={`relative overflow-hidden bg-[#ffffff] text-black border border-gray-500 mb-4 break-inside-avoid`}
+              className={`relative overflow-hidden bg-[#ffffff]  text-black border border-gray-500 mb-4 break-inside-avoid`}
             >
               {post.videoUrl && post.id === 5 ? (
                 /* Card with Short Video */
@@ -77,7 +77,7 @@ export default function Component() {
                 /* Other Content Cards */
                 <>
                   <CardHeader className="pb-2">
-                    <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-2">
                       <Avatar className="h-12 w-12 flex-shrink-0">
                         <AvatarImage src={post.author.avatar.toString()} alt={post.author.name} />
                         <AvatarFallback>{post.author.name.charAt(0)}</AvatarFallback>
