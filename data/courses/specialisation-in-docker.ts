@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInDocker: Course = {
     _id: "docker-certified-associate-2024",
-    title: "[B][R]  Docker [/R]Certified Associate  (DCA)[/B] Training    Kickstart Your DevOps Career with Docker",
+    title: "[B][R]  Docker Certified Associate (DCA) [/R] [/B]    Kickstart Your DevOps Career with Docker",
     slug: "docker-certified-associate-2024",
     rating: 4.9,
     totalRatings: 10,
