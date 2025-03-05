@@ -24,13 +24,13 @@ export default function Component() {
   };
 
   return (
-    <div className="bg-[#ffffff] p-6 mx-auto ">
+    <div className="bg-[#ffffff] p-6 mx-auto py-8 ">
       <div className="mx-auto max-w-6xl" >
-        <h2 className="text-gray-700 text-md font-semibold">
+        <h2 className="text-teal-500 text-md font-semibold text-center">
           HERE IT FROM THEM
         </h2>
-        <h2 className="text-black text-2xl md:text-3xl font-bold mb-10 mt-2">
-          Ambitious learners  ❤️ #13
+        <h2 className="text-black text-2xl md:text-3xl font-bold mb-10 mt-2 text-center">
+          Ambitious <span className ="text-[#ff0000]">Learner&apos;s</span> ❤️ #13
         </h2>
         
         <div className="columns-1 md:columns-4 lg:columns-4 gap-6 space-y-4 max-w-5xl mx-auto ">
@@ -113,7 +113,7 @@ export default function Component() {
         {hasMoreTestimonials && (
           <div className="flex items-center mt-12">
             <button 
-              className="mx-auto border border-gray-500 p-4 rounded hover:bg-gray-50 transition-colors"
+              className="mx-auto border bg-[#ff0000] text-white p-4 rounded hover:bg-[#ff0000] transition-colors"
               onClick={handleToggleDisplay}
             >
               {showAll ? 'View Less' : 'See our Wall of Love'}
