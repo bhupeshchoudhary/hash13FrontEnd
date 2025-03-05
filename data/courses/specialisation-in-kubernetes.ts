@@ -13,7 +13,7 @@ export const specialisationInKubernetes: Course = {
     category: "DevOps",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Orchestration Experience | Advanced Deployment Techniques | Real-Time Industry Use Cases",
     paymentLink: "",
-    backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
+    backgroundImage: "/assets/cources/courseDetails/kubernets/kubernetes.jpg",
 
     learningOutcomes: [
         "Kubernetes Architecture & Components",

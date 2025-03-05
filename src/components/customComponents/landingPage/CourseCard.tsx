@@ -73,7 +73,7 @@ export default function CourseCard({ course }: CourseCardProps) {
             result.push(
               <span 
                 key={`red-${i}`} 
-                className={`text-red-500 ${isBold ? 'font-bold' : ''} inline`}
+                className={`text-[#ff0000] ${isBold ? 'font-bold' : ''} inline`}
               >
                 {currentText}
               </span>
@@ -94,7 +94,7 @@ export default function CourseCard({ course }: CourseCardProps) {
             key="final" 
             className={`
               ${isBold ? 'font-bold' : ''} 
-              ${isRed ? 'text-red-500' : ''}
+              ${isRed ? 'text-[#ff0000]' : ''}
               inline
             `}
           >

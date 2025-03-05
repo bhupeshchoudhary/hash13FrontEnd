@@ -14,7 +14,7 @@ export const specialisationInPrometheusGrafana:Course = {
     category: "Monitoring",
     shortDescription: "Industry-Relevant Training | Hands-On Labs | Real-World Projects | Best-In-Class Curriculum",
     paymentLink: "https://rzp.io/rzp/2asghU9u",
-    backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
+    backgroundImage: "/assets/cources/courseDetails/grafana/promethes-and-grafana.jpg",
   
     learningOutcomes: [
         "Prometheus - Monitoring, Alerting & Internals",

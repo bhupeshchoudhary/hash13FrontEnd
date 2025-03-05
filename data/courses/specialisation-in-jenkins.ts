@@ -15,7 +15,7 @@ export const specialisationInJenkins: Course = {
     category: "DevOps",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On CI/CD Experience | Advanced Automation Techniques | Real-Time Industry Use Cases",
     paymentLink: "",
-    backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
+    backgroundImage: "/assets/cources/courseDetails/jenkkins/jenkins.jpg",
 
     learningOutcomes: [
         "Jenkins Fundamentals & Setup",

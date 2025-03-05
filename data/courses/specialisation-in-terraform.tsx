@@ -14,7 +14,7 @@ export const specialisationInTerraform: Course = {
     category: "DevOps",
     shortDescription: "45+ Hours | Comprehensive Modules | 3 Capstone Projects",
     paymentLink: "",
-    backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
+    backgroundImage: "/assets/cources/courseDetails/terraform/terraform.jpg",
 
     learningOutcomes: [
         "Terraform Concepts",
