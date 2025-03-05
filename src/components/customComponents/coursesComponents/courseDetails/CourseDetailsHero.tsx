@@ -22,7 +22,7 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
     const applyFormatting = (text: string) => {
       let isBold = false;
       let isRed = false;
-      const result: JSX.Element[] = [];
+     const result: JSX.Element[] = [];
       let currentText = '';
 
       for (let i = 0; i < text.length; i++) {
