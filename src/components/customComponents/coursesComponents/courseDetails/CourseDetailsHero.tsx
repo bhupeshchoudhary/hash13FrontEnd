@@ -36,7 +36,7 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
             <span
               key={start}
               className={`${isBold ? 'font-bold' : ''} ${
-                isRed ? 'text-red-500' : ''
+                isRed ? 'text-[#ff0000]' : ''
               } leading-tight`}
             >
               {content}

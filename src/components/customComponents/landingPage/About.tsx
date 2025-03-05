@@ -119,7 +119,7 @@ const About = () => {
                       {/* <curveLine></curveLine>  */}
                     </div>
                   </span> 
-                    Up-to-Date
+                  &nbsp;Up-to-Date
               </h1>
               <p className="text-gray-500 text-sm">
                 Learn while working or studying from any place, across any device.
