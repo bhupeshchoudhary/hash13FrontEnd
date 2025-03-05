@@ -13,7 +13,7 @@ export const specialisationInMongoDB: Course = {
     enrolledStudents: 12000,
     shortDescription: "Industry-Recognized Curriculum | Live Projects | Expert-Led Training | Advanced NoSQL Techniques | High-Performance Data Handling",
     paymentLink: "",
-    backgroundImage: "/assets/cources/courseDetails/mongodb/mongodb.jpg",
+    backgroundImage: "/assets/cources/courseDetails/mongodb/MongoDB.jpg",
 
     learningOutcomes: [
         "MongoDB Fundamentals & NoSQL concepts",
@@ -170,14 +170,14 @@ export const specialisationInMongoDB: Course = {
     ],
 
     programFor: [
-        { src: "", alt: "Software Developers", text: "Software Developers" },
-        { src: "", alt: "Database Administrators", text: "Database Administrators" },
-        { src: "", alt: "System Administrators", text: "System Administrators" },
-        { src: "", alt: "Cloud Engineers", text: "Cloud Engineers" },
-        { src: "", alt: "DevOps Engineers", text: "DevOps Engineers" },
-        { src: "", alt: "Data Engineers", text: "Data Engineers" },
-        { src: "", alt: "IT Professionals", text: "IT Professionals" },
-        { src: "", alt: "Students", text: "Students" }
+        { src: "", alt: "/assets/cources/courseDetails/terraform/Software Developers.jpg", text: "Software Developers" },
+        { src: "", alt: "/assets/cources/courseDetails/mongodb/Database Administrators.jpg", text: "Database Administrators" },
+        { src: "", alt: "/assets/cources/courseDetails/mongodb/System Administrators.jpg", text: "System Administrators" },
+        { src: "", alt: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", text: "Cloud Engineers" },
+        { src: "", alt: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", text: "DevOps Engineers" },
+        { src: "", alt: "/assets/cources/courseDetails/mongodb/Data Engineers.jpg", text: "Data Engineers" },
+        { src: "", alt: "/assets/cources/courseDetails/mongodb/IT Professionals.jpg", text: "IT Professionals" },
+        { src: "", alt: "/assets/cources/courseDetails/mongodb/Students.jpg", text: "Students" }
     ],
 
     toolsData: {
