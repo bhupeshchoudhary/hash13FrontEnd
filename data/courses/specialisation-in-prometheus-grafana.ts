@@ -13,7 +13,7 @@ export const specialisationInPrometheusGrafana:Course = {
     enrolledStudents: 12000,
     category: "Monitoring",
     shortDescription: "Industry-Relevant Training | Hands-On Labs | Real-World Projects | Best-In-Class Curriculum",
-    paymentLink: "https://rzp.io/rzp/2asghU9u",
+    paymentLink: "https://rzp.io/rzp/StuN70VM",
     backgroundImage: "/assets/cources/courseDetails/grafana/promethes-and-grafana.jpg",
   
     learningOutcomes: [
