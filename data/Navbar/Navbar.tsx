@@ -13,33 +13,37 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "310 Hours",
             status: "Active",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:"/courses/specialisation-in-devops"
           },
           {
-            title: "Business Analytics",
-            mentor: "by Jane Smith",
-            duration: "8 Weeks",
-            status: "Available Now",
-            type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            title: "Mastering Prometheus & Grafana",
+            mentor: "by Vimal Daga",
+            duration: "16+ Hours",
+            status: "Active",
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/grafana/promethes-and-grafana.jpg",
+            slug:"/courses/specialisation-in-prometheus-grafana"
           },
           {
-            title: "Strategic Planning",
-            mentor: "by Michael Brown",
-            duration: "10 Weeks",
-            status: "Coming Soon",
-            type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            title: "Docker Certified Associate",
+            mentor: "by Vimal Daga",
+            duration: "20+ Hours",
+            status: "Active",
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:"/courses/docker-certified-associate-2024"
           }
         ],
         selfPacedPrograms: [
           {
-            title: "Agile Management",
-            mentor: "by Alice Johnson",
-            duration: "Self-paced",
-            status: "Available Now",
+            title: "Bash Shell Scripting",
+            mentor: "by Vimal Daga",
+            duration: "16+ Hours",
+            status: "Active",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/shell-scripting/shell-scripting.jpg",
+            slug:"/courses/specialisation-in-shell-scripting"
           },
           {
             title: "Business Communication",
@@ -47,7 +51,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ]
       },
@@ -59,7 +64,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "10 Weeks",
             status: "Coming Soon",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "DevOps Engineering",
@@ -67,7 +73,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "12 Weeks",
             status: "Available Now",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Full Stack Development",
@@ -75,7 +82,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "16 Weeks",
             status: "Coming Soon",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ],
         selfPacedPrograms: [
@@ -85,7 +93,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "AWS Fundamentals",
@@ -93,7 +102,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ]
       },
@@ -105,7 +115,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "4 Weeks",
             status: "Coming Soon",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Career Development",
@@ -113,7 +124,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "6 Weeks",
             status: "Available Now",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ],
         selfPacedPrograms: [
@@ -123,7 +135,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Time Management",
@@ -131,7 +144,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ]
       }
@@ -147,7 +161,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "8 Weeks",
             status: "Coming Soon",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Graphic Design",
@@ -155,7 +170,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "6 Weeks",
             status: "Available Now",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ],
         selfPacedPrograms: [
@@ -165,7 +181,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Design Principles",
@@ -173,7 +190,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ]
       },
@@ -185,7 +203,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "10 Weeks",
             status: "Coming Soon",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Social Media Strategy",
@@ -193,7 +212,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "6 Weeks",
             status: "Available Now",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ],
         selfPacedPrograms: [
@@ -203,7 +223,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Content Marketing",
@@ -211,7 +232,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ]
       },
@@ -223,7 +245,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "12 Weeks",
             status: "Coming Soon",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Product Strategy",
@@ -231,7 +254,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "8 Weeks",
             status: "Available Now",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ],
         selfPacedPrograms: [
@@ -241,7 +265,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "User Research",
@@ -249,7 +274,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ]
       }
@@ -265,7 +291,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "12 Weeks",
             status: "Coming Soon",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Deep Learning",
@@ -273,7 +300,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "14 Weeks",
             status: "Available Now",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ],
         selfPacedPrograms: [
@@ -283,7 +311,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Neural Networks",
@@ -291,7 +320,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ]
       },
@@ -303,7 +333,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "16 Weeks",
             status: "Coming Soon",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Automation",
@@ -311,7 +342,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "12 Weeks",
             status: "Available Now",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ],
         selfPacedPrograms: [
@@ -321,7 +353,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Robotics Basics",
@@ -329,7 +362,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ]
       },
@@ -341,7 +375,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "10 Weeks",
             status: "Coming Soon",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Smart Contracts",
@@ -349,7 +384,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "8 Weeks",
             status: "Available Now",
             type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ],
         selfPacedPrograms: [
@@ -359,7 +395,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           },
           {
             title: "Web3 Development",
@@ -367,7 +404,8 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "Self-paced",
             status: "Available Now",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg"
+            image:"/assets/cources/courseDetails/Hero.jpeg",
+            slug:""
           }
         ]
       }

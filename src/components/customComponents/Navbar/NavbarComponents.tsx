@@ -1,11 +1,13 @@
 import React from 'react';
 import { Program } from '../../../../types/Navbar';
+import Link from "next/link"
+export const ProgramCard: React.FC<Program> = ({ title, mentor, duration, status, type ,image,slug}) => (
 
-export const ProgramCard: React.FC<Program> = ({ title, mentor, duration, status, type }) => (
+  <Link href={slug}>
   <div className="p-4 hover:bg-gray-50 rounded-lg transition-colors">
     <div className="flex gap-4">
       <div className="w-16 h-16 bg-gray-200 rounded-lg overflow-hidden">
-        <img src="/api/placeholder/64/64" alt="mentor" className="w-full h-full object-cover" />
+        <img src={image} alt="mentor" className="w-full h-full object-cover" />
       </div>
       <div className="flex-1">
         <h3 className="font-medium text-lg">{title}</h3>
@@ -18,6 +20,7 @@ export const ProgramCard: React.FC<Program> = ({ title, mentor, duration, status
       </div>
     </div>
   </div>
+  </Link>
 );
 
 export const SideCategories: React.FC<{
