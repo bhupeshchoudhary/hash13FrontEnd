@@ -68,110 +68,137 @@ export const menuData: Record<MenuKey, MenuData> = {
             slug:"/courses/specialisation-in-java"
           },
           {
-            title: "DevOps Engineering",
-            mentor: "by Tech Williams",
-            duration: "12 Weeks",
-            status: "Available Now",
-            type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
+            title: "Bash Shell Scripting",
+            mentor: "by Vimal Sir",
+            duration: "16+ Hours",
+            status: "Active",
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/shell-scripting/shell-scripting.jpg",
+            slug:"/courses/specialisation-in-shell-scripting"
           },
-          {
-            title: "Full Stack Development",
-            mentor: "by David Miller",
-            duration: "16 Weeks",
-            status: "Coming Soon",
-            type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
-          }
+       
         ],
         selfPacedPrograms: [
-          {
-            title: "Kubernetes Basics",
-            mentor: "by Bruce Banner",
-            duration: "Self-paced",
-            status: "Available Now",
-            type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
-          },
-          {
-            title: "AWS Fundamentals",
-            mentor: "by Clark Kent",
-            duration: "Self-paced",
-            status: "Available Now",
-            type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
-          }
+          // {
+          //   title: "Kubernetes Basics",
+          //   mentor: "by Bruce Banner",
+          //   duration: "Self-paced",
+          //   status: "Available Now",
+          //   type: "Recorded",
+          //   image:"/assets/cources/courseDetails/Hero.jpeg",
+          //   slug:""
+          // },
+          // {
+          //   title: "AWS Fundamentals",
+          //   mentor: "by Clark Kent",
+          //   duration: "Self-paced",
+          //   status: "Available Now",
+          //   type: "Recorded",
+          //   image:"/assets/cources/courseDetails/Hero.jpeg",
+          //   slug:""
+          // }
         ]
       },
-      Growth: {
+      Databases: {
         mentorshipPrograms: [
           {
-            title: "Personal Branding",
-            mentor: "by Tony Stark",
-            duration: "4 Weeks",
-            status: "Coming Soon",
-            type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
+            title: "MongoDB Basic to Advance",
+            mentor: "by Vimal Daga",
+            duration: "16+ Hours",
+            status: "Active",
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/mongodb/MongoDB.jpg",
+            slug:"/courses/specialisation-in-mongodb"
+          },
+        
+        ],
+        selfPacedPrograms: [
+          // {
+          //   title: "Goal Setting",
+          //   mentor: "by Natasha Romanoff",
+          //   duration: "Self-paced",
+          //   status: "Available Now",
+          //   type: "Recorded",
+          //   image:"/assets/cources/courseDetails/Hero.jpeg",
+          //   slug:""
+          // },
+          // {
+          //   title: "Time Management",
+          //   mentor: "by Steve Rogers",
+          //   duration: "Self-paced",
+          //   status: "Available Now",
+          //   type: "Recorded",
+          //   image:"/assets/cources/courseDetails/Hero.jpeg",
+          //   slug:""
+          // }
+        ]
+      },
+      Monitoring: {
+        mentorshipPrograms: [
+          {
+            title: "Mastering Prometheus & Grafana",
+            mentor: "by Vimal Daga",
+            duration: "16+ Hours",
+            status: "Active",
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/grafana/promethes-and-grafana.jpg",
+            slug:"/courses/specialisation-in-prometheus-grafana"
           },
           {
-            title: "Career Development",
-            mentor: "by Emma Watson",
-            duration: "6 Weeks",
-            status: "Available Now",
-            type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
+            title: "Complete Splunk Administration",
+            mentor: "by Vimal Daga",
+            duration: "16+ Hours",
+            status: "Active",
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/splunk/splunk.jpg",
+            slug:"/courses/specialisation-in-splunk"
           }
         ],
         selfPacedPrograms: [
-          {
-            title: "Goal Setting",
-            mentor: "by Natasha Romanoff",
-            duration: "Self-paced",
-            status: "Available Now",
-            type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
-          },
-          {
-            title: "Time Management",
-            mentor: "by Steve Rogers",
-            duration: "Self-paced",
-            status: "Available Now",
-            type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
-          }
+          // {
+          //   title: "Adobe Creative Suite",
+          //   mentor: "by Mary Jane",
+          //   duration: "Self-paced",
+          //   status: "Available Now",
+          //   type: "Recorded",
+          //   image:"/assets/cources/courseDetails/Hero.jpeg",
+          //   slug:""
+          // },
+          // {
+          //   title: "Design Principles",
+          //   mentor: "by Wade Wilson",
+          //   duration: "Self-paced",
+          //   status: "Available Now",
+          //   type: "Recorded",
+          //   image:"/assets/cources/courseDetails/Hero.jpeg",
+          //   slug:""
+          // }
         ]
-      }
+      },
+
     }
   },
   collegeStudents: {
     categories: {
-      Design: {
+      Monitoring: {
         mentorshipPrograms: [
           {
-            title: "UI/UX Design",
-            mentor: "by Emily Clark",
-            duration: "8 Weeks",
-            status: "Coming Soon",
-            type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
+            title: "Mastering Prometheus & Grafana",
+            mentor: "by Vimal Daga",
+            duration: "16+ Hours",
+            status: "Active",
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/grafana/promethes-and-grafana.jpg",
+            slug:"/courses/specialisation-in-prometheus-grafana"
           },
           {
-            title: "Graphic Design",
-            mentor: "by Peter Parker",
-            duration: "6 Weeks",
-            status: "Available Now",
-            type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
+            title: "Complete Splunk Administration",
+            mentor: "by Vimal Daga",
+            duration: "16+ Hours",
+            status: "Active",
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/splunk/splunk.jpg",
+            slug:"/courses/specialisation-in-splunk"
           }
         ],
         selfPacedPrograms: [
