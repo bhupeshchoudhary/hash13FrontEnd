@@ -20,14 +20,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Jane Smith",
             duration: "8 Weeks",
             status: "Available Now",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Strategic Planning",
             mentor: "by Michael Brown",
             duration: "10 Weeks",
             status: "Coming Soon",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ],
         selfPacedPrograms: [
@@ -36,14 +38,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Alice Johnson",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Business Communication",
             mentor: "by Robert Wilson",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ]
       },
@@ -54,21 +58,24 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Sarah Connor",
             duration: "10 Weeks",
             status: "Coming Soon",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "DevOps Engineering",
             mentor: "by Tech Williams",
             duration: "12 Weeks",
             status: "Available Now",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Full Stack Development",
             mentor: "by David Miller",
             duration: "16 Weeks",
             status: "Coming Soon",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ],
         selfPacedPrograms: [
@@ -77,14 +84,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Bruce Banner",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "AWS Fundamentals",
             mentor: "by Clark Kent",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ]
       },
@@ -95,14 +104,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Tony Stark",
             duration: "4 Weeks",
             status: "Coming Soon",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Career Development",
             mentor: "by Emma Watson",
             duration: "6 Weeks",
             status: "Available Now",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ],
         selfPacedPrograms: [
@@ -111,14 +122,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Natasha Romanoff",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Time Management",
             mentor: "by Steve Rogers",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ]
       }
@@ -133,14 +146,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Emily Clark",
             duration: "8 Weeks",
             status: "Coming Soon",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Graphic Design",
             mentor: "by Peter Parker",
             duration: "6 Weeks",
             status: "Available Now",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ],
         selfPacedPrograms: [
@@ -149,14 +164,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Mary Jane",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Design Principles",
             mentor: "by Wade Wilson",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ]
       },
@@ -167,14 +184,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Alex Brown",
             duration: "10 Weeks",
             status: "Coming Soon",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Social Media Strategy",
             mentor: "by Diana Prince",
             duration: "6 Weeks",
             status: "Available Now",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ],
         selfPacedPrograms: [
@@ -183,14 +202,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Barry Allen",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Content Marketing",
             mentor: "by Hal Jordan",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ]
       },
@@ -201,14 +222,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Clint Barton",
             duration: "12 Weeks",
             status: "Coming Soon",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Product Strategy",
             mentor: "by Nick Fury",
             duration: "8 Weeks",
             status: "Available Now",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ],
         selfPacedPrograms: [
@@ -217,14 +240,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Bruce Wayne",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "User Research",
             mentor: "by Wanda Maximoff",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ]
       }
@@ -239,14 +264,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Chris Green",
             duration: "12 Weeks",
             status: "Coming Soon",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Deep Learning",
             mentor: "by Vision",
             duration: "14 Weeks",
             status: "Available Now",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ],
         selfPacedPrograms: [
@@ -255,14 +282,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Tony Stark",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Neural Networks",
             mentor: "by Bruce Banner",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ]
       },
@@ -273,14 +302,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Victor Stone",
             duration: "16 Weeks",
             status: "Coming Soon",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Automation",
             mentor: "by Reed Richards",
             duration: "12 Weeks",
             status: "Available Now",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ],
         selfPacedPrograms: [
@@ -289,14 +320,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Diana Prince",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Robotics Basics",
             mentor: "by Peter Quill",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ]
       },
@@ -307,14 +340,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Sarah White",
             duration: "10 Weeks",
             status: "Coming Soon",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Smart Contracts",
             mentor: "by Stephen Strange",
             duration: "8 Weeks",
             status: "Available Now",
-            type: "Live"
+            type: "Live",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ],
         selfPacedPrograms: [
@@ -323,14 +358,16 @@ export const menuData: Record<MenuKey, MenuData> = {
             mentor: "by Clark Kent",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Web3 Development",
             mentor: "by Matt Murdock",
             duration: "Self-paced",
             status: "Available Now",
-            type: "Recorded"
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           }
         ]
       }
