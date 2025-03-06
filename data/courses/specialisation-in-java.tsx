@@ -190,13 +190,13 @@ export const specialisationInJava: Course = {
 
  programFor: [
     { src: "", alt: "Software Developers", text: "Software Developers" },
-    { src: "", alt: "Database Administrators", text: "Database Administrators" },
+    { src: "/assets/cources/courseDetails/mongodb/Database Administrators.jpg", alt: "Database Administrators", text: "Database Administrators" },
     { src: "", alt: "System Administrators", text: "System Administrators" },
     { src: "", alt: "Cloud Engineers", text: "Cloud Engineers" },
-    { src: "", alt: "DevOps Engineers", text: "DevOps Engineers" },
-    { src: "", alt: "Data Engineers", text: "Data Engineers" },
-    { src: "", alt: "IT Professionals", text: "IT Professionals" },
-    { src: "", alt: "Students", text: "Students" }
+    { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
+    { src: "/assets/cources/courseDetails/mongodb/Data Engineers.jpg", alt: "Data Engineers", text: "Data Engineers" },
+    { src: "/assets/cources/courseDetails/mongodb/IT Professionals.jpg", alt: "IT Professionals", text: "IT Professionals" },
+    { src: "/assets/cources/courseDetails/mongodb/Students.jpg", alt: "Students", text: "Students" }
 ],
 
     toolsData: {

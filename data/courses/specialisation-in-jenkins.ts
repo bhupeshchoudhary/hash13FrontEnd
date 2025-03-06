@@ -182,15 +182,15 @@ export const specialisationInJenkins: Course = {
     ],
 
     programFor: [
-        { src: "", alt: "Engineering Graduates", text: "Engineering Graduates (CS/IT, ECE)" },
-        { src: "", alt: "System Administrators", text: "Linux System Administrators" },
-        { src: "", alt: "DevOps Engineers", text: "DevOps Engineers" },
-        { src: "", alt: "Cloud Administrators", text: "Cloud Administrators" },
-        { src: "", alt: "Web Developers", text: "Web Developers" },
-        { src: "", alt: "Automation Engineers", text: "Automation Engineers" },
-        { src: "", alt: "Server Administrators", text: "Server Administrators" },
-        { src: "", alt: "Network Administrators", text: "Network Administrators" },
-        { src: "", alt: "Freshers", text: "Freshers" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Engineer Graduates.jpg", alt: "Engineering Graduates", text: "Engineering Graduates (CS/IT, ECE)" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Linux System Administrators.jpg", alt: "System Administrators", text: "Linux System Administrators" },
+        { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Cloud Administrators.jpg", alt: "Cloud Administrators", text: "Cloud Administrators" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Web Developers (BackendFull Stack).jpg", alt: "Web Developers", text: "Web Developers" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Automation Engineers.jpg", alt: "Automation Engineers", text: "Automation Engineers" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Server AdministratorsS.jpg", alt: "Server Administrators", text: "Server Administrators" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Network Adminstrators.jpg", alt: "Network Administrators", text: "Network Administrators" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Freshers seeking Automation or DevOps Roles.jpg", alt: "Freshers", text: "Freshers" },
         { src: "", alt: "Academicians", text: "Academicians" }
     ],
 
