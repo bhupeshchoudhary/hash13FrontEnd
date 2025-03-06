@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import logo from "../../../public/assets/landingPage/logohash13.svg";
-
+import { menuData } from "../../../data/Navbar/Navbar";
 /// --- Types ---
 type Program = {
   title: string;
@@ -15,6 +15,7 @@ type Program = {
   duration: string;
   status: string;
   type: "Live" | "Recorded";
+  image?:string
 };
 
 type CategoryData = {
@@ -29,40 +30,46 @@ type MenuData = {
 type MenuKeys = "workingProfessionals" | "collegeStudents" | "more";
 
 /// --- JSON Data ---
-const menuData: Record<MenuKeys, MenuData> = {
-  workingProfessionals: {
-    categories: {
-      Business: {
-        mentorshipPrograms: [
-          { title: "Leadership", mentor: "by John Doe", duration: "6 Weeks", status: "Coming Soon", type: "Live" },
-          { title: "Data Science", mentor: "by Jane Smith", duration: "8 Weeks", status: "Available Now", type: "Live" },
-        ],
-        selfPacedPrograms: [
-          { title: "Agile Management", mentor: "by Alice", duration: "Self-paced", status: "Available Now", type: "Recorded" },
-        ],
-      },
-      // ... rest of your data
-    },
-  },
-  collegeStudents: {
-    categories: {
-      // ... your college students data
-    },
-  },
-  more: {
-    categories: {
-      // ... your more data
-    },
-  },
-};
+// const menuData: Record<MenuKeys, MenuData> = {
+//   workingProfessionals: {
+//     categories: {
+//       Business: {
+//         mentorshipPrograms: [
+//           { title: "Leadership", mentor: "by John Doe", duration: "6 Weeks", status: "Coming Soon", type: "Live" },
+//           { title: "Data Science", mentor: "by Jane Smith", duration: "8 Weeks", status: "Available Now", type: "Live" },
+//         ],
+//         selfPacedPrograms: [
+//           { title: "Agile Management", mentor: "by Alice", duration: "Self-paced", status: "Available Now", type: "Recorded" },
+//         ],
+//       },
+//       // ... rest of your data
+//     },
+//   },
+//   collegeStudents: {
+//     categories: {
+//       // ... your college students data
+//     },
+//   },
+//   more: {
+//     categories: {
+//       // ... your more data
+//     },
+//   },
+// };
 
 /// --- Components ---
-const ProgramCard: React.FC<Program> = ({ title, mentor, duration, status, type }) => (
+const ProgramCard: React.FC<Program> = ({ title, mentor, duration, status, type,image }) => {
+  console.log("This is image from json data",image);
+  console.log("This is mentor",mentor);
+  console.log("This is duration",duration);
+  console.log("This is status",status)
+  return (
+    <>
   <div className="p-4 hover:bg-gray-50 rounded-lg transition-colors">
     <div className="flex gap-4">
       <div className="w-16 h-16 bg-gray-200 rounded-lg overflow-hidden">
         <Image 
-          src="/placeholder.jpg" 
+          src={`${image}`}
           alt="mentor" 
           width={64} 
           height={64}
@@ -71,7 +78,7 @@ const ProgramCard: React.FC<Program> = ({ title, mentor, duration, status, type 
       </div>
       <div className="flex-1">
         <h3 className="font-medium text-lg">{title}</h3>
-        <p className="text-sm text-gray-600">{mentor}</p>
+        <p className="text-sm text-gray-600">Sumit</p>
         <div className="flex flex-wrap gap-4 mt-2">
           <span className="text-sm text-gray-600">⏱️ {duration}</span>
           <span className="text-sm text-gray-600">📅 {status}</span>
@@ -80,7 +87,9 @@ const ProgramCard: React.FC<Program> = ({ title, mentor, duration, status, type 
       </div>
     </div>
   </div>
-);
+  </>
+  )
+};
 
 interface SideCategoriesProps {
   categories: string[];

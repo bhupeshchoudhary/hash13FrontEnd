@@ -5,14 +5,15 @@ import { MenuKey, MenuData } from '../../types/Navbar';
 export const menuData: Record<MenuKey, MenuData> = {
   workingProfessionals: {
     categories: {
-      Business: {
+      DevOps: {
         mentorshipPrograms: [
           {
-            title: "Leadership & Management",
-            mentor: "by John Doe",
-            duration: "6 Weeks",
-            status: "Coming Soon",
-            type: "Live"
+            title: "Specialisation in DevOps",
+            mentor: "by Vimal Daga",
+            duration: "310 Hours",
+            status: "Active",
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/Hero.jpeg"
           },
           {
             title: "Business Analytics",
