@@ -12,7 +12,7 @@ export const specialisationInSplunk:Course ={
     enrolledStudents: 10000,
     category: "Monitoring",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Data Analysis Experience | Real-Time Industry Use Cases | 100% Practical Training",
-    paymentLink: "https://rzp.io/rzp/2asghU9u",
+    paymentLink: "https://rzp.io/rzp/sETCCIg",
     backgroundImage: "/assets/cources/courseDetails/splunk/splunk.jpg",
   
     learningOutcomes: [

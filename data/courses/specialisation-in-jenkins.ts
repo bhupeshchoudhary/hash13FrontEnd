@@ -14,7 +14,7 @@ export const specialisationInJenkins: Course = {
     enrolledStudents: 12000,
     category: "DevOps",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On CI/CD Experience | Advanced Automation Techniques | Real-Time Industry Use Cases",
-    paymentLink: "",
+    paymentLink: "https://rzp.io/rzp/qyHXKkl",
     backgroundImage: "/assets/cources/courseDetails/jenkkins/jenkins.jpg",
 
     learningOutcomes: [

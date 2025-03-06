@@ -13,7 +13,7 @@ export const specialisationInMongoDB: Course = {
     enrolledStudents: 12000,
     category: "Databases",
     shortDescription: "Industry-Recognized Curriculum | Live Projects | Expert-Led Training | Advanced NoSQL Techniques | High-Performance Data Handling",
-    paymentLink: "",
+    paymentLink: " https://rzp.io/rzp/at46f6D",
     backgroundImage: "/assets/cources/courseDetails/mongodb/MongoDB.jpg",
 
     learningOutcomes: [

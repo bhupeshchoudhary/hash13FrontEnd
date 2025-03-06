@@ -13,7 +13,7 @@ export const specialisationInDocker: Course = {
     enrolledStudents: 12000,
     category: "DevOps",
     shortDescription: "Industry-Certified Docker DCA Training | Hands-On Labs | Real-World Projects | Best-In-Class Curriculum",
-    paymentLink: "",
+    paymentLink: "https://rzp.io/rzp/8bK6xmYz",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
 
     learningOutcomes: [

@@ -13,7 +13,7 @@ export const specialisationInAnsible: Course = {
     enrolledStudents: 12000,
     category: "DevOps",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Automation Experience | Advanced Playbook Techniques | Real-Time Industry Use Cases",
-    paymentLink: "",
+    paymentLink: "https://rzp.io/rzp/fhhN2Ew",
     backgroundImage: "/assets/cources/courseDetails/Hero.jpeg",
 
     learningOutcomes: [

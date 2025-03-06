@@ -13,7 +13,7 @@ export const specialisationInTerraform: Course = {
     enrolledStudents: 12000,
     category: "DevOps",
     shortDescription: "45+ Hours | Comprehensive Modules | 3 Capstone Projects",
-    paymentLink: "",
+    paymentLink: " https://rzp.io/rzp/LhA0dcV1",
     backgroundImage: "/assets/cources/courseDetails/terraform/terraform.jpg",
 
     learningOutcomes: [

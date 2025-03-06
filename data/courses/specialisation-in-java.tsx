@@ -13,7 +13,7 @@ export const specialisationInJava: Course = {
     enrolledStudents: 12000,
     category: "Programming",
     shortDescription: "Industry-Recognized Curriculum | Live Projects | Expert-Led Training",
-    paymentLink: "",
+    paymentLink: "https://rzp.io/rzp/DgLE0x8",
     backgroundImage: "/assets/cources/courseDetails/java/java.jpg",
 
     learningOutcomes: [

@@ -13,7 +13,7 @@ export const specialisationInShellScripting: Course = {
     enrolledStudents: 12000, // Not provided
     category: "Programming",
     shortDescription: "Industry-Relevant & Recognized Training | Hands-On Automation Experience | Advanced Scripting Techniques | Real-Time Industry Use Cases",
-    paymentLink: "", // Not provided
+    paymentLink: " https://rzp.io/rzp/z1hJjFR8", // Not provided
     backgroundImage: "/assets/cources/courseDetails/shell-scripting/shell-scripting.jpg", // Need path
 
     learningOutcomes: [
