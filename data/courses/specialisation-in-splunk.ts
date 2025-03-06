@@ -224,7 +224,7 @@ export const specialisationInSplunk:Course ={
         sectionTitle: "Complete Monitoring & Visualization Program",
         category: "Monitoring",
         toolsCount: "10+",
-        displayImage: "/assets/cources/monitoring-tools.jpg",
+        displayImage: "/assets/cources/tools/Splunk-Admin.jpg",
         tools: [
             {
                 id: "prometheus",

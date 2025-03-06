@@ -223,21 +223,21 @@ export const specialisationInDocker: Course = {
     programFor: [
         { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
         { src: "/assets/cources/courseDetails/mongodb/System Administrators.jpg", alt: "System Administrators", text: "System Administrators" },
-        { src: "", alt: "Cloud Engineers", text: "Cloud Engineers" },
-        { src: "", alt: "Software Developers", text: "Software Developers" },
-        { src: "", alt: "SRE Engineers", text: "Site Reliability Engineers" },
-        { src: "", alt: "Infrastructure Engineers", text: "Infrastructure Engineers" },
-        { src: "", alt: "Technical Managers", text: "Technical Managers" },
+        { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "Cloud Engineers", text: "Cloud Engineers" },
+        { src: "/assets/cources/courseDetails/terraform/Software Developers.jpg", alt: "Software Developers", text: "Software Developers" },
+        { src: "/assets/cources/courseDetails/terraform/Site Reliability Engineers (SRE).jpg", alt: "SRE Engineers", text: "Site Reliability Engineers" },
+        { src: "/assets/cources/courseDetails/terraform/Infrastructure Engineers.jpg", alt: "Infrastructure Engineers", text: "Infrastructure Engineers" },
+        { src: "/assets/cources/courseDetails/terraform/Technical Co-Founders.jpg", alt: "Technical Managers", text: "Technical Managers" },
         { src: "/assets/cources/courseDetails/mongodb/Students.jpg", alt: "College Students", text: "College Students" },
-        { src: "", alt: "Security Engineers", text: "Security Engineers" },
-        { src: "", alt: "Release Engineers", text: "Release Engineers" }
+        { src: "/assets/cources/courseDetails/terraform/Security Engineers.jpg", alt: "Security Engineers", text: "Security Engineers" },
+        { src: "/assets/cources/courseDetails/terraform/Release Engineers.jpg", alt: "Release Engineers", text: "Release Engineers" }
     ],
 
     toolsData: {
         sectionTitle: "Complete Docker Certification Program",
         category: "Container Technology",
         toolsCount: "10+",
-        displayImage: "",
+        displayImage: "/assets/cources/tools/Docker.jpg",
         tools: [
             {
                 id: "basics",

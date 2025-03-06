@@ -316,22 +316,22 @@ export const specialisationInKubernetes: Course = {
     ],
 
     programFor: [
-        { src: "", alt: "Engineering Graduates", text: "Engineering Graduates (CS/IT, ECE)" },
-        { src: "", alt: "System Administrators", text: "System Administrators" },
-        { src: "", alt: "DevOps Engineers", text: "DevOps Engineers" },
-        { src: "", alt: "Cloud Administrators", text: "Cloud Administrators" },
-        { src: "", alt: "Software Developers", text: "Software Developers" },
-        { src: "", alt: "Automation Engineers", text: "Automation Engineers" },
-        { src: "", alt: "Network Administrators", text: "Network Administrators" },
-        { src: "", alt: "Academicians", text: "Academicians" },
-        { src: "", alt: "Freshers", text: "Freshers" }
+        { src: "/assets/cources/courseDetails/shell-scripting/Engineer Graduates.jpg", alt: "Engineering Graduates", text: "Engineering Graduates (CS/IT, ECE)" },
+        { src: "/assets/cources/courseDetails/mongodb/System Administrators.jpg", alt: "System Administrators", text: "System Administrators" },
+        { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Cloud Administrators.jpg", alt: "Cloud Administrators", text: "Cloud Administrators" },
+        { src: "/assets/cources/courseDetails/terraform/Software Developers.jpg", alt: "Software Developers", text: "Software Developers" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Automation Engineers.jpg", alt: "Automation Engineers", text: "Automation Engineers" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Network Adminstrators.jpg", alt: "Network Administrators", text: "Network Administrators" },
+        // { src: "", alt: "Academicians", text: "Academicians" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Freshers seeking Automation or DevOps Roles.jpg", alt: "Freshers", text: "Freshers" }
     ],
 
     toolsData: {
         sectionTitle: "Complete Kubernetes Program",
         category: "Container Orchestration",
         toolsCount: "15+",
-        displayImage: "",
+        displayImage: "/assets/cources/tools/Kubernetes (1).jpg",
         tools: [
             {
                 id: "fundamentals",

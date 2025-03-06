@@ -225,7 +225,7 @@ export const specialisationInAnsible: Course = {
         sectionTitle: "Complete Ansible Program",
         category: "Infrastructure Automation",
         toolsCount: "10+",
-        displayImage: "",
+        displayImage: "/assets/cources/tools/Ansible.jpg",
         tools: [
             {
                 id: "basics",

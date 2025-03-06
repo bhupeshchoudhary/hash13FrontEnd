@@ -209,7 +209,7 @@ export const specialisationInTerraform: Course = {
         { src: "/assets/cources/courseDetails/terraform/Software Developers.jpg", alt: "Software Developers", text: "Software Developers" },
         { src: "/assets/cources/courseDetails/terraform/Site Reliability Engineers (SRE).jpg", alt: "SRE Engineers", text: "Site Reliability Engineers" },
         { src: "/assets/cources/courseDetails/terraform/Technical Co-Founders.jpg", alt: "Technical Managers", text: "Technical Managers" },
-        // { src: "", alt: "Cloud Architects", text: "Cloud Architects" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Cloud Administrators.jpg", alt: "Cloud Architects", text: "Cloud Architects" },
         { src: "/assets/cources/courseDetails/terraform/IT Professionals seeking to enhance their DevOps skills.png", alt: "IT Professionals", text: "IT Professionals" },
         { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "College Students", text: "College Students" }
     ],
@@ -218,7 +218,7 @@ export const specialisationInTerraform: Course = {
         sectionTitle: "Complete Terraform Program",
         category: "Infrastructure Automation",
         toolsCount: "10+",
-        displayImage: "",
+        displayImage: "/assets/cources/tools/Terraform (1).jpg",
         tools: [
             {
                 id: "basics",

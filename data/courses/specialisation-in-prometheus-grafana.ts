@@ -263,19 +263,19 @@ export const specialisationInPrometheusGrafana:Course = {
     ],
   
     programFor: [
-        { src: "/assets/cources/programFor/devops.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
-        { src: "/assets/cources/programFor/sysadmin.jpg", alt: "System Administrators", text: "System Administrators" },
-        { src: "/assets/cources/programFor/cloud.jpg", alt: "Cloud Engineers", text: "Cloud & Infrastructure Engineers" },
-        { src: "/assets/cources/programFor/developer.jpg", alt: "Developers", text: "Software Developers" },
-        { src: "/assets/cources/programFor/sre.jpg", alt: "SRE", text: "Site Reliability Engineers" },
-        { src: "/assets/cources/programFor/it.jpg", alt: "IT Professionals", text: "IT Professionals" }
+        { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
+        { src: "/assets/cources/courseDetails/mongodb/System Administrators.jpg", alt: "System Administrators", text: "System Administrators" },
+        { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "Cloud Engineers", text: "Cloud & Infrastructure Engineers" },
+        { src: "/assets/cources/courseDetails/terraform/Software Developers.jpg", alt: "Developers", text: "Software Developers" },
+        { src: "/assets/cources/courseDetails/terraform/Site Reliability Engineers (SRE).jpg", alt: "SRE", text: "Site Reliability Engineers" },
+        { src: "/assets/cources/courseDetails/mongodb/IT Professionals.jpg", alt: "IT Professionals", text: "IT Professionals" }
     ],
   
     toolsData: {
         sectionTitle: "Complete Monitoring & Visualization Program",
         category: "Monitoring",
         toolsCount: "10+",
-        displayImage: "/assets/cources/monitoring-tools.jpg",
+        displayImage: "/assets/cources/tools/Prometheus-and-grafana.jpg",
         tools: [
             {
                 id: "prometheus",

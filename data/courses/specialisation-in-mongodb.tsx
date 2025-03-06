@@ -185,7 +185,7 @@ export const specialisationInMongoDB: Course = {
         sectionTitle: "Complete MongoDB Program",
         category: "Database Management",
         toolsCount: "10+",
-        displayImage: "",
+        displayImage: "/assets/cources/tools/MongoDB (1).jpg",
         tools: [
             {
                 id: "basics",
