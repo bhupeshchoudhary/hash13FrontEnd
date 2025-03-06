@@ -237,7 +237,7 @@ export const specialisationInDocker: Course = {
         sectionTitle: "Complete Docker Certification Program",
         category: "Container Technology",
         toolsCount: "10+",
-        displayImage: "",
+        displayImage: "/assets/cources/tools/Docker.jpg",
         tools: [
             {
                 id: "basics",

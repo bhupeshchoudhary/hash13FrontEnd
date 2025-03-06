@@ -275,7 +275,7 @@ export const specialisationInPrometheusGrafana:Course = {
         sectionTitle: "Complete Monitoring & Visualization Program",
         category: "Monitoring",
         toolsCount: "10+",
-        displayImage: "/assets/cources/monitoring-tools.jpg",
+        displayImage: "/assets/cources/tools/Prometheus-and-grafana.jpg",
         tools: [
             {
                 id: "prometheus",

@@ -245,7 +245,7 @@ export const specialisationInShellScripting: Course = {
         sectionTitle: "Complete Shell Scripting Program",
         category: "Automation",
         toolsCount: "10+",
-        displayImage: "", // Need path
+        displayImage: "/assets/cources/tools/Shell-Scripting (1).jpg", // Need path
         tools: [
             {
                 id: "basics",

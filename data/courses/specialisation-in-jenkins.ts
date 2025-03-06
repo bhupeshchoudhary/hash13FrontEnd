@@ -191,14 +191,14 @@ export const specialisationInJenkins: Course = {
         { src: "/assets/cources/courseDetails/shell-scripting/Server AdministratorsS.jpg", alt: "Server Administrators", text: "Server Administrators" },
         { src: "/assets/cources/courseDetails/shell-scripting/Network Adminstrators.jpg", alt: "Network Administrators", text: "Network Administrators" },
         { src: "/assets/cources/courseDetails/shell-scripting/Freshers seeking Automation or DevOps Roles.jpg", alt: "Freshers", text: "Freshers" },
-        { src: "", alt: "Academicians", text: "Academicians" }
+        // { src: "", alt: "Academicians", text: "Academicians" }
     ],
 
     toolsData: {
         sectionTitle: "Complete Jenkins Program",
         category: "CI/CD Automation",
         toolsCount: "10+",
-        displayImage: "",
+        displayImage: "/assets/cources/tools/Jenkins (1).jpg",
         tools: [
             {
                 id: "basics",
