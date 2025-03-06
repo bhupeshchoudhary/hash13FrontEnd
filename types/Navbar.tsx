@@ -4,6 +4,7 @@ export type Program = {
     duration: string;
     status: string;
     type: "Live" | "Recorded";
+    image:string
   };
   
   export type CategoryData = {
