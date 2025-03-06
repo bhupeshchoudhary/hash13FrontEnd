@@ -46,26 +46,26 @@ export const menuData: Record<MenuKey, MenuData> = {
             slug:"/courses/specialisation-in-shell-scripting"
           },
           {
-            title: "Business Communication",
-            mentor: "by Robert Wilson",
-            duration: "Self-paced",
-            status: "Available Now",
+            title: "CI/CD Pipeline with Jenkins",
+            mentor: "by Vimal Daga",
+            duration: "30+ Hours",
+            status: "Active",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
+            image:"/assets/cources/courseDetails/jenkkins/jenkins.jpg",
+            slug:"/courses/specialisation-in-jenkins"
           }
         ]
       },
-      Tech: {
+      Programming: {
         mentorshipPrograms: [
           {
-            title: "Cloud Computing",
-            mentor: "by Sarah Connor",
-            duration: "10 Weeks",
-            status: "Coming Soon",
-            type: "Live",
-            image:"/assets/cources/courseDetails/Hero.jpeg",
-            slug:""
+            title: "Java Core Programming",
+            mentor: "by Vimal Daga",
+            duration: "20+ Hours",
+            status: "Active",
+            type: "Recorded",
+            image:"/assets/cources/courseDetails/java/java.jpg",
+            slug:"/courses/specialisation-in-java"
           },
           {
             title: "DevOps Engineering",
