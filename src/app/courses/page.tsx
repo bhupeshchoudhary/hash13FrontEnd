@@ -160,7 +160,7 @@ const CoursePage: React.FC = () => {
         ? courseInfo.length 
         : (categoryCounts[category.name] || 0 ) === 0 ? "Coming soon" : categoryCounts[category.name],
     }));
-  }, [courseInfo]);
+  }, []);
 
   const handleCategoryClick = (categoryName: string): void => {
     setSelectedCategory(categoryName);
@@ -180,7 +180,7 @@ const CoursePage: React.FC = () => {
         {/* Header Section */}
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-2xl sm:text-3xl font-bold">
-            Discover Our <span className="text-red-500">Free Courses</span>
+            Discover Our <span className="text-red-500"> Courses</span>
           </h1>
           <Button
             variant="outline"

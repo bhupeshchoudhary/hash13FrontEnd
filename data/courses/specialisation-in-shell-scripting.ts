@@ -4,7 +4,7 @@ export const specialisationInShellScripting: Course = {
     _id: "specialisation-in-shell-scripting",
     title: "[B][R]Bash Shell Scripting [/R][/B] | Simplify Repetitive Tasks with Scripting",
     slug: "specialisation-in-shell-scripting",
-    rating: 4.9, // Not provided
+    rating: 5, // Not provided
     totalRatings: 10, // Not provided
     duration: "16 Hours",
     hours: "16+",

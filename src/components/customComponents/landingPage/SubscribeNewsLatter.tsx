@@ -1,7 +1,37 @@
 // components/Subscribe.tsx
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
+import axios from 'axios';
 
 const Subscribe: React.FC = () => {
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!email) {
+      setMessage('Please enter an email address');
+      return;
+    }
+
+    try {
+      setStatus('loading');
+      
+      const response = await axios.post('/api/subscribe', { email });
+      
+      if (response.data.success) {
+        setStatus('success');
+        setMessage('Thank you for subscribing!');
+        setEmail('');
+      }
+    } catch (error) {
+      setStatus('error');
+      setMessage('Something went wrong. Please try again.');
+    }
+  };
+
   return (
     <div className="bg-[#5ec5b6] w-full py-8 flex justify-center">
       <div className="max-w-5xl w-full flex flex-col sm:flex-row items-center justify-between px-4 space-y-6 sm:space-y-0">
@@ -27,11 +57,13 @@ const Subscribe: React.FC = () => {
         </div>
 
         {/* Right Section: Input and Button */}
-        <div className="flex flex-col sm:flex-row items-center w-full sm:w-auto space-y-4 sm:space-y-0">
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center w-full sm:w-auto space-y-4 sm:space-y-0">
           {/* Email Input */}
           <div className="relative w-full sm:w-auto">
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your mail address"
               className="w-full sm:w-72 pl-10 pr-4 py-3 border-0 focus:outline-none rounded-full sm:rounded-l-full sm:rounded-r-none text-gray-700"
             />
@@ -53,10 +85,21 @@ const Subscribe: React.FC = () => {
             </div>
           </div>
           {/* Subscribe Button */}
-          <button className="w-full sm:w-auto bg-[#f5f5f5] text-black font-semibold px-8 py-3 rounded-full sm:rounded-l-none sm:rounded-r-full hover:bg-gray-200">
-            Subscribe Now
+          <button 
+            type="submit"
+            disabled={status === 'loading'}
+            className="w-full sm:w-auto bg-[#f5f5f5] text-black font-semibold px-8 py-3 rounded-full sm:rounded-l-none sm:rounded-r-full hover:bg-gray-200 disabled:opacity-50"
+          >
+            {status === 'loading' ? 'Subscribing...' : 'Subscribe Now'}
           </button>
-        </div>
+        </form>
+        
+        {/* Status Message */}
+        {message && (
+          <div className={`mt-2 text-sm ${status === 'error' ? 'text-red-600' : 'text-white'}`}>
+            {message}
+          </div>
+        )}
       </div>
     </div>
   );

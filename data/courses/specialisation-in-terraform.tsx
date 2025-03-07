@@ -4,7 +4,7 @@ export const specialisationInTerraform: Course = {
     _id: "specialisation-in-terraform",
     title: "[B][R]Managing Infrastructure Using Terraform [/R][/B]  | Design Scalable Infrastructure as Code",
     slug: "specialisation-in-terraform",
-    rating: 4.9,
+    rating: 5,
     totalRatings: 10,
     duration: "45 Hours",
     hours: "45+",
