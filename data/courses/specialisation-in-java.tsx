@@ -4,7 +4,7 @@ export const specialisationInJava: Course = {
     _id: "specialisation-in-java",
     title: "[B][R]Java Core Programming[/R]  [/B] | Design Scalable Enterprise Applications",
     slug: "specialisation-in-java",
-    rating: 4.9,
+    rating: 5,
     totalRatings: 10,
     duration: "20 Hours",
     hours: "20+",

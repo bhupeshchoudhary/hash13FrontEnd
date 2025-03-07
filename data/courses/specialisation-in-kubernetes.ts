@@ -3,7 +3,7 @@ export const specialisationInKubernetes: Course = {
     _id: "specialisation-in-kubernetes",
     title: "[B][R]Certified Kubernetes Admin (CKA)[/R][/B] | Optimize Cluster Performance and Scaling",
     slug: "specialisation-in-kubernetes",
-    rating: 4.9,
+    rating: 5,
     totalRatings: 10,
     duration: "60 Hours",
     hours: "60+",

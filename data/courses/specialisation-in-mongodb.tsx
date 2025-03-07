@@ -4,7 +4,7 @@ export const specialisationInMongoDB: Course = {
     _id: "specialisation-in-mongodb",
     title: "[B][R]MongoDB Basic to Advance[/R]  [/B] | Secure NoSQL Data Transactions",
     slug: "specialisation-in-mongodb",
-    rating: 4.9,
+    rating: 5,
     totalRatings: 10,
     duration: "16 Hours",
     hours: "16+",

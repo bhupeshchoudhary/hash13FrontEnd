@@ -4,7 +4,7 @@ export const specialisationInPrometheusGrafana:Course = {
     _id: "specialisation-in-prometheus-grafana",
     title: "[B][R]Mastering Prometheus & Grafana[/R] [/B] | Monitoring & Data Visualization Training",
     slug: "specialisation-in-prometheus-grafana",
-    rating: 4.7,
+    rating: 5,
     totalRatings: 10,
     duration: "16 Hours",
     hours: "16+",

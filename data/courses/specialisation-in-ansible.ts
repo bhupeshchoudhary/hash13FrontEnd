@@ -4,7 +4,7 @@ export const specialisationInAnsible: Course = {
     _id: "specialisation-in-ansible",
      title: "[B][R]Automation with Ansible[/R][/B] | Simplify Configuration Management Tasks",
     slug: "specialisation-in-ansible",
-    rating: 4.9,
+    rating: 5,
     totalRatings: 10,
     duration: "24 Hours",
     hours: "24+",
