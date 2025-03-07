@@ -324,7 +324,7 @@ export const specialisationInKubernetes: Course = {
         { src: "/assets/cources/courseDetails/shell-scripting/Automation Engineers.jpg", alt: "Automation Engineers", text: "Automation Engineers" },
         { src: "/assets/cources/courseDetails/shell-scripting/Network Adminstrators.jpg", alt: "Network Administrators", text: "Network Administrators" },
         // { src: "", alt: "Academicians", text: "Academicians" },
-        { src: "/assets/cources/courseDetails/shell-scripting/Freshers seeking Automation or DevOps Roles.jpg", alt: "Freshers", text: "Freshers" }
+        { src: "/assets/cources/courseDetails/shell-scripting/Freshers seeking Automation or DevOps Roles.jpg", alt: "Freshers", text: "Enthusiast Students" }
     ],
 
     toolsData: {

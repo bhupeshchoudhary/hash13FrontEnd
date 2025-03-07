@@ -190,7 +190,7 @@ export const specialisationInJenkins: Course = {
         { src: "/assets/cources/courseDetails/shell-scripting/Automation Engineers.jpg", alt: "Automation Engineers", text: "Automation Engineers" },
         { src: "/assets/cources/courseDetails/shell-scripting/Server AdministratorsS.jpg", alt: "Server Administrators", text: "Server Administrators" },
         { src: "/assets/cources/courseDetails/shell-scripting/Network Adminstrators.jpg", alt: "Network Administrators", text: "Network Administrators" },
-        { src: "/assets/cources/courseDetails/shell-scripting/Freshers seeking Automation or DevOps Roles.jpg", alt: "Freshers", text: "Freshers" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Freshers seeking Automation or DevOps Roles.jpg", alt: "Enthusiast Students", text: "Enthusiast Students" },
         // { src: "", alt: "Academicians", text: "Academicians" }
     ],
 

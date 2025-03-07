@@ -218,7 +218,7 @@ export const specialisationInAnsible: Course = {
         { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
         { src: "/assets/cources/courseDetails/shell-scripting/Cloud Administrators.jpg", alt: "Cloud Administrators", text: "Cloud Administrators" },
         { src: "/assets/cources/courseDetails/shell-scripting/Automation Engineers.jpg", alt: "Automation Engineers", text: "Automation Engineers" },
-        { src: "/assets/cources/courseDetails/mongodb/IT Professionals.jpg", alt: "IT Professionals", text: "IT Professionals" }
+        { src: "/assets/cources/courseDetails/mongodb/IT Professionals.jpg", alt: "IT Professionals", text: "Working IT Professionals" }
     ],
 
     toolsData: {
