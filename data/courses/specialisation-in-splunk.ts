@@ -212,12 +212,12 @@ export const specialisationInSplunk:Course ={
     ],
   
     programFor: [
-        { src: "/assets/cources/programFor/devops.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
-        { src: "/assets/cources/programFor/sysadmin.jpg", alt: "System Administrators", text: "System Administrators" },
-        { src: "/assets/cources/programFor/cloud.jpg", alt: "Cloud Engineers", text: "Cloud & Infrastructure Engineers" },
-        { src: "/assets/cources/programFor/developer.jpg", alt: "Developers", text: "Software Developers" },
-        { src: "/assets/cources/programFor/sre.jpg", alt: "SRE", text: "SREs" },
-        { src: "/assets/cources/programFor/it.jpg", alt: "IT Professionals", text: "IT Professionals" }
+        { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Server AdministratorsS.jpg", alt: "System Administrators", text: "System Administrators" },
+        { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "Cloud Engineers", text: "Cloud & Infrastructure Engineers" },
+        { src: "/assets/cources/courseDetails/terraform/Software Developers.jpg", alt: "Developers", text: "Software Developers" },
+        { src: "/assets/cources/courseDetails/terraform/Site Reliability Engineers (SRE).jpg", alt: "SRE", text: "Site Reliability Engineers" },
+        { src: "/assets/cources/courseDetails/terraform/IT Professionals seeking to enhance their DevOps skills.png", alt: "IT Professionals", text: "Working IT Professionals" }
     ],
   
     toolsData: {
