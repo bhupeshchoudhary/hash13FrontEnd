@@ -17,8 +17,8 @@ interface RouteConfig {
 const ROUTE_CONFIG: Record<string, RouteConfig> = {
 
   'default': {
-    link: payment.paymentLink,
-    buttonText: 'Enroll Now'
+    link: "#contactus",
+    buttonText: 'Enquire Now'
   }
 };
 
@@ -143,7 +143,7 @@ const Navbar: React.FC = () => {
         {/* Desktop Call to Action Button */}
         <a
           href={link}
-          target="blank"
+          target=""
           className="hidden lg:block bg-[#ff0000] text-white px-4 py-2 rounded-lg hover:shadow-black hover:shadow-md"
         >
           {buttonText}
