@@ -16,6 +16,8 @@ import CallToAction from "@/components/customComponents/CallToAction/CallToActio
 // import { courseInfo } from "../../data/ExampleCard2/ExampleCard2";
 import { courseInfo } from "../../data/courses/courses";
 import QueryForm from "@/components/customComponents/coursesComponents/courseDetails/ContactAndSupport";
+
+import DiscordCommunity from "@/components/customComponents/landingPage/Discord/DiscordCommunity";
 export default function Home() {
   return (
 <>
@@ -30,7 +32,7 @@ export default function Home() {
 {/* <PopularTopic></PopularTopic> */}
 <Testimonials></Testimonials>
 {/* <BlogSection></BlogSection> */}
-
+<DiscordCommunity></DiscordCommunity>
 <QueryForm />
 <SupportContact></SupportContact>
 <CallToAction></CallToAction>
