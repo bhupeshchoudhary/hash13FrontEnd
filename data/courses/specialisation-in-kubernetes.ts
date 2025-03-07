@@ -316,7 +316,7 @@ export const specialisationInKubernetes: Course = {
     ],
 
     programFor: [
-        { src: "/assets/cources/courseDetails/shell-scripting/Engineer Graduates.jpg", alt: "Engineering Graduates", text: "Engineering Graduates (CS/IT, ECE)" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Engineer Graduates.jpg", alt: "Engineering Graduates", text: "Engineering Graduates " },
         { src: "/assets/cources/courseDetails/mongodb/System Administrators.jpg", alt: "System Administrators", text: "System Administrators" },
         { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
         { src: "/assets/cources/courseDetails/shell-scripting/Cloud Administrators.jpg", alt: "Cloud Administrators", text: "Cloud Administrators" },
@@ -324,7 +324,7 @@ export const specialisationInKubernetes: Course = {
         { src: "/assets/cources/courseDetails/shell-scripting/Automation Engineers.jpg", alt: "Automation Engineers", text: "Automation Engineers" },
         { src: "/assets/cources/courseDetails/shell-scripting/Network Adminstrators.jpg", alt: "Network Administrators", text: "Network Administrators" },
         // { src: "", alt: "Academicians", text: "Academicians" },
-        { src: "/assets/cources/courseDetails/shell-scripting/Freshers seeking Automation or DevOps Roles.jpg", alt: "Freshers", text: "Freshers" }
+        { src: "/assets/cources/courseDetails/shell-scripting/Freshers seeking Automation or DevOps Roles.jpg", alt: "Freshers", text: "Enthusiast Students" }
     ],
 
     toolsData: {
