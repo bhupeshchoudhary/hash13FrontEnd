@@ -37,7 +37,7 @@ export default function SearchComponent() {
 
   return (
     <div className="md:max-w-4xl lg:max-w-4xl w-full mx-auto md:px-4 lg:px-4 pt-16 pb-8">
-      <h1 className="text-3xl font-bold mb-2">
+      <h1 className="text-2xl md:text-3xl font-bold mb-2">
         <span className="text-[#ff0000]">{jsonData.headings.main}</span>
       </h1>
 
