@@ -6,17 +6,17 @@ const AccreditationCard = () => {
   return (
     <Card className="w-full p-4">
       <h2 className="text-lg sm:text-xl font-semibold mb-4">
-        <span className='text-[#ff0000]'>LinuxWorld </span>Accreditation
+        Recognised Accross <span className='text-[#ff0000]'>The Global</span>
       </h2>
       <div className="flex flex-col sm:flex-row items-center gap-4">
-        <Image
-          src="/assets/cources/LWlogo.png"
+         <Image
+          src="/assets/featured.jpg"
           alt="Linux World"
-          width={200}
-          height={60}
-          className="h-12 sm:h-15 w-auto"
+          width={400}
+          height={400}
+          className="h-full w-full sm:h-15"
         />
-        <div className="flex items-center gap-2">
+       {/* <div className="flex items-center gap-2">
           <Image
             src="/assets/cources/linkdin.png"
             alt="Linkdin"
@@ -31,8 +31,8 @@ const AccreditationCard = () => {
             <span className="text-xs sm:text-sm font-semibold">
               Top Startup India 2023
             </span>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </Card>
   );

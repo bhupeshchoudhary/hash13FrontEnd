@@ -6,7 +6,7 @@ export const specialisationInPrometheusGrafana:Course = {
     slug: "specialisation-in-prometheus-grafana",
     rating: 5,
     totalRatings: 10,
-    duration: "16 Hours",
+    duration: "Beginner to Advance",
     hours: "16+",
     price: 4893,
     originalPrice: 8500,

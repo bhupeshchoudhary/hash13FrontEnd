@@ -199,7 +199,7 @@ const CoursePage: React.FC = () => {
           `}>
             <div className="lg:sticky lg:top-4">
               <ScrollArea className="h-auto lg:h-[calc(100vh-200px)] pr-4">
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-1 gap-3">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-1 gap-3 ">
                   {categoriesWithCounts.map((category) => (
 
 
@@ -207,7 +207,7 @@ const CoursePage: React.FC = () => {
                     <button 
                       key={category.name} 
                       onClick={()=> handleCategoryClick(category.name)}
-                      className={`flex items-center justify-between w-full p-3 lg:p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all 
+                      className={`flex items-center justify-between w-full p-3 lg:p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all text-left
                         ${category.highlight ? 'bg-pink-50' : 'bg-white'}
                         ${selectedCategory === category.name ? 'border-red-50- bg-red-50': ''}
                         ${typeof category.displayCount === 'string' ? 'opacity-50': ''}
