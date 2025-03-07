@@ -42,16 +42,16 @@ const DropdownContent: React.FC<{ data: MenuData }> = ({ data }) => {
         onCategorySelect={setSelectedCategory} 
       />
       <div className="flex-1 p-6">
-        <h2 className="text-xl font-medium mb-4">Content for {selectedCategory}</h2>
+        {/* <h2 className="text-xl font-medium mb-4">Content for {selectedCategory}</h2> */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <h3 className="text-lg font-semibold">Mentorship Programs</h3>
+            {/* <h3 className="text-lg font-semibold"></h3> */}
             {data.categories[selectedCategory].mentorshipPrograms.map((program) => (
               <ProgramCard key={program.title} {...program} />
             ))}
           </div>
           <div>
-            <h3 className="text-lg font-semibold">Self-Paced Programs</h3>
+            {/* <h3 className="text-lg font-semibold"></h3> */}
             {data.categories[selectedCategory].selfPacedPrograms.map((program) => (
               <ProgramCard key={program.title} {...program} />
             ))}
