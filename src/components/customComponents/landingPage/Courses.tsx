@@ -28,7 +28,7 @@ export default function CoursesComponent() {
     <div className="container max-w-7xl mx-auto px-6 lg:px-14 py-8">
       <div className="text-center mb-10">
         <h2 className="text-sm text-muted-foreground mb-2 text-teal-500">
-          Popular Courses
+          POPULAR COURSES
         </h2>
         <h1 className="text-3xl font-bold">
           Choose From Our Top{" "}
