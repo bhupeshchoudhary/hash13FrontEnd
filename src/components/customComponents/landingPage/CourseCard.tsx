@@ -141,17 +141,17 @@ export default function CourseCard({ course }: CourseCardProps) {
         </div>
 
         <div className="flex items-center justify-between mt-auto w-full">
-          <div className="flex items-center gap-4">
-            <span>
-              <Badge className="bg-gray-100 text-black text-xs hover:bg-gray-50">
-                {course.category}
-              </Badge>
-            </span>
-            <span className="text-xs text-gray-600">
-              {course.hours} hrs.
-            </span>
-          </div>
-        </div>
+  <div className="flex items-center justify-between w-full">
+    <span>
+      <Badge className="bg-gray-100 text-black text-xs hover:bg-gray-50">
+        {course.category}
+      </Badge>
+    </span>
+    <span className="text-xs text-gray-600">
+      {course.hours} hrs.
+    </span>
+  </div>
+</div>
       </CardFooter>
     </Card>
   );
