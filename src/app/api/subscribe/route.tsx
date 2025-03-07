@@ -22,7 +22,7 @@ export async function POST(req: Request) {
         // Email Options 
         const mailOptions = {
             from: smtpUser, 
-            to: 'chandak.preeti@lwindia.com',
+            to: 'chandak.preeti@gmail.com',
             subject: 'Hash13 Newsletter Data Received',
             text: `New subscription request from: ${email}`,
             html: `
