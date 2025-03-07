@@ -105,8 +105,8 @@ export default function SearchComponent() {
       <div className="text-lg">
         {jsonData.community.text}{" "}
         <span className="text-[#ff0000] font-medium">
-          {/* todo learnersCount is a number, I want to show counting form 0 to learnerCount Number Increment effect */}
-          {Math.round(count)}
+
+{Math.round(count).toLocaleString()}
            
         </span> learners.
       </div>
