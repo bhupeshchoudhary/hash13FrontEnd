@@ -6,7 +6,7 @@ export const  specialisationInDevops:Course = {
     slug: "specialisation-in-devops",
     rating: 4.7,
     totalRatings: 10,
-    duration: "2 Months",
+    duration: "Beginner to Advance",
     hours: "310+",
     price: 20000,
     originalPrice: 45000,

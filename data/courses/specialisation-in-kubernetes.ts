@@ -5,7 +5,7 @@ export const specialisationInKubernetes: Course = {
     slug: "specialisation-in-kubernetes",
     rating: 5,
     totalRatings: 10,
-    duration: "60 Hours",
+    duration: "Beginner to Advance",
     hours: "60+",
     price: 4200,
     originalPrice: 17500,
