@@ -2,7 +2,7 @@
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Clock, Share2, Phone } from "lucide-react";
+import { Clock, Share2, Phone, User } from "lucide-react";
 import Image from 'next/image';
 import { courseInfo } from "../../../../../data/courses/courses";
 
@@ -133,8 +133,19 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
 
   return (
     <div className="bg-gradient-to-br from-gray-50 via-black-50 to-red-50" id="hero">
-      <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center shadow-md">
-        <div className="max-w-6xl w-full overflow-hidden relative flex flex-col lg:block">
+      <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center  ">
+        {/* <div className="max-w-6xl w-full overflow-hidden relative flex flex-col lg:block ">
+         */}
+         <div className="max-w-6xl w-full overflow-hidden relative flex flex-col lg:block 
+  bg-white 
+  rounded-[2rem] 
+  shadow-[0_0_50px_rgba(255,0,0,0.1),0_0_20px_rgba(0,0,0,0.1)] 
+  border border-gray-100
+  backdrop-blur-sm
+  transition-all 
+  duration-300 
+  hover:shadow-[0_0_60px_rgba(255,0,0,0.15),0_0_25px_rgba(0,0,0,0.1)]
+">
           {/* Right Image Section */}
           <div className="relative lg:absolute lg:right-0 lg:top-0 h-[300px] lg:h-full w-full lg:w-[40%] order-1">
             <Image
@@ -188,7 +199,7 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
                   variant="secondary" 
                   className="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
                 >
-                  <Clock className="h-4 w-4" /> &nbsp; Duration: {course.duration}
+                  <User className="h-4 w-4" /> &nbsp;  {course.duration}
                 </Badge>
               </div>
 

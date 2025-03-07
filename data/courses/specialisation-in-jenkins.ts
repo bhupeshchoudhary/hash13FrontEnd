@@ -7,7 +7,7 @@ export const specialisationInJenkins: Course = {
     slug: "specialisation-in-jenkins",
     rating: 4.9,
     totalRatings: 10,
-    duration: "30 Hours",
+    duration: "Beginner to Advance",
     hours: "30+",
     price: 3350,
     originalPrice: 7500,

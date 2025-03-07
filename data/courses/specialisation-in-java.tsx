@@ -6,7 +6,7 @@ export const specialisationInJava: Course = {
     slug: "specialisation-in-java",
     rating: 4.9,
     totalRatings: 10,
-    duration: "20 Hours",
+    duration: "Beginner to Advance",
     hours: "20+",
     price: 1600,
     originalPrice: 12000,
