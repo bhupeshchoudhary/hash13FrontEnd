@@ -71,7 +71,7 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
             <Card className="w-full">
               <CardHeader className="space-y-1">
                 <CardTitle className="text-xl sm:text-2xl font-bold">
-                  5.4M+ Learners
+                  1.7M+ Learners
                 </CardTitle>
                 <p className="text-sm text-muted-foreground">
                   have reaped benefits from our programs

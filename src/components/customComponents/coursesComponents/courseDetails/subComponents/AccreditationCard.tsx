@@ -6,7 +6,7 @@ const AccreditationCard = () => {
   return (
     <Card className="w-full p-4">
       <h2 className="text-lg sm:text-xl font-semibold mb-4">
-        <span className='text-[#ff0000]'>LinuxWorld </span>Accreditation
+        Recognised Accross <span className='text-[#ff0000]'>The Global</span>
       </h2>
       <div className="flex flex-col sm:flex-row items-center gap-4">
         <Image
