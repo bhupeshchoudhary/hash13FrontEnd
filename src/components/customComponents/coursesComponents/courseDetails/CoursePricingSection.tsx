@@ -135,7 +135,7 @@ export default function CoursePricingSection({ courseId }: CoursePricingSectionP
               <div className="flex items-start gap-2">
                 <Check className="h-5 w-5 text-red-400 mt-1 flex-shrink-0" />
                 <p className="text-sm sm:text-base text-gray-600">
-                  The launch offer expires in 24 hours
+                  Recorded videos will be accessible for 365 days.
                 </p>
               </div>
             </div>
