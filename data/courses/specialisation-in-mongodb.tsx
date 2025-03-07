@@ -6,7 +6,7 @@ export const specialisationInMongoDB: Course = {
     slug: "specialisation-in-mongodb",
     rating: 5,
     totalRatings: 10,
-    duration: "16 Hours",
+    duration: "Beginner to Advance",
     hours: "16+",
     price: 2000,
     originalPrice: 7000,

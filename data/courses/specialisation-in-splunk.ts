@@ -5,7 +5,7 @@ export const specialisationInSplunk:Course ={
     slug: "specialisation-in-splunk",
     rating: 5,
     totalRatings: 10,
-    duration: "12 Hours",
+    duration: "Beginner to Advance",
     hours: "12+",
     price: 5850,
     originalPrice: 10000,

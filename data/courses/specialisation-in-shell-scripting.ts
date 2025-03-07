@@ -6,7 +6,7 @@ export const specialisationInShellScripting: Course = {
     slug: "specialisation-in-shell-scripting",
     rating: 5, // Not provided
     totalRatings: 10, // Not provided
-    duration: "16 Hours",
+    duration: "Beginner to Advance",
     hours: "16+",
     price: 2000, // Not provided
     originalPrice: 7000, // Not provided

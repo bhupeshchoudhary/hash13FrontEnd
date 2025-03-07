@@ -6,7 +6,7 @@ export const specialisationInTerraform: Course = {
     slug: "specialisation-in-terraform",
     rating: 5,
     totalRatings: 10,
-    duration: "45 Hours",
+    duration: "Beginner to Advance",
     hours: "45+",
     price: 3993,
     originalPrice: 7500,
