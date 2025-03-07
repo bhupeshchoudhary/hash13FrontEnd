@@ -180,7 +180,7 @@ const CoursePage: React.FC = () => {
         {/* Header Section */}
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-2xl sm:text-3xl font-bold">
-            Discover Our <span className="text-red-500"> Courses</span>
+            Discover Our <span className="text-red-500">Free Courses</span>
           </h1>
           <Button
             variant="outline"
