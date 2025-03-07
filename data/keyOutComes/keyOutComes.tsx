@@ -34,6 +34,6 @@ export const benefits: string[] = [
 
 export const images = {
   // defaultLearner: "/assets/default-learner.png",
-  linuxWorld: "/assets/linux-world-logo.png",
-  linkedin: "/assets/linkedin-logo.svg",
+  linuxWorld: "/assets/featured.jpg",
+  
 };
