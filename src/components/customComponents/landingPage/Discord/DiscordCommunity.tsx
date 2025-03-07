@@ -39,6 +39,21 @@ export default function DiscordCommunity() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
+  // Add these after existing useState declarations
+const [isVideoModalOpen, setVideoModalOpen] = useState(false);
+const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+
+// Add this after handleImageClick function
+const handleVideoClick = (videoSrc: string) => {
+  setSelectedVideo(videoSrc);
+  setVideoModalOpen(true);
+};
+
+const closeVideoModal = () => {
+  setVideoModalOpen(false);
+  setSelectedVideo(null);
+};
+
   const handleImageClick = (image: string) => {
     setSelectedImage(image);
     setModalOpen(true);
@@ -81,7 +96,7 @@ export default function DiscordCommunity() {
         ? "translate-y-[-10px] translate-x-[10px]"
         : "translate-y-[50px] translate-x-0"
     }`}
-    onClick={() => handleImageClick("/dis2.png")}
+    onClick={() => handleImageClick("/dis4.png")}
   />
   
   {/* Third card - Video */}
@@ -92,15 +107,16 @@ export default function DiscordCommunity() {
         : "translate-y-[50px] translate-x-0"
     }`}
   >
-    
-   <video
+    {/* todo  in Image we have onClick handler when user click on it then we open image in modal, I want to similar feature in video to, when user click on video then open in video in a modal */}
+    <video
   width={200}
   height={220}
   autoPlay
   muted
   loop
   playsInline
-  className="rounded-lg"
+  className="rounded-lg cursor-pointer"
+  onClick={() => handleVideoClick("/assets/video.mp4")}
 >
   <source src="/assets/video.mp4" type="video/mp4" />
   Your browser does not support the video tag.
@@ -119,7 +135,7 @@ export default function DiscordCommunity() {
             Get 1:1 technical doubt support from our team & elite Discord
             community for lifetime
           </p>
-          <a href="#bookyourseat" className="pt-8">
+          <a href="https://bit.ly/41nbzpy" target="_blank" className="pt-8">
             <button className="bg-[#ff0000] text-white px-6 py-3 rounded-lg text-base sm:text-lg hover:shadow-white hover:shadow-md transition-all flex items-center justify-center mx-auto">
             Visit our Discord
               <span className="ml-2">→</span>
@@ -151,6 +167,34 @@ export default function DiscordCommunity() {
           </div>
         </div>
       )}
+
+
+      {/* Video Modal */}
+{isVideoModalOpen && selectedVideo && (
+  <div
+    className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
+    onClick={closeVideoModal}
+  >
+    <div className="relative">
+      <video
+        width={800}
+        height={600}
+        controls
+        autoPlay
+        className="rounded-lg"
+      >
+        <source src={selectedVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <button
+        className="absolute top-4 right-4 text-white text-2xl"
+        onClick={closeVideoModal}
+      >
+        &times;
+      </button>
+    </div>
+  </div>
+)}
     </div>
   );
 }
