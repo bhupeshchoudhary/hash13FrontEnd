@@ -237,7 +237,7 @@ export const specialisationInShellScripting: Course = {
         { src: "/assets/cources/courseDetails/shell-scripting/Automation Engineers.jpg", alt: "Automation Engineers", text: "Automation Engineers" },
         { src: "/assets/cources/courseDetails/shell-scripting/Server AdministratorsS.jpg", alt: "Server Administrators", text: "Server Administrators" },
         { src: "/assets/cources/courseDetails/shell-scripting/Network Adminstrators.jpg", alt: "Network Administrators", text: "Network Administrators" },
-        { src: "/assets/cources/courseDetails/shell-scripting/Freshers seeking Automation or DevOps Roles.jpg", alt: "Freshers", text: "Automation or DevOps Roles" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Freshers seeking Automation or DevOps Roles.jpg", alt: "Freshers", text: "Enthusiast Students" },
         // { src: "", alt: "Professors & Trainers in IT", text: "Professors & Trainers in IT " }
     ],
 

@@ -177,8 +177,8 @@ export const specialisationInMongoDB: Course = {
         { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "", text: "Cloud Engineers" },
         { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "", text: "DevOps Engineers" },
         { src: "/assets/cources/courseDetails/mongodb/Data Engineers.jpg", alt: "", text: "Data Engineers" },
-        { src: "/assets/cources/courseDetails/mongodb/IT Professionals.jpg", alt: "", text: "IT Professionals" },
-        { src: "/assets/cources/courseDetails/mongodb/Students.jpg", alt: "", text: "Students" }
+        { src: "/assets/cources/courseDetails/mongodb/IT Professionals.jpg", alt: "", text: "Working IT Professionals" },
+        { src: "/assets/cources/courseDetails/mongodb/Students.jpg", alt: "", text: "Enthusiast Students" }
     ],
 
     toolsData: {

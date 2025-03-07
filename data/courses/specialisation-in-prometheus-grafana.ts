@@ -268,7 +268,7 @@ export const specialisationInPrometheusGrafana:Course = {
         { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "Cloud Engineers", text: "Cloud & Infrastructure Engineers" },
         { src: "/assets/cources/courseDetails/terraform/Software Developers.jpg", alt: "Developers", text: "Software Developers" },
         { src: "/assets/cources/courseDetails/terraform/Site Reliability Engineers (SRE).jpg", alt: "SRE", text: "Site Reliability Engineers" },
-        { src: "/assets/cources/courseDetails/mongodb/IT Professionals.jpg", alt: "IT Professionals", text: "IT Professionals" }
+        { src: "/assets/cources/courseDetails/mongodb/IT Professionals.jpg", alt: "Working IT Professionals", text: "Working IT Professionals" }
     ],
   
     toolsData: {
