@@ -29,7 +29,6 @@ type MenuData = {
 
 type MenuKeys = "workingProfessionals" | "collegeStudents" | "more";
 
-/// --- JSON Data ---
 // const menuData: Record<MenuKeys, MenuData> = {
 //   workingProfessionals: {
 //     categories: {
@@ -59,10 +58,7 @@ type MenuKeys = "workingProfessionals" | "collegeStudents" | "more";
 
 /// --- Components ---
 const ProgramCard: React.FC<Program> = ({ title, mentor, duration, status, type,image }) => {
-  console.log("This is image from json data",image);
-  console.log("This is mentor",mentor);
-  console.log("This is duration",duration);
-  console.log("This is status",status)
+  
   return (
     <>
   <div className="p-4 hover:bg-gray-50 rounded-lg transition-colors">

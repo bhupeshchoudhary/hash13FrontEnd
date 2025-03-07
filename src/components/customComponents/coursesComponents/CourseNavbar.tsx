@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto flex bg-white bg-opacity-100 items-center justify-between py-4 px-6">
         {/* Logo */}
-        <a href="#Hero" className="flex items-center space-x-2">
+        <a href="/" className="flex items-center space-x-2">
           <Image
             src={LOGO}
             alt="Logo"
