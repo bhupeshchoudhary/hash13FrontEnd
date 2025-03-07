@@ -5,7 +5,7 @@ export const specialisationInJenkins: Course = {
     _id: "specialisation-in-jenkins",
     title: "[B][R]CI/CD Pipeline with Jenkins [/R][/B] | Manage Build and Release DevOps Pipelines",
     slug: "specialisation-in-jenkins",
-    rating: 4.9,
+    rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
     hours: "30+",
