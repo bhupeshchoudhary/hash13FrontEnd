@@ -19,7 +19,7 @@ export interface Headings {
   export interface LeftLandingPage {
     headings: Headings;
     search: Search;
-    goals: string[];
+    goals: { text: string; href: string; }[];
     community: Community;
     trendingSearches: string[];
   }

@@ -9,16 +9,41 @@ export const jsonData: LeftLandingPage = {
       placeholder: "Tell us what you're looking to learn"
     },
     goals: [
-      "DevOps Engineer",
-      "Machine Learning",
-      "Cloud Engineer",
-      "SDE",
-      "SRE",
-      "MLOps Engingeer",
+      {
+        text:"DevOps Engineer",
+        href:"/courses/devops-engineer"
+      },
+      {
+        text:"Machine Learning",
+        href:"/courses/machine-learning"
+      },
+      {
+        text:"Cloud Engineer",
+        href:"/courses/cloud-engineer"
+      },
+      {
+        text:"SDE",
+        href:"/courses/sde"
+      },
+      {
+        text:"SRE",
+        href:"/courses/sre"
+      },
+      {
+        text:"MLOps Engineer",
+        href:"/courses/mlops-engineer"
+      },
+      {
+        text:"PromptOps Engineer",
+        href:"/courses/promptops-engineer"
+      },
+      {
+        text:"Data Scientist",
+        href:"/courses/data-scientist"
+      }
 
-      "PromptOps Engineer",
       
-      "Data Scientist"
+    
       
     ],
     community: {

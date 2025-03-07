@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { TrendingUp, Search } from "lucide-react"
 import { jsonData } from '../../../../../data/leftLandingPage/leftLandingPage'
-
+import Link from "next/link"
 export default function SearchComponent() {
 
  
@@ -89,14 +89,16 @@ export default function SearchComponent() {
 
         <div className="flex flex-wrap gap-2">
         {jsonData.goals.map((goal, index) => (
+          <Link href={goal.href}>
             <Button
               key={index}
               variant="outline"
               size="sm"
               className="rounded-xl shadow-sm border-2 hover:bg-gray-50 text-sm"
             >
-              {goal}
+              {goal.text}
             </Button>
+            </Link>
           ))}
         </div>
       </div>
