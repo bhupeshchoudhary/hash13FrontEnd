@@ -3,6 +3,10 @@ import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { features } from '../../../../data/factsAndFigure/features';
 
+const handleClickGetStartedWithHash13 = (url: string)=>{
+  window.open(url, '_blank')
+}
+
 export default function FactsAndFigure() {
   return (
     <div className="container mx-auto max-w-6xl py-8 md:py-12 pt-0 px-4 md:px-6 lg:px-14">
@@ -15,7 +19,8 @@ export default function FactsAndFigure() {
           <h3 className="text-2xl md:text-4xl font-bold mb-4 text-center">
             What gives us <span className="text-[#ff0000]">an edge?</span>
           </h3>
-          <Button className="bg-[#ff0000] hover:bg-red-600 text-white w-full md:w-auto">
+          
+          <Button onClick={()=> handleClickGetStartedWithHash13('https://learning.hash13.com/')} className="bg-[#ff0000] hover:bg-red-600 text-white w-full md:w-auto">
             Get started with #13
           </Button>
         </div>
