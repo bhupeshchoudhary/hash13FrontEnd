@@ -213,7 +213,7 @@ export const specialisationInAnsible: Course = {
     ],
 
     programFor: [
-        { src: "/assets/cources/courseDetails/shell-scripting/Engineer Graduates (2).jpg", alt: "Engineering Graduates", text: "Engineering Graduates (CS/IT, ECE)" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Engineer Graduates (2).jpg", alt: "Engineering Graduates", text: "Engineering Graduates " },
         { src: "/assets/cources/courseDetails/shell-scripting/Linux System Administrators.jpg", alt: "System Administrators", text: "Linux System Administrators" },
         { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
         { src: "/assets/cources/courseDetails/shell-scripting/Cloud Administrators.jpg", alt: "Cloud Administrators", text: "Cloud Administrators" },

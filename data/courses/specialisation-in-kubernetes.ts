@@ -316,7 +316,7 @@ export const specialisationInKubernetes: Course = {
     ],
 
     programFor: [
-        { src: "/assets/cources/courseDetails/shell-scripting/Engineer Graduates.jpg", alt: "Engineering Graduates", text: "Engineering Graduates (CS/IT, ECE)" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Engineer Graduates.jpg", alt: "Engineering Graduates", text: "Engineering Graduates " },
         { src: "/assets/cources/courseDetails/mongodb/System Administrators.jpg", alt: "System Administrators", text: "System Administrators" },
         { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
         { src: "/assets/cources/courseDetails/shell-scripting/Cloud Administrators.jpg", alt: "Cloud Administrators", text: "Cloud Administrators" },
