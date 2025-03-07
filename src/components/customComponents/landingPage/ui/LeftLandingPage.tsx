@@ -14,8 +14,8 @@ export default function SearchComponent() {
 
   useEffect(() => {
     const targetCount: number = Number(jsonData.community.learnersCount);
-    const duration = 6000;
-    const steps = 50;
+    const duration = 4000;
+    const steps = 10;
     const increment = targetCount / steps;
     const intervalTime = duration / steps;
 

@@ -11,36 +11,36 @@ export const jsonData: LeftLandingPage = {
     goals: [
       {
         text:"DevOps Engineer",
-        href:"/courses/devops-engineer"
+        href:"/courses/specialisation-in-devops"
       },
       {
         text:"Machine Learning",
-        href:"/courses/machine-learning"
+        href:"/courses"
       },
       {
         text:"Cloud Engineer",
-        href:"/courses/cloud-engineer"
+        href:"/courses"
       },
       {
         text:"SDE",
-        href:"/courses/sde"
+        href:"/courses"
       },
       {
         text:"MLOps Engineer",
-        href:"/courses/mlops-engineer"
+        href:"/courses"
       },
       {
         text:"SRE",
-        href:"/courses/sre"
+        href:"/courses"
       },
       
       {
         text:"PromptOps Engineer",
-        href:"/courses/promptops-engineer"
+        href:"/courses"
       },
       {
         text:"Data Scientist",
-        href:"/courses/data-scientist"
+        href:"/courses"
       }
 
       
