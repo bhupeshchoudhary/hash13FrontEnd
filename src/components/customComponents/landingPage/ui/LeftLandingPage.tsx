@@ -65,19 +65,18 @@ export default function SearchComponent() {
           <div className="absolute left-0 right-0 top-full mt-2 bg-white rounded-xl shadow-lg p-2 z-10">
             <h4 className="mb-2 text-sm font-semibold">Trending searches</h4>
             <div className="flex flex-wrap gap-2">
-              {jsonData.trendingSearches.map((search, index) => (
-                <Button
-                  key={index}
-                  variant="outline"
-                  size="sm"
-                  className="rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700"
-                  onClick={() => setSearchQuery(search)} // 🔥 Click pe search update hoga
-                >
-                  <TrendingUp className="h-2 w-2 mr-1" />
-                  {search}
-                </Button>
-              ))}
-            </div>
+  {jsonData.goals.map((goal, index) => (
+    <Link href={goal.href} key={index}>  {/* Move key prop here */}
+      <Button
+        variant="outline"
+        size="sm"
+        className="rounded-xl shadow-sm border-2 hover:bg-gray-50 text-sm"
+      >
+        {goal.text}
+      </Button>
+    </Link>
+  ))}
+</div>
           </div>
         )}
       </div>

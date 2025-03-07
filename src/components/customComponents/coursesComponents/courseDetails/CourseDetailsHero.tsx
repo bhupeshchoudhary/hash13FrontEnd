@@ -133,7 +133,7 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
 
   return (
     <div className="bg-gradient-to-br from-gray-50 via-black-50 to-red-50" id="hero">
-      <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center">
+      <div className="min-h-[80vh] w-full p-4 sm:p-6 md:p-8 flex items-center justify-center shadow-md">
         <div className="max-w-6xl w-full overflow-hidden relative flex flex-col lg:block">
           {/* Right Image Section */}
           <div className="relative lg:absolute lg:right-0 lg:top-0 h-[300px] lg:h-full w-full lg:w-[40%] order-1">
