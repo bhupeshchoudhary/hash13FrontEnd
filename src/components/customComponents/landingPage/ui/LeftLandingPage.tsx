@@ -1,27 +1,57 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { TrendingUp, Search } from "lucide-react"
 import { jsonData } from '../../../../../data/leftLandingPage/leftLandingPage'
 
 export default function SearchComponent() {
+
+ 
   const [isSearchFocused, setIsSearchFocused] = useState(false)
-  const [searchQuery, setSearchQuery] = useState("") // 🔥 New state added
+  const [searchQuery, setSearchQuery] = useState("") // 🔥 New 
+  // state added
+  const [count, setCount] = useState(0) // Add new state for 
+  // 
+  // 
+  // counter
+
+
+  useEffect(() => {
+    const targetCount: number = Number(jsonData.community.learnersCount);
+    const duration = 6000; // Animation duration in milliseconds
+    const steps = 50; // Number of steps to reach target
+    const increment = targetCount / steps;
+    const intervalTime = duration / steps;
+
+    const timer = setInterval(() => {
+      setCount(prevCount => {
+        const newCount = prevCount + increment;
+        return newCount >= targetCount ? targetCount : newCount;
+      });
+    }, intervalTime);
+
+    return () => clearInterval(timer);
+  }, []); // Run once on component mount
 
   return (
     <div className="md:max-w-4xl lg:max-w-4xl w-full mx-auto md:px-4 lg:px-4 pt-16 pb-8">
-      <h1 className="text-4xl font-bold mb-2">
+      <h1 className="text-3xl font-bold mb-2">
         <span className="text-[#ff0000]">{jsonData.headings.main}</span>
       </h1>
 
-      <h2 className="text-2xl font-bold mb-8">{jsonData.headings.sub}</h2>
+      <h2 className="text-1xl font-bold mb-8">{jsonData.headings.sub}</h2>
 
       <div className="relative mb-8 w-11/12">
         <Input
           placeholder={jsonData.search.placeholder}
-          className="w-full py-6 bg-white px-4 text-lg text-gray-600 rounded-xl shadow-sm"
+          className="w-full py-6 bg-white px-4 text-lg text-gray-600 rounded-xl
+    shadow-[0_9px_15px_-5px_rgba(255,0,0,0.3),0_5px_10px_-5px_rgba(255,0,0,0.1)]
+
+          
+          "
+          // todo give drop shadown a smooth gradient of #ff0000
           value={searchQuery} // 🔥 Bind input with state
           onChange={(e) => setSearchQuery(e.target.value)} // Allow manual typing
           onFocus={() => setIsSearchFocused(true)}
@@ -32,7 +62,7 @@ export default function SearchComponent() {
         </Button>
         
         {isSearchFocused && (
-          <div className="absolute left-0 right-0 top-full mt-2 bg-white rounded-xl shadow-lg p-4 z-10">
+          <div className="absolute left-0 right-0 top-full mt-2 bg-white rounded-xl shadow-lg p-2 z-10">
             <h4 className="mb-2 text-sm font-semibold">Trending searches</h4>
             <div className="flex flex-wrap gap-2">
               {jsonData.trendingSearches.map((search, index) => (
@@ -43,7 +73,7 @@ export default function SearchComponent() {
                   className="rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700"
                   onClick={() => setSearchQuery(search)} // 🔥 Click pe search update hoga
                 >
-                  <TrendingUp className="h-3 w-3 mr-1" />
+                  <TrendingUp className="h-2 w-2 mr-1" />
                   {search}
                 </Button>
               ))}
@@ -58,11 +88,12 @@ export default function SearchComponent() {
         </p>
 
         <div className="flex flex-wrap gap-2">
-          {jsonData.goals.map((goal, index) => (
+        {jsonData.goals.map((goal, index) => (
             <Button
               key={index}
               variant="outline"
-              className="rounded-xl shadow-sm border-2 hover:bg-gray-50"
+              size="sm"
+              className="rounded-xl shadow-sm border-2 hover:bg-gray-50 text-sm"
             >
               {goal}
             </Button>
@@ -73,7 +104,9 @@ export default function SearchComponent() {
       <div className="text-lg">
         {jsonData.community.text}{" "}
         <span className="text-[#ff0000] font-medium">
-          {jsonData.community.learnersCount}
+          {/* todo learnersCount is a number, I want to show counting form 0 to learnerCount Number Increment effect */}
+          {Math.round(count)}
+           
         </span> learners.
       </div>
     </div>

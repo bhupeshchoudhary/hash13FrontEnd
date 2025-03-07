@@ -10,18 +10,20 @@ export const jsonData: LeftLandingPage = {
     },
     goals: [
       "DevOps Engineer",
-      "Machine Learning Engineer",
+      "Machine Learning",
       "Cloud Engineer",
-      "MLOps Engingeer",
       "SDE",
-      "PromptOps Engineer",
       "SRE",
-      "Full Stack Developer",
+      "MLOps Engingeer",
+
+      "PromptOps Engineer",
+      
       "Data Scientist"
+      
     ],
     community: {
       text: "Join the community of",
-      learnersCount: "1.7 M+ "
+      learnersCount: "17985823"
     },
     trendingSearches: [
       "DevOps training",
