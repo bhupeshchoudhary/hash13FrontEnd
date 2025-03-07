@@ -11,6 +11,8 @@ import FactsAndFigure from "@/components/customComponents/landingPage/FactAndFig
 import SupportContact from "@/components/customComponents/landingPage/SupportContact";
 
 import Navbar from "@/components/customComponents/Navbar/Navbar";
+
+import CallToAction from "@/components/customComponents/CallToAction/CallToAction";
 // import { courseInfo } from "../../data/ExampleCard2/ExampleCard2";
 import { courseInfo } from "../../data/courses/courses";
 import QueryForm from "@/components/customComponents/coursesComponents/courseDetails/ContactAndSupport";
@@ -31,6 +33,7 @@ export default function Home() {
 
 <QueryForm />
 <SupportContact></SupportContact>
+<CallToAction></CallToAction>
 </>
   );
 }

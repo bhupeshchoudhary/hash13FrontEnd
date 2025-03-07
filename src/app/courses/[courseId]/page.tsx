@@ -24,6 +24,8 @@ import { LeftRightAlumniCarousel } from "@/components/customComponents/coursesCo
 import SupportContact from "@/components/customComponents/landingPage/SupportContact";
 import QueryForm from "@/components/customComponents/coursesComponents/courseDetails/ContactAndSupport";
 
+
+import CallToAction from "@/components/customComponents/CallToAction/CallToAction";
 // Loading Skeleton Component
 const LoadingSkeleton = () => (
   <div className="animate-pulse">
@@ -169,6 +171,7 @@ export default function CourseDetailPage() {
         <CertificateDisplay course={course} />
         </section>
         <QueryForm />
+        <CallToAction />
       </main>
     </ErrorBoundary>
   );
