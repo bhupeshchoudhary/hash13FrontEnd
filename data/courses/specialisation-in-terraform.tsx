@@ -11,7 +11,7 @@ export const specialisationInTerraform: Course = {
     price: 3993,
     originalPrice: 7500,
     enrolledStudents: 12000,
-    category: "DevOps",
+    category: "Cloud",
     shortDescription: "45+ Hours | Comprehensive Modules | 3 Capstone Projects",
     paymentLink: " https://rzp.io/rzp/LhA0dcV1",
     backgroundImage: "/assets/cources/courseDetails/terraform/terraform.jpg",
