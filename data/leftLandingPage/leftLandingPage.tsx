@@ -26,13 +26,14 @@ export const jsonData: LeftLandingPage = {
         href:"/courses/sde"
       },
       {
-        text:"SRE",
-        href:"/courses/sre"
-      },
-      {
         text:"MLOps Engineer",
         href:"/courses/mlops-engineer"
       },
+      {
+        text:"SRE",
+        href:"/courses/sre"
+      },
+      
       {
         text:"PromptOps Engineer",
         href:"/courses/promptops-engineer"

@@ -4,7 +4,8 @@ import { Button } from '../../ui/button'; /// Assuming Shadcn is correctly set u
 import { Phone, MessageCircle } from "lucide-react"
 import { FaWhatsapp } from "react-icons/fa";
 const CallToAction:any = () => {
-    const phoneNumber = "9829105960";
+    const phoneNumber = "9653775333";
+  
 
     const OpenPhone = () => {
         window.open(`tel:${phoneNumber}`);  

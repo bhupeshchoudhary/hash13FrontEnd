@@ -101,7 +101,10 @@ export default function SearchComponent() {
       <div className="text-lg">
         {jsonData.community.text}{" "}
         <span className="text-[#ff0000] font-medium">
-          {Math.round(count).toLocaleString()}
+
+{Math.round(count).toLocaleString()}
+           
+
         </span> learners.
       </div>
     </div>
