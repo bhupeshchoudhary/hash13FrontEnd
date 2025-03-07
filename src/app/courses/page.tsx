@@ -132,16 +132,16 @@ const CoursePage: React.FC = () => {
 
   // Categories with Counts
   const categoriesWithCounts = useMemo(() => {
-    const categoryCounts: { [key: string]: number } = courseInfo.reduce((acc, course) => {
+    const categoryCounts: { [key: string]:  number } = courseInfo.reduce((acc, course) => {
       acc[course.category] = (acc[course.category] || 0) + 1;
       return acc;
     }, {} as { [key: string]: number });
 
     const baseCategories: Category[] = [
       { name: "All Courses", highlight: false },
-      { name: "Popular Courses", highlight: true },
+      // { name: "Popular Courses", highlight: true },
       { name: "DevOps", highlight: false },
-      { name: "Monitoring", highlight: false },
+      { name: "Cloud", highlight: false },
       { name: "Programming", highlight: false },
       { name: "Databases", highlight: false },
       { name: "System Administration", highlight: false },
@@ -155,9 +155,12 @@ const CoursePage: React.FC = () => {
       ...category,
       count: category.name === "All Courses" 
         ? courseInfo.length 
-        : categoryCounts[category.name] || 0
+        : categoryCounts[category.name] || 0,
+      displayCount: category.name === "All Courses"
+        ? courseInfo.length 
+        : (categoryCounts[category.name] || 0 ) === 0 ? "Coming soon" : categoryCounts[category.name],
     }));
-  }, []);
+  }, [courseInfo]);
 
   const handleCategoryClick = (categoryName: string): void => {
     setSelectedCategory(categoryName);
@@ -198,27 +201,27 @@ const CoursePage: React.FC = () => {
               <ScrollArea className="h-auto lg:h-[calc(100vh-200px)] pr-4">
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-1 gap-3">
                   {categoriesWithCounts.map((category) => (
-                    <button
-                      key={category.name}
-                      onClick={() => handleCategoryClick(category.name)}
-                      className={`
-                        flex items-center justify-between w-full p-3 lg:p-4 
-                        rounded-xl border border-gray-200
-                        shadow-sm hover:shadow-md transition-all
+
+
+
+                    <button 
+                      key={category.name} 
+                      onClick={()=> handleCategoryClick(category.name)}
+                      className={`flex items-center justify-between w-full p-3 lg:p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all 
                         ${category.highlight ? 'bg-pink-50' : 'bg-white'}
-                        ${selectedCategory === category.name ? 'border-red-500 bg-red-50' : ''}
-                        ${category.count === 0 ? 'opacity-50' : ''}
+                        ${selectedCategory === category.name ? 'border-red-50- bg-red-50': ''}
+                        ${typeof category.displayCount === 'string' ? 'opacity-50': ''}
+                        disabled={typeof category.displayCount === 'string' ? 'opacity-50' : ''}
                       `}
-                      disabled={category.count === 0}
-                    >
-                      <span className="text-xs sm:text-sm font-medium truncate">
-                        {category.name}
-                      </span>
-                      <div className="flex items-center gap-2 text-gray-500 flex-shrink-0">
-                        <span className="text-xs sm:text-sm">({category.count})</span>
-                        <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4" />
-                      </div>
-                    </button>
+                      >
+                        <span className="text-xs sm:text-sm font-medium ">{category.name}</span>
+                        <div className="flex items-center gap-2 text-gray-500 flex-shrink-0">
+                          <span className="text-xs sm:text-sm">({category.displayCount})</span>
+                          <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4" />
+                        </div>
+                      </button>
+
+
                   ))}
                 </div>
               </ScrollArea>
