@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInTerraform: Course = {
     _id: "specialisation-in-terraform",
-    title: "[B]Managing Infrastructure Using [R]Terraform [/R][/B]  | Design Scalable Infrastructure as Code",
+    title: "[B][R]Managing Infrastructure Using Terraform [/R][/B]  | Design Scalable Infrastructure as Code",
     slug: "specialisation-in-terraform",
     rating: 4.9,
     totalRatings: 10,

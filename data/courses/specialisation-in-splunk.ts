@@ -1,7 +1,7 @@
 import { Course } from "../../types/courses";
 export const specialisationInSplunk:Course ={
     _id: "specialisation-in-splunk",
-    title: "[B]Complete[R] Splunk Administration [/R] [/B]  | Deepen Your Expertise in Data Management & Insights ",
+    title: "[B][R]Complete Splunk Administration [/R] [/B]  | Deepen Your Expertise in Data Management & Insights ",
     slug: "specialisation-in-splunk",
     rating: 4.7,
     totalRatings: 10,
