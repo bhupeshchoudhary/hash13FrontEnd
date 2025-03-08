@@ -122,7 +122,7 @@ const CourseStructure: React.FC<CourseStructureProps> = ({ modules }) => {
         {modules.map((module) => (
           <Card
             key={module.id}
-            className={`bg-red-200 border-none text-white w-[650px] cursor-pointer transition-all duration-300 overflow-hidden relative ${
+            className={`bg-red-0 border-none text-white w-[650px] cursor-pointer transition-all duration-300 overflow-hidden relative ${
               expandedModule === module.id ? 'h-auto' : 'h-[350px] w-[650px]'
             }`}
             onClick={() => setExpandedModule(expandedModule === module.id ? null : module.id)}
@@ -154,7 +154,7 @@ const CourseStructure: React.FC<CourseStructureProps> = ({ modules }) => {
             {/* Content section */}
             <div className="p-6">
               {module.description && (
-                <div className="mb-4 bg-red-200 rounded-xl p-4">
+                <div className="mb-4 bg-red-100 rounded-xl p-4">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-yellow-500">⚡</span>
                     <span className="text-sm font-medium text-black font-bold">Why learn this</span>
@@ -170,7 +170,7 @@ const CourseStructure: React.FC<CourseStructureProps> = ({ modules }) => {
                   .map((item, index) => (
                     <div
                       key={index}
-                      className="text-sm py-2 px-4 text-black bg-red-400 rounded-md hover:bg-red-300 transition-colors flex-shrink-0 flex-grow-0 basis-auto max-w-full"
+                      className="text-sm py-2 px-4 text-black bg-red-100 rounded-md hover:bg-red-300 transition-colors flex-shrink-0 flex-grow-0 basis-auto max-w-full"
                     >
                       {item}
                     </div>
