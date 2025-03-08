@@ -37,7 +37,7 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
     <div className='bg-gradient-to-r from-gray-50 to-red-50' id="Modules">
       <div className="flex flex-col lg:flex-row gap-6 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto py-8">
         {/* Left Section */}
-        <div className="w-full lg:w-2/3">
+        <div className="w-full lg:w-[80%]">
           <div className="space-y-4 mb-8">
             <h1 className="text-3xl sm:text-3xl lg:text-3xl font-bold tracking-tight">
               What will you{" "}
