@@ -77,21 +77,23 @@ const closeVideoModal = () => {
   <Image
     src="/dis3.png"
     alt="Code editor screenshot"
-    width={200}
+    width={300}
     height={220}
     className={`border-4 rounded-lg shadow-lg ml-[20%] transform transition-all duration-1000 ease-out ${
       isIntersecting ? "translate-y-[-20px]" : "translate-y-[50px]"
     }`}
     onClick={() => handleImageClick("/dis3.png")}
   />
+
+
   
   {/* Second card - Image */}
   <Image
     src="/dis4.png"
     alt="Code editor screenshot"
-    width={200}
+    width={300}
     height={220}
-    className={`border-4 absolute bottom-[60%] right-[20%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
+    className={`border-4 absolute bottom-[60%] right-[5%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
       isIntersecting
         ? "translate-y-[-10px] translate-x-[10px]"
         : "translate-y-[50px] translate-x-0"
@@ -101,15 +103,15 @@ const closeVideoModal = () => {
   
   {/* Third card - Video */}
   <div
-    className={`border-4 absolute top-[60%] right-[30%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
+    className={`border-4 absolute top-[60%] right-[40%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
       isIntersecting
-        ? "translate-y-[-15px] translate-x-[-10px]"
-        : "translate-y-[50px] translate-x-0"
+        ? "translate-y-[-10px] translate-x-[-10px]"
+        : "translate-y-[40px] translate-x-10"
     }`}
   >
     {/* todo  in Image we have onClick handler when user click on it then we open image in modal, I want to similar feature in video to, when user click on video then open in video in a modal */}
     <video
-  width={200}
+  width={300}
   height={220}
   autoPlay
   muted

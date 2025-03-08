@@ -48,58 +48,76 @@ const About = () => {
                   {/* {yerrowArrow} */}
                 </div>
               </div>
+              
 
               {/* Top Right Card */}
               <div className="w-2/3">
-                <Card className="bg-gray-100/80 aspect-video flex items-center justify-center relative">
-                  <div className="bg-white rounded-full py-1.5 px-3 flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#ff0000]" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  </div>
-                </Card>
-              </div>
+      <Card 
+        className="bg-gray-100/80 aspect-video flex items-center justify-center relative overflow-hidden"
+        
+      >
+        <div className="w-full h-full relative">
+          <Image
+            src="/assets/file_2025-03-07_13.08.30.png"
+             width={400}
+             height={200}
+            
+            objectFit="contain"
+            alt="Card image"
+            
+          />
+        </div>
+      </Card>
+    </div>
             </div>
 
             {/* Bottom Row - Refined spacing */}
             <div className="flex gap-6">
               {/* Bottom Left Card */}
               <div className="w-2/3">
-                <Card className="bg-gray-100/80 aspect-video flex items-center justify-center">
-                  <div className="bg-white rounded-full py-1.5 px-3 flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#ff0000]" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  </div>
+                <Card className="bg-gray-100/80 aspect-video flex items-center justify-center relative overflow-hidden">
+                <div className="w-full h-full relative">
+                  <Image
+                    src="/assets/file_2025-03-07_12.54.08.png"
+                     width={400}
+                     height={200}
+                    objectFit="contain"
+                    alt="Card image"
+                  />
+                </div>
                 </Card>
               </div>
 
               {/* Trained Teachers Card - Refined to match Figma */}
               <div className="w-1/3 ">
-                <Card className="bg-white shadow-lg border-0 h-full rounded-lg">
-                  <CardHeader className="p-3">
+                <Card className="bg-white shadow-lg border-0 h-full rounded-lg relative overflow-hidden">
+                  <CardHeader className="p-1">
                     <div className="flex items-center gap-2">
                       <div className="rounded-full bg-gradient-to-br from-emerald-400 to-sky-400 p-1">
                         <Globe className="h-3.5 w-3.5 text-white" />
                       </div>
                       <CardTitle className="text-xs font-medium">Trained Teachers</CardTitle>
+                      
                     </div>
+                   
+              
                   </CardHeader>
                   <CardContent className="p-3 pt-0">
                     
                    
-                    <div className="space-y-1">
-                      <div className="h-1 w-full rounded-full bg-gray-100" />
-                      <div className="h-4 w-3/4 rounded-full bg-gray-100" />
-                      <div className="h-1 w-1/2 rounded-full bg-gray-100" />
-                    </div>
-
-                    <div className="space-y-1">
-                      <div className="h-1 w-full rounded-full bg-gray-100" />
-                      <div className="h-4 w-3/4 rounded-full bg-gray-100" />
-                      <div className="h-1 w-1/2 rounded-full bg-gray-100" />
-                    </div>
+                  
                   </CardContent>
+          <div className="w-full h-full relative">
+          <Image
+            src="/assets/file_2025-03-07_13.01.28.png"
+             width={400}
+             height={200}
+            
+            objectFit="contain"
+            alt="Card image"
+            
+          />
+        </div>
                 </Card>
               </div>
             </div>
