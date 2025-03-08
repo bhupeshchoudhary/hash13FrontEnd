@@ -58,7 +58,7 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
             </p>
           </div>
           {/* <DisplayCourseContent modules={course.module} /> */}
-          <CourseStructure />
+          <CourseStructure modules={course.module}/>
         </div>
 
         {/* Right Section */}
