@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from 'next/navigation';
 import { Course } from "../../../..//types/courses";
-import { courseInfo } from "../../../..//data/courses/courses";
+import { courseInfo } from "../../../../data/courses/courses";
 import CourseDetailHero from "@/components/customComponents/coursesComponents/courseDetails/CourseDetailsHero";
 import Tools from "@/components/customComponents/coursesComponents/Tools";
 import Analyst from "@/components/customComponents/coursesComponents/Analyst";
@@ -23,9 +23,8 @@ import Navbar from '@/components/customComponents/coursesComponents/CourseNavbar
 import { LeftRightAlumniCarousel } from "@/components/customComponents/coursesComponents/LeftRightNowAlumniSection";
 import SupportContact from "@/components/customComponents/landingPage/SupportContact";
 import QueryForm from "@/components/customComponents/coursesComponents/courseDetails/ContactAndSupport";
+import CourseStructure from "@/components/customComponents/coursesComponents/courseDetails/subComponents/CourseStructure";
 
-
-import CallToAction from "@/components/customComponents/CallToAction/CallToAction";
 // Loading Skeleton Component
 const LoadingSkeleton = () => (
   <div className="animate-pulse">
@@ -121,6 +120,8 @@ export default function CourseDetailPage() {
           {/* <CourseDetailHero /> */}
         </section>
 
+        {/* <CourseStructure /> */}
+
         <section className="">
           <ProgramHighlights course={course} />
         </section>
@@ -171,7 +172,6 @@ export default function CourseDetailPage() {
         <CertificateDisplay course={course} />
         </section>
         <QueryForm />
-        <CallToAction />
       </main>
     </ErrorBoundary>
   );

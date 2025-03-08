@@ -23,3 +23,6 @@ export interface AnalystData {
 export interface CourseAnalystData {
   [courseId: string]: AnalystData;
 }
+
+
+

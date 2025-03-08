@@ -8,6 +8,7 @@ import LearnersCarousel from './subComponents/LearnersCarousel';
 import BenefitsList from './subComponents/BenefitsLists';
 import AccreditationCard from './subComponents/AccreditationCard';
 import { Course } from '../../../../../types/courses';
+import CourseStructure from './subComponents/CourseStructure';
 
 interface KeyOutcomesProps {
   course: Course;
@@ -56,7 +57,8 @@ export default function KeyOutcomes({ course }: KeyOutcomesProps) {
               {course.shortDescription}
             </p>
           </div>
-          <DisplayCourseContent modules={course.module} />
+          {/* <DisplayCourseContent modules={course.module} /> */}
+          <CourseStructure />
         </div>
 
         {/* Right Section */}
