@@ -12,9 +12,7 @@ import { specialisationInTerraform } from "./specialisation-in-terraform";
 import { specialisationInJenkins } from "./specialisation-in-jenkins";
 import { specialisationInAnsible } from "./specialisation-in-ansible";
 import { specialisationInKubernetes } from "./specialisation-in-kubernetes";
-
-
-
+import {specialisationInAI} from "./specialisation-in-ai";
 export const courseInfo: Course[] = [
  
   specialisationInDevops,
@@ -27,8 +25,8 @@ export const courseInfo: Course[] = [
   specialisationInMongoDB,
   specialisationInJenkins,
   specialisationInAnsible,
-  specialisationInKubernetes
-
+  specialisationInKubernetes,
+  specialisationInAI
 
 
  

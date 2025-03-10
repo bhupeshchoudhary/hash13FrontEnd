@@ -1,11 +1,150 @@
 
 
-// types/courses.ts
+// // types/courses.ts
+// import { ReactNode } from 'react';
+// // Tool-related interfaces
+// export interface Tool {
+//   id: string;
+//   icon: "TrendingUp" | "BarChart" | "Cpu";
+//   title: string;
+// }
 
-// Tool-related interfaces
+// export interface ToolData {
+//   sectionTitle: string;
+//   category: string;
+//   toolsCount: string;
+//   displayImage: string;
+//   tools: Tool[];
+// }
+
+// // Highlight interface
+// export interface Highlight {
+//   number: string;
+//   description: string;
+// }
+
+// // Instructor interface
+// export interface Instructor {
+//   name: string;
+//   title: string;
+//   image: string;
+//   bio: string;
+//   rating: number;
+//   totalStudents: number;
+//   courses: number;
+// }
+
+
+
+
+
+// // Module interface
+// export interface Module {
+//   id: number;
+//   title: string;
+//   description: string | ReactNode;
+//   content: string[];
+// }
+
+// // Project interface
+// export interface Project {
+//   icon: string;
+//   title: string;
+//   description: string;
+//   skills: string[];
+// }
+
+// // ProgramFor interface
+// export interface ProgramFor {
+//   src: string;
+//   alt: string;
+//   text: string;
+// }
+
+
+
+// // Main Course interface
+// export interface Course {
+//   _id: string;
+//   title: string;
+//   slug: string;
+//   rating: number;
+//   totalRatings: number;
+//   duration: string;
+//   hours: string;
+//   price: number;
+//   originalPrice: number;
+//   paymentLink: string;
+//   enrolledStudents: number;
+//   shortDescription: string;
+//   backgroundImage: string;
+//   learningOutcomes: string[];
+//   features: string[];
+//   skills: string[];
+//   requirements: string[];
+//   level: string;
+//   language: string;
+//   lastUpdated: string;
+//   category: string;
+//   module: Module[];
+//   highlights: Highlight[];
+//   certificateImage: string;
+//   project: Project[];
+//   programFor: ProgramFor[];
+//   toolsData: ToolData; // Updated to single ToolData object
+//   status?: 'draft' | 'published';
+//   createdAt?: Date;
+//   updatedAt?: Date;
+// }
+
+// // NewCourse type for creating new courses
+// export type NewCourse = Omit<Course, '_id' | 'createdAt' | 'updatedAt'>;
+
+// // Optional: Add some utility types if needed
+// export type CourseStatus = 'draft' | 'published';
+// export type IconType = "TrendingUp" | "BarChart" | "Cpu";
+
+// // Optional: Add validation types
+// export interface CourseValidation {
+//   isValid: boolean;
+//   errors: {
+//     [K in keyof Course]?: string;
+//   };
+// }
+
+// // Optional: Add response types for API
+// export interface CourseResponse {
+//   success: boolean;
+//   data?: Course;
+//   error?: string;
+// }
+
+// export interface CoursesResponse {
+//   success: boolean;
+//   data?: Course[];
+//   error?: string;
+//   pagination?: {
+//     total: number;
+//     page: number;
+//     pages: number;
+//   };
+// }
+
+
+
+
+
+
+
+
+
+// types/courses.ts
+import { ReactNode } from 'react';
+
+// 🛠 Tool-related interfaces
 export interface Tool {
   id: string;
-  icon: "TrendingUp" | "BarChart" | "Cpu";
+  icon: IconType;
   title: string;
 }
 
@@ -17,13 +156,13 @@ export interface ToolData {
   tools: Tool[];
 }
 
-// Highlight interface
+// 🎯 Highlight interface
 export interface Highlight {
   number: string;
   description: string;
 }
 
-// Instructor interface
+// 👨‍🏫 Instructor interface
 export interface Instructor {
   name: string;
   title: string;
@@ -34,15 +173,15 @@ export interface Instructor {
   courses: number;
 }
 
-// Module interface
+// 📚 Module interface
 export interface Module {
   id: number;
   title: string;
-  description: string;
+  description: string | ReactNode;
   content: string[];
 }
 
-// Project interface
+// 🚀 Project interface
 export interface Project {
   icon: string;
   title: string;
@@ -50,14 +189,14 @@ export interface Project {
   skills: string[];
 }
 
-// ProgramFor interface
+// 🎯 Target audience interface
 export interface ProgramFor {
   src: string;
   alt: string;
   text: string;
 }
 
-// Main Course interface
+// 🎓 Main Course interface
 export interface Course {
   _id: string;
   title: string;
@@ -85,28 +224,26 @@ export interface Course {
   certificateImage: string;
   project: Project[];
   programFor: ProgramFor[];
-  toolsData: ToolData; // Updated to single ToolData object
-  status?: 'draft' | 'published';
+  toolsData: ToolData;
+  status?: CourseStatus;
   createdAt?: Date;
   updatedAt?: Date;
 }
 
-// NewCourse type for creating new courses
+// 🆕 NewCourse type for course creation
 export type NewCourse = Omit<Course, '_id' | 'createdAt' | 'updatedAt'>;
 
-// Optional: Add some utility types if needed
+// 🔖 Enums & Utility Types
 export type CourseStatus = 'draft' | 'published';
 export type IconType = "TrendingUp" | "BarChart" | "Cpu";
 
-// Optional: Add validation types
+// ✅ Course validation interface
 export interface CourseValidation {
   isValid: boolean;
-  errors: {
-    [K in keyof Course]?: string;
-  };
+  errors: Partial<Record<keyof Course, string>>;
 }
 
-// Optional: Add response types for API
+// 📡 API Response Interfaces
 export interface CourseResponse {
   success: boolean;
   data?: Course;

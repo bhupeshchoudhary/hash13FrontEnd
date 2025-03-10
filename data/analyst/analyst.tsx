@@ -296,6 +296,38 @@ export const analystData: CourseAnalystData = {
 
 
 
+"specialisation-in-ai": {
+  "title": "Rising Demand",
+  "subtitle": "for AI Engineers",
+  "salary": {
+    "label": "Jobs in AI",
+    "values": [600000, 1200000, 2000000, 4000000, 5000000]  // Converting 12L, 18L, 25L to actual numbers
+  },
+  "companies": [
+    "Accenture",
+    "Infosys",
+    "Wipro",
+    "Deloitte",
+    "Microsoft",
+    "Google",
+    "IBM",
+    "Amazon",
+    
+
+  ] as CompanyName[],
+  "demand": 40, // Estimated based on job market data
+  "jobCount": "43,600+", // Sum of jobs from Naukri (40,000), Glassdoor (1,500), Indeed (1,200), AmbitionBox (900)
+  "description": "Terraform engineers in India are witnessing increasing salaries due to the rising demand for infrastructure automation, cloud provisioning, and DevOps practices. In 2025, entry-level salaries range from ₹6–12 lakh annually, while experienced professionals earn ₹15 lakh or more, highlighting Terraform's significance in cloud automation and infrastructure as code (IaC)",
+  "yearLabel": "In 2025",
+  "salaryLabel": "Average Salaries",
+  "companiesLabel": "Companies Hiring",
+  "jobsLabel": "Available Jobs",
+  "jobsDescription": "Total jobs found across Naukri, Glassdoor, Indeed, and AmbitionBox"
+},
+
+
+
+
 
 
 
