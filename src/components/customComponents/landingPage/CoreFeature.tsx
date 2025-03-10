@@ -42,8 +42,8 @@ const CoreFeature = () => {
       <div className="max-w-6xl mx-auto px-4 py-10">
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-teal-500 text-sm font-medium tracking-wide mb">CORE FEATURES</p>
-          <h1 className="text-3xl font-bold">
+          <p className="text-teal-500 text-sm font-semibold tracking-wide mb">CORE FEATURES</p>
+          <h1 className="text-4xl font-bold">
           Why <span className="text-[#ff0000] relative">
             Choose 
             <span className="absolute bottom-0 left-0 w-full h-1  rounded-full">

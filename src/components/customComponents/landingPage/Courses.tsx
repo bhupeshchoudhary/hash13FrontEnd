@@ -27,10 +27,10 @@ export default function CoursesComponent() {
   return (
     <div className="container max-w-7xl mx-auto px-6 lg:px-14 py-8">
       <div className="text-center mb-10">
-        <h2 className="text-sm text-muted-foreground mb-2 text-teal-500">
+        <h2 className="text-sm text-muted-foreground mb-2 text-teal-500 font-semibold">
           POPULAR COURSES
         </h2>
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-4xl font-bold">
           Choose From Our Top{" "}
           <span className="text-[#ff0000] relative">
             Courses
