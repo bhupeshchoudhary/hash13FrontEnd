@@ -92,13 +92,10 @@
 
 
 
-
-
 // components/CourseStructure.tsx
 import { useState } from 'react';
 import { ChevronDown, ChevronUp, Calendar } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import ModuleHeaderImage from "../../../../../../public/assets/cources/courseDetails/modulesHeaderImage.png"
 
 interface Module {
   id: number;
@@ -116,50 +113,59 @@ const CourseStructure: React.FC<CourseStructureProps> = ({ modules }) => {
   const [expandedModule, setExpandedModule] = useState<number | null>(null);
 
   return (
-    <div className="container mx-auto p-0">
-      
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 gap-4 w-full">
         {modules.map((module) => (
           <Card
             key={module.id}
-            className={`bg-red-0 border-none text-white w-[650px] cursor-pointer transition-all duration-300 overflow-hidden relative ${
-              expandedModule === module.id ? 'h-auto' : 'h-[350px] w-[650px]'
-            }`}
+            className={`
+              bg-red-0 border-none text-white 
+              w-full max-w-[650px] mx-auto 
+              cursor-pointer transition-all duration-300 
+              overflow-hidden relative 
+              ${expandedModule === module.id ? 'h-auto' : 'h-[350px]'}
+            `}
             onClick={() => setExpandedModule(expandedModule === module.id ? null : module.id)}
-
-
           >
             {/* Header with background */}
             <div 
-  className="bg-white p-6 relative rounded-xl "
-  style={{
-    backgroundImage: `url('/assets/cources/courseDetails/moduleHeaderImage2.png')`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right  center',
-    backgroundSize: 'cover'
-  }}
->
-              <div className="text-sm text-white font-bold mb-1" >
+              className="bg-white p-4 sm:p-6 relative rounded-xl"
+              style={{
+                backgroundImage: `url('/assets/cources/courseDetails/moduleHeaderImage2.png')`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'right center',
+                backgroundSize: 'cover'
+              }}
+            >
+              <div className="text-xs sm:text-sm text-white font-bold mb-1">
                 MODULE {module.id}
               </div>
-              <h3 className="text-xl font-semibold text-white">{module.title}</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-white">
+                {module.title}
+              </h3>
               {module.duration && (
                 <div className='flex gap-2 mt-2'>
                   <Calendar className='w-4 h-4 text-white'/>
-                  <span className="text-sm text-white block">{module.duration}</span>
+                  <span className="text-xs sm:text-sm text-white block">
+                    {module.duration}
+                  </span>
                 </div>
               )}
             </div>
 
             {/* Content section */}
-            <div className="p-6">
+            <div className="p-4 sm:p-6">
               {module.description && (
-                <div className="mb-4 bg-red-100 rounded-xl p-4">
+                <div className="mb-4 bg-red-100 rounded-xl p-3 sm:p-4">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-yellow-500">⚡</span>
-                    <span className="text-sm font-medium text-black font-bold">Why learn this</span>
+                    <span className="text-xs sm:text-sm font-medium text-black font-bold">
+                      Why learn this
+                    </span>
                   </div>
-                  <p className="text-sm text-black">{module.description}</p>
+                  <p className="text-xs sm:text-sm text-black">
+                    {module.description}
+                  </p>
                 </div>
               )}
 
@@ -170,7 +176,15 @@ const CourseStructure: React.FC<CourseStructureProps> = ({ modules }) => {
                   .map((item, index) => (
                     <div
                       key={index}
-                      className="text-sm py-2 px-4 text-black bg-red-100 rounded-md hover:bg-red-300 transition-colors flex-shrink-0 flex-grow-0 basis-auto max-w-full"
+                      className="
+                        text-xs sm:text-sm 
+                        py-1 sm:py-2 px-2 sm:px-4 
+                        text-black bg-red-100 
+                        rounded-md hover:bg-red-300 
+                        transition-colors 
+                        flex-shrink-0 flex-grow-0 
+                        basis-auto max-w-full
+                      "
                     >
                       {item}
                     </div>

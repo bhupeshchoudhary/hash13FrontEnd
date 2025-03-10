@@ -14,7 +14,7 @@ export const specialisationInMongoDB: Course = {
     category: "Databases",
     shortDescription: "Industry-Recognized Curriculum | Live Projects | Expert-Led Training | Advanced NoSQL Techniques | High-Performance Data Handling",
     paymentLink: " https://rzp.io/rzp/at46f6D",
-    backgroundImage: "/assets/cources/courseDetails/mongodb/MongoDB.jpg",
+    backgroundImage: "/assets/cources/courseDetails/mongodb/mongodb.jpg",
 
     learningOutcomes: [
         "MongoDB Fundamentals & NoSQL concepts",
