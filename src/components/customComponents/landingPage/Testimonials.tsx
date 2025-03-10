@@ -4,7 +4,11 @@ import React, { useState } from 'react';
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/customComponents/landingPage/ui/Avatar";
 import { Linkedin } from 'lucide-react';
+import Image from 'next/image';
 import { landingPageTestimonialPosts } from "../../../../data/testimonials/posts";
+import yerrowArrow from "../../../../public/assets/landingPage/floatingCurveArrow.svg"
+// import Line from "../../../../public/assets/line.svg"
+import curveLine from "../../../../public/assets/CurlLine.svg"
 
 // Define interfaces
 interface Author {
@@ -111,7 +115,14 @@ export default function Component() {
           HERE IT FROM THEM
         </h2>
         <h2 className="text-black text-2xl md:text-3xl font-bold mb-10 mt-2 text-center">
-          Ambitious <span className ="text-[#ff0000]">Learner&apos;s</span> ❤️ #13
+          Ambitious <span className ="text-[#ff0000]">Learner&apos;s <span className="text-[#ff0000] relative">
+                  <div className="absolute -bottom-0.5 left-0 w-full h-0.5 " >
+                     {/* eslint-disable-next-line react/jsx-no-undef */}
+                     
+                     <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
+                      {/* <curveLine></curveLine>  */}
+                    </div>
+                  </span> </span> ❤️ #13
         </h2>
         
         <div className="columns-1 md:columns-4 lg:columns-4 gap-4 space-y-4 max-w-5xl mx-auto ">

@@ -39,22 +39,22 @@ export default function DiscordCommunity() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Add these after existing useState declarations
-const [isVideoModalOpen, setVideoModalOpen] = useState(false);
-const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+    // Add these after existing useState declarations
+  const [isVideoModalOpen, setVideoModalOpen] = useState(false);
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
-// Add this after handleImageClick function
-const handleVideoClick = (videoSrc: string) => {
-  setSelectedVideo(videoSrc);
-  setVideoModalOpen(true);
-};
+  // Add this after handleImageClick function
+      const handleVideoClick = (videoSrc: string) => {
+        setSelectedVideo(videoSrc);
+        setVideoModalOpen(true);
+      };
 
-const closeVideoModal = () => {
-  setVideoModalOpen(false);
-  setSelectedVideo(null);
-};
+    const closeVideoModal = () => {
+      setVideoModalOpen(false);
+      setSelectedVideo(null);
+    };
 
-  const handleImageClick = (image: string) => {
+      const handleImageClick = (image: string) => {
     setSelectedImage(image);
     setModalOpen(true);
   };
@@ -65,7 +65,8 @@ const closeVideoModal = () => {
   };
 
   return (
-    <div className="bg-white">
+  <div className="bg-[#ff0000]">
+    <div className="flex max-w-5xl mx-auto flex-col lg:flex-row w-full gap-8 bg-[#ff0000] p-8 md:rounded-lg">
       <div className="container sm:px-6 mx-auto pt-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center max-w-6xl">
         {/* Left side with code screenshots */}
         <div
@@ -73,72 +74,72 @@ const closeVideoModal = () => {
           className={`relative grid grid-cols-2 gap-4 mt-20 mb-32 transition-transform duration-1000 ease-out`}
         >
           <div className="relative col-span-2">
-  {/* First card - Image */}
-  <Image
-    src="/dis3.png"
-    alt="Code editor screenshot"
-    width={300}
-    height={220}
-    className={`border-4 rounded-lg shadow-lg ml-[20%] transform transition-all duration-1000 ease-out ${
+    {/* First card - Image */}
+    <Image
+      src="/dis3.png"
+      alt="Code editor screenshot"
+      width={300}
+      height={220}
+      className={`border-4 rounded-lg shadow-lg ml-[20%] transform transition-all duration-1000 ease-out ${
       isIntersecting ? "translate-y-[-20px]" : "translate-y-[50px]"
-    }`}
-    onClick={() => handleImageClick("/dis3.png")}
-  />
+        }`}
+        onClick={() => handleImageClick("/dis3.png")}
+      />
 
 
   
-  {/* Second card - Image */}
-  <Image
-    src="/dis4.png"
-    alt="Code editor screenshot"
-    width={300}
-    height={220}
-    className={`border-4 absolute bottom-[60%] right-[5%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
+      {/* Second card - Image */}
+      <Image
+        src="/dis4.png"
+        alt="Code editor screenshot"
+        width={300}
+        height={220}
+        className={`border-4 absolute bottom-[60%] right-[5%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
       isIntersecting
         ? "translate-y-[-10px] translate-x-[10px]"
         : "translate-y-[50px] translate-x-0"
-    }`}
+     }`}
     onClick={() => handleImageClick("/dis4.png")}
-  />
+    />
   
-  {/* Third card - Video */}
-  <div
+      {/* Third card - Video */}
+      <div
     className={`border-4 absolute top-[60%] right-[40%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
       isIntersecting
         ? "translate-y-[-10px] translate-x-[-10px]"
         : "translate-y-[40px] translate-x-10"
     }`}
-  >
+   >
     {/* todo  in Image we have onClick handler when user click on it then we open image in modal, I want to similar feature in video to, when user click on video then open in video in a modal */}
     <video
-  width={300}
-  height={220}
-  autoPlay
-  muted
-  loop
-  playsInline
-  className="rounded-lg cursor-pointer"
-  onClick={() => handleVideoClick("/assets/video.mp4")}
->
-  <source src="/assets/video.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-  </div>
-</div>
+      width={300}
+      height={220}
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="rounded-lg cursor-pointer"
+      onClick={() => handleVideoClick("/assets/video.mp4")}
+        >
+        <source src="/assets/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+          </video>
+            </div>
+          </div>
         </div>
 
         {/* Right side with content */}
         <div className="space-y-6 text-center sm:px-0">
-          <h1 className="text-lg sm:text-2xl text-black ">
+          <h1 className="text-3xl sm:text-2xl text-white font-bold ">
             Exclusive{" "}
-            <span className="text-[#ff0000] font-bold">Discord Community</span>
+            <span className="text-[#ffffff] text-3xl font-bold">Discord Community</span>
           </h1>
-          <p className="text-sm sm:text-lg pb-4 text-black">
+          <p className="text-lg sm:text-lg pb-4 text-white">
             Get 1:1 technical doubt support from our team & elite Discord
             community for lifetime
           </p>
           <a href="https://bit.ly/41nbzpy" target="_blank" className="pt-8">
-            <button className="bg-[#ff0000] text-white px-6 py-3 rounded-lg text-base sm:text-lg hover:shadow-white hover:shadow-md transition-all flex items-center justify-center mx-auto">
+            <button className="bg-[#ffffff] text-black px-6 py-3 rounded-lg text-base sm:text-lg hover:shadow-white hover:shadow-md transition-all flex items-center font-bold justify-center mx-auto">
             Visit our Discord
               <span className="ml-2">→</span>
             </button>
@@ -172,11 +173,11 @@ const closeVideoModal = () => {
 
 
       {/* Video Modal */}
-{isVideoModalOpen && selectedVideo && (
-  <div
-    className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
-    onClick={closeVideoModal}
-  >
+      {isVideoModalOpen && selectedVideo && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
+          onClick={closeVideoModal}
+        >
     <div className="relative">
       <video
         width={800}
@@ -195,8 +196,10 @@ const closeVideoModal = () => {
         &times;
       </button>
     </div>
-  </div>
+   </div>
+
 )}
+    </div>
     </div>
   );
 }
