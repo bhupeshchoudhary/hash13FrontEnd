@@ -6,6 +6,7 @@ export const specialisationInSplunk:Course ={
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
+    programBy: "Vimal Daga",
     hours: "12+",
     price: 5850,
     originalPrice: 10000,

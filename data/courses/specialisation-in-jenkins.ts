@@ -8,6 +8,7 @@ export const specialisationInJenkins: Course = {
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
+    programBy: "Vimal Daga",
     hours: "30+",
     price: 3350,
     originalPrice: 7500,

@@ -7,6 +7,7 @@ export const specialisationInAnsible: Course = {
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
+    programBy: "Vimal Daga",
     hours: "24+",
     price: 4900,
     originalPrice: 10000,

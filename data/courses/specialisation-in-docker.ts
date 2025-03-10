@@ -1,3 +1,4 @@
+
 import { Course } from "../../types/courses";
 
 export const specialisationInDocker: Course = {
@@ -7,6 +8,7 @@ export const specialisationInDocker: Course = {
     rating: 5,
     totalRatings: 10,
     duration: "20 Hours",
+    programBy: "Vimal Daga",
     hours: "20+",
     price: 1650,
     originalPrice: 7000,

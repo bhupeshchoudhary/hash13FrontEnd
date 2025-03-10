@@ -7,6 +7,7 @@ export const specialisationInJava: Course = {
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
+    programBy: "Vimal Daga",
     hours: "20+",
     price: 1600,
     originalPrice: 12000,

@@ -7,6 +7,7 @@ export const  specialisationInDevops:Course = {
     rating: 5,
     totalRatings: 10,
     duration: "2 Months",
+    programBy: "Vimal Daga",
     hours: "310+",
     price: 20000,
     originalPrice: 45000,

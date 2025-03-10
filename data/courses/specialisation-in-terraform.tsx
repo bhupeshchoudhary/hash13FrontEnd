@@ -7,6 +7,7 @@ export const specialisationInTerraform: Course = {
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
+    programBy: "Vimal Daga",
     hours: "45+",
     price: 3993,
     originalPrice: 7500,

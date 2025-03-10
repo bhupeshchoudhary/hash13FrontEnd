@@ -1,5 +1,6 @@
 // src/data/menuData.tsx
-
+import { specialisationInMongoDB } from '../courses/specialisation-in-mongodb';
+import { specialisationInAnsible } from '../courses/specialisation-in-ansible';
 import { MenuKey, MenuData } from '../../types/Navbar';
 
 export const menuData: Record<MenuKey, MenuData> = {
@@ -53,6 +54,15 @@ export const menuData: Record<MenuKey, MenuData> = {
             type: "Recorded",
             image:"/assets/cources/courseDetails/jenkkins/jenkins.jpg",
             slug:"/courses/specialisation-in-jenkins"
+          },
+          {
+            title: "Automation with Ansible",
+            mentor: `by ${specialisationInAnsible.programBy}`,
+            duration: specialisationInAnsible.hours,
+            status: "Active",
+            type: "Recorded",
+            image:specialisationInAnsible.backgroundImage,
+            slug:`/courses/${specialisationInAnsible.slug}`
           }
         ]
       },
@@ -107,7 +117,7 @@ export const menuData: Record<MenuKey, MenuData> = {
             duration: "16+ Hours",
             status: "Active",
             type: "Recorded",
-            image:"/assets/cources/courseDetails/mongodb/MongoDB.jpg",
+            image: specialisationInMongoDB.backgroundImage,
             slug:"/courses/specialisation-in-mongodb"
           },
         

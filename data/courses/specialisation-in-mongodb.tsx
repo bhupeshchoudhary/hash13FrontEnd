@@ -7,6 +7,7 @@ export const specialisationInMongoDB: Course = {
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
+    programBy: "Vimal Daga",
     hours: "16+",
     price: 2000,
     originalPrice: 7000,
