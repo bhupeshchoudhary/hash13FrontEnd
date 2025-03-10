@@ -13,10 +13,10 @@ export default function FactsAndFigure() {
       <div className="flex flex-col lg:flex-row items-start">
         {/* Left Side Section */}
         <div className="mb-8 lg:mb-0 px-4 lg:pr-8 lg:pl-6  lg:sticky lg:top-12 flex flex-col items-center w-full lg:w-[400px] ">
-          <h2 className="text-sm font-semibold text-gray-500 mb-2 text-center">
+          <h2 className="text-sm font-semibold text-teal-500 mb-2 text-center">
             LEARNER SUPPORT & SUCCESS
           </h2>
-          <h3 className="text-2xl md:text-4xl font-bold mb-4 text-center">
+          <h3 className="text-4xl md:text-4xl font-bold mb-4 text-center">
             What gives us <span className="text-[#ff0000]">an edge?</span>
           </h3>
           
