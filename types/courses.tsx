@@ -202,6 +202,7 @@ export interface Course {
   title: string;
   slug: string;
   rating: number;
+  programBy: string;
   totalRatings: number;
   duration: string;
   hours: string;
