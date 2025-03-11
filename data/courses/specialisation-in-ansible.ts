@@ -9,7 +9,7 @@ export const specialisationInAnsible: Course = {
     globalStatus: "GLOBALLY RECOGNISED PROGRAM",
     duration: "Beginner to Advance",
     programBy: "Vimal Daga",
-    hours: "24+ hours of learning",
+    hours: "24+",
     price: 4900,
     originalPrice: 10000,
     enrolledStudents: 12000,
