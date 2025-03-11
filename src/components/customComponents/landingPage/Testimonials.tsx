@@ -114,7 +114,7 @@ export default function Component() {
         <h2 className="text-teal-500 text-md font-semibold text-center">
           HERE IT FROM THEM
         </h2>
-        <h2 className="text-black text-2xl md:text-4xl font-bold mb-10 mt-2 text-center">
+        <h2 className="text-black text-2xl md:text-3xl font-bold mb-10 mt-2 text-center">
           Ambitious <span className ="text-[#ff0000]">Learner&apos;s <span className="text-[#ff0000] relative">
                   <div className="absolute -bottom-0.5 left-0 w-full h-0.5 " >
                      {/* eslint-disable-next-line react/jsx-no-undef */}

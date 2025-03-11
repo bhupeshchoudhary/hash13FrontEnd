@@ -19,16 +19,16 @@ const Footer = () => {
               Making India 🇮🇳 Future Ready
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="bg-gray-700 p-3 rounded">
+            <a href="https://www.linkedin.com/company/83485021/admin/dashboard/" className="bg-gray-700 p-3 rounded">
               <FaLinkedinIn />
             </a>
-            <a href="#" className="bg-gray-700 p-3 rounded">
+            <a href="https://x.com/OfficialHash13" className="bg-gray-700 p-3 rounded">
               <FaTwitter />
             </a>
-            <a href="#" className="bg-gray-700 p-3 rounded">
+            <a href="https://www.instagram.com/officialhash13?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="bg-gray-700 p-3 rounded">
     <FaInstagram />
   </a>
-            <a href="#" className="bg-gray-700 p-3 rounded">
+            <a href="https://www.facebook.com/OfficialHash13" className="bg-gray-700 p-3 rounded">
               <FaFacebookF />
             </a>
           </div>
@@ -38,17 +38,17 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Links</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Registration</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Courses</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Contact Us</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Blog</a></li>
+            <li><a href="#home" className="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="#about" className="text-gray-400 hover:text-white">About Us</a></li>
+            {/* <li><a href="#" className="text-gray-400 hover:text-white">Registration</a></li> */}
+            <li><a href="#courses" className="text-gray-400 hover:text-white">Courses</a></li>
+            <li><a href="#contact" className="text-gray-400 hover:text-white">Contact Us</a></li>
+            {/* <li><a href="#" className="text-gray-400 hover:text-white">Blog</a></li> */}
           </ul>
         </div>
 
         {/* Legal Section */}
-        <div>
+        {/* <div>
           <h3 className="text-xl font-semibold mb-4">Legal</h3>
           <ul className="space-y-2">
             <li><a href="#" className="text-gray-400 hover:text-white">Terms of Use</a></li>
@@ -57,7 +57,7 @@ const Footer = () => {
             <li><a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a></li>
             <li><a href="#" className="text-gray-400 hover:text-white">Licensing</a></li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Newsletter Section */}
         {/* <div>

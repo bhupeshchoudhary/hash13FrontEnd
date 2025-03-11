@@ -121,7 +121,7 @@ export default function QueryForm() {
               <div className="bg-red-700/50 w-12 h-12 rounded-lg flex items-center justify-center">
                 <Users className="w-6 h-6 text-white" />
               </div>
-              <div className="text-2xl font-bold text-white">1.7 M+</div>
+              <div className="text-2xl font-bold text-white">1.7M+</div>
               <div className="text-white/80">Student&apos;s Lives Changed</div>
             </div>
 

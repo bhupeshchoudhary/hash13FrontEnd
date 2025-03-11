@@ -8,7 +8,7 @@ import yerrowArrow from "../../../../public/assets/landingPage/floatingCurveArro
 import curveLine from "../../../../public/assets/CurlLine.svg"
 const About = () => {
   return (
-    <div className=" lg:px-14 bg-white p-8 pb-0 relative overflow-hidden">
+    <div className=" lg:px-14 bg-white p-8 pb-0 relative overflow-hidden" id='about'>
       {/* Decorative Elements - Refined positions */}
       <div className="absolute top-8 left-8 w-2 h-2 bg-[#ff0000]/60 rounded-full" />
       <div className="absolute top-16 right-16 w-12 h-12 bg-pink-100/60 rounded-full" />
@@ -91,7 +91,7 @@ const About = () => {
               {/* Trained Teachers Card - Refined to match Figma */}
               <div className="w-1/3 ">
                 <Card className="bg-white shadow-lg border-0 h-full rounded-lg relative overflow-hidden">
-                  <CardHeader className="p-1">
+                  {/* <CardHeader className="p-1">
                     <div className="flex items-center gap-2">
                       <div className="rounded-full bg-gradient-to-br from-emerald-400 to-sky-400 p-1">
                         <Globe className="h-3.5 w-3.5 text-white" />
@@ -101,17 +101,17 @@ const About = () => {
                     </div>
                    
               
-                  </CardHeader>
-                  <CardContent className="p-3 pt-0">
+                  </CardHeader> */}
+                  {/* <CardContent className="p-3 pt-0"> */}
                     
                    
                   
-                  </CardContent>
+                  {/* </CardContent> */}
           <div className="w-full h-full relative">
           <Image
             src="/assets/file_2025-03-07_13.01.28.png"
              width={400}
-             height={200}
+             height={500}
             
             objectFit="contain"
             alt="Card image"
@@ -126,8 +126,8 @@ const About = () => {
           {/* Right Side - Content */}
           <div className="space-y-8">
             <div>
-              <p className="text-teal-500 text-sm font-semibold mb-2">ABOUT #13</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+              <p className="text-teal-500 text-sm font-semibold mb-2" >ABOUT #13</p>
+              <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-6">
                Real-World Learning,<br />
               
                 <span className="text-[#ff0000] relative">

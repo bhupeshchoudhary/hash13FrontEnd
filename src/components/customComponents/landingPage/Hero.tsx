@@ -60,7 +60,7 @@ export default function Hero() {
   
 
   return (
-    <div className=" bg-white overflow-hidden">
+    <div className=" bg-white overflow-hidden" id='home'>
       {/* Keep your existing floating shapes and styles */}
       <style jsx global>{`
         @keyframes float {

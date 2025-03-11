@@ -130,7 +130,7 @@ export default function DiscordCommunity() {
 
         {/* Right side with content */}
         <div className="space-y-6 text-center sm:px-0">
-          <h1 className="text-3xl sm:text-2xl text-white font-bold ">
+          <h1 className="text-2xl sm:text-3xl md:text-3xl text-white font-bold ">
             Exclusive{" "}
             <span className="text-[#ffffff] text-3xl font-bold">Discord Community</span>
           </h1>
