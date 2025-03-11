@@ -15,7 +15,7 @@ export const specialisationInAI: Course = {
     enrolledStudents: 12000,
     category: "Artificial Intelligence",
     shortDescription: " Starting On 22nd March (Weekend Batch)",
-    paymentLink: " https://rzp.io/rzp/LhA0dcV1",
+    paymentLink: " https://rzp.io/rzp/KTZg82r",
     backgroundImage: "/assets/AI (1).jpg",
 
 learningOutcomes: [
