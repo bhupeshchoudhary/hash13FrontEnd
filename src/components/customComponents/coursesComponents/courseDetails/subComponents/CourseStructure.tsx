@@ -55,7 +55,7 @@ const CourseStructure: React.FC<CourseStructureProps> = ({ modules }) => {
                 <div className='flex gap-2 mt-2'>
                   <Calendar className='w-4 h-4 text-white'/>
                   <span className="text-xs sm:text-sm text-white block">
-                    {module.duration}
+                    {module.duration} 
                   </span>
                 </div>
               )}

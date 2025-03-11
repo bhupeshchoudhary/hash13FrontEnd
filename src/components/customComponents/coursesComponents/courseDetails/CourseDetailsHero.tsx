@@ -193,7 +193,7 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
                   variant="secondary" 
                   className="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
                 >
-                  <Clock className="h-4 w-4" /> &nbsp; {course.hours}
+                  <Clock className="h-4 w-4" /> &nbsp; {course.hours} hours of learning
                 </Badge>
                 <Badge 
                   variant="secondary" 
