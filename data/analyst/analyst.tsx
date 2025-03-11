@@ -296,7 +296,7 @@ export const analystData: CourseAnalystData = {
 
 
 
-"specialisation-in-ai": {
+"specialisation-in-ai-ml": {
   "title": "Rising Demand",
   "subtitle": "for AI Engineers",
   "salary": {

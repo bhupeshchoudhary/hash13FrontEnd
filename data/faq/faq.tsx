@@ -252,7 +252,7 @@ export const faqContent: FAQContent = {
   "specialisation-in-splunk": {
     ...sharedSpecializationContent
   },
-  "specialisation-in-ai": {
+  "specialisation-in-ai-ml": {
     ...sharedSpecializationContent
   },
  
