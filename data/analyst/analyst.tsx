@@ -312,7 +312,7 @@ export const analystData: CourseAnalystData = {
     "Google",
     "IBM",
     "Amazon",
-    
+    "Tcs",
 
   ] as CompanyName[],
   "demand": 40, // Estimated based on job market data

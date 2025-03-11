@@ -23,7 +23,7 @@ export const specialisationInAI: Course = {
         "Managing Multiple Environments & Resource Meta Parameters",
         "Provisioners in Terraform"
     ],
-    
+
     features: [
         "Industry-Relevant Infrastructure Automation Training",
         "Technical Support for 90 days",
@@ -51,7 +51,7 @@ export const specialisationInAI: Course = {
     level: "Beginner to Advanced",
     language: "English",
     lastUpdated: "2024-01",
-    
+
 
     module: [
         {
@@ -59,9 +59,7 @@ export const specialisationInAI: Course = {
             title: "Introduction to AI & Machine Learning",
             description: "Overview of Artificial Intelligence",
             content: [
-                    
-                    "Overview of Artificial Intelligence Definition and history of AI                        Key milestones in AI development Types of AI: Narrow AI, General AI, Super AI Examples and real-world applications AI vs. Machine Learning vs. Deep Learning"
-                        
+                "Overview of Artificial Intelligence Definition and history of AI                        Key milestones in AI development Types of AI: Narrow AI, General AI, Super AI Examples and real-world applications AI vs. Machine Learning vs. Deep Learning"
             ]
         },
         {
@@ -247,4 +245,5 @@ export const specialisationInAI: Course = {
             }
         ]
     },
+    programBy: ""
 }
