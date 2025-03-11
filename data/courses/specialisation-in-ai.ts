@@ -11,7 +11,7 @@ export const specialisationInAI: Course = {
     price: 8000,
     originalPrice: 20000,
     enrolledStudents: 12000,
-    category: "Cloud",
+    category: "AI",
     shortDescription: "32+ Hours | Comprehensive Modules | 3 Capstone Projects",
     paymentLink: " https://rzp.io/rzp/LhA0dcV1",
     backgroundImage: "/assets/cources/courseDetails/terraform/terraform.jpg",

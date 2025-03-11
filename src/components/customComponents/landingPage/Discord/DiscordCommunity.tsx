@@ -66,12 +66,12 @@ export default function DiscordCommunity() {
 
   return (
   <div className="bg-[#ff0000]">
-    <div className="flex max-w-5xl mx-auto flex-col lg:flex-row w-full gap-8 bg-[#ff0000] p-8 md:rounded-lg">
-      <div className="container sm:px-6 mx-auto pt-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center max-w-6xl">
+    <div className="flex max-w-5xl mx-auto flex-col lg:flex-row w-full gap-8 bg-[#ff0000] p-4 md:rounded-lg">
+      <div className="container sm:px-6 mx-auto pt-8 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center max-w-6xl">
         {/* Left side with code screenshots */}
         <div
           ref={ref}
-          className={`relative grid grid-cols-2 gap-4 mt-20 mb-32 transition-transform duration-1000 ease-out`}
+          className={`relative grid grid-cols-2 gap-4 mt-12 mb-12 transition-transform duration-1000 ease-out`}
         >
           <div className="relative col-span-2">
     {/* First card - Image */}
