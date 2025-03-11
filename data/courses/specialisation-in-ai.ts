@@ -2,13 +2,13 @@ import { Course } from "../../types/courses";
 
 export const specialisationInAI: Course = {
     _id: "specialisation-in-ai",
-    title: "Specialisation in AI & Machine Learning | Supporting India AI Mission",
+    title: "[B][R]Specialisation in AI & Machine Learning [/R][/B]| Supporting India AI Mission",
     slug: "specialisation-in-ai",
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
     globalStatus: "Non globally recognised program",
-    hours: "32+",
+    hours: "Starting on 22nd march",
     price: 8000,
     originalPrice: 20000,
     enrolledStudents: 12000,
@@ -187,7 +187,7 @@ content: [
         }
     ],
 
-    certificateImage: "/assets/certificate/Terraform_certificate.png",
+    certificateImage: "/assets/certificate/Specialisation-in-AI-&-Machine-Learning.jpg",
 
     project: [
         {

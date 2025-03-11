@@ -9,7 +9,7 @@ export const  specialisationInDevops:Course = {
     duration: "2 Months",
     globalStatus: "GLOBALLY RECOGNISED PROGRAM",
     programBy: "Vimal Daga",
-    hours: "310+",
+    hours: "310+ hours of learning",
     price: 20000,
     originalPrice: 45000,
     enrolledStudents: 12000,

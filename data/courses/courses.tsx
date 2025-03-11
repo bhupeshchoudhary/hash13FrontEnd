@@ -26,7 +26,7 @@ export const courseInfo: Course[] = [
   specialisationInJenkins,
   specialisationInAnsible,
   specialisationInKubernetes,
-  specialisationInAI
+  specialisationInAI,
 
 
  

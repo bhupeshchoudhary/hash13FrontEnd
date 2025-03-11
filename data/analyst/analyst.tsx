@@ -316,7 +316,7 @@ export const analystData: CourseAnalystData = {
 
   ] as CompanyName[],
   "demand": 40, // Estimated based on job market data
-  "jobCount": "43,600+", // Sum of jobs from Naukri (40,000), Glassdoor (1,500), Indeed (1,200), AmbitionBox (900)
+  "jobCount": "24,000+", // Sum of jobs from Naukri (40,000), Glassdoor (1,500), Indeed (1,200), AmbitionBox (900)
   "description": "AI engineers in India are witnessing increasing salaries due to the rising demand for infrastructure automation, cloud provisioning, and DevOps practices. In 2025, entry-level salaries range from ₹6–12 lakh annually, while experienced professionals earn ₹15 lakh or more, highlighting AI significance in cloud automation and infrastructure as code (IaC)",
   "yearLabel": "In 2025",
   "salaryLabel": "Average Salaries",
