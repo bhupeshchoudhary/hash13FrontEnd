@@ -2,17 +2,17 @@ import { Course } from "../../types/courses";
 
 export const specialisationInAI: Course = {
     _id: "specialisation-in-ai",
-    title: "[B][R]Managing Infrastructure Using AI[/R][/B]  | Design Scalable Infrastructure as Code",
+    title: "[B][R]Managing Infrastructure Using AI[/R][/B]  | Supporting India AI Mission",
     slug: "specialisation-in-ai",
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
-    hours: "45+",
-    price: 3993,
-    originalPrice: 7500,
+    hours: "32+",
+    price: 6500,
+    originalPrice: 8000,
     enrolledStudents: 12000,
     category: "Cloud",
-    shortDescription: "45+ Hours | Comprehensive Modules | 3 Capstone Projects",
+    shortDescription: "32+ Hours | Comprehensive Modules | 3 Capstone Projects",
     paymentLink: " https://rzp.io/rzp/LhA0dcV1",
     backgroundImage: "/assets/cources/courseDetails/terraform/terraform.jpg",
 
@@ -57,117 +57,126 @@ export const specialisationInAI: Course = {
         {
             id: 1,
             title: "Introduction to AI & Machine Learning",
-            description: "Overview of Artificial Intelligence",
+            description: "Understand AI fundamentals, types, applications, and ethical concerns.",
             content: [
-                "Overview of Artificial Intelligence Definition and history of AI                        Key milestones in AI development Types of AI: Narrow AI, General AI, Super AI Examples and real-world applications AI vs. Machine Learning vs. Deep Learning"
-            ]
+                "AI vs. ML vs. Deep Learning",
+                "Key AI milestones & real-world applications",
+                "AI in healthcare, finance, and education",
+                "Ethical concerns: Bias, transparency, regulations",
+
+                ]
         },
         {
             id: 2,
-            title: "Reference Material",
-            description: "Session resources and documentation",
+            title: "Python for AI & ML",
+            description: "Master Python tools for AI development.",
             content: [
-                "Resources shared during Session",
-                "Screenshot of hands-on steps",
-                "Practice materials"
+                "Python setup: Jupyter, IDEs",
+                "Libraries (NumPy, Pandas, Matplotlib)",
+                "Data manipulation with Pandas & NumPy",
+                "Basic data visualization techniques",
+
             ]
         },
         {
             id: 3,
-            title: "Terraform Introduction and Use Case",
-            description: "Fundamentals and implementation",
-            content: [
-                "Infrastructure as a code Concept",
-                "Terraform Introduction",
-                "AWS Services",
-                "Benefits of Terraform with MultiCloud",
-                "Step by Step demonstration about writing Terraform Codes with AWS provider",
-                "Setup with hands on activity"
-            ]
+            title: "Data Preprocessing & Feature Engineering",
+            description: "Clean, preprocess, and optimize data for AI models.",
+content: [
+    "Handling missing values & outliers",
+    "Encoding categorical data",
+    "Feature scaling",
+    "Selection techniques"
+]
         },
         {
             id: 4,
-            title: "Bonus Sessions - AWS VPC Services",
-            description: "AWS fundamentals for beginners",
-            content: [
-                "AWS Services in depth",
-                "VPC Configuration",
-                "AWS Infrastructure basics",
-                "Automation preparation",
-                "Hands-on activity preparation"
-            ]
+            title: "Supervised Learning",
+            description: " Learn regression and classification techniques.",
+content: [
+    "Linear Regression",
+    "Logistic Regression",
+    "Decision Trees",
+    "Random Forest",
+    "SVM",
+    "Model evaluation: Accuracy, Precision, Recall, F1-score"
+]
         },
         {
             id: 5,
-            title: "Terraform Provisioners",
-            description: "Implementation of provisioners",
-            content: [
-                "AWS Profiles",
-                "Terraform Provisioner",
-                "Types of Provisioner",
-                "Null Resource",
-                "Difference between remote-exec and local-exec",
-                "Terraform Variables file terraform.tfvars",
-                "terraform Workspace introduction"
-            ]
+            title: " Unsupervised Learning",
+            description: "Understand clustering and anomaly detection.",
+content: [
+    "K-Means, Hierarchical clustering",
+    "Principal Component Analysis (PCA)",
+    "t-SNE for dimensionality reduction",
+    "Fraud detection & anomaly detection techniques"
+]
         },
         {
             id: 6,
-            title: "Terraform Certified Associate",
-            description: "Certification preparation",
-            content: [
-                "Terraform Certification Exam preparation",
-                "Query resolution",
-                "Practice materials"
-            ]
+            title: "Deep Learning & Neural Networks",
+            description: "Build and optimize deep learning models.",
+content: [
+    "Neural networks & perceptrons",
+    "Activation functions",
+    "Loss functions",
+    "Backpropagation & weight optimization"
+]
         },
         {
             id: 7,
-            title: "Terraform Modules",
-            description: "Advanced terraform commands and modules",
-            content: [
-                "Terraform Modules",
-                "Application of Output Block",
-                "Importance of main.tf, output.tf, variables.tf",
-                "terraform fmt",
-                "terraform taint",
-                "Usage of terraform -out",
-                "Use of -target keyword",
-                "Terraform Logs"
-            ]
+            title: "Convolutional Neural Networks (CNNs)",
+            description: " Learn image recognition techniques.",
+content: [
+    "Convolutional layers, filters & pooling",
+    "Padding, strides, feature maps",
+    "Transfer learning",
+    "Fine-tuning"
+]
         },
         {
             id: 8,
-            title: "Terraform State File and different Use Case",
-            description: "State management and security",
-            content: [
-                "Security Groups",
-                "State Lock",
-                "Use case of S3 and DynamoDB for State Lock",
-                "Using alias for different providers",
-                "Terraform Cloud with SCM Integration",
-                "Terraform Vault introduction"
-            ]
+            title: "Natural Language Processing (NLP)",
+            description: "Work with text data and sentiment analysis.",
+content: [
+    "Tokenization",
+    "Lemmatization",
+    "Stopwords",
+    "Word embeddings: Word2Vec, GloVe, BERT",
+    "Text classification",
+    "Sentiment analysis"
+]
         },
         {
             id: 9,
-            title: "Practice Question Sets",
-            description: "Certification exam preparation",
-            content: [
-                "Practice papers for Terraform Certification",
-                "Hands-on activity completion",
-                "Final preparation materials"
-            ]
+            title: "AI for Real-world Applications",
+            description: "Explore AI applications across industries.",
+content: [
+    "AI in healthcare, finance, e-commerce",
+    "Basics of reinforcement learning",
+    "AI for edge devices (TinyML)"
+]
+        },
+        {
+            id: 10,
+            title: "AI Model Deployment & MLOps",
+            description: " Deploy and manage AI models efficiently.",
+content: [
+    "Model deployment with Flask/FastAPI",
+    "Docker & Kubernetes for AI models",
+    "CI/CD automation for AI pipelines"
+]
         }
     ],
 
     highlights: [
         {
-            number: "12",
+            number: "10",
             description: "Modules"
         },
         {
-            number: "45+",
+            number: "32+",
             description: "Hours of learning"
         },
         {
@@ -201,19 +210,19 @@ export const specialisationInAI: Course = {
 
     programFor: [
         { src: "/assets/cources/courseDetails/shell-scripting/DevOps Engineers.jpg", alt: "DevOps Engineers", text: "DevOps Engineers" },
-        { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "Cloud Engineers", text: "Cloud Engineers" },
+        { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "Cloud Engineers", text: "Cloud Computing Engineers" },
         { src: "/assets/cources/courseDetails/mongodb/System Administrators.jpg", alt: "System Administrators", text: "System Administrators" },
         { src: "/assets/cources/courseDetails/terraform/Infrastructure Engineers.jpg", alt: "Infrastructure Engineers", text: "Infrastructure Engineers" },
         { src: "/assets/cources/courseDetails/terraform/Software Developers.jpg", alt: "Software Developers", text: "Software Developers" },
         { src: "/assets/cources/courseDetails/terraform/Site Reliability Engineers (SRE).jpg", alt: "SRE Engineers", text: "Site Reliability Engineers" },
-        { src: "/assets/cources/courseDetails/terraform/Technical Co-Founders.jpg", alt: "Technical Managers", text: "Technical Managers" },
-        { src: "/assets/cources/courseDetails/shell-scripting/Cloud Administrators.jpg", alt: "Cloud Architects", text: "Cloud Architects" },
-        { src: "/assets/cources/courseDetails/terraform/IT Professionals seeking to enhance their DevOps skills.png", alt: "Working IT Professionals", text: "IT Professionals" },
-        { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "College Students", text: "College Students" }
+        { src: "/assets/cources/courseDetails/terraform/Technical Co-Founders.jpg", alt: "Technical Managers", text: "Data Analytics Specialist" },
+        { src: "/assets/cources/courseDetails/shell-scripting/Cloud Administrators.jpg", alt: "Cloud Architects", text: "Artificial Intelligence Consultant" },
+        { src: "/assets/cources/courseDetails/terraform/IT Professionals seeking to enhance their DevOps skills.png", alt: "Working IT Professionals", text: "Working IT Professionals" },
+        { src: "/assets/cources/courseDetails/terraform/Cloud Engineers.jpg", alt: "College Students", text: "Natural Language Engineer" }
     ],
 
     toolsData: {
-        sectionTitle: "Complete Terraform Program",
+        sectionTitle: "Complete AI Program",
         category: "Infrastructure Automation",
         toolsCount: "10+",
         displayImage: "/assets/cources/tools/Terraform (1).jpg",
@@ -221,28 +230,29 @@ export const specialisationInAI: Course = {
             {
                 id: "basics",
                 icon: "TrendingUp",
-                title: "Infrastructure as Code (IaC): Learn to automate infrastructure provisioning using Terraform."
+                title: "Understand key AI/ML metrics, model logs, and performance traces."
             },
             {
                 id: "aws",
                 icon: "BarChart",
-                title: "AWS Integration: Gain expertise in deploying and managing AWS resources with Terraform."
+                title: "Learn Python-based data preprocessing, feature engineering, and model evaluation."
             },
-            {
-                id: "state",
-                icon: "Cpu",
-                title: "Provisioners & Modules: Utilize provisioners for configuration management and create reusable modules for efficient infrastructure management."
-            },
+            
             {
                 id: "modules",
                 icon: "TrendingUp",
-                title: "Modules: Custom modules, registry modules, reusability"
+                title: "Create regression and classification models, including Linear Regression, Decision Trees, Random Forest, and SVM."
             },
             {
                 id: "automation",
                 icon: "BarChart",
-                title: "State Management: Understand and manage Terraform state files for reliable infrastructure deployments."
-            }
+                title: "Monitor ML model performance, track accuracy, precision, recall, and drift detection."
+            },
+            {
+                id: "state",
+                icon: "Cpu",
+                title: "Study AI applications in healthcare, finance, and e-commerce. Get an introduction to Reinforcement Learning and Edge AI."
+            },
         ]
     },
     programBy: ""

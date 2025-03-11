@@ -301,7 +301,7 @@ export const analystData: CourseAnalystData = {
   "subtitle": "for AI Engineers",
   "salary": {
     "label": "Jobs in AI",
-    "values": [600000, 1200000, 2000000, 4000000, 5000000]  // Converting 12L, 18L, 25L to actual numbers
+    "values": [700000, 1200000, 1800000]  // Converting 12L, 18L, 25L to actual numbers
   },
   "companies": [
     "Accenture",

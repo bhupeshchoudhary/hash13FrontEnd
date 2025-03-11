@@ -7,24 +7,50 @@ import { Learner } from "../../types/cardStack";
 export const learners: Learner[] = [
   { 
     name: "ShareChat Learner", 
-    company: "Mercedece",
-    image: "/assets/arpitjindal.png"
+    company: "AWS",
+    image: "/assets/learners/AWS.jpeg"
   },
   { 
     name: "Google Learner", 
-    company: "RedHat",
-    image: "/assets/arpitjindal.png"
+    company: "Deloitte",
+    image: "/assets/learners/Deloitte.jpeg"
   },
   { 
     name: "Apna Learner", 
-    company: "Unthinkable",
-    image: "/assets/arpitjindal.png"
+    company: "Forrester",
+    image: "/assets/learners/Forrester.jpeg"
   },
   { 
     name: "Capgemini Learner", 
-    company: "NPCI",
-    image: "/assets/arpitjindal.png"
+    company: "IBM",
+    image: "/assets/learners/IBM.jpeg"
   },
+  { 
+    name: "Capgemini Learner", 
+    company: "Infosys",
+    image: "/assets/learners/Infosys.jpeg"
+  },
+  { 
+    name: "Capgemini Learner", 
+    company: "Microsoft",
+    image: "/assets/learners/Microsoft.jpeg"
+  },
+  { 
+    name: "Capgemini Learner", 
+    company: "TCS",
+    image: "/assets/learners/TCS.jpeg"
+  },
+  { 
+    name: "Capgemini Learner", 
+    company: "Zomato",
+    image: "/assets/learners/Zomato.jpeg"
+  },
+  { 
+    name: "Capgemini Learner", 
+    company: "Zscaler",
+    image: "/assets/learners/Zscaler.jpeg"
+  },
+
 ];
 
 export const benefits: string[] = [

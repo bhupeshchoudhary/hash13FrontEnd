@@ -90,7 +90,7 @@ const About = () => {
 
               {/* Trained Teachers Card - Refined to match Figma */}
               <div className="w-1/3 ">
-                <Card className="bg-white shadow-lg border-0 h-full rounded-lg relative overflow-hidden">
+              <Card className="bg-white shadow-lg border-0 h-full rounded-lg relative overflow-hidden">
                   {/* <CardHeader className="p-1">
                     <div className="flex items-center gap-2">
                       <div className="rounded-full bg-gradient-to-br from-emerald-400 to-sky-400 p-1">
@@ -107,15 +107,12 @@ const About = () => {
                    
                   
                   {/* </CardContent> */}
-          <div className="w-full h-full relative">
+                  <div className="w-full h-full relative">
           <Image
             src="/assets/file_2025-03-07_13.01.28.png"
-             width={400}
-             height={500}
-            
-            objectFit="contain"
+            layout="fill"
+            objectFit="cover"
             alt="Card image"
-            
           />
         </div>
                 </Card>

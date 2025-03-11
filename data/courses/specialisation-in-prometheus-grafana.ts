@@ -56,7 +56,7 @@ export const specialisationInPrometheusGrafana:Course = {
       {
           id: 1,
           title: "Prometheus Fundamentals",
-          description: "Introduction to Prometheus and basic setup",
+          description: "Learn Prometheus from scratch with hands-on installation, deep telemetry insights, and seamless Grafana integration for real-time monitoring.",
           content: [
               "Introduction to telemetry",
               "Prometheus and Grafana at a Glance",
@@ -67,7 +67,7 @@ export const specialisationInPrometheusGrafana:Course = {
       {
           id: 2,
           title: "Prometheus Monitoring",
-          description: "Core concepts of monitoring with Prometheus",
+          description: "Master Prometheus monitoring with hands-on experience in client libraries, metric pushing, querying, service discovery, and exporters for real-world observability.",
           content: [
               "Introduction to Monitoring",
               "Client Libraries",
@@ -80,7 +80,7 @@ export const specialisationInPrometheusGrafana:Course = {
       {
           id: 3,
           title: "Prometheus Alerting & Internals",
-          description: "Alert management and internal architecture",
+          description: "Learn alert management, set up actionable alerts, and explore Prometheus storage internals for a deeper understanding of its architecture.",
           content: [
               "Introduction to Alerting",
               "Setting up Alerts",
@@ -90,7 +90,7 @@ export const specialisationInPrometheusGrafana:Course = {
       {
           id: 4,
           title: "Prometheus Use Cases",
-          description: "Practical applications and implementations",
+          description: "Gain hands-on experience with real-world implementations, including web application monitoring, Apex score calculation, CloudWatch integration, and automated Grafana provisioning.",
           content: [
               "Monitoring a web application",
               "Calculating Apex score",
@@ -101,7 +101,7 @@ export const specialisationInPrometheusGrafana:Course = {
       {
           id: 5,
           title: "Grafana Fundamentals",
-          description: "Introduction to Grafana and its architecture",
+          description: "Master Grafana’s architecture, explore its advantages over other tools, and understand how it works for powerful data visualization and monitoring.",
           content: [
               "Introduction and Overview",
               "What is Grafana?",
@@ -115,7 +115,7 @@ export const specialisationInPrometheusGrafana:Course = {
       {
           id: 6,
           title: "Grafana Installation & Getting Started",
-          description: "Setup and initial configuration of Grafana",
+          description: "Get hands-on with Grafana installation on Linux and Docker, configure Prometheus integration, and explore time series analysis, histograms, and heatmaps.",
           content: [
               "Requirements",
               "Install on RPM-based Linux",
@@ -130,7 +130,7 @@ export const specialisationInPrometheusGrafana:Course = {
       {
           id: 7,
           title: "Grafana Data Sources",
-          description: "Configure and manage different data sources",
+          description: "Learn to configure and manage diverse data sources like Prometheus, AWS CloudWatch, Cloud Monitoring, and MySQL for seamless observability.",
           content: [
               "Prometheus",
               "Add data source",
