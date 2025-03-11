@@ -2,11 +2,12 @@ import { Course } from "../../types/courses";
 
 export const specialisationInAI: Course = {
     _id: "specialisation-in-ai",
-    title: "[B][R]Managing Infrastructure Using AI[/R][/B]  | Supporting India AI Mission",
+    title: "Specialisation in AI & Machine Learning | Supporting India AI Mission",
     slug: "specialisation-in-ai",
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
+    globalStatus: "Non globally recognised program",
     hours: "32+",
     price: 8000,
     originalPrice: 20000,
@@ -16,20 +17,21 @@ export const specialisationInAI: Course = {
     paymentLink: " https://rzp.io/rzp/LhA0dcV1",
     backgroundImage: "/assets/cources/courseDetails/terraform/terraform.jpg",
 
-    learningOutcomes: [
-        "Terraform Concepts",
-        "Terraform Modules",
-        "Terraform State",
-        "Managing Multiple Environments & Resource Meta Parameters",
-        "Provisioners in Terraform"
-    ],
+learningOutcomes: [
+    "AI & ML Foundations",
+    "Python for AI",
+    "Data Preprocessing",
+    "ML Algorithms",
+    "Deep Learning & CNNs",
+    "NLP & AI Applications",
+    "Model Deployment"
+],
 
-    features: [
-        "Industry-Relevant Infrastructure Automation Training",
-        "Technical Support for 90 days",
-        "Real-World Infrastructure Projects",
-        "Premium #13 Terraform Community"
-    ],
+features: [
+    "Real-World Projects",
+    "Technical Support for 90 Days",
+    "Premium #13 AI Community"
+],
 
     skills: [
         "Infrastructure as Code",

@@ -6,6 +6,7 @@ export const specialisationInSplunk:Course ={
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
+    globalStatus: "GLOBALLY RECOGNISED PROGRAM",
     programBy: "Vimal Daga",
     hours: "12+",
     price: 5850,

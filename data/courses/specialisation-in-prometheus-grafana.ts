@@ -7,6 +7,7 @@ export const specialisationInPrometheusGrafana:Course = {
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance  ",
+    globalStatus: "GLOBALLY RECOGNISED PROGRAM",
     programBy: "Vimal Daga",
     hours: "16+",
     price: 4893,

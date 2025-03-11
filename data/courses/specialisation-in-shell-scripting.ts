@@ -7,6 +7,7 @@ export const specialisationInShellScripting: Course = {
     rating: 5, // Not provided
     totalRatings: 10, // Not provided
     duration: "Beginner to Advance",
+    globalStatus: "GLOBALLY RECOGNISED PROGRAM",
     programBy: "Vimal Daga",
     hours: "16+",
     price: 2000, // Not provided

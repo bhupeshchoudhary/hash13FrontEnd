@@ -6,6 +6,7 @@ export const specialisationInAnsible: Course = {
     slug: "specialisation-in-ansible",
     rating: 5,
     totalRatings: 10,
+    globalStatus: "GLOBALLY RECOGNISED PROGRAM",
     duration: "Beginner to Advance",
     programBy: "Vimal Daga",
     hours: "24+",

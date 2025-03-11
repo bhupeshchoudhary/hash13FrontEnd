@@ -167,7 +167,7 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
                 <Badge 
                   className="bg-red-100 text-[#ff0000] hover:bg-red-200 px-3 py-1 text-xs sm:text-sm rounded-full font-medium"
                 >
-                  GLOBALLY RECOGNISED PROGRAM
+                  {course.globalStatus}
                 </Badge>
                 <Button 
                   variant="ghost" 

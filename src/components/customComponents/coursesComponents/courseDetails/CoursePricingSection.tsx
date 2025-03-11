@@ -106,7 +106,7 @@ export default function CoursePricingSection({ courseId }: CoursePricingSectionP
           {/* Left Column - Pricing */}
           <Card className="flex-1 p-4 sm:p-6 bg-white shadow-lg hover:shadow-xl transition-shadow">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">
-              Globally Recognized Program
+              {course.globalStatus}
               <span className="block text-base sm:text-lg text-gray-600 mt-1">
                 (Save ₹{discount.toLocaleString()})
               </span>
