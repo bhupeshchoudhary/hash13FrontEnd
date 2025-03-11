@@ -226,7 +226,7 @@ content: [
 
     toolsData: {
         sectionTitle: "Complete AI Program",
-        category: "Industry-Standard AI & ML Tools for Real-World Applications",
+        category: " AI & ML  for Real-World Applications",
         toolsCount: "10+",
         displayImage: "/assets/certificate/AI.jpg",
         tools: [

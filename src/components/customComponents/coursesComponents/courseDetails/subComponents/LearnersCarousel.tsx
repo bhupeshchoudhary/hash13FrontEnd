@@ -14,7 +14,7 @@ interface CarouselItemProps {
 // Separate component for carousel items to optimize rendering
 const CarouselItem = ({ learner, priority = false }: CarouselItemProps) => (
   <div className="flex flex-col items-center flex-shrink-0">
-    <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden mb-2">
+    <div className="w-12 h-16 sm:w-16 sm:h-16 rounded-full overflow-hidden mb-2">
       <Image
         src={learner.image}
         alt={learner.name}
