@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card"
 
 export default function SupportContact() {
   return (
-    <Card className="w-full min-h-[20rem] bg-white font-sans p-8">
+    <Card className="w-full min-h-[20rem] bg-white font-sans p-8" id="contact">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="space-y-2 mb-8">
