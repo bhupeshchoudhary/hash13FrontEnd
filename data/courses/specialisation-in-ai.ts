@@ -1,22 +1,22 @@
 import { Course } from "../../types/courses";
 
 export const specialisationInAI: Course = {
-    _id: "specialisation-in-ai",
+    _id: "specialisation-in-ai-ml",
     title: "[B][R]Specialisation in AI & Machine Learning [/R][/B]| Supporting India AI Mission",
-    slug: "specialisation-in-ai",
+    slug: "specialisation-in-ai-ml",
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
-    globalStatus: "globally recognised program",
+    globalStatus: "GLOBALLY RECOGNISED PROGRAM",
     hours: "32+",
-    startDate: "Starting On 22nd March (Weekend Batch)",
+    // startDate: "Starting On 22nd March (Weekend Batch)",
     price: 8000,
     originalPrice: 20000,
     enrolledStudents: 12000,
     category: "Artificial Intelligence",
-    shortDescription: "32+ Hours | Comprehensive Modules | 3 Capstone Projects",
+    shortDescription: " Starting On 22nd March (Weekend Batch)",
     paymentLink: " https://rzp.io/rzp/LhA0dcV1",
-    backgroundImage: "/assets/cources/courseDetails/terraform/terraform.jpg",
+    backgroundImage: "/assets/AI (1).jpg",
 
 learningOutcomes: [
     "AI & ML Foundations",
@@ -226,7 +226,7 @@ content: [
 
     toolsData: {
         sectionTitle: "Complete AI Program",
-        category: "Infrastructure Automation",
+        category: "Industry-Standard AI & ML Tools for Real-World Applications",
         toolsCount: "10+",
         displayImage: "/assets/certificate/AI.jpg",
         tools: [

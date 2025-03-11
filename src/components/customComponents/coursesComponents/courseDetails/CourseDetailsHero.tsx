@@ -114,6 +114,109 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
     );
   };
 
+
+
+
+  const formatSubTitle = (title: string) => {
+    const parts = title.split('|').map(part => part.trim());
+    const mainTitle = parts[0];
+    const subtitle = parts[1];
+
+    // Function to apply formatting
+    const applyFormatting = (text: string) => {
+      let isBold = false;
+      let isRed = false;
+     const result: JSX.Element[] = [];
+      let currentText = '';
+
+      for (let i = 0; i < text.length; i++) {
+        if (text.slice(i).startsWith('[B]')) {
+          if (currentText) {
+            result.push(
+              <span key={`text-${i}`} className="inline">
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isBold = true;
+          i += 2;
+        } 
+        else if (text.slice(i).startsWith('[/B]')) {
+          if (currentText) {
+            result.push(
+              <span key={`bold-${i}`} className="font-bold inline">
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isBold = false;
+          i += 3;
+        }
+        else if (text.slice(i).startsWith('[R]')) {
+          if (currentText) {
+            result.push(
+              <span key={`text-${i}`} className={`${isBold ? 'font-bold' : ''} inline`}>
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isRed = true;
+          i += 2;
+        }
+        else if (text.slice(i).startsWith('[/R]')) {
+          if (currentText) {
+            result.push(
+              <span 
+                key={`red-${i}`} 
+                className={`text-[#ff0000] inline`}
+              >
+                {currentText}
+              </span>
+            );
+            currentText = '';
+          }
+          isRed = false;
+          i += 3;
+        }
+        else {
+          currentText += text[i];
+        }
+      }
+
+      if (currentText) {
+        result.push(
+          <span 
+            key="final" 
+            className={`
+             
+              ${isRed ? 'text-[#ff0000]' : ''}
+              inline
+            `}
+          >
+            {currentText}
+          </span>
+        );
+      }
+
+      return result;
+    };
+
+    return (
+      <div className="flex flex-col gap-2">
+        <div className="text-3xl sm:text-3xl lg:text-4xl leading-[1.2] -space-y-[1px]">
+          {applyFormatting(mainTitle)}
+        </div>
+        {subtitle && (
+          <div className="text-xl sm:text-2xl lg:text-3xl text-black leading-tight">
+            {subtitle}
+          </div>
+        )}
+      </div>
+    );
+  };
   const handleShare = async () => {
     try {
       if (navigator.share) {
@@ -184,7 +287,8 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
 
               {/* Description */}
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                {course.shortDescription}
+                {/* { formatSubTitle( course.shortDescription)} */}
+                { course.shortDescription}
               </p>
 
               {/* Tags */}
