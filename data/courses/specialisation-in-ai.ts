@@ -7,8 +7,8 @@ export const specialisationInAI: Course = {
     rating: 5,
     totalRatings: 10,
     duration: "Beginner to Advance",
-    globalStatus: "Non globally recognised program",
-    hours: "Starting on 22nd march",
+    globalStatus: "globally recognised program",
+    hours: "Starting on 22nd march(Weekend Batch)",
     price: 8000,
     originalPrice: 20000,
     enrolledStudents: 12000,
@@ -227,7 +227,7 @@ content: [
         sectionTitle: "Complete AI Program",
         category: "Infrastructure Automation",
         toolsCount: "10+",
-        displayImage: "/assets/cources/tools/Terraform (1).jpg",
+        displayImage: "/assets/certificate/AI.jpg",
         tools: [
             {
                 id: "basics",
@@ -250,12 +250,12 @@ content: [
                 icon: "BarChart",
                 title: "Monitor ML model performance, track accuracy, precision, recall, and drift detection."
             },
-            {
+            {       
                 id: "state",
                 icon: "Cpu",
                 title: "Study AI applications in healthcare, finance, and e-commerce. Get an introduction to Reinforcement Learning and Edge AI."
             },
         ]
     },
-    programBy: ""
+    programBy: "Vimal Daga"
 }

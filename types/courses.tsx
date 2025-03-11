@@ -44,7 +44,7 @@ export interface Instructor {
 export interface Module {
   id: number;
   title: string;
-  description: string | ReactNode;
+  description?: string;
   content: string[];
 }
 
