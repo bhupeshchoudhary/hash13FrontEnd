@@ -9,6 +9,7 @@ export const specialisationInAI: Course = {
     duration: "Beginner to Advance",
     globalStatus: "globally recognised program",
     hours: "32+",
+    startDate: "Starting On 22nd March (Weekend Batch)",
     price: 8000,
     originalPrice: 20000,
     enrolledStudents: 12000,

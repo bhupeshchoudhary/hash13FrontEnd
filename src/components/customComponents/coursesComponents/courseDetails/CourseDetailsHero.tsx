@@ -201,6 +201,15 @@ const CourseHero: React.FC<CourseHeroProps> = ({ courseId }) => {
                 >
                   <User className="h-4 w-4" /> &nbsp;  {course.duration}
                 </Badge>
+
+
+                {/*This badge is only made for ai course the badge color is mixed with the bg color only visible in ai course if you have to use this then use in json */}
+                <Badge 
+                  variant="secondary" 
+                  className="px-3 py-1 text-xs rounded-full bg-white text-red-700 hover:bg-gray-200"
+                >
+                   {course.startDate}
+                </Badge>
               </div>
 
               <div className="flex">

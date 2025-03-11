@@ -72,6 +72,7 @@ export interface Course {
   programBy: string;
   globalStatus?: string;
   totalRatings: number;
+  startDate?: string;
   duration: string;
   hours: string;
   price: number;
