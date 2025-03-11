@@ -92,7 +92,7 @@ export default function DiscordCommunity() {
       alt="Code editor screenshot"
       width={300}
       height={220}
-      className={`border-4 rounded-lg shadow-lg ml-[50%] transform transition-all duration-1000 ease-out ${
+      className={`border-4 rounded-lg shadow-lg ml-[40%] transform transition-all duration-1000 ease-out ${
       isIntersecting 
       ? "translate-y-[-20px] translate-x-[-30px]"
       : "translate-y-[30px] translate-x-0"
@@ -106,7 +106,7 @@ export default function DiscordCommunity() {
         alt="Code editor screenshot"
         width={300}
         height={220}
-        className={`border-4 absolute bottom-[60%] left-[10%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
+        className={`border-4 absolute bottom-[50%] left-[-10%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
       isIntersecting
         ? "translate-y-[-0px] translate-x-[10px]"
         : "translate-y-[80px] translate-x-10"
