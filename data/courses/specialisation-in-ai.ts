@@ -161,16 +161,16 @@ content: [
     "AI for edge devices (TinyML)"
 ]
         },
-        {
-            id: 10,
-            title: "AI Model Deployment & MLOps",
-            description: " Deploy and manage AI models efficiently.",
-content: [
-    "Model deployment with Flask/FastAPI",
-    "Docker & Kubernetes for AI models",
-    "CI/CD automation for AI pipelines"
-]
-        }
+//         {
+//             id: 10,
+//             title: "AI Model Deployment & MLOps",
+//             description: " Deploy and manage AI models efficiently.",
+// content: [
+//     "Model deployment with Flask/FastAPI",
+//     "Docker & Kubernetes for AI models",
+//     "CI/CD automation for AI pipelines"
+// ]
+//         }
     ],
 
     highlights: [
