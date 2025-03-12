@@ -65,7 +65,7 @@ export default function DiscordCommunity() {
   };
 
   return (
-  <div className="bg-[#ff0000]">
+  <div className="bg-[#ff0000] overflow-x-hidden">
     <div className="flex max-w-5xl mx-auto flex-col lg:flex-row w-full gap-8 bg-[#ff0000] p-4 md:rounded-lg">
       <div className="container sm:px-6 mx-auto pt-8 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center max-w-6xl">
         {/* Left side with code screenshots */}
