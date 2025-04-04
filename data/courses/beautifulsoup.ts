@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInnBeautifullsoup: Course = {
     _id: "master-web-scraping-with-beautifulsoup4",
-    title:" [B][R]Master Web Scraping with Beautifulsoup4[/R][B]Web Scraping Mastery in Python with BeautifulSoup",
+    title:" [B][R]Master Web Scraping with Beautifulsoup4[/R][B] | Web Scraping Mastery in Python with BeautifulSoup",
     
     slug: "master-web-scraping-with-beautifulsoup4",
     rating: 5,
