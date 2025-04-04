@@ -559,15 +559,14 @@ export const analystData: CourseAnalystData = {
       values: [500000, 900000, 1500000, 2500000] // Entry to expert level salaries
     },
     companies: [
-      "Zapier",
-      "n8n.io",
-      "Make (Integromat)",
-      "HubSpot",
-      "Airtable",
+      "Flipkart",
+      "Zomato",
+      "Infosys",
       "Google",
       "Microsoft",
-      "Notion",
-      "Shopify",
+      "Tcs",
+      "Cognizant",
+      "Capgemini",
       "Accenture"
     ],
     demand: 65, // Higher demand as automation is booming
@@ -587,16 +586,17 @@ export const analystData: CourseAnalystData = {
       values: [600000, 1100000, 1800000, 3000000] // Entry to expert level salaries (Python + BS4)
     },
     companies: [
-      "Amazon",
+    
       "Google",
       "Flipkart",
       "Zomato",
-      "Bloomberg",
-      "Reuters",
-      "LinkedIn",
+      "Paytm",
       "Accenture",
-      "Tata Consultancy Services",
-      "Web Scraping Agencies"
+      "Tcs",
+      "AWS",
+      "gcp",
+      "Microsoft",
+    
     ],
     demand: 75, // High demand due to data-driven decision-making
     jobCount: "35,000+",
