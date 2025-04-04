@@ -16,7 +16,7 @@ export const specialisationInStreamlit: Course = {
     category: "Data Applications",
     shortDescription: "Industry Relevant & Recognized Training | Build Interactive Data Apps | Best-In-Class Content | Real-World Projects",
     paymentLink: "https://rzp.io/rzp/streamlit",
-    backgroundImage: "/assets/courses/streamlit/hero.jpg",
+    backgroundImage: "/assets/cources/courseDetails/streamlit/streamlit-hero.jpg",
 
     learningOutcomes: [
         "Master Streamlit Framework Fundamentals",
