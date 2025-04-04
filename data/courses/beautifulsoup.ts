@@ -16,7 +16,7 @@ export const specialisationInnBeautifullsoup: Course = {
     enrolledStudents: 12000,
     category: "Web Scraping & Data Extraction",
     shortDescription: "Weekend Live Batch",
-    paymentLink: " https://rzp.io/rzp/575updp ",
+    paymentLink: "https://rzp.io/rzp/GTSqlejo  ",
     backgroundImage: "/assets/AI (1).jpg",
 
     learningOutcomes: [

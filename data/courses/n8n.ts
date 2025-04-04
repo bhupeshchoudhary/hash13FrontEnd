@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInn8n: Course = {
     _id: "specialisation-in-n8n",
-    title:" [B][R]Specialisation-in-n8n[/R][B]No-Code Automation Training with n8n",
+    title:" [B][R]Specialisation-in-n8n[/R][B] |   No-Code Automation Training with n8n",
     
     slug: "specialisation-in-n8n",
     rating: 5,
@@ -16,7 +16,7 @@ export const specialisationInn8n: Course = {
     enrolledStudents: 12000,
     category: "Artificial Intelligence",
     shortDescription: "19th - 20th April, 2025 (Sat - Sun)",
-    paymentLink: " https://rzp.io/rzp/575updp ",
+    paymentLink: " https://rzp.io/rzp/JLv8cEhD",
     backgroundImage: "/assets/AI (1).jpg",
 
 learningOutcomes: [
