@@ -14,6 +14,8 @@ import { specialisationInAnsible } from "./specialisation-in-ansible";
 import { specialisationInKubernetes } from "./specialisation-in-kubernetes";
 import {specialisationInAI} from "./specialisation-in-ai";
 import { specialisationInStreamlit } from "./specialisation-in-streamlit";
+import {specialisationInn8n} from "./n8n";
+import {specialisationInnBeautifullsoup} from "./beautifulsoup";
 export const courseInfo: Course[] = [
  
   specialisationInDevops,
@@ -28,7 +30,9 @@ export const courseInfo: Course[] = [
   specialisationInAnsible,
   specialisationInKubernetes,
   specialisationInAI,
-  specialisationInStreamlit
+  specialisationInStreamlit,
+  specialisationInn8n,
+  specialisationInnBeautifullsoup
 
 
  

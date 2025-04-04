@@ -550,6 +550,62 @@ export const analystData: CourseAnalystData = {
   "companiesLabel": "Companies Hiring",
   "jobsLabel": "Available Jobs",
   "jobsDescription": "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+},
+"specialisation-in-n8n": {
+    title: "n8n Automation Experts – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "Rapid Growth of Workflow Automation in 2025",
+    salary: {
+      label: "Salaries for n8n Automation Professionals",
+      values: [500000, 900000, 1500000, 2500000] // Entry to expert level salaries
+    },
+    companies: [
+      "Zapier",
+      "n8n.io",
+      "Make (Integromat)",
+      "HubSpot",
+      "Airtable",
+      "Google",
+      "Microsoft",
+      "Notion",
+      "Shopify",
+      "Accenture"
+    ],
+    demand: 65, // Higher demand as automation is booming
+    jobCount: "28,000+",
+    description: "With businesses increasingly automating workflows and integrating no-code tools, n8n skills are highly valuable. Companies seek automation experts to build, optimize, and scale processes without complex development. Mastering n8n can open doors to automation engineering, workflow consulting, and API integration roles.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring n8n Experts",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+  },
+  "master-web-scraping-with-beautifulsoup4": {
+    title: "Web Scraping Experts – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "Explosive Demand for Data Extraction Skills in 2025",
+    salary: {
+      label: "Salaries for Web Scraping Professionals",
+      values: [600000, 1100000, 1800000, 3000000] // Entry to expert level salaries (Python + BS4)
+    },
+    companies: [
+      "Amazon",
+      "Google",
+      "Flipkart",
+      "Zomato",
+      "Bloomberg",
+      "Reuters",
+      "LinkedIn",
+      "Accenture",
+      "Tata Consultancy Services",
+      "Web Scraping Agencies"
+    ],
+    demand: 75, // High demand due to data-driven decision-making
+    jobCount: "35,000+",
+    description: "With businesses relying heavily on data for insights, web scraping skills (especially with BeautifulSoup4) are critical. Companies seek experts to extract, clean, and analyze web data for market research, competitor analysis, and AI training. Mastering BS4 opens doors to roles like Data Engineer, Scraping Specialist, and Research Analyst.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring Web Scraping Experts",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
 }
  
 };
