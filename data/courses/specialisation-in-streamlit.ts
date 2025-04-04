@@ -219,7 +219,7 @@ export const specialisationInStreamlit: Course = {
         sectionTitle: "Complete Streamlit Development Program",
         category: "Data App Development",
         toolsCount: "15+",
-        displayImage: "/assets/courses/streamlit/tools.jpg",
+        displayImage: "/assets/cources/tools/streamlit.jpg",
         tools: [
             {
                 id: "basics",
