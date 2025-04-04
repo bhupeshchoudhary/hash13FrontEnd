@@ -1,4 +1,3 @@
-// components/Faq/Faq.tsx
 import { useState } from "react";
 import {
   Accordion,
@@ -24,12 +23,30 @@ const FAQ_CATEGORIES = {
 export default function Faq({ courseId }: FaqProps) {
   const [selectedItem, setSelectedItem] = useState<keyof typeof FAQ_CATEGORIES>("curriculum");
 
-  // Get course-specific FAQ content
   const courseFAQ = faqContent[courseId];
 
   if (!courseFAQ) {
     return <div>FAQ content not available for this course</div>;
   }
+
+  const renderAccordion = (categoryKey: keyof typeof FAQ_CATEGORIES) => (
+    <Accordion type="single" collapsible className="w-full space-y-4">
+      {courseFAQ[categoryKey]?.map((item, index) => (
+        <AccordionItem
+          key={index}
+          value={`item-${index}`}
+          className="border rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
+        >
+          <AccordionTrigger className="text-base sm:text-md font-semibold px-4 sm:px-6 py-3 sm:py-4 [&[data-state=open]]:text-[#ff0000]">
+            {item.question}
+          </AccordionTrigger>
+          <AccordionContent className="text-sm sm:text-base text-gray-600 px-4 sm:px-6 pb-3 sm:pb-4">
+            {item.answer}
+          </AccordionContent>
+        </AccordionItem>
+      ))}
+    </Accordion>
+  );
 
   return (
     <div className="bg-gradient-to-r from-gray-50 via-white to-red-50" id="Faq">
@@ -38,7 +55,22 @@ export default function Faq({ courseId }: FaqProps) {
           Frequently Asked <span className="text-[#ff0000]">Questions</span>
         </h1>
 
-        <div className="grid gap-8 lg:grid-cols-[300px,1fr] lg:gap-12">
+        {/* Mobile Layout */}
+        <div className="lg:hidden space-y-8">
+          {Object.entries(FAQ_CATEGORIES).map(([key, title]) => (
+            <div key={key} className="space-y-4">
+              <div className="p-4 rounded-lg border shadow-sm bg-red-200 border-red-500 text-red-600">
+                <h2 className="text-md md:text-md font-medium">{title}</h2>
+              </div>
+              <div className="pl-4">
+                {renderAccordion(key as keyof typeof FAQ_CATEGORIES)}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Layout */}
+        <div className="hidden lg:grid gap-8 lg:grid-cols-[300px,1fr] lg:gap-12">
           {/* Sidebar */}
           <div className="space-y-4">
             {Object.entries(FAQ_CATEGORIES).map(([key, title]) => (
@@ -54,22 +86,7 @@ export default function Faq({ courseId }: FaqProps) {
           </div>
 
           {/* FAQ Accordion */}
-          <Accordion type="single" collapsible className="w-full space-y-4">
-            {courseFAQ[selectedItem]?.map((item, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="border rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
-              >
-                <AccordionTrigger className="text-base sm:text-md font-semibold px-4 sm:px-6 py-3 sm:py-4 [&[data-state=open]]:text-[#ff0000]">
-                  {item.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-gray-600 px-4 sm:px-6 pb-3 sm:pb-4">
-                  {item.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          {renderAccordion(selectedItem)}
         </div>
       </div>
     </div>
