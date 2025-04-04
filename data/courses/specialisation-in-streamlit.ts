@@ -11,7 +11,7 @@ export const specialisationInStreamlit: Course = {
     programBy: "Vimal Daga",
     hours: "14+",
     price: 2500,
-    originalPrice: 7000,
+    originalPrice: 7500,
     enrolledStudents: 8000,
     category: "Data Applications",
     shortDescription: "Weekend Live Batch",
