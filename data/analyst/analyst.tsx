@@ -550,7 +550,35 @@ export const analystData: CourseAnalystData = {
   "companiesLabel": "Companies Hiring",
   "jobsLabel": "Available Jobs",
   "jobsDescription": "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
-}
+},
+"specialisation-in-n8n": {
+    title: "n8n Automation Experts – Salaries, Hiring Companies & Job Opportunities in India",
+    subtitle: "Rapid Growth of Workflow Automation in 2025",
+    salary: {
+      label: "Salaries for n8n Automation Professionals",
+      values: [500000, 900000, 1500000, 2500000] // Entry to expert level salaries
+    },
+    companies: [
+      "Zapier",
+      "n8n.io",
+      "Make (Integromat)",
+      "HubSpot",
+      "Airtable",
+      "Google",
+      "Microsoft",
+      "Notion",
+      "Shopify",
+      "Accenture"
+    ],
+    demand: 65, // Higher demand as automation is booming
+    jobCount: "28,000+",
+    description: "With businesses increasingly automating workflows and integrating no-code tools, n8n skills are highly valuable. Companies seek automation experts to build, optimize, and scale processes without complex development. Mastering n8n can open doors to automation engineering, workflow consulting, and API integration roles.",
+    yearLabel: "In 2025",
+    salaryLabel: "Average Salaries",
+    companiesLabel: "Top Companies Hiring n8n Experts",
+    jobsLabel: "Job Opportunities",
+    jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+  }
  
 };
 
