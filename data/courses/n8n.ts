@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInn8n: Course = {
     _id: "specialisation-in-n8n",
-    title:" [B][R]Master Workflow Automation with n8n[/R][B]: From Zero to Pro",
+    title:" [B][R]No-Code Automation Training with n8n[/R][B]",
     
     slug: "specialisation-in-n8n",
     rating: 5,
@@ -10,12 +10,12 @@ export const specialisationInn8n: Course = {
     duration: "Beginner to Advance",
     globalStatus: "GLOBALLY RECOGNISED PROGRAM",
     hours: "8+",
-    // startDate: "Starting On 22nd March (Weekend Batch)",
-    price: 8000,
-    originalPrice: 20000,
+    //startDate: "Starting On 22nd March (Weekend Batch)",
+    price:2500 ,
+    originalPrice: 7500,
     enrolledStudents: 12000,
     category: "Artificial Intelligence",
-    shortDescription: " Starting On 22nd March (Weekend Batch)",
+    shortDescription: "19th - 20th April, 2025 (Sat - Sun)",
     paymentLink: " https://rzp.io/rzp/575updp ",
     backgroundImage: "/assets/AI (1).jpg",
 
