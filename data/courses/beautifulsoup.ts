@@ -11,7 +11,7 @@ export const specialisationInnBeautifullsoup: Course = {
     globalStatus: "GLOBALLY RECOGNISED PROGRAM",
     hours: "8+",
     // startDate: "Starting On 22nd March (Weekend Batch)",
-    price: 8000,
+    price: 2500,
     originalPrice: 7500,
     enrolledStudents: 12000,
     category: "Web Scraping & Data Extraction",
