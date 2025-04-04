@@ -397,6 +397,96 @@ export const faqContent: FAQContent = {
     },
   ],
 },
+"master-web-scraping-with-beautifulsoup4": {
+  curriculum: [
+    {
+      question: "What is the BeautifulSoup4 Web Scraping course about?",
+      answer:
+        "This course teaches you to extract, parse, and analyze web data using Python's BeautifulSoup4 library. You'll learn to scrape websites ethically, handle dynamic content, and automate data collection for real-world applications.",
+    },
+    {
+      question: "What makes this course unique?",
+      answer: (
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Hands-on projects (e-commerce, news, job portals).</li>
+          <li>Anti-bot bypass techniques (proxies, headers, delays).</li>
+          <li>Integration with APIs and databases (SQL, CSV).</li>
+          <li>Ethical scraping and legal best practices.</li>
+          <li>Certification upon completion.</li>
+        </ul>
+      ),
+    },
+  ],
+  timeCommitment: [
+    {
+      question: "Who can enroll in this course?",
+      answer: (
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li><strong>Data Scientists</strong>: Needing datasets for AI/ML models.</li>
+          <li><strong>Marketers</strong>: Tracking competitors' prices or trends.</li>
+          <li><strong>Developers</strong>: Building data pipelines.</li>
+          <li><strong>Researchers</strong>: Collecting academic/public data.</li>
+          <li><strong>Freelancers</strong>: Offering scraping services.</li>
+        </ul>
+      ),
+    },
+    {
+      question: "Is prior technical knowledge required?",
+      answer:
+        "Basic Python knowledge is recommended, but no prior scraping experience is needed. HTML/CSS fundamentals will be covered.",
+    },
+  ],
+  Program: [
+    {
+      question: "What will I learn in this course?",
+      answer: (
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>HTML parsing with BS4 (<code>find()</code>, <code>select()</code>).</li>
+          <li>Handling pagination and JavaScript-heavy sites.</li>
+          <li>Data cleaning/storage (Pandas, SQLite).</li>
+          <li>Scraping APIs alongside HTML.</li>
+          <li>Avoiding IP bans and CAPTCHAs.</li>
+        </ul>
+      ),
+    },
+  ],
+  Duration: [
+    {
+      question: "How long does the course last?",
+      answer:
+        "The course is designed for 6-8 weeks, with self-paced learning and weekly live sessions.",
+    },
+    {
+      question: "What is the mode of delivery?",
+      answer:
+        "Video lectures, Jupyter Notebook exercises, real-world projects, and a private Slack community for support.",
+    },
+  ],
+  Certification: [
+    {
+      question: "Will I get a certificate?",
+      answer:
+        "Yes, a verifiable certificate is provided after completing all projects and a final assessment.",
+    },
+    {
+      question: "Will there be job placement support?",
+      answer:
+        "Yes, we share scraping-related job openings and resume tips for roles like Data Engineer or Research Analyst.",
+    },
+  ],
+  selectionCriteria: [
+    {
+      question: "Can I access the content after the course ends?",
+      answer:
+        "Yes, lifetime access to materials, including future updates (e.g., new anti-bot techniques).",
+    },
+    {
+      question: "What is the fee structure?",
+      answer:
+        "Check the course page for pricing. Scholarships available for students.",
+    },
+  ],
+},
 
 
   "specialisation-in-docker": {
