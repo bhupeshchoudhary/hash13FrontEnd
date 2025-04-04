@@ -3,7 +3,6 @@ export interface Author {
     title: string;
     avatar: string;
     linkedin?: string;
-    
 }
 
 export interface Post {
@@ -11,6 +10,5 @@ export interface Post {
     author: Author;
     content: string;
     timestamp: string;
-    videoUrl?:string;
-    
+    videoUrl?: string;
 }

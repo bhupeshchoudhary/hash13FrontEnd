@@ -1,10 +1,10 @@
-// app/courses/[courseId]/page.tsx
+
 "use client";
 
 import React, { useEffect, useState } from "react";
 import { useParams } from 'next/navigation';
 import { Course } from "../../../..//types/courses";
-import { courseInfo } from "../../../..//data/courses/courses";
+import { courseInfo } from "../../../../data/courses/courses";
 import CourseDetailHero from "@/components/customComponents/coursesComponents/courseDetails/CourseDetailsHero";
 import Tools from "@/components/customComponents/coursesComponents/Tools";
 import Analyst from "@/components/customComponents/coursesComponents/Analyst";
@@ -23,6 +23,7 @@ import Navbar from '@/components/customComponents/coursesComponents/CourseNavbar
 import { LeftRightAlumniCarousel } from "@/components/customComponents/coursesComponents/LeftRightNowAlumniSection";
 import SupportContact from "@/components/customComponents/landingPage/SupportContact";
 import QueryForm from "@/components/customComponents/coursesComponents/courseDetails/ContactAndSupport";
+import CourseStructure from "@/components/customComponents/coursesComponents/courseDetails/subComponents/CourseStructure";
 
 // Loading Skeleton Component
 const LoadingSkeleton = () => (
@@ -115,16 +116,18 @@ export default function CourseDetailPage() {
       <main className="min-h-screen bg-gray-50">
       <Navbar />
         <section className="">
-          {/* <CourseDetailHero courseId={params.courseId as string} /> */}
-          <CourseDetailHero />
+          <CourseDetailHero courseId={params.courseId as string} />
+          {/* <CourseDetailHero /> */}
         </section>
+
+        {/* <CourseStructure /> */}
 
         <section className="">
           <ProgramHighlights course={course} />
         </section>
 
         <section className=" ">
-          <Tools />
+          <Tools courseId={params.courseId as string}/>
         </section>
 
           {/* hidden */}
@@ -146,19 +149,16 @@ export default function CourseDetailPage() {
         <section className="">
           <WhoisthisProgramFor course = {course} />
         </section>
-
-        <section className=" ">
-          {/* <Analyst course={course} /> */}
-          <Analyst />
-        </section>
+        
+<section className="">
+  <Analyst courseId={course.slug} />
+</section>
 
         <section className="">
-          <Faq />
-        </section>
+  <Faq courseId={params.courseId as string} />
+</section>
 
-        {/* <section>
-          <CardStack />
-        </section> */}
+    
 
         <section className="">
         <CoursePricingSection courseId={params.courseId as string} />

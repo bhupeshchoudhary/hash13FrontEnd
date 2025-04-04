@@ -1,4 +1,4 @@
-import {Post } from "../../types/testimonial"
+import {Post, Author } from "../../types/testimonial"
 
 
 
@@ -9,7 +9,7 @@ export const landingPageTestimonialPosts: Post[] = [
       author: {
         name: "Akshata Tiwari",
         title: "MERN Enthusiast Seeking Opportunities to Develop and Enhance my Skills",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        avatar: ""
       },
       content: `Hey Folks...`,
       timestamp: "8 Mar 2023",
@@ -18,42 +18,42 @@ export const landingPageTestimonialPosts: Post[] = [
     {
       id: 2,
       author: {
-        name: "Ayushi Jain",
-        title: "Branding | Marketing and Strategy",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Akansha chaurasia",
+        title: "Domain Support Specialist @ Ericsson India Global",
+        avatar: "https://media.licdn.com/dms/image/v2/C4D03AQERGZjbVTAnNw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1645726568650?e=1746662400&v=beta&t=jW3BbCXRvKa4f9LPe0dL80mYwyHu8NQiCz3k8_iIaxY",
       },
-      content: `From Google searches...`,
+      content: `It was an amazing class to attend. I liked the way sir delivered the helm content. Helm became so easy for me now. I like to attend these classes as it helps me to elevate my skills. Thank you Vimal sir as well as LinuxWorld Informatics Pvt to share such a good content with us...`, 
       timestamp: "10 Mar 2023"
     },
     {
       id: 3,
       author: {
-        name: "Prashant Hada",
-        title: "Student at Ronald University of Applied Sciences",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Jivan Bhardwaj",
+        title: "DevOps Engineer at Echelon Edge",
+        avatar: "https://media.licdn.com/dms/image/v2/C4E03AQEvxMngWtOM1g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1628692879304?e=1746662400&v=beta&t=BSm3j_O9Ck87Z9G1K8_A2tmsPQPAZyIn-cQeilnyUp8"
       },
-      content: `Happy to announce the completion of the Power BI workshop. Thanks to @LinuxWorld and @DeekshaAnand for the guidance and knowledge transfer. #PowerBI #DataAnalytics`,
+      content: `It was great to see how through Kubernetes we can manage containers and launch Jenkins. I got the first time to get hands knowledge on various topics like Heml,Operators in the Kubernetes and CRD (custom resource definition). thanks, Vimal Daga sir for so insight session.`,
       timestamp: "15 Mar 2023"
     },
     {
       id: 4,
       author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Rajneesh Pratap Singh",
+        title: "DevOps Engineer || 3x Redhat",
+        avatar: "https://media.licdn.com/dms/image/v2/D5603AQES0juOhhnKYQ/profile-displayphoto-shrink_400_400/B56ZShRhtAHoAg-/0/1737872515563?e=1746662400&v=beta&t=hXUR26ZZ8S9IbrgZ4pd1nyEH3HYto_n857cEB7pEakI"
       },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
+      content: `This is my first step towards security with DevOps, and it was a great learning experience In this session, we covered: Why DevSecOps? Understanding its importance over traditional DevOps. Integrating security with DevOps, including SAST and secure coding practices. Best practices for writing secure Dockerfiles. Setting up and using Docker Scout for vulnerability scanning. Strategies for patching and managing vulnerabilities in containers..`,
       timestamp: "18 Mar 2023"
     },
     
     {
       id: 5,
       author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Manikandan Prakash",
+        title: "DevOps Engineer @smallcase",
+        avatar: "https://media.licdn.com/dms/image/v2/D4E03AQFiY07rDFiZ1A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1698246875639?e=1746662400&v=beta&t=MSg_7k11nKgILZEwnkcFCKiW-7ZuWx3dZwU7ZGUBtxs"
       },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
+      content: `It was very informative and 100 pratical session by vimal sir ,From that I did learn the bedrock service how to intergrate in any of our own custom requirment ,It was pretty enough to start AWS bedrock thanks for the session Vimal Daga sir`,
       timestamp: "18 Mar 2023"
     },
     {
@@ -61,7 +61,7 @@ export const landingPageTestimonialPosts: Post[] = [
       author: {
         name: "Akshata Tiwari",
         title: "MERN Enthusiast Seeking Opportunities to Develop and Enhance my Skills",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        avatar: ""
       },
       content: `Hey Folks...`,
       timestamp: "8 Mar 2023",
@@ -70,21 +70,21 @@ export const landingPageTestimonialPosts: Post[] = [
     {
       id: 7,
       author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Prateek Srivastava",
+        title: "DevOps Engineer - II at o9 Solutions",
+        avatar: "https://media.licdn.com/dms/image/v2/C5603AQHZ852DgWHZCw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1517809201903?e=1746662400&v=beta&t=rSZojbZgw7hoqusURoSW961zaANuCFcO7elCer1v7O4"
       },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
+      content: `We delved into a diverse range of topics, starting from the fundamentals of DevOps to the intricacies of deploying Jenkins for continuous integration and continuous delivery (CI/CD) with automation. Throughout the course, we acquired knowledge in various areas, such as setting up Jenkins on Amazon EKS using Kubernetes Operators and Helm charts. I want to extend my gratitude to Mr. Vimal Daga for sharing his expertise and making the masterclass a truly exceptional learning experience. One of the highlights was our exploration of managing Jenkins pipelines as code, employing tools like Jenkins Kubernetes CRD and Grafana Loki. What's remarkable is that we completed a full-fledged DevOps project within a condensed 3-hour session, which is a testament to Mr. Vimal Daga's exceptional teaching`,
       timestamp: "18 Mar 2023"
     },
     {
       id: 8,
       author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        name: "Aakash Kathunia",
+        title: "Technical Architect at HCLTech",
+        avatar: "https://media.licdn.com/dms/image/v2/D5603AQGJi9pe0O-O8A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723740692945?e=1746662400&v=beta&t=7rPnm0RHLQKglOido9st16eloEWJGFSqc3jgSyHgm0o"
       },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
+      content: `Vimal Sir is outstanding while teaching complex and advanced topics, as he teaches us in such a way that even someone without technical background one can easily grasp and this is the main reason I have been following him since long. Before his session, I had tried to understand DevSecOps through various technical channels, but I didn't get a clear picture. However, in just initial hours of Vimal Sir’s session, he made the concept very much clearer. Then, over the next two hours, he simplified DevSecOps further, helping me gain valuable insights that sparked my interest in exploring the topic more deeply. I am Thankful to Vimal Sir for in-depth course on DevSecOps and looking more indepth session from him, and Im grateful for his teachings for current and upcoming valuable training sessions.`,
       timestamp: "18 Mar 2023"
     },
     {
@@ -92,12 +92,46 @@ export const landingPageTestimonialPosts: Post[] = [
       author: {
         name: "Akshata Tiwari",
         title: "MERN Enthusiast Seeking Opportunities to Develop and Enhance my Skills",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
+        avatar: ""
       },
       content: `Hey Folks...`,
       timestamp: "8 Mar 2023",
       videoUrl: "https://www.youtube.com/embed/2l-05_6o3eQ"
-    }
+    },
+    // {
+    //   id: 10,
+    //   author: {
+    //     name: "Aakash Kathunia",
+    //     title: "Technical Architect at HCLTech",
+    //     avatar: "https://media.licdn.com/dms/image/v2/D5603AQGJi9pe0O-O8A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723740692945?e=1746662400&v=beta&t=7rPnm0RHLQKglOido9st16eloEWJGFSqc3jgSyHgm0o"
+    //   },
+    //   content: `Vimal Sir is outstanding while teaching complex and advanced topics, as he teaches us in such a way that even someone without technical background one can easily grasp and this is the main reason I have been following him since long. Before his session, I had tried to understand DevSecOps through various technical channels, but I didn't get a clear picture. However, in just initial hours of Vimal Sir’s session, he made the concept very much clearer. Then, over the next two hours, he simplified DevSecOps further, helping me gain valuable insights that sparked my interest in exploring the topic more deeply. I am Thankful to Vimal Sir for in-depth course on DevSecOps and looking more indepth session from him, and Im grateful for his teachings for current and upcoming valuable training sessions.`,
+    //   timestamp: "18 Mar 2023"
+
+    // },
+    {
+      id: 11,
+      author: {
+        name: "Rushikesh Mahindrakar",
+        title: "System Engineering",
+        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQH9caqLtsFOKw/profile-displayphoto-shrink_400_400/B4DZPdW6uqGkAg-/0/1734585593402?e=1746662400&v=beta&t=UzALedGr01MogzhE5F3rvkziz4z8FkJjT8MxAqYl_lI"
+      },
+      content: `Your invaluable guidance in this remarkable Kubernetes training program has been truly appreciated. It's a pivotal milestone in my DevOps journey, and I'm deeply grateful for your mentorship, Vimal Daga sir. Your expertise and insights are immensely valuable, propelling my professional growth with each session. Thank you!!`,
+      timestamp: "18 Mar 2023"
+    },
+    {
+    id: 12,
+      author: {
+        name: "Peeru Babu Vaddaman",
+        title: "AWS DevOps Engineer",
+        avatar: "https://media.licdn.com/dms/image/v2/D4E03AQEb-BPBWT8LAg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1698872416669?e=1746662400&v=beta&t=xmjGoC0_hEaUN0i9bzWdUIoIM9MCldk5pJ9wuwKj0PM"
+      },
+      content: `I gained hands-on experience with multiple tools, enhancing my practical knowledge and skills. It was a wonderful session , Sir is a blessing for the student who are looking their career in the field of DevOps and other. The DevOps project workshop by Vimal Sir was truly amazing and insightful.`,
+   timestamp: "18 Mar 2023"
+    },
+
+
+  
   ];
 
 
@@ -123,7 +157,7 @@ export const posts: Post[] = [
         author: {
           name: "Manikandan Prakash",
           title: "DevOps Engineer @smallcase",
-          avatar: "https://media.licdn.com/dms/image/v2/D4E03AQFiY07rDFiZ1A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1698246875639?e=1737590400&v=beta&t=n4sQVUqx1DDJaKh2fEvBUd5l6FR5_k7JEpb1cBS_ZTk",
+          avatar: "/assets/testinomial/devopss/xyzz.jpeg",
           linkedin: "https://www.linkedin.com/in/manikandan-prakash/"
         },
         content: `
@@ -136,7 +170,7 @@ export const posts: Post[] = [
         author: {
           name: "Dibyaraj Datta",
           title: "Process Associate at Netscribes",
-          avatar: "https://media.licdn.com/dms/image/v2/D5603AQENeos_aDytsw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1711478336339?e=1737590400&v=beta&t=eqdh3QVuz82VyuHWF78Bmif0EVec9xdh47F6VqZmmko",
+          avatar: "/assets/testinomial/devopss/dibyaraj datta.jpeg",
           linkedin: "https://www.linkedin.com/in/dibyaraj-datta-b785661a5/"
         },
         content: `
@@ -151,7 +185,7 @@ export const posts: Post[] = [
         author: {
           name: "Rushikesh Mahindrakar",
           title: "System Engineering",
-          avatar: "https://media.licdn.com/dms/image/v2/D5603AQFmIMotaZggJw/profile-displayphoto-shrink_400_400/B56ZOfunOJGoAk-/0/1733551617738?e=1740009600&v=beta&t=8Yhs14_NMJPTSdqoiq-eNcVhgbxDFV4ZZ5FQPdyj5IU",
+          avatar: "/assets/testinomial/devopss/Rushikesh Mahindrakar .jpeg",
           linkedin: "https://www.linkedin.com/in/rushikesh-mahindrakar-70b82537/"
         },
         content: `
@@ -163,7 +197,7 @@ export const posts: Post[] = [
         author: {
           name: "Himanshu Sahu",
           title: "Java Backend Developer ",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQFqtDCGoMk54g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1673897788931?e=1737590400&v=beta&t=s2TDcsAQ2oqQ_DvoGT8yyUUaGvsfGDwan4Phjo1RFL0",
+          avatar: "/assets/testinomial/devopss/Himanshu Sahu .jpeg",
           linkedin: "https://www.linkedin.com/in/himanshu-sahu-2aa357237/"
         },
         content: `I attended this helm masterclass and it's amazing. The way Vimal Daga sir teaches makes everything so simple and clear and it also helps understand the real time based problem's and use cases. I learned about hashtag#helm chart with examples, artifact hub, docker hub, how to use procreated Helm chart and how to create my own helm chart and upload it, jenkins setup via helm chart etc. Thank u Vimal Daga sir and LinuxWorld Informatics Pvt Ltd Informatics Pvt Ltd for conducting this masterclass. It is always a pleasure to learnt something new always from Vimal Daga sir.`,
@@ -174,7 +208,7 @@ export const posts: Post[] = [
         author: {
           name: "Pratibha Kokil",
           title: "DevOps | Full Stack Developer",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHspredHFM_Ig/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729926571919?e=1737590400&v=beta&t=EopKPQqmr1fMBHnO3vVCQ-iI51PNnI8XhKTWumH0CI0",
+          avatar: "/assets/testinomial/devopss/pratibha.jpeg",
           linkedin: "https://www.linkedin.com/in/pratibhakokil/"
         },
         content: `Thank u Vimal Daga sir and LinuxWorld Informatics Pvt Ltd for conducting this masterclass.. I learned about hashtag#helm chart with examples, artifact hub, docker hub, how to use procreated Helm chart and how to create my own helm chart and upload it, what's it's requirement, Roll out and Roll back, multi environment setup using helm chart, Jenkins setup via helm chart, jinja template etc.`,
@@ -184,7 +218,7 @@ export const posts: Post[] = [
         author: {
           name: "Akansha chaurasia",
           title: "Domain Support Specialist @ Ericsson India Global",
-          avatar: "https://media.licdn.com/dms/image/v2/C4D03AQERGZjbVTAnNw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1645726568650?e=1737590400&v=beta&t=V8r_7CfyG-LYaBsbkY7EztvWwig6Z1vRUv9aFeJJ4-k",
+          avatar: "/assets/testinomial/devopss/akansha chaurasia .jpeg",
           linkedin: "https://www.linkedin.com/in/akansha-chaurasia-681718119/"
         },
         content: `
@@ -196,7 +230,7 @@ export const posts: Post[] = [
         author: {
           name: "Sanchita Agrawal",
           title: "DevOps Engineer at Genus Power Infrastructure Limited",
-          avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHvkoJDpKyN6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1664520645818?e=1737590400&v=beta&t=0s-H7cUGZ7347Xo4Zn2GUdJGkO5tlKQjtzNVnJ3mJYw",
+          avatar: "/assets/testinomial/devopss/Sanchita Agrawal .jpeg",
           linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7239134220567130113/?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7239134220567130113%2C7240708775475601408%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287240708775475601408%2Curn%3Ali%3Aactivity%3A7239134220567130113%29"
         },
         content: `
@@ -208,7 +242,7 @@ export const posts: Post[] = [
         author: {
           name: "Rajneesh Pratap Singh",
           title: "DevOps Engineer || 3x Redhat Certified ||",
-          avatar: "https://media.licdn.com/dms/image/v2/D5603AQFxBq8m8wYj4w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1720442622903?e=1737590400&v=beta&t=v_dQCEGOIDJ96AV0ZbaA0IQUfLmnWk3m1YPnnwXAOb4",
+          avatar: "/assets/testinomial/devopss/Rajneesh Singh .jpeg",
           linkedin: "https://www.linkedin.com/in/rajneesh-pratap-singh/"
         },
         content: `
@@ -229,7 +263,7 @@ export const posts: Post[] = [
         author: {
           name: "Aakash Kathunia",
           title: "Technical Architect at HCLTech | GenAI | LLM | OpenAI | Kubernetes| Automation | Cloud",
-          avatar: "https://media.licdn.com/dms/image/v2/D5603AQGJi9pe0O-O8A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723740692945?e=1737590400&v=beta&t=y2ONfXKp0z5KkZJRcTtg_e1iVUh8rFUn3JxaRqqFOBg",
+          avatar: "/assets/testinomial/devopss/Aakash Kathunia.jpeg",
           linkedin: "https://www.linkedin.com/in/aakash-kathunia-6b618b16/"
         },
         content: `
@@ -246,7 +280,7 @@ export const posts: Post[] = [
         author: {
           name: "Alok Kumar Singh ",
           title: "Web Developer(Angular ) | Data Analyst |",
-          avatar: "https://media.licdn.com/dms/image/v2/D5603AQFGCjRM6gI1zg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724789778105?e=1737590400&v=beta&t=sm-JTK9zKq4_tbEEKi1nEZvWEa4fL-RoAH7KeL86jtk",
+          avatar: "/assets/testinomial/devopss/Alok Kumar Singh .jpeg",
           linkedin: "https://www.linkedin.com/in/tech-alok/"
         },
         content: `
@@ -261,7 +295,7 @@ export const posts: Post[] = [
         author: {
           name: "Mallesh Gangadhar ",
           title: "--",
-          avatar: "https://media.licdn.com/dms/image/v2/D5635AQFvYLlZaIHe_A/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1713248954215?e=1732777200&v=beta&t=TAOMDi9g-MQ4HMspIYg8WBdCJ53UiCsR-c_GIDtjzzA",
+          avatar: "/assets/testinomial/devopss/Mallesh Gangadhar.jpeg",
           linkedin: "https://www.linkedin.com/in/mallesh-gangadhar-8ab53777/"
         },
         content: `
@@ -277,7 +311,7 @@ export const posts: Post[] = [
         author: {
           name: "Mohit Agarwal ",
           title: "Student at NIT Kurukshetra | Additional Secretary of MExperts",
-          avatar: "https://media.licdn.com/dms/image/v2/D5603AQFfS5ahFvJB2Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681871987732?e=1737590400&v=beta&t=xyrWG92tvwvBV-V5WSDeucFFSkLx-j8GbZ3e_1lAjw0",
+          avatar: "/assets/testinomial/devopss/Mohit Agarwal.jpeg",
           linkedin: "https://www.linkedin.com/in/mohitagarwal99/"
         },
         content: `

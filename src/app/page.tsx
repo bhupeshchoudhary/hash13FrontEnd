@@ -12,6 +12,12 @@ import SupportContact from "@/components/customComponents/landingPage/SupportCon
 
 import Navbar from "@/components/customComponents/Navbar/Navbar";
 
+import CallToAction from "@/components/customComponents/CallToAction/CallToAction";
+// import { courseInfo } from "../../data/ExampleCard2/ExampleCard2";
+import { courseInfo } from "../../data/courses/courses";
+import QueryForm from "@/components/customComponents/coursesComponents/courseDetails/ContactAndSupport";
+
+import DiscordCommunity from "@/components/customComponents/landingPage/Discord/DiscordCommunity";
 export default function Home() {
   return (
 <>
@@ -21,12 +27,15 @@ export default function Home() {
 
 <FactsAndFigure></FactsAndFigure>
 <CoreFeature></CoreFeature>
-<CoursesComponent></CoursesComponent>
+<CoursesComponent  />
 <Subscribe></Subscribe>
-<PopularTopic></PopularTopic>
+{/* <PopularTopic></PopularTopic> */}
 <Testimonials></Testimonials>
-<BlogSection></BlogSection>
+{/* <BlogSection></BlogSection> */}
+<DiscordCommunity></DiscordCommunity>
+<QueryForm />
 <SupportContact></SupportContact>
+<CallToAction></CallToAction>
 </>
   );
 }

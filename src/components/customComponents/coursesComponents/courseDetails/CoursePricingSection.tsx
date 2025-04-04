@@ -106,7 +106,7 @@ export default function CoursePricingSection({ courseId }: CoursePricingSectionP
           {/* Left Column - Pricing */}
           <Card className="flex-1 p-4 sm:p-6 bg-white shadow-lg hover:shadow-xl transition-shadow">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">
-              Globally Recognized Program
+              {course.globalStatus}
               <span className="block text-base sm:text-lg text-gray-600 mt-1">
                 (Save ₹{discount.toLocaleString()})
               </span>
@@ -135,7 +135,7 @@ export default function CoursePricingSection({ courseId }: CoursePricingSectionP
               <div className="flex items-start gap-2">
                 <Check className="h-5 w-5 text-red-400 mt-1 flex-shrink-0" />
                 <p className="text-sm sm:text-base text-gray-600">
-                  The launch offer expires in 24 hours
+                  Recorded videos will be accessible for 365 days.
                 </p>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function CoursePricingSection({ courseId }: CoursePricingSectionP
                           hover:shadow-black text-white py-4 sm:py-6 text-sm sm:text-base 
                           transition-all duration-300 transform hover:scale-105"
               >
-                <a href="https://rzp.io/rzp/2asghU9u" target="_blank">
+                <a href={course.paymentLink} target="_blank">
                 Yes! I want this insane deal for
                 <br /> ₹{course.price.toLocaleString()} + taxes
                 </a>

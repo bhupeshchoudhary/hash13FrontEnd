@@ -17,8 +17,8 @@ interface RouteConfig {
 const ROUTE_CONFIG: Record<string, RouteConfig> = {
 
   'default': {
-    link: payment.paymentLink,
-    buttonText: 'Enroll Now'
+    link: "#contactus",
+    buttonText: 'Enquire Now'
   }
 };
 
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto flex bg-white bg-opacity-100 items-center justify-between py-4 px-6">
         {/* Logo */}
-        <a href="#Hero" className="flex items-center space-x-2">
+        <a href="/" className="flex items-center space-x-2">
           <Image
             src={LOGO}
             alt="Logo"
@@ -143,7 +143,7 @@ const Navbar: React.FC = () => {
         {/* Desktop Call to Action Button */}
         <a
           href={link}
-          target="blank"
+          target=""
           className="hidden lg:block bg-[#ff0000] text-white px-4 py-2 rounded-lg hover:shadow-black hover:shadow-md"
         >
           {buttonText}

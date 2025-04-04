@@ -8,7 +8,7 @@ import yerrowArrow from "../../../../public/assets/landingPage/floatingCurveArro
 import curveLine from "../../../../public/assets/CurlLine.svg"
 const About = () => {
   return (
-    <div className=" lg:px-14 bg-white p-8 pb-0 relative overflow-hidden">
+    <div className=" lg:px-14 bg-white p-8 pb-0 relative overflow-hidden" id='about'>
       {/* Decorative Elements - Refined positions */}
       <div className="absolute top-8 left-8 w-2 h-2 bg-[#ff0000]/60 rounded-full" />
       <div className="absolute top-16 right-16 w-12 h-12 bg-pink-100/60 rounded-full" />
@@ -48,58 +48,73 @@ const About = () => {
                   {/* {yerrowArrow} */}
                 </div>
               </div>
+              
 
               {/* Top Right Card */}
               <div className="w-2/3">
-                <Card className="bg-gray-100/80 aspect-video flex items-center justify-center relative">
-                  <div className="bg-white rounded-full py-1.5 px-3 flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#ff0000]" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  </div>
-                </Card>
-              </div>
+      <Card 
+        className="bg-gray-100/80 aspect-video flex items-center justify-center relative overflow-hidden"
+        
+      >
+        <div className="w-full h-full relative">
+          <Image
+            src="/assets/file_2025-03-07_13.08.30.png"
+             width={400}
+             height={200}
+            
+            objectFit="contain"
+            alt="Card image"
+            
+          />
+        </div>
+      </Card>
+    </div>
             </div>
 
             {/* Bottom Row - Refined spacing */}
             <div className="flex gap-6">
               {/* Bottom Left Card */}
               <div className="w-2/3">
-                <Card className="bg-gray-100/80 aspect-video flex items-center justify-center">
-                  <div className="bg-white rounded-full py-1.5 px-3 flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#ff0000]" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  </div>
+                <Card className="bg-gray-100/80 aspect-video flex items-center justify-center relative overflow-hidden">
+                <div className="w-full h-full relative">
+                  <Image
+                    src="/assets/file_2025-03-07_12.54.08.png"
+                     width={400}
+                     height={200}
+                    objectFit="contain"
+                    alt="Card image"
+                  />
+                </div>
                 </Card>
               </div>
 
               {/* Trained Teachers Card - Refined to match Figma */}
               <div className="w-1/3 ">
-                <Card className="bg-white shadow-lg border-0 h-full rounded-lg">
-                  <CardHeader className="p-3">
+              <Card className="bg-white shadow-lg border-0 h-full rounded-lg relative overflow-hidden">
+                  {/* <CardHeader className="p-1">
                     <div className="flex items-center gap-2">
                       <div className="rounded-full bg-gradient-to-br from-emerald-400 to-sky-400 p-1">
                         <Globe className="h-3.5 w-3.5 text-white" />
                       </div>
                       <CardTitle className="text-xs font-medium">Trained Teachers</CardTitle>
+                      
                     </div>
-                  </CardHeader>
-                  <CardContent className="p-3 pt-0">
+                   
+              
+                  </CardHeader> */}
+                  {/* <CardContent className="p-3 pt-0"> */}
                     
                    
-                    <div className="space-y-1">
-                      <div className="h-1 w-full rounded-full bg-gray-100" />
-                      <div className="h-4 w-3/4 rounded-full bg-gray-100" />
-                      <div className="h-1 w-1/2 rounded-full bg-gray-100" />
-                    </div>
-
-                    <div className="space-y-1">
-                      <div className="h-1 w-full rounded-full bg-gray-100" />
-                      <div className="h-4 w-3/4 rounded-full bg-gray-100" />
-                      <div className="h-1 w-1/2 rounded-full bg-gray-100" />
-                    </div>
-                  </CardContent>
+                  
+                  {/* </CardContent> */}
+                  <div className="w-full h-full relative">
+          <Image
+            src="/assets/file_2025-03-07_13.01.28.png"
+            layout="fill"
+            objectFit="cover"
+            alt="Card image"
+          />
+        </div>
                 </Card>
               </div>
             </div>
@@ -108,20 +123,21 @@ const About = () => {
           {/* Right Side - Content */}
           <div className="space-y-8">
             <div>
-              <p className="text-teal-500 text-sm font-medium mb-2">About #13</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                You Can Learn<br />
-                Anything, Anytime<br />
-                From <span className="text-[#ff0000] relative">
-                  Anywhere
+              <p className="text-teal-500 text-sm font-semibold mb-2" >ABOUT #13</p>
+              <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-6">
+               Real-World Learning,<br />
+              
+                <span className="text-[#ff0000] relative">
+                Always 
                   <div className="absolute -bottom-0.5 left-0 w-full h-0.5 " >
                      <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
-                     {/* <curveLine></curveLine> */}
+                      {/* <curveLine></curveLine>  */}
                     </div>
-                </span>
+                  </span> 
+                  &nbsp;Up-to-Date
               </h1>
               <p className="text-gray-500 text-sm">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+                Learn while working or studying from any place, across any device.
               </p>
             </div>
 
@@ -134,9 +150,12 @@ const About = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">All Classes Video Provided</h3>  
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Learn Anytime, Stay Industry-Ready
+
+                  </h3>  
                   <p className="text-xs text-gray-500">
-                    There are many variations of passages of but the majority have suffered.
+                  Master the latest tech skills at your own pace with up-to-date, real-world use case-based learning.
+
                   </p>
                 </div>
               </div>
@@ -151,9 +170,10 @@ const About = () => {
 
 
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Online Class From Expert Teachers</h3>
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Flexible Learning, Real-World Impact </h3>
                   <p className="text-xs text-gray-500">
-                    There are many variations of passages of but the majority have suffered.
+                  Upgrade your skills with industry-relevant, hands-on content—learn anywhere, anytime, with practical applications.
+
                   </p>
                 </div>
               </div>

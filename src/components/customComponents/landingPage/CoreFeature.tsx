@@ -1,6 +1,8 @@
 import React from 'react';
 import { User2, GraduationCap, MonitorPlay, Video, Globe } from 'lucide-react';
 import { CardProps } from '../../../../types/coreFeatures';
+import curveLine from "@../../../public/assets/CurlLine.svg";
+import Image from "next/image";
 
 
 const Card: React.FC<CardProps> = ({ icon, title, description, bgColor, iconBgColor, textColor }) => (
@@ -40,42 +42,48 @@ const CoreFeature = () => {
       <div className="max-w-6xl mx-auto px-4 py-10">
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-teal-500 text-sm font-medium tracking-wide mb">Core Features</p>
-          <h2 className="text-[32px] font-bold text-gray-800">
-            Why <span className="text-[#ff0000]">Choose</span> #13
-          </h2>
+          <p className="text-teal-500 text-sm font-semibold tracking-wide mb">CORE FEATURES</p>
+          <h1 className="text-3xl font-bold">
+          Why <span className="text-[#ff0000] relative">
+            Choose 
+            <span className="absolute bottom-0 left-0 w-full h-1  rounded-full">
+
+            <Image src={curveLine} alt="curve line" className='w-full mb-4' width={100} height={300}></Image>
+            </span>
+          </span> #13
+        </h1>
         </div>
 
         {/* Features Grid */}
         <div className="flex flex-wrap justify-center gap-6">
           <Card
             icon={<User2 className="w-12 h-12 text-white" />}
-            title="Skillful Instructors"
-            description="Start learning from experienced instructors."
+            title="Learn from the World Record Holder"
+            description="Be mentored by Vimal Daga who has set benchmarks in technology."
             bgColor="bg-white"
             iconBgColor="bg-blue-400"
             textColor="text-gray-800"
           />
           <Card
             icon={<GraduationCap className="w-12 h-12 text-white" />}
-            title="Happy Students"
-            description="Enrolled in our courses and improved their skills."
+            title="Learner Success Stories "
+            description="Join a thriving community of learners who have transformed their skills and careers."
             bgColor="bg-white"
             iconBgColor="bg-pink-500"
             textColor="text-gray-800"
           />
           <Card
             icon={<MonitorPlay className="w-12 h-12 text-white" />}
-            title="Live Classes"
-            description="Improve your skills using live knowledge flow."
+            title="Industry-Relevant Projects  "
+            description="Work on real-world projects to gain practical exposure and make your learning job-ready!"
             bgColor="bg-white"
             iconBgColor="bg-green-400"
             textColor="text-gray-800"
           />
           <Card
             icon={<Video className="w-12 h-12 text-white" />}
-            title="Video Courses"
-            description="Learn without any geographical & time limitations."
+            title="24x7 Doubt-Solving Support "
+            description="Never get stuck! Our dedicated tech team is available 24x7 to help you overcome challenges."
             bgColor="bg-white"
             iconBgColor="bg-red-400"
             textColor="text-gray-800"

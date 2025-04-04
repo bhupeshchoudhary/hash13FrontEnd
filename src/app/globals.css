@@ -10,6 +10,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 }
 
 @layer base {
@@ -94,5 +100,6 @@ body {
 }
 
 .alumni-scroller:hover .alumni-scroll-animation {
-  /* animation-play-state: paused; */
+ 
 }
+
