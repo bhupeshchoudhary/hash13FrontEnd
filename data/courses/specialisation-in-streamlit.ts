@@ -173,7 +173,7 @@ export const specialisationInStreamlit: Course = {
         }
     ],
 
-    certificateImage: "/assets/certificate/streamlit.jpg",
+    certificateImage: "/assets/cources/courseDetails/streamlit/streamlit.jpg",
 
     project: [
         {
