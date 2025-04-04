@@ -215,6 +215,89 @@ export const faqContent: FAQContent = {
       },
     ],
   },
+  
+  "specialisation-in-streamlit": {
+    curriculum: [
+      {
+        question: "What is the Streamlit program about?",
+        answer:
+          "The program provides comprehensive training in building data applications using Streamlit, covering everything from basics to advanced deployment, preparing participants for modern data application development.",
+      },
+      {
+        question: "What makes this program unique?",
+        answer: (
+          <ul className="list-disc list-inside mt-2 space-y-1">
+            <li>Industry-relevant data app development curriculum.</li>
+            <li>Hands-on projects with real-world datasets.</li>
+            <li>Expert mentorship and guidance.</li>
+            <li>Professional certification.</li>
+            <li>Active learning community and support network.</li>
+          </ul>
+        ),
+      },
+    ],
+    timeCommitment: [
+      {
+        question: "Who can enroll in this program?",
+        answer: (
+          <ul className="list-disc list-inside mt-2 space-y-1">
+            <li>Data Scientists and Analysts seeking to create interactive apps.</li>
+            <li>Python developers interested in data visualization.</li>
+            <li>ML Engineers looking to deploy models with user interfaces.</li>
+            <li>Anyone interested in building data applications.</li>
+          </ul>
+        ),
+      },
+      {
+        question: "Is prior programming knowledge required?",
+        answer: "Basic Python programming knowledge is recommended. Familiarity with data analysis concepts would be beneficial but not mandatory.",
+      },
+    ],
+    Program: [
+      {
+        question: "What will I learn in this program?",
+        answer: (
+          <ul className="list-disc list-inside mt-2 space-y-1">
+            <li>Streamlit framework fundamentals and setup.</li>
+            <li>Interactive data visualization and analytics.</li>
+            <li>ML model deployment and integration.</li>
+            <li>Custom components and advanced features.</li>
+            <li>Production deployment and optimization.</li>
+          </ul>
+        ),
+      },
+    ],
+    Duration: [
+      {
+        question: "How long does the program last?",
+        answer: "The program spans 2 months, with 24+ hours of comprehensive learning and practical projects.",
+      },
+      {
+        question: "What is the mode of delivery?",
+        answer: "Live interactive sessions with hands-on coding practice, ensuring real-time learning and doubt resolution.",
+      },
+    ],
+    Certification: [
+      {
+        question: "Will I get a certificate?",
+        answer: "Yes, upon successful completion of the course and projects, participants receive an industry-recognized certification.",
+      },
+      {
+        question: "Is there job assistance?",
+        answer: "Yes, we provide career guidance and help connect participants with relevant job opportunities in data application development.",
+      },
+    ],
+    selectionCriteria: [
+      {
+        question: "Can I access the course content after completion?",
+        answer: "Yes, participants get extended access to course materials, recorded sessions, and resources for continued learning.",
+      },
+      {
+        question: "What are the program fees?",
+        answer: "Please check our website for current fee structure and available discounts. We offer flexible payment options.",
+      },
+    ],
+  },
 
   // Using shared content for other specializations
   "specialisation-in-prometheus-grafana": {

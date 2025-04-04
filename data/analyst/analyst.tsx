@@ -36,6 +36,7 @@ import gcp from "../../public/assets/landingPage/companyLogo/gcp.png";
 import Paypal from "../../public/assets/landingPage/companyLogo/PayPal.png";
 import VMware from  "../../public/assets/landingPage/companyLogo/VMware.png"
 import {SalaryData, AnalystData, CourseAnalystData} from "../../types/analyst"
+import { specialisationInStreamlit } from '../courses/specialisation-in-streamlit';
 
 
 
@@ -521,7 +522,35 @@ export const analystData: CourseAnalystData = {
     companiesLabel: "Top Companies Hiring Kubernetes Experts",
     jobsLabel: "Job Opportunities",
     jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
-  }
+  },
+"specialisation-in-streamlit": {
+  "title": "Rising Demand",
+  "subtitle": "for Streamlit Developers",
+  "salary": {
+    "label": "Jobs in Streamlit Development",
+    "values": [800000, 1500000, 2500000] // Entry (8L), Mid (15L), Senior (25L)
+  },
+  "companies": [
+    "Google",
+    "Microsoft",
+    "Amazon",
+    "Uber",
+    "Deloitte",
+    "IBM",
+    "PayPal",
+    "Infosys",
+    "Accenture",
+    
+  ] as CompanyName[],
+  "demand": 42, // Percentage increase in demand
+  "jobCount": "8,500+", // Total jobs available
+  "description": "Streamlit developers in India are experiencing rising demand due to the increasing need for data applications, analytics dashboards, and ML model deployment interfaces. In 2025, entry-level salaries range from ₹8–12 lakh annually, while experienced professionals earn ₹25 lakh or more, reflecting the growing importance of data-driven applications and interactive visualization tools in modern business environments.",
+  "yearLabel": "In 2025",
+  "salaryLabel": "Average Salaries",
+  "companiesLabel": "Companies Hiring",
+  "jobsLabel": "Available Jobs",
+  "jobsDescription": "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
+}
  
 };
 
