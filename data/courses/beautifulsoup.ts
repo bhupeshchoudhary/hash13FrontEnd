@@ -2,7 +2,7 @@ import { Course } from "../../types/courses";
 
 export const specialisationInnBeautifullsoup: Course = {
     _id: "master-web-scraping-with-beautifulsoup4",
-    title:" [B][R]Master Web Scraping with BeautifulSoup4[/R][B]: From Zero to Pro",
+    title:" [B][R]Web Scraping Mastery in Python with BeautifulSoup[/R][B]",
     
     slug: "master-web-scraping-with-beautifulsoup4",
     rating: 5,
@@ -12,10 +12,10 @@ export const specialisationInnBeautifullsoup: Course = {
     hours: "8+",
     // startDate: "Starting On 22nd March (Weekend Batch)",
     price: 8000,
-    originalPrice: 20000,
+    originalPrice: 7500,
     enrolledStudents: 12000,
     category: "Web Scraping & Data Extraction",
-    shortDescription: " Starting Soon! Learn to scrape websites like a pro.",
+    shortDescription: "Weekend Live Batch",
     paymentLink: " https://rzp.io/rzp/575updp ",
     backgroundImage: "/assets/AI (1).jpg",
 
