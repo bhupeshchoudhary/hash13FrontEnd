@@ -205,7 +205,7 @@ features: [
         sectionTitle: "Complete n8n Automation Program",
         category: " Workflow Automation & Real-World Integrations",
         toolsCount: "10+",
-        displayImage: "/assets/certificate/AI.jpg",
+        displayImage: "/assets/cources/courseDetails/n8n/n8n.jpg",
         tools: [
             {
                 id: "basics",
