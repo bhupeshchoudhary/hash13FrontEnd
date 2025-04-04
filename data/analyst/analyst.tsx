@@ -552,7 +552,7 @@ export const analystData: CourseAnalystData = {
   "jobsDescription": "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
 },
 "specialisation-in-n8n": {
-    title: "n8n Automation Experts – Salaries, Hiring Companies & Job Opportunities in India",
+    title: "n8n Experts – Salaries, Hiring & Job Opportunities",
     subtitle: "Rapid Growth of Workflow Automation in 2025",
     salary: {
       label: "Salaries for n8n Automation Professionals",
@@ -580,7 +580,7 @@ export const analystData: CourseAnalystData = {
     jobsDescription: "Total jobs found across Naukri, Glassdoor, Indeed, and LinkedIn"
   },
   "master-web-scraping-with-beautifulsoup4": {
-    title: "Web Scraping Experts – Salaries, Hiring Companies & Job Opportunities in India",
+    title: "Web Scraping Experts – Salaries & Job Opportunities in India",
     subtitle: "Explosive Demand for Data Extraction Skills in 2025",
     salary: {
       label: "Salaries for Web Scraping Professionals",

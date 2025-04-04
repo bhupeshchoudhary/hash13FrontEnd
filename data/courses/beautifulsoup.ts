@@ -195,7 +195,7 @@ export const specialisationInnBeautifullsoup: Course = {
         sectionTitle: "Complete Web Scraping Program",
         category: "Data Extraction & Automation",
         toolsCount: "10+",
-        displayImage: "/assets/certificate/web-scraping-tools.jpg",
+        displayImage: "/assets/cources/courseDetails/bs4/bs4.jpg",
         tools: [
             {
                 id: "bs4",
