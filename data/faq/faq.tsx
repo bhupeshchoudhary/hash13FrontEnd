@@ -307,6 +307,97 @@ export const faqContent: FAQContent = {
 "specialisation-in-kubernetes" : {
     ...sharedSpecializationContent
 },
+"specialisation-in-n8n": {
+  curriculum: [
+    {
+      question: "What is the n8n Automation course about?",
+      answer:
+        "This course provides hands-on training in building automation workflows using n8n. You will learn to integrate APIs, automate tasks, and streamline business processes without extensive coding.",
+    },
+    {
+      question: "What makes this course unique?",
+      answer: (
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Real-world automation projects.</li>
+          <li>Step-by-step hands-on workflow creation.</li>
+          <li>API integrations without coding.</li>
+          <li>Learn both self-hosted and cloud versions of n8n.</li>
+          <li>Certification upon completion.</li>
+        </ul>
+      ),
+    },
+  ],
+  timeCommitment: [
+    {
+      question: "Who can enroll in this course?",
+      answer: (
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Students: Those interested in automation and workflow management.</li>
+          <li>Business Owners: Want to automate repetitive tasks.</li>
+          <li>Developers: Looking to integrate APIs effortlessly.</li>
+          <li>Freelancers: Seeking to offer automation services.</li>
+          <li>Non-Tech Professionals: Want to automate work without coding.</li>
+        </ul>
+      ),
+    },
+    {
+      question: "Is prior technical knowledge required?",
+      answer:
+        "No, this course starts from the basics. You don't need coding experience, but basic familiarity with SaaS tools and APIs will be helpful.",
+    },
+  ],
+  Program: [
+    {
+      question: "What will I learn in this course?",
+      answer: (
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>n8n workflow fundamentals.</li>
+          <li>Triggering automations with webhooks.</li>
+          <li>Connecting and integrating APIs (Google Sheets, Notion, Telegram, etc.).</li>
+          <li>Using logic-based nodes (If, Merge, and Switch).</li>
+          <li>Debugging, error handling, and performance optimization.</li>
+        </ul>
+      ),
+    },
+  ],
+  Duration: [
+    {
+      question: "How long does the course last?",
+      answer:
+        "The course is designed to be completed in 4-6 weeks, depending on your learning pace.",
+    },
+    {
+      question: "What is the mode of delivery?",
+      answer:
+        "The course is delivered through self-paced video lessons, hands-on projects, and live Q&A sessions.",
+    },
+  ],
+  Certification: [
+    {
+      question: "Will I get a certificate?",
+      answer:
+        "Yes, upon successfully completing the course, you will receive an industry-recognized certificate.",
+    },
+    {
+      question: "Will there be job placement support?",
+      answer:
+        "Yes, we provide career guidance and connect learners with automation-related job opportunities.",
+    },
+  ],
+  selectionCriteria: [
+    {
+      question: "Can I access the content after the course ends?",
+      answer:
+        "Yes, you will have lifetime access to recorded lessons and resources.",
+    },
+    {
+      question: "What is the fee structure?",
+      answer:
+        "The fees are listed on our website. Please visit the course page for more details.",
+    },
+  ],
+},
+
 
   "specialisation-in-docker": {
     ...sharedSpecializationContent
