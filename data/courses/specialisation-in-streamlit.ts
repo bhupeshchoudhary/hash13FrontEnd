@@ -2,50 +2,47 @@ import { Course } from "../../types/courses";
 
 export const specialisationInStreamlit: Course = {
     _id: "specialisation-in-streamlit",
-    title: "[B][R]Specialisation in Streamlit Development[/R][/B] | Build Data Apps Like a Pro",
+    title: "[B] [R]Specialisation in Streamlit Development[/R] [/B] | Build Data Apps Like a Pro",
     slug: "specialisation-in-streamlit",
     rating: 5,
     totalRatings: 10,
-    duration: "Beginner to Advance",
+    duration: "2 Months",
     globalStatus: "GLOBALLY RECOGNISED PROGRAM",
+    programBy: "Vimal Daga",
     hours: "24+",
     price: 6000,
     originalPrice: 15000,
     enrolledStudents: 8000,
     category: "Data Applications",
-    shortDescription: "Starting On 15th April (Weekend Batch)",
+    shortDescription: "Industry Relevant & Recognized Training | Build Interactive Data Apps | Best-In-Class Content | Real-World Projects",
     paymentLink: "https://rzp.io/rzp/streamlit",
-    backgroundImage: "/assets/streamlit.jpg",
+    backgroundImage: "/assets/courses/streamlit/hero.jpg",
 
     learningOutcomes: [
-        "Streamlit Fundamentals",
-        "Interactive Data Apps",
-        "Data Visualization",
-        "Machine Learning Integration",
-        "App Deployment",
-        "Custom Components",
-        "Real-time Analytics"
+        "Master Streamlit Framework Fundamentals",
+        "Interactive Data Visualization",
+        "ML Model Deployment",
+        "Custom Components Development",
+        "Production-Grade Applications",
+        "Real-time Analytics Dashboard"
     ],
 
     features: [
-        "Hands-on Projects",
-        "Technical Support for 90 Days",
-        "Premium #13 Data App Community"
+        "Industry-relevant Data App Development Skills",
+        "Technical Support for 90 days",
+        "Premium #13 Data App Community Membership"
     ],
 
     skills: [
         "Python Programming",
-        "Web App Development",
         "Data Visualization",
-        "API Integration",
-        "App Deployment",
+        "ML Model Integration",
         "UI/UX Design",
-        "Data Processing",
-        "ML Model Integration"
+        "App Deployment"
     ],
 
     requirements: [
-        "Basic Python programming knowledge",
+        "Basic Python knowledge",
         "Understanding of data structures",
         "Familiarity with data analysis concepts"
     ],
@@ -58,49 +55,71 @@ export const specialisationInStreamlit: Course = {
         {
             id: 1,
             title: "Introduction to Streamlit",
-            description: "Learn the basics of Streamlit and its ecosystem",
+            description: "Learn the fundamentals of Streamlit framework and setup",
             content: [
                 "What is Streamlit?",
                 "Setting up development environment",
+                "First Streamlit app",
+                "Core components overview",
                 "Basic app structure",
-                "Core components and widgets",
-                "App configuration and settings"
+                "App configuration",
+                "Command line interface",
+                "Development workflow",
+                "Basic styling and theming",
+                "App deployment basics"
             ]
         },
         {
             id: 2,
-            title: "Data Handling & Visualization",
-            description: "Master data processing and visualization in Streamlit",
+            title: "Core Components & Widgets",
+            description: "Master Streamlit's built-in components and widgets",
             content: [
-                "Data loading and preprocessing",
-                "Interactive charts with Plotly",
-                "Maps and geographical data",
-                "Custom visualizations",
-                "Real-time data updates"
+                "Text elements (title, header, markdown)",
+                "Data display components",
+                "Input widgets",
+                "Buttons and interactions",
+                "File uploaders",
+                "Progress and status",
+                "Forms and containers",
+                "Layouts and columns",
+                "Sidebar navigation",
+                "State management",
+                "Session state",
+                "Caching mechanisms"
             ]
         },
         {
             id: 3,
-            title: "Advanced UI Components",
-            description: "Create sophisticated user interfaces",
+            title: "Data Visualization & Analytics",
+            description: "Create interactive visualizations and analytics dashboards",
             content: [
-                "Forms and input widgets",
-                "Layouts and containers",
-                "Themes and styling",
-                "Custom CSS",
-                "Responsive design"
+                "Basic charts and plots",
+                "Interactive Plotly integration",
+                "Custom visualizations",
+                "Maps and geographical data",
+                "Real-time data updates",
+                "Multi-page applications",
+                "Dashboard layouts",
+                "Data filtering",
+                "Interactive analytics",
+                "Performance optimization"
             ]
         },
         {
             id: 4,
             title: "Machine Learning Integration",
-            description: "Integrate ML models with Streamlit apps",
+            description: "Deploy and integrate ML models with Streamlit",
             content: [
-                "Model deployment",
-                "Interactive predictions",
+                "ML model deployment basics",
+                "Model prediction interface",
+                "File handling for ML",
+                "Real-time predictions",
                 "Model performance visualization",
-                "Real-time model updates",
-                "Model optimization"
+                "Multiple model integration",
+                "Model optimization",
+                "Error handling",
+                "Batch processing",
+                "Model monitoring"
             ]
         },
         {
@@ -108,23 +127,33 @@ export const specialisationInStreamlit: Course = {
             title: "Advanced Features & Components",
             description: "Explore advanced Streamlit capabilities",
             content: [
-                "Session state management",
-                "Caching mechanisms",
-                "Custom components",
-                "Authentication",
-                "Database integration"
+                "Custom components development",
+                "Component styling",
+                "Authentication systems",
+                "Database integration",
+                "API connections",
+                "WebSocket integration",
+                "Caching strategies",
+                "Performance tuning",
+                "Error handling",
+                "Testing strategies"
             ]
         },
         {
             id: 6,
-            title: "App Deployment & Production",
-            description: "Deploy and maintain Streamlit applications",
+            title: "Deployment & Production",
+            description: "Learn deployment and production management",
             content: [
                 "Deployment options",
-                "Cloud hosting",
+                "Cloud hosting setup",
+                "Docker containerization",
+                "Environment management",
+                "Security best practices",
+                "Monitoring setup",
                 "Performance optimization",
-                "Monitoring and analytics",
-                "Security best practices"
+                "Scaling strategies",
+                "Maintenance procedures",
+                "CI/CD integration"
             ]
         }
     ],
@@ -139,79 +168,84 @@ export const specialisationInStreamlit: Course = {
             description: "Hours of learning"
         },
         {
-            number: "4+",
+            number: "4",
             description: "Capstone Projects"
         }
     ],
 
-    certificateImage: "/assets/certificate/Specialisation-in-Streamlit.jpg",
+    certificateImage: "/assets/certificate/streamlit.jpg",
 
     project: [
         {
-            icon: "",
-            title: "Data Analytics Dashboard",
-            description: "Build an interactive dashboard for business analytics",
-            skills: ["Streamlit", "Plotly", "Data Analysis"]
+            icon: "/assets/projects/dashboard.png",
+            title: "Interactive Analytics Dashboard",
+            description: "Build a comprehensive analytics dashboard with real-time data visualization and interactive filters",
+            skills: ["Streamlit", "Data Visualization", "Real-time Analytics"]
         },
         {
-            icon: "",
-            title: "ML Model Deployment App",
-            description: "Create an app for real-time ML predictions",
-            skills: ["Machine Learning", "Model Deployment", "Interactive UI"]
+            icon: "/assets/projects/ml.png",
+            title: "ML Model Deployment Platform",
+            description: "Create a platform for deploying and testing machine learning models with user interface",
+            skills: ["ML Integration", "Model Deployment", "Interactive UI"]
         },
         {
-            icon: "",
-            title: "Real-time Data Monitor",
-            description: "Develop a real-time data monitoring system",
-            skills: ["Real-time Processing", "Data Visualization", "API Integration"]
+            icon: "/assets/projects/finance.png",
+            title: "Financial Analysis Tool",
+            description: "Develop a financial analysis tool with stock market data visualization and portfolio tracking",
+            skills: ["Financial Analysis", "Data Processing", "Real-time Updates"]
+        },
+        {
+            icon: "/assets/projects/bi.png",
+            title: "Business Intelligence Dashboard",
+            description: "Build a BI dashboard with KPI tracking and automated reporting features",
+            skills: ["Business Intelligence", "Data Analysis", "Reporting"]
         }
     ],
 
     programFor: [
-        { src: "/assets/courses/streamlit/Data Scientists.jpg", alt: "Data Scientists", text: "Data Scientists" },
-        { src: "/assets/courses/streamlit/Data Analysts.jpg", alt: "Data Analysts", text: "Data Analysts" },
-        { src: "/assets/courses/streamlit/ML Engineers.jpg", alt: "ML Engineers", text: "ML Engineers" },
-        { src: "/assets/courses/streamlit/Business Analysts.jpg", alt: "Business Analysts", text: "Business Analysts" },
-        { src: "/assets/courses/streamlit/Python Developers.jpg", alt: "Python Developers", text: "Python Developers" },
-        { src: "/assets/courses/streamlit/Data Engineers.jpg", alt: "Data Engineers", text: "Data Engineers" },
-        { src: "/assets/courses/streamlit/Product Managers.jpg", alt: "Product Managers", text: "Product Managers" },
-        { src: "/assets/courses/streamlit/Research Scientists.jpg", alt: "Research Scientists", text: "Research Scientists" },
-        { src: "/assets/courses/streamlit/Students.jpg", alt: "Students", text: "Students" },
-        { src: "/assets/courses/streamlit/IT Professionals.jpg", alt: "IT Professionals", text: "IT Professionals" }
+        { src: "/assets/courses/streamlit/roles/data-scientist.jpg", alt: "Data Scientists", text: "Data Scientists" },
+        { src: "/assets/courses/streamlit/roles/data-analyst.jpg", alt: "Data Analysts", text: "Data Analysts" },
+        { src: "/assets/courses/streamlit/roles/ml-engineer.jpg", alt: "ML Engineers", text: "ML Engineers" },
+        { src: "/assets/courses/streamlit/roles/bi-developer.jpg", alt: "BI Developers", text: "BI Developers" },
+        { src: "/assets/courses/streamlit/roles/python-dev.jpg", alt: "Python Developers", text: "Python Developers" },
+        { src: "/assets/courses/streamlit/roles/data-engineer.jpg", alt: "Data Engineers", text: "Data Engineers" },
+        { src: "/assets/courses/streamlit/roles/product-manager.jpg", alt: "Product Managers", text: "Product Managers" },
+        { src: "/assets/courses/streamlit/roles/researcher.jpg", alt: "Researchers", text: "Research Scientists" },
+        { src: "/assets/courses/streamlit/roles/student.jpg", alt: "Students", text: "Students" },
+        { src: "/assets/courses/streamlit/roles/professional.jpg", alt: "IT Professionals", text: "IT Professionals" }
     ],
 
     toolsData: {
-        sectionTitle: "Complete Streamlit Program",
-        category: "Data App Development for Real-World Applications",
+        sectionTitle: "Complete Streamlit Development Program",
+        category: "Data App Development",
         toolsCount: "15+",
-        displayImage: "/assets/certificate/Streamlit.jpg",
+        displayImage: "/assets/courses/streamlit/tools.jpg",
         tools: [
             {
                 id: "basics",
-                icon: "BarChart",
-                title: "Master Streamlit's core components and app development fundamentals"
+                icon: "Cpu",
+                title: "Core Streamlit Components & App Development"
             },
             {
                 id: "visualization",
-                icon: "TrendingUp",
-                title: "Create interactive data visualizations and dashboards"
+                icon: "BarChart",
+                title: "Data Visualization & Interactive Analytics"
             },
             {
                 id: "ml",
-                icon: "Cpu",
-                title: "Deploy and integrate machine learning models in web applications"
+                icon: "TrendingUp",
+                title: "ML Model Integration & Deployment"
             },
             {
                 id: "deployment",
-                icon: "BarChart",
-                title: "Learn production deployment and app maintenance"
+                icon: "Cpu",
+                title: "Production Deployment & Management"
             },
             {
                 id: "advanced",
-                icon: "Cpu",
-                title: "Develop custom components and advanced features"
+                icon: "BarChart",
+                title: "Custom Components & Advanced Features"
             }
         ]
-    },
-    programBy: "Vimal Daga"
+    }
 }
