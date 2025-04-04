@@ -6,7 +6,7 @@ export const specialisationInStreamlit: Course = {
     slug: "specialisation-in-streamlit",
     rating: 5,
     totalRatings: 10,
-    duration: "2 Months",
+    duration: "Beginner to Advance",
     globalStatus: "GLOBALLY RECOGNISED PROGRAM",
     programBy: "Vimal Daga",
     hours: "14+",
