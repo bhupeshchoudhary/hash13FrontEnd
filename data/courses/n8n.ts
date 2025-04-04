@@ -164,7 +164,7 @@ features: [
         }
     ],
 
-    certificateImage: "/assets/certificate/Specialisation-in-AI-&-Machine-Learning.jpg",
+    certificateImage: "/assets/certificate/n8n (1).jpg",
 
     project: [
         {

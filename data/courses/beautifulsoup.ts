@@ -154,7 +154,7 @@ export const specialisationInnBeautifullsoup: Course = {
         { number: "4+", description: "Hands-On Projects" }
     ],
 
-    certificateImage: "/assets/certificate/Specialisation-in-AI-&-Machine-Learning.jpg",
+    certificateImage: "/assets/certificate/beautifulsoup.jpg",
 
   
     project: [
