@@ -17,7 +17,7 @@ export const specialisationInn8n: Course = {
     category: "Artificial Intelligence",
     shortDescription: "19th - 20th April, 2025 (Sat - Sun)",
     paymentLink: " https://rzp.io/rzp/JLv8cEhD",
-    backgroundImage: "/assets/AI (1).jpg",
+    backgroundImage: "/assets/n8n (3).jpg",
 
 learningOutcomes: [
     "Workflow Automation",

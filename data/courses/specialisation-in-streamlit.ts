@@ -16,7 +16,7 @@ export const specialisationInStreamlit: Course = {
     category: "Data Applications",
     shortDescription: "Weekend Live Batch",
     paymentLink: "https://rzp.io/rzp/johHCWU4",
-    backgroundImage: "/assets/cources/courseDetails/streamlit/streamlit-hero.jpg",
+    backgroundImage: "/assets/streamlit1 (1).jpg",
 
     learningOutcomes: [
         "Master Streamlit Framework Fundamentals",
